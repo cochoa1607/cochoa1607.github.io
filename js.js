@@ -25,4 +25,4 @@ const btnCompartir = document.getElementById('btnCompartir');
         } catch (error) {
             console.log('Sharing failed!', error)
         }
-    }
+}
