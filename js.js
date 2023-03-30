@@ -13,7 +13,7 @@ const shareData = {
       await navigator.share(shareData);
       resultPara.textContent = "Contacto compartido exitosamente!";
     } catch (err) {
-      resultPara.textContent = `Error: ${err}`;
+      resultPara.textContent = ``;
     }
   });
   
