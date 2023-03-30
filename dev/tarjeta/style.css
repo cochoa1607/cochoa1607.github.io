@@ -29,6 +29,8 @@ body {
 
     --shadow: var(--azul-shadow) 1rem 1rem 1.5rem;
     --shadow-dos: var(--amarillo-shadow) 1rem 1rem 1.5rem;
+    
+    --margin-section: 3rem auto 3rem auto;
 }
 
 .container-all{
@@ -38,27 +40,27 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /*
-    background-color: var(--color-cinco);
-    */
 }
 
 .container {
-    width: 94vw;
-    height: 80vh;
-    margin: 6vh auto 14vh auto;
+    width: 96vw;
+    height: auto;
+    margin: auto;
     padding: 4vh 0;
-    border: solid var(--azul) 2px;
-    border-radius: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    /*
+    border: solid var(--azul) 2px;
+    border-radius: .5rem;
     box-shadow: var(--shadow);
+    */
 }
 
 .compartir{
     width: 20%;
-    margin: 0 0 0 80%;
+    margin: 3rem 0 0 0;
+    margin-left: 80%;
 }
 
 .compartir .btnCompartir{
@@ -68,10 +70,9 @@ body {
 }
 
 .compartir .btnCompartir i{
-    font-size: 2.2rem;
-    color: var(--azul-tres);
-    background: var(--azul);
-    padding: 1.2rem;
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--azul);
     border-radius: 3rem;
 }
 
@@ -86,7 +87,7 @@ body {
 
 .foto {
     width: 40%;
-    margin: 10% auto 0 auto;
+    margin: var(--margin-section);
     border-radius: 500px;
     border: solid var(--azul) 3px;
     padding: 5px 5px 2px 5px;
@@ -99,8 +100,8 @@ body {
 }
 
 .nombre{
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin: var(--margin-section);
     text-align: center;
 }
 
@@ -149,10 +150,14 @@ body {
 }
 
 .contacto{
-    width: 90%;
-    margin: 1rem auto;
+    width: 80%;
+    margin: var(--margin-section);
+}
+
+.contacto .contactoLine {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -161,11 +166,24 @@ body {
 }
 
 .circulo i{
-    padding: 1rem 2rem;
+    width: calc(20vw);
+    padding: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .8rem;
     font-size: 2.6rem;
-    color: var(--azul-dos);
+    color: var(--azul);
     text-shadow: var(--shadow);
+    border: solid var(--azul) .2rem;
+    border-radius: 2rem;
 }
+
+.circulo a{
+    text-decoration: none;
+}
+
+
 
 
 @media only screen and (min-width: 460px) {
