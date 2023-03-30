@@ -58,9 +58,15 @@ body {
 }
 
 .compartir{
-    width: 20%;
-    margin: 3rem 0 0 0;
+    width: 6rem;
+    height: 6rem;
+    margin: 2rem 0 0 0;
     margin-left: 80%;
+    border: solid .2rem var(--azul);
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .compartir .btnCompartir{
@@ -167,16 +173,16 @@ body {
 
 .circulo i{
     width: calc(20vw);
-    padding: 1.4rem;
+    padding: 2rem 1.4rem;
+    font-size: 2.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: .8rem;
-    font-size: 2.6rem;
     color: var(--azul);
     text-shadow: var(--shadow);
     border: solid var(--azul) .2rem;
-    border-radius: 2rem;
+    border-radius: 2.4rem;
 }
 
 .circulo a{
