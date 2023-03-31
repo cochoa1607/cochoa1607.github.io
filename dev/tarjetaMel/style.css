@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    overflow-x: hidden;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+:root {
+    --blanco: #FFFFFF;
+    --amarillo: #FFE5D9;
+    --verde: #D8E2DC;
+    --azul: #FFCAD4;
+    --azul-dos: #F4ACB7;
+    --azul-tres: #9D8189;
+    --azul-shadow: #FFE5D920;
+    --amarillo-shadow: #D8E2DC20;
+
+    --shadow: var(--azul-shadow) 1rem 1rem 1.5rem;
+    --shadow-dos: var(--amarillo-shadow) 1rem 1rem 1.5rem;
+    
+    --margin-section: 1.5rem auto 1.5rem auto;
+}
+
+.container-all{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./fondo01.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 96vw;
+    height: 80vh;
+    margin: 8vh auto 12vh auto;
+    padding: 4vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.compartir{
+    width: 4rem;
+    height: 4rem;
+    top: 4rem;
+    right: 2rem;
+    position: fixed;
+    border: solid .2rem var(--azul);
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compartir .btnCompartir{
+    right: 0;
+    background: none;
+    border: none;
+}
+
+.compartir .btnCompartir i{
+    font-size: 1.6rem;
+    color: var(--azul);
+}
+
+.logo{
+    width: 40%;
+    margin: 10% auto 0 auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.foto {
+    width: 40%;
+    margin: var(--margin-section);
+    border-radius: 500px;
+    border: solid var(--azul) 3px;
+    padding: 5px 5px 2px 5px;
+    box-shadow: var(--shadow);
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 500px;
+}
+
+.nombre{
+    width: 100%;
+    margin: var(--margin-section);
+    text-align: center;
+}
+
+.nombre h1{
+    color: var(--verde);
+    margin: 0 0 2rem 0;
+}
+
+.nombre h2 {
+    font-weight: 200;
+    margin: 0 0 2rem 0;
+    color: var(--azul-dos);
+}
+
+.nombre ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.nombre ul li {
+    font-size: 1.6rem;
+    font-weight: 200;
+    border-radius: 2rem;
+    color: var(--blanco);
+    line-height: 2.4rem;
+    text-shadow: var(--shadow);
+}
+
+.nombre ul li::after {
+    padding: 0 1rem;
+    color: var(--amarillo);
+    font-family: "Font Awesome 5 Free";
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    font-family: 400;
+    content: "\f121 ";
+    text-shadow: var(--shadow-dos);
+}
+
+.nombre ul .final::after {
+    content: none;
+}
+
+.linieaD{
+    width: 90%;
+    height: .1rem;
+    margin: auto;
+    background-color: var(--amarillo);
+}
+
+.agendar {
+    width: 80%;
+    margin: var(--margin-section);
+}
+
+.agendar .campo{
+    padding: .5rem;
+    background-color: var(--azul);
+    border: solid .1rem var(--azul-tres);
+    border-radius: .5rem;
+}
+
+.agendar .campo a{
+    text-decoration: none;
+    color: var(--azul-tres);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.campoTitle{
+    color: var(--azul);
+    margin: 1.4rem 0 .2rem 0;
+    text-align: center;
+    font-weight: 200;
+
+}
+
+.campo i {
+    font-size: 1.8rem;
+}
+
+.proyectos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.proyectos a{
+    width: calc(20vw);
+    height: auto;
+    margin: .8rem 0;
+}
+
+.proyectos i {
+    font-size: 2.4rem;
+}
+
+.contacto{
+    width: 64%;
+    margin: var(--margin-section);
+}
+
+.proyectos .proyectosTodos{
+    width: calc(80vw);
+}
+
+.proyectos .proyectosTodos span{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .contactoLine {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.circulo {
+    width: auto;
+}
+
+.circulo .vacio {
+    width: calc(12vw);
+
+    border: none;
+}
+
+.circulo i{
+    width: calc(12vw);
+    padding: .8rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .8rem;
+    color: var(--azul);
+    text-shadow: var(--shadow);
+    border: solid var(--azul) .2rem;
+    border-radius: 2.4rem;
+}
+
+.circulo a{
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (min-width: 460px) {
+    .container-all{
+        display: none;
+    }
+}
