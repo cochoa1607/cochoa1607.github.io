@@ -59,9 +59,8 @@ body {
 }
 
 .compartir{
-    width: 3rem;
-    height: 3rem;
-    margin: 1rem 0 0 0;
+    width: 4rem;
+    height: 4rem;
     top: 2rem;
     right: 2rem;
     border: solid .1rem var(--azul-tres);
@@ -245,16 +244,15 @@ body {
 }
 
 .circulo i{
-    width: calc(12vw);
+    width: calc(14vw);
     padding: .8rem;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: .8rem;
     color: var(--azul-dos);
     text-shadow: var(--shadow);
-    border: solid var(--azul) .2rem;
     border-radius: 2.4rem;
 }
 
