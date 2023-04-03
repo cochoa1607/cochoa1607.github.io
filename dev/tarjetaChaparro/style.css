@@ -338,8 +338,8 @@ Tablet -------------------------------------------------------------------------
 
     .compartirMobile{
         display: flex;
-        width: 6rem;
-        height: 6rem;
+        width: 5rem;
+        height: 5rem;
         top: 3rem;
         right: 3rem;
         border: solid .1rem var(--azul-tres);
@@ -358,7 +358,7 @@ Tablet -------------------------------------------------------------------------
     }
     
     .compartirMobile .btnCompartir i{
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: var(--azul-tres);
     }
     
@@ -445,8 +445,8 @@ Mobile -------------------------------------------------------------------------
 
     .compartirMobile{
         display: flex;
-        width: 6rem;
-        height: 6rem;
+        width: 4rem;
+        height: 4rem;
         top: 3rem;
         right: 3rem;
         border: solid .1rem var(--azul-tres);
@@ -465,7 +465,7 @@ Mobile -------------------------------------------------------------------------
     }
     
     .compartirMobile .btnCompartir i{
-        font-size: 2rem;
+        font-size: 1.4rem;
         color: var(--azul-tres);
     }
     
