@@ -30,8 +30,8 @@ $morado: #62038E;
 $moradoDos: #8C45AD;
 $moradoTres: #A964CA;
 
-$border: solid $morado .5rem;
-$borderDos: solid $amarillo .5rem;
+$border: solid $morado .3rem;
+$borderDos: solid $amarillo .3rem;
 $radius: .5rem;
 $radiusDos: 1.5rem;
 $radiusTres: 30rem;
@@ -84,15 +84,15 @@ $degradadoDos: linear-gradient($amarilloDos-op, 80%, $cafe-op);
 
 .warning-icon{
     height: auto;
-    font-size: 5rem;
+    font-size: 4rem;
     
 }
 .warning-icon-text{
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 .warning-text{
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     padding-left: 4rem;
     border: $borderDos;
     border-radius: $radiusDos;
@@ -115,7 +115,7 @@ $degradadoDos: linear-gradient($amarilloDos-op, 80%, $cafe-op);
 .riesgo-texto{
     width: 80%;
     margin: auto;
-    font-size: 2.6rem;
+    font-size: 1.8rem;
     color: $blanco;
     border: $border;
     border-radius: $radius;
@@ -150,7 +150,7 @@ $degradadoDos: linear-gradient($amarilloDos-op, 80%, $cafe-op);
 
 .diap-dos .plecas .pleca-texto{
     width: 80%;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     padding-left: 8rem !important;
     border-radius: $radiusTres;
     border: solid $blanco .4rem;
@@ -179,24 +179,24 @@ $degradadoDos: linear-gradient($amarilloDos-op, 80%, $cafe-op);
 }
 
 .diap-tres .cont-circulo{
-    margin: .5rem 3vw .5rem 3vw;
+    margin: .2rem 8vw .2rem 8vw;
 }
 
 .diap-tres .circulo {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 22vw;
-    height: calc(22vw);
+    width: 12vw;
+    height: calc(12vw);
     border-radius: $radiusTres;
 }
 
 .diap-tres .cont-circulo p {
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: .2rem auto 0 auto;
-    margin: 1rem 0 3rem 0;
-    width: 22vw;
+    margin: .5rem 0 1rem 0;
+    width: 12vw;
 }
 
 .diap-tres .circulo-uno {
@@ -209,8 +209,9 @@ $degradadoDos: linear-gradient($amarilloDos-op, 80%, $cafe-op);
 
 .diap-tres .circulo-tres {
     background-image: url(../img/embarazadaG.png);
-    width: 30vw;
-    height: calc(30vw);
+    width: 18vw;
+    height: calc(18vw);
+    border: $borderDos;
 }
 
 .diap-tres .circulo-cuatro {
@@ -225,3 +226,47 @@ $degradadoDos: linear-gradient($amarilloDos-op, 80%, $cafe-op);
     background-image: url(../img/riñon.png);
 }
 
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+    
+    .diap-tres .cont-circulo{
+        margin: .2rem 3vw .2rem 3vw;
+    }
+    
+    .diap-tres .circulo {
+        width: 16vw;
+        height: calc(16vw);
+    }
+    
+    .diap-tres .cont-circulo p {
+        font-size: 1.6rem;
+        width: 16vw;
+        margin: .5rem 0 1rem 0;
+    }
+
+    .diap-tres .circulo-tres {
+        width: 23vw;
+        height: calc(23vw);
+    }
+}
+@media only screen and (max-width: 799px) and (min-width: 10px) {
+    
+    .diap-tres .cont-circulo{
+        margin: .1rem 2vw .1rem 2vw;
+    }
+    
+    .diap-tres .circulo {
+        width: 25vw;
+        height: calc(25vw);
+    }
+    
+    .diap-tres .cont-circulo p {
+        font-size: 1.2rem;
+        width: 25vw;
+        margin: .5rem 0 1rem 0;
+    }
+    
+    .diap-tres .circulo-tres {
+        width: 32vw;
+        height: calc(32vw);
+    }
+}
