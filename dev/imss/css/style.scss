@@ -127,9 +127,19 @@ $degradadoDos: linear-gradient($amarilloDos-op, 80%, $cafe-op);
 
 .diap-dos {
     background-image: url(../img/fondoDos.png);
-    background-position: right center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.diap-dos .imagen-mujer{
+    background-image: url(../img/mujerEmb.png);
+    width: 30vw;
+    height: calc(70vw);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 60%;
 }
 
 .diap-dos .dos {
