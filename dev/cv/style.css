@@ -22,9 +22,12 @@ body {
 }
 
 :root {
+    --azul-claro: #DEE9ED;
     --azul: #79A6B5;
     --azul-dos: #006D93;
+    --verde-claro: #D2E4DA;
     --verde: #4A916A;
+    --naranja: #F2C969;
     --gris-uno: #808080;
     --gris-dos: #58595B;
     --gris-tres: #231F20;
@@ -33,24 +36,44 @@ body {
 }
 
 h1{
-    color: var(--azul);
+    color: var(--verde);
     font-size: 2.6rem;
     font-weight: 600;
 }
 
 h2{
     font-size: 2.4rem;
-    color: var(--verde);
+    color: var(--azul);
     font-family: 'Encode Sans SC', sans-serif;
 }
 
-p, span{
-    color: var(--azul-dos);
+h3{
+    font-size: 2rem;
+    color: var(--azul-claro);
+    font-weight: 300;
+}
+
+h4{
+    font-size: 2.6rem;
+    color: var(--azul);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+span{
+    color: var(--azul-claro);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+p{
+    color: var(--azul-claro);
     font-size: 1.6rem;
+    font-weight: 300;
 }
 
 a {
-    color: var(--verde);
+    color: var(--azul-claro);
     font-size: 1.2rem;
     text-decoration: none;
     cursor: pointer;
@@ -62,6 +85,8 @@ Header - Nav
 
 nav{
     width: 100vw;
+    position: fixed;
+    z-index: 9999999;
 }
 
 .container-nav{
@@ -93,56 +118,182 @@ nav{
 }
 
 .cont-dos ul li a:hover{
-    color: var(--verde);
+    color: var(--azul);
     font-size: 1.6rem;
 }
 
 /*
-Main
+Section
 */
 
-.container{
-    display: flex;
-    width: 80%;
-    margin: 5rem auto;
-    justify-content: space-between;
-    align-items: stretch;
+.imagen-fondo{
+    background-image: url(./img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 9;
 }
 
-.container .contacto{
+.container-all{
+    width: 80%;
+    z-index: 9999;
+    position: relative;
+    margin: 5rem auto;
+}
+
+.container-contacto{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 5vh 0;
+    justify-content: space-between;
+    align-items: stretch;
+    z-index: 1;
+}
+
+.container-contacto .contacto{
     width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: solid red 1px;
 }
 
-.container .dos ul{
+.container-contacto .dos ul{
     text-align: right;
 }
 
-.container .contacto ul{
+.container-contacto .contacto ul{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.container .contacto ul li{
+.container-contacto .contacto ul li{
     margin: 1rem 0;
+    color: var(--azul-claro);
+    
 }
 
-.container .foto{
+.container-contacto .foto{
     width: auto;
 }
 
-.container img{
+.container-contacto img{
     width: 70%;
     margin: 0 15%;
     max-width: 40rem;
-    border: solid var(--azul-dos) 2px;
+    border: solid var(--azul) .5rem;
     border-radius: 200rem;
 }
 
+/*
+Redes
+*/
 
+.redes{
+    display: flex;
+}
+
+.container-redes{
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-redes .icon{
+    width: auto;
+}
+
+.container-redes .icon i{
+    font-size: 4rem;
+    color: var(--naranja);
+}
+
+.container-habilidades{
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-habilidades .icon{
+    width: auto;
+    display: flex;
+}
+.container-habilidades .icon .circulos{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 2rem;
+}
+
+.container-habilidades .icon i{
+    font-size: 4rem;
+    color: var(--verde);
+}
+
+.container-habilidades .circulos .lleno{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 .5rem;
+    border-radius: 5rem;
+    border: solid .2rem var(--verde-claro);
+    background-color: var(--verde);
+}
+
+.container-habilidades .circulos .vacio{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 .5rem;
+    border-radius: 5rem;
+    border: solid .2rem var(--verde-claro);
+    background-color: none;
+}
+
+/*
+Texto
+*/
+
+.texto{
+    margin: 4rem 0;
+}
+
+.texto-line{
+    width: 50%;
+    height: auto;
+    border-top: solid var(--verde) .2rem;
+}
+
+.texto-line-right{
+    width: 50%;
+    height: auto;
+    margin: 0 0 0 50%;
+    border-top: solid var(--verde) .2rem;
+}
+
+.texto h4{
+    margin: 2rem 0;
+}
+
+.texto p{
+    width: 70%;
+    margin: 0 30% 0 0;
+    text-align: justify;
+
+}
+.right h4{
+    text-align: right;
+}
+
+.right p{
+    width: 70%;
+    margin: 0 0 0 30%;
+    text-align: right;
+}
 
