@@ -33,28 +33,31 @@ body {
     --gris-tres: #231F20;
     --gris-op: #80808090;
     --blanco: #FFFFFF;
+
+    --transition: ease-in-out 200ms;
 }
 
 h1{
     color: var(--verde);
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     font-weight: 600;
+    text-align: left;
 }
 
 h2{
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     color: var(--azul);
     font-family: 'Encode Sans SC', sans-serif;
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: var(--azul-claro);
     font-weight: 300;
 }
 
 h4{
-    font-size: 2.6rem;
+    font-size: 1.4rem;
     color: var(--azul);
     text-transform: uppercase;
     font-weight: 700;
@@ -62,13 +65,13 @@ h4{
 
 span{
     color: var(--azul-claro);
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 300;
 }
 
 p{
     color: var(--azul-claro);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 300;
 }
 
@@ -78,6 +81,49 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+.hide{
+    display: none;
+}
+
+/*
+Compartir
+*/
+
+.compartir-desktop{
+    width: 3rem;
+    height: 3rem;
+    top: 8rem;
+    right: 1.4rem;
+    border: solid .1rem var(--naranja);
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: var(--transitionUno);
+    z-index: 999999999;
+}
+
+.compartir-desktop a{
+    right: 0;
+    background: none;
+    border: none;
+}
+
+.compartir-desktop:hover{
+    transform: scale(1.2);
+}
+
+.compartir-desktop a i{
+    font-size: 1.2rem;
+    color: var(--naranja);
+}
+
+.compartir-mobile{
+    display: none;
+}
+
 
 /*
 Header - Nav
@@ -114,7 +160,7 @@ nav{
 
 .cont-dos ul li a{
     color: var(--blanco);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 .cont-dos ul li a:hover{
@@ -141,21 +187,25 @@ Section
     width: 80%;
     z-index: 9999;
     position: relative;
-    margin: 5rem auto;
+    margin: 0 auto;
+}
+
+.datos{
+    margin: 6rem auto 0 auto;
 }
 
 .container-contacto{
     display: flex;
     width: 100%;
     margin: auto;
-    padding: 5vh 0;
+    padding: 3vh 0;
     justify-content: space-between;
     align-items: stretch;
     z-index: 1;
 }
 
 .container-contacto .contacto{
-    width: 25%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -173,20 +223,20 @@ Section
 }
 
 .container-contacto .contacto ul li{
-    margin: 1rem 0;
+    margin: 0;
     color: var(--azul-claro);
-    
+    overflow: hidden;
 }
 
 .container-contacto .foto{
-    width: auto;
+    width: 20%;
 }
 
 .container-contacto img{
-    width: 70%;
-    margin: 0 15%;
-    max-width: 40rem;
-    border: solid var(--azul) .5rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 20rem;
+    border: solid var(--azul) .4rem;
     border-radius: 200rem;
 }
 
@@ -196,13 +246,21 @@ Redes
 
 .redes{
     display: flex;
+    margin: 1rem auto;
+}
+
+.linea{
+    width: 50%;
+    margin: auto;
+    border-bottom: solid var(--verde) .2rem;
+    position: relative;
+    z-index: 9999999999;
 }
 
 .container-redes{
     width: 100%;
-    margin: 2rem auto;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -211,82 +269,149 @@ Redes
 }
 
 .container-redes .icon i{
-    font-size: 4rem;
-    color: var(--naranja);
+    font-size: 2.2rem;
+    margin: 1rem;
+    color: var(--azul);
+    transition: var(--transition);
+}
+
+.container-redes .icon i:hover{
+    transform: scale(1.2);
+    color: var(--azul-claro);
+}
+
+/*
+Habilidades
+*/
+
+.habilidades{
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .container-habilidades{
-    width: 100%;
-    margin: 2rem auto;
+    width: 20%;
+    min-width: 19rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.habilidad{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    margin: 0 0 3rem 0;
+    width: 9rem;
+}
+
+.habilidad span{
+    color: var(--blanco);
+}
+
+.habilidad span .naranja{
+    color: #FF5733;
+}
+
+.habilidad .html{
+    color: #FF5733;
+}
+
+.habilidad .css{
+    color: #2965f1;
+}
+
+.habilidad .js{
+    color: #F0DB4F;
 }
 
 .container-habilidades .icon{
     width: auto;
     display: flex;
+    align-items: baseline;
 }
 .container-habilidades .icon .circulos{
     display: flex;
     align-items: center;
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 .2rem;
 }
 
-.container-habilidades .icon i{
-    font-size: 4rem;
-    color: var(--verde);
+.container-habilidades .icon img{
+    width: 2.8rem;
+    margin: 0 0 .6rem 0;
 }
 
 .container-habilidades .circulos .lleno{
-    width: 2rem;
-    height: 2rem;
-    margin: 0 .5rem;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .3rem;
     border-radius: 5rem;
-    border: solid .2rem var(--verde-claro);
-    background-color: var(--verde);
+    border: solid .1rem var(--azul-claro);
+    background-color: var(--azul);
 }
 
 .container-habilidades .circulos .vacio{
-    width: 2rem;
-    height: 2rem;
-    margin: 0 .5rem;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .3rem;
     border-radius: 5rem;
-    border: solid .2rem var(--verde-claro);
+    border: solid .1rem var(--verde-claro);
     background-color: none;
+}
+
+.container-habilidades .title{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    text-transform: uppercase;
 }
 
 /*
 Texto
 */
 
+
 .texto{
-    margin: 4rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .texto-line{
     width: 50%;
+    margin: 0 0 4rem 0;
     height: auto;
     border-top: solid var(--verde) .2rem;
 }
 
 .texto-line-right{
     width: 50%;
+    margin: 0 0 4rem 50%;
     height: auto;
-    margin: 0 0 0 50%;
     border-top: solid var(--verde) .2rem;
 }
 
 .texto h4{
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .texto p{
     width: 70%;
     margin: 0 30% 0 0;
     text-align: justify;
-
 }
+
+.texto span {
+    color: var(--azul);
+    font-size: 1.6rem;
+}
+
+.texto strong {
+    color: var(--verde);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
 .right h4{
     text-align: right;
 }
@@ -295,5 +420,45 @@ Texto
     width: 70%;
     margin: 0 0 0 30%;
     text-align: right;
+}
+
+
+@media only screen and (max-width: 599px) and (min-width: 150px) {
+
+
+    .container-nav{
+        display: none;
+    }
+
+    .compartir-desktop{
+        display: none;
+    }
+
+    .compartir-mobile{
+        width: 2.6rem;
+        height: 2.6rem;
+        top: 2rem;
+        right: 2rem;
+        display: flex;
+        border: solid .1rem var(--naranja);
+        border-radius: 4rem;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 9999999999;
+    }
+    
+    .compartir-mobile .btnCompartir{
+        right: 0;
+        background: none;
+        border: none;
+    }
+    
+    .compartir-mobile .btnCompartir i{
+        font-size: 1rem;
+        color: var(--naranja);
+    }
+
+    
 }
 
