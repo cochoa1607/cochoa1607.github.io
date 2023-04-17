@@ -1,1 +1,148 @@
-te
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    overflow-x: hidden;
+    /*
+    font-family: 'Encode Sans SC', sans-serif;
+    */
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--gris);
+}
+
+:root {
+    --azul: #79A6B5;
+    --azul-dos: #006D93;
+    --verde: #4A916A;
+    --gris-uno: #808080;
+    --gris-dos: #58595B;
+    --gris-tres: #231F20;
+    --gris-op: #80808090;
+    --blanco: #FFFFFF;
+}
+
+h1{
+    color: var(--azul);
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2.4rem;
+    color: var(--verde);
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+p, span{
+    color: var(--azul-dos);
+    font-size: 1.6rem;
+}
+
+a {
+    color: var(--verde);
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*
+Header - Nav
+*/
+
+nav{
+    width: 100vw;
+}
+
+.container-nav{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--gris-tres);
+}
+
+.cont-uno{
+    width: 20%;
+    text-align: center;
+}
+
+.cont-dos{
+    width: 60%;
+}
+
+.cont-dos ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont-dos ul li a{
+    color: var(--blanco);
+    font-size: 1.6rem;
+}
+
+.cont-dos ul li a:hover{
+    color: var(--verde);
+    font-size: 1.6rem;
+}
+
+/*
+Main
+*/
+
+.container{
+    display: flex;
+    width: 80%;
+    margin: 5rem auto;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.container .contacto{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid red 1px;
+}
+
+.container .dos ul{
+    text-align: right;
+}
+
+.container .contacto ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container .contacto ul li{
+    margin: 1rem 0;
+}
+
+.container .foto{
+    width: auto;
+}
+
+.container img{
+    width: 70%;
+    margin: 0 15%;
+    max-width: 40rem;
+    border: solid var(--azul-dos) 2px;
+    border-radius: 200rem;
+}
+
+
+
