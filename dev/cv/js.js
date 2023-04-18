@@ -7,17 +7,17 @@ btnCompartir?.addEventListener('click', () => {
 async function share() {
     try {
         let shareData = {
-            title: "Compartir Contacto",
-            text: "Comparte el contacto de Charly",
-            url: "https://charlycalderon.arcsacapital.com/",
+            title: "Compartir CV",
+            text: "Comparte el CV de Carlos Ochoa",
+            url: "https://cochoa1607.github.io/dev/cv/",
         };
 
         if (!navigator.canShare) {
             alert("navigator.canShare() not supported.");
         } else if (navigator.canShare(shareData)) {
             await navigator.share({
-                title: 'Charly Calderón | Contacto',
-                url: 'https://charlycalderon.arcsacapital.com/'
+                title: 'Carlos Ochoa | CV',
+                url: 'https://cochoa1607.github.io/dev/cv/'
             });
         } else {
             alert("Specified data cannot be shared.");

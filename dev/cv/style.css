@@ -82,7 +82,7 @@ a {
     cursor: pointer;
 }
 
-.hide{
+.hidden{
     display: none;
 }
 
@@ -103,6 +103,7 @@ Compartir
     position: fixed;
     transition: var(--transitionUno);
     z-index: 999999999;
+    display: none;
 }
 
 .compartir-desktop a{
@@ -132,7 +133,7 @@ Header - Nav
 nav{
     width: 100vw;
     position: fixed;
-    z-index: 9999999;
+    z-index: 999;
 }
 
 .container-nav{
@@ -168,6 +169,26 @@ nav{
     font-size: 1.6rem;
 }
 
+#contacto{
+    padding-top: 5rem;
+}
+
+#habilidades{
+    padding-top: 3rem;
+}
+
+#descripcion{
+    padding-top: 6rem;
+}
+
+#educacion{
+    padding-top: 6rem;
+}
+
+#experiencia{
+    padding-top: 6rem;
+}
+
 /*
 Section
 */
@@ -185,13 +206,13 @@ Section
 
 .container-all{
     width: 80%;
-    z-index: 9999;
+    z-index: 99;
     position: relative;
     margin: 0 auto;
 }
 
 .datos{
-    margin: 6rem auto 0 auto;
+    margin: 1rem auto 0 auto;
 }
 
 .container-contacto{
@@ -201,11 +222,10 @@ Section
     padding: 3vh 0;
     justify-content: space-between;
     align-items: stretch;
-    z-index: 1;
 }
 
 .container-contacto .contacto{
-    width: 40%;
+    width: 38%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -226,6 +246,16 @@ Section
     margin: 0;
     color: var(--azul-claro);
     overflow: hidden;
+}
+
+.container-contacto .contacto ul li a{
+    color: var(--naranja);
+    
+    transition: var(--transition);
+}
+
+.container-contacto .contacto ul li a:hover{
+    color: var(--verde-claro);
 }
 
 .container-contacto .foto{
@@ -254,7 +284,7 @@ Redes
     margin: auto;
     border-bottom: solid var(--verde) .2rem;
     position: relative;
-    z-index: 9999999999;
+    z-index: 99;
 }
 
 .container-redes{
@@ -271,13 +301,13 @@ Redes
 .container-redes .icon i{
     font-size: 2.2rem;
     margin: 1rem;
-    color: var(--azul);
+    color: var(--naranja);
     transition: var(--transition);
 }
 
 .container-redes .icon i:hover{
     transform: scale(1.2);
-    color: var(--azul-claro);
+    color: var(--verde-claro);
 }
 
 /*
@@ -289,6 +319,10 @@ Habilidades
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.habilidades h2{
+    text-align: center;
 }
 
 .container-habilidades{
@@ -379,7 +413,7 @@ Texto
 
 .texto-line{
     width: 50%;
-    margin: 0 0 4rem 0;
+    margin: 0;
     height: auto;
     border-top: solid var(--verde) .2rem;
 }
@@ -422,8 +456,12 @@ Texto
     text-align: right;
 }
 
+.space{
+    margin-bottom: 5rem;
+}
 
-@media only screen and (max-width: 599px) and (min-width: 150px) {
+
+@media only screen and (max-width: 799px) and (min-width: 150px) {
 
 
     .container-nav{
@@ -459,6 +497,114 @@ Texto
         color: var(--naranja);
     }
 
+    .container-all{
+        width: 80%;
+        margin: 2rem auto 0 auto;
+    }
+
+    .container-contacto{
+        display: flex;
+        flex-direction: column;
+        padding: 3vh 0;
+        text-align: center;
+        justify-content: space-around;
+    }
     
+    .container-contacto .contacto{
+        width: 100%;
+        order: 2;
+    }
+
+    .container-contacto .dos ul{
+        text-align: center;
+    }
+
+    .container-contacto .contacto ul li{
+        margin: .3rem;
+    }
+
+    .container-contacto .foto{
+        width: 50%;
+        margin: auto;
+    }
+
+    .container-contacto img{
+        max-width: 17rem;
+        order: 1;
+    }
+
+    /*
+    Habilidades
+    */
+
+    .habilidades{
+        margin: 4rem auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-habilidades{
+        width: 100%;
+        min-width: 14rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .habilidad{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 3rem 0;
+        width: 10rem;
+    }
+
+    .container-habilidades .icon .circulos{
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 .2rem;
+    }
+
+    .container-habilidades .icon img{
+        width: 2rem;
+    }
+
+
+    .container-habilidades .title{
+        width: 100%;
+        text-align: center;
+        margin: 0 0 2rem 0;
+        text-transform: uppercase;
+    }
+
+    /*
+    Texto
+    */
+
+    .texto-line{
+        margin: 0 auto 4rem auto;
+    }
+
+    .texto-line-right{
+        margin: 0 auto 4rem auto;
+    }
+
+    .texto h4{
+        text-align: center;
+    }
+
+    .texto p{
+        margin: 0 auto 0 auto;
+        text-align: justify;
+    }
+
+    .right h4{
+        text-align: center;
+    }
+
+    .right p{
+        margin: 0 auto 0 auto;
+        text-align: justify;
+    }
+
 }
 
