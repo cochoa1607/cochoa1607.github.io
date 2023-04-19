@@ -12,8 +12,12 @@ html {
   font-size: 62.5%;
 }
 
-/* Colores ------------------------------------------------------------------------------------------------------------------------------------ */
-/* Títulos y textos ---------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------
+Colores
+-------------------------------------------------- */
+/* --------------------------------------------------
+Títulos y textos
+-------------------------------------------------- */
 .carousel-caption h1 {
   color: #ffffff;
   text-transform: uppercase;
@@ -94,7 +98,9 @@ a {
   margin: 12rem 0 8rem 0;
 }
 
-/* Navbar ---------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------
+Navbar
+-------------------------------------------------- */
 .navbar {
   background-color: #95D4E1;
   margin: 0;
@@ -142,7 +148,9 @@ a {
   padding: 1rem 3rem;
 }
 
-/* Carrusel ---------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------
+Carrusel
+-------------------------------------------------- */
 .carousel button {
   opacity: 100%;
   width: 5%;
@@ -199,7 +207,9 @@ a {
   text-align: left;
 }
 
-/* Pleca amarilla ---------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------
+Pleca amarilla
+-------------------------------------------------- */
 .pleca {
   background-color: #FED72A;
   padding: 10px 0;
@@ -228,7 +238,9 @@ a {
   font-size: 2rem;
 }
 
-/* Normalización secciones ---------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------
+Normalización de secciones
+-------------------------------------------------- */
 .tarjetas {
   justify-content: center;
 }
@@ -256,73 +268,4 @@ a {
 .boton:hover {
   background-color: #1E5F66;
   border: solid #FED72A 2px;
-}
-
-/* Actividades del mes ---------------------------------------------------------------------------------------------------*/
-.card-body h3,
-.card-body h4,
-.card-body p {
-  padding: 20px;
-}
-
-.card-actividades {
-  border-radius: 10px !important;
-  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
-  padding: 10px 0 40px 0;
-  border: solid #36997C 1px !important;
-}
-
-/* Programas ---------------------------------------------------------------------------------------------------*/
-.card-programas {
-  border-radius: 10px !important;
-  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
-  padding: 0 0 40px 0;
-  border: solid #1E5F66 1px !important;
-}
-
-/* Logros ---------------------------------------------------------------------------------------------------*/
-.card-logros {
-  border-radius: 10px !important;
-  padding: 0 0 40px 0;
-  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
-  padding: 0 0 40px 0;
-  border: solid #36997C 1px !important;
-}
-
-.card-logros .in-img {
-  width: 200px;
-  height: 200px;
-  margin: 2rem auto 0 auto;
-  border-radius: 1000px;
-  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card-logros .img-1 {
-  background-image: url(./img/imgCuadrada1.png) !important;
-}
-
-.card-logros .img-2 {
-  background-image: url(./img/imgCuadrada2.png) !important;
-}
-
-.card-logros .img-3 {
-  background-image: url(./img/imgCuadrada3.png) !important;
-}
-
-/* Colabora con nosotros ---------------------------------------------------------------------------------------------------*/
-.card-colabora {
-  border-radius: 10px !important;
-  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
-  padding: 0 0 40px 0;
-  border: solid #1E5F66 1px !important;
-}
-
-/* Quién es Hannah Arendt ---------------------------------------------------------------------------------------------------*/
-.hannah img {
-  width: 100%;
-}
-
-/* X ---------------------------------------------------------------------------------------------------*//*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=styles.css.map */
