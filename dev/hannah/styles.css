@@ -268,4 +268,82 @@ Normalización de secciones
 .boton:hover {
   background-color: #1E5F66;
   border: solid #FED72A 2px;
+}
+
+/* --------------------------------------------------
+Actividades del mes
+-------------------------------------------------- */
+.card-body h3,
+.card-body h4,
+.card-body p {
+  padding: 20px;
+}
+
+.card-actividades {
+  border-radius: 10px !important;
+  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+  padding: 10px 0 40px 0;
+  border: solid #36997C 1px !important;
+}
+
+/* --------------------------------------------------
+Programas
+-------------------------------------------------- */
+.card-programas {
+  border-radius: 10px !important;
+  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+  padding: 0 0 40px 0;
+  border: solid #1E5F66 1px !important;
+}
+
+/* --------------------------------------------------
+Logros
+-------------------------------------------------- */
+.card-logros {
+  border-radius: 10px !important;
+  padding: 0 0 40px 0;
+  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+  padding: 0 0 40px 0;
+  border: solid #36997C 1px !important;
+}
+
+.card-logros .in-img {
+  width: 200px;
+  height: 200px;
+  margin: 2rem auto 0 auto;
+  border-radius: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-logros .img-1 {
+  background-image: url(./img/imgCuadrada1.png) !important;
+}
+
+.card-logros .img-2 {
+  background-image: url(./img/imgCuadrada2.png) !important;
+}
+
+.card-logros .img-3 {
+  background-image: url(./img/imgCuadrada3.png) !important;
+}
+
+/* --------------------------------------------------
+Colabora con nosotros
+-------------------------------------------------- */
+.card-colabora {
+  border-radius: 10px !important;
+  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+  padding: 0 0 40px 0;
+  border: solid #1E5F66 1px !important;
+}
+
+/* --------------------------------------------------
+Quién es Hannah Arendt
+-------------------------------------------------- */
+.hannah img {
+  width: 100%;
+  padding: 3rem 0 1rem 0;
 }/*# sourceMappingURL=styles.css.map */
