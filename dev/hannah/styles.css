@@ -83,9 +83,9 @@ a {
 
 .carrusel-home span {
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 1rem;
   font-size: 1.8rem;
-  padding: 0 80px;
+  padding: 0 8rem;
   text-shadow: rgba(0, 0, 0, 0.1254901961) 2px 2px 2px;
   text-align: left;
 }
@@ -129,12 +129,12 @@ Navbar
 
 .menuLi .active {
   padding: 0.6rem;
-  border-bottom: #1E5F66 solid 1px;
+  border-bottom: #1E5F66 solid 0.15rem;
   font-weight: 400 !important;
 }
 
 .menuUl {
-  border: solid #1E5F66 1px !important;
+  border: solid #1E5F66 0.1rem !important;
   background-color: #95D4E1 !important;
   box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
 }
@@ -200,7 +200,7 @@ Carrusel
 
 .carrusel-home span {
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 1rem;
   font-size: 1.8rem;
   padding: 1rem 8rem;
   text-shadow: rgba(0, 0, 0, 0.1254901961) 2px 2px 2px;
@@ -212,15 +212,15 @@ Pleca amarilla
 -------------------------------------------------- */
 .pleca {
   background-color: #FED72A;
-  padding: 10px 0;
+  padding: 1rem 0;
   height: auto;
-  border-radius: 0 100px 100px 0;
+  border-radius: 0 10rem 10rem 0;
   transform: translateY(-50px);
 }
 
 .pleca p {
   color: #1E5F66;
-  margin: 20px 10% 20px 10%;
+  margin: 2rem 10% 2rem 10%;
 }
 
 .pleca a {
@@ -234,7 +234,7 @@ Pleca amarilla
 }
 
 .wa-icon {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 2rem;
   font-size: 2rem;
 }
 
@@ -247,27 +247,27 @@ Normalización de secciones
 
 .seccionDos {
   background-color: #fafafa;
-  padding: 80px 0;
-  margin: 80px 0;
+  padding: 8rem 0;
+  margin: 8rem 0;
 }
 
 .boton {
   width: auto;
-  margin: 20px auto 0 auto;
-  padding: 10px 50px;
+  margin: 2rem auto 0 auto;
+  padding: 1rem 5rem;
   font-size: 1.8rem;
   color: #ffffff;
   background-color: #36997C;
   text-decoration: none;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 3rem;
   transition: all ease-in-out 200ms;
-  border: solid #ffffff 2px;
+  border: solid #ffffff 0.2rem;
 }
 
 .boton:hover {
   background-color: #1E5F66;
-  border: solid #FED72A 2px;
+  border: solid #FED72A 0.2rem;
 }
 
 /* --------------------------------------------------
@@ -276,13 +276,13 @@ Actividades del mes
 .card-body h3,
 .card-body h4,
 .card-body p {
-  padding: 20px;
+  padding: 2rem 1rem;
 }
 
 .card-actividades {
-  border-radius: 10px !important;
+  border-radius: 1rem !important;
   box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
-  padding: 10px 0 40px 0;
+  padding: 1rem 0 4rem 0;
   border: solid #36997C 1px !important;
 }
 
@@ -290,28 +290,28 @@ Actividades del mes
 Programas
 -------------------------------------------------- */
 .card-programas {
-  border-radius: 10px !important;
+  border-radius: 1rem !important;
   box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
-  padding: 0 0 40px 0;
-  border: solid #1E5F66 1px !important;
+  padding: 0 0 4rem 0;
+  border: solid #1E5F66 0.1rem !important;
 }
 
 /* --------------------------------------------------
 Logros
 -------------------------------------------------- */
 .card-logros {
-  border-radius: 10px !important;
-  padding: 0 0 40px 0;
+  border-radius: 1rem !important;
+  padding: 0 0 4rem 0;
   box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
-  padding: 0 0 40px 0;
+  padding: 0 0 4rem 0;
   border: solid #36997C 1px !important;
 }
 
 .card-logros .in-img {
-  width: 200px;
-  height: 200px;
+  width: 20rem;
+  height: 20rem;
   margin: 2rem auto 0 auto;
-  border-radius: 1000px;
+  border-radius: 100rem;
   box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
   background-position: center;
   background-size: cover;
@@ -334,10 +334,10 @@ Logros
 Colabora con nosotros
 -------------------------------------------------- */
 .card-colabora {
-  border-radius: 10px !important;
+  border-radius: 1rem !important;
   box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
-  padding: 0 0 40px 0;
-  border: solid #1E5F66 1px !important;
+  padding: 0 0 4rem 0;
+  border: solid #1E5F66 0.1rem !important;
 }
 
 /* --------------------------------------------------
@@ -345,5 +345,5 @@ Quién es Hannah Arendt
 -------------------------------------------------- */
 .hannah img {
   width: 100%;
-  padding: 3rem 0 1rem 0;
+  padding: 4rem 0 0 0;
 }/*# sourceMappingURL=styles.css.map */

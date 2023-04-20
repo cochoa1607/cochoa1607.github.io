@@ -1,3 +1,27 @@
 .centroHannah{
-    margin-top: 10rem;
+    margin-top: 12rem;
+}
+
+.objetivos .imagen{
+    width: 100%;
+    height: auto;
+    margin: 5rem;
+}
+
+.imagen img{
+    width: auto;
+    padding: 0;
+    border-radius: $radius;
+}
+
+@media (min-width: $breakpoint-lg) {
+
+    .objetivos .imagen{
+        display: none !important;
+        width: 10px !important;
+    }
+
+    .objetivos p{
+        border: solid red 2px;
+    }
 }

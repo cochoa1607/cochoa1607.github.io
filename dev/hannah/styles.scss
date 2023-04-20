@@ -31,9 +31,15 @@ Colores
     $shadowText: #00000020 2px 2px 2px;
     $shadowBox: #00000019 10px 10px 15px;
 
+    $radius: 1rem;
+    $radiusDos: 3rem;
+
     $transitions: all ease-in-out 200ms;
     $transitionsLarge: all ease-in-out 400ms;
     $transitionsXLarge: all ease-in-out 800ms;
+
+    $breakpoint-lg: 992px;
+    $breakpoint-md: 992px;
 
 /* --------------------------------------------------
 Títulos y textos
@@ -72,7 +78,7 @@ body h4 {
 body h5 {
     color: $verde;
     text-transform: uppercase;
-    border-radius: 1rem;
+    border-radius: $radius;
     font-size: 1.8rem;
     text-align: left;
     padding: 0 8rem;
@@ -82,7 +88,7 @@ body h5 {
 body h6 {
     color: $blanco;
     text-transform: uppercase;
-    border-radius: 1rem;
+    border-radius: $radius;
     font-size: 4rem;
     text-align: left;
     padding: 0 8rem;
@@ -103,9 +109,9 @@ a {
 
 .carrusel-home span {
     color: $blanco;
-    border-radius: 10px;
+    border-radius: $radius;
     font-size: 1.8rem;
-    padding: 0 80px;
+    padding: 0 8rem;
     text-shadow: $shadowText;
     text-align: left;
 }
@@ -150,12 +156,12 @@ Navbar
 
 .menuLi .active{
     padding: .6rem;
-    border-bottom: $verde solid 1px;
+    border-bottom: $verde solid .15rem;
     font-weight: 400 !important;
 }
 
 .menuUl {
-    border: solid $verde 1px !important;
+    border: solid $verde .1rem !important;
     background-color: $azul !important;
     box-shadow: $shadowBox ;
 }
@@ -216,13 +222,13 @@ Carrusel
 
 .carousel-caption {
     background-color: $azul;
-    border-radius: 1rem;
+    border-radius: $radius;
     transform: translateY(-50px);
 }
 
 .carrusel-home span {
     color: $blanco;
-    border-radius: 10px;
+    border-radius: $radius;
     font-size: 1.8rem;
     padding: 1rem 8rem;
     text-shadow: $shadowText;
@@ -235,15 +241,15 @@ Pleca amarilla
 
 .pleca {
     background-color: $amarillo;
-    padding: 10px 0;
+    padding: 1rem 0;
     height: auto;
-    border-radius: 0 100px 100px 0;
+    border-radius: 0 10rem 10rem 0;
     transform: translateY(-50px);
 }
 
 .pleca p {
     color: $verde;
-    margin: 20px 10% 20px 10%;
+    margin: 2rem 10% 2rem 10%;
 }
 
 .pleca a {
@@ -257,7 +263,7 @@ Pleca amarilla
 }
 
 .wa-icon {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 2rem;
     font-size: 2rem;
 }
 
@@ -271,27 +277,27 @@ Normalización de secciones
 
 .seccionDos {
     background-color: $gris;
-    padding: 80px 0;
-    margin: 80px 0;
+    padding: 8rem 0;
+    margin: 8rem 0;
 }
 
 .boton{
     width: auto;
-    margin: 20px auto 0 auto;
-    padding: 10px 50px;
+    margin: 2rem auto 0 auto;
+    padding: 1rem 5rem;
     font-size: 1.8rem;
     color: $blanco;
     background-color: $verde-claro;
     text-decoration: none;
     text-align: center;
-    border-radius: 30px;
+    border-radius: $radiusDos;
     transition: $transitions;
-    border: solid $blanco 2px;
+    border: solid $blanco .2rem;
 }
 
 .boton:hover{
     background-color: $verde;
-    border: solid $amarillo 2px;
+    border: solid $amarillo .2rem;
 }
 
 /* --------------------------------------------------
@@ -301,13 +307,13 @@ Actividades del mes
 .card-body h3,
 .card-body h4,
 .card-body p{
-    padding: 20px;
+    padding: 2rem 1rem;
 }
 
 .card-actividades{
-    border-radius: 10px !important;
+    border-radius: $radius !important;
     box-shadow: $shadowBox;
-    padding: 10px 0 40px 0;
+    padding: 1rem 0 4rem 0;
     border: solid $verde-claro 1px !important;
 }
 
@@ -316,10 +322,10 @@ Programas
 -------------------------------------------------- */
 
 .card-programas{
-    border-radius: 10px !important;
+    border-radius: $radius !important;
     box-shadow: $shadowBox;
-    padding: 0 0 40px 0;
-    border: solid $verde 1px !important;
+    padding: 0 0 4rem 0;
+    border: solid $verde .1rem !important;
 }
 
 /* --------------------------------------------------
@@ -327,18 +333,18 @@ Logros
 -------------------------------------------------- */
 
 .card-logros{
-    border-radius: 10px !important;
-    padding: 0 0 40px 0;
+    border-radius: $radius !important;
+    padding: 0 0 4rem 0;
     box-shadow: $shadowBox;
-    padding: 0 0 40px 0;
+    padding: 0 0 4rem 0;
     border: solid $verde-claro 1px !important;
 }
 
 .card-logros .in-img{
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
     margin:  2rem auto 0 auto;
-    border-radius: 1000px;
+    border-radius: 100rem;
     box-shadow: $shadowBox;
     background-position: center;
     background-size: cover;
@@ -362,10 +368,10 @@ Colabora con nosotros
 -------------------------------------------------- */
 
 .card-colabora{
-    border-radius: 10px !important;
+    border-radius: $radius !important;
     box-shadow: $shadowBox;
-    padding: 0 0 40px 0;
-    border: solid $verde 1px !important;
+    padding: 0 0 4rem 0;
+    border: solid $verde .1rem !important;
 }
 
 /* --------------------------------------------------
@@ -374,5 +380,5 @@ Quién es Hannah Arendt
 
 .hannah img{
     width: 100%;
-    padding: 3rem 0 1rem 0;
+    padding: 4rem 0 0 0;
 }

@@ -1,3 +1,15 @@
 .centroHannah {
-  margin-top: 10rem;
+  margin-top: 12rem;
+}
+
+.objetivos .imagen {
+  width: 100%;
+  height: auto;
+  margin: 5rem;
+}
+
+.imagen img {
+  width: auto;
+  padding: 0;
+  border-radius: 1rem;
 }/*# sourceMappingURL=programas.css.map */
