@@ -1,0 +1,478 @@
+
+
+/*Nosotros ---------------*/
+
+.sectionNosotros{
+    background-image: url(../img/nosotros.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+/*Información --------------------------------------------------------------------*/
+
+.sectionInformacion{
+    padding: var(--spaceSection);
+    display: flex;
+}
+
+.sectionInformacion .listaInformacion{
+    width: 60%;
+    height: 500px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--azul-fondos);
+    border-radius: 0 5px 5px 0;
+}
+
+.sectionInformacion .listaInformacion ul{
+    width: 70%;
+    margin: auto;
+    color: var(--blanco);
+    list-style: none;
+}
+
+.sectionInformacion .listaInformacion li::before{
+    content: url(../img/list.png) " ";
+  }
+
+
+.sectionInformacion .listaInformacion li{
+    margin: 10px 15px;
+    padding: 0 10px;
+    overflow-x: visible;
+    text-indent: -15px;
+}
+
+.sectionInformacion .imgInformacion{
+    width: 45%;
+    height: 450px;
+    margin: 25px 0 0 0;
+    background-image: url(../img/nosotrosInfo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+/*Ventajas ---------------------------------------------------------------------------*/
+
+.sectionVentajas{
+    width: 100vw;
+    padding: var(--spaceSection);
+    background-color: var(--morado-claro-op);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cajaVentajas{
+    background-color: var(--blanco);
+    margin: 50px 40% 50px 0;
+    padding: 50px;
+    width: 60%;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cajaVentajas p {
+    margin: 20px 0 0 0;
+}
+
+.ventajasText{
+    width: 60%;
+    max-width: 700px;
+}
+
+.ventajasIcono{
+    width: 20%;
+    max-width: 150px;
+    min-width: 100px;
+}
+
+.ventajasDerecha{
+    margin: 0 0 0 40%;
+    border-radius: 5px 0 0 5px;
+    flex-direction: row;
+}
+
+.sectionVentajas button{
+    width: 220px;
+}
+
+/*Comparativo ---------------------------------------------------------------------*/
+
+.sectionComparativo{
+    width: 100vw;
+    padding: var(--spaceSection);
+}
+
+.containerSectionComparativo{
+    width: 80%;
+    margin: 40px auto;
+    padding:  var(--spaceDown);
+    padding-top: 50px;
+    background-color: var(--blanco);
+}
+
+.containerComparativo li{
+    list-style-position: center;
+    padding: 0 5px;
+}
+
+.containerComparativo li::before{
+    content: url(../img/listM.png) " ";
+  }
+
+.containerComparativo p{
+    margin: 0 0 0 30px;
+}
+
+.containerComparativo{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.cajaComparativoUno {
+    border-radius: 5px;
+    background-color: var(--blanco);
+}
+
+.cajaComparativoUno,
+.cajaComparativoDos{
+    width: 40%;
+    max-width: 450px;
+    min-width: 350px;
+    margin: 10px 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cajaComparativoUno h5{
+    font-size: 2.6rem;
+    color: var(--morado);
+    margin: 30px 0 10px 0;
+}
+
+.cajaComparativoDos h5{
+    font-size: 2.6rem;
+    color: var(--negro);
+    margin: 30px 0 10px 0;
+}
+
+.cajaComparativoUno h3,
+.cajaComparativoDos h3{
+    color: var(--blanco);
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.comparativoUno{
+    background-color: var(--morado);
+}
+
+.comparativoDos{
+    background-color: var(--azul);
+}
+
+.comparativoTres{
+    background-color: var(--gris-medio);
+}
+
+.comparativoCinco{
+    text-align: center;
+}
+
+.comparativoCinco{
+    text-align: center;
+}
+
+.comparativoUno,
+.comparativoDos,
+.comparativoTres{
+    border-radius: 5px;
+    box-shadow: var(--boxShadow);
+    padding: 2px 0;
+}
+
+.comparativoCuatro,
+.comparativoCinco{
+    border-radius: 5px;
+    box-shadow: var(--boxShadow);
+    background-color: var(--blanco);
+    margin: 5px 0 20px 0;
+    padding: 10px 0;
+}
+
+/*Tablet ---------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1099px) and (min-width: 640px){
+
+    /*Información ----------------------------------------------------------------*/
+
+    .sectionInformacion{
+        padding: var(--spaceSection);
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .sectionInformacion .listaInformacion{
+        width: 100%;
+        height: 60vh;
+        z-index: 9;
+    }
+    
+    .listaInformacion h5{
+        padding: var(--spaceDown);
+    }
+
+    .sectionInformacion .listaInformacion ul{
+        width: 80%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .sectionInformacion .imgInformacion{
+        width: 100%;
+        height: 60vh;
+        margin: auto;
+        border-radius: 0;
+        position: relative;
+        background-image: url(../img/nosotrosInfo.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        position: absolute;
+        z-index: 1;
+    }
+    
+    /*Section Ventajas ----------------------------------------------------------------*/
+
+    .sectionVentajas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .cajaVentajas{
+        width: 80%;
+        margin: 0 auto 50px auto;
+        flex-direction: column;
+    }
+
+    .ventajasIcono{
+        width: 12%;
+        margin: 0 0 20px 0;
+    }
+
+    .cajaVentajas .ventajasText{
+        width: 90%;
+        max-width: 700px;
+    }
+
+    .cajaVentajas h3,
+    .cajaVentajas p{
+        text-align: center;
+    }
+
+    /*Comparativo ---------------------------------------------------------------------*/
+
+    .sectionComparativo{
+        width: 100vw;
+    }
+
+    .containerSectionComparativo{
+        width: 90%;
+        padding: 50px 0;
+    }
+
+    .containerComparativo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cajaComparativoDos,
+    .cajaComparativoUno{
+
+        width: 90%;
+        margin: auto;
+        max-width: none;
+        min-width: none;
+        padding: 5px;
+    }
+
+    
+}
+
+/* Mobile--------------------------------------------------------------*/
+@media only screen and (max-width: 640px){
+    
+    /*Información --------------------------------------------------------------------*/
+
+    .sectionInformacion{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    
+    .sectionInformacion .listaInformacion{
+        width: 100vw;
+        height: 630px;
+        padding: 0 10vw 50px 10vw;
+        background: none;
+        margin: 0;
+        z-index: 9;
+        border-radius: 0;
+        background-color: var(--azul-fondos);
+    }
+    
+    .sectionInformacion .listaInformacion h2{
+        width: 100%;
+    }
+
+    .sectionInformacion .listaInformacion ul{
+        width: 100%;
+        margin: 30px auto 0 auto;
+    }
+
+    .sectionInformacion .listaInformacion li{
+        margin: 20px 10px;
+        padding: 0 10px;
+    }
+
+    .sectionInformacion .imgInformacion{
+        width: 100%;
+        height: 630px;
+        border-radius: 0;
+        margin: auto;
+        position: absolute;
+        z-index: 1;
+    }
+
+    /*Ventajas ---------------------------------------------------------------------------*/
+
+    .sectionComparativo{
+        width: 100vw;
+        display: flex;
+    }
+
+    .containerSectionComparativo {
+        background-color: var(--gris);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .containerSectionComparativo p{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .cajaVentajas{
+        margin: 50px auto 50px auto;
+        padding: 50px;
+        width: 90%;
+        border-radius: 5px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cajaVentajas p {
+        margin: 20px 0 0 0;
+    }
+
+    .ventajasText{
+        width: 100%;
+        max-width: none;
+    }
+
+    .ventajasIcono{
+        width: 40%;
+        max-width: 110px;
+        min-width: 90px;
+    }
+
+    .ventajasDerecha{
+        margin: 50px auto 0 auto;
+        padding: 50px;
+        width: 90%;
+        border-radius: 5px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*Comparativo ---------------------------------------------------------------------*/
+
+    .sectionComparativo{
+        width: 100vw;
+    }
+
+    .containerSectionComparativo h2{
+        width: 76%;
+        margin: 0 auto 30px auto;
+    }
+
+    .containerSectionComparativo{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .containerSectionComparativo .comparativoNota{
+        width: 80%;
+    }
+
+    .containerComparativo{
+        flex-direction: column;
+    }
+    
+    .containerComparativo li{
+        padding: 2px 0;
+        padding: 0 10px;
+    }
+
+    .containerComparativo p{
+        margin: 0;
+    }
+
+    .cajaComparativoUno {
+        background-color: var(--morado-claro-op);
+    }
+    
+    .cajaComparativoDos {
+        background-color: var(--gris);
+
+    }
+
+    .cajaComparativoUno,
+    .cajaComparativoDos{
+        width: 90%;
+        padding: 10px 5%;
+        margin: 20px auto;
+        max-width: none;
+        min-width: 100px;
+        border-radius: 5px;
+    }
+
+    .cajaComparativoUno h5,
+    .cajaComparativoDos h5{
+        margin: 0 0 10px 0;
+    }
+
+    .cajaComparativoUno h3,
+    .cajaComparativoDos h3{
+        font-size: 1.6rem;
+    }
+
+}
