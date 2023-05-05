@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    overflow-x: hidden;
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--gris);
+}
+
+/* ----------------------------------------
+Colores
+---------------------------------------- */
+
+:root {
+    
+    --primero: #4E177C;
+    --segundo: #214186;
+    --tercero: #252A2E;
+    --cuarto: #575757;
+    --quinto: #CDC8E1;
+    --link: #0FBA85;
+    --link-hover: #22EDAE;
+    --negro: #000000;
+    --blanco: #ffffff;
+    --gris: #FAFAFA;
+    --disabled: #D4D4D4;
+    --shadow: #0000001A;
+
+    --sans-serif: 'Maven Pro', sans-serif;
+    --serif: 'Source Serif Pro', serif;
+
+    --transitions: all ease-in-out 300ms;
+    --transitionsLarge: all ease-in-out 600ms;
+    --transitionsXLarge: all ease-in-out 1200ms;
+
+    --textShadow: var(--shadow) 2px 2px 1px;
+    --boxShadow: var(--shadow) 4px 4px 6px;
+
+    --spaceSection: 10rem 0;
+    --spaceDown: 0 0 5rem 0;
+}
+
+/* ----------------------------------------
+Espacios
+---------------------------------------- */
+
+.espacio{
+    padding: 2rem 0;
+}
+
+/* ----------------------------------------
+Sombras
+---------------------------------------- */
+
+.shadow {
+    text-shadow: var(--textShadow);
+}
+
+.shadowBox {
+    box-shadow: var(--boxShadow);
+}
+
+/* ----------------------------------------
+Textos
+---------------------------------------- */
+
+h1 {
+    font-size: 4.0rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: var(--tercero);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: var(--blanco);
+    font-weight: 100;
+}
+
+h4 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--negro);
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--negro);
+    text-align: center;
+    margin: 10rem 0;
+    font-weight: 600;
+}
+
+.const{
+    font-size: 6.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+span {
+    font-size: 1.6rem;
+    color: var(--primero);
+    font-weight: 400;
+}
+
+/* ----------------------------------------
+Botones y vínculos
+---------------------------------------- */
+
+.content button{
+    background-color: var(--segundo);
+    border: none;
+    margin: 1rem;
+    color: var(--blanco);
+    transition: var(--transitions);
+    cursor: pointer;
+}
+
+.boton{
+    width: auto;
+    font-size: 1.6rem;
+    padding: 1.2rem 7rem;
+    border-radius: .6rem;
+    margin: 5rem auto;
+    color: var(--blanco);
+    background-color: var(--segundo);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transitions);
+}
+
+.boton:hover {
+    transform: scale(1.03);
+}
+
+/* ----------------------------------------
+Botón up
+---------------------------------------- */
+
+.botonUp{
+    margin: 0;
+    padding: 0;
+    right: 0;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 9999;
+    animation: move-up 3s linear infinite;
+    transition: var(--transitionsXLarge);
+}
+
+.botonUpS{
+    width: 45px;
+    height: 60px;
+    margin: 0;
+    padding: 2px 10px 5px 10px;
+    border-radius: 50px;
+    background-color: var(--quinto);
+    border: solid 1px var(--blanco);
+    box-shadow: var(--boxShadow);
+}
+.botonUpS .st0{
+    stroke: var(--blanco);
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+/* ----------------------------------------
+Header
+---------------------------------------- */
+
+header{
+    width: 100vw;
+    max-height: 8.1rem;
+}
+  
+header {
+    position: fixed;
+    transition: var(--transitionsLarge);
+    background-color: var(--tercero);
+    z-index: 9999;
+}
+  
+header #selected {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+header #selected:hover {
+    color: var(--blanco);
+    cursor: default;
+}
+  
+header .containerMenu {
+    width: auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+  
+header #logoBlanco {
+    width: 4rem;
+    height: auto;
+    fill: var(--blanco);
+}
+  
+header #logoBlanco:hover {
+    fill: var(--quinto);
+}
+  
+header .containerMenu ul {
+    display: flex;
+    justify-content: space-around;
+}
+  
+header .containerMenu ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    list-style: none;
+}
+  
+header .containerMenu a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+  
+header .containerMenu a:hover {
+    font-weight: 500;
+    color: var(--quinto);
+    text-decoration: underline;
+}
+  
+header .menuIcon {
+    font-size: 2.6rem;
+    color: var(--blanco);
+}
+  
+header .menuIcon:hover {
+    color: var(--quinto);
+}
+
+/* ----------------------------------------
+Container All
+---------------------------------------- */
+
+.container-all{
+    width: 100vw;
+}
+
+/* ----------------------------------------
+Aside
+---------------------------------------- */
+
+aside .barra{
+    width: 19vw;
+    min-width: 40rem;
+    position: fixed;
+    height: 92.6vh;
+    margin-top: 8rem;
+    background-color: var(--gris);
+    border: solid var(--cuarto) 2px;
+    transition: var(--transitions);
+}
+
+aside .top{
+    padding: 1rem 2rem;
+    background-color: var(--cuarto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid var(--gris) .1rem;
+}
+
+aside .top .flecha{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+aside .top .flecha::after{
+    content: "\f060  |";
+    color: var(--blanco);
+}
+
+aside i{
+    color: var(--blanco);
+}
+
+aside h3{
+    padding: 0 1rem;
+}
+
+aside .container{
+    display: flex;
+    flex-direction: column;
+    border: solid var(--gris) .1rem;
+}
+
+aside .container .title{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primero);
+}
+
+aside .container .title .name{
+    display: flex;
+    align-items: center;
+}
+
+aside .container .title .name button{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: var(--primero);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .container .title .name .fa-circle-info{
+    font-size: 1.4rem;
+    position: relative;
+    padding: .2rem;
+    top: 0;
+}
+
+aside .container .title .name .fa-circle-info:hover{
+    color: var(--quinto);
+}
+
+aside .container .content{
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+aside .container .content .grafica span{
+    color: var(--primero);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+aside .container .content .grafica span::before{
+    content: "Vencimiento:";
+}
+
+.disabled{
+    background-color: var(--disabled) !important;
+}
+
+.disabled button{
+    background-color: var(--disabled) !important;
+}
+
+/* ----------------------------------------
+Aside Active
+---------------------------------------- */
+
+aside .activebarra{
+    width: 5%;
+    min-width: 8rem;
+    max-width: 10rem;
+}
+
+aside .activebarra .top{
+    display: flex;
+    justify-content: center;
+}
+
+aside .activebarra .top .flecha::after{
+    content: "|  \f061";
+    color: var(--blanco);
+}
+
+aside .activebarra .top h3,
+aside .activebarra .top .fa-plus{
+    display: none;
+}
+
+aside .activebarra .container .title{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+aside .activebarra .container h3,
+aside .activebarra .container button,
+aside .activebarra .container .bars,
+aside .activebarra .container .bars i{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside .activebarra .container .title .name button{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+aside .activebarra .container .content{
+    display: none;
+}
+
+aside .activebarra .container{
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------------------------------
+Dialog
+---------------------------------------- */
+
+#modal::backdrop {
+    background-color: #252A2E60;
+}
+
+#modal{
+    max-width: 70ch;
+    padding: 2rem 4rem;
+    margin: auto;
+    text-align: center;
+    border-radius: .6rem;
+    border: solid var(--primero) .2rem;
+}
+
+#modal span{
+    color: var(--primero);
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#modal p{
+    text-align: justify;
+    padding: 3rem 0;
+}
+
+#modal button{
+    color: var(--blanco);
+    background-color: var(--primero);
+    padding: .5rem 5rem;
+    border: none;
+    border-radius: .5rem;
+    transition: var(--transitions);
+}
+
+#modal button:hover{
+    transform: scale(1.02);
+}
+
+/* ----------------------------------------
+Section
+---------------------------------------- */
+
+.sectionContainer{
+    width: 80vw;
+    margin-left: 20vw;
+}
+
+.titleSection{
+    width: 100%;
+    margin: 12rem 0 0 0;
+}
+
+.titleSection h2{
+    text-align: center;
+}
+
+.sectionContainer .title{
+    width: 100%;
+    margin: 0 auto 3rem auto;
+}
+
+.sectionContainer .title-text{
+    font-size: 1.6rem;
+    color: var(--negro);
+    font-weight: 400;
+}
+
+.sectionContainer .container{
+    width: 90%;
+    margin: 5rem auto;
+    animation: ease-in-out aparecer 1.2s;
+}
+
+/* ----------------------------------------
+KeyFrames
+---------------------------------------- */
+
+@keyframes move-up {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(.8);
+    }
+    
+    80% {
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ----------------------------------------
+Tablet & Mobile
+---------------------------------------- */
+@media only screen and (max-width: 1199px) {
+
+    /* ----------------------------------------
+    Menu
+    ---------------------------------------- */
+
+    .bars__menu {
+        width: 3.4rem;
+        padding: .4rem .7rem;
+        height: 3rem;
+        border-radius: .4rem;
+        cursor: pointer;
+        position: fixed;
+        top: 4rem;
+        right: -.5rem;
+        transform: translate(-50%, -50%);
+        overflow: visible;
+        z-index: 99999;
+        background-color: var(--primero);
+    }
+
+    .bars__menu span {
+        display: block;
+        width: 100%;
+        height: .2rem;
+        background-color: var(--blanco);
+        margin: .4rem 0 0 0;
+        border-radius: .1rem;
+        transform-origin: 0px 100%;
+        transition: var(--transitions);
+    }
+
+    .activeline1__bars-menu {
+        transform: rotate(47deg) translate(0, -.1rem);
+    }
+
+    .activeline2__bars-menu {
+        opacity: 0;
+        margin-left: -3rem;
+    }
+
+    .activeline3__bars-menu {
+        transform: rotate(-47deg) translate(0, .25rem);
+    }
+
+    .logoBloc {
+        display: none;
+    }
+
+    /* ----------------------------------------
+    Header menu
+    ---------------------------------------- */
+
+    header {
+        width: 60vw;
+        height: 100vh;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--tercero);
+        transition: var(--transitionsLarge);
+        transform: translateX(110rem);
+        z-index: 9;
+        position: fixed;
+        max-height: none;
+    }
+    
+    header #selected {
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .containerMenu {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .containerMenu ul {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .containerMenu ul li {
+        padding: 2rem 0;
+    }
+
+    .activecontainerMenu {
+        transform: translateX(0);
+    }
+
+    /* ----------------------------------------
+    Botón Up
+    ---------------------------------------- */
+
+    .botonUp{
+        left: calc(50vw - 18px);
+    }
+
+    .botonUpS{
+        width: 3.6rem;
+        height: 5rem;
+        padding: .2rem .6rem .5rem .6rem;
+    }
+
+    .botonUpS .st0{
+        stroke: var(--blanco);
+        fill: none;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
+
+    /* ----------------------------------------
+    Aside
+    ---------------------------------------- */
+    aside{
+        display: none;
+    }
+}
+
+/* ----------------------------------------
+Mobile
+---------------------------------------- */
+@media only screen and (max-width: 640px){
+
+    /* ----------------------------------------
+    Textos
+    ---------------------------------------- */
+
+    h1 {
+        font-size: 3.0rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        color: var(--segundo);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 2rem;
+        color: var(--segundo);
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 3.8rem;
+        color: var(--blanco);
+        font-weight: 400;
+        font-family: var(--serif);
+    }
+
+    h5 {
+        font-size: 1.8rem;
+        color: var(--blanco);
+        font-weight: 500;
+    }
+
+    h6 {
+        font-size: 1.6rem;
+        color: var(--blanco);
+        font-weight: 300;
+        font-family: var(--serif);
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    li {
+        font-size: 1.4rem;
+    }
+
+    /* ----------------------------------------
+    Botónes
+    ---------------------------------------- */
+
+    .primary {
+        min-width: none;
+        max-width: none;
+        font-size: 1.4rem;
+    }
+    
+    .secondary {
+        min-width: none;
+        max-width: none;
+        font-size: 1.4rem;
+    }
+    
+    .terciary {
+        min-width: none;
+        max-width: none;
+        font-size: 1.4rem;
+    }
+    
+}
+
+/* ----------------------------------------
+Querys para el sectionContainer
+---------------------------------------- */
+
+@media only screen and (max-width: 1999px) {
+
+    /* ----------------------------------------
+    Form
+    ---------------------------------------- */
+
+    .sectionContainer{
+        width: 78vw;
+        margin: 0 0 0 22vw;
+    }
+}
+
+@media only screen and (max-width: 1699px) {
+
+    /* ----------------------------------------
+    Form
+    ---------------------------------------- */
+
+    .sectionContainer{
+        width: 75vw;
+        margin: 0 0 0 25vw;
+    }
+}
+
+@media only screen and (max-width: 1499px) {
+
+    /* ----------------------------------------
+    Form
+    ---------------------------------------- */
+
+    .sectionContainer{
+        width: 72vw;
+        margin: 0 0 0 28vw;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+
+    /* ----------------------------------------
+    Form
+    ---------------------------------------- */
+
+    .sectionContainer{
+        width: 70vw;
+        margin: 0 0 0 30vw;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+
+    /* ----------------------------------------
+    Form
+    ---------------------------------------- */
+
+    .sectionContainer{
+        width: 68vw;
+        margin: 0 0 0 32vw;
+    }
+}

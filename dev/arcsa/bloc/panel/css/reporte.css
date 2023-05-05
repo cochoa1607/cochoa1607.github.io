@@ -1,0 +1,105 @@
+/* ----------------------------------------
+Form
+---------------------------------------- */
+
+.container form input::-webkit-input-placeholder {
+    color: var(--primero);
+    font-size: 1.4rem;
+}
+
+.container .form-line {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container form fieldset{
+    width: 22%;
+    border-radius: .5rem;
+    border: 1px solid var(--gris);
+    padding: 0 1.5rem .8rem .5rem;
+}
+
+.container form .campo-obligatorio{
+    width: 22%;
+    border-radius: .5rem;
+    border: 1px solid var(--segundo);
+    padding: 0 1.5rem .8rem .5rem;
+}
+
+.container form .campo-obligatorio legend{
+    color: var(--segundo);
+}
+
+.container form .campo-obligatorio legend::before{
+    content: "*";
+}
+
+.container form legend{
+    padding: 0 1rem;
+    color: var(--gris);
+}
+
+.container form input{
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    padding-top: .8rem;
+    background-color: var(--gris);
+}
+
+.container form input:focus {
+    background-color: none;
+    color: none;
+    outline: none;
+}
+
+.container form select {
+    width: 100%;
+    padding: .5rem;
+    padding-top: .8rem;
+    border: none;
+    background-color: var(--gris);
+}
+
+.container form select:focus {
+    background-color: none;
+    outline: none;
+}
+
+.container form .monto-solicitado {
+    width: 22%;
+    display: flex;
+}
+
+.container form .campo-gris {
+    border: solid var(--gris) 1px;
+}
+
+.container form button[type=submit]{
+    width: auto;
+    font-size: 1.6rem;
+    padding: 1.2rem 7rem;
+    border-radius: .6rem;
+    margin: 5rem auto;
+    color: var(--blanco);
+    background-color: var(--segundo);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transitions);
+}
+
+.container form button[type=submit]:hover{
+    transform: scale(1.03);
+}
+
+.field-vacio{
+    width: 22%;
+}
+
+.container .obligatorio{
+    color: var(--segundo);
+}
