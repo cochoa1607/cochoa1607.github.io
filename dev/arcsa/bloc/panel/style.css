@@ -27,11 +27,13 @@ Colores
     
     --primero: #4E177C;
     --segundo: #214186;
+    --segundo-hover: #21418680;
     --tercero: #252A2E;
     --cuarto: #575757;
     --quinto: #CDC8E1;
     --link: #0FBA85;
     --link-hover: #22EDAE;
+    --bg-tables: #EFEFEF;
     --negro: #000000;
     --blanco: #ffffff;
     --gris: #FAFAFA;
@@ -279,14 +281,13 @@ Container All
 Aside
 ---------------------------------------- */
 
-aside .barra{
-    width: 19vw;
-    min-width: 40rem;
+.barra{
+    width: 42rem;
     position: fixed;
-    height: 92.6vh;
+    height: 93vh;
     margin-top: 8rem;
-    background-color: var(--gris);
-    border: solid var(--cuarto) 2px;
+    background-color: var(--cuarto);
+    border: none;
     transition: var(--transitions);
 }
 
@@ -296,7 +297,7 @@ aside .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid var(--gris) .1rem;
+    border: solid var(--gris) .1rem 0;
 }
 
 aside .top .flecha{
@@ -320,7 +321,8 @@ aside h3{
 aside .container{
     display: flex;
     flex-direction: column;
-    border: solid var(--gris) .1rem;
+    background-color: var(--gris);
+    border: solid var(--primero) .1rem;
 }
 
 aside .container .title{
@@ -376,6 +378,10 @@ aside .container .content .grafica span::before{
     content: "Vencimiento:";
 }
 
+.contDisabled{
+    border: solid var(--disabled) .1rem !important;
+}
+
 .disabled{
     background-color: var(--disabled) !important;
 }
@@ -388,53 +394,52 @@ aside .container .content .grafica span::before{
 Aside Active
 ---------------------------------------- */
 
-aside .activebarra{
-    width: 5%;
-    min-width: 8rem;
-    max-width: 10rem;
+.activecontainer-all .barra{
+    width: 7rem;
+    padding: 0;
 }
 
-aside .activebarra .top{
+.activecontainer-all .barra .top{
     display: flex;
     justify-content: center;
 }
 
-aside .activebarra .top .flecha::after{
+.activecontainer-all .barra .top .flecha::after{
     content: "|  \f061";
     color: var(--blanco);
 }
 
-aside .activebarra .top h3,
-aside .activebarra .top .fa-plus{
+.activecontainer-all .barra .top h3,
+.activecontainer-all .barra .top .fa-plus{
     display: none;
 }
 
-aside .activebarra .container .title{
+.activecontainer-all .barra .container .title{
     padding: 1rem 0;
     display: flex;
     justify-content: center;
 }
 
-aside .activebarra .container h3,
-aside .activebarra .container button,
-aside .activebarra .container .bars,
-aside .activebarra .container .bars i{
+.activecontainer-all .barra .container h3,
+.activecontainer-all .barra .container button,
+.activecontainer-all .barra .container .bars,
+.activecontainer-all .barra .container .bars i{
     display: none;
     margin: 0;
     padding: 0;
 }
 
-aside .activebarra .container .title .name button{
+.activecontainer-all .barra .container .title .name button{
     margin: 0;
     padding: 0;
     display: none;
 }
 
-aside .activebarra .container .content{
+.activecontainer-all .barra .container .content{
     display: none;
 }
 
-aside .activebarra .container{
+.activecontainer-all .barra .container{
     display: flex;
     justify-content: center;
 }
@@ -485,9 +490,14 @@ Dialog
 Section
 ---------------------------------------- */
 
+.activecontainer-all .sectionContainer{
+    width: calc(100vw - 7rem);
+    margin-left: 7rem;
+}
+
 .sectionContainer{
-    width: 80vw;
-    margin-left: 20vw;
+    width: calc(100vw - 42rem);
+    margin-left: 42rem;
 }
 
 .titleSection{

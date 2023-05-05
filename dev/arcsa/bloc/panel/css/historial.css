@@ -1,4 +1,72 @@
 /* ----------------------------------------
-X
+Tabla historial
 ---------------------------------------- */
 
+table{
+    width: 100%;
+    border: solid var(--cuarto) .1rem;
+    text-align: left;
+    border-radius: .5rem;
+}
+
+.encabezados{
+    text-align: left;
+    background-color: var(--primero);
+    color: var(--blanco);
+    border-radius: 5rem .5rem 0 0 !important;
+}
+
+th{
+    text-align: left;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+table td{
+    text-align: left;
+    border: solid var(--cuarto) .1rem;
+    padding: .5rem 1rem;
+}
+
+table .dos{
+    background-color: var(--bg-tables);
+}
+
+table .check{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table .monitoreo{
+    display: flex;
+}
+
+table .monitoreo .meses a{
+    color: var(--segundo);
+    text-decoration: none;
+    transition: var(--transitions);
+}
+
+table .monitoreo .meses a:hover{
+    transform: scale(1.03);
+    color: var(--segundo-hover);
+}
+
+table .monitoreo .meses{
+    width: 50%;
+    height: auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table .monitoreo .meses i{
+    padding: 0 .7rem 0 0;
+}
+
+.seisM{   
+    border-right: solid var(--cuarto) .1rem;
+}
