@@ -1,0 +1,58 @@
+/*Beneficios ---------------*/
+
+.sectionBeneficios{
+    background-image: url(../img/beneficios.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+/*tarjetas ---------------*/
+
+.sectionTarjetas{
+    width: 100vw;
+    padding: var(--spaceSection);
+}
+
+.tarjetasIn{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin: 0 20px;
+    overflow: visible;
+}
+
+.tarjetasIn div{
+    width: 30%;
+    min-width: 350px;
+    max-width: 550px;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: var(--blanco);
+    box-shadow: var(--boxShadow);
+}
+
+.sectionTarjetas h3{
+    margin: 0 0 20px 0;
+    font-weight: 500;
+}
+
+.sectionTarjetas p{
+    text-align: justify;
+}
+
+.tarjetaSpan{
+    color: var(--morado);
+    margin: 50px auto 0 auto;
+    font-style: italic;
+}
+
+
+@media only screen and (max-width: 639px) and (min-width: 1px) {
+    
+    .tarjetaSpan{
+        width: 76%;
+    }
+
+}
