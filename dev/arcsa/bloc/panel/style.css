@@ -30,10 +30,14 @@ Colores
     --segundo-hover: #21418680;
     --tercero: #252A2E;
     --cuarto: #575757;
+    --cuarto-dos: #57575770;
     --quinto: #CDC8E1;
+    --sexto: #798DB6;
     --link: #0FBA85;
     --link-hover: #22EDAE;
     --bg-tables: #EFEFEF;
+    --aprobado: #00AD1B;
+    --denegado: #DF3E3E;
     --negro: #000000;
     --blanco: #ffffff;
     --gris: #FAFAFA;
@@ -58,8 +62,12 @@ Colores
 Espacios
 ---------------------------------------- */
 
-.espacio{
+.padd{
     padding: 2rem 0;
+}
+
+.marg{
+    margin: 4rem 0;
 }
 
 /* ----------------------------------------
@@ -515,7 +523,7 @@ Section
 }
 
 .sectionContainer .title-text{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     color: var(--primero);
     font-weight: 400;
 }
@@ -631,6 +639,66 @@ Form
 
 .container .obligatorio{
     color: var(--segundo);
+}
+
+/* ----------------------------------------
+Pagers de tablas
+---------------------------------------- */
+
+.titleTabla{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pager{
+    display: flex;
+    align-items: center;
+}
+
+.pager .texto{
+    color: var(--negro);
+    font-weight: 400;
+}
+
+.pager .pages{
+    width: auto;
+    height: 100%;
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+    border: solid var(--negro) .1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pager .pages span{
+    color: var(--primero);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.pagerDown{
+    width: 14rem;
+    margin: 2rem auto 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--primero);
+}
+
+.pagerDown .prev,
+.pagerDown .next{
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+.pagerDown .Nprev,
+.pagerDown .Nnext,
+.pagerDown .de{
+    cursor: default;
+    color: var(--negro);
 }
 
 /* ----------------------------------------
