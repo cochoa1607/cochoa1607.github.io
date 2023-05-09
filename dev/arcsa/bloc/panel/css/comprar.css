@@ -1,4 +1,15 @@
 /* ----------------------------------------
-X
+Comprar consultas
 ---------------------------------------- */
 
+.compraConsul .cantidad{
+    width: auto;
+    height: auto;
+    padding: 0 .5rem;
+    border-radius: .5rem;
+    border: solid var(--negro) .1rem;
+}
+
+.compraConsul .cantidad::after{
+    content: "Consulta";
+}
