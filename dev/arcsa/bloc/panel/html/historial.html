@@ -188,7 +188,7 @@
             
             <div class="titleSection">
                 <h2>
-                    Reporte Bloc
+                    Historial
                 </h2>
             </div>
 
@@ -196,102 +196,188 @@
 
                 <div class="title">
                     <span class="title-text">Filtros</span>
+
+                    <form action="#" method="post">
+    
+                        <div class="form-line espacio">
+                            
+                            <fieldset class="input-group" id="">
+                                <legend>Buscar:</legend>
+                                <label for="texto"></label>
+                                <input type="text" id="nombre" name="nombre">
+                            </fieldset>
+                            
+                            <fieldset class="">
+                                <legend>Mes:</legend>
+                                <label for="mes"></label>
+                                <select id="" name="mes">
+                                    <option value="enero">Enero</option>
+                                    <option value="febrero">Febrero</option>
+                                    <option value="marzo">Marzo</option>
+                                    <option value="abril">Abril</option>
+                                    <option value="mayo">Mayo</option>
+                                    <option value="junio">Junio</option>
+                                    <option value="julio">Julio</option>
+                                    <option value="agosto">Agosto</option>
+                                    <option value="septiembre">Septiembre</option>
+                                    <option value="octubre">Octubre</option>
+                                    <option value="noviembre">Noviembre</option>
+                                    <option value="diciembre">Diciembre</option>
+                                </select>
+                            </fieldset>
+
+                            <fieldset class="">
+                                <legend>Año:</legend>
+                                <label for="year"></label>
+                                <select id="" name="year">
+                                    <option value="enero">2018</option>
+                                    <option value="febrero">2019</option>
+                                    <option value="marzo">2020</option>
+                                    <option value="abril">2021</option>
+                                    <option value="abril">2022</option>
+                                    <option value="abril">2023</option>
+                                </select>
+                            </fieldset>
+                            
+                            <div class="field-vacio"></div>
+    
+                        </div>
+    
+                        <div class="form-line">
+                            <button type="submit">Buscar</button>
+                        </div>
+                    
+                    </form>
+
                 </div>
-                <div>
+                <!-- Tabla -->
+                <div class="tabla">
+                    <span class="title-text">Búsquedas</span>
+
                     <table>
                         <tr class="encabezados">
-                            <th>
-                                <span  class="check">
-                                    <input type="checkbox" id="" value="">
-                                </span>
+                            <th class="radIzq">
+                                <label class="cont-label-first">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
                             </th>
                             <th>Búsquedas</th>
                             <th>Demandas</th>
                             <th>Fecha de consulta</th>
                             <th>Usuario</th>
                             <th>Descargar</th>
-                            <th>Monitorear</th>
+                            <th class="radDer" colspan="2">Monitorear</th>
                         </tr>
+
                         <tr class="uno">
                             <td>
-                                <span  class="check">
-                                    <input type="checkbox" id="" value="">
-                                </span>
+                                <label class="cont-label">&nbsp;
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                </label>
                             </td>
                             <td>5</td>
                             <td>123</td>
                             <td>2023/02/16</td>
                             <td>Carlos Daniel Ochoa</td>
-                            <td><i></i></td>
-                            <td class="monitoreo">
-                                <div class="meses seisM">
-                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i> 6 meses</a>
+                            <td>
+                                <div class="downl">
+                                    <a download src="" href="../pdf/manualDeUsosBloc.pdf"><i class="fa-solid fa-file-arrow-down"></i></a>
                                 </div>
+                            </td>
+                            <td class="monitoreo">
                                 <div class="meses">
-                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i> 12 meses</a>
+                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i>6 meses</a>
+                                </div>
+                            </td>
+                            <td class="monitoreo">        
+                                <div class="meses">
+                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i>12 meses</a>
                                 </div>
                             </td>
                         </tr>
 
                         <tr class="dos">
                             <td>
-                                <span  class="check">
-                                    <input type="checkbox" id="" value="">
-                                </span>
+                                <label class="cont-label">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
                             </td>
-                            <td>5</td>
+                            <td>15</td>
                             <td>123</td>
                             <td>2023/02/16</td>
                             <td>Carlos Daniel Ochoa</td>
-                            <td><i></i></td>
-                            <td class="monitoreo">
-                                <div class="meses seisM">
-                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i> 6 meses</a>
+                            <td>
+                                <div class="downl">
+                                    <a download src="" href="../pdf/manualDeUsosBloc.pdf"><i class="fa-solid fa-file-arrow-down"></i></a>
                                 </div>
+                            </td>
+                            <td class="monitoreo">
                                 <div class="meses">
-                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i> 12 meses</a>
+                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i>6 meses</a>
+                                </div>
+                            </td>
+                            <td class="monitoreo">        
+                                <div class="meses">
+                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i>12 meses</a>
                                 </div>
                             </td>
                         </tr>
                         
                         <tr class="uno">
                             <td>
-                                <span  class="check">
-                                    <input type="checkbox" id="" value="">
-                                </span>
+                                <label class="cont-label">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
                             </td>
                             <td>5</td>
                             <td>123</td>
                             <td>2023/02/16</td>
                             <td>Carlos Daniel Ochoa</td>
-                            <td><i></i></td>
-                            <td class="monitoreo">
-                                <div class="meses seisM">
-                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i> 6 meses</a>
+                            <td>
+                                <div class="downl">
+                                    <a download src="" href="../pdf/manualDeUsosBloc.pdf"><i class="fa-solid fa-file-arrow-down"></i></a>
                                 </div>
+                            </td>
+                            <td class="monitoreo">
                                 <div class="meses">
-                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i> 12 meses</a>
+                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i>6 meses</a>
+                                </div>
+                            </td>
+                            <td class="monitoreo">        
+                                <div class="meses">
+                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i>12 meses</a>
                                 </div>
                             </td>
                         </tr>
                         
                         <tr class="dos">
                             <td>
-                                <span  class="check">
-                                    <input type="checkbox" id="" value="">
-                                </span>
+                                <label class="cont-label">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
                             </td>
                             <td>5</td>
                             <td>123</td>
                             <td>2023/02/16</td>
                             <td>Carlos Daniel Ochoa</td>
-                            <td><i></i></td>
-                            <td class="monitoreo">
-                                <div class="meses seisM">
-                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i> 6 meses</a>
+                            <td>
+                                <div class="downl">
+                                    <a download src="" href="../pdf/manualDeUsosBloc.pdf"><i class="fa-solid fa-file-arrow-down"></i></a>
                                 </div>
+                            </td>
+                            <td class="monitoreo">
                                 <div class="meses">
-                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i> 12 meses</a>
+                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i>6 meses</a>
+                                </div>
+                            </td>
+                            <td class="monitoreo">        
+                                <div class="meses">
+                                    <a target="_blank" href="https://www.freepik.es/"><i class="fa-solid fa-earth-americas"></i>12 meses</a>
                                 </div>
                             </td>
                         </tr>

@@ -1,4 +1,184 @@
 /* ----------------------------------------
-X
+Checkbox Multiple
 ---------------------------------------- */
 
+.checkMulti .multiSelect {
+    width: 100%;
+    display: flex;
+}
+
+.checkMulti .selectBox {
+    position: relative;
+    width: 28rem;
+    margin: 0 1.5rem 0 0;
+    padding: 0 0 0 1rem;
+}
+
+.checkMulti .selectBox select {
+    width: 100%;
+    font-weight: 500;
+}
+
+.checkMulti .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.checkMulti #checkBoxes {
+    display: none;
+    border: none;
+    width: auto 0 auto 10rem;
+    border: none;
+}
+
+#checkBoxes label {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 7rem;
+    border: solid var(--quinto) .1rem;
+    border-radius: .5rem;
+    margin: 0 .5rem 0 0;
+    padding: 0 0 0 .4rem;
+}
+
+.checkMulti #checkBoxes label:hover {
+    background-color: var(--quinto);
+}
+  
+.checkMulti .checkbox{
+    display: flex;
+}
+
+/* ----------------------------------------
+Checkbox Multiple Year
+---------------------------------------- */
+
+.checkMulti #checkBoxesYear {
+    display: none;
+    border: none;
+    width: auto 0 auto 10rem;
+    border: none;
+}
+
+#checkBoxesYear label {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 7rem;
+    border: solid var(--quinto) .1rem;
+    border-radius: .5rem;
+    margin: 0 .5rem 0 0;
+    padding: 0 0 0 .4rem;
+}
+
+.checkMulti #checkBoxesYear label:hover {
+    background-color: var(--quinto);
+}
+
+/* ----------------------------------------
+Tabla
+---------------------------------------- */
+
+.tabla{
+    border: solid var(--cuarto) 1px;
+    padding: 1.2rem ;
+    border-radius: .5rem;
+}
+
+table{
+    width: 100%;
+    border: none;
+    text-align: left;
+    border-radius: .5rem;
+    margin: 2rem 0 0 0;
+    border-spacing: 0;
+}
+
+.encabezados{
+    text-align: left;
+    background-color: var(--primero);
+    color: var(--blanco);
+}
+
+.encabezados .radIzq{
+    border-radius: .5rem 0 0 0;
+}
+
+.encabezados .radDer{
+    border-radius: 0 .5rem 0 0;
+}
+
+table th{
+    text-align: left;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+table td{
+    text-align: left;
+    border: solid var(--cuarto-dos) .1rem;
+    padding: .5rem 1rem;
+}
+
+table .dos{
+    background-color: var(--bg-tables);
+}
+
+table td a {
+    color: var(--segundo);
+    display: flex;
+    justify-content: center;
+}
+
+table .check{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table .monitoreo .meses a{
+    color: var(--segundo);
+    text-decoration: none;
+    transition: var(--transitions);
+}
+
+table .monitoreo .meses a:hover{
+    transform: scale(1.03);
+    color: var(--segundo-hover);
+}
+
+table .monitoreo .meses{
+    width: 100%;
+    height: auto;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table .monitoreo .meses i{
+    padding: 0 1rem 0 0;
+}
+
+table i{
+    padding: 0 .8rem 0 0;
+    font-size: 2rem;
+}
+
+table .downl a{
+    color: var(--segundo);
+    text-decoration: none;
+    transition: var(--transitions);
+}
+
+table .downl a:hover{
+    transform: scale(1.03);
+    color: var(--segundo-hover);
+}

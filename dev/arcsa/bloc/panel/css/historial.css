@@ -2,21 +2,36 @@
 Tabla historial
 ---------------------------------------- */
 
+.tabla{
+    border: solid var(--cuarto) 1px;
+    padding: 1.2rem ;
+    border-radius: .5rem;
+}
+
 table{
     width: 100%;
-    border: solid var(--cuarto) .1rem;
+    border: none;
     text-align: left;
     border-radius: .5rem;
+    margin: 2rem 0 0 0;
+    border-spacing: 0;
 }
 
 .encabezados{
     text-align: left;
     background-color: var(--primero);
     color: var(--blanco);
-    border-radius: 5rem .5rem 0 0 !important;
 }
 
-th{
+.encabezados .radIzq{
+    border-radius: .5rem 0 0 0;
+}
+
+.encabezados .radDer{
+    border-radius: 0 .5rem 0 0;
+}
+
+table th{
     text-align: left;
     font-weight: 300;
     padding: 1rem;
@@ -24,7 +39,7 @@ th{
 
 table td{
     text-align: left;
-    border: solid var(--cuarto) .1rem;
+    border: solid var(--cuarto-dos) .1rem;
     padding: .5rem 1rem;
 }
 
@@ -32,15 +47,17 @@ table .dos{
     background-color: var(--bg-tables);
 }
 
+table td a {
+    color: var(--segundo);
+    display: flex;
+    justify-content: center;
+}
+
 table .check{
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-table .monitoreo{
-    display: flex;
 }
 
 table .monitoreo .meses a{
@@ -55,18 +72,158 @@ table .monitoreo .meses a:hover{
 }
 
 table .monitoreo .meses{
-    width: 50%;
+    width: 100%;
     height: auto;
-    padding: 0 1rem;
+    padding: .5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 table .monitoreo .meses i{
-    padding: 0 .7rem 0 0;
+    padding: 0 1rem 0 0;
 }
 
-.seisM{   
-    border-right: solid var(--cuarto) .1rem;
+table i{
+    padding: 0 .8rem 0 0;
+    font-size: 2rem;
+}
+
+table .downl a{
+    color: var(--segundo);
+    text-decoration: none;
+    transition: var(--transitions);
+}
+
+table .downl a:hover{
+    transform: scale(1.03);
+    color: var(--segundo-hover);
+}
+
+/* ----------------------------------------
+Checkbox first
+---------------------------------------- */
+
+.cont-label-first {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    margin-bottom: .1rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.cont-label-first input {
+    display: none;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--gris);
+    border: solid var(--blanco) .1rem;
+    border-radius: .4rem;
+}
+
+.cont-label-first:hover input ~ .checkmark {
+    background-color: var(--quinto);
+}
+  
+.cont-label-first input:checked ~ .checkmark {
+    background-color: var(--blanco);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.cont-label-first input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.cont-label-first .checkmark:after {
+    left: .7rem;
+    top: .3rem;
+    width: .3rem;
+    height: .8rem;
+    border: solid var(--primero);
+    border-width: 0 .2rem .2rem 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ----------------------------------------
+Checkbox
+---------------------------------------- */
+.cont-label {
+    display: block;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    margin-bottom: .1rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.cont-label input {
+    display: none;
+}
+  
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--gris);
+    border: solid var(--primero) .1rem;
+    border-radius: .4rem;
+}
+  
+.cont-label:hover input ~ .checkmark {
+    background-color: var(--quinto);
+}
+  
+.cont-label input:checked ~ .checkmark {
+    background-color: var(--primero);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.cont-label input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.cont-label .checkmark:after {
+    left: .7rem;
+    top: .3rem;
+    width: .3rem;
+    height: .8rem;
+    border: solid white;
+    border-width: 0 .2rem .2rem 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
