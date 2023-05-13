@@ -1,7 +1,7 @@
 document.querySelector(".flecha").addEventListener("click", animateAside);
 
-var menu = document.querySelector(".container-all");
+var aside = document.querySelector(".container-all");
 
 function animateAside(){
-    menu.classList.toggle("activecontainer-all");
+    aside.classList.toggle("activecontainer-all");
 }

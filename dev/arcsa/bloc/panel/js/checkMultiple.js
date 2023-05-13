@@ -4,6 +4,7 @@ function showCheckBoxes() {
   var checkBoxes = document.getElementById("checkBoxes");
   if (!expanded) {
     checkBoxes.style.display = "flex";
+    checkBoxes.style.flexWrap = "wrap";
     expanded = true;
   } else {
     checkBoxes.style.display = "none";

@@ -1,106 +1,4 @@
 /* ----------------------------------------
-Tabla historial
----------------------------------------- */
-
-.tabla{
-    border: solid var(--cuarto) 1px;
-    padding: 1.2rem ;
-    border-radius: .5rem;
-}
-
-table{
-    width: 100%;
-    border: none;
-    text-align: left;
-    border-radius: .5rem;
-    margin: 2rem 0 0 0;
-    border-spacing: 0;
-}
-
-.encabezados{
-    text-align: left;
-    background-color: var(--primero);
-    color: var(--blanco);
-}
-
-.encabezados .radIzq{
-    border-radius: .5rem 0 0 0;
-}
-
-.encabezados .radDer{
-    border-radius: 0 .5rem 0 0;
-}
-
-table th{
-    text-align: left;
-    font-weight: 300;
-    padding: 1rem;
-}
-
-table td{
-    text-align: left;
-    border: solid var(--cuarto-dos) .1rem;
-    padding: .5rem 1rem;
-}
-
-table .dos{
-    background-color: var(--bg-tables);
-}
-
-table td a {
-    color: var(--segundo);
-    display: flex;
-    justify-content: center;
-}
-
-table .check{
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-table .monitoreo .meses a{
-    color: var(--segundo);
-    text-decoration: none;
-    transition: var(--transitions);
-}
-
-table .monitoreo .meses a:hover{
-    transform: scale(1.03);
-    color: var(--segundo-hover);
-}
-
-table .monitoreo .meses{
-    width: 100%;
-    height: auto;
-    padding: .5rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-table .monitoreo .meses i{
-    padding: 0 1rem 0 0;
-}
-
-table i{
-    padding: 0 .8rem 0 0;
-    font-size: 2rem;
-}
-
-table .downl a{
-    color: var(--segundo);
-    text-decoration: none;
-    transition: var(--transitions);
-}
-
-table .downl a:hover{
-    transform: scale(1.03);
-    color: var(--segundo-hover);
-}
-
-/* ----------------------------------------
 Checkbox first
 ---------------------------------------- */
 
@@ -108,12 +6,12 @@ Checkbox first
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 1rem;
-    padding-right: .5rem;
-    margin-bottom: .1rem;
-    margin-top: .5rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    padding: 0 .2rem;
+    margin: .5rem 0 .1rem 0;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1rem;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -124,15 +22,15 @@ Checkbox first
     display: none;
 }
 
-.checkmark{
+.cont-label-first .checkmark{
     position: absolute;
-    top: 0;
-    left: 1rem;
-    height: 2rem;
-    width: 2rem;
+    top: .2rem;
+    left: .3rem;
+    height: 1.2rem;
+    width: 1.2rem;
     background-color: var(--gris);
     border: solid var(--blanco) .1rem;
-    border-radius: .4rem;
+    border-radius: .3rem;
 }
 
 .cont-label-first:hover input ~ .checkmark {
@@ -143,7 +41,7 @@ Checkbox first
     background-color: var(--blanco);
 }
   
-.checkmark:after {
+.cont-label-first .checkmark:after {
     content: "";
     position: absolute;
     display: none;
@@ -154,10 +52,10 @@ Checkbox first
 }
   
 .cont-label-first .checkmark:after {
-    left: .7rem;
-    top: .3rem;
-    width: .3rem;
-    height: .8rem;
+    left: .3rem;
+    top: .1rem;
+    width: .2rem;
+    height: .5rem;
     border: solid var(--primero);
     border-width: 0 .2rem .2rem 0;
     -webkit-transform: rotate(45deg);
@@ -169,12 +67,11 @@ Checkbox first
 Checkbox
 ---------------------------------------- */
 .cont-label {
-    display: block;
     position: relative;
-    padding-left: 1rem;
-    padding-right: .5rem;
-    margin-bottom: .1rem;
-    margin-top: .5rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    padding: 0 .2rem;
+    margin: .5rem 0 .1rem 0;
     cursor: pointer;
     font-size: 2rem;
     -webkit-user-select: none;
@@ -189,13 +86,13 @@ Checkbox
   
 .checkmark{
     position: absolute;
-    top: 0;
-    left: 1rem;
-    height: 2rem;
-    width: 2rem;
+    top: .7rem;
+    left: .3rem;
+    height: 1.2rem;
+    width: 1.2rem;
     background-color: var(--gris);
     border: solid var(--primero) .1rem;
-    border-radius: .4rem;
+    border-radius: .3rem;
 }
   
 .cont-label:hover input ~ .checkmark {
@@ -217,10 +114,10 @@ Checkbox
 }
   
 .cont-label .checkmark:after {
-    left: .7rem;
-    top: .3rem;
-    width: .3rem;
-    height: .8rem;
+    left: .3rem;
+    top: .1rem;
+    width: .2rem;
+    height: .5rem;
     border: solid white;
     border-width: 0 .2rem .2rem 0;
     -webkit-transform: rotate(45deg);

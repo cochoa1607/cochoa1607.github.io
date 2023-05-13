@@ -10,23 +10,25 @@ Checkbox Multiple
     width: 100%;
     display: flex;
     width: auto;
+    flex-wrap: wrap;
 
 }
 
 .checkMulti .selectBox {
-    width: 29rem;
+    width: 26rem;
     position: relative;
     margin: 0 1rem 0 0;
     padding: 0;
 }
 
 .checkMulti .selectBox select {
-    width: 28rem;
+    width: 26rem;
     font-weight: 500;
+    overflow-x: inherit;
 }
 
 .checkMulti .overSelect {
-    width: 30rem;
+    width: 27rem;
     position: absolute;
     left: 0;
     right: 0;
@@ -49,7 +51,7 @@ Checkbox Multiple
     flex-direction: row-reverse;
     border: solid var(--quinto) .1rem;
     border-radius: .5rem;
-    margin: 0 .5rem 0 0;
+    margin: 0 .5rem 1rem 0;
     padding: 0 0 0 .4rem;
 }
 
@@ -103,7 +105,7 @@ Estado de cuenta
 }
 
 .downlEstCta .text{
-    color: var(--segundo);
+    color: var(--tercero);
     font-size: 2rem;
 }
 
@@ -160,6 +162,8 @@ Tabla Renovacion
     transition: var(--transitions);
     display: flex;
     align-items: center;
+    justify-content: left;
+    padding-left: .5rem;
 }
 
 .btnRen a::before{
@@ -187,6 +191,8 @@ Tabla Renovacion
     display: flex;
     align-items: center;
     cursor: default;
+    justify-content: left;
+    padding-left: .5rem;
 }
 
 .btnApr a::before{
@@ -209,6 +215,8 @@ Tabla Renovacion
     display: flex;
     align-items: center;
     cursor: default;
+    justify-content: left;
+    padding-left: .5rem;
 }
 
 .btnDen a::before{
@@ -231,6 +239,8 @@ Tabla Renovacion
     display: flex;
     align-items: center;
     cursor: default;
+    justify-content: left;
+    padding-left: .5rem;
 }
 
 .btnSol a::before{
@@ -243,12 +253,20 @@ Tabla Renovacion
 Tabla Renovacion
 ---------------------------------------- */
 
+.container .tres{
+    border: solid var(--segundo) .1rem !important;
+}
+
+.container .tres .title-text{
+    color: var(--segundo) !important;
+}
+
 .titleTabla .titleCad .title-text-info::before{
     content: "/";
 }
 
 .titleTabla .titleCad .title-text-info{
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: var(--negro);
     font-weight: 400;
 }   
