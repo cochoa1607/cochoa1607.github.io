@@ -41,7 +41,6 @@ body {
     height: auto;
     min-height: 100vh;
     background-image: url(https://documentos.arcsa.com.mx/ASfondo.png);
-    background-image: url(../ASfondo.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -143,7 +142,6 @@ body {
     font-weight: 400;
     margin: 0 0 2rem 0;
     color: var(--azul);
-    text-shadow: var(--shadow-text);
 }
 
 .nombre ul {
