@@ -1,0 +1,181 @@
+/* --------------------
+Variables 
+-------------------- */
+/* --------------------
+Objetivos 
+-------------------- */
+.objetivos .imagen {
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 0;
+}
+
+.imagen img {
+  width: auto;
+  padding: 0;
+  border-radius: 2rem 0 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+}
+
+.objetivos .texto {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+}
+
+.objetivos .texto .boton-container {
+  margin: 2rem 0;
+}
+
+/* --------------------
+Mapa
+-------------------- */
+.sedes-container {
+  width: 100vw;
+}
+
+.mapa-container {
+  border: solid #FED72A 2px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2rem 0 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+  background-color: #ffffff;
+}
+
+.mapa-container .imagen {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.mapa-container img {
+  width: 100%;
+  border-radius: 2rem 0 2rem 0;
+}
+
+.mapa-container .imagen a {
+  width: 100%;
+  height: 100%;
+  border: solid red 2px;
+}
+
+.mapa-container .imagen iframe {
+  width: 100%;
+  height: 30rem;
+  border-radius: 2rem 0 2rem 0;
+  border: solid #1E5F66 0.1rem !important;
+  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+}
+
+.mapa-container span {
+  font-family: "Bitter", serif;
+  color: #1E5F66;
+  font-size: 2rem;
+  text-shadow: rgba(0, 0, 0, 0.1254901961) 2px 2px 2px;
+}
+
+.mapa-container p {
+  margin: 1rem 0 2rem 0;
+}
+
+.mapa-container ul {
+  list-style: circle;
+  margin: 0;
+}
+
+.mapa-container ul li {
+  color: #000000;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+/* --------------------
+X
+X
+Colabora
+X
+X
+-------------------- */
+.talleristas .imagen img {
+  width: 100%;
+}
+
+.voluntarios .imagen img {
+  width: 100%;
+}
+
+.voluntarios ul {
+  list-style: decimal;
+}
+
+.voluntarios ul li {
+  color: #000000;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.instituciones .linea {
+  height: 0.5rem;
+  width: 100%;
+  background-color: #FED72A;
+  border-radius: 5rem;
+}
+
+.instituciones .institucion {
+  border: solid #1E5F66 0.01rem;
+  border-radius: 2rem 0 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+}
+
+.instituciones .institucion a {
+  text-decoration: none;
+  transition: all ease-in-out 200ms;
+}
+
+.instituciones .institucion a:hover {
+  transform: scale(1.05);
+}
+
+.instituciones .logo {
+  width: 100%;
+  height: 12rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.instituciones .logo-01 {
+  background-image: url(../img/logo-uamx.png);
+}
+
+.instituciones .logo-02 {
+  background-image: url(../img/logo-uacm.png);
+}
+
+.s-social .imagen-s-social {
+  border: solid blue 2px !important;
+}
+
+.s-social .imagen-s-social img {
+  width: 100%;
+  border: solid pink 2px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .mapa-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .mapa-container {
+    width: 100%;
+  }
+  .objetivos img {
+    max-width: 80%;
+  }
+}/*# sourceMappingURL=estilosDos.css.map */
