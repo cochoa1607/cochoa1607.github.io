@@ -242,7 +242,16 @@ Navbar
   font-size: 2rem;
 }
 
-/* Normalización secciones ---------------------------------------------------------------------------------------------------*/
+/* --------------------
+Actividades
+-------------------- */
+.actividades h2 {
+  transform: translateY(-6rem);
+}
+
+/* --------------------
+Normalización secciones
+-------------------- */
 .tarjetas {
   justify-content: center;
 }
@@ -337,29 +346,21 @@ Navbar
 }
 
 /* Quién es Hannah Arendt ---------------------------------------------------------------------------------------------------*/
-.hannah .cont-imagen {
-  margin: auto;
-  text-align: center;
-}
-
+/* .hannah .cont-imagen{
+    margin: auto;
+} */
 .hannah .imagen {
-  width: 100%;
-  margin: auto;
-  margin-right: 0;
+  width: auto;
 }
 
 .hannah img {
-  width: auto;
-  max-width: 40rem;
-  min-width: none;
-  margin: 2rem 0;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
   border-radius: 2rem 0 2rem 0;
 }
 
 .hannah .texto {
   max-width: 80rem;
-  margin: auto;
 }
 
 /* --------------------
@@ -417,16 +418,17 @@ Tablet
   /* ------------------------------ 
   Quién es Hannah Arendt
   ------------------------------ */
-  .hannah .imagen {
-    width: 100%;
-    max-width: 25rem;
-    padding: 0;
-    margin: auto;
+  .actividades h2 {
+    transform: translateY(0);
   }
-  .hannah .texto {
-    width: 90%;
-    margin: auto;
-    text-align: left;
+  /* ------------------------------ 
+  Quién es Hannah Arendt
+  ------------------------------ */
+  .hannah .imagen {
+    width: auto;
+  }
+  .hannah .imagen img {
+    width: 100%;
   }
 }
 /* ------------------------------ 
@@ -504,16 +506,17 @@ Mobile
   /* ------------------------------ 
   Quién es Hannah Arendt
   ------------------------------ */
-  .hannah .imagen {
-    width: 100%;
-    max-width: 18rem;
-    padding: 0;
-    margin: auto;
+  .actividades h2 {
+    transform: translateY(0);
   }
-  .hannah .texto {
-    width: 80%;
-    margin: auto;
-    text-align: left;
+  /* ------------------------------ 
+  Quién es Hannah Arendt
+  ------------------------------ */
+  .hannah .imagen {
+    width: auto;
+  }
+  .hannah .imagen img {
+    width: 100%;
   }
 }
 /* ------------------------------ 
