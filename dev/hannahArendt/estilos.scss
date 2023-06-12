@@ -46,8 +46,11 @@ BG
 }
 
 .bg-gris{
-    background-color: none !important;
     background-color: $gris !important;
+}
+
+.bg-azul{
+    background-color: $azul !important;
 }
 
 /* Títulos y textos ---------------------------------------------------------------------------------------------------*/
@@ -64,7 +67,7 @@ BG
 
 body h1 {
     font-family: 'Bitter', serif;
-    color: $azul;
+    color: $verde-claro;
     font-size: 3.8rem;
     text-decoration: underline $amarillo .3rem;
     text-shadow: $shadowText;
@@ -144,22 +147,7 @@ Navbar
 -------------------- */
 
 .navbar {
-    background-color: $azul;
-    margin: 0;
-    padding: .6rem 2rem !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-}
-
-.navbar .container-fluid{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.navbar .collapse{
-    display: flex;
-    justify-content: flex-end;
+    padding: .6rem 6rem !important;
 }
 
 .navbar img {
@@ -173,11 +161,18 @@ Navbar
 }
 
 .nav-item {
-    padding: 1rem 2rem 0 2rem;
-    margin: 0 2rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: center;
+    font-size: 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.nav-item ul{
+    border-bottom: solid $amarillo .2rem !important;
+}
+
+.nav-item ul li a{
+    font-size: 1.4rem;
+    font-weight: 300;
 }
 
 /* Carrusel ---------------------------------------------------------------------------------------------------*/
@@ -286,8 +281,8 @@ Normalización secciones
 .boton{
     width: auto;
     margin: 2rem auto 0 auto;
-    padding: 1rem 5rem;
-    font-size: 1.8rem;
+    padding: .5rem 2rem;
+    font-size: 1.6rem;
     color: $blanco;
     background-color: $verde-claro;
     text-decoration: none;
@@ -308,12 +303,12 @@ Normalización secciones
 .card-body h3,
 .card-body h4,
 .card-body p{
-    padding: 2rem;
+    padding: .8rem .5rem;
 }
 
 .card-actividades{
     box-shadow: $shadowBox;
-    padding: 1rem 0 4rem 0;
+    padding: 1rem 0 3rem 0;
     border: solid $verde-claro 1px !important;
     border-radius: $radiusDos;
 }
@@ -323,7 +318,7 @@ Normalización secciones
 .card-programas{
     border-radius: $radiusDos;
     box-shadow: $shadowBox;
-    padding: 0 0 40px 0;
+    padding: 0 0 3rem 0;
     border: solid $verde 1px !important;
 }
 
@@ -335,9 +330,8 @@ Normalización secciones
 
 .card-logros{
     border-radius: 10px !important;
-    padding: 0 0 40px 0;
+    padding: 0 0 3rem 0;
     box-shadow: $shadowBox;
-    padding: 0 0 40px 0;
     border: solid $verde-claro 1px !important;
 }
 
@@ -393,10 +387,17 @@ Normalización secciones
 }
 
 .hannah .texto{
-    max-width: 80rem;
+    max-width: 70rem;
 }
 
-
+/* ------------------------------ 
+Título Actividades
+------------------------------ */
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+    .actividades h2{
+        transform: translateY(-5rem);
+    }
+}
 
 /* --------------------
 Tablet
@@ -413,7 +414,7 @@ Tablet
     }
 
     body h1 {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
     }
 
     body h2 {
@@ -421,15 +422,15 @@ Tablet
     }
 
     body h3 {
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
 
     body h4 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     body h5 {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     body h6 {
@@ -437,7 +438,7 @@ Tablet
     }
 
     p {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     a {
@@ -605,13 +606,4 @@ Mobile
         width: 100%;
     }
     
-}
-
-/* ------------------------------ 
-Mobile
------------------------------- */
-@media only screen and (max-width: 1200px) and (min-width: 992px){
-    .actividades h2{
-        transform: translateY(-5rem);
-    }
 }
