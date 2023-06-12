@@ -590,6 +590,10 @@ Mobile
     Quién es Hannah Arendt
     ------------------------------ */
 
+    body h2{
+        text-decoration: underline $amarillo .3rem !important;
+    }
+
     .actividades h2{
         transform: translateY(0);
     }
