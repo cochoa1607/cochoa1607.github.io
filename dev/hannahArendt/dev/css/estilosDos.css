@@ -93,6 +93,126 @@ Mapa
 /* --------------------
 X
 X
+Programas
+X
+X
+-------------------- */
+.programas .caja-contenedor-textos {
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.programas .caja-texto-vertical {
+  width: 1vw;
+  height: 1vw;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  transform: rotate(-90deg);
+}
+
+.programas .texto-vertical {
+  transform: rotate(0deg);
+  -webkit-hyphens: none;
+          hyphens: none;
+  white-space: nowrap;
+}
+
+.programas .caja-texto {
+  width: 30vw;
+  display: flex;
+  justify-content: end;
+}
+
+.programas .caja-imagen {
+  width: 40vw;
+  display: flex;
+  justify-content: end;
+}
+
+.programas .caja-imagen .imagen {
+  width: 100%;
+  background-image: url(../img/actividad1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem 0 2rem 0;
+}
+
+/* --------------------
+MQ para cursos y talleres
+-------------------- */
+@media only screen and (max-width: 576px) {
+  .programas .caja-contenedor-textos {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .programas .caja-texto-vertical {
+    transform: rotate(0deg);
+    width: 80vw;
+    justify-content: start;
+    height: auto;
+    margin: 2rem 0 0 0;
+  }
+  .programas .caja-texto {
+    width: 80vw;
+    margin: 0 0 2rem 0;
+  }
+  .programas .caja-imagen {
+    height: 20rem;
+    width: 70vw;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .programas .caja-contenedor-textos {
+    border: solid gold 2px;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .programas .caja-texto-vertical {
+    transform: rotate(0deg);
+    border: solid blue 2px;
+    width: 70vw;
+    justify-content: start;
+    height: auto;
+  }
+  .programas .caja-texto {
+    border: solid green 2px;
+    width: 70vw;
+  }
+  .programas .caja-imagen {
+    height: 20rem;
+    width: 70vw;
+    border: solid gold 2px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .programas .caja-contenedor-textos {
+    border: solid red 2px;
+  }
+  .programas .caja-texto-vertical {
+    border: solid blue 2px;
+  }
+  .programas .caja-texto {
+    width: 35vw;
+    display: flex;
+    justify-content: end;
+    border: solid green 2px;
+  }
+  .programas .caja-imagen {
+    width: 40vw;
+    display: flex;
+    justify-content: end;
+    border: solid pink 2px;
+  }
+}
+/* --------------------
+X
+X
 Colabora
 X
 X
