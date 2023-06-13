@@ -5,33 +5,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links internos -->
+    <link rel="shortcut icon" href="./img/logoFavicon.png" type="image/x-icon">
+    
     <!-- CSS -->
-    <link href="./estilos.css" rel="stylesheet" type="text/css" />
+    <link href="./estilos.css" rel="stylesheet" type="text/css"/>
+    
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/86cd9a7f40.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+    
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    
     <!-- Bootstrap -->
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <title>Centro Hannah Arendt</title>
+      crossorigin="anonymous">
+    </script>
+
+    <title>Inicio Centro Hannah Arendt</title>
   </head>
 
   <body>
@@ -48,9 +53,36 @@
         </button>
         <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
           <ul class="navbar-nav d-flex justify-content-lg-end justify-content-center mb-2 mb-lg-0">
-            <li class="nav-item mx-lg-1 my-lg-0 my-5 d-flex justify-content-center">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            
+            <!-- Inicio -->
+            <li class="nav-item dropdown mx-lg-4 mx-1 my-lg-0 my-5 ">
+              <a class="nav-link dropdown-toggle text-center active" aria-current="page" href="./inicio.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Inicio
+              </a>
+              <ul class="dropdown-menu bg-azul border-0">
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./index.html#actividades">Actividades del mes</a>
+                </li>
+
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./index.html#programas">Programas</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./index.html#logros">Logros</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./index.html#colabora">Colabora con nostros</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./index.html#eventos">Eventos</a>
+                </li>
+                <li class="mt-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./index.html#hannah">¿Quién es Hannah Arendt?</a>
+                </li>
+              </ul>
             </li>
+
+            <!-- Nosotros -->
             <li class="nav-item dropdown mx-lg-4 mx-1 my-lg-0 my-5 ">
               <a class="nav-link dropdown-toggle text-center" href="./html/nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Nosotros
@@ -65,27 +97,31 @@
                 <li class="my-5 mx-3">
                   <a class="dropdown-item text-center text-lg-start" href="./html/nosotros.html#objetivos">Nuestros objetivos</a>
                 </li>
-                <li class="my-5 mx-3">
+                <li class="mt-5 mx-3">
                   <a class="dropdown-item text-center text-lg-start" href="./html/nosotros.html#sedes">Sedes</a>
                 </li>
               </ul>
             </li>
+
+            <!-- Programas -->
             <li class="nav-item dropdown mx-lg-4 mx-1 px-2 my-lg-0 my-5">
               <a class="nav-link dropdown-toggle text-center" href="./html/programas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Programas
               </a>
               <ul class="dropdown-menu bg-azul border-0">
                 <li class="my-5 mx-3">
-                  <a class="dropdown-item text-center text-lg-start" href="./html/nosotros.html#cursos">Cursos y talleres</a>
+                  <a class="dropdown-item text-center text-lg-start" href="./html/programas.html#cursos">Cursos y talleres</a>
                 </li>
                 <li class="my-5 mx-3">
-                  <a class="dropdown-item text-center text-lg-start" href="./html/nosotros.html#proyectos">Proyectos comunitarios</a>
+                  <a class="dropdown-item text-center text-lg-start" href="./html/programas.html#proyectos">Proyectos comunitarios</a>
                 </li>
-                <li class="my-5 mx-3">
-                  <a class="dropdown-item text-center text-lg-start" href="./html/nosotros.html#actividades">Actividades del mes</a>
+                <li class="mt-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./html/programas.html#actividades">Actividades del mes</a>
                 </li>
               </ul>
             </li>
+
+            <!-- Logros -->
             <li class="nav-item dropdown mx-lg-4 mx-1 px-2 my-lg-0 my-5">
               <a class="nav-link dropdown-toggle text-center" href="./html/logros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Logros
@@ -97,13 +133,15 @@
                 <li class="my-5 mx-3">
                   <a class="dropdown-item text-center text-lg-start" href="./html/logros.html.html#beneficiarios">Beneficiarios</a>
                 </li>
-                <li class="my-5 mx-3">
+                <li class="mt-5 mx-3">
                   <a class="dropdown-item text-center text-lg-start" href="./html/logros.html.html#informes">Informes</a>
                 </li>
               </ul>
             </li>
+
+            <!-- Colabora -->
             <li class="nav-item dropdown mx-lg-4 mx-1 px-2 my-lg-0 my-5">
-              <a class="nav-link dropdown-toggle text-center text-lg-start" href="./html/colabora.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-center" href="./html/colabora.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Colabora
               </a>
               <ul class="dropdown-menu bg-azul border-0">
@@ -114,20 +152,28 @@
                   <a class="dropdown-item text-center text-lg-start" href="./html/colabora.html#voluntarios">Voluntarios</a>
                 </li>
                 <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./html/colabora.html#servicio">Colaboradores</a>
+                </li>
+                <li class="mt-5 mx-3">
                   <a class="dropdown-item text-center text-lg-start" href="./html/colabora.html#servicio">Servicio Social</a>
                 </li>
               </ul>
             </li>
+
+            <!-- Contacto -->
             <li class="nav-item dropdown mx-lg-4 mx-1 px-2 my-lg-0 my-5">
-              <a class="nav-link dropdown-toggle text-center text-lg-start" href="./html/contacto.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-center" href="./html/contacto.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Contacto
               </a>
               <ul class="dropdown-menu bg-azul border-0">
                 <li class="my-5 mx-3">
-                  <a class="dropdown-item text-center text-lg-start" href="./html/subContacto.html#form">Dejanos tus datos</a>
+                  <a class="dropdown-item text-center text-lg-start" href="./html/subContacto.html#form">Déjanos tus datos</a>
                 </li>
                 <li class="my-5 mx-3">
                   <a class="dropdown-item text-center text-lg-start" href="./html/subContacto.html.html#informacion">Información</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./html/subContacto.html.html#informacion">Sedes</a>
                 </li>
                 <li class="my-5 mx-3">
                   <a class="dropdown-item text-center" target="_blank" href=""><i class="bi bi-facebook"></i></a>
@@ -138,7 +184,7 @@
                 <li class="my-5 mx-3">
                   <a class="dropdown-item text-center" target="_blank" href=""><i class="bi bi-google"></i></a>
                 </li>
-                <li class="my-5 mx-3">
+                <li class="mt-5 mx-3">
                   <a class="dropdown-item text-center" target="_blank" href=""><i class="bi bi-youtube"></i></a>
                 </li>
               </ul>
@@ -198,7 +244,7 @@
       <div class="row-cols-auto">
         
           <div class="col pleca">
-            <p>Esta actividad surge a través de una solicitud de proyecto de los vecinos de Iztapalapa. <br> ¿Tienes ideas para mejorar la calidad de vida en tu entorno?<br><a href="https://www.google.com">¡Solicita tu proyecto aquí!<i class="bi bi-whatsapp wa-icon"></i></a>
+            <p>Esta actividad surge a través de una solicitud de proyecto de los vecinos de Iztapalapa. <br> ¿Tienes ideas para mejorar la calidad de vida en tu entorno?<br><a href="./html/linkear.html">¡Solicita tu proyecto aquí!<i class="bi bi-whatsapp wa-icon"></i></a>
             </p>
           </div>
            <div class="col"></div>
@@ -210,20 +256,20 @@
       <div class="row">
         <div class="col-12 my-5">
           <h3 class="text-center">
-            Sitio V.2.3 Dev
+            Sitio V.2.4 Dev
           </h3>
         </div>
       </div>
     </div>
 
     <!-- Actividades del mes -->
-    <section class="section-container actividades">
+    <section class="section-container actividades" id="actividades">
 
       <div class="container-fluid mb-5 mb-lg-0 pb-5 pb-lg-0">
         <div class="row">
           <div class="col-lg-1 col-1"></div>
           <div class="col-lg-5 col-10">
-            <h2 class="text-xl-start text-center">Actividades del mes</h2>
+            <h2 class="text-lg-start text-center">Actividades del mes</h2>
           </div>
         </div>
       </div>
@@ -239,7 +285,7 @@
                 <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
               <img src="./img/actividad1.jpg" class="card-img-bottom" alt="Niño en cusrso de lectura">
-              <a class="boton" href="#" role="button">Más info</a>
+              <a class="boton" href="./html/linkear.html" role="button">Más info</a>
             </div>
           </div>
 
@@ -251,7 +297,7 @@
                 <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
               <img src="./img/actividad2.png" class="card-img-bottom" alt="">
-              <a class="boton" href="#" role="button">Más info</a>
+              <a class="boton" href="./html/linkear.html" role="button">Más info</a>
             </div>
           </div>
 
@@ -263,7 +309,7 @@
                 <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
               <img src="./img/actividad3.png" class="card-img-bottom" alt="...">
-              <a class="boton" href="#" role="button">Más info</a>
+              <a class="boton" href="./html/linkear.html" role="button">Más info</a>
             </div>
           </div>
         </div>
@@ -272,7 +318,7 @@
     </section>
 
     <!-- Programas -->
-    <section class="bg-gris section-container">
+    <section class="bg-gris section-container" id="programas">
 
       <div class="container-fluid mb-5 pb-5">
         <div class="row d-flex justify-content-center">
@@ -298,7 +344,7 @@
                 <h4>2do. Congreso de poesía</h4>
                 <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
-              <a class="boton" href="#" role="button">Infórmate</a>
+              <a class="boton" href="./html/linkear.html" role="button">Infórmate</a>
             </div>
           </div>
 
@@ -309,7 +355,7 @@
                 <h4>2do. Congreso de poesía</h4>
                 <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
-              <a class="boton" href="#" role="button">Colabora</a>
+              <a class="boton" href="./html/linkear.html" role="button">Colabora</a>
             </div>
           </div>
 
@@ -320,7 +366,7 @@
                 <h4>2do. Congreso de poesía</h4>
                 <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
-              <a class="boton" href="#" role="button">Participa</a>
+              <a class="boton" href="./html/linkear.html" role="button">Participa</a>
             </div>
           </div>
         </div>
@@ -329,7 +375,7 @@
     </section>
     
     <!-- Logros -->
-    <section class="section-container">
+    <section class="section-container" id="logros">
 
       <div class="container-fluid mb-5 pb-5">
         <div class="row">
@@ -337,7 +383,7 @@
           <div class="col-lg-1 col-1"></div>
 
           <div class="col-lg-5 col-10">
-            <h2 class="text-xl-start text-center">Logros</h2>
+            <h2 class="text-lg-start text-center">Logros</h2>
           </div>
 
         </div>
@@ -353,7 +399,7 @@
                 <h4 class="text-center">2do. Congreso de poesía</h4>
                 <p class="card-text text-center">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
-              <a class="boton" href="#" role="button">Infórmate</a>
+              <a class="boton" href="./html/linkear.html" role="button">Infórmate</a>
             </div>
           </div>
 
@@ -364,7 +410,7 @@
                 <h4 class="text-center">2do. Congreso de poesía</h4>
                 <p class="card-text text-center">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
-              <a class="boton" href="#" role="button">Colabora</a>
+              <a class="boton" href="./html/linkear.html" role="button">Colabora</a>
             </div>
           </div>
 
@@ -375,7 +421,7 @@
                 <h4 class="text-center">2do. Congreso de poesía</h4>
                 <p class="card-text text-center">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
-              <a class="boton" href="#" role="button">Participa</a>
+              <a class="boton" href="./html/linkear.html" role="button">Participa</a>
             </div>
           </div>
         </div>
@@ -384,7 +430,7 @@
     </section>
 
     <!-- Colabora con nosotros -->
-    <section class="bg-gris section-container">
+    <section class="bg-gris section-container" id="colabora">
 
       <div class="container-fluid mb-5 pb-5">
         <div class="row">
@@ -392,7 +438,7 @@
           <div class="col-lg-1 col-1"></div>
 
           <div class="col-lg-5 col-10">
-            <h2 class="text-xl-start text-center">Colabora con nosotros</h2>
+            <h2 class="text-lg-start text-center">Colabora con nosotros</h2>
           </div>
 
         </div>
@@ -408,7 +454,7 @@
                 <h4>2do. Congreso de poesía</h4>
                 <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
-              <a class="boton" href="#" role="button">Infórmate</a>
+              <a class="boton" href="./html/linkear.html" role="button">Infórmate</a>
             </div>
           </div>
 
@@ -419,7 +465,7 @@
                 <h4>2do. Congreso de poesía</h4>
                 <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
-              <a class="boton" href="#" role="button">Colabora</a>
+              <a class="boton" href="./html/linkear.html" role="button">Colabora</a>
             </div>
           </div>
           
@@ -430,7 +476,7 @@
                 <h4>2do. Congreso de poesía</h4>
                 <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
               </div>
-              <a class="boton" href="#" role="button">Participa</a>
+              <a class="boton" href="./html/linkear.html" role="button">Participa</a>
             </div>
           </div>
         </div>
@@ -438,8 +484,121 @@
       </div>
     </section>
 
+    <!-- Eventos (3 tarjetas) -->
+    <section class="section-container d-none d-lg-block" id="eventos">
+      
+      <div class="container-fluid mb-5 pb-5">
+        <div class="row">
+          
+          <div class="col-lg-1 col-1"></div>
+          
+          <div class="col-lg-5 col-10">
+            <h2 class="text-lg-start text-center">Eventos</h2>
+          </div>
+
+          <!-- Carrusel con 3 tarjetas -->
+          <div class="container-fluid">
+            <div class="row d-flex justify-content-center gap-5 tarjetas">
+
+              <div class="carousel carousel-dark slide col-10 mt-5 pt-5 pt-0" id="carouselExampleInterval" data-bs-ride="carousel" style="border: solid red 2px;">
+
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active" data-bs-interval="5000">
+
+                    <div class="card-group"  style="border: solid pink 2px;">
+
+                      <div class="card  card-colabora ms-5">
+                        <img src="./img/actividad3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4>Evento 1</h4>
+                          <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                        </div>
+                        <a class="boton" href="./html/linkear.html" role="button">Participa</a>
+                      </div>
+                      
+                      <div class="card  card-colabora ms-5">
+                        <img src="./img/actividad3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4>Evento 1</h4>
+                          <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                        </div>
+                        <a class="boton" href="./html/linkear.html" role="button">Participa</a>
+                      </div>
+                      
+                      <div class="card  card-colabora ms-5">
+                        <img src="./img/actividad3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4>Evento 1</h4>
+                          <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                        </div>
+                        <a class="boton" href="./html/linkear.html" role="button">Participa</a>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-item active" data-bs-interval="5000">
+
+                    <div class="card-group"  style="border: solid gold 5px;">
+
+                      <div class="card  card-colabora ms-5">
+                        <img src="./img/actividad3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4>Evento 1</h4>
+                          <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                        </div>
+                        <a class="boton" href="./html/linkear.html" role="button">Participa</a>
+                      </div>
+                      
+                      <div class="card  card-colabora ms-5">
+                        <img src="./img/actividad3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4>Evento 1</h4>
+                          <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                        </div>
+                        <a class="boton" href="./html/linkear.html" role="button">Participa</a>
+                      </div>
+                      
+                      <div class="card  card-colabora ms-5">
+                        <img src="./img/actividad3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4>Evento 1</h4>
+                          <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                        </div>
+                        <a class="boton" href="./html/linkear.html" role="button">Participa</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" style="border: solid blue 2px;">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"  style="border: solid green 2px;"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" style="border: solid blue 2px;">
+                  <span class="carousel-control-next-icon" aria-hidden="true" style="border: solid green 2px;"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+
+        </div>
+      </div>
+    </section>
+
     <!-- Quién es Hannh Arendt -->
-    <section class="section-container hannah">
+    <section class="section-container hannah" id="hannah">
       
       <div class="container-fluid">
 
@@ -462,7 +621,7 @@
             </p>
 
             <div class="text-xl-start text-center">
-              <a class="boton" href="#" role="button">Infórmate</a>
+              <a class="boton" href="./html/subHannaharendt.html" role="button">Infórmate</a>
             </div>
             
           </div>

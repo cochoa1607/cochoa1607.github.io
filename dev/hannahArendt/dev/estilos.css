@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* --------------------
@@ -271,7 +272,9 @@ Normalización secciones
   border: solid #FED72A 0.2rem;
 }
 
-/* Actividades del mes ---------------------------------------------------------------------------------------------------*/
+/* --------------------
+Actividades del mes 
+-------------------- */
 .card-body h3,
 .card-body h4,
 .card-body p {
@@ -285,7 +288,9 @@ Normalización secciones
   border-radius: 1rem !important;
 }
 
-/* Programas ---------------------------------------------------------------------------------------------------*/
+/* --------------------
+Programas
+-------------------- */
 .card-programas {
   border-radius: 1rem !important;
   box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
@@ -297,7 +302,9 @@ Normalización secciones
   border-radius: 1rem 1rem 0 0;
 }
 
-/* Logros ---------------------------------------------------------------------------------------------------*/
+/* --------------------
+Logros
+-------------------- */
 .card-logros {
   border-radius: 10px !important;
   padding: 0 0 3rem 0;
@@ -327,7 +334,9 @@ Normalización secciones
   background-image: url(./img/imgCuadrada3.png) !important;
 }
 
-/* Colabora con nosotros ---------------------------------------------------------------------------------------------------*/
+/* --------------------
+Colabora con nosotros
+-------------------- */
 .card-colabora {
   border-radius: 10px !important;
   box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
@@ -339,10 +348,26 @@ Normalización secciones
   border-radius: 1rem 1rem 0 0;
 }
 
-/* Quién es Hannah Arendt ---------------------------------------------------------------------------------------------------*/
-/* .hannah .cont-imagen{
-    margin: auto;
-} */
+/* --------------------
+Eventos
+-------------------- */
+.carousel-item {
+  transition: all ease-in-out 400ms !important;
+  height: auto;
+}
+
+.card-group {
+  margin: 0 5rem 0 5rem;
+}
+
+.carousel button {
+  opacity: 1;
+  width: 5%;
+}
+
+/* --------------------
+Quién es Hannah Arendt
+-------------------- */
 .hannah .imagen {
   width: auto;
 }
@@ -438,7 +463,7 @@ Mobile
 ------------------------------ */
 @media only screen and (max-width: 576px) {
   .carousel .carrusel {
-    font-size: 3.6rem;
+    font-size: 2.4rem;
     padding: 0 0.5rem;
     text-align: center;
   }

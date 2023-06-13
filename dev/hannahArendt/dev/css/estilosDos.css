@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* --------------------
 Variables 
 -------------------- */
@@ -90,6 +91,14 @@ Mapa
 }
 
 /* --------------------
+Animación secciones
+-------------------- */
+#sedes {
+  transition: all ease-in-out 800ms;
+  scroll-behavior: smooth;
+}
+
+/* --------------------
 X
 X
 Colabora
@@ -158,6 +167,9 @@ X
   background-image: url(../img/logo-uacm.png);
 }
 
+/* --------------------
+Animación secciones
+-------------------- */
 @media only screen and (max-width: 992px) {
   .mapa-container {
     width: 70%;
@@ -168,6 +180,6 @@ X
     width: 100%;
   }
   .objetivos img {
-    max-width: 100%;
+    max-width: 80%;
   }
 }/*# sourceMappingURL=estilosDos.css.map */
