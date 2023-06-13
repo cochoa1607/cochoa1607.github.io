@@ -91,14 +91,6 @@ Mapa
 }
 
 /* --------------------
-Animación secciones
--------------------- */
-#sedes {
-  transition: all ease-in-out 800ms;
-  scroll-behavior: smooth;
-}
-
-/* --------------------
 X
 X
 Colabora
