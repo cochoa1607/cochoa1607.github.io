@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/* --------------------
+Variables 
+-------------------- */
+/* --------------------
+Objetivos 
+-------------------- */
+.objetivos .imagen {
+  width: auto;
+}
+
+.imagen img {
+  width: 100%;
+  border-radius: 2rem 0 2rem 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+          box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+}
+
+.objetivos .texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  padding: 0;
+}
+
+.objetivos .texto .boton-container {
+  margin: 2rem 0;
+}
+
+/* --------------------
+Mapa
+-------------------- */
+.sedes-container {
+  width: 100vw;
+}
+
+.mapa-container {
+  border: solid #FED72A 2px;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2rem 0 2rem 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+          box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+  background-color: #ffffff;
+}
+
+.mapa-container .imagen {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.mapa-container img {
+  width: 100%;
+  border-radius: 2rem 0 2rem 0;
+}
+
+.mapa-container .imagen a {
+  width: 100%;
+  height: 100%;
+  border: solid red 2px;
+}
+
+.mapa-container .imagen iframe {
+  width: 100%;
+  height: 30rem;
+  border-radius: 2rem 0 2rem 0;
+  border: solid #1E5F66 0.1rem !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+          box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+}
+
+.mapa-container span {
+  font-family: "Bitter", serif;
+  color: #1E5F66;
+  font-size: 2rem;
+  text-shadow: rgba(0, 0, 0, 0.1254901961) 2px 2px 2px;
+}
+
+.mapa-container p {
+  margin: 1rem 0 2rem 0;
+}
+
+.mapa-container ul {
+  list-style: circle;
+  margin: 0;
+}
+
+.mapa-container ul li {
+  color: #000000;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+/* --------------------
+X
+X
+Programas
+X
+X
+-------------------- */
+.programas .caja-contenedor-textos {
+  height: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem 0;
+}
+
+.programas .caja-texto-vertical {
+  width: 1vw;
+  height: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.programas .texto-vertical {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  white-space: nowrap;
+  -webkit-text-decoration: underline 0.2rem;
+          text-decoration: underline 0.2rem;
+}
+
+.programas .caja-texto {
+  width: 30vw;
+  margin: 0 5rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.programas .caja-texto p {
+  text-align: justify;
+}
+
+.programas .caja-imagen {
+  width: 40vw;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.programas .caja-imagen .imagen {
+  width: 100%;
+  background-image: url(../img/actividad1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem 0 2rem 0;
+}
+
+/* --------------------
+Cursos y talleres
+-------------------- */
+.page-item .active {
+  background-color: #95D4E1 !important;
+  color: #95D4E1 !important;
+}
+
+.programas .card-programas {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+          box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+  padding: 0 0 3rem 0;
+  border: solid #FED72A 0.2rem !important;
+  border-radius: 1rem !important;
+}
+
+/* --------------------
+X
+X
+Colabora
+X
+X
+-------------------- */
+.imagen-talleristas {
+  width: auto;
+}
+
+.imagen-talleristas img {
+  width: 100%;
+}
+
+.voluntarios .imagen img {
+  width: 100%;
+}
+
+.voluntarios ul {
+  list-style: decimal;
+}
+
+.voluntarios ul li {
+  color: #000000;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.instituciones .linea {
+  height: 0.5rem;
+  width: 100%;
+  background-color: #FED72A;
+  border-radius: 5rem;
+}
+
+.instituciones .institucion {
+  border: solid #1E5F66 0.01rem;
+  border-radius: 2rem 0 2rem 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+          box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
+}
+
+.instituciones .institucion a {
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+}
+
+.instituciones .institucion a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.instituciones .logo {
+  width: 100%;
+  height: 10rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.instituciones .logo-01 {
+  background-image: url(../img/logo-uamx.png);
+}
+
+.instituciones .logo-02 {
+  background-image: url(../img/logo-uacm.png);
+}
+
+/* --------------------
+Animación secciones
+-------------------- */
+@media only screen and (max-width: 992px) {
+  .mapa-container {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .mapa-container {
+    width: 100%;
+  }
+  .objetivos img {
+    max-width: 80%;
+  }
+}
+/* --------------------
+MQ para cursos y talleres
+-------------------- */
+/* xs */
+@media only screen and (max-width: 576px) {
+  .programas .caja-contenedor-textos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .programas .caja-texto-vertical {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    width: 80vw;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    height: auto;
+    margin: 2rem 0 0 0;
+  }
+  .programas .caja-texto {
+    width: 80vw;
+    margin: 0 0 2rem 0;
+  }
+  .programas .caja-imagen {
+    height: 20rem;
+    width: 70vw;
+  }
+}
+/* sm */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .programas .caja-contenedor-textos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .programas .caja-texto-vertical {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    width: 70vw;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    height: auto;
+  }
+  .programas .caja-texto {
+    width: 70vw;
+    margin: 0 0 2rem 0;
+  }
+  .programas .caja-imagen {
+    height: 27rem;
+    width: 60vw;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .programas .caja-texto {
+    width: 35vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .programas .caja-imagen {
+    width: 40vw;
+    height: 23rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}/*# sourceMappingURL=estilosSecundario.css.map */
