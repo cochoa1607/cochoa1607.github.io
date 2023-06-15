@@ -35,10 +35,6 @@ Objetivos
 /* --------------------
 Mapa
 -------------------- */
-.sedes-container {
-  width: 100vw;
-}
-
 .mapa-container {
   border: solid #FED72A 2px;
   width: 45%;
@@ -66,17 +62,17 @@ Mapa
 .mapa-container img {
   width: 100%;
   border-radius: 2rem 0 2rem 0;
+  height: 15rem;
 }
 
 .mapa-container .imagen a {
   width: 100%;
-  height: 100%;
   border: solid red 2px;
 }
 
 .mapa-container .imagen iframe {
   width: 100%;
-  height: 30rem;
+  height: 15rem;
   border-radius: 2rem 0 2rem 0;
   border: solid #1E5F66 0.1rem !important;
   -webkit-box-shadow: rgba(0, 0, 0, 0.0980392157) 10px 10px 15px;
