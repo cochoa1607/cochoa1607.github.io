@@ -135,13 +135,13 @@ Navbar
 }
 
 .navbar .active {
-  border-bottom: #FED72A solid 1px;
   font-weight: 600;
+  -webkit-text-decoration: underline #FED72A 0.2rem;
+          text-decoration: underline #FED72A 0.2rem;
 }
 
 .nav-item {
-  font-size: 1.4rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 
@@ -152,9 +152,16 @@ Navbar
 .nav-item ul li a {
   font-size: 1.4rem;
   font-weight: 300;
+  margin: 0;
 }
 
-/* Carrusel ---------------------------------------------------------------------------------------------------*/
+nav .nav-redes {
+  border-bottom: none !important;
+}
+
+/* --------------------
+Carrusel
+-------------------- */
 .carousel button {
   opacity: 100%;
   width: 5%;
@@ -212,7 +219,9 @@ Navbar
   text-align: left;
 }
 
-/* Pleca amarilla ---------------------------------------------------------------------------------------------------*/
+/* --------------------
+Pleca amarilla
+-------------------- */
 .pleca {
   background-color: #FED72A;
   padding: 10px 0;
@@ -453,12 +462,21 @@ Tablet
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* ------------------------------ 
-  Quién es Hannah Arendt
-  ------------------------------ */
-  .actividades h2 {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  .nav-item ul {
+    border-bottom: solid #ffffff 0.2rem !important;
+    background-color: rgba(255, 255, 255, 0.1882352941) !important;
+  }
+  nav .nav-redes {
+    border-bottom: none !important;
+    background-color: none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-redes ul {
+    background-color: none !important;
   }
   /* ------------------------------ 
   Quién es Hannah Arendt
@@ -527,6 +545,22 @@ Mobile
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .nav-item ul {
+    border-bottom: solid #ffffff 0.2rem !important;
+    background-color: rgba(255, 255, 255, 0.1882352941) !important;
+  }
+  nav .nav-redes {
+    border-bottom: none !important;
+    background-color: none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-redes ul {
+    background-color: none !important;
+  }
   /* ------------------------------ 
   Carousel
   ------------------------------ */
@@ -553,10 +587,6 @@ Mobile
   body h2 {
     -webkit-text-decoration: underline #FED72A 0.3rem !important;
             text-decoration: underline #FED72A 0.3rem !important;
-  }
-  .actividades h2 {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
   /* ------------------------------ 
   Quién es Hannah Arendt
