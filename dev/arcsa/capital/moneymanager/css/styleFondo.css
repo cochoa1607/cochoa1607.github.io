@@ -1,0 +1,294 @@
+/* --------------------
+Header
+-------------------- */
+.contenedor-header{
+    background-image: url(../img/headerFondo.png);
+}
+
+/* --------------------
+Bullets
+-------------------- */
+
+.container-bullets{
+    margin-top: 10rem;
+}
+
+.container-bullets .bullets{
+    background-color: var(--gris-tres);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-bullets .bullets .caja img{
+    width: auto;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+
+/* --------------------
+Configuramos
+-------------------- */
+
+.container-configuramos{
+    margin-top: 10rem;
+}
+
+.configuramos{
+    background-color: var(--fondo-azul);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+}
+
+.configuramos .carteras{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.configuramos .carteras img{
+    width: 35%;
+    max-width: 30rem;
+    margin: 0 5rem;
+}
+
+/* --------------------
+App
+-------------------- */
+
+.container-app{
+    margin-top: 10rem;
+    padding: 5vh 0;
+}
+
+.app{
+    height: 50vh;
+    min-height: 50rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.app .parallax{
+    height: 180vh;
+    position: absolute;
+    width: 50%;
+    background-image: url(../img/mockApp.png);
+    background-color: var(--gris-tres);
+    background-size: contain;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.app .texto {
+    width: 50%;
+    margin-left: 50%;
+    padding: 5rem;
+    background-color: var(--gris-tres);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.app .texto h2{
+    text-align: left;
+    margin-top: 0;
+}
+
+.app .texto ol{
+    margin: 2rem 0;
+}
+
+.app .texto ol li{
+    list-style: inside decimal;
+    color: var(--tercero);
+    margin-bottom: 1rem;
+}
+
+.app .botones{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.app .botones a{
+    width: 17rem;
+    margin: .5rem;
+    transition: var(--transitions);
+}
+
+.app .botones a:hover{
+    transform: scale(1.02);
+}
+
+.app .botones img{
+    cursor: pointer;
+    width: 15rem;
+    margin: 1rem .5rem;
+    border-radius: .8rem;
+    box-shadow: var(--boxShadow);
+}
+
+.app .botones .playS{
+    margin-left: 3rem;
+}
+
+/* --------------------
+App
+-------------------- */
+
+.container-tranquilidad{
+    margin-top: 10rem;
+}
+
+.tranquilidad{
+    width: 90%;
+    margin-left: 10%;
+    padding: 5rem 0 5rem 0;
+    border-radius: 2rem 0 0 2rem;
+    background-color: var(--fondo-azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40rem;
+}
+
+.tranquilidad .texto{
+    margin-left: 5rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tranquilidad .texto h2{
+    text-align: left;
+    max-width: 30ch;
+    margin-bottom: 3rem;
+    margin-left: 0;
+}
+
+.tranquilidad .slider {
+    width: auto;
+    margin: 0;
+    display: flex;
+}
+
+.texto .option {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5rem;
+    color: var(--primero);
+    border: solid var(--primero) .2rem;
+    background-color: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto h4{
+    margin-bottom: 3rem;
+}
+
+.tranquilidad .texto p{
+    color: var(--negro);
+    text-align: left;
+}
+
+.texto .option.selected {
+    background-color: var(--primero);
+    color: white;
+    font-weight: 600;
+  }
+
+.tranquilidad .slider img{
+    height: 10rem;
+}
+
+.tranquilidad .image-container {
+    width: auto;
+    text-align: center;
+    margin-top: 20px;
+    height: auto;
+}
+
+/* --------------------
+Silumador
+-------------------- */
+
+.container-simulador{
+    margin-top: 10rem;
+}
+
+.container-simulador .simulador{
+    background-color: none;
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-simulador .simulador .cajaUno{
+    width: 40%;
+    height: 30rem;
+    margin: auto;
+    padding: 5rem 5%;
+    background-color: var(--fondo-verde);
+    border-radius: 2rem 0 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-simulador .simulador .cajaUno h2{
+    text-align: left;
+    margin: 0;
+}
+
+.container-simulador .simulador .cajaUno .subtitulo{
+    color: var(--tercero);
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 3rem 0;
+}
+
+.container-simulador .simulador .cajaDos{
+    width: 60%;
+    height: 30rem;
+    margin: auto;
+    padding: 5rem 5%;
+    background-color: var(--blanco);
+    border-radius: 0 2rem 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-simulador .simulador .cajaDos p{
+    text-align: right;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+}
+
+.container-simulador .simulador .cajaDos .boton{
+    text-align: right;
+}

@@ -1,0 +1,546 @@
+/* --------------------
+Cover
+-------------------- */
+.container-cover{
+    background-image: url(../img/bgHeader.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cover{
+    width: 40%;
+    margin-left: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cover h3,
+.cover p{
+    color: var(--blanco);
+    text-align: left;
+}
+
+.cover h1,
+.cover h3,
+.cover p{
+    margin: 0 0 5rem 0;
+}
+
+/* --------------------
+Soluciones
+-------------------- */
+
+.container-soluciones{
+    margin-top: 10rem;
+}
+
+.soluciones{
+    background-color: var(--gris-tres);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+}
+
+.soluciones .cajas{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.soluciones .cajas .caja{
+    width: 45%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    border: solid var(--primero) .1rem;
+    border-radius: 1rem;
+    background-color: var(--blanco);
+}
+
+.soluciones .cajas .caja .icono{
+    width: 40%;
+    margin: 3rem auto 2rem auto;
+    max-width: 15rem;
+}
+
+.soluciones .cajas .caja h4{
+    text-align: center;
+}
+
+.soluciones .cajas .caja p{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.soluciones .cajas .caja .boton{
+    padding-bottom: 3rem;
+    margin: auto;
+}
+
+.soluciones .cajas .caja .icono .contorno{
+    fill: var(--primero);
+    stroke: var(--primero);
+}
+
+/* --------------------
+Inversores
+-------------------- */
+
+.container-inversores{
+    margin-top: 10rem;
+}
+
+.inversores{
+    background-color: var(--blanco);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+}
+
+.inversores p{
+    text-align: center;
+    margin: auto;
+}
+
+.inversores .cajas{
+    width: 100%;
+    height: calc(20vh);
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inversores .cajas .caja{
+    width: 45%;
+    height: 100%;
+}
+
+.inversores .cajas .caja .imagen01{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url(../img/inversionEquipo.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.inversores .cajas .caja .imagen02{
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+    background-image: url(../img/inversionBullets.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.inversores .boton{
+    text-align: center;
+}
+
+.inversores .boton .btn-primario{
+    margin: .5rem 2rem 1.5rem 2rem;
+    text-align: center;
+}
+
+/* --------------------
+Patrimonio
+-------------------- */
+
+.patrimonio swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.patrimonio swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patrimonio .content{
+    width: 60%;
+    margin: 5rem auto;
+    padding: 2rem 0;
+    border: solid var(--primero) .1rem;
+    border-radius: 2rem;
+    background-color: var(--blanco);
+}
+
+.patrimonio img {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.patrimonio p {
+    padding: 1rem 5rem;
+    text-align: center;
+
+}
+
+.patrimonio  swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.patrimonio .boton{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* --------------------
+Elegirnos
+-------------------- */
+
+.container-elegirnos{
+    background-color: var(--gris-cuatro);
+    height: auto;
+}
+
+.elegirnos .mySwiper{
+    height: auto;
+}
+
+.elegirnos swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.elegirnos swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--gris-cuatro);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.elegirnos .titulo {
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.elegirnos .content {
+    width: 90%;
+    color: var(--cuarto);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elegirnos img {
+    width: auto;
+    height: 12rem;
+    min-width: 15rem;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--cuarto);
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 2px;
+    stroke: var(--cuarto);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+
+/* --------------------
+Oficinas
+-------------------- */
+
+.container-oficinas{
+    margin-top: 10rem;
+}
+
+.oficinas{
+    background-color: var(--gris-tres);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+}
+
+.oficinas .cajas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.oficinas .cajas .caja{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.oficinas .cajas .caja .textoUno{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.oficinas .cajas .caja .textoUno .titulo{
+    width: 100%;
+    max-width: 50rem;
+    color: var(--segundo);
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.oficinas .cajas .caja .textoUno .descripcion{
+    width: 100%;
+    max-width: 50rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding-right: 2.5rem;
+}
+
+.oficinas .cajas .caja .imagenUno{
+    width: 50%;
+}
+
+.oficinas .cajas .caja .imagenUno .titulo{
+    position: absolute;
+    padding: 1rem 3rem 3rem 2rem;
+    color: var(--blanco);
+    font-weight: 500;
+    font-size: 3rem;
+    text-shadow: var(--textShadow);
+}
+
+.oficinas .cajas .caja .imagenUno img{
+    width: 100%;
+    max-width: 50rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.oficinas .cajas .caja .textoDos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.oficinas .cajas .caja .textoDos .titulo{
+    width: 100%;
+    max-width: 50rem;
+    color: var(--segundo);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.oficinas .cajas .caja .textoDos .descripcion{
+    width: 100%;
+    text-align: right;
+    max-width: 50rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding-left: 2.5rem;
+}
+
+.oficinas .cajas .caja .imagenDos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.oficinas .cajas .caja .imagenDos .titulo{
+    position: absolute;
+    text-align: end;
+    width: 100%;
+    max-width: 50rem;
+    padding: 1rem 3rem 3rem 2rem;
+    color: var(--blanco);
+    font-weight: 500;
+    font-size: 3rem;
+    text-shadow: var(--textShadow);
+}
+
+.oficinas .cajas .caja .imagenDos img{
+    width: 100%;
+    max-width: 50rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.oficinas .boton{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* --------------------
+Certificaciones
+-------------------- */
+
+.container-certificaciones{
+    margin-top: 10rem;
+}
+
+.certificaciones{
+    background-color: var(--blanco);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+}
+
+.certificaciones h2{
+    margin-bottom: 10rem;
+}
+
+.certificaciones-caja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.certificaciones .certificaciones-titulo{ 
+    width: 80%;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.certificaciones .certificaciones-titulo h3{
+    margin-bottom: 1rem;
+    color: var(--segundo);
+}
+
+.certificaciones .certificaciones-titulo p{
+    margin-bottom: 1rem;
+    max-width: 70ch;
+}
+
+.certificaciones .certificaciones-imagen{
+    width: 20%;
+}
+
+.certificaciones .certificaciones-imagen img{
+    width: 100%;
+}
+
+[data-animation="fade"]{
+    opacity: 0;
+    transition: var(--transitionsXL);
+    --opacity: 1;
+}
+
+.unset{
+    opacity: var(--opacity);
+}
+
+/* --------------------
+Cuenta
+-------------------- */
+
+.container-cuenta{
+    margin-top: 10rem;
+}
+
+.cuenta{
+    background-color: var(--fondo-azul);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+}  
+
+.cuenta form{
+    width: 80%;
+    max-width: 50rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.cuenta select,
+.cuenta .form-input {
+    width: 100%;
+    height: auto;
+    border: solid var(--primero) .1rem !important;
+    background-color: var(--blanco);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.cuenta label {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.cuenta .check{
+    display: flex;
+}
+
+.cuenta .check-input{
+    margin-right: 1rem;
+}
+
+.check[type="checkbox" i]{
+    background-color: #050505 !important;
+}
+
+.cuenta .check label{
+    font-size: 1.2rem;
+}
+
+.cuenta .boton{
+    text-align: center;
+    margin-top: 5rem;
+}
