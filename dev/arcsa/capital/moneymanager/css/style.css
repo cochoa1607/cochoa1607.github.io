@@ -301,10 +301,12 @@ footer{
     height: auto;
     background-color: var(--gris-cuatro);
 }
+
 .contenedor-footer{
     width: 90%;
     margin: 5rem auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contenedor-footer .logos{
@@ -321,6 +323,8 @@ footer{
 
 .caja-footer img{
     width: 100%;
+    max-width: 20rem;
+    margin: auto;
 }
 
 .caja-footer h6{
@@ -352,6 +356,12 @@ footer{
 .caja-footer .linea{
     border-bottom: solid var(--blanco) .1rem;
     margin-bottom: 4rem;
+}
+
+.caja-footer .lineaDos{
+    border-bottom: solid var(--blanco) .1rem;
+    margin-bottom: 4rem;
+    display: none;
 }
 
 .caja-footer ul{
@@ -515,7 +525,7 @@ Header PAGS
     text-align: right;
 }
 
-/* --- */
+/* Texto right */
 .texto-right{
     justify-content: center;
 }
@@ -562,9 +572,125 @@ Header PAGS
 }
 
 /* --------------------
+Footer
+-------------------- */
+@media only screen and (max-width: 1599px) {
+    .contenedor-footer{
+        width: 90%;
+        margin: 5rem auto;
+        display: flex;
+    }
+
+    .contenedor-footer .caja-footer{
+        width: 100%;
+        padding: 0;
+    }
+
+    .contenedor-footer .logos{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 3rem;
+        flex-direction: column;
+    }
+    
+    .contenedor-footer .logos img{
+        margin-top: 3rem;
+    }
+    
+    .caja-footer h6{
+        width: 50%;
+        margin: auto;
+        margin-top: 4rem;
+        text-align: left;
+    }
+    
+    .caja-footer .subtitulo{
+        text-align: left;
+    }
+    
+    .caja-footer .newsletter{
+        text-align: center;
+    }
+    
+    .caja-footer .linea{
+        display: flex;
+        width: 60%;
+        margin: 0 auto 4rem auto;
+    }
+    
+    .caja-footer .lineaDos{
+        width: 60%;
+        display: flex;
+        margin: 0 auto 4rem auto;
+    }
+    
+    .caja-footer ul{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    .caja-footer li{
+        width: 50%;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .caja-footer li i{
+        width: auto;
+    }
+
+    .caja-footer .form-ul{
+        width: 50%;
+        margin: auto;
+        padding: 1rem 0 0 0;
+    }
+
+    .caja-footer .news{
+        width: 50%;
+        margin: 0 auto 2rem auto;
+        text-align: center;
+    }
+
+    .caja-footer .foot-redes{
+        width: 50%;
+        margin: 4rem auto 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 0;
+    }
+
+    .caja-footer .foot-redes li{
+        width: auto;
+    }
+    
+    .caja-footer .foot-redes a{
+        width: auto;
+    }
+
+}
+
+/* --------------------
 Tablet / Mobile
 -------------------- */
 @media only screen and (max-width: 1199px) {
+
+    /* --------------------
+    Clases universales
+    -------------------- */
+    section{
+        margin: 0;
+    }
+
+    .contenedor-seccion{
+        width: 100%;
+        margin: auto;
+        border-radius: 0;
+        padding: 8rem 5%;
+    }
 
     /* --------------------
     Menu
@@ -677,7 +803,7 @@ Tablet / Mobile
     }
 
     /* --------------------
-    Mobile
+    Patrimonio
     -------------------- */
 
     .patrimonio .content{
@@ -698,4 +824,99 @@ Mobile
         width: 100vw;
     }
 
+    /* --------------------
+    Footer
+    -------------------- */
+
+    .caja-footer li{
+        width: 70%;
+        margin: auto;
+    }
+    
+    .caja-footer .form-ul{
+        width: 100%;
+        margin: auto;
+        padding: 1rem 0 0 0;
+    }
+    
+    .caja-footer h6{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .caja-footer .linea{
+        width: 80%;
+    }
+    
+    .caja-footer .lineaDos{
+        width: 80%;
+    }
+
+    .caja-footer .news{
+        width: 80%;
+        min-width: none;
+    }
+    
+    .caja-footer .form-ul{
+        width: 80%;
+        min-width: none;
+    }
+
+    /* --------------------
+    Header PAGS
+    -------------------- */
+
+    .contenedor-header{
+        height: 100vh;
+        background-position: center;
+    }
+
+    .texto{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+    }
+
+    .texto span{
+        text-align: center;
+    }
+
+    .texto h1{
+        text-align: center;
+    }
+
+    .texto p{
+        text-align: center;
+    }
+
+    .texto .boton{
+        text-align: center;
+    }
+
+    /* Texto right */
+    .texto-right{
+        justify-content: center;
+    }
+
+    .texto-right span{
+        text-align: center;
+    }
+
+    .texto-right h1{
+        text-align: center;
+    }
+
+    .texto-right p{
+        text-align: center;
+    }
+
+    .texto-right .boton{
+        text-align: center;
+    }
+
+    .texto-right .boton .btn-primario{
+        margin: .5rem 1rem 1.5rem 1rem;
+    }
 }

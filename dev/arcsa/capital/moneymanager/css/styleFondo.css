@@ -87,6 +87,18 @@ App
     background-repeat: no-repeat;
 }
 
+.app .estatica{
+    height: 180vh;
+    position: absolute;
+    width: 50%;
+    background-image: url(../img/mockApp.png);
+    background-color: var(--gris-tres);
+    background-size: contain;
+    background-position: center left;
+    background-repeat: no-repeat;
+    display: none;
+}
+
 .app .texto {
     width: 50%;
     margin-left: 50%;
@@ -292,3 +304,21 @@ Silumador
 .container-simulador .simulador .cajaDos .boton{
     text-align: right;
 }
+
+/* --------------------
+Tablet / Mobile
+-------------------- */
+@media only screen and (max-width: 1199px) {
+    .app .parallax{
+        display: none;
+    }
+    
+    .app .estatica{
+        display: flex;
+    }
+}
+
+/* --------------------
+Mobile
+-------------------- */
+@media only screen and (max-width: 640px){}

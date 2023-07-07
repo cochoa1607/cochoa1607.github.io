@@ -12,5 +12,5 @@ function changeImageStyle() {
     currentIndex = (currentIndex + 1) % imageList.length;
 };
 
-setInterval(changeImageStyle, 4000);
+setInterval(changeImageStyle, 2500);
 changeImageStyle();

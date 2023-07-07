@@ -115,15 +115,19 @@ Inversores
 
 .inversores .cajas{
     width: 100%;
-    height: calc(20vh);
+    height: calc(30vh);
     margin: 5rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.inversores .cajas .cajaTres{
+    display: none;
+}
+
 .inversores .cajas .caja{
-    width: 45%;
+    width: 50%;
     height: 100%;
 }
 
@@ -164,6 +168,8 @@ Patrimonio
 .patrimonio swiper-container {
     width: 100%;
     height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .patrimonio swiper-slide {
@@ -173,6 +179,10 @@ Patrimonio
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.patrimonio .cajaDos{
+    display: none;
 }
 
 .patrimonio .content{
@@ -187,7 +197,7 @@ Patrimonio
 .patrimonio img {
     display: block;
     width: 100%;
-    height: 30rem;
+    height: 24rem;
     object-fit: cover;
 }
 
@@ -196,11 +206,6 @@ Patrimonio
     text-align: center;
 
 }
-
-.patrimonio  swiper-container {
-    margin-left: auto;
-    margin-right: auto;
-  }
 
 .patrimonio .boton{
     text-align: center;
@@ -239,7 +244,7 @@ Elegirnos
     font-weight: 600;
     font-size: 2.4rem;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     margin-bottom: 5rem;
 }
 
@@ -270,9 +275,9 @@ Elegirnos
     justify-content: center;
     font-weight: bold;
     color: var(--cuarto);
-  }
+}
 
-  .autoplay-progress svg {
+.autoplay-progress svg {
     --progress: 0;
     position: absolute;
     left: 0;
@@ -286,7 +291,7 @@ Elegirnos
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
-  }
+}
 
 /* --------------------
 Oficinas
@@ -457,9 +462,11 @@ Certificaciones
     align-items: start;
 }
 
-.certificaciones .certificaciones-titulo h3{
+.certificaciones .certificaciones-titulo h5{
+    font-size: 2.2rem;
+    font-weight: 500;
     margin-bottom: 1rem;
-    color: var(--segundo);
+    max-width: 70ch;
 }
 
 .certificaciones .certificaciones-titulo p{
@@ -543,4 +550,425 @@ Cuenta
 .cuenta .boton{
     text-align: center;
     margin-top: 5rem;
+}
+
+/* --------------------
+Tablet / Mobile
+-------------------- */
+@media only screen and (max-width: 1199px) {
+
+    /* --------------------
+    Soluciones
+    -------------------- */
+
+    .container-soluciones{
+        margin-top: 0;
+    }
+
+    .soluciones .cajas .caja{
+        width: 35%;
+        min-width: 35rem;
+    }
+
+    /* --------------------
+    Inversores
+    -------------------- */
+
+    .container-inversores{
+        margin-top: 0;
+    }
+
+    .inversores .cajas{
+        width: 100%;
+        height: calc(30vh);
+        margin: 5rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* --------------------
+    Patrimonio
+    -------------------- */
+
+    .patrimonio swiper-container {
+        width: 80%;
+        min-width: 70rem;
+    }
+
+    .patrimonio img {
+        width: 100%;
+    }
+
+    /* --------------------
+    Elegirnos
+    -------------------- */
+
+    .elegirnos{
+        width: 80% !important;
+    }
+
+    /* --------------------
+    Oficinas
+    -------------------- */
+
+    .container-oficinas{
+        margin-top: 0;
+    }
+
+    /* --------------------
+    Certificaciones
+    -------------------- */
+
+    .container-certificaciones{
+        margin-top: 0;
+    }
+
+    .certificaciones-caja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .certificaciones .certificaciones-titulo{ 
+        width: 60%;
+    }
+
+    .certificaciones .certificaciones-titulo h5{
+        margin-bottom: 1rem !important;
+        text-align: center;
+        margin: auto;
+    }
+
+    .certificaciones .certificaciones-titulo p{
+        margin-bottom: 5rem !important;
+        text-align: center;
+        margin: auto;
+    }
+
+    .container-cuenta{
+        margin-top: 0;
+    }
+
+}
+
+/* --------------------
+Mobile L
+-------------------- */
+@media only screen and (max-width: 840px){
+
+    /* --------------------
+    Cover
+    -------------------- */
+    .cover{
+        width: 60%;
+        margin-left: 10%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* --------------------
+    Soluciones
+    -------------------- */
+
+    .container-soluciones{
+        margin-top: 0;
+    }
+
+    .soluciones .cajas{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .soluciones .cajas .caja{
+        width: 80%;
+        max-width: 45rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    /* --------------------
+    Elegirnos
+    -------------------- */
+
+    .elegirnos{
+        width: 100% !important;
+    }
+
+}
+
+/* --------------------
+Mobile
+-------------------- */
+@media only screen and (max-width: 640px){
+
+    /* --------------------
+    Cover
+    -------------------- */
+    .cover{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cover h1,
+    .cover h3,
+    .cover p{
+        text-align: center;
+    }
+    
+    .cover .boton{
+        margin: 0 2rem;
+        text-align: center;
+    }
+
+    /* --------------------
+    Inversores
+    -------------------- */
+    .inversores .cajas{
+        width: 100%;
+        height: calc(60vh);
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inversores .cajas .caja{
+        width: 100%;
+        height: 70%;
+    }
+    
+    .inversores .cajas .caja .imagen01{
+        background-position: center;
+    }
+    
+    .inversores .cajas .cajaDos{
+        display: none;
+    }
+    
+    .inversores .cajas .cajaTres{
+        height: 30%;
+        display: flex;
+    }
+    
+    .inversores .cajas .cajaTres ul{
+        margin: auto;
+    }
+
+    .inversores .cajas .cajaTres ul li{
+        list-style-position: inside;
+        color: var(--tercero);
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    /* --------------------
+    Patrimonio
+    -------------------- */
+
+    .patrimonio swiper-container{
+        display: none;
+    }
+    
+    .patrimonio .cajaDos{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .patrimonio .imagen{
+        display: flex;
+        height: 25rem;
+        width: 80%;
+        margin: 4rem auto;
+        background-image: url(../img/patrimonioUno.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 2rem 2rem 0 0;
+    }
+    
+    .patrimonio ul{
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .patrimonio ul li{
+        color: var(--segundo);
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    
+    .patrimonio .boton{
+        margin: 0;
+    }
+
+    /* --------------------
+    Elegirnos
+    -------------------- */
+    
+    .elegirnos .titulo {
+        margin-bottom: 6rem;
+        text-align: center;
+    }
+    
+    .elegirnos .content {
+        margin: auto;
+    }
+
+    .elegirnos .autoplay-progress{
+        display: none;
+    }
+
+    /* --------------------
+    Oficinas
+    -------------------- */
+
+    .oficinas{
+        background-color: var(--gris-tres);
+        width: 80%;
+        margin: auto;
+        border-radius: 2rem;
+        padding: 5rem 5%;
+    }
+
+    .oficinas .cajas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    
+    .oficinas .cajas .caja{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .oficinas .cajas .cajaDos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .oficinas .cajas .caja .textoUno{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .oficinas .cajas .caja .textoUno .titulo{
+        margin-top: 2rem;
+        padding: 0;
+    }
+    
+    .oficinas .cajas .caja .textoUno .descripcion{
+        padding: 0;
+    }
+
+    .oficinas .cajas .caja .imagenUno .titulo{
+        padding: 1rem 3rem 3rem 2rem;
+    }
+    
+    .oficinas .cajas .caja .imagenUno{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .oficinas .cajas .caja .imagenUno img{
+        border-radius: 2rem 2rem 0 0;
+    }
+    
+    .oficinas .cajas .caja .textoDos{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .oficinas .cajas .caja .textoDos .titulo{
+        margin-top: 2rem;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .oficinas .cajas .caja .textoDos .descripcion{
+        padding: 0;
+        text-align: center;
+    }
+    
+    .oficinas .cajas .caja .imagenDos{
+        width: 80%;
+        margin: 3rem auto 0 auto;
+        align-items: start;
+    }
+    
+    .oficinas .cajas .caja .imagenDos .titulo{
+        text-align: left;
+        padding: 1rem 3rem 3rem 2rem;
+    }
+
+    .oficinas .cajas .caja .imagenDos img{
+        width: 100%;
+        max-width: 50rem;
+        border-radius: 2rem 2rem 0 0;
+    }
+
+    /* --------------------
+    Certificaciones
+    -------------------- */
+
+    .certificaciones .certificaciones-caja{
+        margin-bottom: 4rem;
+        height: auto;
+        border-bottom: solid var(--primero) .1rem;
+    }
+    
+    .certificaciones .ultimo{
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .certificaciones h2{
+        margin-bottom: 5rem;
+    }
+
+    .certificaciones .certificaciones-titulo{ 
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .certificaciones .certificaciones-titulo h5{
+        margin-bottom: 1rem;
+        max-width: none;
+    }
+    
+    .certificaciones .certificaciones-titulo p{
+        margin-bottom: 1rem;
+        max-width: none;
+        margin-bottom: 0 !important;
+    }
+    
+    .certificaciones .certificaciones-titulo .txt{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .certificaciones .certificaciones-imagen{
+        width: 60%;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
 }

@@ -112,6 +112,7 @@ Bullets
 
 .container-bullets .bullets p{
     text-align: center;
+    margin: auto;
     margin-top: 3rem;
 }
 
@@ -237,7 +238,7 @@ Talentos
 
 .talentos .contenedor-cajas .caja-01 .imagen{
     width: 100%;
-    height: 15rem;
+    height: 22rem;
     background-image: url(../img/talentos.png);
     background-position: center top;
     background-size: cover;
@@ -263,7 +264,7 @@ Talentos
     width: 64%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .talentos .contenedor-cajas .caja-02 .cajita-01{
@@ -279,10 +280,10 @@ Talentos
 
 .talentos .contenedor-cajas .caja-02 .cajita-01,
 .talentos .contenedor-cajas .caja-02 .cajita-02{
-    width: 100%;
+    width: 99%;
     margin-left: 1%;
     background-color: var(--blanco);
-    padding: 0 2rem;
+    padding: 0 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,9 +296,7 @@ Talentos
     font-size: 1.8rem;
     font-weight: 500;
     text-transform: uppercase;
-}
-
-.talentos .contenedor-cajas .caja-02 ul{
+    max-width: 50ch;
 }
 
 .talentos .contenedor-cajas .caja-02 ul li{
