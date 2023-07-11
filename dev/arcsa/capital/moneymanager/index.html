@@ -35,11 +35,11 @@
             </div>
             <div class="shadow menuMob">
                 <ul>
-                    <li><a id="selected" href="#">Home</a></li>
+                    <li><a id="selected" href="#">Inicio</a></li>
                     <li><a href="./html/fondo.html">Fondo de inversión</a></li>
-                    <li><a href="./html/partners.html">Partners</a></li>
+                    <li><a href="./html/asesores.html">Asesores</a></li>
                     <li><a href="./html/app.html">App</a></li>
-                    <li><a id="amt" href="#">AC Management Tech</a></li>
+                    <li><a id="amt" href="#">Asset Manager</a></li>
                 </ul>
             </div>
             <div class="menuRedes menuMob">
@@ -57,7 +57,8 @@
             <h3>Administramos, preservamos y multiplicamos el capital de forma inteligente.</h3>
             <p>Abre tu cuenta en Arcsa Capital y comienza a incrementar tus rendimientos.</p>
             <div class="boton">
-                <button type="button" class="btn-primario">Abre tu cuenta</button>
+                <button type="button" class="btn-primario">
+                    <a href="#cuenta">Abre tu cuenta</a></button>
             </div>
         </div>
     </div>
@@ -155,7 +156,9 @@
                     <p>Conoce el portafolio diversificado con el que invertimos en los principales mercados financieros de Estados Unidos.</p>
                     <div class="boton">
                         <button class="btn-secundario">
-                            Hazte socio
+                            <a href="./html/fondo.html#simulador">
+                                Hazte socio
+                            </a>
                         </button>
                     </div>
                 </div>
@@ -261,7 +264,9 @@
 
             <div class="boton">
                 <button class="btn-primario">
-                    Comienza hoy
+                    <a href="./html/asesores.html">
+                        Comienza hoy
+                    </a>
                 </button>
             </div>
 
@@ -313,7 +318,9 @@
 
             <div class="boton">
                 <button class="btn-secundario">
-                    Comenzar ahora
+                    <a href="./html/fondo.html#simulador">
+                        Comenzar ahora
+                    </a>
                 </button>
             </div>
 
@@ -419,7 +426,9 @@
 
             <div class="boton">
                 <button class="btn-secundario">
-                    Contactar
+                    <a href="#cuenta">
+                        Contactar
+                    </a>
                 </button>
             </div>
 
@@ -439,7 +448,7 @@
                 </div>
                 
                 <div class="certificaciones-imagen">
-                    <img src="./img/logoAC.ico" class="c-img" data-animation="fade" alt="">
+                    <img src="./img/logoNfa.png" class="c-img" data-animation="fade" alt="">
                 </div>
     
             </div>
@@ -452,7 +461,7 @@
                 </div>
                 
                 <div class="certificaciones-imagen">
-                    <img src="./img/logoAC.ico" class="c-img" data-animation="fade" alt="">
+                    <img src="./img/sealFlorida.png" class="c-img" data-animation="fade" alt="">
                 </div>
     
             </div>
@@ -465,7 +474,7 @@
                 </div>
                 
                 <div class="certificaciones-imagen">
-                    <img src="./img/logoAC.ico" class="c-img" data-animation="fade" alt="">
+                    <img src="./img/logoAsesoresPatrimoniales.png" class="c-img" data-animation="fade" alt="">
                 </div>
     
             </div>
@@ -478,7 +487,7 @@
                 </div>
                 
                 <div class="certificaciones-imagen">
-                    <img src="./img/logoAC.ico" class="c-img" data-animation="fade" alt="">
+                    <img src="./img/logoKYC.png" class="c-img" data-animation="fade" alt="">
                 </div>
     
             </div>
@@ -487,7 +496,7 @@
 
     </section>
     
-    <section class="container-cuenta">
+    <section class="container-cuenta" id="cuenta">
 
         <div class="contenedor-seccion cuenta">
 
@@ -547,26 +556,30 @@
     <footer>
         <div class="contenedor-footer">
             <div class="caja-footer logos">
-                <img src="./img/logoArcsaCapital.png" alt="">
-                <img src="./img/logoAC.ico" alt="">
+                <a href="#">
+                    <img src="./img/logoArcsaCapital.png" alt="">
+                </a>
+                <a href="./docs/sealFlorida.pdf" target="_blank">
+                    <img src="./img/sealFlorida.png" alt="">
+                </a>
             </div>
             <div class="caja-footer">
                 <h6>Contacto</h6>
                 <ul>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:inversionistas@arcsacapital.com">inversionistas@arcsacapital.com</a>
+                        <a href="mailto:inversionistas@arcsacapital.com" target="_blank">inversionistas@arcsacapital.com</a>
                     </li>
                     <li>
                         <span class="subtitulo">México</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+525552786230">+52 (55) 5278 - 6230</a>
+                        <a href="tel:+525552786230" target="_blank">+52 (55) 5278 - 6230</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        <a href="https://goo.gl/maps/vzgqZDuPCPuNLTYE9">Patricio Sanz 1609, Col del Valle Sur, Benito Juárez, 03100 Ciudad de México, México</a>
+                        <a href="https://goo.gl/maps/vzgqZDuPCPuNLTYE9" target="_blank">Patricio Sanz 1609, Col del Valle Sur, Benito Juárez, 03100 Ciudad de México, México</a>
                     </li>
                     <li>
                         <span class="subtitulo">Usa</span>
@@ -577,7 +590,7 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        <a href="https://goo.gl/maps/33Tj5s3po8UUpkMN8">1200, Brickell P.H. 1950 33131 Miami, Florida</a>
+                        <a href="https://goo.gl/maps/33Tj5s3po8UUpkMN8" target="_blank">1200, Brickell P.H. 1950 33131 Miami, Florida</a>
                     </li>
                 </ul>
                 <div class="lineaDos"></div>
@@ -586,26 +599,32 @@
                 <h6>Otros productos</h6>
                 <ul>
                     <li>
-                        <a href="#">Arcsa Servicios</a>
+                        <a href="https://www.arcsa.com.mx/" target="_blank">Arcsa Servicios</a>
                     </li>
                     <li>
-                        <a href="#">Bloc</a>
+                        <a href="https://bloc.com.mx/" target="_blank">Bloc</a>
                     </li>
                     <li>
-                        <a href="#">App</a>
+                        <a href="./html/app.html">App</a>
                     </li>
                 </ul>
                 <div class="linea"></div>
                 <h6>Consulta</h6>
                 <ul>
                     <li>
-                        <a href="#">FAQ´s</a>
+                        <a href="./html/faqs.html">FAQ´s</a>
                     </li>
                     <li>
-                        <a href="#">Programa Partners</a>
+                        <a href="./html/partners.html">Programa Partners</a>
                     </li>
                     <li>
                         <a href="#">Brochure</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
                     </li>
                 </ul>
                 <div class="lineaDos"></div>
@@ -614,16 +633,16 @@
                 <h6>Legales</h6>
                 <ul>
                     <li>
-                        <a href="#">Política de Privacidad</a>
+                        <a href="./html/ppriv.html">Política de Privacidad</a>
                     </li>
                     <li>
-                        <a href="#">Términos y Condiciones</a>
+                        <a href="./html/tyc.html">Términos y Condiciones</a>
                     </li>
                     <li>
-                        <a href="#">Descargo de Responsabilidad y Acuerdo</a>
+                        <a href="./html/dra.html">Descargo de Responsabilidad y Acuerdo</a>
                     </li>
                     <li>
-                        <a href="#">Divulgación</a>
+                        <a href="./html/div.html">Divulgación</a>
                     </li>
                 </ul>
                 <div class="linea"></div>
@@ -639,13 +658,12 @@
                     </li>
                 </ul>
                 <ul class="foot-redes">
-                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100077256857809" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/arcsa_capital/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/arcsa-capital/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCanwpVFYznAreeR6zztvrvw" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
                 
-            </div>
             </div>
         </div>
     </footer>

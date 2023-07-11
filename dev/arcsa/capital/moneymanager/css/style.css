@@ -40,7 +40,7 @@ Colores
     --fondo-verde: #BAE8E3BB;
     --negro: #050505;
     
-    --shadow: #05050540;
+    --shadow: #05050530;
 
     --boxShadow: var(--shadow) .5rem .5rem 1rem;
     --textShadow: var(--shadow) .5rem .5rem .5rem;
@@ -124,6 +124,11 @@ Botones
     font-size: 1.42rem;
 }
 
+.btn-primario a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
 .btn-secundario{
     background-color: var(--segundo);
     border: solid var(--segundo) .2rem;
@@ -145,6 +150,11 @@ Botones
     font-size: 1.42rem;
 }
 
+.btn-secundario a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
 /* --------------------
 Clases universales
 -------------------- */
@@ -155,6 +165,7 @@ section{
 .contenedor-seccion{
     width: 80%;
     margin: auto;
+    margin-bottom: 2rem;
     border-radius: 2rem;
     padding: 5rem 5%;
 }
@@ -193,6 +204,11 @@ header{
     text-decoration: underline;
     font-weight: 600;
     color: var(--tercero);
+}
+
+.headerInicio #selected:hover {
+    color: var(--tercero) !important;
+    text-decoration: underline !important;
 }
   
 .headerInicio .containerMenu {
@@ -303,16 +319,16 @@ footer{
 }
 
 .contenedor-footer{
-    width: 90%;
-    margin: 5rem auto;
+    width: 98%;
+    margin: 10rem auto;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .contenedor-footer .logos{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -574,11 +590,12 @@ Header PAGS
 /* --------------------
 Footer
 -------------------- */
-@media only screen and (max-width: 1599px) {
+@media only screen and (max-width: 1299px) {
     .contenedor-footer{
         width: 90%;
         margin: 5rem auto;
         display: flex;
+        flex-wrap: wrap;
     }
 
     .contenedor-footer .caja-footer{
@@ -591,6 +608,10 @@ Footer
         padding: 0;
         margin-bottom: 3rem;
         flex-direction: column;
+    }
+    
+    .contenedor-footer .logos a{
+        text-align: center;
     }
     
     .contenedor-footer .logos img{

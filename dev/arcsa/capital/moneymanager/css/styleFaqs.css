@@ -1,0 +1,1031 @@
+/* --------------------
+Header
+-------------------- */
+.contenedor-header{
+    background-image: url(../img/headerFaqs.png);
+    background-position: left top !important;
+}
+
+/* --------------------
+FaqUno
+-------------------- */
+
+.faq-cont {
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    background-color: var(--blanco);
+    border-radius: .5rem;
+    border: solid var(--primero) 1px;
+    margin: 0 auto 2rem auto;
+    box-shadow: var(--boxShadow);
+}
+
+.faqDentroCollapse {
+    display: none;
+}
+
+.faqDentro {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faqDentro p {
+    color: var(--primero);
+    font-weight: 400;
+    width: 90%;
+}
+
+.faqDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+.activefaqDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+/* --------------------
+FaqDos
+-------------------- */
+
+.faqDosDentroCollapse {
+    display: none;
+}
+
+.activefaqDosDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqDosDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqDosDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqTres
+-------------------- */
+
+.faqTresDentroCollapse {
+    display: none;
+}
+
+.activefaqTresDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqTresDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqTresDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqCuatro
+-------------------- */
+
+.faqCuatroDentroCollapse {
+    display: none;
+}
+
+.activefaqCuatroDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqCuatroDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqCuatroDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqCinco
+-------------------- */
+
+.faqCincoDentroCollapse {
+    display: none;
+}
+
+.activefaqCincoDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqCincoDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqCincoDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqSeis
+-------------------- */
+
+.faqSeisDentroCollapse {
+    display: none;
+}
+
+.activefaqSeisDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqSeisDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqSeisDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqSiete
+-------------------- */
+
+.faqSieteDentroCollapse {
+    display: none;
+}
+
+.activefaqSieteDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqSieteDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqSieteDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqOcho
+-------------------- */
+
+.faqOchoDentroCollapse {
+    display: none;
+}
+
+.activefaqOchoDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqOchoDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqOchoDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqNueve
+-------------------- */
+
+.faqNueveDentroCollapse {
+    display: none;
+}
+
+.activefaqNueveDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqNueveDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqNueveDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqDiez
+-------------------- */
+
+.faqDiezDentroCollapse {
+    display: none;
+}
+
+.activefaqDiezDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqDiezDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqDiezDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqOnce
+-------------------- */
+
+.faqOnceDentroCollapse {
+    display: none;
+}
+
+.activefaqOnceDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqOnceDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqOnceDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqDoce
+-------------------- */
+
+.faqDoceDentroCollapse {
+    display: none;
+}
+
+.activefaqDoceDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqDoceDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqDoceDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqTrece
+-------------------- */
+
+.faqTreceDentroCollapse {
+    display: none;
+}
+
+.activefaqTreceDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqTreceDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqTreceDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqCatorce
+-------------------- */
+
+.faqCatorceDentroCollapse {
+    display: none;
+}
+
+.activefaqCatorceDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqCatorceDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqCatorceDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqQuince
+-------------------- */
+
+.faqQuinceDentroCollapse {
+    display: none;
+}
+
+.activefaqQuinceDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqQuinceDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqQuinceDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqDieciseis
+-------------------- */
+
+.faqDieciseisDentroCollapse {
+    display: none;
+}
+
+.activefaqDieciseisDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqDieciseisDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqDieciseisDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqDiecisiete
+-------------------- */
+
+.faqDiecisieteDentroCollapse {
+    display: none;
+}
+
+.activefaqDiecisieteDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqDiecisieteDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqDiecisieteDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqDieciocho
+-------------------- */
+
+.faqDieciochoDentroCollapse {
+    display: none;
+}
+
+.activefaqDieciochoDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqDieciochoDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqDieciochoDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqDiecinueve
+-------------------- */
+
+.faqDiecinueveDentroCollapse {
+    display: none;
+}
+
+.activefaqDiecinueveDentroCollapse ol li{
+    list-style-position: inside;
+    margin-bottom: .5rem;
+    color: var(--primero);
+}
+
+.activefaqDiecinueveDentroCollapse i{
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+.activefaqDiecinueveDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqDiecinueveDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqDiecinueveDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqVeinte
+-------------------- */
+
+.faqVeinteDentroCollapse {
+    display: none;
+}
+
+.activefaqVeinteDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.activefaqVeinteDentroCollapse a {
+    color: var(--segundo);
+    text-decoration: none;
+}
+
+.activefaqVeinteDentroCollapse a:hover {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.faqVeinteDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqVeinteDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqVeintiuno
+-------------------- */
+
+.faqVeintiunoDentroCollapse {
+    display: none;
+}
+
+.activefaqVeintiunoDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqVeintiunoDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqVeintiunoDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqVeintidos
+-------------------- */
+
+.faqVeintidosDentroCollapse {
+    display: none;
+}
+
+.activefaqVeintidosDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqVeintidosDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqVeintidosDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqVeintitres
+-------------------- */
+
+.faqVeintitresDentroCollapse {
+    display: none;
+}
+
+.activefaqVeintitresDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqVeintitresDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqVeintitresDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqVeinticuatro
+-------------------- */
+
+.faqVeinticuatroDentroCollapse {
+    display: none;
+}
+
+.activefaqVeinticuatroDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqVeinticuatroDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqVeinticuatroDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqVeinticinco
+-------------------- */
+
+.faqVeinticincoDentroCollapse {
+    display: none;
+}
+
+.activefaqVeinticincoDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqVeinticincoDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqVeinticincoDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+/* --------------------
+FaqVeintiseis
+-------------------- */
+
+.faqVeintiseisDentroCollapse {
+    display: none;
+}
+
+.activefaqVeintiseisDentroCollapse {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0 2rem 0;
+    text-align: justify;
+    display: flex;
+    color: var(--negro);
+}
+
+.faqVeintiseisDentroi {
+    width: 1.2rem;
+    height: 1.8rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/noCollapsed.png);
+}
+
+.activefaqVeintiseisDentroi {
+    width: 1.8rem;
+    height: 1.2rem;
+    margin: 0 0 0 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/collapsed.png);
+}
+
+
+
+/* --------------------
+Tablet / Mobile
+-------------------- */
+@media only screen and (max-width: 1099px) and (min-width: 1px) {
+
+    /* --------------------
+    Header
+    -------------------- */
+    .contenedor-header{
+        background-position: center top !important;
+    }
+
+}

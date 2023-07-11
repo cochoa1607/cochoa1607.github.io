@@ -8,6 +8,7 @@ Cover
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: var(--boxShadow);
 }
 
 .cover{
@@ -45,6 +46,7 @@ Soluciones
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }
 
 .soluciones .cajas{
@@ -58,6 +60,7 @@ Soluciones
     padding-left: 2rem;
     padding-right: 2rem;
     max-width: 50rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -65,6 +68,7 @@ Soluciones
     border: solid var(--primero) .1rem;
     border-radius: 1rem;
     background-color: var(--blanco);
+    box-shadow: var(--boxShadow);
 }
 
 .soluciones .cajas .caja .icono{
@@ -106,6 +110,7 @@ Inversores
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }
 
 .inversores p{
@@ -192,6 +197,7 @@ Patrimonio
     border: solid var(--primero) .1rem;
     border-radius: 2rem;
     background-color: var(--blanco);
+    box-shadow: var(--boxShadow);
 }
 
 .patrimonio img {
@@ -219,6 +225,7 @@ Elegirnos
 .container-elegirnos{
     background-color: var(--gris-cuatro);
     height: auto;
+    box-shadow: var(--boxShadow);
 }
 
 .elegirnos .mySwiper{
@@ -307,6 +314,7 @@ Oficinas
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }
 
 .oficinas .cajas{
@@ -441,6 +449,7 @@ Certificaciones
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }
 
 .certificaciones h2{
@@ -498,6 +507,7 @@ Cuenta
 
 .container-cuenta{
     margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .cuenta{
@@ -506,6 +516,7 @@ Cuenta
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }  
 
 .cuenta form{
@@ -734,7 +745,7 @@ Mobile
     -------------------- */
     .inversores .cajas{
         width: 100%;
-        height: calc(60vh);
+        height: calc(45vh);
         margin: 5rem auto;
         display: flex;
         flex-direction: column;
@@ -749,6 +760,8 @@ Mobile
     
     .inversores .cajas .caja .imagen01{
         background-position: center;
+        width: 100%;
+        max-width: 35rem;
     }
     
     .inversores .cajas .cajaDos{
