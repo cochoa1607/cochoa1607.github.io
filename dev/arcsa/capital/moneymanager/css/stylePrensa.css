@@ -1,0 +1,45 @@
+/* --------------------
+Header
+-------------------- */
+
+.contenedor-header{
+    background-image: url(../img/headerPrensa.png);
+    background-position: left top !important;
+}
+
+/* --------------------
+Prensa
+-------------------- */
+
+.container-prensa{
+    margin-top: 10rem;
+}
+
+.prensa{
+    background-color: var(--blanco);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+}
+
+.prensa .contenedor-cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.prensa .caja{
+    width: 20rem;
+    margin: 1rem;
+    transition: var(--transitions);
+}
+
+.prensa .caja:hover{
+    transform: scale(1.02);
+}
+
+.prensa .caja img{
+    width: 100%;
+    border-radius: 2rem;
+}
