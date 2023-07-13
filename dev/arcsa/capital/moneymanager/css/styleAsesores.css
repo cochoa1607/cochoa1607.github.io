@@ -10,10 +10,6 @@ Header
 Buscamos
 -------------------- */
 
-.container-buscamos{
-    margin-top: 10rem;
-}
-
 .container-buscamos .buscamos{
     background-color: var(--blanco);
     width: 80%;
@@ -31,10 +27,6 @@ Buscamos
 /* --------------------
 Destacados
 -------------------- */
-
-.container-destacados{
-    margin-top: 10rem;
-}
 
 .container-destacados .destacados{
     background-color: var(--gris-cuatro);
@@ -98,10 +90,6 @@ Destacados
 Bullets
 -------------------- */
 
-.container-bullets{
-    margin-top: 10rem;
-}
-
 .container-bullets .bullets{
     background-color: var(--gris-tres);
     width: 80%;
@@ -133,6 +121,11 @@ Bullets
     width: auto;
     height: 10rem;
     margin: 2rem 0;
+}
+
+.bullets .boton{
+    text-align: center;
+    margin-top: 5rem;
 }
 
 
@@ -205,12 +198,17 @@ Ventajas
     content: "- ";
 }
 
+.ventajas .boton {
+    text-align: center;
+    margin-top: 5rem;
+}
+
 /* --------------------
 Talentos
 -------------------- */
 
 .container-talentos{
-    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .container-talentos .talentos{
@@ -307,6 +305,11 @@ Talentos
     font-weight: 200;
     list-style: '- ';
     list-style-position: inside;
+}
+
+.talentos .boton {
+    text-align: center;
+    margin-top: 5rem;
 }
 
 /* --------------------

@@ -26,12 +26,14 @@ Prensa
 .prensa .contenedor-cajas{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .prensa .caja{
     width: 20rem;
-    margin: 1rem;
+    margin: 4rem 3rem;
+    padding: 0;
     transition: var(--transitions);
 }
 
@@ -42,4 +44,11 @@ Prensa
 .prensa .caja img{
     width: 100%;
     border-radius: 2rem;
+    transition: var(--transitions);
+    border: solid var(--blanco) .2rem;
+    padding: 1rem;
+}
+
+.prensa .caja img:hover{
+    border: solid var(--segundo) .2rem;
 }
