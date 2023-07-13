@@ -32,6 +32,10 @@ Cover
     margin: 0 0 5rem 0;
 }
 
+.container-cover .boton{
+    transform: translateX(-2rem);
+}
+
 /* --------------------
 Soluciones
 -------------------- */
@@ -132,7 +136,7 @@ Inversores
     width: 100%;
     height: 100%;
     margin: auto;
-    background-image: url(../img/inversionEquipo.png);
+    background-image: url(../img/inversion.png);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -432,7 +436,7 @@ Prensa
     width: 80%;
     margin: auto;
     border-radius: 2rem;
-    padding: 5rem 5%;
+    padding: 5rem 5% 0 5%;
     box-shadow: var(--boxShadow);
 }
 
@@ -674,6 +678,10 @@ Tablet / Mobile
         margin-top: 0;
     }
 
+    .certificaciones .ultimo{
+        margin-bottom: 0;
+    }
+
     .certificaciones-caja {
         display: flex;
         flex-direction: column;
@@ -700,7 +708,6 @@ Tablet / Mobile
     .container-cuenta{
         margin-top: 0;
     }
-
 }
 
 /* --------------------
@@ -784,7 +791,7 @@ Mobile
     -------------------- */
     .inversores .cajas{
         width: 100%;
-        height: calc(45vh);
+        height: 70vh;
         margin: 5rem auto;
         display: flex;
         flex-direction: column;
@@ -981,7 +988,7 @@ Mobile
     -------------------- */
 
     .certificaciones .certificaciones-caja{
-        margin-bottom: 4rem;
+        margin-bottom: 8rem;
         height: auto;
         border-bottom: solid var(--primero) .1rem;
     }
@@ -989,6 +996,7 @@ Mobile
     .certificaciones .ultimo{
         border-bottom: none;
         margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .certificaciones h2{
@@ -1018,9 +1026,9 @@ Mobile
     }
     
     .certificaciones .certificaciones-imagen{
-        width: 60%;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
+        width: 40%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 
 }

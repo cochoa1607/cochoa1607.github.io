@@ -11,7 +11,7 @@ Bullets
 -------------------- */
 
 .bullets{
-    background-color: var(--gris-tres);
+    background-color: var(--blanco);
     width: 80%;
     margin: auto;
     border-radius: 2rem;
@@ -63,7 +63,7 @@ App
 -------------------- */
 
 .container-app{
-    margin: 10rem 0 0 0 !important;
+    margin-top: 10rem !important;
     padding: 0;
 }
 
@@ -166,7 +166,7 @@ Tranquilidad
     background-color: var(--fondo-azul);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     min-height: 40rem;
     box-shadow: var(--boxShadow);
 }
@@ -517,7 +517,7 @@ Tranquilidad
 /* --------------------
 Simulador
 -------------------- */
-@media only screen and (max-width: 899px) and (min-width: 19px){
+@media only screen and (max-width: 899px) and (min-width: 1px){
     
     /* --------------------
     Simulador
@@ -576,15 +576,17 @@ Tranquilidad
     /* --------------------
     Tranquilidad
     -------------------- */
-
-    .container-tranquilidad{
-        margin: 10vh 0;
-        padding: 0;
+    
+    .tranquilidad{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 10rem 0 5rem 5%;
     }
 
     .tranquilidad .texto{
         width: 40%;
-        padding-top: 3rem;
+        padding: 0;
     }
 
     .tranquilidad .image-container {
@@ -600,7 +602,7 @@ Tranquilidad
 /* --------------------
 Tablet
 -------------------- */
-@media only screen and (max-width: 1199px) and (min-width: 639px){
+@media only screen and (max-width: 1199px) and (min-width: 1px){
 
     /* --------------------
     Bullets
@@ -611,7 +613,6 @@ Tablet
     }
 
     .container-bullets .bullets{
-        background-color: var(--blanco);
         width: 100%;
         border-radius: 0;
         padding: 5rem 5%;
@@ -626,12 +627,21 @@ Tablet
     }
 
     /* --------------------
+    App
+    -------------------- */
+
+    .container-app{
+        margin-top: 0 !important;
+    }
+
+    /* --------------------
     Silumador
     -------------------- */
 
     .container-simulador{
-        margin-top: 0;
+        margin-top: 0 !important;
         border-radius: 0;
+        padding: 0;
     }
     
     .container-simulador .simulador{

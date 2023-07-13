@@ -113,7 +113,7 @@ Botones
     font-size: 1.4rem;
     transition: var(--transitions);
     cursor: pointer;
-    margin: .5rem 2rem 1.5rem 2rem;
+    margin: 0 2rem 1.5rem 2rem;
     box-shadow: var(--boxShadow);
     white-space: nowrap;
 }
@@ -139,7 +139,7 @@ Botones
     font-size: 1.4rem;
     transition: var(--transitions);
     cursor: pointer;
-    margin: .5rem 2rem 1.5rem 2rem;
+    margin: 0 2rem 1.5rem 2rem;
     box-shadow: var(--boxShadow);
     white-space: nowrap;
 }
@@ -538,10 +538,6 @@ Header PAGS
     text-align: right;
 }
 
-.texto .boton{
-    text-align: right;
-}
-
 /* Texto right */
 .texto-right{
     justify-content: center;
@@ -564,7 +560,7 @@ Header PAGS
 }
 
 .texto-right .boton .btn-primario{
-    margin: .5rem 1rem 1.5rem 0;
+    transform: translateX(2rem);
 }
 
 .texto-left{
@@ -586,6 +582,7 @@ Header PAGS
 
 .texto-left .boton{
     text-align: left;
+    transform: translateX(-2rem);
 }
 
 /* --------------------
@@ -705,13 +702,14 @@ Tablet / Mobile
     -------------------- */
     section{
         margin: 0;
+        padding: 0;
     }
 
     .contenedor-seccion{
         width: 100%;
         margin: auto;
         border-radius: 0;
-        padding: 8rem 5%;
+        padding: 10rem 5% !important;
     }
 
     /* --------------------
@@ -827,9 +825,16 @@ Tablet / Mobile
     /* --------------------
     Patrimonio
     -------------------- */
-
+    
     .patrimonio .content{
         width: 80%;
+    }
+    
+    /* --------------------
+    Cuenta
+    -------------------- */
+    .container-cuenta {
+        margin-bottom: 0 !important;
     }
 }
 
