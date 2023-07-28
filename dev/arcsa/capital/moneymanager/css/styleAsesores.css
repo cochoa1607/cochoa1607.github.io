@@ -321,7 +321,7 @@ Registro
 }
 
 .registro{
-    background-color: var(--fondo-azul);
+    background-color: var(--blanco);
     width: 80%;
     margin: auto;
     border-radius: 2rem;
@@ -557,7 +557,21 @@ Mobile
     .container-bullets .bullets .cajas{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-bullets .bullets .caja{
+        margin: 3rem 0 1rem 0;
+        padding: 0;
+    }
+
+    .bullets .linea{
+        display: flex;
+        width: .15rem;
+        height: 6rem;
+        border-radius: 50rem;
+        background-color: var(--primero);
     }
 
     /* --------------------

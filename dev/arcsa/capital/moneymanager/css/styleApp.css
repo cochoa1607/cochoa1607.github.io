@@ -6,6 +6,14 @@ Header
     background-position: left center !important;
 }
 
+.contenedor-header h1{
+    margin-bottom: 1rem !important;
+}
+
+.contenedor-header .txt-dos{
+    margin-bottom: 5rem;
+}
+
 /* --------------------
 Buscamos
 -------------------- */
@@ -110,6 +118,15 @@ Buscamos
 .container-descargar .descargar .botones .btn-2{
     background-image: url(../img/PlayStore.png);
     background-position: center left;
+}
+
+.container-descargar .descargar .botones a{
+    margin: .5rem 1rem;
+    transition: var(--transitions);
+}
+
+.container-descargar .descargar .botones a:hover{
+    transform: scale(1.02);
 }
 
 /* --------------------

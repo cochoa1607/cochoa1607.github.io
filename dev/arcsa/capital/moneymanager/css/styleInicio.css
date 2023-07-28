@@ -9,6 +9,8 @@ Cover
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: var(--boxShadow);
+    position: relative;
+    z-index: 9;
 }
 
 .cover{
@@ -37,8 +39,26 @@ Cover
 }
 
 /* --------------------
+Bg-page
+-------------------- */
+
+.bg-page{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    opacity: 0;
+    background-image: url(../src/graficaVelasJapo_03.3.png);
+}
+
+/* --------------------
 Soluciones
 -------------------- */
+
+.container-soluciones{
+    position: relative;
+    z-index: 10;
+}
 
 .soluciones{
     background-color: var(--gris-tres);
@@ -99,6 +119,11 @@ Soluciones
 /* --------------------
 Inversores
 -------------------- */
+
+.container-inversores{
+    position: relative;
+    z-index: 99;
+}
 
 .inversores{
     background-color: var(--blanco);
@@ -166,139 +191,153 @@ Inversores
 Patrimonio
 -------------------- */
 
-.patrimonio swiper-container {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.container-patrimonio{
+    margin: 10rem 0;
+    padding: 0;
+    position: relative;
+    z-index: 99;
+    border-radius: 0 !important;
 }
 
-.patrimonio swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.patrimonio {
+    margin-top: 0;
+    padding-top: 0;
+    
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    border-radius: 0 !important;
 }
 
-.patrimonio .cajaDos{
+.patrimonio .slideshow-container {
+    position: relative;
+    max-width: none;
+    margin: 0 auto;
+
+    height: 60rem;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+.patrimonio .slide {
     display: none;
-}
-
-.patrimonio .content{
-    width: 60%;
-    margin: 5rem auto;
-    padding: 2rem 0;
-    border: solid var(--primero) .1rem;
-    border-radius: 2rem;
-    background-color: var(--blanco);
-    box-shadow: var(--boxShadow);
-}
-
-.patrimonio img {
-    display: block;
-    width: 100%;
-    height: 20rem;
-    object-fit: cover;
-}
-
-.patrimonio p {
-    padding: 1rem 5rem;
-    text-align: center;
-
-}
-
-.patrimonio .boton{
-    text-align: center;
-    margin-top: 2rem;
-}
-
-/* --------------------
-Elegirnos
--------------------- */
-
-.container-elegirnos{
-    background-color: var(--gris-cuatro);
-    height: auto;
-    box-shadow: var(--boxShadow);
-}
-
-.elegirnos .mySwiper{
-    height: auto;
-}
-
-.elegirnos swiper-container {
-    width: 100%;
+    
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
     height: 100%;
 }
 
-.elegirnos swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: var(--gris-cuatro);
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.patrimonio .imagen{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
-.elegirnos .titulo {
+.patrimonio .img_01{
+    background-image: url(../img/patrimonioUno.png);
+}
+
+.patrimonio .img_02{
+    background-image: url(../img/patrimonioDos.png);
+}
+
+.patrimonio .img_03{
+    background-image: url(../img/patrimonioTres.png);
+}
+
+.patrimonio .img_04{
+    background-image: url(../img/patrimonioCuatro.png);
+}
+
+.patrimonio .slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: none;
     color: var(--blanco);
-    font-weight: 600;
-    font-size: 2.4rem;
-    text-transform: uppercase;
+    
+    margin: 0;
+    padding-left: 10%;
+    width: 100% !important;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.patrimonio h2,
+.patrimonio h3 {
     text-align: left;
+    padding: 0;
+    margin: 0;
+    color: var(--blanco);
+}
+
+.patrimonio h2{
+    font-size: 4.2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--quinto);
+    padding-right: 2rem;
+}
+
+.patrimonio h3 {
     margin-bottom: 5rem;
 }
 
-.elegirnos .content {
-    width: 90%;
+.patrimonio p{
+    max-width: 60ch;
+    font-weight: 400;
     color: var(--cuarto);
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-
-.elegirnos img {
+  
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
     width: auto;
-    height: 12rem;
-    min-width: 15rem;
-}
-
-.autoplay-progress {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    color: var(--blanco);
     font-weight: bold;
-    color: var(--cuarto);
+    font-size: 1.8rem;
+    transition: 0.6s ease;
+    border-radius: 0 .3rem .3rem 0;
+    user-select: none;
 }
-
-.autoplay-progress svg {
-    --progress: 0;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    stroke-width: 2px;
-    stroke: var(--cuarto);
-    fill: none;
-    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
-    stroke-dasharray: 125.6;
-    transform: rotate(-90deg);
+  
+.next {
+    right: 0;
+    border-radius: .3rem 0 0 .3rem;
 }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: #F28700BB;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
 
 /* --------------------
 Oficinas
 -------------------- */
+
+.container-oficinas{
+    position: relative;
+    z-index: 99;
+    padding-top: 0;
+    padding-bottom: 10rem;
+}
 
 .oficinas{
     background-color: var(--gris-tres);
@@ -407,7 +446,7 @@ Oficinas
 .oficinas .cajas .caja .imagenDos .titulo{
     position: absolute;
     text-align: end;
-    width: 100%;
+    width: 40%;
     max-width: 50rem;
     padding: 1rem 3rem 3rem 2rem;
     color: var(--blanco);
@@ -428,8 +467,98 @@ Oficinas
 }
 
 /* --------------------
+Elegirnos
+-------------------- */
+
+.container-elegirnos{
+    padding-top: 2rem;
+    background-color: var(--gris-cuatro);
+    height: auto;
+    box-shadow: var(--boxShadow);
+    position: relative;
+    z-index: 99;
+}
+
+.elegirnos .mySwiper{
+    height: auto;
+}
+
+.elegirnos swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.elegirnos swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--gris-cuatro);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.elegirnos .titulo {
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.elegirnos .content {
+    width: 90%;
+    color: var(--cuarto);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elegirnos img {
+    width: auto;
+    height: 12rem;
+    min-width: 15rem;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--cuarto);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 2px;
+    stroke: var(--cuarto);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+/* --------------------
 Prensa
 -------------------- */
+
+.container-prensa{
+    position: relative;
+    z-index: 99;
+}
 
 .prensa{
     background-color: var(--fondo-azul);
@@ -486,6 +615,11 @@ Prensa
 /* --------------------
 Certificaciones
 -------------------- */
+
+.container-certificaciones{
+    position: relative;
+    z-index: 99;
+}
 
 .certificaciones{
     background-color: var(--blanco);
@@ -551,6 +685,8 @@ Cuenta
 
 .container-cuenta{
     margin-bottom: 10rem;
+    position: relative;
+    z-index: 99;
 }
 
 .cuenta{
@@ -605,6 +741,20 @@ Cuenta
     text-align: center;
     margin-top: 5rem;
 }
+
+/* --------------------
+Keyframes
+-------------------- */
+
+@keyframes fade {
+    0% {
+      opacity: 0%;
+    }
+    90% {
+      opacity: 100%;
+    }
+}
+
 
 /* --------------------
 Tablet / Mobile
@@ -784,6 +934,10 @@ Mobile
     .cover .boton{
         margin: 0 2rem;
         text-align: center;
+    }
+
+    .container-cover .boton{
+        transform: translateX(0);
     }
 
     /* --------------------

@@ -27,6 +27,10 @@ Bullets
     margin-bottom: 2rem;
 }
 
+.bullets .linea{
+    display: none;
+}
+
 /* --------------------
 Configuramos
 -------------------- */
@@ -689,7 +693,16 @@ Mobile
         flex-direction: column;
         text-align: center;
         align-items: center;
-        margin-bottom: 0;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .bullets .linea{
+        display: flex;
+        width: .15rem;
+        height: 6rem;
+        border-radius: 50rem;
+        background-color: var(--primero);
     }
     
     /* --------------------
@@ -718,11 +731,9 @@ Mobile
         padding-bottom: 5rem;
     }
     
-    .configuramos .carteras img{
-        width: 85%;
-        max-width: 30rem;
-        margin: 0 5rem;
-        padding-bottom: 5rem;
+    .configuramos .boton{
+        margin-top: 0;
+        padding-top: 0;
     }
 
     /* --------------------
