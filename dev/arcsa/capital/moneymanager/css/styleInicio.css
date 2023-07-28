@@ -207,6 +207,7 @@ Patrimonio
     padding: 0 !important;
     width: 100% !important;
     border-radius: 0 !important;
+    box-shadow: var(--boxShadow) !important;
 }
 
 .patrimonio .slideshow-container {
@@ -258,7 +259,6 @@ Patrimonio
     bottom: 0;
     left: 0;
     background-color: none;
-    color: var(--blanco);
     
     margin: 0;
     padding-left: 10%;
@@ -755,6 +755,79 @@ Keyframes
     }
 }
 
+/* --------------------
+Dolariza
+-------------------- */
+@media only screen and (max-width: 999px) {
+    /* --------------------
+    Patrimonio
+    -------------------- */
+
+    .container-patrimonio{
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .container-patrimonio .contenedor-seccion{
+        padding: 0 !important;
+        margin: 0 !important;
+
+    }
+    
+    .patrimonio .slideshow-container {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .patrimonio .slide {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .patrimonio .slide-content {
+        padding: 10% 0;
+        width: 90% !important;
+        margin: 0 0 0 5%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .patrimonio h2,
+    .patrimonio h3, 
+    .patrimonio p {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        max-width: 60ch;
+    }
+    
+    .patrimonio h2{
+        font-size: 3.2rem;
+        width: 100%;
+    }
+    
+    .patrimonio h3{
+        margin-top: 5rem;
+        font-size: 1.8rem;
+        width: 70%;
+    }
+    
+    .patrimonio p{
+        margin-top: 5rem;
+        width: 70%;
+    }
+
+    .prev,
+    .next {
+        top: 50%;
+    }
+
+}
 
 /* --------------------
 Tablet / Mobile
@@ -795,13 +868,26 @@ Tablet / Mobile
     Patrimonio
     -------------------- */
 
-    .patrimonio swiper-container {
-        width: 80%;
-        min-width: 70rem;
+    .container-patrimonio{
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
+    
+    .container-patrimonio .contenedor-seccion{
+        padding: 0 !important;
+        margin: 0 !important;
 
-    .patrimonio img {
-        width: 100%;
+    }
+    
+    .patrimonio .slideshow-container {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .patrimonio .slide {
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     /* --------------------
@@ -817,9 +903,13 @@ Tablet / Mobile
     -------------------- */
 
     .container-oficinas{
-        margin-top: 0;
+        padding-bottom: 0;
     }
-
+    
+    .oficinas{
+        margin-bottom: 0 !important;
+    }
+    
     /* --------------------
     Certificaciones
     -------------------- */
@@ -982,48 +1072,6 @@ Mobile
         color: var(--tercero);
         text-transform: uppercase;
         margin-bottom: 1rem;
-    }
-
-    /* --------------------
-    Patrimonio
-    -------------------- */
-
-    .patrimonio swiper-container{
-        display: none;
-    }
-    
-    .patrimonio .cajaDos{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-    
-    .patrimonio .imagen{
-        display: flex;
-        height: 20rem;
-        width: 80%;
-        margin: 4rem auto;
-        background-image: url(../img/patrimonioUno.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 2rem 2rem 0 0;
-    }
-    
-    .patrimonio ul{
-        height: auto;
-        width: 80%;
-        margin: 0 auto;
-    }
-    
-    .patrimonio ul li{
-        color: var(--segundo);
-        margin-bottom: 3rem;
-        text-align: center;
-    }
-    
-    .patrimonio .boton{
-        margin: 0;
     }
 
     /* --------------------
