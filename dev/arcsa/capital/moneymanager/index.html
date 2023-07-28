@@ -20,6 +20,9 @@
 </head>
 <body>
 
+    <div class="bg-page">
+    </div>
+
     <div class="bars__menu">
         <span class="line1__bars-menu"></span>
         <span class="line2__bars-menu"></span>
@@ -230,7 +233,7 @@
                     <h4>AC Asset Management Technology AI</h4>
                     <p>Invierte tu capital y mejora el performance con la ayuda de la tecnología, reduce el riesgo de minusvalías.</p>
                     <div class="boton">
-                        <button class="btn-secundario">
+                        <button class="btn-secundario-disabled">
                             Conoce más
                         </button>
                     </div>
@@ -265,7 +268,7 @@
 
             <div class="boton">
                 <button class="btn-primario">
-                    <a href="./html/asesores.html">
+                    <a href="#cuenta">
                         Comienza hoy
                     </a>
                 </button>
@@ -277,50 +280,88 @@
     <section class="container-patrimonio">
         <div class="contenedor-seccion patrimonio">
 
-            <h2>Dolariza tu patrimonio</h2>
-            <h3>Operamos en diversos mercados financieros de Estados Unidos.</h3>
-
-            <div class="cajaDos">
-                <div class="imagen"></div>
-                <ul>
-                    <li>Mercado de derivados. Invierte en el CME (Chicago Mercantil Exchange).</li>
-                    <li>Inmuebles. Es uno de los activos que integran el 90% del portafolio diversificado de Arcsa Capital.</li>
-                    <li>Mercado de valores. Invierte en divisas, oro, petróleo, índices.</li>
-                    <li>Venture Capital. Invierte en el futuro de compañías expertas en tecnología.</li>
-                </ul>
-            </div>
-
-            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30" centered-slides="true" autoplay-delay="3500" autoplay-disable-on-interaction="false" loop="true">
-                <swiper-slide>
-                    <div class="content">
-                        <img src="./img/patrimonioUno.png" alt="">
-                        <p>Mercado de derivados. Invierte en el CME (Chicago Mercantil Exchange).</p>
+            <div class="slideshow-container">
+                <div class="slide">
+                  <div class="imagen img_01"></div>
+                  <div class="slide-content fade">
+                      <h2>Dolariza tu patrimonio</h2>
+                      <h3>Operamos en diversos mercados financieros de Estados Unidos.</h3>
+                      <p>Mercado de derivados. Invierte en el CME (Chicago Mercantil Exchange).</p>
                     </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="content">
-                        <img src="./img/patrimonioDos.png" alt="">
+                </div>
+                
+                <div class="slide">
+                    <div class="imagen img_02"></div>
+                    <div class="slide-content fade">
+                        <h2>Dolariza tu patrimonio</h2>
+                        <h3>Operamos en diversos mercados financieros de Estados Unidos.</h3>
                         <p>Inmuebles. Es uno de los activos que integran el 90% del portafolio diversificado de Arcsa Capital.</p>
                     </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="content">
-                        <img src="./img/patrimonioTres.png" alt="">
-                        <p>Mercado de valores. Invierte en divisas, oro, petróleo, índices.</p>
+                </div>
+                
+                <div class="slide">
+                    <div class="imagen img_03"></div>
+                    <div class="slide-content fade">
+                        <h2>Dolariza tu patrimonio</h2>
+                        <h3>Operamos en diversos mercados financieros de Estados Unidos.</h3>
+                        <p>Mercado de valores. Invierte en oro, petróleo e  índices.</p>
                     </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="content">
-                        <img src="./img/patrimonioCuatro.png" alt="">
+                </div>
+                
+                <div class="slide">
+                    <div class="imagen img_04"></div>
+                    <div class="slide-content fade">
+                        <h2>Dolariza tu patrimonio</h2>
+                        <h3>Operamos en diversos mercados financieros de Estados Unidos.</h3>
                         <p>Venture Capital. Invierte en el futuro de compañías expertas en tecnología.</p>
                     </div>
-                </swiper-slide>
-            </swiper-container>
+                </div>
+            
+                <!-- Agrega más slides aquí si lo deseas -->
+            
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+              </div>
+
+        </div>
+    </section>
+
+    <section class="container-oficinas">
+
+        <div class="contenedor-seccion oficinas">
+
+            <h2>Tenemos oficinas en</h2>
+
+            <div class="cajas">
+                
+                <div class="caja">
+                    <div class="textoUno">
+                        <span class="titulo">Miami</span>
+                        <span class="descripcion">En Estados Unidos, se gestiona el capital de los socios y se administra el fondo con cada uno de los partners que operan las inversiones de forma directa.</span>
+                    </div>
+                    <div class="imagenUno">
+                        <span class="titulo">USA</span>
+                        <img src="./img/oficinasMiami.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="caja cajaDos">
+                    <div class="imagenDos">
+                        <span class="titulo">México</span>
+                        <img src="./img/oficinasCdmx.png" alt="">
+                    </div>
+                    <div class="textoDos">
+                        <span class="titulo">CDMX</span>
+                        <span class="descripcion">Desde México, se promueven las herramientas de inversión y se atienden las solicitudes de los socios de LATAM.</span>
+                    </div>
+                </div>
+
+            </div>
 
             <div class="boton">
                 <button class="btn-secundario">
-                    <a href="./html/fondo.html#simulador">
-                        Abre tu cuenta
+                    <a target="_blank" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ036CzZ2FEDgecRgETwblaCK1pl_toT3rcXSeU0rPzHRFtq8OuAllSxAAiDRWkbqBJeaY-j8hZv">
+                        Ponte en contacto
                     </a>
                 </button>
             </div>
@@ -389,49 +430,6 @@
                 <span></span>
             </div>
         </swiper-container>
-
-        </div>
-    </section>
-
-    <section class="container-oficinas">
-
-        <div class="contenedor-seccion oficinas">
-
-            <h2>Tenemos oficinas en</h2>
-
-            <div class="cajas">
-                
-                <div class="caja">
-                    <div class="textoUno">
-                        <span class="titulo">Miami</span>
-                        <span class="descripcion">En Estados Unidos, se gestiona el capital de los socios y se administra el fondo con cada uno de los partners que operan las inversiones de forma directa.</span>
-                    </div>
-                    <div class="imagenUno">
-                        <span class="titulo">USA</span>
-                        <img src="./img/oficinasMiami.png" alt="">
-                    </div>
-                </div>
-                
-                <div class="caja cajaDos">
-                    <div class="imagenDos">
-                        <span class="titulo">México</span>
-                        <img src="./img/oficinasCdmx.png" alt="">
-                    </div>
-                    <div class="textoDos">
-                        <span class="titulo">CDMX</span>
-                        <span class="descripcion">Desde México, se promueven las herramientas de inversión y se atienden las solicitudes de los socios de LATAM.</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="boton">
-                <button class="btn-secundario">
-                    <a href="#cuenta">
-                        Ponte en contacto
-                    </a>
-                </button>
-            </div>
 
         </div>
     </section>
@@ -690,13 +688,13 @@
                         <a href="./html/faqs.html">FAQ´s</a>
                     </li>
                     <li>
-                        <a href="./html/partners.html">Programa Partners</a>
+                        <a href="./html/asesores.html">Programa Asesores Patrimoniales</a>
                     </li>
                     <li>
-                        <a href="#">Brochure</a>
+                        <a download="Brochure_AC_2023" href="./docs/Brochure_AC_2023.pdf">Brochure</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a target="_blank" href="https://blog.arcsacapital.com/">Blog</a>
                     </li>
                 </ul>
                 <div class="lineaDos"></div>
@@ -742,6 +740,7 @@
 
     <script src="./js/menu.js"></script>
     <script src="./js/menuTabMob.js"></script>
+    <script src="./js/sliderPatrimonio.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="./js/certificaciones.js"></script>
     <script src="./js/slide.js"></script>
