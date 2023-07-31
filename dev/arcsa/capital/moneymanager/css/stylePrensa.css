@@ -5,6 +5,7 @@ Header
 .contenedor-header{
     background-image: url(../img/headerPrensa.png);
     background-position: left top !important;
+    box-shadow: var(--boxShadow);
 }
 
 /* --------------------
@@ -13,6 +14,7 @@ Prensa
 
 .container-prensa{
     margin-top: 0;
+    margin-bottom: 10rem;
 }
 
 .prensa{
@@ -21,6 +23,7 @@ Prensa
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }
 
 .prensa .reconocen{

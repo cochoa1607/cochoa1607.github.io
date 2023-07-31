@@ -4,18 +4,20 @@ Header
 .contenedor-header{
     background-image: url(../img/headerPartners.png);
     background-position: right top !important;
+    box-shadow: var(--boxShadow);
 }
 
 /* --------------------
 Buscamos
 -------------------- */
 
-.container-buscamos .buscamos{
+.buscamos{
     background-color: var(--blanco);
     width: 80%;
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }
 
 .container-buscamos .buscamos p{
@@ -28,12 +30,13 @@ Buscamos
 Destacados
 -------------------- */
 
-.container-destacados .destacados{
+.destacados{
     background-color: var(--gris-cuatro);
     width: 80%;
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }
 
 .destacados swiper-container {
@@ -90,12 +93,13 @@ Destacados
 Bullets
 -------------------- */
 
-.container-bullets .bullets{
+.bullets{
     background-color: var(--gris-tres);
     width: 80%;
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }
 
 .container-bullets .bullets p{
@@ -137,13 +141,13 @@ Ventajas
     margin-top: 0;
 }
 
-.container-ventajas .ventajas{
+.ventajas{
     background-color: var(--fondo-azul);
     width: 80%;
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
-
+    box-shadow: var(--boxShadow);
 }
 
 .ventajas .contenedor{
@@ -211,12 +215,13 @@ Talentos
     margin-bottom: 0;
 }
 
-.container-talentos .talentos{
+.talentos{
     background-color: var(--gris-tres);
     width: 80%;
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }
 
 .talentos .contenedor-cajas{

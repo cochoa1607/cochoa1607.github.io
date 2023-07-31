@@ -92,9 +92,27 @@ Soluciones
 }
 
 .soluciones .cajas .caja .icono{
-    width: 40%;
+    width: 100%;
     margin: 3rem auto 2rem auto;
-    max-width: 15rem;
+    max-width: none;
+}
+
+.soluciones .cajas .caja .icono .iconoUno{
+    background-image: url(../img/iconoV_001.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 10rem;
+}
+
+.soluciones .cajas .caja .icono .iconoDos{
+    background-image: url(../img/iconoV_005.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 10rem;
 }
 
 .soluciones .cajas .caja h4{

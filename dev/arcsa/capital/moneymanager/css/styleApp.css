@@ -4,6 +4,7 @@ Header
 .contenedor-header{
     background-image: url(../img/headerApp.png);
     background-position: left center !important;
+    box-shadow: var(--boxShadow);
 }
 
 .contenedor-header h1{
@@ -15,19 +16,21 @@ Header
 }
 
 /* --------------------
-Buscamos
+Descargar
 -------------------- */
 
 .container-descargar{
-    margin-top: 10rem;
+    margin-top: 0rem;
+    margin-bottom: 10rem;
 }
 
-.container-descargar .descargar{
+.descargar{
     background-color: var(--blanco);
     width: 80%;
     margin: auto;
     border-radius: 2rem;
     padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
 }
 
 .descargar .contenedor-cajas{

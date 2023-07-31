@@ -4,11 +4,16 @@ Header
 .contenedor-header{
     background-image: url(../img/headerFaqs.png);
     background-position: left top !important;
+    box-shadow: var(--boxShadow);
 }
 
 /* --------------------
 FaqUno
 -------------------- */
+
+.container-faqs{
+    padding-top: 10rem;
+}
 
 .faq-cont {
     width: 100%;
