@@ -9,6 +9,69 @@ Header
 }
 
 /* --------------------
+Form Prensa
+-------------------- */
+
+.container-formPrensa{
+    margin-bottom: 0;
+    position: relative;
+    z-index: 99;
+}
+
+.formPrensa{
+    background-color: var(--fondo-azul);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
+}  
+
+.formPrensa form{
+    width: 80%;
+    max-width: 50rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.formPrensa select,
+.formPrensa .form-input {
+    width: 100%;
+    height: auto;
+    border: solid var(--primero) .1rem !important;
+    background-color: var(--blanco);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.formPrensa label {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.formPrensa .check{
+    display: flex;
+}
+
+.formPrensa .check-input{
+    margin-right: 1rem;
+}
+
+.check[type="checkbox" i]{
+    background-color: #050505 !important;
+}
+
+.formPrensa .check label{
+    font-size: 1.2rem;
+}
+
+.formPrensa .boton{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* --------------------
 Prensa
 -------------------- */
 
