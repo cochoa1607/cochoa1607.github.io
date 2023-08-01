@@ -138,11 +138,22 @@ Tablet
 @media only screen and (max-width: 1199px) and (min-width: 900px){
 
     /* --------------------
-    Buscamos
+    Header
+    -------------------- */
+
+    .contenedor-header{
+        box-shadow: var(--boxShadowTab);
+        z-index: 12;
+    }
+
+    /* --------------------
+    Descargar
     -------------------- */
 
     .container-descargar{
         margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 11;
     }
 
     .container-descargar .descargar{

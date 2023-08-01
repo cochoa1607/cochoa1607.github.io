@@ -123,7 +123,7 @@ Bullets
 
 .container-bullets .bullets .caja img{
     width: auto;
-    height: 10rem;
+    height: 13rem;
     margin: 2rem 0;
 }
 
@@ -424,11 +424,22 @@ Tablet
 @media only screen and (max-width: 1199px) and (min-width: 1px){
 
     /* --------------------
+    Header
+    -------------------- */
+
+    .contenedor-header{
+        box-shadow: var(--boxShadowTab);
+        z-index: 12;
+    }
+
+    /* --------------------
     Buscamos
     -------------------- */
 
     .container-buscamos{
         margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 11;
     }
 
     .container-buscamos .buscamos{
@@ -442,6 +453,8 @@ Tablet
 
     .container-destacados{
         margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 10;
     }
 
     .container-destacados .destacados{
@@ -460,6 +473,8 @@ Tablet
 
     .container-bullets{
         margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 9;
     }
 
     .container-bullets .bullets{
@@ -474,6 +489,8 @@ Tablet
 
     .container-ventajas{
         margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 8;
     }
 
     .container-ventajas .ventajas{
@@ -487,6 +504,8 @@ Tablet
     
     .container-talentos{
         margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 7;
     }
     
     .container-talentos .talentos{
@@ -499,6 +518,8 @@ Tablet
     -------------------- */
     .container-registro{
         margin-bottom: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 6;
     }
     
 

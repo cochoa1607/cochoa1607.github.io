@@ -65,10 +65,32 @@ Prensa
 /* --------------------
 Tablet / Mobile
 -------------------- */
-@media only screen and (max-width: 640px) and (min-width: 1px) {
+
+@media only screen and (max-width: 1199px) and (min-width: 1px) {
+    
+    /* --------------------
+    Header
+    -------------------- */
+    
+    .contenedor-header{
+        box-shadow: var(--boxShadowTab);
+        z-index: 10;
+    }
+    
+    /* --------------------
+    Prensa
+    -------------------- */
+
+    .container-prensa{
+        box-shadow: var(--boxShadowTab);
+        z-index: 9;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
 
     .prensa .caja{
-        margin: 1rem 0;
+        margin: 3rem 4rem;
     }
 
 }

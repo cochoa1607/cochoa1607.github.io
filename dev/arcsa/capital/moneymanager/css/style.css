@@ -41,8 +41,10 @@ Colores
     --negro: #050505;
     
     --shadow: #05050530;
+    --shadowTab: #05050515;
 
     --boxShadow: var(--shadow) .5rem .5rem 1rem;
+    --boxShadowTab: var(--shadowTab) 0rem .5rem 1rem;
     --textShadow: var(--shadow) .5rem .5rem .5rem;
 
     --transitions: all ease-in-out 200ms;

@@ -310,8 +310,9 @@ Patrimonio
 }
 
 .patrimonio p{
-    max-width: 60ch;
-    font-weight: 400;
+    font-size: 2.4rem;
+    max-width: 50ch;
+    font-weight: 600;
     color: var(--cuarto);
 }
   
@@ -687,6 +688,14 @@ Certificaciones
     width: 100%;
 }
 
+.certificaciones .certificaciones-imagen .c-img-dos{
+    padding-right: 2rem;
+}
+
+.certificaciones .certificaciones-imagen .c-img-tres{
+    padding-left: 2rem;
+}
+
 [data-animation="fade"]{
     opacity: 0;
     transition: var(--transitionsXL);
@@ -777,6 +786,12 @@ Keyframes
 Dolariza
 -------------------- */
 @media only screen and (max-width: 999px) {
+
+    .container-cover{
+        box-shadow: var(--boxShadowTab);
+        z-index: 11;
+    }
+
     /* --------------------
     Patrimonio
     -------------------- */
@@ -852,27 +867,33 @@ Tablet / Mobile
 -------------------- */
 @media only screen and (max-width: 1199px) {
 
+
     /* --------------------
     Soluciones
     -------------------- */
 
     .container-soluciones{
         margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 10;
     }
-
+    
     .soluciones .cajas .caja{
         width: 35%;
         min-width: 35rem;
+        box-shadow: var(--boxShadowTab);
     }
-
+    
     /* --------------------
     Inversores
     -------------------- */
-
+    
     .container-inversores{
         margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 9;
     }
-
+    
     .inversores .cajas{
         width: 100%;
         height: calc(30vh);
@@ -881,15 +902,17 @@ Tablet / Mobile
         justify-content: center;
         align-items: center;
     }
-
+    
     /* --------------------
     Patrimonio
     -------------------- */
-
+    
     .container-patrimonio{
         width: 100% !important;
         padding: 0 !important;
         margin: 0 !important;
+        box-shadow: var(--boxShadowTab);
+        z-index: 8;
     }
     
     .container-patrimonio .contenedor-seccion{
@@ -909,31 +932,49 @@ Tablet / Mobile
     }
 
     /* --------------------
-    Elegirnos
-    -------------------- */
-
-    .elegirnos{
-        width: 80% !important;
-    }
-
-    /* --------------------
     Oficinas
     -------------------- */
 
     .container-oficinas{
         padding-bottom: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 7;
     }
     
     .oficinas{
         margin-bottom: 0 !important;
     }
+
+    /* --------------------
+    Elegirnos
+    -------------------- */
+
+    .container-elegirnos{
+        box-shadow: var(--boxShadowTab);
+        z-index: 6;
+    }
+
+    .elegirnos{
+        width: 80% !important;
+    }
     
+    /* --------------------
+    Prensa
+    -------------------- */
+
+    .container-prensa{
+        box-shadow: var(--boxShadowTab);
+        z-index: 5;
+    }
+
     /* --------------------
     Certificaciones
     -------------------- */
 
     .container-certificaciones{
         margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 4;
     }
 
     .certificaciones .ultimo{
@@ -963,9 +1004,22 @@ Tablet / Mobile
         margin: auto;
     }
 
+    .certificaciones .certificaciones-imagen .c-img-dos{
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+    
+    .certificaciones .certificaciones-imagen .c-img-tres{
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
     .container-cuenta{
         margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 3;
     }
+
 }
 
 /* --------------------
@@ -1249,6 +1303,18 @@ Mobile
         width: 40%;
         margin-top: 4rem;
         margin-bottom: 4rem;
+    }
+
+    .certificaciones .img-dos{
+        padding-right: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .certificaciones .img-tres{
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 0;
     }
 
 }
