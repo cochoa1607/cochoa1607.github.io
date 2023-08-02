@@ -513,7 +513,7 @@ footer{
 }
 
 .caja-footer .foot-redes i:hover{
-    color: var(--cuarto);
+    color: var(--quinto);
     transform: scale(1.2);
 }
 
