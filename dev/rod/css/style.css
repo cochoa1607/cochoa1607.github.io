@@ -32,6 +32,7 @@ Colores
     --terciarioHover: #C9C9C830;
     --link: #0777A8;
     --linkHover: #0777A830;
+    --blanco: #
     
     --textoPrincipal: 'Maven Pro', sans-serif;
     --textoSecundario: 'Source Serif Pro', serif;
@@ -186,14 +187,17 @@ Header Inicio
 
 header{
     width: 100vw;
+    background-color: lightblue;
+    overflow: visible;
 }
-  
+
 .headerInicio {
     position: fixed;
     transition: var(--transitionsL);
     z-index: 9999;
 }
 
+/* 
 .headerInicio #amt {
     background-color: var(--segundo);
     color: var(--blanco);
@@ -209,7 +213,53 @@ header{
     border: solid var(--cuarto) .2rem;
     transition: var(--transitions);
 }
-  
+*/
+
+/* ---------- Dropdown */
+
+.dropbtn {
+    background-color: var(--primario);
+    color: var(--gris);
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    display: inline-block;
+    overflow: visible;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    overflow: visible;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Dropdown ---------- */
+
 .headerInicio #selected {
     text-decoration: underline;
     font-weight: 600;
@@ -220,7 +270,7 @@ header{
     color: var(--tercero) !important;
     text-decoration: underline !important;
 }
-  
+
 .headerInicio .containerMenu {
     width: auto;
     padding: 15px 20px;
@@ -246,12 +296,16 @@ header{
     background-repeat: no-repeat;
     background-position: center;
 }
-  
+
+.headerInicio .containerMenu .menuMob{
+    overflow: visible;
+}
+
 .headerInicio .containerMenu ul {
     display: flex;
     justify-content: space-around;
 }
-  
+
 .headerInicio .containerMenu ul li {
     margin: 0 10px;
     padding: 10px;
