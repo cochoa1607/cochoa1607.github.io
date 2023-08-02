@@ -30,16 +30,19 @@ Colores
     --secundarioHover: #53565A30;
     --terciario: #C9C9C8;
     --terciarioHover: #C9C9C830;
+
     --link: #0777A8;
     --linkHover: #0777A830;
-    --blanco: #
+
+    --blanco: #FFFFFF;
+    --negro: #050505;
     
     --textoPrincipal: 'Maven Pro', sans-serif;
     --textoSecundario: 'Source Serif Pro', serif;
 
     --transitions: all ease-in-out 300ms;
-    --transitionsLarge: all ease-in-out 600ms;
-    --transitionsXLarge: all ease-in-out 1200ms;
+    --transitionsL: all ease-in-out 600ms;
+    --transitionsXL: all ease-in-out 1200ms;
 
     --textShadow: #0000001A .2rem .2rem .1rem;
     --boxShadow: #0000001A .4rem .4rem .6rem;
@@ -187,14 +190,30 @@ Header Inicio
 
 header{
     width: 100vw;
-    background-color: lightblue;
     overflow: visible;
+    border: solid red 2px;
+    background-color: var(--terciario);
 }
 
 .headerInicio {
     position: fixed;
     transition: var(--transitionsL);
     z-index: 9999;
+}
+
+.headerInicio .logoArcsa{
+    width: 20%;
+    max-width: 20rem;
+    height: 100%;
+}
+
+.headerInicio .logoArcsa .logo{
+    width: 100%;
+    height: 5rem;
+    background-image: url(../img/logoArcsaCapital.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* 
@@ -215,60 +234,77 @@ header{
 }
 */
 
-/* ---------- Dropdown */
-
-.dropbtn {
-    background-color: var(--primario);
-    color: var(--gris);
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
+.headerInicio .dropdown {
     display: inline-block;
     overflow: visible;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.headerInicio .dropbtn {
+    color: var(--blanco);
+    font-size: 1.4rem;
+    border: none;
+    background-color: #00000000;
+    margin: 0;
+    padding: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transitions);
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+.headerInicio .noDrop {
+    margin: 0;
+    padding: 1rem;
+    transition: var(--transitions);
+}
+
+.headerInicio .dropdown-content {
+    display: none;
+    position: absolute;
+    color: var(--primario);
+    background-color: var(--secundario);
+    min-width: 16rem;
+    box-shadow: var(--boxShadow);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.headerInicio .dropdown-content a {
+    padding: 1rem 1.6rem;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
+.headerInicio .dropdown-content a:hover {
+    background-color: var(--blanco);
+    color: var(--primario);
     overflow: visible;
 }
 
-.dropdown:hover .dropdown-content {
+.headerInicio .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+.headerInicio .dropdown:hover .dropbtn {
+    background-color: none;
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 
-/* Dropdown ---------- */
+.headerInicio .noDrop:hover {
+    background-color: none;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.headerInicio .noDrop a:hover {
+    text-decoration: underline;
+}
 
 .headerInicio #selected {
     text-decoration: underline;
     font-weight: 600;
-    color: var(--tercero);
-}
-
-.headerInicio #selected:hover {
-    color: var(--tercero) !important;
-    text-decoration: underline !important;
+    color: var(--blanco);
+    background-color: none;
+    transition: var(--transitions);
 }
 
 .headerInicio .containerMenu {
@@ -280,57 +316,55 @@ header{
     font-size: 1.6rem;
     font-weight: 300;
     text-transform: uppercase;
+    color: var(--blanco);
+    border: solid yellow 2px;
 }
 
-.headerInicio .logoArcsa{
-    width: 20%;
-    max-width: 20rem;
-    height: 100%;
-}
-
-.headerInicio .logoArcsa .logo{
-    width: 100%;
-    height: 5rem;
-    background-image: url(../img/logoArcsaCapital.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.headerInicio .containerMenu .menuMob{
-    overflow: visible;
+.headerInicio .containerMenu .menuPags ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .headerInicio .containerMenu ul {
     display: flex;
     justify-content: space-around;
+    background-color: none;
 }
 
 .headerInicio .containerMenu ul li {
-    margin: 0 10px;
-    padding: 10px;
+    margin: 0 1rem;
+    padding: 1rem   ;
     font-size: 1.4rem;
     list-style: none;
 }
-  
+
 .headerInicio .containerMenu a {
     color: var(--blanco);
     text-decoration: none;
 }
-  
+
 .headerInicio .containerMenu a:hover {
-    font-weight: 500;
     color: var(--quinto);
     text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.headerInicio .containerMenu .menuRedes ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
   
-.headerInicio .menuIcon {
-    font-size: 2.4rem;
-    color: var(--blanco);
+.headerInicio .dropdown button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-  
-.headerInicio .menuIcon:hover {
-    color: var(--quinto);
+
+.headerInicio .dropdown button i{
+    margin-left: 1rem;
+    font-size: 2rem;
 }
 
 /* --------------------
@@ -338,7 +372,7 @@ Header abajo
 -------------------- */
 
 .headerInicio.abajo {
-    background-color: var(--primero);
+    background-color: var(--primario);
     box-shadow: var(--boxShadow);
 }
   
