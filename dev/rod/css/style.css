@@ -24,16 +24,17 @@ Colores
 ------------------------- */
 
 :root {
-    --primario: ##CE112D;
-    --primarioHover: #;
+    --primario: #CE112D;
+    --primarioHover: #CE112D30;
     --secundario: #53565A;
-    --secundarioHover: #;
+    --secundarioHover: #53565A30;
     --terciario: #C9C9C8;
-    --terciarioHover: #;
-    --link: #;
+    --terciarioHover: #C9C9C830;
+    --link: #0777A8;
+    --linkHover: #0777A830;
     
-    --sans-serif: 'Maven Pro', sans-serif;
-    --serif: 'Source Serif Pro', serif;
+    --textoPrincipal: 'Maven Pro', sans-serif;
+    --textoSecundario: 'Source Serif Pro', serif;
 
     --transitions: all ease-in-out 300ms;
     --transitionsLarge: all ease-in-out 600ms;
@@ -43,79 +44,13 @@ Colores
     --boxShadow: #0000001A .4rem .4rem .6rem;
 }
 
-/* -------------------------
-Elementos
-------------------------- */
-
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-    
-}
-
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-size: 1.6rem;
-    background-color: #fafafa;
-}
-
-/* --------------------
-Colores
--------------------- */
-
-:root {
-    --primero: #0E2B66;
-    --segundo: #2BA2AF;
-    --tercero: #F28700;
-    --cuarto: #BAE8E3;
-    --quinto: #FCC97E;
-    --sexto: #162A62;
-    
-    --blanco: #FFFFFF;
-    --gris: #707070;
-    --gris-dos: #E1E1E1;
-    --gris-tres: #F2F2F2;
-    --gris-cuatro: #262626;
-    --fondo-azul: #ECEEF2;
-    --fondo-verde: #BAE8E3BB;
-    --negro: #050505;
-    
-    --shadow: #05050530;
-    --shadowTab: #05050515;
-
-    --boxShadow: var(--shadow) .5rem .5rem 1rem;
-    --boxShadowTab: var(--shadowTab) 0rem .5rem 1rem;
-    --textShadow: var(--shadow) .5rem .5rem .5rem;
-
-    --transitions: all ease-in-out 200ms;
-    --transitionsL: all ease-in-out 500ms;
-    --transitionsXL: all ease-in-out 800ms;
-
-}
-
 /* --------------------
 Titulos / Textos
 -------------------- */
 h1{
     font-size: 4.2rem;
     color: var(--blanco);
-    font-family: 'Playfair Display', serif;
+    font-family: var(--textoSecundario);
     text-transform: uppercase;
     color: var(--quinto);
 }
@@ -381,8 +316,6 @@ Header abajo
     color: var(--morado);
   }
 
-
-
 /* --------------------
 Footer
 -------------------- */
@@ -571,94 +504,6 @@ footer{
 .caja-footer .foot-redes i:hover{
     color: var(--quinto);
     transform: scale(1.2);
-}
-
-/* --------------------
-Header PAGS
--------------------- */
-
-.contenedor-header{
-    width: 100vw;
-    height: 70vh;
-    min-height: 70rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.texto{
-    width: 40%;
-    margin-left: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.texto span{
-    color: var(--blanco);
-    font-size: 2.2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: right;
-}
-
-.texto h1{
-    margin: 0 0 5rem 0;
-    text-align: right;
-}
-
-.texto p{
-    color: var(--blanco);
-    margin-bottom: 5rem;
-    text-align: right;
-}
-
-/* Texto right */
-.texto-right{
-    justify-content: center;
-}
-
-.texto-right span{
-    text-align: right;
-}
-
-.texto-right h1{
-    text-align: right;
-}
-
-.texto-right p{
-    text-align: right;
-}
-
-.texto-right .boton{
-    text-align: right;
-}
-
-.texto-right .boton .btn-primario{
-    transform: translateX(2rem);
-}
-
-.texto-left{
-    margin-left: 10%;
-    justify-content: center;
-}
-
-.texto-left span{
-    text-align: left;
-}
-
-.texto-left h1{
-    text-align: left;
-}
-
-.texto-left p{
-    text-align: left;
-}
-
-.texto-left .boton{
-    text-align: left;
-    transform: translateX(-2rem);
 }
 
 /* --------------------
@@ -897,21 +742,6 @@ Tablet / Mobile
     .headerX .onlyMobile{
         display: none;
     }
-
-    /* --------------------
-    Patrimonio
-    -------------------- */
-    
-    .patrimonio .content{
-        width: 80%;
-    }
-    
-    /* --------------------
-    Cuenta
-    -------------------- */
-    .container-cuenta {
-        margin-bottom: 0 !important;
-    }
 }
 
 /* --------------------
@@ -965,63 +795,5 @@ Mobile
     .caja-footer .form-ul{
         width: 80%;
         min-width: none;
-    }
-
-    /* --------------------
-    Header PAGS
-    -------------------- */
-
-    .contenedor-header{
-        height: 100vh;
-        background-position: center;
-    }
-
-    .texto{
-        width: 80%;
-        margin: auto;
-        height: 100%;
-    }
-
-    .texto span{
-        text-align: center;
-    }
-
-    .texto h1{
-        text-align: center;
-    }
-
-    .texto p{
-        text-align: center;
-    }
-
-    .texto .boton{
-        text-align: center;
-        transform: translateX(0);
-    }
-
-    /* Texto right */
-    .texto-right{
-        justify-content: center;
-    }
-
-    .texto-right span{
-        text-align: center;
-    }
-
-    .texto-right h1{
-        text-align: center;
-    }
-
-    .texto-right p{
-        text-align: center;
-    }
-    
-    .texto-right .boton{
-        text-align: center;
-    }
-    
-    .texto-right .boton .btn-primario{
-        margin: .5rem 1rem 1.5rem 1rem;
-        transform: translateX(0);
     }
 }
