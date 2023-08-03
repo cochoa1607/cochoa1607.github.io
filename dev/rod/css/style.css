@@ -20,7 +20,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: var(--gris);
+    background-color: #FAFAFA;
 }
 
 /* -------------------------
@@ -253,13 +253,13 @@ header{
 }
 
 .headerInicio .logoRod{
-    width: 10rem;
+    width: 20%;
     height: 100%;
 }
 
 .headerInicio .logoRod .logo{
     width: 100%;
-    height: 5rem;
+    height: 9rem;
     background-image: url(../img/logoRod_completo_blanco.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -292,6 +292,7 @@ header{
     text-transform: uppercase;
     transition: var(--transitions);
     font-family: 'Roboto Slab', serif;
+
 }
 
 .headerInicio .noDrop {
@@ -310,7 +311,7 @@ header{
 }
 
 .headerInicio .dropdown-content a {
-    padding: 1.5rem 3rem 1.5rem 1.6rem;
+    padding: 0 3rem 0 1.6rem;
     text-decoration: none;
     display: block;
     font-family: 'Roboto Slab', serif;
@@ -354,7 +355,7 @@ header{
 .headerInicio .containerMenu {
     color: var(--blanco);
     width: auto;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -377,7 +378,7 @@ header{
 
 .headerInicio .containerMenu ul li {
     margin: 0 1rem;
-    padding: 1rem .5rem;
+    padding: 0 .5rem;
     font-size: 1.4rem;
     list-style: none;
 }
@@ -407,6 +408,14 @@ header{
 
 .headerInicio .containerMenu .menuRedes a{
     color: var(--blanco);
+}
+
+.headerInicio .containerMenu .menuRedes .contacto{
+    background-color: var(--blanco);
+    color: var(--secundario);
+    padding: .5rem 2rem;
+    font-weight: 400;
+    border-radius: 10rem;
 }
 
 .headerInicio .containerMenu .menuRedes .dropdown a{
