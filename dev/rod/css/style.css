@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
+    /* 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+     */
     overflow-x: hidden;
 
 }
@@ -51,15 +55,15 @@ Colores
 /* --------------------
 Titulos / Textos
 -------------------- */
-h1{
+/* h1{
     font-size: 4.2rem;
     color: var(--blanco);
     font-family: var(--textoSecundario);
     text-transform: uppercase;
     color: var(--quinto);
-}
+} */
 
-h2{
+/* h2{
     color: var(--primero);
     font-weight: 600;
     text-transform: uppercase;
@@ -67,66 +71,70 @@ h2{
     margin: auto;
     margin-bottom: 5rem;
     max-width: 40ch;
-}
+} */
 
 h3{
-    font-size: 1.8rem;
-    font-weight: 400;
     color: var(--primero);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    max-width: 50ch;
-    margin: auto;
+    max-width: none;
+    text-transform: uppercase;
 }
 
-h4{
+/* h4{
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--primero);
-}
+} */
 
-h5{
+/* h5{
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--segundo);
     text-align: left;
-}
+} */
 
 p{
+    color: var(--secundario);
     font-size: 1.6rem;
-    font-weight: 200;
-    max-width: 70ch;
+    font-weight: 300;
+    max-width: 80ch;
+    padding: 0;
 }
 
 /* --------------------
 Botones
 -------------------- */
 .btn-primario{
-    background-color: var(--tercero);
-    border: solid var(--tercero) .2rem;
     padding: 1rem 5rem;
-    border-radius: .5rem;
-    color: var(--blanco);
-    text-transform: uppercase;
     font-size: 1.4rem;
+    color: var(--blanco);
+    background-color: var(--primario);
+    border: solid var(--primario) .2rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
     transition: var(--transitions);
     cursor: pointer;
-    margin: 0 2rem 1.5rem 2rem;
+    margin: 1rem 2rem;
     box-shadow: var(--boxShadow);
     white-space: nowrap;
 }
 
 .btn-primario:hover{
-    border: solid var(--quinto) .2rem;
+    border: solid var(--primarioHover) .2rem;
     font-weight: 500;
-    font-size: 1.42rem;
+    transform: scale(1.05);
 }
 
 .btn-primario a{
-    text-decoration: none;
     color: var(--blanco);
+    text-decoration: none;
 }
 
-.btn-secundario{
+/* .btn-secundario{
     background-color: var(--segundo);
     border: solid var(--segundo) .2rem;
     padding: 1rem 5rem;
@@ -166,7 +174,7 @@ Botones
 .btn-secundario a{
     text-decoration: none;
     color: var(--blanco);
-}
+} */
 
 .boton-flotante{
     position: fixed;
@@ -179,7 +187,6 @@ Botones
     background-color: #2BB741;
     border: solid var(--blanco);
     border-radius: 5rem;
-    
 }
 
 .boton-flotante .btn-flotante:hover{
@@ -218,15 +225,13 @@ Botones
 Clases universales
 -------------------- */
 section{
-    padding: 5rem 0 0 0;
-    padding-top: 15rem;
+    padding: 0;
+    padding-top: 10rem;
 }
 
 .contenedor-seccion{
-    width: 80%;
+    width: 100%;
     margin: auto;
-    margin-bottom: 2rem;
-    border-radius: 2rem;
     padding: 5rem 5%;
 }
 
@@ -238,7 +243,7 @@ header{
     width: 100vw;
     overflow: visible;
     background-color: none;
-    background-color: var(--primarioHover);
+    background-color: none;
 }
 
 .headerInicio {
@@ -247,47 +252,38 @@ header{
     z-index: 9999;
 }
 
-.headerInicio .logoArcsa{
-    width: 20%;
-    max-width: 20rem;
+.headerInicio .logoRod{
+    width: 10rem;
     height: 100%;
 }
 
-.headerInicio .logoArcsa .logo{
+.headerInicio .logoRod .logo{
     width: 100%;
     height: 5rem;
-    background-image: url(../img/logoRod.ico);
+    background-image: url(../img/logoRod_completo_blanco.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-
-/* 
-.headerInicio #amt {
-    background-color: var(--segundo);
-    color: var(--blanco);
-    padding: .7rem 1rem;
-    border-radius: .5rem;
-    font-weight: 500;
-    border: solid var(--segundo) 2px;
-}
-
-.headerInicio #amt:hover {
-    text-decoration: none;
-    transform: scale(1.2);
-    border: solid var(--cuarto) .2rem;
-    transition: var(--transitions);
-}
-*/
 
 .headerInicio .dropdown {
     display: inline-block;
     overflow: visible;
 }
 
+.headerInicio .dropdown .down::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    padding-left: .5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
 .headerInicio .dropbtn {
     color: var(--blanco);
     font-size: 1.4rem;
+    font-weight: 200;
     border: none;
     background-color: #00000000;
     margin: 0;
@@ -295,6 +291,7 @@ header{
     cursor: pointer;
     text-transform: uppercase;
     transition: var(--transitions);
+    font-family: 'Roboto Slab', serif;
 }
 
 .headerInicio .noDrop {
@@ -304,24 +301,24 @@ header{
 }
 
 .headerInicio .dropdown-content {
+    color: var(--primario);
+    background-color: none;
     display: none;
     position: absolute;
-    color: var(--primario);
-    background-color: var(--secundario);
-    min-width: 16rem;
-    box-shadow: var(--boxShadow);
-    border-radius: 0 0 .5rem .5rem;
+    min-width: none;
+    border-radius: 0;
 }
 
 .headerInicio .dropdown-content a {
-    padding: 1rem 1.6rem;
+    padding: 1.5rem 3rem 1.5rem 1.6rem;
     text-decoration: none;
     display: block;
+    font-family: 'Roboto Slab', serif;
 }
 
 .headerInicio .dropdown-content a:hover {
-    background-color: var(--blanco);
     color: var(--primario);
+    background-color: var(--blanco);
     overflow: visible;
 }
 
@@ -344,23 +341,26 @@ header{
 }
 
 .headerInicio #selected {
-    text-decoration: underline;
-    font-weight: 600;
     color: var(--blanco);
+    font-weight: 600;
     background-color: none;
     transition: var(--transitions);
 }
 
+.headerInicio #selected span{
+    text-decoration: underline;
+}
+
 .headerInicio .containerMenu {
+    color: var(--blanco);
     width: auto;
-    padding: 15px 20px;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 1.6rem;
     font-weight: 300;
     text-transform: uppercase;
-    color: var(--blanco);
 }
 
 .headerInicio .containerMenu .menuPags ul{
@@ -377,7 +377,7 @@ header{
 
 .headerInicio .containerMenu ul li {
     margin: 0 1rem;
-    padding: 1rem   ;
+    padding: 1rem .5rem;
     font-size: 1.4rem;
     list-style: none;
 }
@@ -385,12 +385,40 @@ header{
 .headerInicio .containerMenu a {
     color: var(--blanco);
     text-decoration: none;
+    font-weight: 200;
+    font-family: 'Roboto Slab', serif;
 }
 
 .headerInicio .containerMenu a:hover {
-    color: var(--quinto);
-    transform: scale(1.1);
     text-decoration: none;
+}
+
+.headerInicio .containerMenu .menuPags .dropdown a{
+    color: var(--blanco);
+    border-left: solid var(--blanco) .1rem;
+    padding: 1.5rem 3rem 1.5rem 1.6rem;
+}
+
+.headerInicio .containerMenu .menuPags .dropdown a:hover{
+    color: var(--primario);
+    background-color: #ffffffDD;
+    font-weight: 400;
+}
+
+.headerInicio .containerMenu .menuRedes a{
+    color: var(--blanco);
+}
+
+.headerInicio .containerMenu .menuRedes .dropdown a{
+    color: var(--blanco);
+    border-left: solid var(--blanco) .1rem;
+    padding: 1.5rem 3rem 1.5rem 1.6rem;
+}
+
+.headerInicio .containerMenu .menuRedes .dropdown a:hover{
+    color: var(--primario);
+    background-color: #ffffffDD;
+    font-weight: 400;
 }
 
 .headerInicio .containerMenu .menuRedes ul{
@@ -406,7 +434,7 @@ header{
 }
 
 .headerInicio .dropdown button i{
-    margin-left: 1rem;
+    margin-right: 1rem;
     font-size: 2rem;
 }
 
@@ -418,34 +446,45 @@ Header abajo
     background-color: var(--primario);
     box-shadow: var(--boxShadow);
 }
-  
-.headerInicio.abajo ul li a {
-    color: var(--blanco);
+
+.headerInicio.abajo .dropdown-content {
+    color: var(--primario);
+    background-color: #FAFAFA;
+    display: none;
+    position: absolute;
+    min-width: none;
+    box-shadow: var(--boxShadow);
+    border-radius: 0 0 .5rem .5rem;
 }
-  
-  .headerInicio.abajo ul li a:hover {
-    color: var(--quinto);
-  }
-  
-  .headerInicio.abajo i {
-    color: var(--morado);
-  }
-  
-  .headerInicio.abajo i:hover {
-    color: var(--morado-claro);
-  }
-  
-  .headerInicio.abajo #logoBlanco {
-    fill: var(--morado);
-  }
-  
-  .headerInicio.abajo #logoBlanco:hover {
-    fill: var(--morado-claro);
-  }
-  
-  .headerInicio.abajo #selected:hover {
-    color: var(--morado);
-  }
+
+.headerInicio.abajo .containerMenu a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 200;
+    font-family: 'Roboto Slab', serif;
+}
+
+.headerInicio.abajo .containerMenu .menuPags .dropdown a{
+    color: var(--secundario);
+    border-left: solid var(--blanco) .1rem;
+    padding: 1.5rem 3rem 1.5rem 1.6rem;
+}
+
+.headerInicio.abajo .containerMenu .menuPags .dropdown a:hover{
+    color: var(--primario);
+    font-weight: 400;
+}
+
+.headerInicio.abajo .containerMenu .menuRedes .dropdown a{
+    color: var(--secundario);
+    border-left: solid var(--blanco) .1rem;
+    padding: 1.5rem 3rem 1.5rem 1.6rem;
+}
+
+.headerInicio.abajo .containerMenu .menuRedes .dropdown a:hover{
+    color: var(--primario);
+    font-weight: 400;
+}
 
 /* --------------------
 Footer
