@@ -168,6 +168,52 @@ Botones
     color: var(--blanco);
 }
 
+.boton-flotante{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    animation: whatsApp 3s linear infinite;
+}
+
+.boton-flotante .btn-flotante{
+    background-color: #2BB741;
+    border: solid var(--blanco);
+    border-radius: 5rem;
+    
+}
+
+.boton-flotante .btn-flotante:hover{
+    background-color: #050505;
+    transition: var(--transitionsL);
+}
+
+.boton-flotante .btn-flotante a{
+    background-color: none;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+}
+
+.boton-flotante .btn-flotante a{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.boton-flotante .btn-flotante a::after{
+    content: "\f4ad";
+    color: var(--blanco);
+}
+
+.boton-flotante .btn-flotante:hover a::after{
+    content: "\f1d8";
+    color: var(--blanco);
+}
+
 /* --------------------
 Clases universales
 -------------------- */
@@ -191,8 +237,8 @@ Header Inicio
 header{
     width: 100vw;
     overflow: visible;
-    border: solid red 2px;
-    background-color: var(--terciario);
+    background-color: none;
+    background-color: var(--primarioHover);
 }
 
 .headerInicio {
@@ -285,14 +331,12 @@ header{
 
 .headerInicio .dropdown:hover .dropbtn {
     background-color: none;
-    text-decoration: underline;
     transform: scale(1.1);
 }
 
 .headerInicio .noDrop:hover {
     background-color: none;
     transform: scale(1.1);
-    text-decoration: underline;
 }
 
 .headerInicio .noDrop a:hover {
@@ -317,7 +361,6 @@ header{
     font-weight: 300;
     text-transform: uppercase;
     color: var(--blanco);
-    border: solid yellow 2px;
 }
 
 .headerInicio .containerMenu .menuPags ul{
@@ -346,8 +389,8 @@ header{
 
 .headerInicio .containerMenu a:hover {
     color: var(--quinto);
-    text-decoration: underline;
     transform: scale(1.1);
+    text-decoration: none;
 }
 
 .headerInicio .containerMenu .menuRedes ul{
@@ -592,6 +635,24 @@ footer{
 .caja-footer .foot-redes i:hover{
     color: var(--quinto);
     transform: scale(1.2);
+}
+
+/* --------------------
+Animaciones
+-------------------- */
+
+@keyframes whatsApp {
+    0% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* --------------------
