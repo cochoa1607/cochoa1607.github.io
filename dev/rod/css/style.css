@@ -20,7 +20,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: #FAFAFA;
+    background-color: var(--gris);
 }
 
 /* -------------------------
@@ -39,7 +39,9 @@ Colores
     --linkHover: #0777A830;
 
     --blanco: #FFFFFF;
+    --gris: #FAFAFA;
     --negro: #050505;
+    --transparente: #00000000;
     
     --textoPrincipal: 'Maven Pro', sans-serif;
     --textoSecundario: 'Source Serif Pro', serif;
@@ -48,8 +50,8 @@ Colores
     --transitionsL: all ease-in-out 600ms;
     --transitionsXL: all ease-in-out 1200ms;
 
-    --textShadow: #0000001A .2rem .2rem .1rem;
-    --boxShadow: #0000001A .4rem .4rem .6rem;
+    --textShadow: #00000030 .2rem .2rem .1rem;
+    --boxShadow: #00000030 .4rem .4rem .6rem;
 }
 
 /* --------------------
@@ -63,19 +65,17 @@ Titulos / Textos
     color: var(--quinto);
 } */
 
-/* h2{
-    color: var(--primero);
-    font-weight: 600;
+h2{
+    color: var(--blanco);
+    font-weight: 400;
     text-transform: uppercase;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 5rem;
-    max-width: 40ch;
-} */
+    text-align: left;
+    max-width: 20ch;
+}
 
 h3{
     color: var(--primero);
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -84,11 +84,11 @@ h3{
     text-transform: uppercase;
 }
 
-/* h4{
-    font-size: 1.8rem;
+h4{
+    color: var(--negro);
+    font-size: 2.2rem;
     font-weight: 400;
-    color: var(--primero);
-} */
+}
 
 /* h5{
     font-size: 1.8rem;
@@ -134,47 +134,46 @@ Botones
     text-decoration: none;
 }
 
-/* .btn-secundario{
-    background-color: var(--segundo);
-    border: solid var(--segundo) .2rem;
-    padding: 1rem 5rem;
-    border-radius: .5rem;
-    color: var(--blanco);
-    text-transform: uppercase;
+.boton{
+    background-color: none;
+}
+
+.btn-secundario{
+    border: none;
+    padding: 0;
     font-size: 1.4rem;
     transition: var(--transitions);
     cursor: pointer;
-    margin: 0 2rem 1.5rem 2rem;
-    box-shadow: var(--boxShadow);
+    margin: 0 .5rem;
     white-space: nowrap;
+    text-decoration: none;
+    background-color: none;
+    text-align: left;
+    transform: translateX(-.5rem);
+    background-color: var(--transparente);
 }
 
-.btn-secundario-disabled{
-    background-color: var(--segundo);
-    opacity: 50%;
-    border: solid var(--segundo) .2rem;
-    padding: 1rem 5rem;
-    border-radius: .5rem;
-    color: var(--blanco);
-    text-transform: uppercase;
-    font-size: 1.4rem;
+.btn-secundario::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f178";
+    color: var(--link);
+    text-decoration: none;
+    padding-left: 1rem;
     transition: var(--transitions);
-    cursor: default;
-    margin: 0 2rem 1.5rem 2rem;
-    box-shadow: var(--boxShadow);
-    white-space: nowrap;
 }
 
 .btn-secundario:hover{
-    border: solid var(--cuarto) .2rem;
-    font-weight: 500;
-    font-size: 1.42rem;
+    transform: scale(1.1);
+}
+
+.btn-secundario:hover::after{
+    padding-left: 1.5rem;
 }
 
 .btn-secundario a{
-    text-decoration: none;
-    color: var(--blanco);
-} */
+    color: var(--link);
+} 
 
 .boton-flotante{
     position: fixed;
@@ -226,13 +225,13 @@ Clases universales
 -------------------- */
 section{
     padding: 0;
-    padding-top: 10rem;
+    padding-top: 0;
 }
 
 .contenedor-seccion{
     width: 100%;
     margin: auto;
-    padding: 5rem 5%;
+    padding: 0;
 }
 
 /* --------------------

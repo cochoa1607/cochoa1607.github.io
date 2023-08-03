@@ -4,6 +4,7 @@ Banner
 
 .container-banner{
     padding: 0;
+    box-shadow: var(--boxShadow);
 }
 
 .banner{
@@ -14,24 +15,26 @@ Banner
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .banner .cont-info{
-    background-color: var(--blanco);
+    background-color: none;
     width: 50%;
     min-width: 60rem;
-    position: absolute;
-    bottom: 50vh;
-    right: 5%;
     text-align: right;
-    padding: 2rem;
-    border-radius: .3rem;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
 }
 
 .banner .cont-info h3,
 .banner .cont-info p{
     text-align: right;
     padding: 0 2rem;
+    color: var(--blanco);
 }
 
 .banner .cont-info p{
@@ -48,14 +51,56 @@ Main
 -------------------- */
 main{
     width: 100%;
-    border: solid red 2px;
-    height: 400rem;
+    margin: 10rem 0;
+    /* border: solid red 2px; */
+    box-shadow: var(--boxShadow);
 }
 
 main .container-servicios{
-    background-color: var(--terciario);
+    background-color: none;
 }
 
 main .container-servicios .servicios{
-    background-color: var(--primario);
+    width: 100%;
 }
+
+main .container-servicios .servicios .titulo{
+    background-color: var(--primario);
+    margin: 0 2rem 1rem 0;
+    padding: .5rem 4rem .5rem 2rem;
+    width: fit-content;
+    border-radius: 0 0 1rem 0;
+}
+
+main .container-servicios .servicios .cont-imagen{
+    width: 100%;
+    height: 40vh;
+    min-height: 30rem;
+    background-image: url(../img/inicio_servicios_001.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .container-servicios .servicios .cont-texto{
+    padding: 2rem;
+    width: 60%;
+    min-width: 85rem;
+    margin: 0 3rem;
+}
+
+main .container-servicios .servicios .cont-texto h4{
+    text-align: left;
+}
+
+main .container-servicios .servicios .cont-texto p{
+    text-align: left;
+    padding: 2rem 0;
+}
+
+/* Slider */
+  
+  
+  
+  
+  
