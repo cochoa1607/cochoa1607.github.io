@@ -5,6 +5,8 @@ Banner
 .container-banner{
     padding: 0;
     box-shadow: var(--boxShadow);
+    position: relative;
+    z-index: 21;
 }
 
 .banner{
@@ -47,13 +49,42 @@ Banner
 }
 
 /* --------------------
+Titulos
+-------------------- */
+
+/* .titulo{
+    background-color: var(--primario);
+    margin: 0 2rem 2rem 0;
+    padding: .5rem 4rem .5rem 2rem;
+    width: fit-content;
+    border-radius: 0 0 1rem 0;
+    box-shadow: var(--boxShadow);
+} */
+
+.titulo{
+    background-color: none;
+    margin: 0 2rem 2rem 0;
+    padding: .5rem 4rem .5rem 0;
+    width: fit-content;
+}
+
+.titulo{
+    background-color: none;
+    margin: 0 2rem 2rem 0;
+    padding: .5rem 4rem .5rem 0;
+    width: fit-content;
+}
+
+/* --------------------
 Main
 -------------------- */
 main{
     width: 100%;
-    margin: 10rem 0;
-    /* border: solid red 2px; */
     box-shadow: var(--boxShadow);
+    z-index: 10;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 20;
 }
 
 main .container-servicios{
@@ -62,14 +93,6 @@ main .container-servicios{
 
 main .container-servicios .servicios{
     width: 100%;
-}
-
-main .container-servicios .servicios .titulo{
-    background-color: var(--primario);
-    margin: 0 2rem 1rem 0;
-    padding: .5rem 4rem .5rem 2rem;
-    width: fit-content;
-    border-radius: 0 0 1rem 0;
 }
 
 main .container-servicios .servicios .cont-imagen{
@@ -85,8 +108,10 @@ main .container-servicios .servicios .cont-imagen{
 main .container-servicios .servicios .cont-texto{
     padding: 2rem;
     width: 60%;
-    min-width: 85rem;
-    margin: 0 3rem;
+    min-width: 75rem;
+    max-width: 120rem;
+    margin: 0 0 0 3rem;
+    overflow: hidden;
 }
 
 main .container-servicios .servicios .cont-texto h4{
@@ -99,8 +124,92 @@ main .container-servicios .servicios .cont-texto p{
 }
 
 /* Slider */
+
+.servicios .slideshow-container {
+    position: relative;
+    max-width: none;
+    margin: 0 auto;
+    height: auto;
+    background-color: var(--gris);
+}
+
+.servicios .slide {
+    display: none;
+    height: 20rem;
+}
+
+.servicios .slide-content {
+    background-color: none;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.servicios .prev,
+.servicios .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: 0.6s ease;
+    border-radius: .3rem;
+    user-select: none;
+    color: var(--secundario);
+}
+
+.servicios .next {
+    right: 0;
+}
+
+.servicios .prev:hover,
+.servicios .next:hover {
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+.servicios .fade {
+    animation: fade 6s linear infinite;
+}
+
+.servicios .slidesLineas{
+    width: 100%;
+    height: 1rem;
+    margin: 2rem 0 0 0;
+    display: flex;
+}
+
+.servicios .slidesLineas .linea{
+    width: 3rem;
+    background-color: var(--terciario);
+    height: .1rem;
+    margin: 0 .5rem;
+    border-radius: 2rem;
+}
+
+.servicios .slidesLineas .active{
+    width: 3rem;
+    background-color: var(--primario);
+    height: .2rem;
+}
   
-  
-  
+/* --------------------
+Experiencia
+-------------------- */
+
+.container-experiencia{
+    background-color: var(--blanco);
+    box-shadow: var(--boxShadow);
+    position: relative;
+    z-index: 18;
+}
+
   
   
