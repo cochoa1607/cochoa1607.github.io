@@ -316,6 +316,18 @@ X
   background-image: url(../img/logo-uacm.png);
 }
 
+.instituciones .logo-03 {
+  background-image: url(../img/logo-uic.png);
+}
+
+.instituciones .logo-04 {
+  background-image: url(../img/logo-unam.png);
+}
+
+.instituciones .logo-05 {
+  background-image: url(../img/logo-ipn.png);
+}
+
 /* --------------------
 Animación secciones
 -------------------- */
