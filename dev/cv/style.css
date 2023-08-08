@@ -42,41 +42,51 @@ h1{
     font-size: 2.2rem;
     font-weight: 600;
     text-align: left;
+    text-transform: uppercase;
+    padding: 1rem 0;
 }
 
 h2{
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     color: var(--azul);
     font-family: 'Encode Sans SC', sans-serif;
 }
 
 h3{
-    font-size: 1.4rem;
+    font-size: 2.6rem;
+    text-decoration: underline 1rem;
     color: var(--azul-claro);
-    font-weight: 300;
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Encode Sans SC', sans-serif;
+    margin: 0 auto;
 }
 
 h4{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--azul);
     text-transform: uppercase;
     font-weight: 700;
 }
 
-span{
-    color: var(--azul-claro);
-    font-size: 1.4rem;
-    font-weight: 300;
+h5{
+    font-size: 1.8rem;
+    color: var(--blanco);
+    font-weight: 200;
+    font-family: 'Encode Sans SC', sans-serif;
+    text-align: center;
+    margin: .5rem 0 1rem 0;
 }
 
-p{
+p,
+span{
     color: var(--azul-claro);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300;
 }
 
 a {
-    color: var(--azul-claro);
+    color: var(--verde-claro);
     font-size: 1.2rem;
     text-decoration: none;
     cursor: pointer;
@@ -170,27 +180,31 @@ nav{
 }
 
 #contacto{
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 
 #habilidades{
-    padding-top: 3rem;
+    padding-top: 10rem;
+}
+
+#proyectos{
+    padding-top: 10rem;
 }
 
 #descripcion{
-    padding-top: 6rem;
+    padding-top: 10rem;
 }
 
 #educacion{
-    padding-top: 6rem;
+    padding-top: 10rem;
 }
 
 #experiencia{
-    padding-top: 6rem;
+    padding-top: 10rem;
 }
 
 /*
-Section
+Datos
 */
 
 .imagen-fondo{
@@ -212,7 +226,7 @@ Section
 }
 
 .datos{
-    margin: 1rem auto 0 auto;
+    margin: 6rem auto;
 }
 
 .container-contacto{
@@ -250,12 +264,12 @@ Section
 
 .container-contacto .contacto ul li a{
     color: var(--naranja);
-    
     transition: var(--transition);
 }
 
 .container-contacto .contacto ul li a:hover{
     color: var(--verde-claro);
+    transform: scale(2);
 }
 
 .container-contacto .foto{
@@ -271,21 +285,26 @@ Section
 }
 
 /*
+Linea
+*/
+
+.linea{
+    width: 50%;
+    margin: 3rem auto 0 auto;
+    border-bottom: solid var(--verde) .2rem;
+    position: relative;
+    z-index: 99;
+}
+
+/*
 Redes
 */
 
 .redes{
     display: flex;
-    margin: 1rem auto;
+    margin: 0 auto;
 }
 
-.linea{
-    width: 50%;
-    margin: auto;
-    border-bottom: solid var(--verde) .2rem;
-    position: relative;
-    z-index: 99;
-}
 
 .container-redes{
     width: 100%;
@@ -299,7 +318,7 @@ Redes
 }
 
 .container-redes .icon i{
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     margin: 1rem;
     color: var(--naranja);
     transition: var(--transition);
@@ -315,20 +334,16 @@ Habilidades
 */
 
 .habilidades{
-    margin: 2rem auto;
+    margin: 4rem auto 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.habilidades h2{
-    text-align: center;
-}
-
 .container-habilidades{
     width: 20%;
     min-width: 19rem;
-    margin: 2rem 0;
+    margin: 2rem 3rem 0 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -365,11 +380,12 @@ Habilidades
     width: auto;
     display: flex;
     align-items: baseline;
+    margin-right: 1rem;
 }
 .container-habilidades .icon .circulos{
     display: flex;
     align-items: center;
-    margin: 0 0 0 .2rem;
+    margin: 0 0 0 0;
 }
 
 .container-habilidades .icon img{
@@ -400,6 +416,93 @@ Habilidades
     text-align: center;
     margin: 0 0 2rem 0;
     text-transform: uppercase;
+}
+
+
+/*
+Proyectos
+*/
+
+.container-proyectos{
+    margin: 4rem auto 0 auto;
+}
+
+.proyectos .proyectos_caja{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.proyectos .proyectos_caja .proy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.proyectos .proyectos_caja .proy .proyecto{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 40rem;
+    border: solid var(--verde) .3rem;
+}
+
+.proyectos .caja_uno,
+.proyectos .caja_dos{
+    margin-bottom: 4rem;
+}
+
+.proyectos .caja .proyectos_caja .proy .proyecto{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.proyectos .caja .proyectos_caja .proy:hover{
+    transform: scale(1.03);
+}
+
+.proyectos .caja_uno .proyectos_caja .proy .proy_01{
+    background-image: url(./img/logo-acB.png);
+}
+
+.proyectos .caja_uno .proyectos_caja .proy .proy_02{
+    background-image: url(./img/logo-bloc.png);
+}
+
+.proyectos .caja_uno .proyectos_caja .proy .proy_03{
+    background-image: url(./img/logo-panelBloc.png);
+}
+
+
+
+.proyectos .caja_dos .proyectos_caja .proy .proy_01{
+    background-image: url(./img/logo-chaB.png);
+
+}
+.proyectos .caja_dos .proyectos_caja .proy .proy_02{
+    background-image: url(./img);
+}
+
+
+
+.proyectos .caja_tres .proyectos_caja .proy .proy_01{
+    background-image: url(./img/logo-asealdi.png);
+    
+}
+.proyectos .caja_tres .proyectos_caja .proy .proy_02{
+    background-image: url(./img/logo-mc.png);
+}
+
+.proyectos .caja_tres .proyectos_caja .proy .proy_03{
+    background-image: url(./img/logo-figma.png);
+}
+
+.proyectos .caja_tres .proyectos_caja .proy .proy_04{
+    background-image: url(./img/logo-rod.png);
 }
 
 /*
