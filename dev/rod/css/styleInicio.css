@@ -164,9 +164,8 @@ main .container-servicios .servicios .cont-texto p{
     padding: 1.6rem;
     font-weight: bold;
     font-size: 1.8rem;
-    transition: 0.6s ease;
+    transition: var(--transitions);
     border-radius: .3rem;
-    user-select: none;
     color: var(--secundario);
 }
 
@@ -210,11 +209,127 @@ Experiencia
 -------------------- */
 
 .container-experiencia{
+    width: 100vw;
     background-color: var(--blanco);
     box-shadow: var(--boxShadow);
     position: relative;
     z-index: 18;
+    padding-bottom: 0;
+
+    /* border: solid red 2px; */
 }
 
-  
-  
+.cont-slider-exp{
+    margin: 0;
+    padding: 0;
+
+    /* border: solid blue 2px; */
+}
+
+.cont-slider-exp .slideshow-container-exp{
+    width: 100%;
+
+    /* border: solid green 2px; */
+}
+
+.cont-slider-exp .slideshow-container-exp .slide-exp{
+    width: 100%;
+
+    transform: translateY(-5rem);
+    /* border: solid aqua 2px; */
+}
+
+.cont-slider-exp .slideshow-container-exp .controllers{
+    width: 10%;
+    margin-left: 30%;
+    display: flex;
+    justify-content: space-around;
+
+    transform: translateY(-5rem);
+
+    /* border: solid red 2px; */
+}
+
+.cont-slider-exp .slideshow-container-exp .controllers .next,
+.cont-slider-exp .slideshow-container-exp .controllers .prev{
+    color: var(--secundario);
+    padding: 1.6rem;
+
+    font-size: 1.8rem;
+    transition: var(--transitions);
+    border-radius: .3rem;
+    cursor: pointer;
+
+    /* border: solid peru 2px; */
+}
+
+.cont-slider-exp .slideshow-container-exp .controllers .next:hover,
+.cont-slider-exp .slideshow-container-exp .controllers .prev:hover{
+        color: var(--blanco);
+        background-color: var(--primario);
+    }
+
+
+.cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
+    width: 20%;
+    height: 10rem;
+    margin-left: 15%;
+    transform: translateY(10rem);
+    overflow: hidden;
+
+    /* border: solid greenyellow 2px; */
+}
+
+.cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo .boton{
+    margin: 1rem 0 0 0;
+}
+
+.cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo .slidesLineas{
+    width: 100%;
+    height: 1rem;
+    margin: 2rem 0 0 0;
+    display: flex;
+}
+
+.cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo .slidesLineas .linea{
+    width: 3rem;
+    background-color: var(--terciario);
+    height: .1rem;
+    margin: 0 .5rem;
+    border-radius: 2rem;
+}
+
+.cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo .slidesLineas .active{
+    width: 3rem;
+    background-color: var(--primario);
+    height: .2rem;
+}
+
+.cont-slider-exp .slideshow-container-exp .slide-exp .cont-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    /* border: solid grey 2px; */
+}
+
+.cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen{
+    max-height: 60vh;
+    overflow: hidden;
+    
+    /* border: solid gold 2px; */
+}
+
+.cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen-01{
+    width: 30%;
+    height: 100%;
+    
+    /* border: solid purple 2px; */
+}
+
+.cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen-02{
+    width: 60%;
+    height: 100%;
+    
+    /* border: solid olivedrab 2px; */
+}
