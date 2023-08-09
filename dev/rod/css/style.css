@@ -347,7 +347,8 @@ header{
     padding-bottom: 1rem;
     text-align: left;
     border-bottom: solid var(--blanco) .1rem;
-    border: solid red 2px;
+
+    /* border: solid red 2px; */
 }
 
 .headerInicio .dropdown-content ul li{
