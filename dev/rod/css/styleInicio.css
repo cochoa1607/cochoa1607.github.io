@@ -135,7 +135,7 @@ main .container-servicios .servicios .cont-texto p{
 
 .servicios .slide {
     display: none;
-    height: 20rem;
+    height: 22rem;
 }
 
 .servicios .slide-content {
@@ -147,6 +147,11 @@ main .container-servicios .servicios .cont-texto p{
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
+    overflow: hidden;
+}
+
+.servicios .slide-content p{
+    overflow: hidden;
 }
 
 .servicios .prev,
@@ -199,7 +204,7 @@ main .container-servicios .servicios .cont-texto p{
     background-color: var(--primario);
     height: .2rem;
 }
-  
+
 /* --------------------
 Experiencia
 -------------------- */
