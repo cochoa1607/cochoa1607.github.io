@@ -206,6 +206,8 @@ Botones
     right: 3rem;
     bottom: 3rem;
     animation: whatsApp 3s linear infinite;
+
+    z-index: 9999999999;
 }
 
 .boton-flotante .btn-flotante{
@@ -758,6 +760,17 @@ footer{
 }
 
 /* --------------------
+Footer
+-------------------- */
+
+footer{
+    background-color: var(--secundario);
+    height: 30rem;
+    margin-top: 5rem;
+}
+
+
+/* --------------------
 Animaciones
 -------------------- */
 
@@ -777,23 +790,27 @@ Animaciones
 
 @keyframes fade {
     0% {
-        opacity: 0%;
+        transform: scale(1.01);
+        opacity: 20%;
     }
     
-    10% {
-        opacity: 50%;
+    5% {
+        transform: scale(1);
     }
-
+    
     20% {
         opacity: 100%;
     }
     
     100% {
         opacity: 100%;
+        transform: scale(1);
     }
 }
 
-
+.fade {
+    animation: fade 6s linear infinite;
+}
 
 /* --------------------
 Footer

@@ -76,7 +76,7 @@ Titulos
 }
 
 /* --------------------
-Main
+Main Servicios
 -------------------- */
 main{
     width: 100%;
@@ -85,10 +85,7 @@ main{
     padding-top: 2rem;
     position: relative;
     z-index: 20;
-}
-
-main .container-servicios{
-    background-color: none;
+    background-color: var(--blanco) !important;
 }
 
 main .container-servicios .servicios{
@@ -130,7 +127,7 @@ main .container-servicios .servicios .cont-texto p{
     max-width: none;
     margin: 0 auto;
     height: auto;
-    background-color: var(--gris);
+    background-color: var(--blanco);
 }
 
 .servicios .slide {
@@ -210,7 +207,7 @@ Experiencia
 
 .container-experiencia{
     width: 100vw;
-    background-color: var(--blanco);
+    background-color: var(--gris);
     box-shadow: var(--boxShadow);
     position: relative;
     z-index: 18;
@@ -332,4 +329,137 @@ Experiencia
     height: 100%;
     
     /* border: solid olivedrab 2px; */
+}
+
+/* --------------------
+Nuestro equipo
+-------------------- */
+
+.container-equipo{
+    width: 100vw;
+    background-color: var(--blanco);
+    box-shadow: var(--boxShadow);
+    position: relative;
+    z-index: 16;
+    padding-bottom: 5rem;
+
+    /* border: solid red 2px; */
+}
+
+.cont-slider-equipo{
+    width: 98%;
+    margin: auto;
+    padding: 0;
+
+    /* border: solid blue 2px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo{
+    width: 100%;
+    display: flex;
+
+    /* border: solid green 2px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo .slide-equipo{
+    width: 100%;
+
+    /* border: solid aqua 2px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content{
+    display: flex;
+    justify-content: space-evenly;
+
+    transition: var(--transitionsXL);
+
+    /* border: solid purple 2px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content .contenedor-equipo{
+    width: 30%;
+    padding: 1rem .5rem;
+}
+
+.cont-slider-equipo .slideshow-container-equipo .controllers{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    /* border: solid red 2px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo .controllers .next,
+.cont-slider-equipo .slideshow-container-equipo .controllers .prev{
+    color: var(--secundario);
+    padding: 1.6rem;
+
+    font-size: 1.8rem;
+    transition: var(--transitions);
+    border-radius: .3rem;
+    cursor: pointer;
+
+    /* border: solid peru 2px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo .controllers .next:hover,
+.cont-slider-equipo .slideshow-container-equipo .controllers .prev:hover{
+        color: var(--blanco);
+        background-color: var(--primario);
+}
+
+.cont-slider-equipo .slidesLineas{
+    width: 90%;
+    height: 1rem;
+    margin: 2rem 0 0 5%;
+    display: flex;
+
+    /* border: solid greenyellow 2px; */
+}
+
+.cont-slider-equipo .slidesLineas .linea{
+    width: 3rem;
+    background-color: var(--terciario);
+    height: .1rem;
+    margin: 0 .5rem;
+    border-radius: 2rem;
+}
+
+.cont-slider-equipo .slidesLineas .active{
+    width: 3rem;
+    background-color: var(--primario);
+    height: .2rem;
+}
+
+.cont-slider-equipo .slideshow-container-equipo .slide-equipo .imagen{
+    height: auto;
+    max-height: 40vh;
+    width: 100%;
+    overflow: hidden;
+
+    /* border: solid gold 2px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo .slide-equipo .imagen img{
+    height: auto;
+    width: 100%;
+    
+    /* border: solid pink 2px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo .slide-equipo .texto{
+    height: auto;
+    width: 100%;
+    margin: 2rem 0;
+    
+    /* border: solid red 2px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo .slide-equipo .texto p{
+    height: auto;
+    width: 100%;
+    margin: 2rem 0 0 0;
+    
+    /* border: solid green 2px; */
 }
