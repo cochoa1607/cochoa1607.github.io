@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    /* 
+    /*
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
      */
@@ -38,7 +38,7 @@ Colores
 
 :root {
     --primario: #CE112D;
-    --primarioHover: #CE112D30;
+    --primarioHover: #CE112DCC;
     --secundario: #53565A;
     --secundarioHover: #53565A30;
     --terciario: #C9C9C8;
@@ -51,7 +51,7 @@ Colores
     --gris: #FAFAFA;
     --negro: #050505;
     --transparente: #00000000;
-    
+
     --textoPrincipal: 'Maven Pro', sans-serif;
     --textoSecundario: 'Source Serif Pro', serif;
 
@@ -150,7 +150,8 @@ Botones
 }
 
 .btn-primario:hover{
-    border: solid var(--primarioHover) .2rem;
+    background-color: var(--primarioHover);
+    border: solid var(--blanco) .2rem;
     font-weight: 500;
     transform: scale(1.05);
 }
@@ -199,7 +200,7 @@ Botones
 
 .btn-secundario a{
     color: var(--link);
-} 
+}
 
 .boton-flotante{
     position: fixed;
@@ -253,7 +254,7 @@ Clases universales
 -------------------- */
 section{
     padding-top: 0;
-    padding: 5rem 0;
+    padding: 10rem 0 ;
 }
 
 .contenedor-seccion{
@@ -279,7 +280,7 @@ header{
 }
 
 .headerInicio .logoRod{
-    width: 20%;
+    width: 12rem;
     height: 100%;
     padding: 1rem 0;
 }
@@ -314,12 +315,11 @@ header{
     border: none;
     background-color: #00000000;
     margin: 0;
-    padding: 1rem;
+    padding: .5rem;
     cursor: pointer;
     text-transform: uppercase;
     transition: var(--transitions);
     font-family: 'Roboto Slab', serif;
-
 }
 
 .headerInicio .noDrop {
@@ -329,6 +329,7 @@ header{
 }
 
 .headerInicio .dropdown-content {
+    width: fit-content;
     color: var(--primario);
     background-color: var(--blanco);
     display: none;
@@ -338,33 +339,38 @@ header{
 }
 
 .headerInicio .dropdown-content ul{
+    width: auto;
     display: flex;
-    flex-direction: row;
-    max-width: none;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: start;
     padding-bottom: 1rem;
     text-align: left;
-    border-bottom: solid var(--blanco) .1rem;
 
-    /* border: solid red 2px; */
 }
 
 .headerInicio .dropdown-content ul li{
-    justify-content: start;
-    align-items: start;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
     text-align: left;
     margin: 0;
-    padding: 0;
-    width: 45%;
+    padding: 1rem;
+    
+    font-weight: 600;
+    font-size: 2rem;
+
 }
 
 .headerInicio .dropdown-content a {
-    padding: 0;
+    color: var(--secundario);
+    padding: 1rem;
     text-decoration: none;
     display: block;
     font-family: 'Roboto Slab', serif;
+    border-bottom: solid var(--secundario) .1rem;
 }
 
 .headerInicio .dropdown-content a:hover {
@@ -379,12 +385,13 @@ header{
 
 .headerInicio .dropdown:hover .dropbtn {
     background-color: none;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .headerInicio .noDrop:hover {
     background-color: none;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    
 }
 
 .headerInicio .noDrop a:hover {
@@ -396,6 +403,7 @@ header{
     font-weight: 600;
     background-color: none;
     transition: var(--transitions);
+    
 }
 
 .headerInicio #selected span{
@@ -418,19 +426,28 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
-.headerInicio .containerMenu ul {
+.headerInicio .containerMenu .menuPags .dropdown-content ul{
     display: flex;
-    justify-content: space-around;
-    background-color: none;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
+
+/* .headerInicio .containerMenu .menuPags .experiencia .dropdown-content{
+    display: flex;
+    flex-direction: row;
+} */
+
 
 .headerInicio .containerMenu ul li {
-    margin: 0 1rem;
-    padding: 0 .5rem;
+    margin: 0 .5rem;
+    padding: 0;
     font-size: 1.4rem;
     list-style: none;
+    
 }
 
 .headerInicio .containerMenu a {
@@ -445,24 +462,24 @@ header{
 }
 
 .headerInicio .containerMenu .menuPags .dropdown ul{
+    max-width: 40rem;
     background-color: var(--blanco);
     border-bottom: solid var(--primario) .1rem;
-}
-
-.headerInicio .containerMenu .menuPags .dropdown ul li{
-    font-weight: 600;
-    font-size: 2rem;
-}
-
-.headerInicio .containerMenu .menuPags .dropdown a{
-    color: var(--secundario);
-    border-bottom: solid var(--secundario) .1rem;
-    padding: 1.5rem 3rem 1.5rem 1.6rem;
 }
 
 .headerInicio .containerMenu .menuPags .dropdown ul li a{
     text-transform: none;
     font-size: 1.4rem;
+}
+
+.headerInicio .containerMenu .menuPags .dropdown-content ul .titulo a{
+    color: var(--primario);
+    text-transform: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-bottom: none;
+    margin-top: 2rem;
+    text-transform: uppercase;
 }
 
 .headerInicio .containerMenu .menuPags .dropdown .vacio{
@@ -473,12 +490,6 @@ header{
     border-bottom: none;
     cursor: default;
     background-color: #00000000;
-}
-
-.headerInicio .containerMenu .menuPags .dropdown a:hover{
-    color: var(--primario);
-    background-color: #ffffffDD;
-    font-weight: 400;
 }
 
 .headerInicio .containerMenu .menuRedes a{
@@ -494,32 +505,43 @@ header{
 }
 
 .headerInicio .containerMenu .menuRedes .dropdown a{
-    color: var(--blanco);
+    width: fit-content;
+    color: var(--secundario);
     border-bottom: solid var(--secundario) .1rem;
-    padding: 1.5rem 3rem 1.5rem 1.6rem;
+    padding: 1rem;
 }
 
 .headerInicio .containerMenu .menuRedes .dropdown a:hover{
     color: var(--primario);
     background-color: #ffffffDD;
     font-weight: 400;
+
+}
+
+.headerInicio .containerMenu .menuRedes .dropdown-content ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
 }
 
 .headerInicio .containerMenu .menuRedes ul{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
-  
+
 .headerInicio .dropdown button{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .headerInicio .dropdown button i{
     margin-right: 1rem;
     font-size: 2rem;
+
 }
 
 /* --------------------
@@ -779,7 +801,7 @@ Animaciones
     0% {
         transform: scale(1);
     }
-    
+
     50% {
         transform: scale(1.15);
     }
@@ -794,15 +816,15 @@ Animaciones
         transform: scale(1.01);
         opacity: 20%;
     }
-    
+
     5% {
         transform: scale(1);
     }
-    
+
     20% {
         opacity: 100%;
     }
-    
+
     100% {
         opacity: 100%;
         transform: scale(1);
@@ -835,42 +857,42 @@ Footer
         margin-bottom: 3rem;
         flex-direction: column;
     }
-    
+
     .contenedor-footer .logos a{
         text-align: center;
     }
-    
+
     .contenedor-footer .logos img{
         margin-top: 3rem;
     }
-    
+
     .caja-footer h6{
         width: 50%;
         margin: auto;
         margin-top: 4rem;
         text-align: left;
     }
-    
+
     .caja-footer .subtitulo{
         text-align: left;
     }
-    
+
     .caja-footer .newsletter{
         text-align: center;
     }
-    
+
     .caja-footer .linea{
         display: flex;
         width: 60%;
         margin: 0 auto 4rem auto;
     }
-    
+
     .caja-footer .lineaDos{
         width: 60%;
         display: flex;
         margin: 0 auto 4rem auto;
     }
-    
+
     .caja-footer ul{
         width: auto;
         display: flex;
@@ -878,13 +900,13 @@ Footer
         justify-content: center;
         align-items: start;
     }
-    
+
     .caja-footer li{
         width: 50%;
         margin: auto;
         text-align: left;
     }
-    
+
     .caja-footer li i{
         width: auto;
     }
@@ -913,7 +935,7 @@ Footer
     .caja-footer .foot-redes li{
         width: auto;
     }
-    
+
     .caja-footer .foot-redes a{
         width: auto;
     }
@@ -1015,7 +1037,7 @@ Tablet / Mobile
     .headerInicio .containerMenu ul li a{
         color: var(--blanco);
     }
-    
+
     header #selected {
         text-decoration: underline;
         font-weight: 600;
@@ -1059,7 +1081,7 @@ Mobile
     /* --------------------
     Header
     -------------------- */
-    
+
     .headerMenu {
         width: 100vw;
     }
@@ -1072,13 +1094,13 @@ Mobile
         width: 70%;
         margin: auto;
     }
-    
+
     .caja-footer .form-ul{
         width: 100%;
         margin: auto;
         padding: 1rem 0 0 0;
     }
-    
+
     .caja-footer h6{
         width: 100%;
         margin: auto;
@@ -1089,7 +1111,7 @@ Mobile
     .caja-footer .linea{
         width: 80%;
     }
-    
+
     .caja-footer .lineaDos{
         width: 80%;
     }
@@ -1098,7 +1120,7 @@ Mobile
         width: 80%;
         min-width: none;
     }
-    
+
     .caja-footer .form-ul{
         width: 80%;
         min-width: none;
