@@ -366,6 +366,7 @@ Nuestro equipo
 .cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content .contenedor-equipo-all{
     display: flex;
     flex-direction: column;
+    margin: auto;
     
     /* border: solid red 2px; */
 }
@@ -374,7 +375,7 @@ Nuestro equipo
     display: flex;
     flex-direction: row;
     
-    width: 99%;
+    width: 100%;
     margin: auto;
     padding: 1rem 0;
 
@@ -382,7 +383,7 @@ Nuestro equipo
 }
 
 .cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content .contenedor-equipo-all .contenedor-equipo{
-    width: 33%;
+    width: 33.3333%;
     padding: 1rem 0;
 
     /* border: solid blue 2px; */
