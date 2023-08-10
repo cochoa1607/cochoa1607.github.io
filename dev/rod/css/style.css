@@ -296,7 +296,7 @@ header{
 
 .headerInicio .dropdown {
     display: inline-block;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .headerInicio .dropdown .down::after {
@@ -484,6 +484,14 @@ header{
     border-bottom: none;
     cursor: default;
     background-color: #00000000;
+}
+
+.headerInicio .containerMenu .menuRedes .dropdown{
+    overflow: hidden;
+}
+
+.headerInicio .containerMenu .menuRedes ul li{
+    overflow: hidden;
 }
 
 .headerInicio .containerMenu .menuRedes a{
