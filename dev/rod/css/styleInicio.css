@@ -355,16 +355,37 @@ Nuestro equipo
 
 .cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-
+    
     transition: var(--transitionsXL);
-
+    
     /* border: solid purple 2px; */
 }
 
-.cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content .contenedor-equipo{
-    width: 30%;
-    padding: 1rem .5rem;
+.cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content .contenedor-equipo-all{
+    display: flex;
+    flex-direction: column;
+    
+    /* border: solid red 2px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content .contenedor-equipo-all .contenedor-integrantes{
+    display: flex;
+    flex-direction: row;
+    
+    width: 99%;
+    margin: auto;
+    padding: 1rem 0;
+
+    /* border: solid pink 8px; */
+}
+
+.cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content .contenedor-equipo-all .contenedor-equipo{
+    width: 33%;
+    padding: 1rem 0;
+
+    /* border: solid blue 2px; */
 }
 
 .cont-slider-equipo .slideshow-container-equipo .controllers{
@@ -373,7 +394,7 @@ Nuestro equipo
     display: flex;
     justify-content: space-between;
 
-    /* border: solid red 2px; */
+    /* border: solid greenyellow 2px; */
 }
 
 .cont-slider-equipo .slideshow-container-equipo .controllers .next,
@@ -396,9 +417,9 @@ Nuestro equipo
 }
 
 .cont-slider-equipo .slidesLineas{
-    width: 90%;
+    width: fit-content;
     height: 1rem;
-    margin: 2rem 0 0 5%;
+    margin: 2rem 0 0 0;
     display: flex;
 
     /* border: solid greenyellow 2px; */
@@ -410,6 +431,8 @@ Nuestro equipo
     height: .1rem;
     margin: 0 .5rem;
     border-radius: 2rem;
+
+    /* border: solid red 2px; */
 }
 
 .cont-slider-equipo .slidesLineas .active{
@@ -435,17 +458,21 @@ Nuestro equipo
 }
 
 .cont-slider-equipo .slideshow-container-equipo .slide-equipo .texto{
-    height: auto;
-    width: 100%;
-    margin: 2rem 0;
+    margin: 2rem auto;
     
-    /* border: solid red 2px; */
+    width: 96%;
+    padding: 1rem 0;
+
+    /* border: solid gold 2px; */
 }
 
 .cont-slider-equipo .slideshow-container-equipo .slide-equipo .texto p{
-    height: auto;
     width: 100%;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0;
     
+
+    width: 100%;
+    padding: 0;
+
     /* border: solid green 2px; */
 }
