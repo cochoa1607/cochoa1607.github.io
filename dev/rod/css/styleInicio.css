@@ -122,6 +122,7 @@ main .container-servicios .servicios .cont-texto p{
 .servicios .slide {
     display: none;
     height: 22rem;
+    overflow: hidden;
 }
 
 .servicios .slide-content {
@@ -216,6 +217,7 @@ Experiencia
     width: 100%;
 
     transform: translateY(-5rem);
+    overflow: hidden;
     /* border: solid aqua 2px; */
 }
 
@@ -349,6 +351,7 @@ Nuestro equipo
 
 .cont-slider-equipo .slideshow-container-equipo .slide-equipo{
     width: 100%;
+    overflow: hidden;
 
     /* border: solid aqua 2px; */
 }
