@@ -436,12 +436,6 @@ header{
 
 }
 
-/* .headerInicio .containerMenu .menuPags .experiencia .dropdown-content{
-    display: flex;
-    flex-direction: row;
-} */
-
-
 .headerInicio .containerMenu ul li {
     margin: 0 .5rem;
     padding: 0;

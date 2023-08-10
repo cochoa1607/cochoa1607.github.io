@@ -30,6 +30,11 @@ Banner
     text-align: right;
     padding: 0 2rem;
     margin-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .banner .cont-info h3,
@@ -51,15 +56,6 @@ Banner
 /* --------------------
 Titulos
 -------------------- */
-
-/* .titulo{
-    background-color: var(--primario);
-    margin: 0 2rem 2rem 0;
-    padding: .5rem 4rem .5rem 2rem;
-    width: fit-content;
-    border-radius: 0 0 1rem 0;
-    box-shadow: var(--boxShadow);
-} */
 
 .titulo{
     background-color: none;
@@ -205,21 +201,15 @@ Experiencia
     position: relative;
     z-index: 18;
     padding-bottom: 0;
-
-    /* border: solid red 2px; */
 }
 
 .cont-slider-exp{
     margin: 0;
     padding: 0;
-
-    /* border: solid blue 2px; */
 }
 
 .cont-slider-exp .slideshow-container-exp{
     width: 100%;
-
-    /* border: solid green 2px; */
 }
 
 .cont-slider-exp .slideshow-container-exp .slide-exp{
