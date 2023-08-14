@@ -116,12 +116,12 @@ h4{
     font-weight: 400;
 }
 
-/* h5{
-    font-size: 1.8rem;
+h5{
+    color: var(--negro);
+    font-size: 2.2rem;
     font-weight: 400;
-    color: var(--segundo);
-    text-align: left;
-} */
+    text-align: center;
+}
 
 p{
     color: var(--secundario);
@@ -320,6 +320,8 @@ header{
     text-transform: uppercase;
     transition: var(--transitions);
     font-family: 'Roboto Slab', serif;
+
+    /* border: solid red 2px; */
 }
 
 .headerInicio .noDrop {
@@ -371,6 +373,9 @@ header{
     display: block;
     font-family: 'Roboto Slab', serif;
     border-bottom: solid var(--secundario) .1rem;
+
+    /* border: solid red 2px; */
+
 }
 
 .headerInicio .dropdown-content a:hover {
@@ -407,7 +412,18 @@ header{
 }
 
 .headerInicio #selected span{
+    color: var(--blanco);
+    font-size: 1.4rem;
+    font-weight: 400;
+    border: none;
+    background-color: #00000000;
+    margin: 0;
+    padding: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
     text-decoration: underline;
+    transition: var(--transitions);
+    font-family: 'Roboto Slab', serif;
 }
 
 .headerInicio .containerMenu {
@@ -426,14 +442,19 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    
 }
+
+.headerInicio .containerMenu .vinculoMenu{
+    color: var(--blanco);
+}
+
 
 .headerInicio .containerMenu .menuPags .dropdown-content ul{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+    
 }
 
 .headerInicio .containerMenu ul li {
@@ -553,6 +574,7 @@ Header abajo
 .headerInicio.abajo {
     background-color: var(--primario);
     box-shadow: var(--boxShadow);
+
 }
 
 .headerInicio.abajo .dropdown-content {
@@ -573,12 +595,17 @@ Header abajo
 }
 
 .headerInicio.abajo .containerMenu .menuPags .dropdown a{
-    color: var(--secundario);
-    border-left: solid var(--blanco) .1rem;
-    padding: 1.5rem 3rem 1.5rem 1.6rem;
+    color: var(--blanco);
 }
 
-.headerInicio.abajo .containerMenu .menuPags .dropdown a:hover{
+.headerInicio.abajo .containerMenu .menuPags .dropdown .dropdown-content a{
+    color: var(--secundario);
+    padding: 1.5rem 3rem 1.5rem 1.6rem;
+    border: solid greenyellow 2px;
+}
+
+
+.headerInicio.abajo .containerMenu .menuPags .dropdown .dropdown-content a:hover{
     color: var(--primario);
     font-weight: 400;
 }
@@ -980,7 +1007,7 @@ Tablet / Mobile
         transform: translate(-50%, -50%);
         overflow: visible;
         z-index: 99999;
-        background-color: var(--primero);
+        background-color: var(--primario);
     }
 
     .bars__menu span {
@@ -1011,7 +1038,7 @@ Tablet / Mobile
     Menu hide
     -------------------- */
 
-    .logoArcsa {
+    .logoRod {
         display: none;
     }
 
@@ -1025,7 +1052,7 @@ Tablet / Mobile
         right: 0;
         display: flex;
         flex-direction: column;
-        background-color: var(--primero);
+        background-color: var(--primario);
         transition: var(--transitionsL);
         transform: translateX(1100px);
         z-index: 9;
@@ -1041,7 +1068,6 @@ Tablet / Mobile
     }
 
     header #selected {
-        text-decoration: underline;
         font-weight: 600;
     }
 
@@ -1053,7 +1079,7 @@ Tablet / Mobile
         flex-direction: column;
         justify-content: space-evenly;
     }
-
+    
     .containerMenu ul {
         width: 100%;
         text-align: center;
@@ -1061,13 +1087,34 @@ Tablet / Mobile
         flex-direction: column;
         justify-content: space-around;
     }
-
+    
     .containerMenu ul li {
         padding: 20px 0;
     }
 
+    .headerInicio .menuPags .dropdown .down::after {
+        content: "";
+    }
+    
     .activecontainerMenu {
         transform: translateX(0);
+    }
+    
+    .headerInicio .containerMenu .menuPags ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    
+    .headerInicio .containerMenu .menuPags .dropdown .dropdown-content {
+        transform: translateX(5rem);
+        display: none;
+    }
+    
+    .headerInicio .containerMenu .menuRedes ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .headerX .onlyMobile{

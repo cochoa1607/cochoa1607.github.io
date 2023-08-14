@@ -28,9 +28,9 @@ Banner
     width: 50%;
     min-width: 60rem;
     text-align: right;
-    padding: 0 2rem;
+    padding-right: 5%;
     margin-bottom: 3rem;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,6 +42,10 @@ Banner
     text-align: right;
     padding: 0 2rem;
     color: var(--blanco);
+}
+
+.banner .cont-info h3{
+    font-weight: 800;
 }
 
 .banner .cont-info p{
@@ -378,7 +382,7 @@ Nuestro equipo
     display: flex;
     flex-direction: row;
     
-    width: 100%;
+    width: 98%;
     margin: auto;
     padding: 1rem 0;
 
