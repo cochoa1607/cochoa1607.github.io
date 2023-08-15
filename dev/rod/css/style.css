@@ -92,7 +92,9 @@ h2{
     font-weight: 400;
     text-transform: uppercase;
     text-align: left;
-    max-width: 20ch;
+    max-width: 40ch;
+    padding-left: 4rem;
+    text-indent: -4rem;
 }
 
 h2::before{
@@ -348,11 +350,11 @@ header{
     align-items: start;
     padding-bottom: 1rem;
     text-align: left;
-
+    
 }
 
 .headerInicio .dropdown-content ul li{
-
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -363,7 +365,7 @@ header{
     
     font-weight: 600;
     font-size: 2rem;
-
+    
 }
 
 .headerInicio .dropdown-content a {
@@ -373,9 +375,8 @@ header{
     display: block;
     font-family: 'Roboto Slab', serif;
     border-bottom: solid var(--secundario) .1rem;
-
+    
     /* border: solid red 2px; */
-
 }
 
 .headerInicio .dropdown-content a:hover {
@@ -408,7 +409,6 @@ header{
     font-weight: 600;
     background-color: none;
     transition: var(--transitions);
-    
 }
 
 .headerInicio #selected span{
@@ -574,7 +574,7 @@ Header abajo
 .headerInicio.abajo {
     background-color: var(--primario);
     box-shadow: var(--boxShadow);
-
+     
 }
 
 .headerInicio.abajo .dropdown-content {
@@ -585,6 +585,7 @@ Header abajo
     min-width: none;
     box-shadow: var(--boxShadow);
     border-radius: 0 0 .5rem .5rem;
+    
 }
 
 .headerInicio.abajo .containerMenu a {
@@ -601,7 +602,7 @@ Header abajo
 .headerInicio.abajo .containerMenu .menuPags .dropdown .dropdown-content a{
     color: var(--secundario);
     padding: 1.5rem 3rem 1.5rem 1.6rem;
-    border: solid greenyellow 2px;
+    /* border: solid greenyellow 2px; */
 }
 
 
@@ -619,6 +620,87 @@ Header abajo
 .headerInicio.abajo .containerMenu .menuRedes .dropdown a:hover{
     color: var(--primario);
     font-weight: 400;
+}
+
+/* --------------------
+Header Secciones
+-------------------- */
+
+.contenedor-top{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    min-height: 35rem;
+}
+
+.top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 5%;
+}
+
+.top .cont-serv{
+    background-color: none;
+    width: 60%;
+    height: auto;
+    min-width: 60rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.top .cont-serv h3,
+.top .cont-serv p{
+    padding: 0 2rem;
+    color: var(--blanco);
+    text-align: left;
+}
+
+.contenedor-top .cont-serv h3{
+    font-weight: 800;
+}
+
+.contenedor-top .cont-serv p{
+    margin-bottom: 2rem;
+}
+
+.contenedor-top .top .cont-serv .boton{
+    text-align: left;
+}
+
+
+
+
+.top-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 5%;
+}
+
+.top-right .cont-serv{
+    background-color: none;
+    width: 60%;
+    height: auto;
+    min-width: 60rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.top-right .cont-serv h3,
+.top-right .cont-serv p{
+    padding: 0 2rem;
+    color: var(--blanco);
+    text-align: right;
 }
 
 /* --------------------
@@ -1110,15 +1192,23 @@ Tablet / Mobile
         transform: translateX(5rem);
         display: none;
     }
+
+    .headerInicio .containerMenu .menuPags .dropdown a{
+        overflow: hidden;
+    }
     
     .headerInicio .containerMenu .menuRedes ul{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+    
     .headerX .onlyMobile{
         display: none;
+    }
+
+    .headerInicio.abajo .containerMenu .menuPags .dropdown a{
+        overflow: hidden;
     }
 }
 
