@@ -5,3 +5,155 @@ Banner
 .container-servicios{
     background-image: url(../img/header_servicios.png);
 }
+
+/* --------------------
+Resumen
+-------------------- */
+
+.container-resumen{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.container-resumen p{
+    margin: auto;
+    margin-top: 3rem;
+}
+
+/* --------------------
+Servicio
+-------------------- */
+
+.container-servicio .contenedor-imagenes{
+    width: 94%;
+    height: 5rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.container-servicio .contenedor-texto{
+    width: 94%;
+    margin-top: 2rem;
+    margin-left: 3%;
+
+    /* border: solid purple 2px; */
+}
+
+.container-servicio .contenedor-texto .texto-collapsed{
+    width: 60%;
+    min-width: 60ch;
+    max-width: 90ch;
+    margin: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+
+    /* border: solid red 2px; */
+}
+
+.container-servicio .contenedor-texto .texto-noCollapsed{
+    width: 100%;
+
+    /* border: solid green 8px; */
+}
+
+.container-servicio .contenedor-texto .texto-noCollapsed .texto{
+    text-align: center;
+    width: 60%;
+    max-width: 90ch;
+    margin: 1rem auto;
+
+    /* border: solid blue 2px; */
+}
+
+.container-servicio .contenedor-texto .texto-noCollapsed .cajas{
+    width: 100%;
+    margin: 0 auto 1rem 0;
+
+    /* border: solid cyan 2px; */
+}
+
+.container-servicio .contenedor-texto .texto-noCollapsed .cajas h4{
+    margin-bottom: 1rem;
+
+    /* border: solid greenyellow 2px; */
+}
+
+.container-servicio .contenedor-texto .texto-noCollapsed .cajas .caja ul{
+    list-style-position: inside;
+    text-indent: -2rem;
+    height: 100%;
+}
+
+.container-servicio .contenedor-texto .texto-noCollapsed .cajas .caja ul li{
+    list-style-position: inside;
+    text-indent: -2.1rem;
+    padding: 1rem 3.2rem;
+    font-weight: 300;
+    
+    /* border: solid red 2px; */
+}
+
+.container-servicio .contenedor-texto .boton .boton-masInfo{
+    transform: translateX(-2rem);
+}
+
+.container-servicio .contenedor-texto .boton .boton-masInfo::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    padding-left: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container-servicio .contenedor-texto .boton .boton-masInfo::before{
+    content: "Más información ";
+}
+
+.contenedor-texto .texto-noCollapsed{
+    display: none;
+    transition: var(--transitions);
+}
+
+.active-contenedor-texto .texto-noCollapsed{
+    display: flex;
+    transition: var(--transitions);
+    flex-direction: column;
+}
+
+.active-contenedor-texto .texto-noCollapsed p{
+    margin-top: 1rem;
+}
+
+.active-contenedor-texto .texto-noCollapsed .caja_cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.active-contenedor-texto .texto-noCollapsed .caja_cajas .caja{
+    margin: 1rem;
+    width: 30%;
+    background-color: var(--grisDos);
+    
+    /* border: solid gold 2px; */
+}
+
+.active-contenedor-texto .texto-noCollapsed .caja_cajas .vacio{
+    background-color: var(--gris);
+}
+
+.container-servicio .active-contenedor-texto .boton .boton-masInfo::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f106";
+    padding-left: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container-servicio .active-contenedor-texto .boton .boton-masInfo::before{
+    content: "Menos información ";
+}

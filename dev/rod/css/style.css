@@ -49,6 +49,7 @@ Colores
 
     --blanco: #FFFFFF;
     --gris: #FAFAFA;
+    --grisDos: #EAEAEA;
     --negro: #050505;
     --transparente: #00000000;
 
@@ -72,14 +73,6 @@ Titulos / Textos
     font-family: var(--textoSecundario);
     text-transform: uppercase;
     color: var(--quinto);
-} */
-
-/* h2{
-    color: var(--blanco);
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: left;
-    max-width: 20ch;
 } */
 
 h2{
@@ -125,6 +118,26 @@ h5{
     text-align: center;
 }
 
+h6{
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.4rem;
+    text-shadow: var(--textShadow);
+    text-decoration: underline;
+    padding: 1rem 1rem 1rem 0;
+    color: var(--primario);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    max-width: 90ch;
+    padding-left: 4rem;
+    text-indent: -4rem;
+}
+
+h6::before{
+    content: "\00a0\00a0\00a0\00a0\00a0";
+}
+
+
 p{
     color: var(--secundario);
     font-size: 1.6rem;
@@ -165,6 +178,7 @@ Botones
 
 .boton{
     background-color: none;
+    width: fit-content;
 }
 
 .btn-secundario{
@@ -249,6 +263,10 @@ Botones
 .boton-flotante .btn-flotante:hover a::after{
     content: "\f1d8";
     color: var(--blanco);
+}
+
+.boton-masInfo::after{
+    content: "A";
 }
 
 /* --------------------
@@ -630,8 +648,8 @@ Header Secciones
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
-    min-height: 35rem;
+    height: 45vh;
+    min-height: 45rem;
 }
 
 .top{
@@ -672,9 +690,6 @@ Header Secciones
 .contenedor-top .top .cont-serv .boton{
     text-align: left;
 }
-
-
-
 
 .top-right{
     width: 100%;
