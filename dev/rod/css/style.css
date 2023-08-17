@@ -122,14 +122,13 @@ h6{
     font-family: 'Roboto Slab', serif;
     font-size: 2.4rem;
     text-shadow: var(--textShadow);
-    text-decoration: underline;
-    padding: 1rem 1rem 1rem 0;
+    padding: 1rem 1rem 0 0;
     color: var(--primario);
     font-weight: 400;
     text-transform: uppercase;
     text-align: left;
     max-width: 90ch;
-    padding-left: 4rem;
+    padding-left: 2rem;
     text-indent: -4rem;
 }
 

@@ -157,3 +157,25 @@ Servicio
 .container-servicio .active-contenedor-texto .boton .boton-masInfo::before{
     content: "Menos información ";
 }
+
+/* --------------------
+Servicio
+-------------------- */
+
+.gerencia .titulo{
+    display: flex;
+    align-items: baseline;
+    margin: 0 1rem;
+    width: fit-content;
+    border-bottom: solid var(--primario) .2rem;
+}
+
+.gerencia .titulo .icono img{
+    width: auto;
+    height: 100%;
+}
+
+.gerencia .titulo .icono{
+    width: 9rem;
+    height: 9rem;
+}
