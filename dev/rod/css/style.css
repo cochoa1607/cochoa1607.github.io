@@ -143,6 +143,7 @@ p{
     font-weight: 300;
     max-width: 90ch;
     padding: 0;
+    text-align: justify;
 }
 
 /* --------------------
@@ -271,9 +272,11 @@ Botones
 /* --------------------
 Clases universales
 -------------------- */
+
 section{
-    padding-top: 0;
-    padding: 10rem 0 ;
+    padding: 10rem 0 8rem 0;
+    box-shadow: var(--boxShadow);
+    transform: translateY(4rem);
 }
 
 .contenedor-seccion{
