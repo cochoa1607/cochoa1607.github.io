@@ -41,7 +41,7 @@
                     <ul>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn down" id="selected"><a class="vinculoMenu" href="../index.html"><span>Inicio</span></a></button>
+                                <button class="dropbtn down"><a class="vinculoMenu" href="../index.html">Inicio</a></button>
                                 <div class="dropdown-content">
                                     <ul>
                                         <li><a href="../index.html#servicios">Servicios</a></li>
@@ -55,7 +55,7 @@
 
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn down"><a class="vinculoMenu" href="#">Servicios</a></button>
+                                <button class="dropbtn down" id="selected"><a class="vinculoMenu" href="#"><span>Servicios</span></a></button>
                                 <div class="dropdown-content">
                                     <ul>
                                         <li>
@@ -456,6 +456,199 @@
 
                     <div class="boton">
                         <div class="btn-primario boton-masInfo auditoria_masInfo"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="container-servicio" id="revision">
+            <div class="contenedor-seccion revision">
+
+                <div class="titulo">
+                    <div class="icono">
+                        <img src="../img/servicios_revision.png" alt="">
+                    </div>
+                    <h6>REVISIÓN TÉCNICA DE PRECONSTRUCCIÓN</h6>
+                </div>
+
+                
+                <div class="contenedor-texto-rev">
+
+                    <div class="contenedor-imagenes">
+                        <div class="cont-imagen-fija">
+                            <div class="imagen-fija"></div>
+                        </div>
+                        <div class="cont-imagen-slide">
+                            <div class="slideshow-container">
+
+                                <div class="slideRev">
+                                    <div class="slide-content fade">
+                                        <div class="imagen img-uno"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slideRev">
+                                    <div class="slide-content fade">
+                                        <div class="imagen img-dos"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slideRev">
+                                    <div class="slide-content fade">
+                                        <div class="imagen img-tres"></div>
+                                    </div>
+                                </div>
+                            
+                                <a class="prev" onclick="changeSlideRev(-1)">&#10094;</a>
+                                <a class="next" onclick="changeSlideRev(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="texto-collapsed">
+                        <p>La revisión técnica del diseño, es un control periódico que debe llevarse a cabo para verificar que durante su desarrollo se contemplen e integren todos los elementos del proyecto para su correcta construcción y funcionamiento, así mismo, se debe evaluar que las especificaciones del diseño sean las idóneas y cumplir así, con las necesidades, costo, tiempo y estándares establecidos por el cliente.
+                        </p>
+                    </div>
+                    
+                    <div class="texto-noCollapsed">
+                        <div class="texto">
+                            <p>Adicionalmente son susceptibles de revisión, el cumplimiento normativo y la seguridad implementada en el proyecto para mitigar el riesgo de las personas y bienes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="boton">
+                        <div class="btn-primario boton-masInfo revision_masInfo"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container-servicio" id="levantamiento">
+            <div class="contenedor-seccion levantamiento">
+
+                <div class="titulo">
+                    <div class="icono">
+                        <img src="../img/servicios_levantamiento.png" alt="">
+                    </div>
+                    <h6>LEVANTAMIENTO CON ESCÁNER LÁSER Y MODELADO BIM</h6>
+                </div>
+
+                <div class="contenedor-texto-levan">
+
+                    <div class="contenedor-imagenes">
+                        <div class="cont-imagen-fija">
+                            <div class="imagen-fija"></div>
+                        </div>
+                        <div class="cont-imagen-slide">
+                            <div class="slideshow-container">
+
+                                <div class="slideLevan">
+                                    <div class="slide-content fade">
+                                        <div class="imagen img-uno"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slideLevan">
+                                    <div class="slide-content fade">
+                                        <div class="imagen img-dos"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slideLevan">
+                                    <div class="slide-content fade">
+                                        <div class="imagen img-tres"></div>
+                                    </div>
+                                </div>
+                            
+                                <a class="prev" onclick="changeSlideLevan(-1)">&#10094;</a>
+                                <a class="next" onclick="changeSlideLevan(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="texto-collapsed">
+                        <p>El levantamiento se realiza con un Escáner Láser 3D Leica que realiza un escaneo con fotografía de alta definición y velocidad de escaneo, obteniendo una nube de puntos -sistema tridimensional- que permite una representación confiable de las condiciones de un inmueble y su entorno, susceptible a una correcta vectorización para desarrollar de un modelo digital que refleje la ubicación y tamaño real de los elementos.
+                        </p>
+                    </div>
+                    
+                    <div class="texto-noCollapsed">
+                        <div class="texto">
+                            <p>El Modelado de Información para la Construcción (BIM) crea un modelo 3D donde se visualizan las condiciones existentes de los inmuebles. Es a partir de este modelo donde se genera la documentación (planos) del levantamiento.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="boton">
+                        <div class="btn-primario boton-masInfo levantamiento_masInfo"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container-servicio" id="analisis">
+            <div class="contenedor-seccion analisis">
+
+                <div class="titulo">
+                    <div class="icono">
+                        <img src="../img/servicios_analisis.png" alt="">
+                    </div>
+                    <h6>ANÁLISIS DE CONDICIONES EXISTENTES (INGENIERÍA EN REVERSA)</h6>
+                </div>
+
+                <div class="contenedor-texto-analis">
+
+                    <div class="contenedor-imagenes">
+                        <div class="cont-imagen-fija">
+                            <div class="imagen-fija"></div>
+                        </div>
+                        <div class="cont-imagen-slide">
+                            <div class="slideshow-container">
+
+                                <div class="slideAnalis">
+                                    <div class="slide-content fade">
+                                        <div class="imagen img-uno"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slideAnalis">
+                                    <div class="slide-content fade">
+                                        <div class="imagen img-dos"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slideAnalis">
+                                    <div class="slide-content fade">
+                                        <div class="imagen img-tres"></div>
+                                    </div>
+                                </div>
+                            
+                                <a class="prev" onclick="changeSlideAnalis(-1)">&#10094;</a>
+                                <a class="next" onclick="changeSlideAnalis(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="texto-collapsed">
+                        <p>De manera complementaria al levantamiento con Escáner Láser, realizamos análisis de condiciones existentes del sitio (ingeniería en reversa), destinado a aquellas empresas que requieren renovar o ampliar sus instalaciones afectando las condiciones preexistentes de los inmuebles.
+                        </p>
+                    </div>
+                    
+                    <div class="texto-noCollapsed">
+                        <div class="texto">
+                            <p>Al no existir planos As- Built de las instalaciones y previo a la intervención, se debe entender cómo se afectará el diseño e integridad estructural o de los sistemas existentes, es por ello que se debe realizar un levantamiento exhaustivo del inmueble con la finalidad de elaborar un modelo, planos y reportes que reflejen la realidad del mismo.
+                            </p>
+                            <br>
+                            <p>La obtención de información directa en sitio por parte de especialistas, identifica las trayectorias y la lógica de operación de los sistemas, permitiendo una adecuada comprensión del funcionamiento de los mismos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="boton">
+                        <div class="btn-primario boton-masInfo analisis_masInfo"></div>
                     </div>
                 </div>
 

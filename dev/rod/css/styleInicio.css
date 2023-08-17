@@ -75,9 +75,10 @@ main{
     width: 100%;
     box-shadow: var(--boxShadow);
     z-index: 10;
+    background-color: var(--blanco) !important;
     position: relative;
     z-index: 20;
-    background-color: var(--blanco) !important;
+    overflow: hidden;
 }
 
 main .container-servicios .servicios{
