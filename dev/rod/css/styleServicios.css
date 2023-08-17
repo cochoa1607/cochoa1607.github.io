@@ -4,6 +4,7 @@ Banner
 
 .container-servicios{
     background-image: url(../img/header_servicios.png);
+    transform: translateY(0);
 }
 
 /* --------------------
@@ -18,6 +19,7 @@ Resumen
     text-align: center;
     padding: auto;
     padding-bottom: 0;
+    padding-top: 8rem;
     box-shadow: none;
     /* 
     padding: 6rem 10%;
