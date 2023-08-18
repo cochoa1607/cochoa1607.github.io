@@ -287,7 +287,7 @@ section{
 }
 
 /* --------------------
-Header Inicio
+Menu Inicial
 -------------------- */
 
 header{
@@ -589,7 +589,7 @@ header{
 }
 
 /* --------------------
-Header abajo
+Menu bajar
 -------------------- */
 
 .headerInicio.abajo {
@@ -653,6 +653,8 @@ Header Secciones
     background-size: cover;
     height: 45vh;
     min-height: 45rem;
+    display: flex;
+    justify-content: center;
 }
 
 .top{
@@ -661,7 +663,9 @@ Header Secciones
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding-left: 5%;
+    margin-right: 0;
+    padding-left: 3rem;
+    max-width: 140rem;
 }
 
 .top .cont-serv{
@@ -700,7 +704,8 @@ Header Secciones
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 5%;
+    padding-right: 3rem;
+    max-width: 140rem;
 }
 
 .top-right .cont-serv{
