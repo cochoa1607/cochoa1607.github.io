@@ -107,15 +107,15 @@ h3{
 
 h4{
     color: var(--negro);
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 h5{
-    color: var(--negro);
-    font-size: 2.2rem;
-    font-weight: 400;
-    text-align: center;
+    color: var(--secundario);
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 h6{

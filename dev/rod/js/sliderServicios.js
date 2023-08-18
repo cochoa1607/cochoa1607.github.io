@@ -212,3 +212,93 @@ function changeSlideAnalis(n) {
 }
 
 showSlidesAnalis();
+
+
+
+
+
+/* Due Diligence */
+
+let slideIndexDilig = 0;
+
+function showSlidesDilig() {
+    const slidesDilig = document.getElementsByClassName('slideDilig');
+
+    for (let i = 0; i < slidesDilig.length; i++) {
+        slidesDilig[i].style.display = 'none';
+    }
+
+    slideIndexDilig++;
+
+    if (slideIndexDilig > slidesDilig.length) {
+        slideIndexDilig = 1;
+    }
+
+    slidesDilig[slideIndexDilig - 1].style.display = 'block';
+
+    setTimeout(showSlidesDilig, 6000);
+}
+
+function changeSlideDilig(n) {
+    slideIndexDilig += n;
+    const slidesDilig = document.getElementsByClassName('slideDilig');
+
+    if (slideIndexDilig > slidesDilig.length) {
+        slideIndexDilig = 1;
+    } else if (slideIndexDilig < 1) {
+        slideIndexDilig = slidesDilig.length;
+    }
+
+    for (let i = 0; i < slidesDilig.length; i++) {
+        slidesDilig[i].style.display = 'none';
+    }
+
+    slidesDilig[slideIndexDilig - 1].style.display = 'block';
+}
+
+showSlidesDilig();
+
+
+
+
+
+/* Due Diligence */
+
+let slideIndexGest = 0;
+
+function showSlidesGest() {
+    const slidesGest = document.getElementsByClassName('slideGest');
+
+    for (let i = 0; i < slidesGest.length; i++) {
+        slidesGest[i].style.display = 'none';
+    }
+
+    slideIndexGest++;
+
+    if (slideIndexGest > slidesGest.length) {
+        slideIndexGest = 1;
+    }
+
+    slidesGest[slideIndexGest - 1].style.display = 'block';
+
+    setTimeout(showSlidesGest, 6000);
+}
+
+function changeSlideGest(n) {
+    slideIndexGest += n;
+    const slidesGest = document.getElementsByClassName('slideGest');
+
+    if (slideIndexGest > slidesGest.length) {
+        slideIndexGest = 1;
+    } else if (slideIndexGest < 1) {
+        slideIndexGest = slidesGest.length;
+    }
+
+    for (let i = 0; i < slidesGest.length; i++) {
+        slidesGest[i].style.display = 'none';
+    }
+
+    slidesGest[slideIndexGest - 1].style.display = 'block';
+}
+
+showSlidesGest();
