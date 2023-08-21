@@ -294,12 +294,14 @@ header{
     width: 100vw;
     overflow: visible;
     background-color: none;
+
 }
 
 .headerInicio {
     position: fixed;
     transition: var(--transitionsL);
     z-index: 9999;
+
 }
 
 .headerInicio .logoRod{
@@ -343,7 +345,7 @@ header{
     text-transform: uppercase;
     transition: var(--transitions);
     font-family: 'Roboto Slab', serif;
-
+    
     /* border: solid red 2px; */
 }
 
@@ -371,22 +373,19 @@ header{
     align-items: start;
     padding-bottom: 1rem;
     text-align: left;
-    
 }
 
 .headerInicio .dropdown-content ul li{
-    
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     text-align: left;
     margin: 0;
     padding: 1rem;
-    
     font-weight: 600;
     font-size: 2rem;
-    
 }
 
 .headerInicio .dropdown-content a {
@@ -468,6 +467,7 @@ header{
 
 .headerInicio .containerMenu .vinculoMenu{
     color: var(--blanco);
+    overflow: hidden;
 }
 
 
