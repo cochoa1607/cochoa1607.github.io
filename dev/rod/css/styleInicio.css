@@ -94,7 +94,6 @@ main .container-servicios .servicios .cont-texto{
     /* max-width: 120rem; */
     margin: auto;
     overflow: hidden;
-    border: solid green 2px;
 }
 
 main .container-servicios .servicios .cont-texto h4{
@@ -114,8 +113,6 @@ main .container-servicios .servicios .cont-texto p{
     margin: 0 auto;
     height: auto;
     background-color: var(--blanco);
-
-    border: solid purple 2px;
 }
 
 .servicios .slide {
@@ -139,8 +136,8 @@ main .container-servicios .servicios .cont-texto p{
 .servicios .slide-content .cont-imagen{
     width: 100%;
     height: 30rem;
-
-    border: solid red 2px;
+    margin-bottom: 3rem;
+    overflow: hidden;
 }
 
 .servicios .slide-content .cont-imagen .imagen{
@@ -149,6 +146,7 @@ main .container-servicios .servicios .cont-texto p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .servicios .slide-content .cont-imagen .img-001{
@@ -164,34 +162,35 @@ main .container-servicios .servicios .cont-texto p{
 }
 
 .servicios .slide-content .texto{
-    width: 80%;
+    width: 60%;
     height: 22rem;
-    margin-left: 5rem;
-    border: solid red 2px;
+    margin-left: 10%;
 }
 
 .servicios .slide-content p{
     overflow: hidden;
 }
 
+.servicios .slideshow-container .controllers{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-6rem);
+    position: absolute;
+    top: 85%;
+}
+
 .servicios .prev,
 .servicios .next {
     cursor: pointer;
-    position: absolute;
-    top: 80%;
-    width: auto;
-    margin-top: -2.2rem;
+    width: 5rem;
+    height: auto;
     padding: 1.6rem;
     font-weight: bold;
     font-size: 1.8rem;
     transition: var(--transitions);
     border-radius: .3rem;
     color: var(--secundario);
-}
-
-.servicios .next {
-    right: 0;
-    transform: translateX(-40rem);
 }
 
 .servicios .prev:hover,
