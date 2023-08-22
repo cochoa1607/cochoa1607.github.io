@@ -704,7 +704,7 @@ Seguridad
 
 .container-servicio .seguridad-001 .contenedor-imagenes,
 .container-servicio .seguridad-002 .contenedor-imagenes,
-.container-servicio .aeropuerto-003 .contenedor-imagenes{
+.container-servicio .seguridad-003 .contenedor-imagenes{
     width: 94%;
     height: 30rem;
     margin: auto;
@@ -970,4 +970,937 @@ Seguridad
 .seguridad-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
 .seguridad-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
     background-image: url(../img/inicio_001.png);
+}
+
+/* --------------------
+Sedes
+-------------------- */
+
+#sedes-001,
+#sedes-003{
+    background-color: var(--gris);
+    position: relative;
+}
+
+#sedes-002{
+    background-color: var(--blanco);
+    position: relative;
+}
+
+#sedes-001{
+    z-index: 18;
+}
+
+#sedes-002{
+    z-index: 0;
+}
+
+#sedes-003{
+    z-index: 0;
+}
+
+.container-servicio .sedes-001 .contenedor-imagenes,
+.container-servicio .sedes-002 .contenedor-imagenes,
+.container-servicio .sedes-003 .contenedor-imagenes{
+    width: 94%;
+    height: 30rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001,
+.container-servicio .sedes-002 .contenedor-texto-sed-002,
+.container-servicio .sedes-003 .contenedor-texto-sed-003{
+    width: 94%;
+    margin-top: 1rem;
+    margin-left: 3%;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-collapsed,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-collapsed,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-collapsed{
+    width: 60%;
+    min-width: 60ch;
+    max-width: 90ch;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed{
+    width: 100%;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .texto,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .texto,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .texto{
+    text-align: center;
+    width: 60%;
+    min-width: 60ch;
+    max-width: 90ch;
+    max-width: 90ch;
+    margin: 1rem auto 2rem auto;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas{
+    width: 100%;
+    margin: 0 auto 1rem 0;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas h4,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas h4,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas h4{
+    margin-bottom: 1rem;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul{
+    list-style-position: inside;
+    text-indent: -2rem;
+    height: 100%;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul li,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul li,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul li{
+    list-style-position: inside;
+    text-indent: -2.1rem;
+    padding: 1rem 3.2rem;
+    font-weight: 300;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul li span,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul li span,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul li span{
+    list-style-position: inside;
+    font-weight: 500;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul li a,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul li a,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul li a{
+    text-decoration: none;
+    /* border: solid purple 2px; */
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul li a i,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul li a i,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul li a i{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--negro);
+    text-decoration: none;
+    text-indent: 0;
+    padding-left: .5rem;
+    transform: translateY(.4rem);
+    transition: var(--transitions);
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul li a i:hover,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul li a i:hover,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul li a i:hover{
+    transform: translateX(.5rem);
+    font-weight: 700;
+    color: var(--primario);
+    /* border: solid red; */
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .boton .boton-masInfo,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .boton .boton-masInfo,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .boton .boton-masInfo{
+    transform: translateX(-2rem);
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .boton .boton-masInfo::after,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .boton .boton-masInfo::after,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .boton .boton-masInfo::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    padding-left: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container-servicio .sedes-001 .contenedor-texto-sed-001 .boton .boton-masInfo::before,
+.container-servicio .sedes-002 .contenedor-texto-sed-002 .boton .boton-masInfo::before,
+.container-servicio .sedes-003 .contenedor-texto-sed-003 .boton .boton-masInfo::before{
+    content: "Más información ";
+}
+
+.sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed,
+.sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed,
+.sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed{
+    display: none;
+    transition: var(--transitions);
+}
+
+.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed,
+.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed,
+.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed{
+    display: flex;
+    transition: var(--transitions);
+    flex-direction: column;
+}
+
+.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed p,
+.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed p,
+.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed p{
+    margin-top: 1rem;
+}
+
+.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas,
+.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas,
+.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .caja,
+.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .caja,
+.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .caja{
+    margin: 1rem;
+    width: 30%;
+    background-color: var(--grisDos);
+}
+
+.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .caja-dos,
+.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .caja-dos,
+.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .caja-dos{
+    margin: 1rem;
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--grisDos);
+    /* border: solid green 2px; */
+}
+
+.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .caja-dos img,
+.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .caja-dos img,
+.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .caja-dos img{
+    width: 20%;
+    max-width: 10rem;
+    max-height: 10rem;
+    margin: auto;
+    /* border: solid blue 2px; */
+}
+
+.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .caja-dos ul,
+.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .caja-dos ul,
+.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .caja-dos ul{
+    margin: 0;
+    width: 100%;
+    margin-left: 1rem;
+    background-color: var(--grisDos);
+}
+
+.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
+.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
+.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo{
+    margin: 0;
+    list-style: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+
+.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .vacio,
+.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .vacio,
+.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .vacio{
+    background-color: var(--gris);
+}
+
+.container-servicio .sedes-001 .active-contenedor-texto-sed-001 .boton .boton-masInfo::after,
+.container-servicio .sedes-002 .active-contenedor-texto-sed-002 .boton .boton-masInfo::after,
+.container-servicio .sedes-003 .active-contenedor-texto-sed-003 .boton .boton-masInfo::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f106";
+    padding-left: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container-servicio .sedes-001 .active-contenedor-texto-sed-001 .boton .boton-masInfo::before,
+.container-servicio .sedes-002 .active-contenedor-texto-sed-002 .boton .boton-masInfo::before,
+.container-servicio .sedes-003 .active-contenedor-texto-sed-003 .boton .boton-masInfo::before{
+    content: "Menos información ";
+}
+
+.container-servicio .sedes-001 .active-contenedor-texto-sed-001,
+.container-servicio .sedes-002 .active-contenedor-texto-sed-002,
+.container-servicio .sedes-003 .active-contenedor-texto-sed-003{
+    content: "Menos información ";
+}
+
+.container-servicio .sedes-001 .active-contenedor-texto-sed-001 .contenedor-imagenes,
+.container-servicio .sedes-002 .active-contenedor-texto-sed-002 .contenedor-imagenes,
+.container-servicio .sedes-003 .active-contenedor-texto-sed-003 .contenedor-imagenes{
+    height: 15rem;
+}
+
+.container-servicio .sedes-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.container-servicio .sedes-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.container-servicio .sedes-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.container-servicio .sedes-001 .contenedor-imagenes .cont-imagen-fija,
+.container-servicio .sedes-002 .contenedor-imagenes .cont-imagen-fija,
+.container-servicio .sedes-003 .contenedor-imagenes .cont-imagen-fija{
+    width: 100%;
+    margin-right: 2rem;
+}
+
+.sedes-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.sedes-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.sedes-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+    background-image: url(../img/inicio_001.png);
+
+}
+
+
+/* --------------------
+Hoteleria
+-------------------- */
+
+#hoteleria-001,
+#hoteleria-003{
+    background-color: var(--gris);
+    position: relative;
+}
+
+#hoteleria-002,
+#hoteleria-004{
+    background-color: var(--blanco);
+    position: relative;
+}
+
+#hoteleria-001{
+    z-index: 18;
+}
+
+#hoteleria-002{
+    z-index: 0;
+}
+
+#hoteleria-003{
+    z-index: 0;
+}
+
+#hoteleria-004{
+    z-index: 0;
+}
+
+.container-servicio .hoteleria-001 .contenedor-imagenes,
+.container-servicio .hoteleria-002 .contenedor-imagenes,
+.container-servicio .hoteleria-004 .contenedor-imagenes,
+.container-servicio .hoteleria-003 .contenedor-imagenes{
+    width: 94%;
+    height: 30rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003{
+    width: 94%;
+    margin-top: 1rem;
+    margin-left: 3%;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-collapsed,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-collapsed,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-collapsed,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-collapsed{
+    width: 60%;
+    min-width: 60ch;
+    max-width: 90ch;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed{
+    width: 100%;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .texto,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .texto,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .texto,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .texto{
+    text-align: center;
+    width: 60%;
+    min-width: 60ch;
+    max-width: 90ch;
+    max-width: 90ch;
+    margin: 1rem auto 2rem auto;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas{
+    width: 100%;
+    margin: 0 auto 1rem 0;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas h4,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas h4,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas h4,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas h4{
+    margin-bottom: 1rem;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul{
+    list-style-position: inside;
+    text-indent: -2rem;
+    height: 100%;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul li,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul li,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul li,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul li{
+    list-style-position: inside;
+    text-indent: -2.1rem;
+    padding: 1rem 3.2rem;
+    font-weight: 300;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul li span,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul li span,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul li span,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul li span{
+    list-style-position: inside;
+    font-weight: 500;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul li a,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul li a,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul li a,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul li a{
+    text-decoration: none;
+    /* border: solid purple 2px; */
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul li a i,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul li a i,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul li a i,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul li a i{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--negro);
+    text-decoration: none;
+    text-indent: 0;
+    padding-left: .5rem;
+    transform: translateY(.4rem);
+    transition: var(--transitions);
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul li a i:hover,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul li a i:hover,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul li a i:hover,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul li a i:hover{
+    transform: translateX(.5rem);
+    font-weight: 700;
+    color: var(--primario);
+    /* border: solid red; */
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .boton .boton-masInfo,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .boton .boton-masInfo,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .boton .boton-masInfo,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .boton .boton-masInfo{
+    transform: translateX(-2rem);
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .boton .boton-masInfo::after,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .boton .boton-masInfo::after,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .boton .boton-masInfo::after,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .boton .boton-masInfo::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    padding-left: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .boton .boton-masInfo::before,
+.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .boton .boton-masInfo::before,
+.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .boton .boton-masInfo::before,
+.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .boton .boton-masInfo::before{
+    content: "Más información ";
+}
+
+.hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed,
+.hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed,
+.hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed,
+.hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed{
+    display: none;
+    transition: var(--transitions);
+}
+
+.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed,
+.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed,
+.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed,
+.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed{
+    display: flex;
+    transition: var(--transitions);
+    flex-direction: column;
+}
+
+.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed p,
+.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed p,
+.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed p,
+.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed p{
+    margin-top: 1rem;
+}
+
+.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas,
+.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas,
+.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas,
+.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .caja,
+.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .caja,
+.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .caja,
+.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .caja{
+    margin: 1rem;
+    width: 30%;
+    background-color: var(--grisDos);
+}
+
+.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .caja-dos,
+.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .caja-dos,
+.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .caja-dos,
+.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .caja-dos{
+    margin: 1rem;
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--grisDos);
+    /* border: solid green 2px; */
+}
+
+.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .caja-dos img,
+.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .caja-dos img,
+.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .caja-dos img,
+.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .caja-dos img{
+    width: 20%;
+    max-width: 10rem;
+    max-height: 10rem;
+    margin: auto;
+    /* border: solid blue 2px; */
+}
+
+.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .caja-dos ul,
+.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .caja-dos ul,
+.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .caja-dos ul,
+.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .caja-dos ul{
+    margin: 0;
+    width: 100%;
+    margin-left: 1rem;
+    background-color: var(--grisDos);
+}
+
+.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
+.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
+.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
+.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo{
+    margin: 0;
+    list-style: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+
+.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .vacio,
+.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .vacio,
+.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .vacio,
+.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .vacio{
+    background-color: var(--gris);
+}
+
+.container-servicio .hoteleria-001 .active-contenedor-texto-hot-001 .boton .boton-masInfo::after,
+.container-servicio .hoteleria-002 .active-contenedor-texto-hot-002 .boton .boton-masInfo::after,
+.container-servicio .hoteleria-004 .active-contenedor-texto-hot-004 .boton .boton-masInfo::after,
+.container-servicio .hoteleria-003 .active-contenedor-texto-hot-003 .boton .boton-masInfo::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f106";
+    padding-left: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container-servicio .hoteleria-001 .active-contenedor-texto-hot-001 .boton .boton-masInfo::before,
+.container-servicio .hoteleria-002 .active-contenedor-texto-hot-002 .boton .boton-masInfo::before,
+.container-servicio .hoteleria-004 .active-contenedor-texto-hot-004 .boton .boton-masInfo::before,
+.container-servicio .hoteleria-003 .active-contenedor-texto-hot-003 .boton .boton-masInfo::before{
+    content: "Menos información ";
+}
+
+.container-servicio .hoteleria-001 .active-contenedor-texto-hot-001,
+.container-servicio .hoteleria-002 .active-contenedor-texto-hot-002,
+.container-servicio .hoteleria-004 .active-contenedor-texto-hot-004,
+.container-servicio .hoteleria-003 .active-contenedor-texto-hot-003{
+    content: "Menos información ";
+}
+
+.container-servicio .hoteleria-001 .active-contenedor-texto-hot-001 .contenedor-imagenes,
+.container-servicio .hoteleria-002 .active-contenedor-texto-hot-002 .contenedor-imagenes,
+.container-servicio .hoteleria-004 .active-contenedor-texto-hot-004 .contenedor-imagenes,
+.container-servicio .hoteleria-003 .active-contenedor-texto-hot-003 .contenedor-imagenes{
+    height: 15rem;
+}
+
+.container-servicio .hoteleria-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.container-servicio .hoteleria-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.container-servicio .hoteleria-004 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.container-servicio .hoteleria-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.container-servicio .hoteleria-001 .contenedor-imagenes .cont-imagen-fija,
+.container-servicio .hoteleria-002 .contenedor-imagenes .cont-imagen-fija,
+.container-servicio .hoteleria-004 .contenedor-imagenes .cont-imagen-fija,
+.container-servicio .hoteleria-003 .contenedor-imagenes .cont-imagen-fija{
+    width: 100%;
+    margin-right: 4rem;
+}
+
+.hoteleria-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.hoteleria-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.hoteleria-004 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.hoteleria-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+    background-image: url(../img/inicio_001.png);
+}
+
+
+/* --------------------
+Otros
+-------------------- */
+
+#otros-001,
+#otros-003{
+    background-color: var(--gris);
+    position: relative;
+}
+
+#otros-002{
+    background-color: var(--blanco);
+    position: relative;
+}
+
+#otros-001{
+    z-index: 18;
+}
+
+#otros-002{
+    z-index: 0;
+}
+
+#otros-003{
+    z-index: 0;
+}
+
+.container-servicio .otros-001 .contenedor-imagenes,
+.container-servicio .otros-002 .contenedor-imagenes,
+.container-servicio .otros-003 .contenedor-imagenes{
+    width: 94%;
+    height: 30rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001,
+.container-servicio .otros-002 .contenedor-texto-otr-002,
+.container-servicio .otros-003 .contenedor-texto-otr-003{
+    width: 94%;
+    margin-top: 1rem;
+    margin-left: 3%;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-collapsed,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-collapsed,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-collapsed{
+    width: 60%;
+    min-width: 60ch;
+    max-width: 90ch;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed{
+    width: 100%;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .texto,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .texto,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .texto{
+    text-align: center;
+    width: 60%;
+    min-width: 60ch;
+    max-width: 90ch;
+    max-width: 90ch;
+    margin: 1rem auto 2rem auto;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas{
+    width: 100%;
+    margin: 0 auto 1rem 0;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas h4,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas h4,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas h4{
+    margin-bottom: 1rem;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul{
+    list-style-position: inside;
+    text-indent: -2rem;
+    height: 100%;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul li,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul li,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul li{
+    list-style-position: inside;
+    text-indent: -2.1rem;
+    padding: 1rem 3.2rem;
+    font-weight: 300;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul li span,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul li span,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul li span{
+    list-style-position: inside;
+    font-weight: 500;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul li a,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul li a,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul li a{
+    text-decoration: none;
+    /* border: solid purple 2px; */
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul li a i,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul li a i,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul li a i{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--negro);
+    text-decoration: none;
+    text-indent: 0;
+    padding-left: .5rem;
+    transform: translateY(.4rem);
+    transition: var(--transitions);
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul li a i:hover,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul li a i:hover,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul li a i:hover{
+    transform: translateX(.5rem);
+    font-weight: 700;
+    color: var(--primario);
+    /* border: solid red; */
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .boton .boton-masInfo,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .boton .boton-masInfo,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .boton .boton-masInfo{
+    transform: translateX(-2rem);
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .boton .boton-masInfo::after,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .boton .boton-masInfo::after,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .boton .boton-masInfo::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    padding-left: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container-servicio .otros-001 .contenedor-texto-otr-001 .boton .boton-masInfo::before,
+.container-servicio .otros-002 .contenedor-texto-otr-002 .boton .boton-masInfo::before,
+.container-servicio .otros-003 .contenedor-texto-otr-003 .boton .boton-masInfo::before{
+    content: "Más información ";
+}
+
+.otros-001 .contenedor-texto-otr-001 .texto-noCollapsed,
+.otros-002 .contenedor-texto-otr-002 .texto-noCollapsed,
+.otros-003 .contenedor-texto-otr-003 .texto-noCollapsed{
+    display: none;
+    transition: var(--transitions);
+}
+
+.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed,
+.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed,
+.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed{
+    display: flex;
+    transition: var(--transitions);
+    flex-direction: column;
+}
+
+.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed p,
+.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed p,
+.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed p{
+    margin-top: 1rem;
+}
+
+.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas,
+.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas,
+.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .caja,
+.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .caja,
+.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .caja{
+    margin: 1rem;
+    width: 30%;
+    background-color: var(--grisDos);
+}
+
+.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .caja-dos,
+.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .caja-dos,
+.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .caja-dos{
+    margin: 1rem;
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--grisDos);
+    /* border: solid green 2px; */
+}
+
+.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .caja-dos img,
+.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .caja-dos img,
+.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .caja-dos img{
+    width: 20%;
+    max-width: 10rem;
+    max-height: 10rem;
+    margin: auto;
+    /* border: solid blue 2px; */
+}
+
+.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .caja-dos ul,
+.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .caja-dos ul,
+.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .caja-dos ul{
+    margin: 0;
+    width: 100%;
+    margin-left: 1rem;
+    background-color: var(--grisDos);
+}
+
+.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
+.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
+.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo{
+    margin: 0;
+    list-style: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+
+.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .vacio,
+.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .vacio,
+.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .vacio{
+    background-color: var(--gris);
+}
+
+.container-servicio .otros-001 .active-contenedor-texto-otr-001 .boton .boton-masInfo::after,
+.container-servicio .otros-002 .active-contenedor-texto-otr-002 .boton .boton-masInfo::after,
+.container-servicio .otros-003 .active-contenedor-texto-otr-003 .boton .boton-masInfo::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f106";
+    padding-left: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container-servicio .otros-001 .active-contenedor-texto-otr-001 .boton .boton-masInfo::before,
+.container-servicio .otros-002 .active-contenedor-texto-otr-002 .boton .boton-masInfo::before,
+.container-servicio .otros-003 .active-contenedor-texto-otr-003 .boton .boton-masInfo::before{
+    content: "Menos información ";
+}
+
+.container-servicio .otros-001 .active-contenedor-texto-otr-001,
+.container-servicio .otros-002 .active-contenedor-texto-otr-002,
+.container-servicio .otros-003 .active-contenedor-texto-otr-003{
+    content: "Menos información ";
+}
+
+.container-servicio .otros-001 .active-contenedor-texto-otr-001 .contenedor-imagenes,
+.container-servicio .otros-002 .active-contenedor-texto-otr-002 .contenedor-imagenes,
+.container-servicio .otros-003 .active-contenedor-texto-otr-003 .contenedor-imagenes{
+    height: 15rem;
+}
+
+.container-servicio .otros-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.container-servicio .otros-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.container-servicio .otros-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.container-servicio .otros-001 .contenedor-imagenes .cont-imagen-fija,
+.container-servicio .otros-002 .contenedor-imagenes .cont-imagen-fija,
+.container-servicio .otros-003 .contenedor-imagenes .cont-imagen-fija{
+    width: 100%;
+    margin-right: 2rem;
+}
+
+.otros-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.otros-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
+.otros-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+    background-image: url(../img/inicio_001.png);
+
 }

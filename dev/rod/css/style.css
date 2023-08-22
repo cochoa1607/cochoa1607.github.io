@@ -138,9 +138,9 @@ h6::before{
 
 
 p{
-    color: var(--secundario);
+    color: var(--negro);
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
     max-width: 90ch;
     padding: 0;
     text-align: justify;
@@ -294,11 +294,11 @@ header{
     width: 100vw;
     overflow: visible;
     background-color: none;
+    position: fixed;
 
 }
 
 .headerInicio {
-    position: fixed;
     transition: var(--transitionsL);
     z-index: 99999999;
 

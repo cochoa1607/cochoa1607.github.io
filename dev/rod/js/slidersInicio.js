@@ -1,3 +1,48 @@
+// Slide Header
+
+let slideIndexHead = 0;
+
+function showSlidesHead() {
+    const slidesHead = document.getElementsByClassName('slide-head');
+
+    for (let i = 0; i < slidesHead.length; i++) {
+        slidesHead[i].style.display = 'none';
+    }
+
+    slideIndexHead++;
+
+    if (slideIndexHead > slidesHead.length) {
+        slideIndexHead = 1;
+    }
+
+    slidesHead[slideIndexHead - 1].style.display = 'block';
+
+    setTimeout(showSlidesHead, 6000);
+}
+
+function changeSlideHead(n) {
+    slideIndexHead += n;
+    const slidesHead = document.getElementsByClassName('slide-head');
+
+    if (slideIndexHead > slidesHead.length) {
+        slideIndexHead = 1;
+    } else if (slideIndexHead < 1) {
+        slideIndexHead = slidesHead.length;
+    }
+
+    for (let i = 0; i < slidesHead.length; i++) {
+        slidesHead[i].style.display = 'none';
+    }
+
+    slidesHead[slideIndexHead - 1].style.display = 'block';
+}
+
+showSlidesHead();
+
+
+
+// Slide Experiencia
+
 let slideIndex = 0;
 
 function showSlides() {
