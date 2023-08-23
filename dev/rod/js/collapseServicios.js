@@ -9,12 +9,12 @@ function masInfo() {
 
 
 /* Auditoria */
-document.querySelector(".revision_masInfo").addEventListener("click", masInfoRev);
+document.querySelector(".auditoria_masInfo").addEventListener("click", masInfoAudit);
 
-var contTextoRev = document.querySelector(".contenedor-texto-rev");
+var contTextoAudit = document.querySelector(".contenedor-texto-audit");
 
-function masInfoRev() {
-    contTextoRev.classList.toggle("active-contenedor-texto-rev");
+function masInfoAudit() {
+    contTextoAudit.classList.toggle("active-contenedor-texto-audit");
 }
 
 

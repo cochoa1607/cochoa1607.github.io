@@ -17,24 +17,24 @@ Resumen
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 12rem 0;
+    padding: 4rem 0 14rem 0;
     box-shadow: none;
     background-color: var(--blanco);
-    box-shadow: var(--boxShadow);
-    position: relative;
-    z-index: 42;
-    /* 
-    padding: 6rem 10%;
     position: relative; 
-    z-index: 40;
+    box-shadow: var(--boxShadow);
+    z-index: 400;
+    /* 
+    position: relative;
+    padding: 6rem 10%;
     */
 }
 
-.container-resumen p{
+.container-resumen h3{
     margin: auto;
     padding-top: 3rem;
     min-width: 60ch;
     max-width: 90ch;
+    transform: translateY(4rem);
 }
 
 /* --------------------
@@ -60,11 +60,6 @@ Secciones Experiencia
     content: "";
 }
 
-
-section{
-    transform: translateY(0);
-}
-
 /* --------------------
 Secciones Experiencia
 -------------------- */
@@ -83,6 +78,206 @@ Secciones Experiencia
 Aeropuertos
 -------------------- */
 
+.contenedor-all{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor-all .contenedor-imagenes{
+    width: 100%;
+    height: 80vh;
+    padding: 4rem 1rem;
+    /* border: solid red 3px; */
+}
+
+.contenedor-all .contenedor-texto{
+    width: 61rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    /* border: solid greenyellow 3px; */
+}
+
+/* -- Texto -- */
+
+.contenedor-all .contenedor-texto .cajas{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    /* border: solid palevioletred 2px; */
+}
+
+.contenedor-all .contenedor-texto .cajas .caja{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grisDos);
+    margin: 0 .5rem .5rem .5rem;
+    padding: .3rem;
+    /* border: solid aqua 2px; */
+}
+
+.contenedor-all .contenedor-texto .cajas .caja-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+
+    /* border: solid yellow 1px; */
+}
+
+.contenedor-all .contenedor-texto .cajas .caja-dos .icono{
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    
+    /* border: solid green 1px; */
+}
+
+.contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
+    width: 100%;
+    height: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contenedor-all .contenedor-texto .cajas .caja-dos .gerencia{
+    background-image: url(../img/servicios_gerencia.png);
+}
+
+.contenedor-all .contenedor-texto .cajas .caja-dos .revision{
+    background-image: url(../img/servicios_revision.png);
+}
+
+.contenedor-all .contenedor-texto .cajas .caja-dos ul{
+    list-style-position: inside;
+    text-indent: -2rem;
+    width: 100%;
+    height: 100%;
+    padding-left: .5rem;
+
+    /* border: solid greenyellow 1px; */
+}
+
+.contenedor-all .contenedor-texto .cajas .caja-dos ul li{
+    list-style-position: inside;
+    text-indent: -2.1rem;
+    padding: .4rem 2.1rem;
+    font-weight: 300;
+}
+
+.contenedor-all .contenedor-texto .cajas .caja span{
+    font-weight: 600;
+}
+
+.contenedor-all .contenedor-texto .cajas h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+/* -- Slider -- */
+
+.cont-imagen-slide{
+    width: 100%;
+    height: 100%;
+
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-width: none;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    /* border: solid green 2px; */
+}
+
+.slide {
+    display: none;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+    /* border: solid greenyellow 2px; */
+}
+
+.slide-content {
+    background-color: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+    
+    /* border: solid black 2px; */
+}
+
+.slide-content .imagen{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+    /* border: solid pink 2px; */
+}
+
+.slide-content .img-uno{
+    background-image: url(../img/inicio_equipo_001.png);
+}
+
+.slide-content .img-dos{
+    background-image: url(../img/inicio_equipo_002.png);
+}
+
+.slide-content .img-tres{
+    background-image: url(../img/inicio_equipo_003.png);
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: var(--transitions);
+    border-radius: .3rem;
+    color: var(--secundario);
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+.fade {
+    animation: fade 6s linear infinite;
+}
+
+/* --------------------
+Aeropuertos
+-------------------- */
+/* 
 #aeropuerto-001,
 #aeropuerto-003,
 #aeropuerto-005,
@@ -316,7 +511,6 @@ Aeropuertos
 .container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed .cajas .caja ul li a,
 .container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed .cajas .caja ul li a{
     text-decoration: none;
-    /* border: solid purple 2px; */
 }
 
 .container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed .cajas .caja ul li a i,
@@ -354,7 +548,6 @@ Aeropuertos
     transform: translateX(.5rem);
     font-weight: 700;
     color: var(--primario);
-    /* border: solid red; */
 }
 
 .container-servicio .aeropuerto-001 .contenedor-texto .boton .boton-masInfo,
@@ -498,7 +691,6 @@ Aeropuertos
     justify-content: space-between;
     padding: 1rem;
     background-color: var(--grisDos);
-    /* border: solid green 2px; */
 }
 
 .aeropuerto-001 .active-contenedor-texto .texto-noCollapsed .caja_cajas .caja-dos img,
@@ -516,7 +708,6 @@ Aeropuertos
     max-width: 10rem;
     max-height: 10rem;
     margin: auto;
-    /* border: solid blue 2px; */
 }
 
 .aeropuerto-001 .active-contenedor-texto .texto-noCollapsed .caja_cajas .caja-dos ul,
@@ -673,7 +864,8 @@ Aeropuertos
 .aeropuerto-010 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
 .aeropuerto-003N .contenedor-imagenes .cont-imagen-fija .imagen-fija{
     background-image: url(../img/inicio_001.png);
-}
+} 
+*/
 
 /* --------------------
 Seguridad
@@ -1903,4 +2095,114 @@ Otros
 .otros-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
     background-image: url(../img/inicio_001.png);
 
+}
+
+
+/* --------------------
+Tablet / Mobile
+-------------------- */
+@media only screen and (max-width: 1599px) and (min-width: 900px) {
+    body{
+        border: solid red 4px;
+    }
+
+    .contenedor-seccion{
+        padding: 10rem 0 !important;
+    }
+
+    /* --------------------
+    Aeropuertos
+    -------------------- */
+
+    .contenedor-all .contenedor-texto{
+        width: 40rem;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* -- Texto -- */
+
+    .contenedor-all .contenedor-texto .cajas{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-all .contenedor-texto .cajas .caja{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--grisDos);
+        margin: 0 .5rem .5rem .5rem;
+        padding: .3rem;
+    }
+    
+}
+
+
+/* --------------------
+Tablet / Mobile
+-------------------- */
+@media only screen and (max-width: 899px) and (min-width: 1px) {
+    
+    body{
+        border: solid aqua 4px;
+    }
+
+    .contenedor-seccion{
+        padding: 10rem 0 !important;
+    }
+
+    /* --------------------
+    Aeropuertos
+    -------------------- */
+
+    .contenedor-all{
+        width: 100%;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contenedor-all .contenedor-imagenes{
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .contenedor-all .contenedor-texto{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* -- Texto -- */
+    
+    .contenedor-all .contenedor-texto .cajas{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-all .contenedor-texto .cajas .caja{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--grisDos);
+        margin: 0 .5rem .5rem .5rem;
+        padding: .3rem;
+    }
+    
+    .contenedor-all .contenedor-texto .cajas .caja-dos .icono{
+        width: 30%;
+        width: 10rem;
+        height: 10rem;
+        margin: 0 2rem;
+    }
+    
+    .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
+        width: 10rem;
+        height: 10rem;
+    }
 }
