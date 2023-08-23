@@ -14,73 +14,6 @@ Titulos
 Banner
 -------------------- */
 
-/* .container-banner{
-    width: 100vw;
-    position: relative;
-    
-    box-shadow: var(--boxShadow);
-    background-color: gray;
-    border: solid green 2px;
-    z-index: 21;
-}
-
-.container-banner .banner{
-    max-width: none;
-    max-height: none;
-    padding: 0;
-    margin: 0;
-}
-
-.banner{
-    width: 100%;
-    height: auto;
-    
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    border: solid blue 2px;
-}
-
-*/
-
-.cont-info{
-    position: absolute;
-    right: 5%;
-    bottom: 3rem;
-    background-color: none;
-    width: 50%;
-    min-width: 60rem;
-    text-align: right;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.cont-info h3,
-.cont-info p{
-    text-align: right;
-    padding: 0 2rem;
-    color: var(--blanco);
-}
-
-.cont-info h3{
-    font-weight: 800;
-}
-
-.cont-info p{
-    margin-bottom: 2rem;
-    text-align: right;
-}
-
-.cont-info .boton{
-    text-align: right;
-}
-
-/* Slider */
-
 .slideshow-container-head {
     width: 100%;
     height: 80vh;
@@ -88,12 +21,16 @@ Banner
     margin: 0;
     padding: 0;
     background-color: var(--blanco);
+    overflow: hidden;
+
+    border: solid red 2px;
 }
 
 .slide-head {
-    /* display: none; */
-    height: auto;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+    border: solid greenyellow 2px;
 }
 
 .slide-content {
@@ -106,20 +43,27 @@ Banner
     align-items: stretch;
     justify-content: space-between;
     overflow: hidden;
+
+    border: solid black 2px;
+    
 }
 
 .slide-content .cont-imagen{
     width: 100%;
     height: 100%;
     margin-bottom: 0;
+
+    border: solid gold 2px;
 }
 
 .slide-content .cont-imagen .imagen{
     width: 100%;
     height: 100%;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    border: solid purple 2px;
 }
 
 .slide-content .cont-imagen .img-001{
@@ -132,44 +76,6 @@ Banner
 
 .slide-content .cont-imagen .img-003{
     background-image: url(../img/inicio_equipo_003.png);
-}
-
-.slideshow-container-head .controllers{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-6rem);
-    position: absolute;
-    top: 85%;
-
-    display: none;
-}
-
-.prev,
-.next {
-    cursor: pointer;
-    width: 5rem;
-    height: auto;
-    padding: 1.6rem;
-    font-weight: bold;
-    font-size: 1.8rem;
-    transition: var(--transitions);
-    border-radius: .3rem;
-    color: var(--secundario);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.prev:hover,
-.next:hover {
-    color: var(--blanco);
-    background-color: var(--primario);
-}
-
-.fade {
-    animation: fade 6s linear infinite;
 }
 
 .slidesLineas{
