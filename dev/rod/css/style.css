@@ -277,13 +277,13 @@ Clases universales
 section{
     padding: 10rem 0 8rem 0;
     box-shadow: var(--boxShadow);
-    /* transform: translateY(4rem); */
 }
 
 .contenedor-seccion{
     width: 100%;
     padding: 0;
     margin: 0 auto;
+    padding: 10rem 0 2rem 0;
     max-width: 190rem;
 }
 
@@ -346,8 +346,6 @@ header{
     text-transform: uppercase;
     transition: var(--transitions);
     font-family: 'Roboto Slab', serif;
-    
-    /* border: solid red 2px; */
 }
 
 .headerInicio .noDrop {
@@ -396,8 +394,6 @@ header{
     display: block;
     font-family: 'Roboto Slab', serif;
     border-bottom: solid var(--secundario) .1rem;
-    
-    /* border: solid red 2px; */
 }
 
 .headerInicio .dropdown-content a:hover {
@@ -1094,7 +1090,7 @@ Tablet / Mobile
         width: 100%;
         margin: auto;
         border-radius: 0;
-        padding: 10rem 5% !important;
+        padding: 8rem 5% 2rem 5% !important;
     }
 
     /* --------------------

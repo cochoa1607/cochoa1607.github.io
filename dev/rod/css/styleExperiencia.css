@@ -6,7 +6,7 @@ Banner
     background-image: url(../img/header_servicios.png);
     transform: translateY(0);
     position: relative;
-    z-index: 44;
+    z-index: 1000;
 }
 
 /* --------------------
@@ -65,84 +65,24 @@ Secciones Experiencia
 -------------------- */
 
 #aeropuertos{
-    z-index: 42;
     position: relative;
+    z-index: 900;
+    background-color: var(--blanco);
 }
 
 #seguridad{
-    z-index: 20;
     position: relative;
+    z-index: 800;
+    background-color: var(--blanco);
 }
 
 /* --------------------
 Aeropuertos
 -------------------- */
-
-.contenedor-all{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.contenedor-all .contenedor-imagenes{
-    width: 100%;
-    height: 80vh;
-    padding: 4rem 1rem;
-    /* border: solid red 3px; */
-}
-
-.contenedor-all .contenedor-texto{
-    width: 61rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    /* border: solid greenyellow 3px; */
-}
-
-/* -- Texto -- */
-
-.contenedor-all .contenedor-texto .cajas{
-    width: 30rem;
-    display: flex;
-    flex-direction: column;
-    /* border: solid palevioletred 2px; */
-}
-
-.contenedor-all .contenedor-texto .cajas .caja{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--grisDos);
-    margin: 0 .5rem .5rem .5rem;
-    padding: .3rem;
-    /* border: solid aqua 2px; */
-}
-
-.contenedor-all .contenedor-texto .cajas .caja-dos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: start;
-
-    /* border: solid yellow 1px; */
-}
-
-.contenedor-all .contenedor-texto .cajas .caja-dos .icono{
-    width: 100%;
-    height: 5rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    
-    /* border: solid green 1px; */
-}
-
-.contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
-    width: 100%;
-    height: 5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+/* No se cambian */
+.container-servicio{
+    padding: 0;
+    position: relative;
 }
 
 .contenedor-all .contenedor-texto .cajas .caja-dos .gerencia{
@@ -153,63 +93,231 @@ Aeropuertos
     background-image: url(../img/servicios_revision.png);
 }
 
-.contenedor-all .contenedor-texto .cajas .caja-dos ul{
+.contenedor-all .contenedor-texto .cajas .caja-dos .levantamiento{
+    background-image: url(../img/servicios_levantamiento.png);
+}
+
+.contenedor-all .contenedor-texto .cajas .caja-dos .diseño{
+    background-image: url(../img/servicios_diseño.png);
+}
+
+/* Duplican */
+
+#aeropuerto-001,
+#aeropuerto-003{
+    background-color: var(--gris);
+}
+
+#aeropuerto-002,
+#aeropuerto-004{
+    background-color: var(--blanco);
+}
+
+.aeropuerto-001 .contenedor-all,
+.aeropuerto-002 .contenedor-all,
+.aeropuerto-003 .contenedor-all,
+.aeropuerto-00M .contenedor-all,
+.aeropuerto-00N .contenedor-all{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aeropuerto-001 .contenedor-all .contenedor-imagenes,
+.aeropuerto-002 .contenedor-all .contenedor-imagenes,
+.aeropuerto-003 .contenedor-all .contenedor-imagenes,
+.aeropuerto-00M .contenedor-all .contenedor-imagenes,
+.aeropuerto-00N .contenedor-all .contenedor-imagenes{
+    width: 100%;
+    height: 70vh;
+    padding: 4rem 1rem;
+}
+
+.aeropuerto-001 .contenedor-all .contenedor-texto,
+.aeropuerto-002 .contenedor-all .contenedor-texto,
+.aeropuerto-003 .contenedor-all .contenedor-texto,
+.aeropuerto-00M .contenedor-all .contenedor-texto,
+.aeropuerto-00N .contenedor-all .contenedor-texto{
+    width: 61rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
+
+/* -- Texto -- */
+
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas .caja,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas .caja{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grisDos);
+    margin: 0 .5rem .5rem .5rem;
+    padding: .3rem;
+}
+
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas .caja-dos,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas .caja-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas .caja-dos .icono{
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
+    width: 100%;
+    height: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas .caja-dos ul{
     list-style-position: inside;
     text-indent: -2rem;
     width: 100%;
     height: 100%;
     padding-left: .5rem;
-
-    /* border: solid greenyellow 1px; */
 }
 
-.contenedor-all .contenedor-texto .cajas .caja-dos ul li{
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas .caja-dos ul li{
     list-style-position: inside;
     text-indent: -2.1rem;
     padding: .4rem 2.1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
-.contenedor-all .contenedor-texto .cajas .caja span{
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja span,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja span,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja span,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas .caja span,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas .caja span{
     font-weight: 600;
 }
 
-.contenedor-all .contenedor-texto .cajas h4{
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas h4,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas h4,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas h4,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas h4,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas h4{
     text-align: center;
     margin-bottom: 1rem;
+
+}
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja a,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja a,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja a,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas .caja a,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas .caja a{
+    text-decoration: none;
 }
 
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja a i,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja a i,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja a i,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas .caja a i,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas .caja a i{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--negro);
+    text-decoration: none;
+    text-indent: 0;
+    padding-left: .5rem;
+    transform: translateY(.4rem);
+    transition: var(--transitions);
+}
+
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.aeropuerto-00M .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.aeropuerto-00N .contenedor-all .contenedor-texto .cajas .caja a i:hover{
+    transform: translateX(.5rem);
+    font-weight: 700;
+    color: var(--primario);
+}
 
 /* -- Slider -- */
 
-.cont-imagen-slide{
+.aeropuerto-001 .cont-imagen-slide,
+.aeropuerto-002 .cont-imagen-slide,
+.aeropuerto-003 .cont-imagen-slide,
+.aeropuerto-00M .cont-imagen-slide,
+.aeropuerto-00N .cont-imagen-slide{
     width: 100%;
     height: 100%;
-
 }
 
-.slideshow-container {
+.aeropuerto-001 .slideshow-container,
+.aeropuerto-002 .slideshow-container,
+.aeropuerto-003 .slideshow-container,
+.aeropuerto-00M .slideshow-container,
+.aeropuerto-00N .slideshow-container{
     width: 100%;
     height: 100%;
     position: relative;
     max-width: none;
     margin: 0 auto;
     overflow: hidden;
-    
-    /* border: solid green 2px; */
 }
 
-.slide {
+.aeropuerto-001 .slide,
+.aeropuerto-002 .slide-002,
+.aeropuerto-003 .slide-003,
+.aeropuerto-00M .slide-00M,
+.aeropuerto-00N .slide-00N{
     display: none;
     width: 90%;
     height: 100%;
     margin: auto;
     overflow: hidden;
-    
-    /* border: solid greenyellow 2px; */
 }
 
-.slide-content {
+.aeropuerto-001 .slide-content,
+.aeropuerto-002 .slide-content,
+.aeropuerto-003 .slide-content,
+.aeropuerto-00M .slide-content,
+.aeropuerto-00N .slide-content{
     background-color: none;
     margin: auto;
     width: 100%;
@@ -219,34 +327,25 @@ Aeropuertos
     align-items: stretch;
     justify-content: space-between;
     overflow: hidden;
-    
-    /* border: solid black 2px; */
 }
 
-.slide-content .imagen{
+.aeropuerto-001 .slide-content .imagen,
+.aeropuerto-002 .slide-content .imagen,
+.aeropuerto-003 .slide-content .imagen,
+.aeropuerto-00M .slide-content .imagen,
+.aeropuerto-00N .slide-content .imagen{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
-    
-    /* border: solid pink 2px; */
 }
 
-.slide-content .img-uno{
-    background-image: url(../img/inicio_equipo_001.png);
-}
-
-.slide-content .img-dos{
-    background-image: url(../img/inicio_equipo_002.png);
-}
-
-.slide-content .img-tres{
-    background-image: url(../img/inicio_equipo_003.png);
-}
-
-.prev,
-.next {
+.aeropuerto-001 .prev,
+.aeropuerto-002 .prev,
+.aeropuerto-003 .prev,
+.aeropuerto-00M .prev,
+.aeropuerto-00N .prev{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -260,612 +359,146 @@ Aeropuertos
     color: var(--secundario);
 }
 
-.next {
+
+.aeropuerto-001 .next,
+.aeropuerto-002 .next ,
+.aeropuerto-003 .next ,
+.aeropuerto-00M .next ,
+.aeropuerto-00N .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: var(--transitions);
+    border-radius: .3rem;
+    color: var(--secundario);
+}
+
+.aeropuerto-001 .next,
+.aeropuerto-002 .next,
+.aeropuerto-003 .next,
+.aeropuerto-00M .next,
+.aeropuerto-00N .next{
     right: 0;
 }
 
-.prev:hover,
-.next:hover {
+.aeropuerto-001 .prev:hover,
+.aeropuerto-002 .prev:hover,
+.aeropuerto-003 .prev:hover,
+.aeropuerto-00M .prev:hover,
+.aeropuerto-00N .prev:hover{
     color: var(--blanco);
     background-color: var(--primario);
 }
 
-.fade {
+.aeropuerto-001 .next:hover,
+.aeropuerto-002 .next:hover,
+.aeropuerto-003 .next:hover,
+.aeropuerto-00M .next:hover,
+.aeropuerto-00N .next:hover{
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+.aeropuerto-001 .fade,
+.aeropuerto-002 .fade,
+.aeropuerto-003 .fade,
+.aeropuerto-00M .fade,
+.aeropuerto-00N .fade{
     animation: fade 6s linear infinite;
 }
 
 /* --------------------
-Aeropuertos
+Aeropuerto_001
 -------------------- */
-/* 
-#aeropuerto-001,
-#aeropuerto-003,
-#aeropuerto-005,
-#aeropuerto-007,
-#aeropuerto-009{
-    background-color: var(--gris);
-    position: relative;
-}
-
-#aeropuerto-002,
-#aeropuerto-004,
-#aeropuerto-006,
-#aeropuerto-008,
-#aeropuerto-010{
-    background-color: var(--blanco);
-    position: relative;
-}
 
 #aeropuerto-001{
-    z-index: 40;
+    z-index: 898;
 }
+
+.aeropuerto-001 .slide-content .img-uno{
+    background-image: url(../img/inicio_equipo_001.png);
+}
+
+.aeropuerto-001 .slide-content .img-dos{
+    background-image: url(../img/inicio_equipo_002.png);
+}
+
+.aeropuerto-001 .slide-content .img-tres{
+    background-image: url(../img/inicio_equipo_003.png);
+}
+
+/* --------------------
+Aeropuerto_002
+-------------------- */
 
 #aeropuerto-002{
-    z-index: 38;
+    z-index: 896;
 }
+
+.aeropuerto-002 .slide-content .img-uno{
+    background-image: url(../img/inicio_equipo_002.png);
+}
+
+.aeropuerto-002 .slide-content .img-dos{
+    background-image: url(../img/inicio_equipo_003.png);
+}
+
+.aeropuerto-002 .slide-content .img-tres{
+    background-image: url(../img/inicio_equipo_001.png);
+}
+
+
+/* --------------------
+Aeropuerto_003
+-------------------- */
 
 #aeropuerto-003{
-    z-index: 36;
+    z-index: 894;
 }
 
-#aeropuerto-004{
-    z-index: 34;
+.aeropuerto-003 .slide-content .img-uno{
+    background-image: url(../img/inicio_equipo_002.png);
 }
 
-#aeropuerto-005{
-    z-index: 32;
+.aeropuerto-003 .slide-content .img-dos{
+    background-image: url(../img/inicio_header_002.jpg);
 }
 
-#aeropuerto-006{
-    z-index: 30;
+.aeropuerto-003 .slide-content .img-tres{
+    background-image: url(../img/inicio_header_003.jpg);
 }
 
-#aeropuerto-007{
-    z-index: 28;
-}
 
-#aeropuerto-008{
-    z-index: 26;
-}
 
-#aeropuerto-009{
-    z-index: 24;
-}
 
-#aeropuerto-010{
-    z-index: 22;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-imagenes,
-.container-servicio .aeropuerto-002 .contenedor-imagenes,
-.container-servicio .aeropuerto-003 .contenedor-imagenes,
-.container-servicio .aeropuerto-004 .contenedor-imagenes,
-.container-servicio .aeropuerto-005 .contenedor-imagenes,
-.container-servicio .aeropuerto-006 .contenedor-imagenes,
-.container-servicio .aeropuerto-007 .contenedor-imagenes,
-.container-servicio .aeropuerto-008 .contenedor-imagenes,
-.container-servicio .aeropuerto-009 .contenedor-imagenes,
-.container-servicio .aeropuerto-010 .contenedor-imagenes,
-.container-servicio .aeropuerto-003N .contenedor-imagenes{
-    width: 94%;
-    height: 30rem;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto,
-.container-servicio .aeropuerto-002 .contenedor-texto-002,
-.container-servicio .aeropuerto-003 .contenedor-texto-003,
-.container-servicio .aeropuerto-004 .contenedor-texto-004,
-.container-servicio .aeropuerto-005 .contenedor-texto-005,
-.container-servicio .aeropuerto-006 .contenedor-texto-006,
-.container-servicio .aeropuerto-007 .contenedor-texto-007,
-.container-servicio .aeropuerto-008 .contenedor-texto-008,
-.container-servicio .aeropuerto-009 .contenedor-texto-009,
-.container-servicio .aeropuerto-010 .contenedor-texto-010,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N{
-    width: 94%;
-    margin-top: 1rem;
-    margin-left: 3%;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-collapsed,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-collapsed,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-collapsed,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-collapsed,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-collapsed,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-collapsed,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-collapsed,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-collapsed,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-collapsed,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-collapsed,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-collapsed{
-    width: 60%;
-    min-width: 60ch;
-    max-width: 90ch;
-    margin: 1rem auto;
-    text-align: center;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed{
-    width: 100%;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed .texto,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed .texto,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed .texto,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed .texto,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed .texto,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed .texto,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed .texto,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed .texto,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed .texto,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed .texto,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed .texto{
-    text-align: center;
-    width: 60%;
-    min-width: 60ch;
-    max-width: 90ch;
-    max-width: 90ch;
-    margin: 1rem auto 2rem auto;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed .cajas,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed .cajas,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed .cajas,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed .cajas,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed .cajas,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed .cajas,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed .cajas,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed .cajas,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed .cajas,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed .cajas,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed .cajas{
-    width: 100%;
-    margin: 0 auto 1rem 0;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed .cajas h4,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed .cajas h4,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed .cajas h4,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed .cajas h4,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed .cajas h4,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed .cajas h4,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed .cajas h4,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed .cajas h4,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed .cajas h4,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed .cajas h4,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed .cajas h4{
-    margin-bottom: 1rem;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed .cajas .caja ul,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed .cajas .caja ul{
-    list-style-position: inside;
-    text-indent: -2rem;
-    height: 100%;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed .cajas .caja ul li{
-    list-style-position: inside;
-    text-indent: -2.1rem;
-    padding: 1rem 3.2rem;
-    font-weight: 300;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed .cajas .caja ul li span{
-    list-style-position: inside;
-    font-weight: 500;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed .cajas .caja ul li a{
-    text-decoration: none;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed .cajas .caja ul li a i{
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--negro);
-    text-decoration: none;
-    text-indent: 0;
-    padding-left: .5rem;
-    transform: translateY(.4rem);
-    transition: var(--transitions);
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed .cajas .caja ul li a i:hover{
-    transform: translateX(.5rem);
-    font-weight: 700;
-    color: var(--primario);
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .boton .boton-masInfo,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .boton .boton-masInfo,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .boton .boton-masInfo,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .boton .boton-masInfo,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .boton .boton-masInfo,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .boton .boton-masInfo,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .boton .boton-masInfo,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .boton .boton-masInfo,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .boton .boton-masInfo,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .boton .boton-masInfo,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .boton .boton-masInfo{
-    transform: translateX(-2rem);
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .boton .boton-masInfo::after{
-    font-family: "Font Awesome 5 Free";
-    content: "\f107";
-    padding-left: .5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-decoration: none;
-}
 
-.container-servicio .aeropuerto-001 .contenedor-texto .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-002 .contenedor-texto-002 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-003 .contenedor-texto-003 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-004 .contenedor-texto-004 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-005 .contenedor-texto-005 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-006 .contenedor-texto-006 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-007 .contenedor-texto-007 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-008 .contenedor-texto-008 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-009 .contenedor-texto-009 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-010 .contenedor-texto-010 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-003N .contenedor-texto-003N .boton .boton-masInfo::before{
-    content: "Más información ";
-}
 
-.aeropuerto-001 .contenedor-texto .texto-noCollapsed,
-.aeropuerto-002 .contenedor-texto-002 .texto-noCollapsed,
-.aeropuerto-003 .contenedor-texto-003 .texto-noCollapsed,
-.aeropuerto-004 .contenedor-texto-004 .texto-noCollapsed,
-.aeropuerto-005 .contenedor-texto-005 .texto-noCollapsed,
-.aeropuerto-006 .contenedor-texto-006 .texto-noCollapsed,
-.aeropuerto-007 .contenedor-texto-007 .texto-noCollapsed,
-.aeropuerto-008 .contenedor-texto-008 .texto-noCollapsed,
-.aeropuerto-009 .contenedor-texto-009 .texto-noCollapsed,
-.aeropuerto-010 .contenedor-texto-010 .texto-noCollapsed,
-.aeropuerto-003N .contenedor-texto-003N .texto-noCollapsed{
-    display: none;
-    transition: var(--transitions);
-}
 
-.aeropuerto-001 .active-contenedor-texto .texto-noCollapsed,
-.aeropuerto-002 .active-contenedor-texto-002 .texto-noCollapsed,
-.aeropuerto-003 .active-contenedor-texto-003 .texto-noCollapsed,
-.aeropuerto-004 .active-contenedor-texto-004 .texto-noCollapsed,
-.aeropuerto-005 .active-contenedor-texto-005 .texto-noCollapsed,
-.aeropuerto-006 .active-contenedor-texto-006 .texto-noCollapsed,
-.aeropuerto-007 .active-contenedor-texto-007 .texto-noCollapsed,
-.aeropuerto-008 .active-contenedor-texto-008 .texto-noCollapsed,
-.aeropuerto-009 .active-contenedor-texto-009 .texto-noCollapsed,
-.aeropuerto-010 .active-contenedor-texto-010 .texto-noCollapsed,
-.aeropuerto-003N .active-contenedor-texto-003N .texto-noCollapsed{
-    display: flex;
-    transition: var(--transitions);
-    flex-direction: column;
-}
 
-.aeropuerto-001 .active-contenedor-texto .texto-noCollapsed p,
-.aeropuerto-002 .active-contenedor-texto-002 .texto-noCollapsed p,
-.aeropuerto-003 .active-contenedor-texto-003 .texto-noCollapsed p,
-.aeropuerto-004 .active-contenedor-texto-004 .texto-noCollapsed p,
-.aeropuerto-005 .active-contenedor-texto-005 .texto-noCollapsed p,
-.aeropuerto-006 .active-contenedor-texto-006 .texto-noCollapsed p,
-.aeropuerto-007 .active-contenedor-texto-007 .texto-noCollapsed p,
-.aeropuerto-008 .active-contenedor-texto-008 .texto-noCollapsed p,
-.aeropuerto-009 .active-contenedor-texto-009 .texto-noCollapsed p,
-.aeropuerto-010 .active-contenedor-texto-010 .texto-noCollapsed p,
-.aeropuerto-003N .active-contenedor-texto-003N .texto-noCollapsed p{
-    margin-top: 1rem;
-}
 
-.aeropuerto-001 .active-contenedor-texto .texto-noCollapsed .caja_cajas,
-.aeropuerto-002 .active-contenedor-texto-002 .texto-noCollapsed .caja_cajas,
-.aeropuerto-003 .active-contenedor-texto-003 .texto-noCollapsed .caja_cajas,
-.aeropuerto-004 .active-contenedor-texto-004 .texto-noCollapsed .caja_cajas,
-.aeropuerto-005 .active-contenedor-texto-005 .texto-noCollapsed .caja_cajas,
-.aeropuerto-006 .active-contenedor-texto-006 .texto-noCollapsed .caja_cajas,
-.aeropuerto-007 .active-contenedor-texto-007 .texto-noCollapsed .caja_cajas,
-.aeropuerto-008 .active-contenedor-texto-008 .texto-noCollapsed .caja_cajas,
-.aeropuerto-009 .active-contenedor-texto-009 .texto-noCollapsed .caja_cajas,
-.aeropuerto-010 .active-contenedor-texto-010 .texto-noCollapsed .caja_cajas,
-.aeropuerto-003N .active-contenedor-texto-003N .texto-noCollapsed .caja_cajas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.aeropuerto-001 .active-contenedor-texto .texto-noCollapsed .caja_cajas .caja,
-.aeropuerto-002 .active-contenedor-texto-002 .texto-noCollapsed .caja_cajas .caja,
-.aeropuerto-003 .active-contenedor-texto-003 .texto-noCollapsed .caja_cajas .caja,
-.aeropuerto-004 .active-contenedor-texto-004 .texto-noCollapsed .caja_cajas .caja,
-.aeropuerto-005 .active-contenedor-texto-005 .texto-noCollapsed .caja_cajas .caja,
-.aeropuerto-006 .active-contenedor-texto-006 .texto-noCollapsed .caja_cajas .caja,
-.aeropuerto-007 .active-contenedor-texto-007 .texto-noCollapsed .caja_cajas .caja,
-.aeropuerto-008 .active-contenedor-texto-008 .texto-noCollapsed .caja_cajas .caja,
-.aeropuerto-009 .active-contenedor-texto-009 .texto-noCollapsed .caja_cajas .caja,
-.aeropuerto-010 .active-contenedor-texto-010 .texto-noCollapsed .caja_cajas .caja,
-.aeropuerto-003N .active-contenedor-texto-003N .texto-noCollapsed .caja_cajas .caja{
-    margin: 1rem;
-    width: 30%;
-    background-color: var(--grisDos);
-}
 
-.aeropuerto-001 .active-contenedor-texto .texto-noCollapsed .caja_cajas .caja-dos,
-.aeropuerto-002 .active-contenedor-texto-002 .texto-noCollapsed .caja_cajas .caja-dos,
-.aeropuerto-003 .active-contenedor-texto-003 .texto-noCollapsed .caja_cajas .caja-dos,
-.aeropuerto-004 .active-contenedor-texto-004 .texto-noCollapsed .caja_cajas .caja-dos,
-.aeropuerto-005 .active-contenedor-texto-005 .texto-noCollapsed .caja_cajas .caja-dos,
-.aeropuerto-006 .active-contenedor-texto-006 .texto-noCollapsed .caja_cajas .caja-dos,
-.aeropuerto-007 .active-contenedor-texto-007 .texto-noCollapsed .caja_cajas .caja-dos,
-.aeropuerto-008 .active-contenedor-texto-008 .texto-noCollapsed .caja_cajas .caja-dos,
-.aeropuerto-009 .active-contenedor-texto-009 .texto-noCollapsed .caja_cajas .caja-dos,
-.aeropuerto-010 .active-contenedor-texto-010 .texto-noCollapsed .caja_cajas .caja-dos,
-.aeropuerto-003N .active-contenedor-texto-003N .texto-noCollapsed .caja_cajas .caja-dos{
-    margin: 1rem;
-    width: 47%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: var(--grisDos);
-}
 
-.aeropuerto-001 .active-contenedor-texto .texto-noCollapsed .caja_cajas .caja-dos img,
-.aeropuerto-002 .active-contenedor-texto-002 .texto-noCollapsed .caja_cajas .caja-dos img,
-.aeropuerto-003 .active-contenedor-texto-003 .texto-noCollapsed .caja_cajas .caja-dos img,
-.aeropuerto-004 .active-contenedor-texto-004 .texto-noCollapsed .caja_cajas .caja-dos img,
-.aeropuerto-005 .active-contenedor-texto-005 .texto-noCollapsed .caja_cajas .caja-dos img,
-.aeropuerto-006 .active-contenedor-texto-006 .texto-noCollapsed .caja_cajas .caja-dos img,
-.aeropuerto-007 .active-contenedor-texto-007 .texto-noCollapsed .caja_cajas .caja-dos img,
-.aeropuerto-008 .active-contenedor-texto-008 .texto-noCollapsed .caja_cajas .caja-dos img,
-.aeropuerto-009 .active-contenedor-texto-009 .texto-noCollapsed .caja_cajas .caja-dos img,
-.aeropuerto-010 .active-contenedor-texto-010 .texto-noCollapsed .caja_cajas .caja-dos img,
-.aeropuerto-003N .active-contenedor-texto-003N .texto-noCollapsed .caja_cajas .caja-dos img{
-    width: 20%;
-    max-width: 10rem;
-    max-height: 10rem;
-    margin: auto;
-}
-
-.aeropuerto-001 .active-contenedor-texto .texto-noCollapsed .caja_cajas .caja-dos ul,
-.aeropuerto-002 .active-contenedor-texto-002 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.aeropuerto-003 .active-contenedor-texto-003 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.aeropuerto-004 .active-contenedor-texto-004 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.aeropuerto-005 .active-contenedor-texto-005 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.aeropuerto-006 .active-contenedor-texto-006 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.aeropuerto-007 .active-contenedor-texto-007 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.aeropuerto-008 .active-contenedor-texto-008 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.aeropuerto-009 .active-contenedor-texto-009 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.aeropuerto-010 .active-contenedor-texto-010 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.aeropuerto-003N .active-contenedor-texto-003N .texto-noCollapsed .caja_cajas .caja-dos ul{
-    margin: 0;
-    width: 100%;
-    margin-left: 1rem;
-    background-color: var(--grisDos);
-}
-
-.aeropuerto-001 .active-contenedor-texto .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.aeropuerto-002 .active-contenedor-texto-002 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.aeropuerto-003 .active-contenedor-texto-003 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.aeropuerto-004 .active-contenedor-texto-004 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.aeropuerto-005 .active-contenedor-texto-005 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.aeropuerto-006 .active-contenedor-texto-006 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.aeropuerto-007 .active-contenedor-texto-007 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.aeropuerto-008 .active-contenedor-texto-008 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.aeropuerto-009 .active-contenedor-texto-009 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.aeropuerto-010 .active-contenedor-texto-010 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.aeropuerto-003N .active-contenedor-texto-003N .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo{
-    margin: 0;
-    list-style: none;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 500 !important;
-}
-
-.aeropuerto-001 .active-contenedor-texto .texto-noCollapsed .caja_cajas .vacio,
-.aeropuerto-002 .active-contenedor-texto-002 .texto-noCollapsed .caja_cajas .vacio,
-.aeropuerto-003 .active-contenedor-texto-003 .texto-noCollapsed .caja_cajas .vacio,
-.aeropuerto-004 .active-contenedor-texto-004 .texto-noCollapsed .caja_cajas .vacio,
-.aeropuerto-005 .active-contenedor-texto-005 .texto-noCollapsed .caja_cajas .vacio,
-.aeropuerto-006 .active-contenedor-texto-006 .texto-noCollapsed .caja_cajas .vacio,
-.aeropuerto-007 .active-contenedor-texto-007 .texto-noCollapsed .caja_cajas .vacio,
-.aeropuerto-008 .active-contenedor-texto-008 .texto-noCollapsed .caja_cajas .vacio,
-.aeropuerto-009 .active-contenedor-texto-009 .texto-noCollapsed .caja_cajas .vacio,
-.aeropuerto-010 .active-contenedor-texto-010 .texto-noCollapsed .caja_cajas .vacio,
-.aeropuerto-003N .active-contenedor-texto-003N .texto-noCollapsed .caja_cajas .vacio{
-    background-color: var(--gris);
-}
-
-.container-servicio .aeropuerto-001 .active-contenedor-texto .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-002 .active-contenedor-texto-002 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-003 .active-contenedor-texto-003 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-004 .active-contenedor-texto-004 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-005 .active-contenedor-texto-005 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-006 .active-contenedor-texto-006 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-007 .active-contenedor-texto-007 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-008 .active-contenedor-texto-008 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-009 .active-contenedor-texto-009 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-010 .active-contenedor-texto-010 .boton .boton-masInfo::after,
-.container-servicio .aeropuerto-003N .active-contenedor-texto-003N .boton .boton-masInfo::after{
-    font-family: "Font Awesome 5 Free";
-    content: "\f106";
-    padding-left: .5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.container-servicio .aeropuerto-001 .active-contenedor-texto .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-002 .active-contenedor-texto-002 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-003 .active-contenedor-texto-003 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-004 .active-contenedor-texto-004 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-005 .active-contenedor-texto-005 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-006 .active-contenedor-texto-006 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-007 .active-contenedor-texto-007 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-008 .active-contenedor-texto-008 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-009 .active-contenedor-texto-009 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-010 .active-contenedor-texto-010 .boton .boton-masInfo::before,
-.container-servicio .aeropuerto-003N .active-contenedor-texto-003N .boton .boton-masInfo::before{
-    content: "Menos información ";
-}
-
-.container-servicio .aeropuerto-001 .active-contenedor-texto,
-.container-servicio .aeropuerto-002 .active-contenedor-texto-002,
-.container-servicio .aeropuerto-003 .active-contenedor-texto-003,
-.container-servicio .aeropuerto-004 .active-contenedor-texto-004,
-.container-servicio .aeropuerto-005 .active-contenedor-texto-005,
-.container-servicio .aeropuerto-006 .active-contenedor-texto-006,
-.container-servicio .aeropuerto-007 .active-contenedor-texto-007,
-.container-servicio .aeropuerto-008 .active-contenedor-texto-008,
-.container-servicio .aeropuerto-009 .active-contenedor-texto-009,
-.container-servicio .aeropuerto-010 .active-contenedor-texto-010,
-.container-servicio .aeropuerto-003N .active-contenedor-texto-003N{
-    content: "Menos información ";
-}
-
-.container-servicio .aeropuerto-001 .active-contenedor-texto .contenedor-imagenes,
-.container-servicio .aeropuerto-002 .active-contenedor-texto-002 .contenedor-imagenes,
-.container-servicio .aeropuerto-003 .active-contenedor-texto-003 .contenedor-imagenes,
-.container-servicio .aeropuerto-004 .active-contenedor-texto-004 .contenedor-imagenes,
-.container-servicio .aeropuerto-005 .active-contenedor-texto-005 .contenedor-imagenes,
-.container-servicio .aeropuerto-006 .active-contenedor-texto-006 .contenedor-imagenes,
-.container-servicio .aeropuerto-007 .active-contenedor-texto-007 .contenedor-imagenes,
-.container-servicio .aeropuerto-008 .active-contenedor-texto-008 .contenedor-imagenes,
-.container-servicio .aeropuerto-009 .active-contenedor-texto-009 .contenedor-imagenes,
-.container-servicio .aeropuerto-010 .active-contenedor-texto-010 .contenedor-imagenes,
-.container-servicio .aeropuerto-003N .active-contenedor-texto-003N .contenedor-imagenes{
-    height: 15rem;
-}
-
-.container-servicio .aeropuerto-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .aeropuerto-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .aeropuerto-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .aeropuerto-004 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .aeropuerto-005 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .aeropuerto-006 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .aeropuerto-007 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .aeropuerto-008 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .aeropuerto-009 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .aeropuerto-010 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .aeropuerto-003N .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-}
-
-.container-servicio .aeropuerto-001 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .aeropuerto-002 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .aeropuerto-003 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .aeropuerto-004 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .aeropuerto-005 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .aeropuerto-006 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .aeropuerto-007 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .aeropuerto-008 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .aeropuerto-009 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .aeropuerto-010 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .aeropuerto-003N .contenedor-imagenes .cont-imagen-fija{
-    width: 100%;
-    margin-right: 2rem;
-}
-
-.aeropuerto-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.aeropuerto-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.aeropuerto-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.aeropuerto-004 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.aeropuerto-005 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.aeropuerto-006 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.aeropuerto-007 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.aeropuerto-008 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.aeropuerto-009 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.aeropuerto-010 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.aeropuerto-003N .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/inicio_001.png);
-} 
-*/
 
 /* --------------------
 Seguridad
@@ -2099,22 +1732,23 @@ Otros
 
 
 /* --------------------
-Tablet / Mobile
+Tablet
 -------------------- */
-@media only screen and (max-width: 1599px) and (min-width: 900px) {
+@media only screen and (max-width: 1599px) and (min-width: 1000px) {
+
     body{
-        border: solid red 4px;
+        border: solid red 3px;
     }
 
     .contenedor-seccion{
-        padding: 10rem 0 !important;
+        padding: 10rem 2rem 3rem 2rem !important;
     }
 
     /* --------------------
     Aeropuertos
     -------------------- */
 
-    .contenedor-all .contenedor-texto{
+    .contenedor-seccion .contenedor-all .contenedor-texto{
         width: 40rem;
         margin-right: 2rem;
         display: flex;
@@ -2122,15 +1756,20 @@ Tablet / Mobile
         align-items: center;
     }
 
+    .contenedor-seccion .contenedor-all .contenedor-imagenes{
+        width: 100%;
+        height: 70vh;
+    }
+
     /* -- Texto -- */
 
-    .contenedor-all .contenedor-texto .cajas{
+    .contenedor-seccion .contenedor-all .contenedor-texto .cajas{
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .contenedor-all .contenedor-texto .cajas .caja{
+    .contenedor-seccion .contenedor-all .contenedor-texto .cajas .caja{
         display: flex;
         flex-direction: column;
         background-color: var(--grisDos);
@@ -2142,16 +1781,16 @@ Tablet / Mobile
 
 
 /* --------------------
-Tablet / Mobile
+Mobile
 -------------------- */
-@media only screen and (max-width: 899px) and (min-width: 1px) {
-    
+@media only screen and (max-width: 999px) and (min-width: 1px) {
+
     body{
-        border: solid aqua 4px;
+        border: solid blue 3px;
     }
 
     .contenedor-seccion{
-        padding: 10rem 0 !important;
+        padding: 5rem 0 !important;
     }
 
     /* --------------------
@@ -2166,26 +1805,27 @@ Tablet / Mobile
         align-items: center;
     }
     
-    .contenedor-all .contenedor-imagenes{
+    .contenedor-seccion .contenedor-all .contenedor-imagenes{
         width: 100%;
-        height: 50vh;
+        height: 42vh;
     }
     
-    .contenedor-all .contenedor-texto{
+    .contenedor-seccion .contenedor-all .contenedor-texto{
         width: 80%;
         display: flex;
+        margin: 0;
         flex-direction: column;
     }
     
     /* -- Texto -- */
     
-    .contenedor-all .contenedor-texto .cajas{
+    .contenedor-seccion .contenedor-all .contenedor-texto .cajas{
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .contenedor-all .contenedor-texto .cajas .caja{
+    .contenedor-seccion .contenedor-all .contenedor-texto .cajas .caja{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -2194,14 +1834,14 @@ Tablet / Mobile
         padding: .3rem;
     }
     
-    .contenedor-all .contenedor-texto .cajas .caja-dos .icono{
+    .contenedor-seccion .contenedor-all .contenedor-texto .cajas .caja-dos .icono{
         width: 30%;
         width: 10rem;
         height: 10rem;
         margin: 0 2rem;
     }
     
-    .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
+    .contenedor-seccion .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
         width: 10rem;
         height: 10rem;
     }
