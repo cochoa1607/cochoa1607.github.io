@@ -24,7 +24,7 @@ Banner
 
 .slideshow-container-head {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     min-height: 40vh;
     margin: 0;
     padding: 0;
@@ -131,15 +131,15 @@ Banner
 
 .slidesLineas .linea{
     width: 1.2rem;
-    background-color: var(--blanco);
     height: .2rem;
+    background-color: var(--blanco);
     margin: 0 .5rem;
     border-radius: 2rem;
 }
 
 .slidesLineas .active{
-    width: 3rem;
     background-color: var(--primario);
+    width: 3rem;
     height: .3rem;
 }
 
@@ -151,7 +151,7 @@ main{
     width: 100%;
     box-shadow: var(--boxShadow);
     z-index: 10;
-    background-color: var(--blanco) !important;
+    background-color: none !important;
     position: relative;
     z-index: 20;
     overflow: hidden;
@@ -186,7 +186,7 @@ main .container-servicios .servicios .cont-texto p{
     max-width: none;
     margin: 0 auto;
     height: auto;
-    background-color: var(--blanco);
+    background-color: none;
 }
 
 .servicios .slide {
@@ -216,7 +216,7 @@ main .container-servicios .servicios .cont-texto p{
 
 .servicios .slide-content .cont-imagen .imagen{
     width: 100%;
-    height: 45vh;
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -224,15 +224,31 @@ main .container-servicios .servicios .cont-texto p{
 }
 
 .servicios .slide-content .cont-imagen .img-001{
-    background-image: url(../img/inicio_001.png);
+    background-image: url(../img/servicios_gerencia_001.png);
 }
 
 .servicios .slide-content .cont-imagen .img-002{
-    background-image: url(../img/inicio_equipo_002.png);
+    background-image: url(../img/servicios_modelado_001.png);
 }
 
 .servicios .slide-content .cont-imagen .img-003{
-    background-image: url(../img/inicio_equipo_003.png);
+    background-image: url(../img/servicios_revision_001.png);
+}
+
+.servicios .slide-content .cont-imagen .img-004{
+    background-image: url(../img/servicios_levantamiento_001.png);
+}
+
+.servicios .slide-content .cont-imagen .img-005{
+    background-image: url(../img/servicios_analisis_001.png);
+}
+
+.servicios .slide-content .cont-imagen .img-006{
+    background-image: url(../img/servicios_diligence_001.png);
+}
+
+.servicios .slide-content .cont-imagen .img-007{
+    background-image: url(../img/servicios_gestion_001.png);
 }
 
 .servicios .slide-content .texto{
@@ -243,6 +259,7 @@ main .container-servicios .servicios .cont-texto p{
 
 .servicios .slide-content p{
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .servicios .slideshow-container .controllers{
@@ -290,17 +307,17 @@ main .container-servicios .servicios .cont-texto p{
 }
 
 .servicios .slidesLineas .linea{
-    width: 3rem;
     background-color: var(--terciario);
-    height: .1rem;
     margin: 0 .5rem;
     border-radius: 2rem;
+    height: .2rem;
+    width: 1.2rem;
 }
 
 .servicios .slidesLineas .active{
     width: 3rem;
+    height: .3rem;
     background-color: var(--primario);
-    height: .2rem;
 }
 
 /* --------------------
@@ -309,11 +326,12 @@ Experiencia
 
 .container-experiencia{
     width: 100vw;
-    background-color: var(--gris);
+    background-color: var(--blanco);
     box-shadow: var(--boxShadow);
     position: relative;
     z-index: 18;
     padding-bottom: 0;
+    padding-top: 0;
 }
 
 .cont-slider-exp{
@@ -327,10 +345,8 @@ Experiencia
 
 .cont-slider-exp .slideshow-container-exp .slide-exp{
     width: 100%;
-
-    transform: translateY(-5rem);
+    transform: translateY(-10rem);
     overflow: hidden;
-    /* border: solid aqua 2px; */
 }
 
 .cont-slider-exp .slideshow-container-exp .controllers{
@@ -338,17 +354,13 @@ Experiencia
     margin-left: 30%;
     display: flex;
     justify-content: space-around;
-
-    transform: translateY(-5rem);
-
-    /* border: solid red 2px; */
+    transform: translateY(-10rem);
 }
 
 .cont-slider-exp .slideshow-container-exp .controllers .next,
 .cont-slider-exp .slideshow-container-exp .controllers .prev{
     color: var(--secundario);
     padding: 1.6rem;
-
     font-size: 1.8rem;
     transition: var(--transitions);
     border-radius: .3rem;
@@ -365,16 +377,19 @@ Experiencia
 
 
 .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
-    width: 20%;
-    height: 10rem;
-    margin-left: 15%;
+    width: 25%;
+    height: 20rem;
+    margin-left: 10%;
     transform: translateY(10rem);
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end;
+}
 
-    /* border: solid greenyellow 2px; */
+.cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo h4{
+    text-align: right;
 }
 
 .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo .boton{
@@ -406,29 +421,21 @@ Experiencia
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
-    /* border: solid grey 2px; */
 }
 
 .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen{
     max-height: 60vh;
     overflow: hidden;
-    
-    /* border: solid gold 2px; */
 }
 
 .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen-01{
     width: 30%;
     height: 100%;
-    
-    /* border: solid purple 2px; */
 }
 
 .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen-02{
     width: 60%;
     height: 100%;
-    
-    /* border: solid olivedrab 2px; */
 }
 
 /* --------------------
@@ -437,11 +444,12 @@ Nuestro equipo
 
 .container-equipo{
     width: 100vw;
-    background-color: var(--blanco);
+    background-color: none;
     box-shadow: var(--boxShadow);
     position: relative;
     z-index: 16;
     padding-bottom: 5rem;
+    padding-top: 0;
 
     /* border: solid red 2px; */
 }
