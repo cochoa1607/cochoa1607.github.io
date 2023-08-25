@@ -1736,9 +1736,9 @@ Tablet
 -------------------- */
 @media only screen and (max-width: 1599px) and (min-width: 1000px) {
 
-    body{
+    /* body{
         border: solid red 3px;
-    }
+    } */
 
     .contenedor-seccion{
         padding: 10rem 2rem 3rem 2rem !important;
@@ -1785,9 +1785,9 @@ Mobile
 -------------------- */
 @media only screen and (max-width: 999px) and (min-width: 1px) {
 
-    body{
+    /* body{
         border: solid blue 3px;
-    }
+    } */
 
     .contenedor-seccion{
         padding: 5rem 0 !important;

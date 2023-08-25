@@ -7,6 +7,10 @@ Banner
     transform: translateY(0);
 }
 
+.container-servicio{
+    padding-top: 0;
+}
+
 /* --------------------
 Resumen
 -------------------- */
@@ -63,6 +67,7 @@ Gerencia
 #gerencia{
     position: relative;
     z-index: 38;
+    padding-top: 0;
 }
 
 .container-servicio .gerencia .contenedor-imagenes{

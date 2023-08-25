@@ -166,7 +166,6 @@ main .container-servicios .servicios .cont-texto{
     padding: 2rem 0;
     width: 100%;
     min-width: none;
-    /* max-width: 120rem; */
     margin: auto;
     overflow: hidden;
 }
@@ -210,14 +209,14 @@ main .container-servicios .servicios .cont-texto p{
 
 .servicios .slide-content .cont-imagen{
     width: 100%;
-    height: 30rem;
+    height: auto;
     margin-bottom: 3rem;
     overflow: hidden;
 }
 
 .servicios .slide-content .cont-imagen .imagen{
     width: 100%;
-    height: 30rem;
+    height: 45vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
