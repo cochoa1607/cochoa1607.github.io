@@ -21,7 +21,7 @@ Resumen
     text-align: center;
     padding: 8rem 0;
     box-shadow: none;
-    background-color: var(--blanco);
+    background-color: var(--primario);
     box-shadow: var(--boxShadow);
     transform: translate(0);
     /* 
