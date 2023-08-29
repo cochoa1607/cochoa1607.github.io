@@ -469,3 +469,303 @@ function changeSlideSeg_003(n) {
 }
 
 showSlidesSeg_003();
+
+
+/* Sedes_001 */
+
+let slideIndexSed_001 = 0;
+
+function showSlidesSed_001() {
+    const slidesSed_001 = document.getElementsByClassName('slideSed-001');
+
+    for (let i = 0; i < slidesSed_001.length; i++) {
+        slidesSed_001[i].style.display = 'none';
+    }
+
+    slideIndexSed_001++;
+
+    if (slideIndexSed_001 > slidesSed_001.length) {
+        slideIndexSed_001 = 1;
+    }
+
+    slidesSed_001[slideIndexSed_001 - 1].style.display = 'block';
+
+    setTimeout(showSlidesSed_001, 6000);
+}
+
+function changeSlideSed_001(n) {
+    slideIndexSed_001 += n;
+    const slidesSed_001 = document.getElementsByClassName('slideSed-001');
+
+    if (slideIndexSed_001 > slidesSed_001.length) {
+        slideIndexSed_001 = 1;
+    } else if (slideIndexSed_001 < 1) {
+        slideIndexSed_001 = slidesSed_001.length;
+    }
+
+    for (let i = 0; i < slidesSed_001.length; i++) {
+        slidesSed_001[i].style.display = 'none';
+    }
+
+    slidesSed_001[slideIndexSed_001 - 1].style.display = 'block';
+}
+
+showSlidesSed_001();
+
+
+
+/* Hoteleria_001 */
+
+let slideIndexHot_001 = 0;
+
+function showSlidesHot_001() {
+    const slidesHot_001 = document.getElementsByClassName('slideHot-001');
+
+    for (let i = 0; i < slidesHot_001.length; i++) {
+        slidesHot_001[i].style.display = 'none';
+    }
+
+    slideIndexHot_001++;
+
+    if (slideIndexHot_001 > slidesHot_001.length) {
+        slideIndexHot_001 = 1;
+    }
+
+    slidesHot_001[slideIndexHot_001 - 1].style.display = 'block';
+
+    setTimeout(showSlidesHot_001, 6000);
+}
+
+function changeSlideHot_001(n) {
+    slideIndexHot_001 += n;
+    const slidesHot_001 = document.getElementsByClassName('slideHot-001');
+
+    if (slideIndexHot_001 > slidesHot_001.length) {
+        slideIndexHot_001 = 1;
+    } else if (slideIndexHot_001 < 1) {
+        slideIndexHot_001 = slidesHot_001.length;
+    }
+
+    for (let i = 0; i < slidesHot_001.length; i++) {
+        slidesHot_001[i].style.display = 'none';
+    }
+
+    slidesHot_001[slideIndexHot_001 - 1].style.display = 'block';
+}
+
+showSlidesHot_001();
+
+
+
+/* Hoteleria_002 */
+
+let slideIndexHot_002 = 0;
+
+function showSlidesHot_002() {
+    const slidesHot_002 = document.getElementsByClassName('slideHot-002');
+
+    for (let i = 0; i < slidesHot_002.length; i++) {
+        slidesHot_002[i].style.display = 'none';
+    }
+
+    slideIndexHot_002++;
+
+    if (slideIndexHot_002 > slidesHot_002.length) {
+        slideIndexHot_002 = 1;
+    }
+
+    slidesHot_002[slideIndexHot_002 - 1].style.display = 'block';
+
+    setTimeout(showSlidesHot_002, 6000);
+}
+
+function changeSlideHot_002(n) {
+    slideIndexHot_002 += n;
+    const slidesHot_002 = document.getElementsByClassName('slideHot-002');
+
+    if (slideIndexHot_002 > slidesHot_002.length) {
+        slideIndexHot_002 = 1;
+    } else if (slideIndexHot_002 < 1) {
+        slideIndexHot_002 = slidesHot_002.length;
+    }
+
+    for (let i = 0; i < slidesHot_002.length; i++) {
+        slidesHot_002[i].style.display = 'none';
+    }
+
+    slidesHot_002[slideIndexHot_002 - 1].style.display = 'block';
+}
+
+showSlidesHot_002();
+
+
+
+/* Hoteleria_003 */
+
+let slideIndexHot_003 = 0;
+
+function showSlidesHot_003() {
+    const slidesHot_003 = document.getElementsByClassName('slideHot-003');
+
+    for (let i = 0; i < slidesHot_003.length; i++) {
+        slidesHot_003[i].style.display = 'none';
+    }
+
+    slideIndexHot_003++;
+
+    if (slideIndexHot_003 > slidesHot_003.length) {
+        slideIndexHot_003 = 1;
+    }
+
+    slidesHot_003[slideIndexHot_003 - 1].style.display = 'block';
+
+    setTimeout(showSlidesHot_003, 6000);
+}
+
+function changeSlideHot_003(n) {
+    slideIndexHot_003 += n;
+    const slidesHot_003 = document.getElementsByClassName('slideHot-003');
+
+    if (slideIndexHot_003 > slidesHot_003.length) {
+        slideIndexHot_003 = 1;
+    } else if (slideIndexHot_003 < 1) {
+        slideIndexHot_003 = slidesHot_003.length;
+    }
+
+    for (let i = 0; i < slidesHot_003.length; i++) {
+        slidesHot_003[i].style.display = 'none';
+    }
+
+    slidesHot_003[slideIndexHot_003 - 1].style.display = 'block';
+}
+
+showSlidesHot_003();
+
+
+
+/* Otros_001 */
+
+let slideIndexOtr_001 = 0;
+
+function showSlidesOtr_001() {
+    const slidesOtr_001 = document.getElementsByClassName('slideOtr-001');
+
+    for (let i = 0; i < slidesOtr_001.length; i++) {
+        slidesOtr_001[i].style.display = 'none';
+    }
+
+    slideIndexOtr_001++;
+
+    if (slideIndexOtr_001 > slidesOtr_001.length) {
+        slideIndexOtr_001 = 1;
+    }
+
+    slidesOtr_001[slideIndexOtr_001 - 1].style.display = 'block';
+
+    setTimeout(showSlidesOtr_001, 6000);
+}
+
+function changeSlideOtr_001(n) {
+    slideIndexOtr_001 += n;
+    const slidesOtr_001 = document.getElementsByClassName('slideOtr-001');
+
+    if (slideIndexOtr_001 > slidesOtr_001.length) {
+        slideIndexOtr_001 = 1;
+    } else if (slideIndexOtr_001 < 1) {
+        slideIndexOtr_001 = slidesOtr_001.length;
+    }
+
+    for (let i = 0; i < slidesOtr_001.length; i++) {
+        slidesOtr_001[i].style.display = 'none';
+    }
+
+    slidesOtr_001[slideIndexOtr_001 - 1].style.display = 'block';
+}
+
+showSlidesOtr_001();
+
+
+
+/* Otros_002 */
+
+let slideIndexOtr_002 = 0;
+
+function showSlidesOtr_002() {
+    const slidesOtr_002 = document.getElementsByClassName('slideOtr-002');
+
+    for (let i = 0; i < slidesOtr_002.length; i++) {
+        slidesOtr_002[i].style.display = 'none';
+    }
+
+    slideIndexOtr_002++;
+
+    if (slideIndexOtr_002 > slidesOtr_002.length) {
+        slideIndexOtr_002 = 1;
+    }
+
+    slidesOtr_002[slideIndexOtr_002 - 1].style.display = 'block';
+
+    setTimeout(showSlidesOtr_002, 6000);
+}
+
+function changeSlideOtr_002(n) {
+    slideIndexOtr_002 += n;
+    const slidesOtr_002 = document.getElementsByClassName('slideOtr-002');
+
+    if (slideIndexOtr_002 > slidesOtr_002.length) {
+        slideIndexOtr_002 = 1;
+    } else if (slideIndexOtr_002 < 1) {
+        slideIndexOtr_002 = slidesOtr_002.length;
+    }
+
+    for (let i = 0; i < slidesOtr_002.length; i++) {
+        slidesOtr_002[i].style.display = 'none';
+    }
+
+    slidesOtr_002[slideIndexOtr_002 - 1].style.display = 'block';
+}
+
+showSlidesOtr_002();
+
+
+
+/* Otros_003 */
+
+let slideIndexOtr_003 = 0;
+
+function showSlidesOtr_003() {
+    const slidesOtr_003 = document.getElementsByClassName('slideOtr-003');
+
+    for (let i = 0; i < slidesOtr_003.length; i++) {
+        slidesOtr_003[i].style.display = 'none';
+    }
+
+    slideIndexOtr_003++;
+
+    if (slideIndexOtr_003 > slidesOtr_003.length) {
+        slideIndexOtr_003 = 1;
+    }
+
+    slidesOtr_003[slideIndexOtr_003 - 1].style.display = 'block';
+
+    setTimeout(showSlidesOtr_003, 6000);
+}
+
+function changeSlideOtr_003(n) {
+    slideIndexOtr_003 += n;
+    const slidesOtr_003 = document.getElementsByClassName('slideOtr-003');
+
+    if (slideIndexOtr_003 > slidesOtr_003.length) {
+        slideIndexOtr_003 = 1;
+    } else if (slideIndexOtr_003 < 1) {
+        slideIndexOtr_003 = slidesOtr_003.length;
+    }
+
+    for (let i = 0; i < slidesOtr_003.length; i++) {
+        slidesOtr_003[i].style.display = 'none';
+    }
+
+    slidesOtr_003[slideIndexOtr_003 - 1].style.display = 'block';
+}
+
+showSlidesOtr_003();

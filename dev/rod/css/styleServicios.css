@@ -24,11 +24,6 @@ Resumen
     background-color: var(--primario);
     box-shadow: var(--boxShadow);
     transform: translate(0);
-    /* 
-    padding: 6rem 10%;
-    position: relative; 
-    z-index: 40;
-    */
 }
 
 .container-resumen p{
@@ -192,13 +187,13 @@ Gerencia
 
 .container-servicio .gerencia .contenedor-imagenes{
     width: 100%;
-    height: 30rem;
+    height: 42rem;
     display: flex;
     margin-bottom: 2rem;
 }
 
 .container-servicio .gerencia .active-contenedor-texto .contenedor-imagenes{
-    height: 15rem;
+    height: 25rem;
 }
 
 .container-servicio .gerencia .contenedor-imagenes .cont-imagen-fija .imagen-fija{
@@ -214,13 +209,13 @@ Gerencia
 }
 
 .gerencia .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/inicio_001.png);
+    background-image: url(../img/servicios_gerencia_F.png);
 }
 
 .container-servicio .gerencia .contenedor-imagenes .cont-imagen-slide{
     width: 100%;
-    max-width: 40rem;
-    min-width: 40rem;
+    max-width: 52rem;
+    min-width: 42rem;
 }
 
 /* -- Slider -- */
@@ -240,15 +235,15 @@ Gerencia
 
 .gerencia .slide {
     display: none;
-    height: 30rem;
+    height: 42rem;
     overflow: hidden;
 }
 
 .gerencia .slide-content {
     background-color: none;
     margin: auto;
-    width: 30rem;
-    height: 30rem;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -265,15 +260,23 @@ Gerencia
 }
 
 .gerencia .slide-content .img-uno{
-    background-image: url(../img/servicios_gerencia_s01.png);
+    background-image: url(../img/servicios_gerencia_001.png);
 }
 
 .gerencia .slide-content .img-dos{
-    background-image: url(../img/inicio_equipo_002.png);
+    background-image: url(../img/servicios_gerencia_002.png);
 }
 
 .gerencia .slide-content .img-tres{
-    background-image: url(../img/inicio_equipo_003.png);
+    background-image: url(../img/servicios_gerencia_003.png);
+}
+
+.gerencia .slide-content .img-cuatro{
+    background-image: url(../img/servicios_gerencia_004.png);
+}
+
+.gerencia .slide-content .img-cinco{
+    background-image: url(../img/servicios_gerencia_005.png);
 }
 
 .gerencia .prev,
@@ -450,14 +453,14 @@ Auditoria
 
 .container-servicio .auditoria .active-contenedor-texto-audit .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
     display: flex;
     margin-bottom: 2rem;
 }
 
 .auditoria .active-contenedor-texto-audit .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
 }
 
 .container-servicio .auditoria .contenedor-imagenes .cont-imagen-fija .imagen-fija{
@@ -473,13 +476,13 @@ Auditoria
 }
 
 .auditoria .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/header_servicios.png);
+    background-image: url(../img/servicios_auditoria_F.png);
 }
 
 .container-servicio .auditoria .contenedor-texto-audit .contenedor-imagenes .cont-imagen-slide{
     width: 100%;
-    max-width: 40rem;
-    min-width: 40rem;
+    max-width: 52rem;
+    min-width: 42rem;
     /* border: solid purple 6px; */
 }
 
@@ -500,15 +503,15 @@ Auditoria
 
 .auditoria .slideAudit {
     display: none;
-    height: 30rem;
+    height: 42rem;
     overflow: hidden;
 }
 
 .auditoria .slide-content {
     background-color: none;
     margin: auto;
-    width: 30rem;
-    height: 30rem;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -525,15 +528,23 @@ Auditoria
 }
 
 .auditoria .slide-content .img-uno{
-    background-image: url(../img/inicio_equipo_001.png);
+    background-image: url(../img/servicios_auditoria_001.png);
 }
 
 .auditoria .slide-content .img-dos{
-    background-image: url(../img/inicio_equipo_002.png);
+    background-image: url(../img/servicios_auditoria_002.png);
 }
 
 .auditoria .slide-content .img-tres{
-    background-image: url(../img/inicio_equipo_003.png);
+    background-image: url(../img/servicios_auditoria_003.png);
+}
+
+.auditoria .slide-content .img-cuatro{
+    background-image: url(../img/servicios_auditoria_004.png);
+}
+
+.auditoria .slide-content .img-cinco{
+    background-image: url(../img/servicios_auditoria_005.png);
 }
 
 .auditoria .prev,
@@ -709,14 +720,14 @@ Revision
 
 .container-servicio .revision .active-contenedor-texto-rev .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
     display: flex;
     margin-bottom: 2rem;
 }
 
 .revision .active-contenedor-texto-rev .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
 }
 
 .container-servicio .revision .contenedor-imagenes .cont-imagen-fija .imagen-fija{
@@ -732,13 +743,13 @@ Revision
 }
 
 .revision .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/inicio_001.png);
+    background-image: url(../img/servicios_revision_F.png);
 }
 
 .container-servicio .revision .contenedor-texto-rev .contenedor-imagenes .cont-imagen-slide{
     width: 100%;
-    max-width: 40rem;
-    min-width: 40rem;
+    max-width: 52rem;
+    min-width: 42rem;
     /* border: solid purple 6px; */
 }
 
@@ -759,15 +770,15 @@ Revision
 
 .revision .slideRev {
     display: none;
-    height: 30rem;
+    height: 42rem;
     overflow: hidden;
 }
 
 .revision .slide-content {
     background-color: none;
     margin: auto;
-    width: 30rem;
-    height: 30rem;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -784,15 +795,15 @@ Revision
 }
 
 .revision .slide-content .img-uno{
-    background-image: url(../img/inicio_equipo_001.png);
+    background-image: url(../img/servicios_revision_001.png);
 }
 
 .revision .slide-content .img-dos{
-    background-image: url(../img/inicio_equipo_002.png);
+    background-image: url(../img/servicios_revision_002.png);
 }
 
 .revision .slide-content .img-tres{
-    background-image: url(../img/inicio_equipo_003.png);
+    background-image: url(../img/servicios_revision_003.png);
 }
 
 .revision .prev,
@@ -970,14 +981,14 @@ Levantamiento
 
 .container-servicio .levantamiento .active-contenedor-texto-levan .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
     display: flex;
     margin-bottom: 2rem;
 }
 
 .levantamiento .active-contenedor-texto-levan .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
 }
 
 .container-servicio .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
@@ -993,13 +1004,13 @@ Levantamiento
 }
 
 .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/inicio_001.png);
+    background-image: url(../img/servicios_levantamiento_F.png);
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan .contenedor-imagenes .cont-imagen-slide{
     width: 100%;
-    max-width: 40rem;
-    min-width: 40rem;
+    max-width: 52rem;
+    min-width: 42rem;
     /* border: solid purple 6px; */
 }
 
@@ -1020,15 +1031,15 @@ Levantamiento
 
 .levantamiento .slideRev {
     display: none;
-    height: 30rem;
+    height: 42rem;
     overflow: hidden;
 }
 
 .levantamiento .slide-content {
     background-color: none;
     margin: auto;
-    width: 30rem;
-    height: 30rem;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -1045,15 +1056,19 @@ Levantamiento
 }
 
 .levantamiento .slide-content .img-uno{
-    background-image: url(../img/inicio_equipo_001.png);
+    background-image: url(../img/servicios_levantamiento_001.png);
 }
 
 .levantamiento .slide-content .img-dos{
-    background-image: url(../img/inicio_equipo_002.png);
+    background-image: url(../img/servicios_levantamiento_002.png);
 }
 
 .levantamiento .slide-content .img-tres{
-    background-image: url(../img/inicio_equipo_003.png);
+    background-image: url(../img/servicios_levantamiento_003.png);
+}
+
+.levantamiento .slide-content .img-cuatro{
+    background-image: url(../img/servicios_levantamiento_004.png);
 }
 
 .levantamiento .prev,
@@ -1230,14 +1245,14 @@ Analisis
 
 .container-servicio .analisis .active-contenedor-texto-analis .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
     display: flex;
     margin-bottom: 2rem;
 }
 
 .analisis .active-contenedor-texto-analis .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
 }
 
 .container-servicio .analisis .contenedor-imagenes .cont-imagen-fija .imagen-fija{
@@ -1253,13 +1268,13 @@ Analisis
 }
 
 .analisis .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/inicio_001.png);
+    background-image: url(../img/servicios_analisis_F.png);
 }
 
 .container-servicio .analisis .contenedor-texto-analis .contenedor-imagenes .cont-imagen-slide{
     width: 100%;
-    max-width: 40rem;
-    min-width: 40rem;
+    max-width: 52rem;
+    min-width: 42rem;
     /* border: solid purple 6px; */
 }
 
@@ -1280,15 +1295,15 @@ Analisis
 
 .analisis .slideAnalis {
     display: none;
-    height: 30rem;
+    height: 42rem;
     overflow: hidden;
 }
 
 .analisis .slide-content {
     background-color: none;
     margin: auto;
-    width: 30rem;
-    height: 30rem;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -1305,15 +1320,19 @@ Analisis
 }
 
 .analisis .slide-content .img-uno{
-    background-image: url(../img/inicio_equipo_001.png);
+    background-image: url(../img/servicios_analisis_001.png);
 }
 
 .analisis .slide-content .img-dos{
-    background-image: url(../img/inicio_equipo_002.png);
+    background-image: url(../img/servicios_analisis_002.png);
 }
 
 .analisis .slide-content .img-tres{
-    background-image: url(../img/inicio_equipo_003.png);
+    background-image: url(../img/servicios_analisis_003.png);
+}
+
+.analisis .slide-content .img-cuatro{
+    background-image: url(../img/servicios_analisis_004.png);
 }
 
 .analisis .prev,
@@ -1491,14 +1510,14 @@ Due Diligence
 
 .container-servicio .diligence .active-contenedor-texto-dilig .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
     display: flex;
     margin-bottom: 2rem;
 }
 
 .diligence .active-contenedor-texto-dilig .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
 }
 
 .container-servicio .diligence .contenedor-imagenes .cont-imagen-fija .imagen-fija{
@@ -1514,13 +1533,13 @@ Due Diligence
 }
 
 .diligence .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/inicio_001.png);
+    background-image: url(../img/servicios_diligence_F.png);
 }
 
 .container-servicio .diligence .contenedor-texto-dilig .contenedor-imagenes .cont-imagen-slide{
     width: 100%;
-    max-width: 40rem;
-    min-width: 40rem;
+    max-width: 52rem;
+    min-width: 42rem;
     /* border: solid purple 6px; */
 }
 
@@ -1541,15 +1560,15 @@ Due Diligence
 
 .diligence .slideDilig {
     display: none;
-    height: 30rem;
+    height: 42rem;
     overflow: hidden;
 }
 
 .diligence .slide-content {
     background-color: none;
     margin: auto;
-    width: 30rem;
-    height: 30rem;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -1566,15 +1585,23 @@ Due Diligence
 }
 
 .diligence .slide-content .img-uno{
-    background-image: url(../img/inicio_equipo_001.png);
+    background-image: url(../img/servicios_diligence_001.png);
 }
 
 .diligence .slide-content .img-dos{
-    background-image: url(../img/inicio_equipo_002.png);
+    background-image: url(../img/servicios_diligence_002.png);
 }
 
 .diligence .slide-content .img-tres{
-    background-image: url(../img/inicio_equipo_003.png);
+    background-image: url(../img/servicios_diligence_003.png);
+}
+
+.diligence .slide-content .img-cuatro{
+    background-image: url(../img/servicios_diligence_004.png);
+}
+
+.diligence .slide-content .img-cinco{
+    background-image: url(../img/servicios_diligence_005.png);
 }
 
 .diligence .prev,
@@ -1752,14 +1779,14 @@ Gestion
 
 .container-servicio .gestion .active-contenedor-texto-gest .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
     display: flex;
     margin-bottom: 2rem;
 }
 
 .gestion .active-contenedor-texto-gest .contenedor-imagenes{
     width: 100%;
-    height: 15rem;
+    height: 25rem;
 }
 
 .container-servicio .gestion .contenedor-imagenes .cont-imagen-fija .imagen-fija{
@@ -1775,13 +1802,13 @@ Gestion
 }
 
 .gestion .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/inicio_001.png);
+    background-image: url(../img/servicios_gestion_F.png);
 }
 
 .container-servicio .gestion .contenedor-texto-gest .contenedor-imagenes .cont-imagen-slide{
     width: 100%;
-    max-width: 40rem;
-    min-width: 40rem;
+    max-width: 52rem;
+    min-width: 42rem;
     /* border: solid purple 6px; */
 }
 
@@ -1802,15 +1829,15 @@ Gestion
 
 .gestion .slideGest {
     display: none;
-    height: 30rem;
+    height: 42rem;
     overflow: hidden;
 }
 
 .gestion .slide-content {
     background-color: none;
     margin: auto;
-    width: 30rem;
-    height: 30rem;
+    width: 42rem;
+    height: 42rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -1827,15 +1854,11 @@ Gestion
 }
 
 .gestion .slide-content .img-uno{
-    background-image: url(../img/inicio_equipo_001.png);
+    background-image: url(../img/servicios_gestion_001.png);
 }
 
 .gestion .slide-content .img-dos{
-    background-image: url(../img/inicio_equipo_002.png);
-}
-
-.gestion .slide-content .img-tres{
-    background-image: url(../img/inicio_equipo_003.png);
+    background-image: url(../img/servicios_gestion_002.png);
 }
 
 .gestion .prev,

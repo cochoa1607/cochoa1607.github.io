@@ -1250,144 +1250,138 @@ seguridad_003
 
 
 
+/* ----------
+SEDES
+---------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --------------------
-Sedes
--------------------- */
+/* Duplican */
 
 #sedes-001,
 #sedes-003{
     background-color: var(--gris);
-    position: relative;
 }
 
 #sedes-002{
     background-color: var(--blanco);
-    position: relative;
 }
 
-#sedes-001{
-    z-index: 18;
-}
-
-#sedes-002{
-    z-index: 0;
-}
-
-#sedes-003{
-    z-index: 0;
-}
-
-.container-servicio .sedes-001 .contenedor-imagenes,
-.container-servicio .sedes-002 .contenedor-imagenes,
-.container-servicio .sedes-003 .contenedor-imagenes{
-    width: 94%;
-    height: 30rem;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.sedes-001 .contenedor-all,
+.sedes-002 .contenedor-all,
+.sedes-003 .contenedor-all{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001,
-.container-servicio .sedes-002 .contenedor-texto-sed-002,
-.container-servicio .sedes-003 .contenedor-texto-sed-003{
-    width: 94%;
-    margin-top: 1rem;
-    margin-left: 3%;
-}
-
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-collapsed,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-collapsed,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-collapsed{
-    width: 60%;
-    min-width: 60ch;
-    max-width: 90ch;
-    margin: 1rem auto;
-    text-align: center;
-}
-
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed{
+.sedes-001 .contenedor-all .contenedor-imagenes,
+.sedes-002 .contenedor-all .contenedor-imagenes,
+.sedes-003 .contenedor-all .contenedor-imagenes{
     width: 100%;
+    height: 70vh;
+    padding: 4rem 1rem;
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .texto,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .texto,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .texto{
-    text-align: center;
-    width: 60%;
-    min-width: 60ch;
-    max-width: 90ch;
-    max-width: 90ch;
-    margin: 1rem auto 2rem auto;
+.sedes-001 .contenedor-all .contenedor-texto,
+.sedes-002 .contenedor-all .contenedor-texto,
+.sedes-003 .contenedor-all .contenedor-texto{
+    width: 61rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas{
+/* -- Texto -- */
+
+.sedes-001 .contenedor-all .contenedor-texto .cajas,
+.sedes-002 .contenedor-all .contenedor-texto .cajas,
+.sedes-003 .contenedor-all .contenedor-texto .cajas{
     width: 100%;
-    margin: 0 auto 1rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas h4,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas h4,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas h4{
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grisDos);
+    margin: 0 .5rem .5rem .5rem;
+    padding: .3rem;
+}
+
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono{
+    width: 100%;
+    height: 5rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul{
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
+    width: 100%;
+    height: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul{
     list-style-position: inside;
     text-indent: -2rem;
+    width: 100%;
     height: 100%;
+    padding-left: .5rem;
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul li{
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul li{
     list-style-position: inside;
     text-indent: -2.1rem;
-    padding: 1rem 3.2rem;
-    font-weight: 300;
+    padding: .4rem 2.1rem;
+    font-weight: 400;
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul li span{
-    list-style-position: inside;
-    font-weight: 500;
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja span,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja span,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja span{
+    font-weight: 600;
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul li a{
+.sedes-001 .contenedor-all .contenedor-texto .cajas h4,
+.sedes-002 .contenedor-all .contenedor-texto .cajas h4,
+.sedes-003 .contenedor-all .contenedor-texto .cajas h4{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja a,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja a,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja a{
     text-decoration: none;
-    /* border: solid purple 2px; */
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul li a i{
-    font-size: 2rem;
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja a i,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja a i,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja a i{
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--negro);
     text-decoration: none;
@@ -1397,312 +1391,350 @@ Sedes
     transition: var(--transitions);
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed .cajas .caja ul li a i:hover{
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja a i:hover{
     transform: translateX(.5rem);
     font-weight: 700;
     color: var(--primario);
-    /* border: solid red; */
 }
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .boton .boton-masInfo,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .boton .boton-masInfo,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .boton .boton-masInfo{
-    transform: translateX(-2rem);
-}
+/* -- Slider -- */
 
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .boton .boton-masInfo::after,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .boton .boton-masInfo::after,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .boton .boton-masInfo::after{
-    font-family: "Font Awesome 5 Free";
-    content: "\f107";
-    padding-left: .5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.container-servicio .sedes-001 .contenedor-texto-sed-001 .boton .boton-masInfo::before,
-.container-servicio .sedes-002 .contenedor-texto-sed-002 .boton .boton-masInfo::before,
-.container-servicio .sedes-003 .contenedor-texto-sed-003 .boton .boton-masInfo::before{
-    content: "Más información ";
-}
-
-.sedes-001 .contenedor-texto-sed-001 .texto-noCollapsed,
-.sedes-002 .contenedor-texto-sed-002 .texto-noCollapsed,
-.sedes-003 .contenedor-texto-sed-003 .texto-noCollapsed{
-    display: none;
-    transition: var(--transitions);
-}
-
-.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed,
-.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed,
-.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed{
-    display: flex;
-    transition: var(--transitions);
-    flex-direction: column;
-}
-
-.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed p,
-.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed p,
-.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed p{
-    margin-top: 1rem;
-}
-
-.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas,
-.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas,
-.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .caja,
-.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .caja,
-.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .caja{
-    margin: 1rem;
-    width: 30%;
-    background-color: var(--grisDos);
-}
-
-.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .caja-dos,
-.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .caja-dos,
-.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .caja-dos{
-    margin: 1rem;
-    width: 47%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: var(--grisDos);
-    /* border: solid green 2px; */
-}
-
-.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .caja-dos img,
-.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .caja-dos img,
-.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .caja-dos img{
-    width: 20%;
-    max-width: 10rem;
-    max-height: 10rem;
-    margin: auto;
-    /* border: solid blue 2px; */
-}
-
-.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .caja-dos ul{
-    margin: 0;
+.sedes-001 .cont-imagen-slide,
+.sedes-002 .cont-imagen-slide,
+.sedes-003 .cont-imagen-slide{
     width: 100%;
-    margin-left: 1rem;
-    background-color: var(--grisDos);
-}
-
-.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo{
-    margin: 0;
-    list-style: none;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 500 !important;
-}
-
-.sedes-001 .active-contenedor-texto-sed-001 .texto-noCollapsed .caja_cajas .vacio,
-.sedes-002 .active-contenedor-texto-sed-002 .texto-noCollapsed .caja_cajas .vacio,
-.sedes-003 .active-contenedor-texto-sed-003 .texto-noCollapsed .caja_cajas .vacio{
-    background-color: var(--gris);
-}
-
-.container-servicio .sedes-001 .active-contenedor-texto-sed-001 .boton .boton-masInfo::after,
-.container-servicio .sedes-002 .active-contenedor-texto-sed-002 .boton .boton-masInfo::after,
-.container-servicio .sedes-003 .active-contenedor-texto-sed-003 .boton .boton-masInfo::after{
-    font-family: "Font Awesome 5 Free";
-    content: "\f106";
-    padding-left: .5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.container-servicio .sedes-001 .active-contenedor-texto-sed-001 .boton .boton-masInfo::before,
-.container-servicio .sedes-002 .active-contenedor-texto-sed-002 .boton .boton-masInfo::before,
-.container-servicio .sedes-003 .active-contenedor-texto-sed-003 .boton .boton-masInfo::before{
-    content: "Menos información ";
-}
-
-.container-servicio .sedes-001 .active-contenedor-texto-sed-001,
-.container-servicio .sedes-002 .active-contenedor-texto-sed-002,
-.container-servicio .sedes-003 .active-contenedor-texto-sed-003{
-    content: "Menos información ";
-}
-
-.container-servicio .sedes-001 .active-contenedor-texto-sed-001 .contenedor-imagenes,
-.container-servicio .sedes-002 .active-contenedor-texto-sed-002 .contenedor-imagenes,
-.container-servicio .sedes-003 .active-contenedor-texto-sed-003 .contenedor-imagenes{
-    height: 15rem;
-}
-
-.container-servicio .sedes-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .sedes-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .sedes-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
     height: 100%;
 }
 
-.container-servicio .sedes-001 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .sedes-002 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .sedes-003 .contenedor-imagenes .cont-imagen-fija{
+.sedes-001 .slideshow-container,
+.sedes-002 .slideshow-container,
+.sedes-003 .slideshow-container{
     width: 100%;
-    margin-right: 2rem;
+    height: 100%;
+    position: relative;
+    max-width: none;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.sedes-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.sedes-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.sedes-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/inicio_001.png);
+.sedes-001 .slideSed-001{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
 
+/* Imagen fija */
+.sedes-002 .slideSed-002,
+.sedes-003 .slideSed-003{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Imagen fija */
+.sedes-002 .slide-content,
+.sedes-003 .slide-content{
+background-color: none;
+margin: auto;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+justify-content: space-between;
+overflow: hidden;
+}
+
+.sedes-001 .slide-content{
+    background-color: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Imagen fija */
+.sedes-002 .slide-content .imagen,
+.sedes-003 .slide-content .imagen{
+    display: flex;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.sedes-001 .slide-content .imagen{
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.sedes-001 .prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: var(--transitions);
+    border-radius: .3rem;
+    color: var(--secundario);
+}
+
+.sedes-001 .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: var(--transitions);
+    border-radius: .3rem;
+    color: var(--secundario);
+}
+
+.sedes-001 .next{
+    right: 0;
+}
+
+.sedes-001 .prev:hover{
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+.sedes-001 .next:hover{
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+.sedes-001 .fade{
+    animation: fade 6s linear infinite;
 }
 
 /* --------------------
-Hoteleria
+sedes_001
 -------------------- */
+
+#sedes-001{
+    z-index: 898;
+}
+
+.sedes-001 .slide-content .img-uno{
+    background-image: url(../img/experiencia_sedes_01_001.png);
+}
+
+.sedes-001 .slide-content .img-dos{
+    background-image: url(../img/experiencia_sedes_01_002.png);
+}
+
+.sedes-001 .slide-content .img-tres{
+    background-image: url(../img/experiencia_sedes_01_003.png);
+}
+
+.sedes-001 .slide-content .img-cuatro{
+    background-image: url(../img/experiencia_sedes_01_004.png);
+}
+
+.sedes-001 .slide-content .img-cinco{
+    background-image: url(../img/experiencia_sedes_01_005.png);
+}
+
+.sedes-001 .slide-content .img-seis{
+    background-image: url(../img/experiencia_sedes_01_006.png);
+}
+
+/* --------------------
+sedes_002
+-------------------- */
+
+#sedes-002{
+    z-index: 896;
+}
+
+.sedes-002 .slide-content .img-uno{
+    background-image: url(../img/experiencia_seguridad_vistaRestringida.png);
+}
+
+/* --------------------
+sedes_003
+-------------------- */
+
+#sedes-003{
+    z-index: 894;
+}
+
+.sedes-003 .slide-content .img-uno{
+    background-image: url(../img/experiencia_sedes_03_001.png);
+}
+
+
+
+
+/* ----------
+HOTELERÍA
+---------- */
+
+/* Duplican */
 
 #hoteleria-001,
 #hoteleria-003{
     background-color: var(--gris);
-    position: relative;
 }
 
 #hoteleria-002,
 #hoteleria-004{
     background-color: var(--blanco);
-    position: relative;
 }
 
-#hoteleria-001{
-    z-index: 18;
-}
-
-#hoteleria-002{
-    z-index: 0;
-}
-
-#hoteleria-003{
-    z-index: 0;
-}
-
-#hoteleria-004{
-    z-index: 0;
-}
-
-.container-servicio .hoteleria-001 .contenedor-imagenes,
-.container-servicio .hoteleria-002 .contenedor-imagenes,
-.container-servicio .hoteleria-004 .contenedor-imagenes,
-.container-servicio .hoteleria-003 .contenedor-imagenes{
-    width: 94%;
-    height: 30rem;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.hoteleria-001 .contenedor-all,
+.hoteleria-002 .contenedor-all,
+.hoteleria-003 .contenedor-all,
+.hoteleria-004 .contenedor-all{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003{
-    width: 94%;
-    margin-top: 1rem;
-    margin-left: 3%;
-}
-
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-collapsed,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-collapsed,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-collapsed,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-collapsed{
-    width: 60%;
-    min-width: 60ch;
-    max-width: 90ch;
-    margin: 1rem auto;
-    text-align: center;
-}
-
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed{
+.hoteleria-001 .contenedor-all .contenedor-imagenes,
+.hoteleria-002 .contenedor-all .contenedor-imagenes,
+.hoteleria-003 .contenedor-all .contenedor-imagenes,
+.hoteleria-004 .contenedor-all .contenedor-imagenes{
     width: 100%;
+    height: 70vh;
+    padding: 4rem 1rem;
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .texto,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .texto,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .texto,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .texto{
-    text-align: center;
-    width: 60%;
-    min-width: 60ch;
-    max-width: 90ch;
-    max-width: 90ch;
-    margin: 1rem auto 2rem auto;
+.hoteleria-001 .contenedor-all .contenedor-texto,
+.hoteleria-002 .contenedor-all .contenedor-texto,
+.hoteleria-003 .contenedor-all .contenedor-texto,
+.hoteleria-004 .contenedor-all .contenedor-texto{
+    width: 61rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas{
+/* -- Texto -- */
+
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas{
     width: 100%;
-    margin: 0 auto 1rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas h4,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas h4,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas h4,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas h4{
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grisDos);
+    margin: 0 .5rem .5rem .5rem;
+    padding: .3rem;
+}
+
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja-dos .icono{
+    width: 100%;
+    height: 5rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul{
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
+    width: 100%;
+    height: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja-dos ul{
     list-style-position: inside;
     text-indent: -2rem;
+    width: 100%;
     height: 100%;
+    padding-left: .5rem;
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul li{
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja-dos ul li{
     list-style-position: inside;
     text-indent: -2.1rem;
-    padding: 1rem 3.2rem;
-    font-weight: 300;
+    padding: .4rem 2.1rem;
+    font-weight: 400;
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul li span{
-    list-style-position: inside;
-    font-weight: 500;
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja span,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja span,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja span,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja span{
+    font-weight: 600;
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul li a{
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas h4,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas h4,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas h4,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas h4{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja a,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja a,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja a,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja a{
     text-decoration: none;
-    /* border: solid purple 2px; */
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul li a i{
-    font-size: 2rem;
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja a i,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja a i,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja a i,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja a i{
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--negro);
     text-decoration: none;
@@ -1712,316 +1744,369 @@ Hoteleria
     transition: var(--transitions);
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed .cajas .caja ul li a i:hover{
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja a i:hover{
     transform: translateX(.5rem);
     font-weight: 700;
     color: var(--primario);
-    /* border: solid red; */
 }
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .boton .boton-masInfo,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .boton .boton-masInfo,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .boton .boton-masInfo,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .boton .boton-masInfo{
-    transform: translateX(-2rem);
-}
+/* -- Slider -- */
 
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .boton .boton-masInfo::after,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .boton .boton-masInfo::after,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .boton .boton-masInfo::after,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .boton .boton-masInfo::after{
-    font-family: "Font Awesome 5 Free";
-    content: "\f107";
-    padding-left: .5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.container-servicio .hoteleria-001 .contenedor-texto-hot-001 .boton .boton-masInfo::before,
-.container-servicio .hoteleria-002 .contenedor-texto-hot-002 .boton .boton-masInfo::before,
-.container-servicio .hoteleria-004 .contenedor-texto-hot-004 .boton .boton-masInfo::before,
-.container-servicio .hoteleria-003 .contenedor-texto-hot-003 .boton .boton-masInfo::before{
-    content: "Más información ";
-}
-
-.hoteleria-001 .contenedor-texto-hot-001 .texto-noCollapsed,
-.hoteleria-002 .contenedor-texto-hot-002 .texto-noCollapsed,
-.hoteleria-004 .contenedor-texto-hot-004 .texto-noCollapsed,
-.hoteleria-003 .contenedor-texto-hot-003 .texto-noCollapsed{
-    display: none;
-    transition: var(--transitions);
-}
-
-.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed,
-.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed,
-.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed,
-.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed{
-    display: flex;
-    transition: var(--transitions);
-    flex-direction: column;
-}
-
-.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed p,
-.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed p,
-.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed p,
-.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed p{
-    margin-top: 1rem;
-}
-
-.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas,
-.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas,
-.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas,
-.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .caja,
-.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .caja,
-.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .caja,
-.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .caja{
-    margin: 1rem;
-    width: 30%;
-    background-color: var(--grisDos);
-}
-
-.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .caja-dos,
-.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .caja-dos,
-.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .caja-dos,
-.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .caja-dos{
-    margin: 1rem;
-    width: 47%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: var(--grisDos);
-    /* border: solid green 2px; */
-}
-
-.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .caja-dos img,
-.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .caja-dos img,
-.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .caja-dos img,
-.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .caja-dos img{
-    width: 20%;
-    max-width: 10rem;
-    max-height: 10rem;
-    margin: auto;
-    /* border: solid blue 2px; */
-}
-
-.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .caja-dos ul{
-    margin: 0;
+.hoteleria-001 .cont-imagen-slide,
+.hoteleria-002 .cont-imagen-slide,
+.hoteleria-003 .cont-imagen-slide,
+.hoteleria-004 .cont-imagen-slide{
     width: 100%;
-    margin-left: 1rem;
-    background-color: var(--grisDos);
-}
-
-.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo{
-    margin: 0;
-    list-style: none;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 500 !important;
-}
-
-.hoteleria-001 .active-contenedor-texto-hot-001 .texto-noCollapsed .caja_cajas .vacio,
-.hoteleria-002 .active-contenedor-texto-hot-002 .texto-noCollapsed .caja_cajas .vacio,
-.hoteleria-004 .active-contenedor-texto-hot-004 .texto-noCollapsed .caja_cajas .vacio,
-.hoteleria-003 .active-contenedor-texto-hot-003 .texto-noCollapsed .caja_cajas .vacio{
-    background-color: var(--gris);
-}
-
-.container-servicio .hoteleria-001 .active-contenedor-texto-hot-001 .boton .boton-masInfo::after,
-.container-servicio .hoteleria-002 .active-contenedor-texto-hot-002 .boton .boton-masInfo::after,
-.container-servicio .hoteleria-004 .active-contenedor-texto-hot-004 .boton .boton-masInfo::after,
-.container-servicio .hoteleria-003 .active-contenedor-texto-hot-003 .boton .boton-masInfo::after{
-    font-family: "Font Awesome 5 Free";
-    content: "\f106";
-    padding-left: .5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.container-servicio .hoteleria-001 .active-contenedor-texto-hot-001 .boton .boton-masInfo::before,
-.container-servicio .hoteleria-002 .active-contenedor-texto-hot-002 .boton .boton-masInfo::before,
-.container-servicio .hoteleria-004 .active-contenedor-texto-hot-004 .boton .boton-masInfo::before,
-.container-servicio .hoteleria-003 .active-contenedor-texto-hot-003 .boton .boton-masInfo::before{
-    content: "Menos información ";
-}
-
-.container-servicio .hoteleria-001 .active-contenedor-texto-hot-001,
-.container-servicio .hoteleria-002 .active-contenedor-texto-hot-002,
-.container-servicio .hoteleria-004 .active-contenedor-texto-hot-004,
-.container-servicio .hoteleria-003 .active-contenedor-texto-hot-003{
-    content: "Menos información ";
-}
-
-.container-servicio .hoteleria-001 .active-contenedor-texto-hot-001 .contenedor-imagenes,
-.container-servicio .hoteleria-002 .active-contenedor-texto-hot-002 .contenedor-imagenes,
-.container-servicio .hoteleria-004 .active-contenedor-texto-hot-004 .contenedor-imagenes,
-.container-servicio .hoteleria-003 .active-contenedor-texto-hot-003 .contenedor-imagenes{
-    height: 15rem;
-}
-
-.container-servicio .hoteleria-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .hoteleria-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .hoteleria-004 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .hoteleria-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
     height: 100%;
 }
 
-.container-servicio .hoteleria-001 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .hoteleria-002 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .hoteleria-004 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .hoteleria-003 .contenedor-imagenes .cont-imagen-fija{
+.hoteleria-001 .slideshow-container,
+.hoteleria-002 .slideshow-container,
+.hoteleria-003 .slideshow-container,
+.hoteleria-004 .slideshow-container{
     width: 100%;
-    margin-right: 4rem;
+    height: 100%;
+    position: relative;
+    max-width: none;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.hoteleria-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.hoteleria-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.hoteleria-004 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.hoteleria-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/inicio_001.png);
+.hoteleria-001 .slideHot-001,
+.hoteleria-002 .slideHot-002,
+.hoteleria-003 .slideHot-003{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 
+/* Imagen fija */
+.hoteleria-004 .slideHot-004{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Imagen fija */
+.hoteleria-004 .slide-content{
+background-color: none;
+margin: auto;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+justify-content: space-between;
+overflow: hidden;
+}
+
+.hoteleria-001 .slide-content,
+.hoteleria-002 .slide-content,
+.hoteleria-003 .slide-content{
+    background-color: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Imagen fija */
+.hoteleria-004 .slide-content .imagen{
+    display: flex;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hoteleria-001 .slide-content .imagen,
+.hoteleria-002 .slide-content .imagen,
+.hoteleria-003 .slide-content .imagen{
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hoteleria-001 .prev,
+.hoteleria-002 .prev,
+.hoteleria-003 .prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: var(--transitions);
+    border-radius: .3rem;
+    color: var(--secundario);
+}
+
+.hoteleria-001 .next,
+.hoteleria-002 .next,
+.hoteleria-003 .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: var(--transitions);
+    border-radius: .3rem;
+    color: var(--secundario);
+}
+
+.hoteleria-001 .next,
+.hoteleria-002 .next,
+.hoteleria-003 .next{
+    right: 0;
+}
+
+.hoteleria-001 .prev:hover,
+.hoteleria-002 .prev:hover,
+.hoteleria-003 .prev:hover{
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+.hoteleria-001 .next:hover,
+.hoteleria-002 .next:hover,
+.hoteleria-003 .next:hover{
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+.hoteleria-001 .fade,
+.hoteleria-002 .fade,
+.hoteleria-003 .fade{
+    animation: fade 6s linear infinite;
+}
 
 /* --------------------
-Otros
+hoteleria_001
 -------------------- */
+
+#hoteleria-001{
+    z-index: 898;
+}
+
+.hoteleria-001 .slide-content .img-uno{
+    background-image: url(../img/experiencia_hoteleria_01_001.png);
+}
+
+.hoteleria-001 .slide-content .img-dos{
+    background-image: url(../img/experiencia_hoteleria_01_002.png);
+}
+
+.hoteleria-001 .slide-content .img-tres{
+    background-image: url(../img/experiencia_hoteleria_01_003.png);
+}
+
+.hoteleria-001 .slide-content .img-cuatro{
+    background-image: url(../img/experiencia_hoteleria_01_004.png);
+}
+
+/* --------------------
+hoteleria_002
+-------------------- */
+
+#hoteleria-002{
+    z-index: 896;
+}
+
+.hoteleria-002 .slide-content .img-uno{
+    background-image: url(../img/experiencia_hoteleria_02_001.png);
+}
+
+.hoteleria-002 .slide-content .img-dos{
+    background-image: url(../img/experiencia_hoteleria_02_002.png);
+}
+
+/* --------------------
+hoteleria_003
+-------------------- */
+
+#hoteleria-003{
+    z-index: 894;
+}
+
+.hoteleria-003 .slide-content .img-uno{
+    background-image: url(../img/experiencia_hoteleria_03_001.png);
+}
+
+.hoteleria-003 .slide-content .img-dos{
+    background-image: url(../img/experiencia_hoteleria_03_002.png);
+}
+
+.hoteleria-003 .slide-content .img-tres{
+    background-image: url(../img/experiencia_hoteleria_03_003.png);
+}
+
+/* --------------------
+hoteleria_004
+-------------------- */
+
+#hoteleria-004{
+    z-index: 894;
+}
+
+.hoteleria-004 .slide-content .img-uno{
+    background-image: url(../img/experiencia_seguridad_vistaRestringida.png);
+}
+
+
+
+
+/* ----------
+OTROS
+---------- */
+
+/* Duplican */
 
 #otros-001,
 #otros-003{
     background-color: var(--gris);
-    position: relative;
 }
 
 #otros-002{
     background-color: var(--blanco);
-    position: relative;
 }
 
-#otros-001{
-    z-index: 18;
-}
-
-#otros-002{
-    z-index: 0;
-}
-
-#otros-003{
-    z-index: 0;
-}
-
-.container-servicio .otros-001 .contenedor-imagenes,
-.container-servicio .otros-002 .contenedor-imagenes,
-.container-servicio .otros-003 .contenedor-imagenes{
-    width: 94%;
-    height: 30rem;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.otros-001 .contenedor-all,
+.otros-002 .contenedor-all,
+.otros-003 .contenedor-all{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001,
-.container-servicio .otros-002 .contenedor-texto-otr-002,
-.container-servicio .otros-003 .contenedor-texto-otr-003{
-    width: 94%;
-    margin-top: 1rem;
-    margin-left: 3%;
-}
-
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-collapsed,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-collapsed,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-collapsed{
-    width: 60%;
-    min-width: 60ch;
-    max-width: 90ch;
-    margin: 1rem auto;
-    text-align: center;
-}
-
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed{
+.otros-001 .contenedor-all .contenedor-imagenes,
+.otros-002 .contenedor-all .contenedor-imagenes,
+.otros-003 .contenedor-all .contenedor-imagenes{
     width: 100%;
+    height: 70vh;
+    padding: 4rem 1rem;
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .texto,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .texto,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .texto{
-    text-align: center;
-    width: 60%;
-    min-width: 60ch;
-    max-width: 90ch;
-    max-width: 90ch;
-    margin: 1rem auto 2rem auto;
+.otros-001 .contenedor-all .contenedor-texto,
+.otros-002 .contenedor-all .contenedor-texto,
+.otros-003 .contenedor-all .contenedor-texto{
+    width: 61rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas{
+/* -- Texto -- */
+
+.otros-001 .contenedor-all .contenedor-texto .cajas,
+.otros-002 .contenedor-all .contenedor-texto .cajas,
+.otros-003 .contenedor-all .contenedor-texto .cajas{
     width: 100%;
-    margin: 0 auto 1rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas h4,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas h4,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas h4{
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grisDos);
+    margin: 0 .5rem .5rem .5rem;
+    padding: .3rem;
+}
+
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono{
+    width: 100%;
+    height: 5rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul{
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
+    width: 100%;
+    height: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul{
     list-style-position: inside;
     text-indent: -2rem;
+    width: 100%;
     height: 100%;
+    padding-left: .5rem;
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul li,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul li{
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul li{
     list-style-position: inside;
     text-indent: -2.1rem;
-    padding: 1rem 3.2rem;
-    font-weight: 300;
+    padding: .4rem 2.1rem;
+    font-weight: 400;
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul li span,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul li span{
-    list-style-position: inside;
-    font-weight: 500;
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja span,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja span,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja span{
+    font-weight: 600;
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul li a,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul li a{
+.otros-001 .contenedor-all .contenedor-texto .cajas h4,
+.otros-002 .contenedor-all .contenedor-texto .cajas h4,
+.otros-003 .contenedor-all .contenedor-texto .cajas h4{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja a,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja a,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja a{
     text-decoration: none;
-    /* border: solid purple 2px; */
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul li a i,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul li a i{
-    font-size: 2rem;
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja a i,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja a i,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja a i{
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--negro);
     text-decoration: none;
@@ -2031,173 +2116,244 @@ Otros
     transition: var(--transitions);
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .texto-noCollapsed .cajas .caja ul li a i:hover,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .texto-noCollapsed .cajas .caja ul li a i:hover{
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja a i:hover{
     transform: translateX(.5rem);
     font-weight: 700;
     color: var(--primario);
-    /* border: solid red; */
 }
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .boton .boton-masInfo,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .boton .boton-masInfo,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .boton .boton-masInfo{
-    transform: translateX(-2rem);
-}
+/* -- Slider -- */
 
-.container-servicio .otros-001 .contenedor-texto-otr-001 .boton .boton-masInfo::after,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .boton .boton-masInfo::after,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .boton .boton-masInfo::after{
-    font-family: "Font Awesome 5 Free";
-    content: "\f107";
-    padding-left: .5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.container-servicio .otros-001 .contenedor-texto-otr-001 .boton .boton-masInfo::before,
-.container-servicio .otros-002 .contenedor-texto-otr-002 .boton .boton-masInfo::before,
-.container-servicio .otros-003 .contenedor-texto-otr-003 .boton .boton-masInfo::before{
-    content: "Más información ";
-}
-
-.otros-001 .contenedor-texto-otr-001 .texto-noCollapsed,
-.otros-002 .contenedor-texto-otr-002 .texto-noCollapsed,
-.otros-003 .contenedor-texto-otr-003 .texto-noCollapsed{
-    display: none;
-    transition: var(--transitions);
-}
-
-.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed,
-.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed,
-.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed{
-    display: flex;
-    transition: var(--transitions);
-    flex-direction: column;
-}
-
-.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed p,
-.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed p,
-.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed p{
-    margin-top: 1rem;
-}
-
-.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas,
-.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas,
-.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .caja,
-.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .caja,
-.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .caja{
-    margin: 1rem;
-    width: 30%;
-    background-color: var(--grisDos);
-}
-
-.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .caja-dos,
-.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .caja-dos,
-.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .caja-dos{
-    margin: 1rem;
-    width: 47%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: var(--grisDos);
-    /* border: solid green 2px; */
-}
-
-.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .caja-dos img,
-.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .caja-dos img,
-.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .caja-dos img{
-    width: 20%;
-    max-width: 10rem;
-    max-height: 10rem;
-    margin: auto;
-    /* border: solid blue 2px; */
-}
-
-.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .caja-dos ul,
-.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .caja-dos ul{
-    margin: 0;
+.otros-001 .cont-imagen-slide,
+.otros-002 .cont-imagen-slide,
+.otros-003 .cont-imagen-slide{
     width: 100%;
-    margin-left: 1rem;
-    background-color: var(--grisDos);
-}
-
-.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo,
-.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .caja-dos ul .li-titulo{
-    margin: 0;
-    list-style: none;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 500 !important;
-}
-
-.otros-001 .active-contenedor-texto-otr-001 .texto-noCollapsed .caja_cajas .vacio,
-.otros-002 .active-contenedor-texto-otr-002 .texto-noCollapsed .caja_cajas .vacio,
-.otros-003 .active-contenedor-texto-otr-003 .texto-noCollapsed .caja_cajas .vacio{
-    background-color: var(--gris);
-}
-
-.container-servicio .otros-001 .active-contenedor-texto-otr-001 .boton .boton-masInfo::after,
-.container-servicio .otros-002 .active-contenedor-texto-otr-002 .boton .boton-masInfo::after,
-.container-servicio .otros-003 .active-contenedor-texto-otr-003 .boton .boton-masInfo::after{
-    font-family: "Font Awesome 5 Free";
-    content: "\f106";
-    padding-left: .5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.container-servicio .otros-001 .active-contenedor-texto-otr-001 .boton .boton-masInfo::before,
-.container-servicio .otros-002 .active-contenedor-texto-otr-002 .boton .boton-masInfo::before,
-.container-servicio .otros-003 .active-contenedor-texto-otr-003 .boton .boton-masInfo::before{
-    content: "Menos información ";
-}
-
-.container-servicio .otros-001 .active-contenedor-texto-otr-001,
-.container-servicio .otros-002 .active-contenedor-texto-otr-002,
-.container-servicio .otros-003 .active-contenedor-texto-otr-003{
-    content: "Menos información ";
-}
-
-.container-servicio .otros-001 .active-contenedor-texto-otr-001 .contenedor-imagenes,
-.container-servicio .otros-002 .active-contenedor-texto-otr-002 .contenedor-imagenes,
-.container-servicio .otros-003 .active-contenedor-texto-otr-003 .contenedor-imagenes{
-    height: 15rem;
-}
-
-.container-servicio .otros-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .otros-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.container-servicio .otros-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
     height: 100%;
 }
 
-.container-servicio .otros-001 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .otros-002 .contenedor-imagenes .cont-imagen-fija,
-.container-servicio .otros-003 .contenedor-imagenes .cont-imagen-fija{
+.otros-001 .slideshow-container,
+.otros-002 .slideshow-container,
+.otros-003 .slideshow-container{
     width: 100%;
-    margin-right: 2rem;
+    height: 100%;
+    position: relative;
+    max-width: none;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.otros-001 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.otros-002 .contenedor-imagenes .cont-imagen-fija .imagen-fija,
-.otros-003 .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/inicio_001.png);
-
+.otros-001 .slideOtr-001,
+.otros-002 .slideOtr-002,
+.otros-003 .slideOtr-003{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
 }
+
+.otros-001 .slide-content,
+.otros-002 .slide-content,
+.otros-003 .slide-content{
+    background-color: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.otros-001 .slide-content .imagen,
+.otros-002 .slide-content .imagen,
+.otros-003 .slide-content .imagen{
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.otros-001 .prev,
+.otros-002 .prev,
+.otros-003 .prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: var(--transitions);
+    border-radius: .3rem;
+    color: var(--secundario);
+}
+
+.otros-001 .next,
+.otros-002 .next,
+.otros-003 .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: var(--transitions);
+    border-radius: .3rem;
+    color: var(--secundario);
+}
+
+.otros-001 .next,
+.otros-002 .next,
+.otros-003 .next{
+    right: 0;
+}
+
+.otros-001 .prev:hover,
+.otros-002 .prev:hover,
+.otros-003 .prev:hover{
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+.otros-001 .next:hover,
+.otros-002 .next:hover,
+.otros-003 .next:hover{
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+.otros-001 .fade,
+.otros-002 .fade,
+.otros-003 .fade{
+    animation: fade 6s linear infinite;
+}
+
+/* --------------------
+otros_001
+-------------------- */
+
+#otros-001{
+    z-index: 898;
+}
+
+.otros-001 .slide-content .img-uno{
+    background-image: url(../img/experiencia_otros_01_001.png);
+}
+
+.otros-001 .slide-content .img-dos{
+    background-image: url(../img/experiencia_otros_01_002.png);
+}
+
+.otros-001 .slide-content .img-tres{
+    background-image: url(../img/experiencia_otros_01_003.png);
+}
+
+.otros-001 .slide-content .img-cuatro{
+    background-image: url(../img/experiencia_otros_01_004.png);
+}
+
+/* --------------------
+otros_002
+-------------------- */
+
+#otros-002{
+    z-index: 896;
+}
+
+.otros-002 .slide-content .img-uno{
+    background-image: url(../img/experiencia_otros_02_001.png);
+}
+
+.otros-002 .slide-content .img-dos{
+    background-image: url(../img/experiencia_otros_02_002.png);
+}
+
+.otros-002 .slide-content .img-tres{
+    background-image: url(../img/experiencia_otros_02_003.png);
+}
+
+.otros-002 .slide-content .img-cuatro{
+    background-image: url(../img/experiencia_otros_02_004.png);
+}
+
+.otros-002 .slide-content .img-cinco{
+    background-image: url(../img/experiencia_otros_02_005.png);
+}
+
+.otros-002 .slide-content .img-seis{
+    background-image: url(../img/experiencia_otros_02_006.png);
+}
+
+.otros-002 .slide-content .img-siete{
+    background-image: url(../img/experiencia_otros_02_007.png);
+}
+
+.otros-002 .slide-content .img-ocho{
+    background-image: url(../img/experiencia_otros_02_008.png);
+}
+
+.otros-002 .slide-content .img-nueve{
+    background-image: url(../img/experiencia_otros_02_009.png);
+}
+
+.otros-002 .slide-content .img-diez{
+    background-image: url(../img/experiencia_otros_02_010.png);
+}
+
+.otros-002 .slide-content .img-once{
+    background-image: url(../img/experiencia_otros_02_011.png);
+}
+
+.otros-002 .slide-content .img-doce{
+    background-image: url(../img/experiencia_otros_02_012.png);
+}
+
+/* --------------------
+otros_003
+-------------------- */
+
+#otros-003{
+    z-index: 894;
+}
+
+.otros-003 .slide-content .img-uno{
+    background-image: url(../img/experiencia_otros_03_001.png);
+}
+
+.otros-003 .slide-content .img-dos{
+    background-image: url(../img/experiencia_otros_03_002.png);
+}
+
+.otros-003 .slide-content .img-tres{
+    background-image: url(../img/experiencia_otros_03_003.png);
+}
+
+.otros-003 .slide-content .img-cuatro{
+    background-image: url(../img/experiencia_otros_03_004.png);
+}
+
+.otros-003 .slide-content .img-cinco{
+    background-image: url(../img/experiencia_otros_03_005.png);
+}
+
+.otros-003 .slide-content .img-seis{
+    background-image: url(../img/experiencia_otros_03_006.png);
+}
+
+
+
+
+
+
+
 
 
 /* --------------------
