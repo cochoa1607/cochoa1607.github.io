@@ -318,6 +318,22 @@ Aeropuertos
     font-weight: 400;
 }
 
+.aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.aeropuerto-004 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.aeropuerto-005 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.aeropuerto-006 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.aeropuerto-007 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.aeropuerto-008 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.aeropuerto-009 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.aeropuerto-010 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo{
+    list-style: none;
+    text-align: center;
+    padding: 1rem 0 .5rem 0;
+    font-weight: 900 !important;
+}
+
 .aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja span,
 .aeropuerto-002 .contenedor-all .contenedor-texto .cajas .caja span,
 .aeropuerto-003 .contenedor-all .contenedor-texto .cajas .caja span,
