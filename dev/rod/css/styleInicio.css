@@ -119,12 +119,12 @@ Banner
 
 .slideshow-container-head .slidesLineas{
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     margin: 2rem 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--negroDos);
+    background-color: var(--gris);
     position: absolute;
     bottom: 0;
 }
@@ -132,7 +132,7 @@ Banner
 .slidesLineas .linea{
     width: 1.2rem;
     height: .2rem;
-    background-color: var(--blanco);
+    background-color: var(--terciario);
     margin: 0 .5rem;
     border-radius: 2rem;
 }
