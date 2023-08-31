@@ -131,6 +131,49 @@ showSlidesExp();
 
 
 
+// Slide Nosotros
+
+let slideIndexNos = 0;
+
+function showSlidesNos() {
+    const slidesNos = document.getElementsByClassName('slideNos');
+
+    for (let i = 0; i < slidesNos.length; i++) {
+        slidesNos[i].style.display = 'none';
+    }
+
+    slideIndexNos++;
+
+    if (slideIndexNos > slidesNos.length) {
+        slideIndexNos = 1;
+    }
+
+    slidesNos[slideIndexNos - 1].style.display = 'block';
+
+    setTimeout(showSlidesNos, 6000);
+}
+
+function changeSlideNos(n) {
+    slideIndexNos += n;
+    const slidesNos = document.getElementsByClassName('slideNos');
+
+    if (slideIndexNos > slidesNos.length) {
+        slideIndexNos = 1;
+    } else if (slideIndexNos < 1) {
+        slideIndexNos = slidesNos.length;
+    }
+
+    for (let i = 0; i < slidesNos.length; i++) {
+        slidesNos[i].style.display = 'none';
+    }
+
+    slidesNos[slideIndexNos - 1].style.display = 'block';
+}
+
+showSlidesNos();
+
+
+
 
 // Slide Nuestro Equipo
 
@@ -172,4 +215,5 @@ function changeSlideEquipo(n) {
 }
 
 showSlidesEquipo();
+
 

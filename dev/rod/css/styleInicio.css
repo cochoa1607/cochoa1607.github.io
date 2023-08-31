@@ -24,9 +24,10 @@ Banner
 
 .slideshow-container-head {
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     min-height: 40vh;
     margin: 0;
+    margin-top: 8rem;
     padding: 0;
     background-color: none;
     box-shadow: var(--boxShadow);
@@ -120,11 +121,11 @@ Banner
 .slideshow-container-head .slidesLineas{
     width: 100%;
     height: 4rem;
-    margin: 2rem 0 0 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--gris);
+    background-color: none;
     position: absolute;
     bottom: 0;
 }
@@ -210,7 +211,7 @@ main .container-servicios .servicios .cont-texto p{
 .servicios .slide-content .cont-imagen{
     width: 100%;
     height: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     overflow: hidden;
 }
 
@@ -454,169 +455,115 @@ Nosotros
 
 .nosotros .contenedor-info{
     width: 100%;
-    height: 30rem;
-    border: solid green 2px;
+    height: auto;
+
+    display: flex;
 }
 
-/* --------------------
-Nuestro equipo
--------------------- */
+.nosotros .contenedor-info .imagen{
+    width: 80%;
+    height: 60vh;
+    min-height: 45rem;
+    margin: 0 2rem 0 1rem;
+}
 
-.container-equipo{
-    width: 100vw;
-    background-color: none;
-    box-shadow: var(--boxShadow);
+.nosotros .contenedor-info .texto{
+    width: 20%;
+    min-width: 32rem;
+    margin: auto 2rem auto 0;
+}
+
+.nosotros .contenedor-info .texto p{
+    text-align: justify;
+}
+
+.nosotros .contenedor-info .texto .lineaDec{
+    width: 80%;
+    border-bottom: solid var(--primario) .3rem;
+}
+
+/* -- Slider -- */
+
+.nosotros .slideshow-container{
     position: relative;
-    z-index: 16;
-    padding-bottom: 5rem;
-    padding-top: 0;
-
-    /* border: solid red 2px; */
-}
-
-.cont-slider-equipo{
-    width: 98%;
-    margin: auto;
-    padding: 0;
-
-    /* border: solid blue 2px; */
-}
-
-.cont-slider-equipo .slideshow-container-equipo{
-    width: 100%;
-    display: flex;
-
-    /* border: solid green 2px; */
-}
-
-.cont-slider-equipo .slideshow-container-equipo .slide-equipo{
-    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    height: auto;
     overflow: hidden;
-
-    /* border: solid aqua 2px; */
+    height: 60vh;
+    min-height: 45rem;
 }
 
-.cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content{
+.nosotros .slideshow-container{
+    height: 60vh;
+    min-height: 45rem;
+}
+
+.nosotros .slideNos{
+    display: none;
+    height: 60vh;
+    min-height: 45rem;
+    overflow: hidden;
+}
+
+.nosotros .slide-content{
+    background-color: none;
+    margin: auto;
+    width: 88%;
+    height: 60vh;
+    min-height: 45rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    
-    transition: var(--transitionsXL);
-    
-    /* border: solid purple 2px; */
-}
-
-.cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content .contenedor-equipo-all{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    
-    /* border: solid red 2px; */
-}
-
-.cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content .contenedor-equipo-all .contenedor-integrantes{
-    display: flex;
-    flex-direction: row;
-    
-    width: 98%;
-    margin: auto;
-    padding: 1rem 0;
-
-    /* border: solid pink 8px; */
-}
-
-.cont-slider-equipo .slideshow-container-equipo .slide-equipo .slide-content .contenedor-equipo-all .contenedor-equipo{
-    width: 33.3333%;
-    padding: 1rem 0;
-
-    /* border: solid blue 2px; */
-}
-
-.cont-slider-equipo .slideshow-container-equipo .controllers{
-    width: fit-content;
-    margin: auto;
-    display: flex;
+    align-items: stretch;
     justify-content: space-between;
-
-    /* border: solid greenyellow 2px; */
+    overflow: hidden;
 }
 
-.cont-slider-equipo .slideshow-container-equipo .controllers .next,
-.cont-slider-equipo .slideshow-container-equipo .controllers .prev{
-    color: var(--secundario);
-    padding: 1.6rem;
+.nosotros .slide-content .imagen{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
 
+.nosotros .slide-content .img-uno{
+    background-image: url(../img/inicio_nosotros_001.png);
+}
+
+.nosotros .slide-content .img-dos{
+    background-image: url(../img/inicio_nosotros_002.png);
+}
+
+.nosotros .slide-content .img-tres{
+    background-image: url(../img/inicio_nosotros_003.png);
+}
+
+.nosotros .prev,
+.nosotros .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    font-weight: bold;
     font-size: 1.8rem;
     transition: var(--transitions);
     border-radius: .3rem;
-    cursor: pointer;
-
-    /* border: solid peru 2px; */
+    color: var(--secundario);
 }
 
-.cont-slider-equipo .slideshow-container-equipo .controllers .next:hover,
-.cont-slider-equipo .slideshow-container-equipo .controllers .prev:hover{
-        color: var(--blanco);
-        background-color: var(--primario);
+.nosotros .next {
+    right: 0;
 }
 
-.cont-slider-equipo .slidesLineas{
-    width: fit-content;
-    height: 1rem;
-    margin: 2rem 0 0 0;
-    display: flex;
-
-    /* border: solid greenyellow 2px; */
-}
-
-.cont-slider-equipo .slidesLineas .linea{
-    width: 3rem;
-    background-color: var(--terciario);
-    height: .1rem;
-    margin: 0 .5rem;
-    border-radius: 2rem;
-
-    /* border: solid red 2px; */
-}
-
-.cont-slider-equipo .slidesLineas .active{
-    width: 3rem;
+.nosotros .prev:hover,
+.nosotros .next:hover {
+    color: var(--blanco);
     background-color: var(--primario);
-    height: .2rem;
 }
 
-.cont-slider-equipo .slideshow-container-equipo .slide-equipo .imagen{
-    height: auto;
-    max-height: 40vh;
-    width: 100%;
-    overflow: hidden;
-
-    /* border: solid gold 2px; */
-}
-
-.cont-slider-equipo .slideshow-container-equipo .slide-equipo .imagen img{
-    height: auto;
-    width: 100%;
-    
-    /* border: solid pink 2px; */
-}
-
-.cont-slider-equipo .slideshow-container-equipo .slide-equipo .texto{
-    margin: 2rem auto;
-    
-    width: 96%;
-    padding: 1rem 0;
-
-    /* border: solid gold 2px; */
-}
-
-.cont-slider-equipo .slideshow-container-equipo .slide-equipo .texto p{
-    width: 100%;
-    margin: 2rem 0;
-    
-
-    width: 100%;
-    padding: 0;
-
-    /* border: solid green 2px; */
+.nosotros .fade {
+    animation: fade 6s linear infinite;
 }
