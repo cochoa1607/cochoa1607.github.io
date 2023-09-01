@@ -479,6 +479,8 @@ Nosotros
 
 .nosotros .contenedor-info .texto .lineaDec{
     width: 80%;
+    margin: auto;
+    margin-bottom: 4rem;
     border-bottom: solid var(--primario) .3rem;
 }
 
@@ -566,4 +568,8 @@ Nosotros
 
 .nosotros .fade {
     animation: fade 6s linear infinite;
+}
+
+.nosotros .texto .boton{
+    margin: auto;
 }

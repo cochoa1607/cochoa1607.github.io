@@ -20,6 +20,40 @@ Secciones Titulos
     background-color: none;
 }
 
+.titulo-dos{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(-3rem);
+}
+
+.titulo-dos span{
+    font-family: 'Roboto Slab', serif;
+    color: var(--secundario);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.titulo-tres{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    transform: translateY(-4rem);
+}
+
+.titulo-tres span{
+    font-family: 'Roboto Slab', serif;
+    color: var(--primarioHover);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 0;
+
+    -webkit-text-stroke-width: .05rem;
+    -webkit-text-stroke-color: var(--primario);
+}
 
 /* --------------------
 Perfil de la empresa
@@ -37,11 +71,13 @@ Perfil de la empresa
 }
 
 .perfil .texto .caja-uno{
-    width: 99%;
-    margin: 2rem 1% 0 0;
+    width: 70%;
+    margin: 5rem auto 0 auto;
     padding: 0;
+    padding: 0 4rem 6rem 4rem;
+    overflow: visible;
 
-    border-radius: 2rem 2rem 0 0;
+    border-radius: 1rem;
     box-shadow: var(--boxShadow);
     background-color: var(--blanco);
 }
@@ -49,85 +85,165 @@ Perfil de la empresa
 .perfil .texto .caja-uno p{
     text-align: center;
     margin: auto;
-    padding: 4rem 0;
 }
 
 .perfil .texto .caja-dos{
-    width: 58%;
+    width: 98%;
     height: auto;
-    margin: 2rem 1% 2rem 0;
-    padding: 4rem;
+    margin: 6rem 1% 0 1%;
+    padding: 6rem 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    border-radius: 0 0 0 2rem;
+    justify-content: space-between;
+    border-radius: 0;
+    overflow: visible;
+    border-radius: 1rem;
     
     box-shadow: var(--boxShadow);
-    background-color: var(--secundario);
+    background-color: var(--blanco);
 }
 
 .perfil .texto .caja-dos h5{
-    text-align: left;
+    text-align: center;
     word-break: keep-all;
-    color: var(--blanco);
-}
-
-.perfil .texto .caja-dos p{
-    padding: 4rem 0 0 0;
-    color: var(--blanco);
-    font-weight: 300;
-}
-
-.perfil .texto .caja-tres{
-    width: 40%;
-    height: auto;
-    margin: 2rem 1% 2rem 0;
-    padding: 4rem;
-    border-radius: 0 0 2rem 0;
-    background-color: var(--primario);
-    box-shadow: var(--boxShadow);
-}
-
-.perfil .texto .caja-tres ul{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    list-style-position: inside;
-}
-
-.perfil .texto .caja-tres ul li{
-    font-weight: 300;
-    padding-left: 2rem;
-    text-indent: -2rem;
-    margin: 1rem 0;
-    color: var(--blanco);
-    overflow: hidden;
-}
-
-.perfil .texto .caja-tres ul li a{
-    text-decoration: none;
-    color: var(--blanco);
-}
-
-.perfil .texto .caja-tres ul li i{
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--blanco);
-    text-decoration: none;
-    text-indent: 0;
-    padding-left: 1rem;
-    transform: translateY(.4rem);
-    transition: var(--transitions);
-}
-
-.perfil .texto .caja-tres ul li i:hover{
-    transform: translateX(.5rem);
-    font-weight: 700;
     color: var(--secundario);
 }
 
+.perfil .texto .caja-dos p{
+    width: 100%;
+    padding: 4rem 0 0 0;
+    text-align: center;
+    margin: auto;
+    color: var(--negro);
+}
+
+.perfil .texto .servicios{
+    width: 90%;
+    height: auto;
+    margin: 3rem auto;
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+    background-color: none;
+}
+
+.perfil .texto .servicios ul{
+    height: 100%;
+    max-width: 140rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.perfil .texto .servicios ul li{
+    width: 30%;
+    margin: 3rem 0;
+    padding-bottom: 1rem;
+    color: var(--negro);
+    text-align: center;
+    border-bottom: solid var(--primario) .2rem;
+    transition: var(--transitions);
+}
+
+.perfil .texto .servicios ul li:hover{
+    transform: scale(1.05);
+    border-bottom: solid var(--primario) .3rem;
+}
+
+.perfil .texto .servicios ul li a{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.perfil .texto .servicios ul li .icono{
+    height: 6rem;
+    margin-bottom: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.perfil .texto .servicios ul li .icon-001{
+    background-image: url(../img/servicios_gerencia.png);
+}
+
+.perfil .texto .servicios ul li .icon-002{
+    background-image: url(../img/servicios_auditoria.png);
+}
+
+.perfil .texto .servicios ul li .icon-003{
+    background-image: url(../img/servicios_revision.png);
+}
+
+.perfil .texto .servicios ul li .icon-004{
+    background-image: url(../img/servicios_levantamiento.png);
+}
+
+.perfil .texto .servicios ul li .icon-005{
+    background-image: url(../img/servicios_analisis.png);
+}
+
+.perfil .texto .servicios ul li .icon-006{
+    background-image: url(../img/servicios_diligence.png);
+}
+
+.perfil .texto .servicios ul li .icon-007{
+    background-image: url(../img/servicios_gestion.png);
+}
+
+.perfil .texto .caja-tres{
+    width: 39%;
+    height: auto;
+    margin: 6rem 1% 0 0;
+    padding: 0;
+    border-radius: 1rem;
+    box-shadow: var(--boxShadow);
+
+    opacity: 0;
+}
+
+.perfil .texto .caja-tres .imagen{
+    background-image: url(../img/experiencia_aeropuertos_01_001.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.perfil .texto .caja-cuatro{
+    width: 39%;
+    height: auto;
+    margin: 6rem 1% 2rem 0;
+    padding: 0;
+    border-radius: 1rem;
+    box-shadow: var(--boxShadow);
+    
+    opacity: 0;
+}
+
+.perfil .texto .caja-cuatro .imagen{
+    background-image: url(../img/experiencia_aeropuertos_01_001.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* --------------------
+Mision, Visión, Valores
+-------------------- */
+
+/* .container-miviva{
+    padding-top: 0;
+} */
+
+.perfil .texto .mision{
+    width: 49%;
+}
 
 
 
