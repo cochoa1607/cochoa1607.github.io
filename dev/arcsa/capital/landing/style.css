@@ -202,6 +202,10 @@ Contenedores
 /* ----------
 Contenedor Uno
 ---------- */
+.seccion-uno{
+    padding-top: 4rem;
+    margin-top: 0;
+}
 
 .cont-uno .boton .imagen{
     margin-bottom: 2rem;
@@ -239,6 +243,7 @@ Contenedor Tres
 }
 
 .contenedor .cajas .caja span{
+    font-family: 'Playfair Display', serif;
     color: #F28700;
     font-size: 4rem;
     font-weight: 900;
@@ -338,9 +343,6 @@ Info Final
 }
 
 @media only screen and (max-width: 799px) and (min-width: 600px) {
-    body{
-        border: solid red 2px;
-    }
     
     .contenedor .boton{
         width: 100%;
@@ -363,9 +365,6 @@ Info Final
 }
 
 @media only screen and (max-width: 599px) and (min-width: 1px) {
-    body{
-        border: solid blue 2px;
-    }
 
     .contenedor-header .texto{
         width: 90%;
