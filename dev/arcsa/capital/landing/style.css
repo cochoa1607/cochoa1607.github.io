@@ -127,10 +127,23 @@ Contenedores
 .contenedor .boton .imagen{
     width: 80rem;
     height: 17rem;
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain;
     overflow: visible;
+    transition: var(--transition);
+}
+
+.contenedor a{
+    color: #F28700;
+    text-decoration: none;
+    border-bottom: solid #F28700 .2rem;
+    transition: var(--transition);
+}
+
+.contenedor a i{
+    font-size: 1.4rem;
+    color: #F28700;
     transition: var(--transition);
 }
 
@@ -163,12 +176,35 @@ Contenedores
     padding: 1.2rem 3.2rem;
 }
 
+.contenedor .boton-conoce{
+    margin-bottom: 2rem;
+    border-bottom: none;
+    transition: var(--transition);
+}
+
+.contenedor .segundo{
+    margin-bottom: 0rem;
+}
+
+.contenedor .boton-conoce span{
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.contenedor .boton-conoce:hover span{
+    margin-right: 2rem;
+}
+
+.contenedor .boton-conoce:hover{
+    transform: translateX(1rem);
+}
+
 /* ----------
 Contenedor Uno
 ---------- */
 
 .cont-uno .boton .imagen{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     background-image: url(./img/datos.png);
 }
 
@@ -177,7 +213,7 @@ Contenedor Dos
 ---------- */
 
 .cont-dos .boton .imagen{
-    margin-top: 4rem;
+    margin-top: 2rem;
     background-image: url(./img/logos.png);
 }
 
@@ -190,9 +226,9 @@ Contenedor Tres
 }
 
 .contenedor .cajas{
-    width: 60rem;
+    width: 90rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 5rem 0;
 }
 
@@ -208,12 +244,29 @@ Contenedor Tres
     font-weight: 900;
 }
 
+.contenedor .cajas .caja .icono{
+    width: 9rem;
+    height: 9rem;
+    margin-bottom: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contenedor .cajas .caja .icon-01{
+    background-image: url(./img/icono_rend_01.png);
+}
+
+.contenedor .cajas .caja .icon-02{
+    background-image: url(./img/icono_rend_02.png);
+}
+
 /* ----------
 Contenedor Cuatro
 ---------- */
 
 .cont-cuatro .boton .imagen{
-    margin-top: 4rem;
+    margin-top: 2rem;
     background-image: url(./img/bancos.png);
 }
 
@@ -222,7 +275,7 @@ Contenedor Cinco
 ---------- */
 
 .cont-cinco .boton .imagen{
-    margin-top: 4rem;
+    margin-top: 2rem;
     background-image: url(./img/partners.png);
 }
 
@@ -330,6 +383,10 @@ Info Final
     .contenedor .texto{
         width: 90%;
         text-align: center;
+    }
+
+    .contenedor .cajas{
+        width: 60rem;
     }
 
     .infoFinal{
