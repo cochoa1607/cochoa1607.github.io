@@ -292,6 +292,24 @@ Contenedor Seis
     margin-bottom: 4rem;
 }
 
+.cont-seis .boton-call{
+    text-decoration: none;
+    border-bottom: 0;
+    overflow: visible;
+}
+
+.cont-seis .boton-call i{
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    color: #162A62;
+}
+
+.cont-seis .boton-call i:hover{
+    transform: scale(1.04);
+    color: #F28700;
+}
+
+
 /* ----------
 Footer
 ---------- */
