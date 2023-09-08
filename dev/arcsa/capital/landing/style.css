@@ -343,6 +343,10 @@ Info Final
 }
 
 @media only screen and (max-width: 799px) and (min-width: 600px) {
+
+    .contenedor-header{
+        height: 100vh;
+    }
     
     .contenedor .boton{
         width: 100%;
@@ -365,6 +369,10 @@ Info Final
 }
 
 @media only screen and (max-width: 599px) and (min-width: 1px) {
+
+    .contenedor-header{
+        height: 100vh;
+    }
 
     .contenedor-header .texto{
         width: 90%;
