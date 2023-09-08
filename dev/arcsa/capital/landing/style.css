@@ -343,9 +343,13 @@ Info Final
 }
 
 @media only screen and (max-width: 799px) and (min-width: 600px) {
-
+    
     .contenedor-header{
         height: 100vh;
+    }
+    
+    .contenedor-header .logo{
+        width: 70%;
     }
     
     .contenedor .boton{
@@ -372,6 +376,10 @@ Info Final
 
     .contenedor-header{
         height: 100vh;
+    }
+
+    .contenedor-header .logo{
+        width: 70%;
     }
 
     .contenedor-header .texto{
