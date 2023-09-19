@@ -88,6 +88,7 @@ Banner
 
 .slide-content .cont-imagen .img-003{
     background-image: url(../img/inicio_header_003.jpg);
+    background-position: center top;
 }
 
 .slide-content .cont-imagen .img-004{
@@ -96,14 +97,17 @@ Banner
 
 .slide-content .cont-imagen .img-005{
     background-image: url(../img/inicio_header_005.jpg);
+    background-position: center;
 }
 
 .slide-content .cont-imagen .img-006{
     background-image: url(../img/inicio_header_006.jpg);
+    background-position: center top;
 }
 
 .slide-content .cont-imagen .img-007{
     background-image: url(../img/inicio_header_007.jpg);
+    background-position: center bottom;
 }
 
 .slide-content .cont-imagen .img-008{
@@ -112,10 +116,12 @@ Banner
 
 .slide-content .cont-imagen .img-009{
     background-image: url(../img/inicio_header_009.jpg);
+    background-position: center top;
 }
 
 .slide-content .cont-imagen .img-010{
     background-image: url(../img/inicio_header_010.jpg);
+    background-position: center bottom;
 }
 
 .slideshow-container-head .slidesLineas{
@@ -226,6 +232,7 @@ main .container-servicios .servicios .cont-texto p{
 
 .servicios .slide-content .cont-imagen .img-001{
     background-image: url(../img/servicios_gerencia_001.png);
+
 }
 
 .servicios .slide-content .cont-imagen .img-002{
@@ -242,6 +249,7 @@ main .container-servicios .servicios .cont-texto p{
 
 .servicios .slide-content .cont-imagen .img-005{
     background-image: url(../img/servicios_analisis_001.png);
+    background-position: center bottom;
 }
 
 .servicios .slide-content .cont-imagen .img-006{

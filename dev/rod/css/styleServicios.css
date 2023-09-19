@@ -43,16 +43,19 @@ Secciones Servicios
     margin: 0 1rem;
     width: fit-content;
     border-bottom: solid var(--primario) .2rem;
+    overflow: hidden;
 }
 
 .titulo .icono img{
     width: auto;
     height: 100%;
+    overflow: hidden;
 }
 
 .titulo .icono{
     width: 9rem;
     height: 9rem;
+    overflow: hidden;
 }
 
 /* --------------------
@@ -477,6 +480,7 @@ Auditoria
 
 .auditoria .contenedor-imagenes .cont-imagen-fija .imagen-fija{
     background-image: url(../img/servicios_auditoria_F.png);
+    background-position: center top !important;
 }
 
 .container-servicio .auditoria .contenedor-texto-audit .contenedor-imagenes .cont-imagen-slide{
@@ -522,7 +526,7 @@ Auditoria
 .auditoria .slide-content .imagen{
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: 100%;
 }
@@ -1050,7 +1054,7 @@ Levantamiento
 .levantamiento .slide-content .imagen{
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: 100%;
 }
@@ -1792,7 +1796,7 @@ Gestion
 .container-servicio .gestion .contenedor-imagenes .cont-imagen-fija .imagen-fija{
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     height: 100%;
 }
 

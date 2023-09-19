@@ -641,6 +641,7 @@ Aeropuerto_002
 
 .aeropuerto-002 .slide-content .img-cinco{
     background-image: url(../img/experiencia_aeropuertos_02_005.png);
+    background-size: contain !important;
 }
 
 .aeropuerto-002 .slide-content .img-seis{
@@ -656,7 +657,7 @@ Aeropuerto_002
 }
 
 .aeropuerto-002 .slide-content .img-nueve{
-    background-image: url(../img/experiencia_aeropuertos_02_003.png);
+    background-image: url(../img/experiencia_aeropuertos_02_009.png);
 }
 
 
@@ -686,6 +687,7 @@ Aeropuerto_003
 
 .aeropuerto-003 .slide-content .img-cinco{
     background-image: url(../img/experiencia_aeropuertos_03_005.png);
+    background-size: contain !important;
 }
 
 /* --------------------
@@ -742,6 +744,7 @@ Aeropuerto_005
 
 .aeropuerto-005 .slide-content .img-cinco{
     background-image: url(../img/experiencia_aeropuertos_05_005.png);
+    background-position: center bottom !important;
 }
 
 .aeropuerto-005 .slide-content .img-seis{
@@ -762,6 +765,7 @@ Aeropuerto_006
 
 .aeropuerto-006 .slide-content .img-dos{
     background-image: url(../img/experiencia_aeropuertos_06_002.png);
+    background-position: center top !important;
 }
 
 .aeropuerto-006 .slide-content .img-tres{
@@ -818,6 +822,7 @@ Aeropuerto_008
 
 .aeropuerto-008 .slide-content .img-uno{
     background-image: url(../img/experiencia_aeropuertos_08_001.png);
+    background-position: center top !important;
 }
 
 .aeropuerto-008 .slide-content .img-dos{
