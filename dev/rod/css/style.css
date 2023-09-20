@@ -224,11 +224,11 @@ Botones
     background-color: #2BB741;
     border: solid var(--blanco);
     border-radius: 5rem;
+    transition: var(--transitionsL) !important;
 }
 
 .boton-flotante .btn-flotante:hover{
     background-color: #050505;
-    transition: var(--transitionsL);
 }
 
 .boton-flotante .btn-flotante a{
@@ -241,9 +241,6 @@ Botones
     align-items: center;
     width: 4rem;
     height: 4rem;
-}
-
-.boton-flotante .btn-flotante a{
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
