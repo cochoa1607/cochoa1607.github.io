@@ -934,13 +934,15 @@ SEGURIDAD
     background-color: var(--gris);
 }
 
-#seguridad-002{
+#seguridad-002,
+#seguridad-004{
     background-color: var(--blanco);
 }
 
 .seguridad-001 .contenedor-all,
 .seguridad-002 .contenedor-all,
-.seguridad-003 .contenedor-all{
+.seguridad-003 .contenedor-all,
+.seguridad-004 .contenedor-all{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -948,7 +950,8 @@ SEGURIDAD
 
 .seguridad-001 .contenedor-all .contenedor-imagenes,
 .seguridad-002 .contenedor-all .contenedor-imagenes,
-.seguridad-003 .contenedor-all .contenedor-imagenes{
+.seguridad-003 .contenedor-all .contenedor-imagenes,
+.seguridad-004 .contenedor-all .contenedor-imagenes{
     width: 100%;
     height: 70vh;
     padding: 4rem 1rem;
@@ -956,7 +959,8 @@ SEGURIDAD
 
 .seguridad-001 .contenedor-all .contenedor-texto,
 .seguridad-002 .contenedor-all .contenedor-texto,
-.seguridad-003 .contenedor-all .contenedor-texto{
+.seguridad-003 .contenedor-all .contenedor-texto,
+.seguridad-004 .contenedor-all .contenedor-texto{
     width: 61rem;
     display: flex;
     flex-direction: column;
@@ -968,7 +972,8 @@ SEGURIDAD
 
 .seguridad-001 .contenedor-all .contenedor-texto .cajas,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -976,7 +981,8 @@ SEGURIDAD
 
 .seguridad-001 .contenedor-all .contenedor-texto .cajas .caja,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas .caja,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja{
     display: flex;
     flex-direction: column;
     background-color: var(--grisDos);
@@ -986,7 +992,8 @@ SEGURIDAD
 
 .seguridad-001 .contenedor-all .contenedor-texto .cajas .caja-dos,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas .caja-dos,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja-dos{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -995,7 +1002,8 @@ SEGURIDAD
 
 .seguridad-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja-dos .icono{
     width: 100%;
     height: 5rem;
     margin-bottom: 1rem;
@@ -1005,7 +1013,8 @@ SEGURIDAD
 
 .seguridad-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
     width: 100%;
     height: 5rem;
     background-position: center;
@@ -1013,9 +1022,20 @@ SEGURIDAD
     background-size: contain;
 }
 
+.seguridad-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.seguridad-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo{
+    list-style: none;
+    text-align: center;
+    padding: 1rem 0 .5rem 0;
+    font-weight: 900 !important;
+}
+
 .seguridad-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja-dos ul{
     list-style-position: inside;
     text-indent: -2rem;
     width: 100%;
@@ -1025,7 +1045,8 @@ SEGURIDAD
 
 .seguridad-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul li{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul li,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja-dos ul li{
     list-style-position: inside;
     text-indent: -2.1rem;
     padding: .4rem 2.1rem;
@@ -1034,26 +1055,30 @@ SEGURIDAD
 
 .seguridad-001 .contenedor-all .contenedor-texto .cajas .caja span,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas .caja span,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja span{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja span,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja span{
     font-weight: 600;
 }
 
 .seguridad-001 .contenedor-all .contenedor-texto .cajas h4,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas h4,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas h4{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas h4,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas h4{
     text-align: center;
     margin-bottom: 1rem;
 
 }
 .seguridad-001 .contenedor-all .contenedor-texto .cajas .caja a,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas .caja a,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja a{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja a,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja a{
     text-decoration: none;
 }
 
 .seguridad-001 .contenedor-all .contenedor-texto .cajas .caja a i,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas .caja a i,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja a i{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja a i,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja a i{
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--negro);
@@ -1066,7 +1091,8 @@ SEGURIDAD
 
 .seguridad-001 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
 .seguridad-002 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
-.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja a i:hover{
+.seguridad-003 .contenedor-all .contenedor-texto .cajas .caja a i:hover,
+.seguridad-004 .contenedor-all .contenedor-texto .cajas .caja a i:hover{
     transform: translateX(.5rem);
     font-weight: 700;
     color: var(--primario);
@@ -1076,14 +1102,16 @@ SEGURIDAD
 
 .seguridad-001 .cont-imagen-slide,
 .seguridad-002 .cont-imagen-slide,
-.seguridad-003 .cont-imagen-slide{
+.seguridad-003 .cont-imagen-slide,
+.seguridad-004 .cont-imagen-slide{
     width: 100%;
     height: 100%;
 }
 
 .seguridad-001 .slideshow-container,
 .seguridad-002 .slideshow-container,
-.seguridad-003 .slideshow-container{
+.seguridad-003 .slideshow-container,
+.seguridad-004 .slideshow-container{
     width: 100%;
     height: 100%;
     position: relative;
@@ -1102,7 +1130,8 @@ SEGURIDAD
     overflow: hidden;
 }
 
-.seguridad-003 .slideSeg-003{
+.seguridad-003 .slideSeg-003,
+.seguridad-004 .slideSeg-004{
     display: flex;
     width: 90%;
     height: 100%;
@@ -1124,7 +1153,8 @@ SEGURIDAD
     overflow: hidden;
 }
 
-.seguridad-003 .slide-content{
+.seguridad-003 .slide-content,
+.seguridad-004 .slide-content{
     background-color: none;
     margin: auto;
     width: 100%;
@@ -1151,7 +1181,8 @@ SEGURIDAD
 .seguridad-001 .slide-content .imagen,
 .seguridad-002 .slide-content .imagen,
  */
- .seguridad-003 .slide-content .imagen{
+ .seguridad-003 .slide-content .imagen,
+ .seguridad-004 .slide-content .imagen{
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1163,7 +1194,8 @@ SEGURIDAD
 .seguridad-001 .prev,
 .seguridad-002 .prev,
  */
-.seguridad-003 .prev{
+.seguridad-003 .prev,
+.seguridad-004 .prev{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -1181,7 +1213,8 @@ SEGURIDAD
 .seguridad-001 .next,
 .seguridad-002 .next,
  */
-.seguridad-003 .next{
+.seguridad-003 .next,
+.seguridad-004 .next{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -1199,7 +1232,8 @@ SEGURIDAD
 .seguridad-001 .next,
 .seguridad-002 .next,
  */
-.seguridad-003 .next{
+.seguridad-003 .next,
+.seguridad-004 .next{
     right: 0;
 }
 
@@ -1207,7 +1241,8 @@ SEGURIDAD
 .seguridad-001 .prev:hover,
 .seguridad-002 .prev:hover,
  */
-.seguridad-003 .prev:hover{
+.seguridad-003 .prev:hover,
+.seguridad-004 .prev:hover{
     color: var(--blanco);
     background-color: var(--primario);
 }
@@ -1216,7 +1251,8 @@ SEGURIDAD
 .seguridad-001 .next:hover,
 .seguridad-002 .next:hover,
  */
-.seguridad-003 .next:hover{
+.seguridad-003 .next:hover,
+.seguridad-004 .next:hover{
     color: var(--blanco);
     background-color: var(--primario);
 }
@@ -1225,7 +1261,8 @@ SEGURIDAD
 .seguridad-001 .fade,
 .seguridad-002 .fade,
  */
-.seguridad-003 .fade{
+.seguridad-003 .fade,
+.seguridad-004 .fade{
     animation: fade 6s linear infinite;
 }
 
@@ -1266,6 +1303,22 @@ seguridad_003
 }
 
 .seguridad-003 .slide-content .img-dos{
+    background-image: url(../img/experiencia_seguridad_03_002.png);
+}
+
+/* --------------------
+seguridad_004
+-------------------- */
+
+#seguridad-004{
+    z-index: 894;
+}
+
+.seguridad-004 .slide-content .img-uno{
+    background-image: url(../img/experiencia_seguridad_03_001.png);
+}
+
+.seguridad-004 .slide-content .img-dos{
     background-image: url(../img/experiencia_seguridad_03_002.png);
 }
 
