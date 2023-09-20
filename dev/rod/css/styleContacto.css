@@ -9,84 +9,119 @@ Banner
     z-index: 1000;
 }
 
-/*Section Form ---------------*/
+/* --------------------
+Mapa/Redes
+-------------------- */
 
 .contenedorUno{
-    border: solid red 2px;
     width: 100vw;
-    padding: 0 10%;
+    padding: 0 5%;
     display: flex;
+    justify-content: space-evenly;
+    margin: 8rem 0;
 }
 
 .contenedorUno .mapa{
-    border: solid green .2rem;
-    width: 70%;
+    width: 55%;
+    margin: 2rem 0;
 }
 
+.contenedorUno .mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
 .circulo{
-    width: 10%;
-    margin: 2rem auto;
+    width: 35%;
+    margin: 2rem 0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    border: solid purple .2rem;
 }
 
 .circulo a{
-    padding: 1.5rem;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    display: flex;
+    text-decoration: none;
+    color: var(--negro);
 }
 
 .circuloIn{
-    height: auto;
-    width: auto;
-    padding: 2rem;
-    margin: 0;
-    max-width: 8rem;
-    max-height: 8rem;
+    width: 20%;
     min-width: 6rem;
-    max-width: 6rem;
+    max-width: 8rem;
+}
+
+
+.circulo .circuloIn .circuloIn_In{
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
     background-color: var(--primario);
-    border-radius: 50rem;
     transition: var(--transitions);
     box-shadow: var(--boxShadow);
 }
 
-.circuloIn:hover{
+.circulo .circuloIn .circuloIn_In:hover{
     transform: scale(1.1);
     background-color: var(--primarioHover);
 }
 
 .circuloIn .iconoCirculo{
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     display: flex;
     fill: var(--blanco);
+}
+
+.circulo .texto{
+    width: 80%;
+    padding: 0 .5rem;
+}
+
+.circulo .texto p{
+    color: var(--gris-oscuro);
+    font-size: 1.4rem;
+    transition: var(--transitions);
+}
+
+.circulo .texto p:hover{
+    transform: scale(1.02);
+    color: var(--primario);
 }
 
 /* --------------------
 Form
 -------------------- */
 
+.contenedorDos{
+    background-color: var(--negro);
+    padding: 5rem auto;
+}
+
 .contTitle {
     width: 60%;
     margin: auto;
     text-align: center;
-    padding: 30px auto;
-    background-color: var(--morado-claro-op);
 }
 
-.contTitle h3 {
-    padding: 20px 0 0 0;
+.contTitle h3{
+    margin-top: 5rem;
+    color: var(--blanco);
 }
 
 .sectionForm form{
     width: 60%;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 5rem auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: var(--morado-claro-op);
     padding: 40px;
     border-radius: 5px;
 }
@@ -100,7 +135,7 @@ Form
 }
 
 .sectionForm span {
-    color: var(--gris-oscuro);
+    color: var(--blanco);
     font-size: 1.4rem;
     padding: 0 0 2px 0;
 }
@@ -153,16 +188,18 @@ form .tycCont{
 }
 
 .tycCont span{
-    padding: 0 5px;
+    padding: 0 .5rem;
 }
 
 .sectionForm button{
-    margin: 20px auto;
+    margin: 2rem auto 0 auto;
+    background-color: var(--negro);
+    border: none;
 }
 
-.sectionForm a{
+.sectionForm form a{
     font-size: 1.4rem;
-    color: var(--verde-link);
+    color: var(--primario);
 }
 
 /*Tablet -------------------------------------------------------------------------------------------------------------*/

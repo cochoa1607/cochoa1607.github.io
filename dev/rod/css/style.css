@@ -34,15 +34,16 @@ Colores
     --secundarioHover: #53565A30;
     --terciario: #C9C9C8;
     --terciarioHover: #C9C9C830;
-
+    
     --link: #0777A8;
     --linkHover: #5FBFE0;
-
+    
     --blanco: #FFFFFF;
     --gris: #FAFAFA;
     --grisDos: #EAEAEA;
     --grisMedio: #BDBDBD;
-    --negro: #050505;
+    /* --negro: #050505; */
+    --negro: #2C2C2C;
     --negroDos: #05050540;
     --transparente: #00000000;
 
