@@ -1404,6 +1404,15 @@ SEDES
     flex-direction: row;
 }
 
+.sedes-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.sedes-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.sedes-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo{
+    list-style: none;
+    text-align: center;
+    padding: 1rem 0 .5rem 0;
+    font-weight: 900 !important;
+}
+
 .sedes-001 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
 .sedes-002 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div,
 .sedes-003 .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
@@ -1782,6 +1791,16 @@ HOTELERÍA
     font-weight: 400;
 }
 
+.hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.hoteleria-004 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo{
+    list-style: none;
+    text-align: center;
+    padding: 1rem 0 .5rem 0;
+    font-weight: 900 !important;
+}
+
 .hoteleria-001 .contenedor-all .contenedor-texto .cajas .caja span,
 .hoteleria-002 .contenedor-all .contenedor-texto .cajas .caja span,
 .hoteleria-003 .contenedor-all .contenedor-texto .cajas .caja span,
@@ -1909,7 +1928,7 @@ overflow: hidden;
 .hoteleria-001 .slide-content .imagen,
 .hoteleria-002 .slide-content .imagen,
 .hoteleria-003 .slide-content .imagen{
-    background-position: center right;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1984,14 +2003,17 @@ hoteleria_001
 
 .hoteleria-001 .slide-content .img-uno{
     background-image: url(../img/experiencia_hoteleria_01_001.png);
+    background-position: center top !important;
 }
 
 .hoteleria-001 .slide-content .img-dos{
     background-image: url(../img/experiencia_hoteleria_01_002.png);
+    background-position: center bottom !important;
 }
 
 .hoteleria-001 .slide-content .img-tres{
     background-image: url(../img/experiencia_hoteleria_01_003.png);
+    background-position: center bottom !important;
 }
 
 .hoteleria-001 .slide-content .img-cuatro{
@@ -2158,6 +2180,15 @@ OTROS
     font-weight: 400;
 }
 
+.otros-001 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.otros-002 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo,
+.otros-003 .contenedor-all .contenedor-texto .cajas .caja-dos ul .li-titulo{
+    list-style: none;
+    text-align: center;
+    padding: 1rem 0 .5rem 0;
+    font-weight: 900 !important;
+}
+
 .otros-001 .contenedor-all .contenedor-texto .cajas .caja span,
 .otros-002 .contenedor-all .contenedor-texto .cajas .caja span,
 .otros-003 .contenedor-all .contenedor-texto .cajas .caja span{
@@ -2245,7 +2276,7 @@ OTROS
 .otros-001 .slide-content .imagen,
 .otros-002 .slide-content .imagen,
 .otros-003 .slide-content .imagen{
-    background-position: center right;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -2319,7 +2350,9 @@ otros_001
 }
 
 .otros-001 .slide-content .img-uno{
-    background-image: url(../img/experiencia_otros_01_001.png);
+    /* background-image: url(../img/experiencia_otros_01_001.png); */
+    background-image: url(../img/experiencia_otros_01_001_01.png);
+    background-size: contain !important;
 }
 
 .otros-001 .slide-content .img-dos{
@@ -2328,10 +2361,12 @@ otros_001
 
 .otros-001 .slide-content .img-tres{
     background-image: url(../img/experiencia_otros_01_003.png);
+    background-size: contain !important;
 }
 
 .otros-001 .slide-content .img-cuatro{
     background-image: url(../img/experiencia_otros_01_004.png);
+    background-size: contain !important;
 }
 
 /* --------------------
@@ -2356,6 +2391,7 @@ otros_002
 
 .otros-002 .slide-content .img-cuatro{
     background-image: url(../img/experiencia_otros_02_004.png);
+    background-position: center bottom !important;
 }
 
 .otros-002 .slide-content .img-cinco{
@@ -2372,6 +2408,7 @@ otros_002
 
 .otros-002 .slide-content .img-ocho{
     background-image: url(../img/experiencia_otros_02_008.png);
+    background-position: center top !important;
 }
 
 .otros-002 .slide-content .img-nueve{
