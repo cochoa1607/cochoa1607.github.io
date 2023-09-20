@@ -1,22 +1,4 @@
 /* --------------------
-Animación BG
--------------------- */
-  
-.fondoAnim {
-    background: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	overflow: visible;
-}
-
-svg {
-    width: 100%;
-    height: 100%;
-    overflow:hidden;
-}
-
-/* --------------------
 Banner
 -------------------- */
 
@@ -215,6 +197,11 @@ Mision Vision Valores
     padding-top: 0;
     padding-bottom: 0;
     background-color: var(--blanco);
+    overflow: hidden;
+}
+
+.miviva{
+    overflow: hidden;
 }
 
 .miviva .caja-tres{

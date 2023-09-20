@@ -278,6 +278,48 @@ section{
     max-width: 190rem;
 }
 
+/*Scroll -----------------------------------------------------------------------*/
+
+.desaparece{
+    opacity: 0.5;
+    transition: var(--transitionsXL);
+}
+
+.transform_upD{
+    opacity: 0;
+    transform: translateY(40%);
+    transition: var(--transitionsXL);
+}
+
+.transform_up{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: var(--transitionsXL);
+}
+
+.transform_down{
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: var(--transitionsXL);
+}
+
+.transform_left{
+    opacity: 0;
+    transition: var(--transitionsXL);
+    transform: translateX(100%);
+}
+
+.transform_right{
+    opacity: 0;
+    transition: var(--transitionsXL);
+    transform: translateX(-100%);
+}
+
+.aparece{
+    opacity: 1;
+    transform: none;
+}
+
 /* --------------------
 Menu Inicial
 -------------------- */

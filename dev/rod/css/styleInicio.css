@@ -25,6 +25,7 @@ Banner
 .slideshow-container-head {
     width: 100%;
     height: 70vh;
+    /* height: 100vh; */
     min-height: 40vh;
     margin: 0;
     margin-top: 8rem;

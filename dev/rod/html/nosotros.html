@@ -16,36 +16,6 @@
     </head>
     <body>
 
-        <svg class="fondoAnim" viewBox="0 0 800 600">  
-            <defs>
-              <radialGradient id="instaGrad" cx="400" cy="-170" r="400" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#FFF"/>
-                <stop offset="0.2" stop-color="#D3039A"/>
-                <stop offset="0.6" stop-color="#F70A55"/>
-                <stop offset="1" stop-color="#111"/>
-              </radialGradient>		
-          <marker id="darkMarker" width="20" height="20" viewBox="0 0 20 20" markerWidth="20" markerHeight="20" refX="0" refY="-4" orient="true" markerUnits="userSpaceOnUse" >
-            
-          <circle cx="0" cy="0" r="6" fill="#930433" opacity="0.1"/>
-           
-          </marker>   
-              <marker id="lightMarker" width="8" height="8" viewBox="0 0 8 8" markerWidth="8" markerHeight="8" refX="0" refY="9" orient="true" markerUnits="userSpaceOnUse" >
-            
-          <circle cx="0" cy="0" r="4" fill="#FC9EBD" opacity="0.031"/>
-           
-          </marker>     
-              </defs>
-              <g class="whole" >
-            <g class="waveReflectionGroup" opacity="0.361" >    
-              <polyline id="waveRef" marker-mid="url(#darkMarker)" fill="none" stroke-width="18"  stroke-linecap="round" stroke="url(#instaGrad)"/>
-            </g>  
-            <g class="waveGroup">    
-              <polyline id="wave" marker-mid="url(#lightMarker)" fill="none" stroke-width="18" stroke-linecap="round" stroke="url(#instaGrad)"/>
-            </g>  
-              </g>
-                  
-          </svg>
-
         <div class="boton-flotante">
             <button type="button" class="btn-flotante">
                 <a href="">
@@ -114,14 +84,14 @@
                         
                         <li>
                             <div class="dropdown experiencia">
-                                <button class="dropbtn down"><a class="vinculoMenu" href="#">Experiencia</a></button>
+                                <button class="dropbtn down"><a class="vinculoMenu" href="./experiencia">Experiencia</a></button>
                                 <div class="dropdown-content">
                                     <ul>
-                                        <li><a href="#aeropuertos">Aeropuertos</a></li>
-                                        <li><a href="#seguridad">Edificios de Seguridad</a></li>
-                                        <li><a href="#sedes">Sedes Diplomáticas</a></li>
-                                        <li><a href="#hoteleria">Hotelería</a></li>
-                                        <li><a href="#otros">Otros</a></li>
+                                        <li><a href="./experiencia#aeropuertos">Aeropuertos</a></li>
+                                        <li><a href="./experiencia#seguridad">Edificios de Seguridad</a></li>
+                                        <li><a href="./experiencia#sedes">Sedes Diplomáticas</a></li>
+                                        <li><a href="./experiencia#hoteleria">Hotelería</a></li>
+                                        <li><a href="./experiencia#otros">Otros</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -244,7 +214,7 @@
         <section class="container-miviva" id="miviva">
             <div class="contenedor-seccion miviva">
 
-                <div class="caja-tres">
+                <div class="caja-tres animRight">
                     <div class="titulo-dos">
                         <span>Misión</span>
                     </div>
@@ -253,7 +223,7 @@
                     </p>
                 </div>
                 
-                <div class="caja-cuatro">
+                <div class="caja-cuatro animLeft">
                     <div class="titulo-dos">
                         <span>Visión</span>
                     </div>
@@ -269,7 +239,7 @@
 
                 </div>
 
-                <div class="caja-cinco">
+                <div class="caja-cinco animUp">
                     <div class="titulo-dos">
                         <span>Valores</span>
                     </div>
@@ -307,13 +277,13 @@
         <section class="container-equipo" id="equipo">
             <div class="contenedor-seccion equipo">
 
-                <div class="titulo-dos">
+                <div class="titulo-dos animUp">
                     <span>Nosotros</span>
                 </div>
 
                 <div class="cajas">
 
-                    <div class="caja">
+                    <div class="caja animLeft">
                         <div class="imagen img-01"></div>
                         <div class="texto">
                             <h4>Montserrat Espinoza</h4>
@@ -333,7 +303,7 @@
                     </div>
                     
 
-                    <div class="caja caja-der">
+                    <div class="caja caja-der animRight">
                         <div class="imagen img-02"></div>
                         <div class="texto">
                             <h4>Moisés Gordillo</h4>
@@ -355,7 +325,7 @@
                     </div>
                     
 
-                    <div class="caja">
+                    <div class="caja animLeft">
                         <div class="imagen img-03"></div>
                         <div class="texto">
                             <h4>Mauricio Álvarez</h4>
@@ -379,7 +349,7 @@
         
         <script src="../js/menu.js"></script>
         <script src="../js/menuTabMob.js"></script>
-        <script src="../js/animacionBG.js"></script>
+        <script src="../js/animaciones.js"></script>
             
     </body>
 </html>
