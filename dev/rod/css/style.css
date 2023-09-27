@@ -291,7 +291,7 @@ section{
 
 .transform_up{
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(10%);
     transition: var(--transitionsXL);
 }
 
@@ -304,13 +304,13 @@ section{
 .transform_left{
     opacity: 0;
     transition: var(--transitionsXL);
-    transform: translateX(100%);
+    transform: translateX(10%);
 }
 
 .transform_right{
     opacity: 0;
     transition: var(--transitionsXL);
-    transform: translateX(-100%);
+    transform: translateX(-10%);
 }
 
 .aparece{

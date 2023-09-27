@@ -4,7 +4,7 @@ window.addEventListener('scroll', function () {
 
     for (var i = 0; i < seccion.length; i++) {
 
-        var altura = window.innerHeight / .8;
+        var altura = window.innerHeight / 1.4;
 
         var distancia = seccion[i].getBoundingClientRect().top;
 
