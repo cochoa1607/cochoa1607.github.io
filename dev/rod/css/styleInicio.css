@@ -81,6 +81,7 @@ Banner
 
 .slide-content .cont-imagen .img-001{
     background-image: url(../img/inicio_header_001.jpg);
+    /* background-size: contain; */
 }
 
 .slide-content .cont-imagen .img-002{
