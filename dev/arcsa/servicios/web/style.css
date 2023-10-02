@@ -31,6 +31,7 @@ Colores
     --principal: #2E2C69;
     --secundario: #038DA1;
     --terciario: #283B7F;
+    --vinculo: #FF8000;
     --blanco: #FFFFFF;
     --negro: #0A0A0A;
     --gris: #707070;
@@ -40,6 +41,7 @@ Colores
     --principal-op: #8280A5;
     --secundario-op: #4FAFBD;
     --secundario-op-dos: #DDEBED;
+    --vinculo-op: #FFA64D;
 
     --font-principal: 'Open Sans', sans-serif;
     --font-secundaria: 'Cormorant Garamond', serif;
@@ -102,6 +104,12 @@ h5 {
     font-weight: 600;
     text-align: center;
     color: var(--secundario);
+}
+
+h6 {
+    font-size: 2rem;
+    color: var(--negro);
+    font-weight: 400;
 }
 
 p{
@@ -227,6 +235,85 @@ Boton up
     stroke-width: 3;
     stroke-linecap: round;
     stroke-miterlimit: 10;
+}
+
+/* ---------------
+Header Inicio
+--------------- */
+
+header{
+    width: 100vw;
+  }
+  
+.header {
+position: fixed;
+z-index: 9999;
+transition: var(--transitionsLarge);
+background-color: var(--terciario);
+}
+
+.header #selected {
+text-decoration: underline;
+font-weight: 700;
+color: var(--secundario-op);
+}
+
+.header .containerMenu {
+width: auto;
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-size: 1.8rem;
+font-weight: 300;
+text-transform: uppercase;
+}
+
+.header .containerMenu .logo{
+width: 13rem;
+height: 9rem;
+background-image: url(./img/logoAS_Blanco.png);
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+transition: var(--transitions);
+}
+
+.header .containerMenu .logo:hover{
+width: 13.3rem;
+height: 9rem;
+}
+
+.header .containerMenu ul {
+display: flex;
+justify-content: space-around;
+}
+
+.header .containerMenu ul li {
+margin: 0 1rem;
+padding: 1rem;
+font-size: 1.6rem;
+list-style: none;
+}
+
+.header .containerMenu a {
+color: var(--secundario-op-dos);
+text-decoration: none;
+font-weight: 500;
+transition: var(--transitions);
+}
+
+.header .containerMenu a:hover {
+color: var(--vinculo-op);
+}
+
+.header .menuIcon {
+font-size: 2.8rem;
+color: var(--blanco);
+}
+
+.header .menuIcon:hover {
+font-size: 3rem;
 }
 
 /* -------------
@@ -414,7 +501,7 @@ Footer
 }
 
 .footerCaja a:hover {
-    color: var(--principal-op);
+    color: var(--secundario-op-dos);
     transform: scale(1.02);
 }
 
@@ -443,10 +530,11 @@ Footer
     font-size: 2.4rem;
 }
 
+/* 
 .footerRedes i:hover {
-    color: var(--verde-link);
+    color: var(--vinculo-op);
 }
-
+ */
 
 @keyframes move-vector {
     0% {
