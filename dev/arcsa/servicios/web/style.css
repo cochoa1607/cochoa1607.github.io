@@ -22,7 +22,9 @@ body {
     background-color: var(--grisTres);
 }
 
-/*Colores --------------------*/
+/* -------------
+Colores
+------------- */
 
 :root {
 
@@ -34,8 +36,10 @@ body {
     --gris: #707070;
     --grisDos: #D0D0D0;
     --grisTres: #EEEEEE;
-
-    --secundario-op: #DDEBED;
+    
+    --principal-op: #8280A5;
+    --secundario-op: #4FAFBD;
+    --secundario-op-dos: #DDEBED;
 
     --font-principal: 'Open Sans', sans-serif;
     --font-secundaria: 'Cormorant Garamond', serif;
@@ -51,7 +55,9 @@ body {
     --spaceDown: 0 0 5rem 0;
 }
 
-/*Elementos -------------------------------------------------------------------*/
+/* -------------
+Elementos
+------------- */
 
 .shadow {
     text-shadow: #0000001A .2rem .2rem .1rem;
@@ -61,7 +67,9 @@ body {
     box-shadow: #0000001A .4rem .4rem .6rem;
 }
 
-/*Textos --------------------*/
+/* -------------
+Textos
+------------- */
 
 h1 {
     font-size: 3.6rem;
@@ -89,72 +97,86 @@ h4 {
     text-transform: uppercase;
 }
 
+h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--secundario);
+}
+
 p{
     font-size: 1.6rem;
     color: var(--negro);
 }
 
-/* 
-h4 {
-    font-size: 4.6rem;
-    color: var(--blanco);
-    font-weight: 400;
-    font-family: var(--serif);
-}
-
-h5 {
-    font-size: 2.2rem;
-    color: var(--blanco);
-    font-weight: 500;
-}
-
-h6 {
-    font-size: 2rem;
-    color: var(--blanco);
-    font-weight: 300;
-    font-family: var(--serif);
-}
- */
-
-/*Botones --------------------------------------------------------*/
+/* -------------
+Botones
+------------- */
 
 .boton {
-    overflow: visible;
-    transition: var(--transitions);
-    border: none;
+    width: fit-content;
+    margin-top: 2rem;
     cursor: pointer;
-}
-
-.boton:hover {
-    transform: scale(1.02);
+    overflow: visible;
+    box-shadow: var(--boxShadow);
+    transition: var(--transitions);
 }
 
 .primary {
-    margin: 0;
-    padding: 7px 70px;
-    border-radius: 5px;
-    min-width: 250px;
-    max-width: 300px;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--principal);
+    border-radius: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary:hover {
+    width: 10rem;
+    height: 5rem;
+}
+
+.primary:hover::after {
+    font-family: "Font Awesome 5 Free";
+    color: var(--blanco);
+    content: "\f061";
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: 900;
     text-decoration: none;
-    background-color: var(--morado);
+}
+
+.primary a{
+    padding: 2rem;
+    text-decoration: none;
     color: var(--blanco);
     font-size: 1.6rem;
 }
 
+
 .secondary {
-    margin: 0;
-    padding: 7px 70px;
-    border-radius: 5px;
-    min-width: 250px;
-    max-width: 300px;
-    text-decoration: none;
-    background-color: var(--azul);
-    color: var(--blanco);
-    font-size: 1.6rem;
+    width: fit-content;
+    height: 5rem;
+    padding: 0 4rem;
+    margin: auto;
+    background-color: var(--secundario);
+    border-radius: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
 }
 
 .secondary:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
+}
+
+.secondary a{
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.6rem;
 }
 
 .terciary {
@@ -173,7 +195,9 @@ h6 {
     transform: scale(1.02);
 }
 
-/*Boton Up -----------------------------------------------------------------------*/
+/* -------------
+Boton up
+------------- */
 
 .botonUp{
     margin: 0;
@@ -205,7 +229,9 @@ h6 {
     stroke-miterlimit: 10;
 }
 
-/*Scroll -----------------------------------------------------------------------*/
+/* -------------
+Scroll
+------------- */
 
 .desaparece{
     opacity: 0.5;
@@ -247,7 +273,9 @@ h6 {
     transform: none;
 }
 
-/*Header -----------------------------------------------------------------------*/
+/* -------------
+Header
+------------- */
 
 header{
     width: 100vw;
@@ -323,164 +351,9 @@ header{
     display: none;
 }
 
-/*Cuenta ----------------------------------------------------------------------*/
-
-.sectionCuenta {
-    background-color: var(--blanco);
-    padding: var(--spaceSection);
-}
-
-.cuentaTitle{
-    padding: var(--spaceDown);
-}
-
-.cuentaTexto {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-}
-
-.sectionCuenta {
-    width: 100vw;
-}
-
-.cuentaCuadro {
-    width: 50%;
-    max-width: 800px;
-    padding: 0;
-    margin: 40px auto 0 auto;
-    border-radius: 5px;
-    background-color: var(--morado);
-    justify-content: space-around;
-}
-
-.cuentaContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.activecuentaContainer {
-    background-color: var(--blanco);
-    border: solid var(--morado) 2px;
-    border-radius: 5px;
-}
-
-.cuentaDentroi {
-    width: 12px;
-    height: 18px;
-    margin: 0 0 0 14px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../img2/noCollapsed.png);
-}
-
-.activecuentaDentroi {
-    width: 18px;
-    height: 12px;
-    margin: 0 0 0 14px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../img2/collapsed.png);
-}
-
-.cuentaDentro {
-    margin: auto;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    margin: 20px auto;
-    cursor: pointer;
-}
-
-.cuentaDentro:hover {
-    transform: scale(1.02);
-}
-
-.cuentaDentroDos{
-    display: none;
-}
-
-.activecuentaDentro h5 {
-    color: var(--morado);
-
-}
-
-.cuentaDentroCollapse {
-    display: none;
-    text-align: justify;
-    margin: 20px 30px;
-}
-
-.activecuentaDentroCollapse {
-    width: 100%;
-    display: flex;
-    color: var(--blanco);
-    background-color: var(--blanco);
-}
-
-.activecuentaDentroCollapse form {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.activecuentaDentroCollapse label {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: auto;
-}
-
-.activecuentaDentroCollapse span {
-    color: var(--gris-oscuro);
-    font-size: 1.4rem;
-    padding: 0 0 2px 0;
-}
-
-.activecuentaDentroCollapse input {
-    height: 30px;
-    border: solid var(--morado) 1px;
-    border-radius: 3px;
-    color: var(--gris-oscuro);
-    padding: 2px 5px;
-}
-
-.activecuentaDentroCollapse .tycCuenta {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    align-items: center;
-}
-
-.activecuentaDentroCollapse .tycCuenta input {
-    width: 14px;
-    cursor: pointer;
-}
-
-.activecuentaDentroCollapse .tycCuenta span {
-    padding: 0 5px;
-}
-
-.activecuentaDentroCollapse button {
-    margin: 20px auto;
-}
-
-.activecuentaDentroCollapse a {
-    font-size: 1.4rem;
-    color: var(--verde-link);
-}
-
-
-/*Footer ---------------------------------------------------------------------*/
+/* -------------
+Footer
+------------- */
 
 .containerFooter {
     width: 100%;
@@ -488,7 +361,7 @@ header{
     padding: 50px 0;
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--gris-oscuro);
+    background-color: #313131;
 }
 
 .footerCaja {
@@ -500,11 +373,18 @@ header{
     text-align: center;
 }
 
-.footerCaja h3 {
+.footerCaja .titulo-caja {
     font-size: 2rem;
-    color: var(--blanco);
-    font-weight: 400;
+    color: var(--secundario-op);
+    font-weight: 600;
     text-transform: uppercase;
+    text-align: left;
+}
+
+.footerCaja .titulo-mex {
+    font-size: 1.8rem;
+    color: var(--secundario);
+    font-weight: 600;
     text-align: left;
 }
 
@@ -529,15 +409,18 @@ header{
     text-decoration: none;
     font-weight: 100;
     font-size: 1.4rem;
+
+    display: flex;
 }
 
 .footerCaja a:hover {
-    color: var(--verde-link);
+    color: var(--principal-op);
     transform: scale(1.02);
 }
 
 .footerCaja i {
-    color: var(--morado-claro);
+    width: 4rem;
+    color: var(--secundario-op);
 }
 
 .footerMex {
@@ -556,47 +439,12 @@ header{
 }
 
 .footerRedes i {
-    color: var(--blanco);
+    color: var(--secundario-op-dos);
     font-size: 2.4rem;
 }
 
 .footerRedes i:hover {
     color: var(--verde-link);
-}
-
-/*Headers de pags-------------------------------------------------------------*/
-
-.sectionHeaderPags {
-    width: 100vw;
-    height: 60vh;
-    min-height: 600px;
-    max-height: 700px;
-    padding: 180px 0 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.sectionHeaderPags .text {
-    width: 70vw;
-    min-width: 700px;
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: var(--blanco-op);
-    text-align: center;
-}
-
-.sectionHeaderPags h2 {
-    color: var(--blanco);
-}
-
-.sectionHeaderPags p {
-    width: 80%;
-    min-width: 600px;
-    margin: 40px auto;
-    text-align: justify;
 }
 
 
