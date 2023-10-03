@@ -1,32 +1,36 @@
-/*Contacto ---------------*/
+/*Seccion Form
+---------------*/
 
-.sectionContacto{
-    background-image: url(../img/contacto.png);
-    background-position: center top;
-    background-size: cover;
-    width: 100vw;
-    height: 40vh;
-    min-height: 450px;
-    max-height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.sectionContacto h2{
-    color: var(--blanco);
+.seccionForm{
+    width: 90vw;
     margin: auto;
-    margin: 80px 0 0 0;
+    margin-top: 18rem;
 }
 
-/*Section Form ---------------*/
-
-.circulo{
-    width: 80vw;
-    margin: 50px auto;
+.seccionForm .circulo{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 10rem;
+}
+
+.circulo .circulos{
+    width: 40%;
+}
+
+.circulo .imagen{
+    width: 40%;
+}
+
+.circulo .imagen .img{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    background-image: url(../img/retrato.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .circuloIn{
@@ -38,15 +42,15 @@
     max-height: 100px;
     min-width: 60px;
     max-width: 70px;
-    background-color: var(--morado);
+    background-color: var(--principal);
     border-radius: 50px;
-    transition: var(--transitionsLarge);
+    transition: var(--transitions);
     box-shadow: var(--boxShadow);
 }
 
 .circuloIn:hover{
     transform: scale(1.1);
-    background-color: var(--morado-claro);
+    background-color: var(--principal-op);
 }
 
 .circuloIn .iconoCirculo{
@@ -56,153 +60,109 @@
     fill: var(--blanco);
 }
 
-.contTitle {
-    width: 60%;
-    margin: auto;
+/*Seccion Form
+---------------*/
+.contTitle{
     text-align: center;
-    padding: 30px auto;
-    background-color: var(--morado-claro-op);
 }
 
-.contTitle h3 {
-    padding: 20px 0 0 0;
-}
-
-.sectionForm form{
-    width: 60%;
-    margin: 0 auto 100px auto;
+.containerForm {
+    width: 90vw;
+    margin: 5rem auto 10rem auto;
+    padding: 0;
+  }
+  
+.containerForm form {
+    width: 100%;
+    height: 20rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: var(--morado-claro-op);
-    padding: 40px;
-    border-radius: 5px;
-}
-
-.sectionForm label{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: auto;
-}
-
-.sectionForm span {
-    color: var(--gris-oscuro);
-    font-size: 1.4rem;
-    padding: 0 0 2px 0;
-}
-
-.sectionForm input {
-    height: 30px;
-    border: solid var(--morado) 1px;
-    border-radius: 3px;
-    color: var(--gris-oscuro);
-    padding: 2px 5px;
-}
-
-.sectionForm select {
-    height: 30px;
-    border: solid var(--morado) 1px;
-    border-radius: 3px;
-    color: var(--gris-oscuro);
-    padding: 2px 5px;
-    cursor: pointer;
-}
-
-.sectionForm .comentCont{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: auto;
-}
-
-.sectionForm .comentCont textarea {
-    height: 60px;
-    resize: none;
-    border: solid var(--morado) 1px;
-    border-radius: 3px;
-    color: var(--gris-oscuro);
-    padding: 2px 5px;
-}
-
-form .tycCont{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
+    justify-content: space-evenly;
     align-items: center;
+    border-radius: 1rem;
+    background-color: var(--blanco);
+  }
+  
+.containerForm label {
+    width: 23%;
+    margin: .5rem 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+.containerForm span {
+    width: fit-content;
+    font-size: 1.3rem;
+    color: var(--azul);
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    background-color: var(--blanco);
+  
+    transform: translateY(.5rem);
+    z-index: 99;
+  }
+  
+.containerForm input {
+    width: 100%;
+    height: 4rem;
+    border-radius: 3px;
+    padding: 0 1.5rem;
+    color: var(--negro);
+    border: solid var(--principal) .15rem;
+    
+    transform: translateY(-.5rem);
+    z-index: 9;
+  }
+  
+.containerForm .contenedor-boton {
+    width: auto;
+    overflow: visible;
+  }
+
+/* ---------------
+Agendar
+--------------- */
+
+.seccionAgendar {
+    margin-top: 8rem;
+    padding: var(--spaceSection);
 }
 
-.tycCont input{
-    width: 14px;
-    cursor: pointer;
+.seccionAgendar .agendar{
+    width: 90vw;
+    margin: auto;
 }
 
-.tycCont span{
-    padding: 0 5px;
+
+.seccionAgendar .agendar .cajas{
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
-.sectionForm button{
-    margin: 20px auto;
+.seccionAgendar .agendar .cajas .caja{
+    width: 30%;
 }
 
-.sectionForm a{
-    font-size: 1.4rem;
-    color: var(--verde-link);
+.seccionAgendar .agendar .cajas .calendario{
+    width: 70%;
+    margin-right: 5rem;
 }
+
+.seccionAgendar .agendar .cajas .calendario iframe{
+    width: 100%;
+    height: 60rem;
+}
+
+  
 
 /*Tablet -------------------------------------------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 1099px) and (min-width: 640px) {
 
-    .sectionForm form{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        padding: 0;
-    }
-
-    .contTitle {
-        width: 80%;
-    }
     
-    .contTitle h3 {
-        padding: 20px 0;
-    }
-
-    .sectionForm form label{
-        width: 90%;
-    }
-
-    .sectionForm form input{
-        width: 100%;
-    }
-    
-    .sectionForm .comentCont{
-        width: 90%;
-    }
-
-    .sectionForm .tycCont{
-        width: 90%;
-        display: flex;
-        margin: auto;
-    }
-    
-    .sectionForm .tycCont input{
-        width: 15px;
-        height: 15px;
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .sectionForm form button{
-        width: 90%;
-        max-width: 400px;
-        min-width: 200px;
-    }
 
 }
 
@@ -210,56 +170,6 @@ form .tycCont{
 
 @media only screen and (max-width: 639px) and (min-width: 1px) {
     
-    .sectionForm form{
-        width: 90%;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .contTitle {
-        width: 90%;
-    }
-    
-    .contTitle h3 {
-        padding: 20px 0;
-    }
-
-    .sectionForm form label{
-        width: 90%;
-    }
-
-    .sectionForm form input{
-        width: 100%;
-    }
-    
-    .sectionForm .comentCont{
-        width: 90%;
-    }
-
-    .sectionForm .tycCont{
-        width: 90%;
-    }
-    
-    .sectionForm .tycCont input{
-        width: 15px;
-        height: 15px;
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-
-    .sectionForm .tycCont span{
-        font-size: 1.2rem;
-    }
-    
-    .sectionForm .tycCont a{
-        font-size: 1.2rem;
-    }
-    
-    .sectionForm form button{
-        width: 80%;
-        max-width: none;
-        min-width: 300px;
-    }
+  
 
 }

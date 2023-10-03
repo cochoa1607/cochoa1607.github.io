@@ -232,7 +232,7 @@ Identidad de Marca
 .seccionIdentidad {
     margin-top: 8rem;
     padding: var(--spaceSection);
-  }
+}
 
 .seccionIdentidad .identidad{
     width: 90vw;
@@ -245,7 +245,7 @@ Identidad de Marca
 }
 
 .seccionIdentidad .identidad .contenedor_cajas .cajas{
-    width: 50%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -253,13 +253,13 @@ Identidad de Marca
 }
 
 .seccionIdentidad .identidad .contenedor_cajas .cajas .caja{
-    width: 100%;
+    width: 98%;
     background-color: var(--terciario);
     padding: 3rem 5rem;
-
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 }
 
 .seccionIdentidad .identidad .contenedor_cajas .cajas .caja .titulo,
@@ -268,16 +268,155 @@ Identidad de Marca
     color: var(--blanco);
 }
 
+.seccionIdentidad .identidad .contenedor_cajas .cajas .caja .titulo{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .seccionIdentidad .identidad .contenedor_cajas .cajas .caja_01,
-.seccionIdentidad .identidad .contenedor_cajas .cajas .caja_02{
-    margin: 1rem;
-    height: 20rem;
+.seccionIdentidad .identidad .contenedor_cajas .cajas .caja_04{
+    margin: 1rem 1%;
+    height: 25rem;
 }
 
 .seccionIdentidad .identidad .contenedor_cajas .cajas .caja_03,
-.seccionIdentidad .identidad .contenedor_cajas .cajas .caja_04{
-    margin: 1rem;
-    height: 30rem;
+.seccionIdentidad .identidad .contenedor_cajas .cajas .caja_02{
+    margin: 1rem 1%;
+    height: 35rem;
 }
 
+/* ---------------
+Nuestro Equipo
+--------------- */
 
+.seccionEquipo {
+    margin-top: 8rem;
+    padding: var(--spaceSection);
+}
+
+.seccionEquipo .equipo{
+    width: 90vw;
+    margin: auto;
+}
+
+.seccionEquipo .equipo .texto{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.seccionEquipo .equipo .cajas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.seccionEquipo .equipo .cajas .caja{
+    display: flex;
+    margin: 2rem 0;
+    width: 50%;
+    height: auto;
+    opacity: 60%;
+}
+
+.seccionEquipo .equipo .cajas .caja:hover{
+    opacity: 100%;
+}
+
+.seccionEquipo .equipo .cajas .caja_ultima{
+    opacity: 100%;
+}
+
+.seccionEquipo .equipo .cajas .caja_ultima .caja_in{
+    width: 100% !important;
+    padding: 0 5rem;
+
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionEquipo .equipo .cajas .caja_ultima .caja_in h4{
+    margin: 0;
+    padding: 0;
+}
+
+.seccionEquipo .equipo .cajas .caja_ultima .caja_in .boton{
+    margin: 0;
+    margin-top: 3rem;
+    padding: 0;
+}
+
+.seccionEquipo .equipo .cajas .caja .caja_in{
+    display: flex;
+    width: 40rem;
+    height: 40rem;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.seccionEquipo .equipo .cajas .caja .imagen{
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.seccionEquipo .equipo .cajas .caja .caja_inDos{
+    display: flex;
+    width: 40rem;
+    height: 40rem;
+    margin: auto;
+    border-radius: 1rem;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--principal);
+}
+
+.seccionEquipo .equipo .cajas .caja .caja_inDos h4{
+    color: var(--blanco);
+}
+
+.seccionEquipo .equipo .cajas .caja .imagen{
+    background-image: url(../img/retrato.jpg);
+}
+
+/* ---------------
+Nuestro Clientes
+--------------- */
+
+.seccionClientes {
+    margin-top: 8rem;
+    padding: var(--spaceSection);
+}
+
+.seccionClientes .clientes{
+    width: 100vw;
+    margin: auto;
+}
+
+.seccionClientes .clientes h2{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.seccionClientes .clientes .cajas{
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.seccionClientes .clientes .cajas .caja{
+    width: 40rem;
+    height: 20rem;
+    background-color: var(--gris);
+}

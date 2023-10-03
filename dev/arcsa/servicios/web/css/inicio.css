@@ -245,6 +245,11 @@ Consulta
   width: 100vw;
   margin: 0 auto;
   padding: var(--spaceSection);
+
+  background-image: url(../img/inicio_fondo_02.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .sectionConsulta h2,

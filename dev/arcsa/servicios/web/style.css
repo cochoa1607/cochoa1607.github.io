@@ -225,7 +225,7 @@ Boton up
     margin: 0;
     padding: 2px 10px 5px 10px;
     border-radius: 50px;
-    background-color: var(--morado-claro);
+    background-color: var(--principal);
     border: solid 1px var(--blanco);
     box-shadow: var(--boxShadow);
 }
