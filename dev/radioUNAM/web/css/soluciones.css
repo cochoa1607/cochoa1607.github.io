@@ -1,0 +1,385 @@
+/* ---------------
+Soluciones
+--------------- */
+
+.sectionSoluciones {
+    background-color: var(--morado-claro-op);
+    margin-top: 8rem;
+    padding: var(--spaceSection);
+}
+
+.sectionSoluciones .soluciones{
+    width: 90vw;
+    margin: auto;
+}
+
+.sectionSoluciones .soluciones h2,
+.sectionSoluciones .soluciones h3{
+    text-align: center;
+}
+
+.sectionSoluciones .soluciones .caja_descubre{
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+    overflow: visible;
+}
+
+.sectionSoluciones .soluciones .caja_descubre ul{
+    overflow: visible;
+    margin-top: 1rem;
+}
+
+.sectionSoluciones .soluciones .caja_descubre ul li{
+    overflow: visible;
+}
+
+.sectionSoluciones .soluciones .caja_tarjetas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.sectionSoluciones .soluciones .caja_tarjetas .tarjeta{
+    width: 40%;
+}
+
+.sectionSoluciones .soluciones .caja_tarjetas .tarjeta .tarjeta_in{
+    padding: 5rem 4rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--blanco);
+}
+
+.sectionSoluciones .soluciones .caja_tarjetas .tarjeta .tarjeta_in ul{
+    margin: 3rem 0 3rem 2.3rem;
+    padding-left: 2.3rem;
+}
+
+.sectionSoluciones .soluciones .caja_tarjetas .tarjeta .tarjeta_in ul li{
+    margin: 1.5rem 0;
+    text-indent: -2.3rem;
+    list-style-position: inside;
+    overflow: visible;
+}
+
+.sectionSoluciones .soluciones .caja_tarjetas .tarjeta .tarjeta_nota{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* ---------------
+Comparativo
+--------------- */
+
+.sectionComparativo {
+    background-color: var(--morado-claro-op);
+    margin-top: 8rem;
+    padding: var(--spaceSection);
+  }
+
+.sectionComparativo .comparativo{
+    width: 90vw;
+    margin: auto;
+}
+
+.sectionComparativo .comparativo h2,
+.sectionComparativo .comparativo h3,
+.sectionComparativo .comparativo p{
+    text-align: center;
+}
+
+.sectionComparativo .comparativo h3{
+    margin-bottom: 3rem;
+}
+
+.sectionComparativo .comparativo .contenedor_comparativo{
+    display: flex;
+    justify-content: center;
+}
+
+.sectionComparativo .comparativo .contenedor_comparativo .caja{
+    width: 33%;
+    margin-top: 5rem;
+    padding: 3rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionComparativo .comparativo .contenedor_comparativo .titulo{
+    width: 100%;
+    height: 8rem;
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    text-align: center;
+    border-bottom: solid var(--blanco) .2rem;
+}
+
+.sectionComparativo .comparativo .contenedor_comparativo .logoArcsa{
+    width: 100%;
+    height: 8rem;
+    margin-bottom: 3rem;
+    background-image: url(../img/logoAS_Color.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: solid var(--grisDos) .2rem;
+}
+
+.sectionComparativo .comparativo .contenedor_comparativo .caja_01{
+    color: var(--blanco);
+    background-color: var(--principal);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.sectionComparativo .comparativo .contenedor_comparativo .caja_02{
+    color: var(--blanco);
+    background-color: var(--gris);
+}
+
+.sectionComparativo .comparativo .contenedor_comparativo .caja_03{
+    color: var(--negro);
+    background-color: var(--blanco);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.sectionComparativo .comparativo .contenedor_comparativo .caja ul{
+    width: 100%;
+    text-align: center;
+}
+
+.sectionComparativo .comparativo .contenedor_comparativo .caja ul li{
+    width: 100%;
+    border-bottom: solid var(--grisDos) .1rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionComparativo .comparativo .contenedor_comparativo .caja ul .ultimo{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: none;
+}
+
+
+/* ---------------
+Recuperación
+--------------- */
+
+.sectionRecuperacion {
+    background-color: var(--morado-claro-op);
+    margin-top: 8rem;
+    padding: var(--spaceSection);
+  }
+
+.sectionRecuperacion .recuperacion{
+    width: 90vw;
+    margin: auto;
+}
+
+
+.sectionRecuperacion .recuperacion .cajas{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.sectionRecuperacion .recuperacion .cajas .caja{
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+}
+
+.sectionRecuperacion .recuperacion .cajas .caja h2{
+    margin-bottom: 2rem;
+    height: 8rem;
+}
+
+.sectionRecuperacion .recuperacion .cajas .caja h3{
+    margin-bottom: 2rem;
+}
+
+.sectionRecuperacion .recuperacion .cajas .caja ul{
+    margin: 2rem 0 2rem 2.3rem;
+    overflow: visible;
+}
+.sectionRecuperacion .recuperacion .cajas .caja ul li{
+    margin: 1rem 0;
+    text-indent: -2.3rem;
+    list-style-position: inside;
+    overflow: visible;
+}
+
+.sectionRecuperacion .recuperacion .cajas .caja_01{
+    width: 50%;   
+}
+
+.sectionRecuperacion .recuperacion .cajas .caja_02{
+    width: 50%;   
+    background-color: var(--blanco);
+}
+
+.sectionRecuperacion .recuperacion .cajas .boton{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+/* ---------------
+Carta
+--------------- */
+
+.sectionCarta {
+    background-color: var(--morado-claro-op);
+    margin-top: 8rem;
+    padding: var(--spaceSection);
+  }
+
+.sectionCarta .carta{
+    width: 90vw;
+    margin: auto;
+}
+
+
+.sectionCarta .carta .cajas{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.sectionCarta .carta .cajas .caja{
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+}
+
+.sectionCarta .carta .cajas .caja h2{
+    margin-bottom: 2rem;
+    height: 8rem;
+}
+
+.sectionCarta .carta .cajas .caja h3{
+    margin-bottom: 2rem;
+}
+
+.sectionCarta .carta .cajas .caja ul{
+    margin: 2rem 0 2rem 2.3rem;
+    overflow: visible;
+}
+.sectionCarta .carta .cajas .caja ul li{
+    margin: 1rem 0;
+    text-indent: -2.3rem;
+    list-style-position: inside;
+    overflow: visible;
+}
+
+.sectionCarta .carta .cajas .caja_01{
+    width: 50%;   
+}
+
+.sectionCarta .carta .cajas .caja_02{
+    width: 50%;   
+    background-color: var(--blanco);
+}
+
+.sectionCarta .carta .cajas .boton{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.sectionCarta .carta .cajas .tarjeta_nota{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* ---------------
+Certificaciones
+--------------- */
+
+.sectionCertificaciones {
+    background-color: var(--morado-claro-op);
+    margin-top: 8rem;
+    padding: var(--spaceSection);
+  }
+
+.sectionCertificaciones .certificaciones{
+    width: 90vw;
+    margin: auto;
+}
+
+
+.sectionCertificaciones .certificaciones .cajas{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.sectionCertificaciones .certificaciones .cajas .caja{
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+}
+
+.sectionCertificaciones .certificaciones .cajas .caja h2{
+    margin-bottom: 2rem;
+    height: 8rem;
+}
+
+.sectionCertificaciones .certificaciones .cajas .caja h3{
+    margin-bottom: 2rem;
+}
+
+.sectionCertificaciones .certificaciones .cajas .caja ul{
+    margin: 2rem 0 2rem 2.3rem;
+    overflow: visible;
+}
+.sectionCertificaciones .certificaciones .cajas .caja ul li{
+    margin: 1rem 0;
+    text-indent: -2.3rem;
+    list-style-position: inside;
+    overflow: visible;
+}
+
+.sectionCertificaciones .certificaciones .cajas .caja_01{
+    width: 50%;   
+}
+
+.sectionCertificaciones .certificaciones .cajas .caja_02{
+    width: 50%;   
+    background-color: var(--blanco);
+}
+
+.sectionCertificaciones .certificaciones .cajas .boton{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+
+/* ---------------
+Tablet
+--------------- */
+  
+@media only screen and (max-width: 1099px) and (min-width: 640px) {
+  
+    /* ---------------
+    Seccion
+    --------------- */
+    
+    
+}
+
+/* ---------------
+Mobile
+--------------- */
+
+@media only screen and (max-width: 639px) and (min-width: 1px) {
+    
+    /* ---------------
+    Seccion
+    --------------- */
+  
+  }
