@@ -9,7 +9,11 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("scroll", function () {
+    var carrusel = document.querySelector(".carrusel_img");
+    carrusel.classList.toggle("abajo", window.scrollY > 120);
+});
+
+window.addEventListener("scroll", function () {
     var menuBGText = document.querySelector(".texto");
     menuBGText.classList.toggle("abajo", window.scrollY > 80);
 });
-

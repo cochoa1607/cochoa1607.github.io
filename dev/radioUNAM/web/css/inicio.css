@@ -29,8 +29,8 @@ BG 2
 }
 
 .bg_03{
-  height: 60rem;
-  transform: translateY(-34rem);
+  height: 70rem;
+  transform: translateY(-38rem);
   
   background-image: url(../img/inicio_fondo_03.png);
 }
@@ -175,9 +175,23 @@ Banner
   overflow: visible;
   transition: var(--transitionsLarge);
 }
+.seccionBanner .contenedorBanner .carrusel_img {
+  width: 50vw;
+  height: 55rem;
+  margin-right: 0;
+  margin: 150px 0 0;
+  padding: 2rem;
+  transition: var(--transitionsLarge);
+}
 
-.seccionBanner .contenedorBanner .carrusel_img{
-  background-image: url();
+.seccionBanner .contenedorBanner .carrusel_img .imagen{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/Anecdotas-Villa.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* box-shadow: var(--boxShadow); */
 }
 
 /* 
@@ -229,16 +243,22 @@ Banner
   transform: translateX(200px);
 }
 
+.seccionBanner .contenedorBanner .carrusel_img.abajo{
+  opacity: 0;
+  transform: translateX(200px);
+}
+
 /* ---------------
 Soluciones
 --------------- */
 
-.seccionSoluciones {
+.seccionFunciones {
   background-color: var(--morado-claro-op);
   padding: var(--spaceSection);
 }
 
-.seccionSoluciones .contenedorSoluciones {
+.seccionFunciones .contenedorFunciones {
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -246,77 +266,109 @@ Soluciones
 
 }
 
-.seccionSoluciones .contenedorSoluciones .solucionesTitle{
+.seccionFunciones .contenedorFunciones .funcionesTitle{
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.seccionSoluciones .contenedorSoluciones .solucionesTitle p{
+.seccionFunciones .contenedorFunciones .funcionesTitle p{
   margin: 2rem;
   text-align: center;
 }
 
-.seccionSoluciones .contenedorSoluciones .recuadro {
+.seccionFunciones .contenedorFunciones .recuadro {
   width: 30%;
   margin: 2rem auto;
   padding: 3rem 2rem;
-  background-color: var(--blanco);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   border-radius: 5px;
 }
 
-.seccionSoluciones .contenedorSoluciones .recuadro .recuadroInline {
+.seccionFunciones .contenedorFunciones .recuadro .contenedorTarjeta {
+  width: 100%;
+  height: 55rem;
+}
+
+.seccionFunciones .contenedorFunciones .recuadro .contenedorTarjeta .tarjeta{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.seccionFunciones .contenedorFunciones .recuadro .contenedorTarjeta .tj_01{
+  background-image: url(../img/Anecdotas-Villa.jpg);
+}
+
+.seccionFunciones .contenedorFunciones .recuadro .contenedorTarjeta .tj_02{
+  background-image: url(../img/Cartel-MoiraFINAL.jpg);
+}
+
+.seccionFunciones .contenedorFunciones .recuadro .contenedorTarjeta .tj_03{
+  background-image: url(../img/Cartel_Expo_Méxicoantiguo.jpg);
+}
+
+.seccionFunciones .contenedorFunciones .recuadro .boton_func{
+  transform: translate(5rem, -5rem);
+  border: solid var(--blanco) .2rem;
+}
+
+/* 
+.seccionFunciones .contenedorFunciones .recuadro .recuadroInline {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto 20px auto;
 }
 
-.seccionSoluciones .contenedorSoluciones .recuadro .recuadroInline h4 {
+.seccionFunciones .contenedorFunciones .recuadro .recuadroInline h4 {
   text-align: left;
 }
 
-.seccionSoluciones .contenedorSoluciones .recuadro p {
-  text-align: justify;
-  margin: 2rem 0;
-}
-
-.seccionSoluciones .contenedorSoluciones .recuadro span {
-  text-align: justify;
-  font-size: 1.2rem;
-}
-
-.seccionSoluciones .contenedorSoluciones .recuadro .recuadroInline span a{
+.seccionFunciones .contenedorFunciones .recuadro .recuadroInline span a{
   color: var(--principal);
   text-decoration: none;
   font-style: italic;
 }
+*/
+
+.seccionFunciones .contenedorFunciones .recuadro p {
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+.seccionFunciones .contenedorFunciones .recuadro span {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
 
 /* ---------------
 Consulta
 --------------- */
 
-.seccionConsulta {
+.seccionContacto {
   width: 100vw;
   margin: 4rem auto 5rem auto;
   padding: var(--spaceSection);
 }
 
-.seccionConsulta .contenedorConsulta h2,
-.seccionConsulta .contenedorConsulta h3 {
+.seccionContacto .contenedorContacto h2,
+.seccionContacto .contenedorContacto h3 {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.seccionConsulta .contenedorConsulta .contenedorForm {
+.seccionContacto .contenedorContacto .contenedorForm {
   width: 100%;
   margin: 5rem auto 0 auto;
   padding: 0;
 }
 
-.seccionConsulta .contenedorConsulta .contenedorForm form {
+.seccionContacto .contenedorContacto .contenedorForm form {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -327,7 +379,7 @@ Consulta
   background-color: var(--blanco);
 }
 
-.seccionConsulta .contenedorConsulta .contenedorForm label {
+.seccionContacto .contenedorContacto .contenedorForm label {
   width: 23%;
   margin: .5rem 0;
   display: flex;
@@ -335,7 +387,7 @@ Consulta
   flex-direction: column;
 }
 
-.seccionConsulta .contenedorConsulta .contenedorForm span {
+.seccionContacto .contenedorContacto .contenedorForm span {
   width: fit-content;
   font-size: 1.3rem;
   color: var(--azul);
@@ -347,7 +399,7 @@ Consulta
   z-index: 99;
 }
 
-.seccionConsulta .contenedorConsulta .contenedorForm input {
+.seccionContacto .contenedorContacto .contenedorForm input {
   width: 100%;
   height: 4rem;
   border-radius: 3px;
@@ -359,7 +411,7 @@ Consulta
   z-index: 9;
 }
 
-.seccionConsulta .contenedorConsulta .contenedorForm .contenedor-boton {
+.seccionContacto .contenedorContacto .contenedorForm .contenedor-boton {
   width: auto;
   overflow: visible;
 }
@@ -470,20 +522,20 @@ Nosotros
 Nuestro ADN
 --------------- */
 
-.seccionADN {
+.seccionObra {
   width: 100vw;
   margin: 0 auto;
   padding: var(--spaceSection);
 }
 
-.seccionADN .contenedorADN{
+.seccionObra .contenedorObra{
   width: 90vw;
   margin: auto;
   display: flex;
   overflow: visible;
 }
 
-.seccionADN .contenedorADN .texto{
+.seccionObra .contenedorObra .texto{
   width: 50%;
   height: auto;
   margin: auto;
@@ -491,15 +543,15 @@ Nuestro ADN
   overflow: visible;
 }
 
-.seccionADN .contenedorADN .texto .tituloDos{
+.seccionObra .contenedorObra .texto .tituloDos{
   margin-top: 5rem;
 }
 
-.seccionADN .contenedorADN .texto .boton{
+.seccionObra .contenedorObra .texto .boton{
   margin: 5rem 0 0 0;
 }
 
-.seccionADN .contenedorADN .imagenADN{
+.seccionObra .contenedorObra .imagenObra{
   width: 50%;
   height: 50vh;
   min-width: 40rem;
@@ -507,7 +559,7 @@ Nuestro ADN
   box-shadow: var(--boxShadow);
   overflow: visible;
   
-  background-image: url(../img/inicio_ADN.png);
+  background-image: url(../img/inicio_Obra.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -74,6 +74,8 @@ h1 {
     font-size: 3.6rem;
     color: var(--principal);
     font-family: var(--font-principal);
+    max-width: 90ch;
+    margin: auto;
 }
 
 h2 {
@@ -81,12 +83,16 @@ h2 {
     color: var(--principal);
     font-weight: 600;
     text-transform: uppercase;
+    max-width: 90ch;
+    margin: auto;
 }
 
 h3 {
     font-size: 2.4rem;
     color: var(--negro);
     font-weight: 400;
+    max-width: 90ch;
+    margin: auto;
 }
 
 h4 {
@@ -94,6 +100,8 @@ h4 {
     color: var(--principal);
     font-weight: 600;
     text-transform: uppercase;
+    max-width: 90ch;
+    margin: auto;
 }
 
 h5 {
@@ -101,18 +109,23 @@ h5 {
     font-weight: 600;
     text-align: center;
     color: var(--secundario);
+    max-width: 90ch;
+    margin: auto;
 }
 
 h6 {
     font-size: 2rem;
     color: var(--negro);
     font-weight: 400;
+    max-width: 90ch;
+    margin: auto;
 }
 
 p{
     font-size: 1.6rem;
     color: var(--negro);
     max-width: 90ch;
+    margin: auto;
 }
 
 /* -------------

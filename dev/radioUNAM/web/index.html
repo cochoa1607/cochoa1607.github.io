@@ -64,7 +64,7 @@
             </div>
             <div class="menuRedes menuMob">
                 <ul>
-                    <li><a href="https://wa.me/525514775659" class="menuIcon" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://wa.me/" class="menuIcon" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -75,6 +75,7 @@
             <div class="texto">
                 <h1>Bienvenido a La Sala Julián Carrillo</h1>
                 <p>¡Visita nuestra <span>Cartelera</span> y no te pierdas nuestras puestas en escena!</p>
+                <p>Septiempre 2023</p>
                 <div class="boton cta btnanim">
                     <a href="#">Consultar</a>
                 </div>
@@ -87,62 +88,40 @@
                 </video> 
             </div>
             -->
-            <div class="imagen">
-                <div class="carrusel_img"></div>
+            <div class="carrusel_img">
+                <div class="imagen"></div>
             </div>
         </div>
     </section>
 
-    <main class="seccionSoluciones">
-        <div class="contenedor contenedorSoluciones">
-            <div class="solucionesTitle">
-                <h2>Soluciones más relevantes</h2>
-                <p>Vender tus productos o servicios a crédito, con seguridad y en cualquier parte del mundo reduciendo el riego de impago gracias a nuestras soluciones.</p>
+    <main class="seccionFunciones">
+        <div class="contenedor contenedorFunciones">
+            <div class="funcionesTitle">
+                <h2>Funciones destacadas</h2>
+                <p>Esta es nuestra selección para ti, o visita nuestra <a href="./html/cartelera.html">cartelera</a></p>
             </div>
-            <div class="contenedorSoluciones">
-                <div class="recuadro shadowBox">
-                    <div class="recuadroInline">
-                        <h4>Recuperación de Cartera Extrajudicial</h4>
+            <div class="contenedorFunciones">
+                <div class="recuadro">
+                    <div class="contenedorTarjeta">
+                        <div class="tarjeta tj_01"></div>
                     </div>
-                    <div>
-                        <p>
-                            ¿Cuánto más seguirás esperando a que te paguen?
-                            <br>
-                            Recupera tus cuentas vencidas y comienza a ver resultados en los primeros 15 días.
-                        </p>
-                        <span>Consulta términos y condiciones.</span>
-                    </div>
-                    <div class="btnPrim primary">
+                    <div class="btnPrim primary boton_func">
                         <a href="#">ir</a>
                     </div>
                 </div>
-                <div class="recuadro shadowBox">
-                    <div class="recuadroInline">
-                        <h4>Reporte Comercial +Protección</h4>
+                <div class="recuadro">
+                    <div class="contenedorTarjeta">
+                        <div class="tarjeta tj_02"></div>
                     </div>
-                    <div>
-                        <p>
-                            Investigamos a tu futuro cliente Comercial
-                            <br>
-                            Analizamos y calificamos su capacidad de pago para que establezcas relaciones comerciales más seguras y duraderas.
-                        </p>
-                        <span>Consulta términos y condiciones.</span>
-                    </div>
-                    <div class="btnPrim primary">
+                    <div class="btnPrim primary boton_func">
                         <a href="#">ir</a>
                     </div>
                 </div>
-                <div class="recuadro shadowBox">
-                    <div class="recuadroInline">
-                        <h4>Reporte de antecedentes legales</h4>
+                <div class="recuadro">
+                    <div class="contenedorTarjeta">
+                        <div class="tarjeta tj_03"></div>
                     </div>
-                    <div>
-                        <p>
-                            Descarga el historial de antecedentes legales de cualquier persona o empresa en los 32 estados de la república mexicana.
-                        </p>
-                        <span>Consulta términos y condiciones en <a href="https://www.bloc.com.mx/" target="_blank">www.bloc.com.mx</a></span>
-                    </div>
-                    <div class="btnPrim primary">
+                    <div class="btnPrim primary boton_func">
                         <a href="#">ir</a>
                     </div>
                 </div>
@@ -150,28 +129,24 @@
         </div>
     </main>
 
-    <section class="seccionConsulta animUp">
-        <div class="contenedor contenedorConsulta">
+    <section class="seccionContacto animUp">
+        <div class="contenedor contenedorContacto">
 
-            <h2 class="">Autoevaluaciones</h2>
-            <h3 class="">Compra individual</h3>
+            <h2 class="">Acércate a nosotros</h2>
+            <h3 class="">Dejanos tus datos y nos comunicaremos contigo</h3>
 
             <div class="contenedorForm">
 
                 <form action="" autocomplete="on" target="none">
                     
-                    <label for="razonSocial">
-                        <span>Razón social o nombre comercial:</span>
-                        <input type="text" placeholder="Sin denominaciones" required>
+                    <label for="nombre">
+                        <span>Nombre:</span>
+                        <input type="text" autocomplete="cc-name" name="nombre" id="nombre" placeholder="Nombre(s) y Apellido(s)" required>
                     </label>
-
-                    <label for="denominacion">
-                        <span>Denominación:</span>
-                        <input list="denominacion" placeholder="Elige una denominación..." required>
-                        <datalist id="denominacion">
-                            <option value="Op1"></option>
-                            <option value="Op2"></option>
-                        </datalist>
+                    
+                    <label for="telefono">
+                        <span>Teléfono:</span>
+                        <input type="tel" autocomplete="tel" name="telefono" id="telefono" placeholder="10 dígitos" required>
                     </label>
 
                     <label for="correo">
@@ -181,7 +156,7 @@
 
                     <div class="contenedor-boton">
                         <div class="boton secondary">
-                            <a href="#">Consultar</a>
+                            <a href="#">Enviar</a>
                         </div>
                     </div>
 
@@ -194,6 +169,7 @@
         <div class="bg bg_02"></div>
     </div>
 
+<!-- 
     <section class="seccionBullets animUp">
 
         <div class="contenedor contenedorBullets">
@@ -225,6 +201,7 @@
         </div>
 
     </section>
+-->
 
     <section class="seccionNosotros animUp">
 
@@ -235,11 +212,7 @@
 
             <div class="texto">
                 <h2>Nosotros</h2>
-                <ul>
-                    <li>Somos una empresa con 26 años de experiencia, formada por emprendedores mexicanos.</li>
-                    <li>Somos una de las calificadoras con mayor reconocimiento en México y Latinoamérica.</li>
-                    <li>Buscamos evaluar e incrementar la seguridad en las operaciones de crédito de forma rápida y eficiente.</li>
-                </ul>
+                <p>La Sala Julián Carrillo lleva operando por más de...</p>
             </div>
 
         </div>
@@ -250,18 +223,20 @@
         <div class="bg bg_03"></div>
     </div>
 
-    <section class="seccionADN animUp">
+    <section class="seccionObra animUp">
 
-        <div class="contenedor contenedorADN">
+        <div class="contenedor contenedorObra">
 
             <div class="texto">
-                <h2>En nuestro ADN</h2>
+                <h2>¡Casting!</h2>
                 <p>
-                    está el compromiso, la honestidad y la búsqueda constante de soluciones que aporten valor a nuestros clientes.
+                    Ponte en contacto con nosotros para relaizar tu casting
                 </p>
-                <h2 class="tituloDos">Prevenir antes que lamentar</h2>
+                <h2 class="tituloDos">¿Tienes algún libreto o puesta en escena?</h2>
                 <p>
-                    Si tienes alguna duda comunícate con nuestro equipo de Asesores y Atención a Clientes, quienes con gusto te apoyarán.
+                    ¿Qué esperas para ponerte en contacto con nosotros?
+                    <br>
+                    Envíanos una solicitud
                 </p>
 
                 <div class="boton secondary">
@@ -270,7 +245,7 @@
 
             </div>
             
-            <div class="imagenADN">
+            <div class="imagenObra">
                 <div class="img-adn"></div>
             </div>
             
@@ -282,7 +257,7 @@
         <div class="containerFooter">
             <div class="footerCaja footerLogo">
                 <picture>
-                    <img src="./img/logoAS_Blanco.png" alt="Logo BLOC (Buró de Antecedentes Legales)">
+                    <img src="./img/logoAS_Blanco.png" alt="Logo Sala Julián Carrillo">
                 </picture>
                 <div class="footerLineaDos"></div>
             </div>
@@ -296,16 +271,15 @@
                         </a>
                     </li>
                     <li>
-                        <a href="tel:52 55 5278 6230" target="_blank">
+                        <a href="tel:" target="_blank">
                             <i class="fa-solid fa-phone"></i>
-                            +52 55 5278 6230
+                            Tel
                         </a>
                     </li>
-                    <span class="titulo-mex">México</span>
                     <li>
                         <a href="https://goo.gl/maps/j9Yw2djnQCa5KV4K8" target="_blank">
                             <i class="fa-solid fa-location-dot"></i>
-                            Patricio Sanz 1609, Col del Valle Sur, Benito Juárez, 03100 Ciudad de México, México.
+                            Dirección
                         </a>
                     </li>
                 </ul>
@@ -313,16 +287,16 @@
             </div>
             
             <div class="footerCaja">
-                <span class="titulo-caja">Otros productos</span>
+                <span class="titulo-caja">Más sobre nosotros</span>
                 <ul>
                     <li>
-                        <a href="https://www.arcsa.com.mx/" target="_blank">
-                            Bloc
+                        <a href="" target="_blank">
+                            Vínculo 1
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.arcsacapital.com/es-MX/Index" target="_blank">
-                            Arcsa Capital
+                        <a href="" target="_blank">
+                            Vínculo 2
                         </a>
                     </li>
                 </ul>
@@ -332,7 +306,7 @@
                 <ul>
                     <li>
                         <a href="./html/faqs.html" target="_self">
-                            FAQ´s
+                            Preguntas Frecuentes
                         </a>
                     </li>
                 </ul>
@@ -356,24 +330,20 @@
                 <div class="footerLineaDos"></div>
                 <div class="footerLinea"></div>
                 <ul class="footerRedes">
-                    <li><a href="https://www.facebook.com/people/BLOC/100076426675042/" target="_self"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.facebook.com/people/BLOC/100076426675042/" target="_self"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/blocmx/" target="_self"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCKNpGarjGnbMK0PlxOmRyQw" target="_self"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="" target="_self"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="" target="_self"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="" target="_self"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="" target="_self"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
             </div>
 
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <script src="./js/inicioScroll.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/menuTabMob.js"></script>
-    <script src="./js/abrirCuenta.js"></script>
-    <script src="./js/verificaRual.js"></script>
-    <script src="./js/slider.js"></script>
 
 </body>
 </html>
