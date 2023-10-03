@@ -1,4 +1,41 @@
 /* ---------------
+BG 2
+--------------- */
+
+.background{
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+
+.bg{
+  width: 100%;
+  max-width: 172.5rem;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: visible;
+  z-index: -1000;
+}
+
+.bg_02{
+  height: 50rem;
+  transform: translateY(-50rem);
+  
+  background-image: url(../img/inicio_fondo_02.png);
+}
+
+.bg_03{
+  height: 60rem;
+  transform: translateY(-34rem);
+  
+  background-image: url(../img/inicio_fondo_03.png);
+}
+
+/* ---------------
 Header abajo
 --------------- */
 
@@ -12,25 +49,24 @@ Header abajo
 }
 
 .headerInicio.abajo ul li a:hover {
-  color: var(--vinculo-op);
+  color: var(--secundario-op);
 }
 
 .headerInicio.abajo #selected {
   color: var(--secundario-op);
 }
 
+.headerInicio.abajo #selected:hover {
+  cursor: default;
+}
+
 .headerInicio.abajo .containerMenu .logo{
   background-image: url(../img/logoAS_Blanco.png);
 }
 
-
 /* ---------------
 Header Inicio
 --------------- */
-
-header{
-  width: 100vw;
-}
 
 .headerInicio {
   position: fixed;
@@ -44,8 +80,14 @@ header{
   color: var(--secundario-op);
 }
 
+.headerInicio #selected:hover {
+  cursor: default;
+}
+
 .headerInicio .containerMenu {
   width: auto;
+  max-width: 150rem;
+  margin: auto;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-around;
@@ -57,7 +99,7 @@ header{
 
 .headerInicio .containerMenu .logo{
   width: 13rem;
-  height: 9rem;
+  height: 8rem;
   background-image: url(../img/logoAS_Color.png);
   background-image: url(../img/logoAS_Blanco.png);
   background-position: center;
@@ -67,8 +109,7 @@ header{
 }
 
 .headerInicio .containerMenu .logo:hover{
-  width: 13.3rem;
-  height: 9rem;
+  transform: scale(1.02);
 }
 
 .headerInicio .containerMenu ul {
@@ -79,7 +120,7 @@ header{
 .headerInicio .containerMenu ul li {
   margin: 0 1rem;
   padding: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   list-style: none;
 }
 
@@ -91,7 +132,7 @@ header{
 }
 
 .headerInicio .containerMenu a:hover {
-  color: var(--vinculo-op);
+  color: var(--secundario-op);
 }
 
 .headerInicio .menuIcon {
@@ -104,10 +145,10 @@ header{
 }
 
 /* ---------------
-Header BG
+Banner
 --------------- */
 
-.headerBG {
+.seccionBanner {
   width: 100vw;
   height: 75vh;
   min-height: 700px;
@@ -117,14 +158,17 @@ Header BG
   background-repeat: no-repeat;
   text-align: left;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
   transition: var(--transitionsXLarge);
 }
 
-.containerHeader {
+.seccionBanner .contenedorBanner{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.seccionBanner .contenedorBanner .texto {
   width: 35vw;
   min-width: 450px;
   margin: 150px 5vw 0 10vw;
@@ -133,7 +177,7 @@ Header BG
   transition: var(--transitionsLarge);
 }
 
-.containerVideo{
+.seccionBanner .contenedorBanner .vid{
   width: 50vw;
   margin-right: 0;
   margin: 150px 0 0;
@@ -142,34 +186,41 @@ Header BG
   transition: var(--transitionsLarge);
 }
 
-.containerVideo video{
+.seccionBanner .contenedorBanner .vid video{
   width: 100%;
   height: 100%;
   box-shadow: var(--boxShadow);
   border-radius: 2rem 0 0 2rem;
 }
 
-.containerHeader h1 {
-  /* color: var(--negro); */
-  color: var(--blanco);
+.seccionBanner .contenedorBanner .texto  h1 {
+  color: var(--secundario-op-dos);
 }
 
-.containerHeader p {
-  /* color: var(--negro); */
+.seccionBanner .contenedorBanner .texto p {
   color: var(--blanco);
+  font-size: 2rem;
   margin: 50px 0;
 }
 
-.btnanim {
-  animation: move-vector 3s linear infinite;
+.seccionBanner .contenedorBanner .texto span {
+  color: var(--secundario-op);
+  font-size: 2.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-.containerHeader.abajo{
+.seccionBanner .contenedorBanner .texto .btnanim {
+  animation: move-vector 3s linear infinite;
+  margin-left: 0;
+}
+
+.seccionBanner .contenedorBanner .texto.abajo{
   opacity: 0;
   transform: translateX(-200px);
 }
 
-.containerVideo.abajo{
+.seccionBanner .contenedorBanner .vid.abajo{
   opacity: 0;
   transform: translateX(200px);
 }
@@ -178,60 +229,62 @@ Header BG
 Soluciones
 --------------- */
 
-.sectionSoluciones {
+.seccionSoluciones {
   background-color: var(--morado-claro-op);
   padding: var(--spaceSection);
 }
 
-.sectionSoluciones .solucionesTitle{
-  padding: var(--spaceDown);
-  text-align: center;
-  
-}
-
-.sectionSoluciones .containerSoluciones {
-  width: 90vw;
+.seccionSoluciones .contenedorSoluciones {
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  overflow: hidden;
+
 }
 
-.sectionSoluciones .recuadro {
+.seccionSoluciones .contenedorSoluciones .solucionesTitle{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.seccionSoluciones .contenedorSoluciones .solucionesTitle p{
+  margin: 2rem;
+  text-align: center;
+}
+
+.seccionSoluciones .contenedorSoluciones .recuadro {
   width: 30%;
   margin: 2rem auto;
   padding: 3rem 2rem;
   background-color: var(--blanco);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-radius: 5px;
 }
 
-.recuadroInline {
+.seccionSoluciones .contenedorSoluciones .recuadro .recuadroInline {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto 20px auto;
 }
 
-.sectionSoluciones .recuadro h4 {
+.seccionSoluciones .contenedorSoluciones .recuadro .recuadroInline h4 {
   text-align: left;
 }
 
-.recuadro p {
+.seccionSoluciones .contenedorSoluciones .recuadro p {
   text-align: justify;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
-.recuadro span {
+.seccionSoluciones .contenedorSoluciones .recuadro span {
   text-align: justify;
   font-size: 1.2rem;
-  margin: 1rem 0;
 }
 
-.recuadro span a{
+.seccionSoluciones .contenedorSoluciones .recuadro .recuadroInline span a{
   color: var(--principal);
   text-decoration: none;
   font-style: italic;
@@ -241,40 +294,36 @@ Soluciones
 Consulta
 --------------- */
 
-.sectionConsulta {
+.seccionConsulta {
   width: 100vw;
-  margin: 0 auto;
+  margin: 4rem auto 5rem auto;
   padding: var(--spaceSection);
-
-  background-image: url(../img/inicio_fondo_02.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-.sectionConsulta h2,
-.sectionConsulta h3 {
+.seccionConsulta .contenedorConsulta h2,
+.seccionConsulta .contenedorConsulta h3 {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.sectionConsulta .containerForm {
-  width: 90vw;
+.seccionConsulta .contenedorConsulta .contenedorForm {
+  width: 100%;
   margin: 5rem auto 0 auto;
   padding: 0;
 }
 
-.sectionConsulta .containerForm form {
+.seccionConsulta .contenedorConsulta .contenedorForm form {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   border-radius: 1rem;
+  padding: 2rem 0;
   background-color: var(--blanco);
 }
 
-.sectionConsulta .containerForm label {
+.seccionConsulta .contenedorConsulta .contenedorForm label {
   width: 23%;
   margin: .5rem 0;
   display: flex;
@@ -282,7 +331,7 @@ Consulta
   flex-direction: column;
 }
 
-.sectionConsulta .containerForm span {
+.seccionConsulta .contenedorConsulta .contenedorForm span {
   width: fit-content;
   font-size: 1.3rem;
   color: var(--azul);
@@ -294,7 +343,7 @@ Consulta
   z-index: 99;
 }
 
-.sectionConsulta .containerForm input {
+.seccionConsulta .contenedorConsulta .contenedorForm input {
   width: 100%;
   height: 4rem;
   border-radius: 3px;
@@ -306,7 +355,7 @@ Consulta
   z-index: 9;
 }
 
-.sectionConsulta .containerForm .contenedor-boton {
+.seccionConsulta .contenedorConsulta .contenedorForm .contenedor-boton {
   width: auto;
   overflow: visible;
 }
@@ -315,28 +364,26 @@ Consulta
 Bullets
 --------------- */
 
-.sectionBullets {
-  width: 100vw;
+.seccionBullets {
   margin: 0 auto;
   padding: var(--spaceSection);
 }
 
-.sectionBullets .contenedorBullets{
-  width: 90vw;
+.seccionBullets .contenedorBullets{
   margin: auto;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
 }
 
-.sectionBullets .contenedorBullets .bullet{
+.seccionBullets .contenedorBullets .bullet{
   width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.sectionBullets .contenedorBullets .linea{
+.seccionBullets .contenedorBullets .linea{
   width: .3rem;
   height: 6rem;
   margin: auto;
@@ -344,7 +391,7 @@ Bullets
   background-color: var(--principal);
 }
 
-.sectionBullets .contenedorBullets .bullet .icono{
+.seccionBullets .contenedorBullets .bullet .icono{
   width: 100%;
   height: 10rem;
   margin-top: 4rem;
@@ -353,19 +400,19 @@ Bullets
   background-repeat: no-repeat;
 }
 
-.sectionBullets .contenedorBullets .bullet .icono-01{
+.seccionBullets .contenedorBullets .bullet .icono-01{
   background-image: url(../img/inicio_bullet_01.png);
 }
 
-.sectionBullets .contenedorBullets .bullet .icono-02{
+.seccionBullets .contenedorBullets .bullet .icono-02{
   background-image: url(../img/inicio_bullet_02.png);
 }
 
-.sectionBullets .contenedorBullets .bullet .icono-03{
+.seccionBullets .contenedorBullets .bullet .icono-03{
   background-image: url(../img/inicio_bullet_03.png);
 }
 
-.sectionBullets .contenedorBullets .bullet .icono-04{
+.seccionBullets .contenedorBullets .bullet .icono-04{
   background-image: url(../img/inicio_bullet_04.png);
 }
 
@@ -373,20 +420,18 @@ Bullets
 Nosotros
 --------------- */
 
-.sectionNosotros {
-  width: 100vw;
+.seccionNosotros {
   margin: 0 auto;
   padding: var(--spaceSection);
 }
 
-.sectionNosotros .contenedorNosotros{
-  width: 90vw;
+.seccionNosotros .contenedorNosotros{
   margin: auto;
   display: flex;
   overflow: visible;
 }
 
-.sectionNosotros .contenedorNosotros .imagenNosotros{
+.seccionNosotros .contenedorNosotros .imagenNosotros{
   width: 50%;
   height: 50vh;
   min-width: 40rem;
@@ -400,18 +445,18 @@ Nosotros
   background-repeat: no-repeat;
 }
 
-.sectionNosotros .contenedorNosotros .texto{
+.seccionNosotros .contenedorNosotros .texto{
   width: 50%;
   height: auto;
   margin: auto;
   padding-left: 5rem;
 }
 
-.sectionNosotros .contenedorNosotros .texto ul{
+.seccionNosotros .contenedorNosotros .texto ul{
   padding-left: 2.4rem;
 }
 
-.sectionNosotros .contenedorNosotros .texto ul li{
+.seccionNosotros .contenedorNosotros .texto ul li{
   list-style-position: inside;
   text-indent: -2.3rem;
   overflow: visible;
@@ -421,20 +466,20 @@ Nosotros
 Nuestro ADN
 --------------- */
 
-.sectionADN {
+.seccionADN {
   width: 100vw;
   margin: 0 auto;
   padding: var(--spaceSection);
 }
 
-.sectionADN .contenedorADN{
+.seccionADN .contenedorADN{
   width: 90vw;
   margin: auto;
   display: flex;
   overflow: visible;
 }
 
-.sectionADN .contenedorADN .texto{
+.seccionADN .contenedorADN .texto{
   width: 50%;
   height: auto;
   margin: auto;
@@ -442,15 +487,15 @@ Nuestro ADN
   overflow: visible;
 }
 
-.sectionADN .contenedorADN .texto .tituloDos{
+.seccionADN .contenedorADN .texto .tituloDos{
   margin-top: 5rem;
 }
 
-.sectionADN .contenedorADN .texto .boton{
+.seccionADN .contenedorADN .texto .boton{
   margin: 5rem 0 0 0;
 }
 
-.sectionADN .contenedorADN .imagenADN{
+.seccionADN .contenedorADN .imagenADN{
   width: 50%;
   height: 50vh;
   min-width: 40rem;

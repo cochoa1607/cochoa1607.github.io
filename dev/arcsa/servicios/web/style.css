@@ -115,13 +115,14 @@ h6 {
 p{
     font-size: 1.6rem;
     color: var(--negro);
+    max-width: 90ch;
 }
 
 /* -------------
 Botones
 ------------- */
 
-.boton {
+.btnPrim {
     width: fit-content;
     margin-top: 2rem;
     cursor: pointer;
@@ -133,7 +134,7 @@ Botones
 .primary {
     width: 5rem;
     height: 5rem;
-    background-color: var(--principal);
+    background-color: var(--secundario);
     border-radius: 50rem;
     display: flex;
     justify-content: space-between;
@@ -162,11 +163,18 @@ Botones
     font-size: 1.6rem;
 }
 
+.boton {
+    width: fit-content;
+    padding: 1.4rem 5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    overflow: visible;
+    box-shadow: var(--boxShadow);
+    transition: var(--transitions);
+}
 
 .secondary {
     width: fit-content;
-    height: 5rem;
-    padding: 0 4rem;
     margin: auto;
     background-color: var(--secundario);
     border-radius: 50rem;
@@ -181,7 +189,7 @@ Botones
 }
 
 .secondary a{
-    padding: 2rem;
+    padding: 0;
     text-decoration: none;
     color: var(--blanco);
     font-size: 1.6rem;
@@ -201,6 +209,28 @@ Botones
 
 .terciary:hover {
     transform: scale(1.02);
+}
+
+.cta {
+    width: fit-content;
+    margin: auto;
+    background-color: var(--vinculo);
+    border-radius: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.cta:hover {
+    transform: scale(1.03);
+}
+
+.cta a{
+    padding: 0;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.6rem;
 }
 
 /* -------------
@@ -237,51 +267,56 @@ Boton up
     stroke-miterlimit: 10;
 }
 
-/* ---------------
-Header Inicio
---------------- */
+/* -------------
+Menú
+------------- */
 
 header{
     width: 100vw;
-  }
-  
+}
+
 .header {
-position: fixed;
-z-index: 9999;
-transition: var(--transitionsLarge);
-background-color: var(--terciario);
+    position: fixed;
+    z-index: 9999;
+    transition: var(--transitionsLarge);
+    background-color: var(--terciario);
 }
 
 .header #selected {
-text-decoration: underline;
-font-weight: 700;
-color: var(--secundario-op);
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--secundario-op);
+}
+
+.header #selected:hover {
+    cursor: default;
 }
 
 .header .containerMenu {
-width: auto;
-padding: 1rem 2rem;
-display: flex;
-justify-content: space-around;
-align-items: center;
-font-size: 1.8rem;
-font-weight: 300;
-text-transform: uppercase;
+    width: auto;
+    margin: auto;
+    max-width: 150rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 .header .containerMenu .logo{
-width: 13rem;
-height: 9rem;
-background-image: url(./img/logoAS_Blanco.png);
-background-position: center;
-background-size: contain;
-background-repeat: no-repeat;
-transition: var(--transitions);
+    width: 13rem;
+    height: 8rem;
+    background-image: url(./img/logoAS_Blanco.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: var(--transitions);
 }
 
 .header .containerMenu .logo:hover{
-width: 13.3rem;
-height: 9rem;
+    transform: scale(1.02);
 }
 
 .header .containerMenu ul {
@@ -292,7 +327,7 @@ justify-content: space-around;
 .header .containerMenu ul li {
 margin: 0 1rem;
 padding: 1rem;
-font-size: 1.6rem;
+font-size: 1.4rem;
 list-style: none;
 }
 
@@ -304,7 +339,7 @@ transition: var(--transitions);
 }
 
 .header .containerMenu a:hover {
-color: var(--vinculo-op);
+color: var(--secundario-op);
 }
 
 .header .menuIcon {
@@ -361,81 +396,15 @@ Scroll
 }
 
 /* -------------
-Header
+Secciones
 ------------- */
 
-header{
-    width: 100vw;
-}
-
-.headerX {
-    position: fixed;
-    transition: var(--transitions);
-    z-index: 9999;
-    background-color: var(--terciario);
-}
-
-.headerX #selected {
-    text-decoration: underline;
-    font-weight: 600;
-}
-
-.headerX .containerMenu {
-    width: auto;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.headerX #logoBlanco {
-    width: 40px;
-    height: auto;
-}
-
-.headerX #logoBlanco:hover {
-    fill: var(--morado-hover);
-}
-
-.headerX .containerMenu ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-.headerX .containerMenu ul li {
-    margin: 0 10px;
-    padding: 10px;
-    list-style: none;
-}
-
-.headerX .containerMenu a {
-    text-decoration: none;
-    color: var(--morado);
-}
-
-.headerX .containerMenu a:hover {
-    font-weight: 500;
-    color: var(--morado-hover);
-    text-decoration: underline;
-}
-
-.headerX .menuIcon {
-    font-size: 2.6rem;
-    color: var(--blanco);
-}
-
-.headerX .menuIcon:hover {
-    color: var(--morado-hover);
-}
-
-.headerX .onlyMobile{
-    display: none;
-}
-
-.headerInicio .onlyMobile{
-    display: none;
+.contenedor{
+    width: 90%;
+    max-width: 150rem;
+    min-width: 110rem;
+    margin: auto;
+    /* border: solid red 1px; */
 }
 
 /* -------------

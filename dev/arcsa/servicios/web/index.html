@@ -56,10 +56,10 @@
             <div class="shadow menuMob">
                 <ul>
                     <li><a href="./index.html" id="selected">Inicio</a></li>
-                    <li><a href="./html/nosotros.html">Soluciones</a></li>
-                    <li><a href="./html/rual.html">Nosotros</a></li>
-                    <li><a href="./html/soluciones.html">Contacto</a></li>
-                    <li class="arcsanet"><a class="arcsanetd" href="./html/beneficios.html">ARCSANET</a></li>
+                    <li><a href="./html/soluciones.html">Soluciones</a></li>
+                    <li><a href="./html/nosotros.html">Nosotros</a></li>
+                    <li><a href="./html/contacto.html">Contacto</a></li>
+                    <li class="arcsanet"><a class="arcsanetA" href="#">ARCSANET</a></li>
                 </ul>
             </div>
             <div class="menuRedes menuMob">
@@ -71,34 +71,47 @@
         </nav>
     </header>
 
-    <section class="headerBG">
-        <div class="containerHeader">
-            <h1>Arcsa Servicios</h1>
-            <p>Vender tus productos o servicios a crédito, con seguridad y en cualquier parte del mundo reduciendo el riego de impago gracias a nuestros reportes.</p>
-        </div>
-        <div class="containerVideo">
-            <video autoplay muted>
-                <source src="./vid/AS 16 9 Estas son 3.mp4" title="3 formas más comunies de fraude crediticio" type="video/mp4" loop preload="auto">
-                <p>Este es un video qué te informa sobre los 3</p>
-              </video>
+    <section class="seccionBanner">
+        <div class="contenedor contenedorBanner">
+            <div class="texto">
+                <!-- 
+                    <h1>¿Conoces la perspectiva crediticia que tienen tus clientes sobre tí?</h1>
+                -->
+                <h1>¿Ya conoces tu score crediticio?</h1>
+                <p>Crea relaciones comerciales más <span>seguras</span> y <span>duraderas.</span></p>
+                <div class="boton cta btnanim">
+                    <a href="#">Consultar</a>
+                </div>
+            </div>
+            <div class="vid">
+                <video autoplay muted>
+                    <source src="./vid/AS 16 9 Estas son 3.mp4" title="3 formas más comunies de fraude crediticio" type="video/mp4" loop preload="auto">
+                    <p>Este es un video qué te informa sobre los 3</p>
+                </video>
+            </div>
         </div>
     </section>
 
-    <main class="sectionSoluciones">
-        <div>
+    <main class="seccionSoluciones">
+        <div class="contenedor contenedorSoluciones">
             <div class="solucionesTitle">
                 <h2>Soluciones más relevantes</h2>
+                <p>Vender tus productos o servicios a crédito, con seguridad y en cualquier parte del mundo reduciendo el riego de impago gracias a nuestras soluciones.</p>
             </div>
-            <div class="containerSoluciones">
+            <div class="contenedorSoluciones">
                 <div class="recuadro shadowBox">
                     <div class="recuadroInline">
                         <h4>Recuperación de Cartera Extrajudicial</h4>
                     </div>
                     <div>
-                        <p>Accede a toda la información legal, comercial, financiera y más, de cualquier persona física o moral en los 32 estados de la república mexicana.</p>
+                        <p>
+                            ¿Cuánto más seguirás esperando a que te paguen?
+                            <br>
+                            Recupera tus cuentas vencidas y comienza a ver resultados en los primeros 15 días.
+                        </p>
                         <span>Consulta términos y condiciones.</span>
                     </div>
-                    <div class="boton primary">
+                    <div class="btnPrim primary">
                         <a href="#">ir</a>
                     </div>
                 </div>
@@ -107,10 +120,14 @@
                         <h4>Reporte Comercial +Protección</h4>
                     </div>
                     <div>
-                        <p>Descarga el historial de antecedentes legales de cualquier persona, en los 32 estados de la república mexicana.</p>
+                        <p>
+                            Investigamos a tu futuro cliente Comercial
+                            <br>
+                            Analizamos y calificamos su capacidad de pago para que establezcas relaciones comerciales más seguras y duraderas.
+                        </p>
                         <span>Consulta términos y condiciones.</span>
                     </div>
-                    <div class="boton primary">
+                    <div class="btnPrim primary">
                         <a href="#">ir</a>
                     </div>
                 </div>
@@ -119,10 +136,12 @@
                         <h4>Reporte de antecedentes legales</h4>
                     </div>
                     <div>
-                        <p>Descarga el historial de antecedentes legales de cualquier persona o empresa, en los 32 estados de la república mexicana.</p>
+                        <p>
+                            Descarga el historial de antecedentes legales de cualquier persona o empresa en los 32 estados de la república mexicana.
+                        </p>
                         <span>Consulta términos y condiciones en <a href="https://www.bloc.com.mx/" target="_blank">www.bloc.com.mx</a></span>
                     </div>
-                    <div class="boton primary">
+                    <div class="btnPrim primary">
                         <a href="#">ir</a>
                     </div>
                 </div>
@@ -130,48 +149,53 @@
         </div>
     </main>
 
-    <section class="sectionConsulta animUp">
+    <section class="seccionConsulta animUp">
+        <div class="contenedor contenedorConsulta">
 
-        <h2 class="">Consulta de base de datos</h2>
-        <h3 class="">Compra individual</h3>
+            <h2 class="">Autoevaluaciones</h2>
+            <h3 class="">Compra individual</h3>
 
-        <div class="containerForm">
+            <div class="contenedorForm">
 
-            <form action="" autocomplete="on" target="none">
-                
-                <label for="razonSocial">
-                    <span>Razón social o nombre comercial:</span>
-                    <input type="text" placeholder="Sin denominaciones" required>
-                </label>
+                <form action="" autocomplete="on" target="none">
+                    
+                    <label for="razonSocial">
+                        <span>Razón social o nombre comercial:</span>
+                        <input type="text" placeholder="Sin denominaciones" required>
+                    </label>
 
-                <label for="denominacion">
-                    <span>Denominación:</span>
-                    <input list="denominacion" placeholder="Elige una denominación..." required>
-                    <datalist id="denominacion">
-                        <option value="Op1"></option>
-                        <option value="Op2"></option>
-                    </datalist>
-                </label>
+                    <label for="denominacion">
+                        <span>Denominación:</span>
+                        <input list="denominacion" placeholder="Elige una denominación..." required>
+                        <datalist id="denominacion">
+                            <option value="Op1"></option>
+                            <option value="Op2"></option>
+                        </datalist>
+                    </label>
 
-                <label for="correo">
-                    <span>Correo Electrónico:</span>
-                    <input type="email" name="correo" id="correo" autocomplete="email" placeholder="ejemplo@correo.com" required>
-                </label>
+                    <label for="correo">
+                        <span>Correo Electrónico:</span>
+                        <input type="email" name="correo" id="correo" autocomplete="email" placeholder="ejemplo@correo.com" required>
+                    </label>
 
-                <div class="contenedor-boton">
-                    <div class="boton secondary">
-                        <a href="#">Consultar</a>
+                    <div class="contenedor-boton">
+                        <div class="boton secondary">
+                            <a href="#">Consultar</a>
+                        </div>
                     </div>
-                </div>
 
-            </form>
+                </form>
+            </div>
         </div>
-
     </section>
 
-    <section class="sectionBullets animUp">
+    <div class="background">
+        <div class="bg bg_02"></div>
+    </div>
 
-        <div class="contenedorBullets">
+    <section class="seccionBullets animUp">
+
+        <div class="contenedor contenedorBullets">
             <div class="bullet">
                 <h5>Descubre fraudes anticipados</h5>
                 <div class="icono icono-01"></div>
@@ -201,9 +225,9 @@
 
     </section>
 
-    <section class="sectionNosotros animUp">
+    <section class="seccionNosotros animUp">
 
-        <div class="contenedorNosotros">
+        <div class="contenedor contenedorNosotros">
 
             <div class="imagenNosotros">
             </div>
@@ -221,9 +245,13 @@
 
     </section>
 
-    <section class="sectionADN animUp">
+    <div class="background">
+        <div class="bg bg_03"></div>
+    </div>
 
-        <div class="contenedorADN">
+    <section class="seccionADN animUp">
+
+        <div class="contenedor contenedorADN">
 
             <div class="texto">
                 <h2>En nuestro ADN</h2>
@@ -236,7 +264,7 @@
                 </p>
 
                 <div class="boton secondary">
-                    <a href="#">Llamar</a>
+                    <a href="#">Contactar</a>
                 </div>
 
             </div>
