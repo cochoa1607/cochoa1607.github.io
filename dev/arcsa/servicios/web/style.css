@@ -41,6 +41,7 @@ Colores
     --principal-op: #8280A5;
     --secundario-op: #4FAFBD;
     --secundario-op-dos: #DDEBED;
+    --terciario-op: #B6B9C7;
     --vinculo-op: #FFA64D;
 
     --font-principal: 'Open Sans', sans-serif;
@@ -53,8 +54,7 @@ Colores
     --textShadow: #0000001A .2rem .2rem .1rem;
     --boxShadow: #0000001A .4rem .4rem .6rem;
 
-    --spaceSection: 10rem 0;
-    --spaceDown: 0 0 5rem 0;
+    --spaceSection: 5rem 0;
 }
 
 /* -------------
@@ -87,7 +87,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--negro);
     font-weight: 400;
 }
@@ -100,17 +100,17 @@ h4 {
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
     color: var(--secundario);
 }
 
-h6 {
+/* h6 {
     font-size: 2rem;
     color: var(--negro);
     font-weight: 400;
-}
+} */
 
 p{
     font-size: 1.6rem;
@@ -351,6 +351,27 @@ color: var(--blanco);
 font-size: 3rem;
 }
 
+header .arcsanet{
+    background-color: var(--secundario);
+    border-radius: .5rem;
+    transition: var(--transitions);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+header .arcsanet:hover{
+    transform: scale(1.03);
+}
+
+header .arcsanet:hover .arcsanetA{
+    color: var(--blanco);
+}
+
+header .arcsanet .arcsanetA{
+    padding: 2rem 3rem;
+    margin: 0;
+}
+
 /* -------------
 Scroll
 ------------- */
@@ -404,7 +425,7 @@ Secciones
     max-width: 150rem;
     min-width: 110rem;
     margin: auto;
-    /* border: solid red 1px; */
+    border: solid red 1px;
 }
 
 /* -------------

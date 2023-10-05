@@ -169,9 +169,9 @@ Banner
 }
 
 .seccionBanner .contenedorBanner .texto {
-  width: 35vw;
+  width: 40vw;
   min-width: 450px;
-  margin: 150px 5vw 0 10vw;
+  margin: 150px 0 0 10vw;
   padding: 0 0 0 0;
   overflow: visible;
   transition: var(--transitionsLarge);
@@ -200,7 +200,7 @@ Banner
 .seccionBanner .contenedorBanner .texto p {
   color: var(--blanco);
   font-size: 2rem;
-  margin: 50px 0;
+  margin: 2rem 0 5rem 0;
 }
 
 .seccionBanner .contenedorBanner .texto span {
@@ -243,12 +243,12 @@ Soluciones
 }
 
 .seccionSoluciones .contenedorSoluciones .solucionesTitle{
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 
 .seccionSoluciones .contenedorSoluciones .solucionesTitle p{
-  margin: 2rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -300,10 +300,14 @@ Consulta
   padding: var(--spaceSection);
 }
 
-.seccionConsulta .contenedorConsulta h2,
-.seccionConsulta .contenedorConsulta h3 {
+.seccionConsulta .contenedorConsulta h2{
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.seccionConsulta .contenedorConsulta h3 {
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm {
@@ -452,6 +456,10 @@ Nosotros
   padding-left: 5rem;
 }
 
+.seccionNosotros .contenedorNosotros .texto h2{
+  margin-bottom: 2rem;
+}
+
 .seccionNosotros .contenedorNosotros .texto ul{
   padding-left: 2.4rem;
 }
@@ -485,6 +493,10 @@ Nuestro ADN
   margin: auto;
   padding-right: 5rem;
   overflow: visible;
+}
+
+.seccionADN .contenedorADN h2{
+  margin-bottom: 2rem;
 }
 
 .seccionADN .contenedorADN .texto .tituloDos{

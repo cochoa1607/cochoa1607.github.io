@@ -2,8 +2,11 @@
     margin-top: 14rem;
 }
 
-.nosotros{
+.seccionNosotros .contenedorNosotros{
     width: 90vw;
+}
+
+.nosotros{
     margin: auto;
 }
 
@@ -54,12 +57,14 @@ Marcas
 
 .seccionMarcas .marcas{
     width: 90vw;
+    max-width: 180rem;
     margin: auto;
+    overflow: visible;
 }
 
 .seccionMarcas .marcas .cajas .annio{
     color: var(--secundario);
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 600;
     font-family: var(--font-secundaria);
     overflow: visible;
@@ -67,7 +72,7 @@ Marcas
 
 .seccionMarcas .marcas .cajas .titulo{
     color: var(--principal);
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 600;
     text-transform: uppercase;
     padding: 1rem 0;
@@ -76,7 +81,7 @@ Marcas
 
 .seccionMarcas .marcas .cajas .texto{
     color: var(--negro);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 300;
     overflow: visible;
 }
@@ -95,10 +100,10 @@ Marcas
 }
 
 .seccionMarcas .marcas .cajas_01 .caja .circulo_01{
-    width: 26rem;
-    height: 26rem;
+    width: 23rem;
+    height: 23rem;
     border-radius: 200rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,6 +113,8 @@ Marcas
     background-color: #E6F4F6;
     transform: translateY(2rem);
     z-index: 9;
+
+    box-shadow: var(--boxShadow);
 }
 
 .seccionMarcas .marcas .cajas_01 .caja .circulo_02{
@@ -116,6 +123,7 @@ Marcas
     border-radius: 10rem;
     background-color: var(--blanco);
     z-index: 99;
+    box-shadow: var(--boxShadow);
 }
 
 .seccionMarcas .marcas .cajas_01 .caja .circulo_02 .logo{
@@ -145,7 +153,7 @@ Marcas
 }
 
 .seccionMarcas .marcas .lineas .caja{
-    width: 26rem;
+    width: 22rem;
     height: 6rem;
     display: flex;
     justify-content: center;
@@ -155,15 +163,15 @@ Marcas
     width: .2rem;
     height: 6rem;
     border-radius: 2rem;
-    background-color: var(--gris);
+    background-color: var(--principal-op);
 }
 
 .seccionMarcas .marcas .lineaMedia{
     height: .2rem;
     width: auto;
-    margin: 0 12.9rem;
+    margin: 0 10.9rem;
     border-radius: 2rem;
-    background-color: var(--gris);
+    background-color: var(--principal-op);
 }
 
 .seccionMarcas .marcas .lin_dos{
@@ -185,10 +193,10 @@ Marcas
 }
 
 .seccionMarcas .marcas .cajas_02 .caja .circulo_01{
-    width: 26rem;
-    height: 26rem;
+    width: 22rem;
+    height: 22rem;
     border-radius: 200rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,6 +206,7 @@ Marcas
     background-color: #E6F4F6;
     transform: translateY(-2rem);
     z-index: 9;
+    box-shadow: var(--boxShadow);
 }
 
 .seccionMarcas .marcas .cajas_02 .caja .circulo_02{
@@ -206,6 +215,7 @@ Marcas
     border-radius: 10rem;
     background-color: var(--blanco);
     z-index: 99;
+    box-shadow: var(--boxShadow);
 }
 
 .seccionMarcas .marcas .cajas_02 .caja .circulo_02 .logo{
@@ -234,17 +244,19 @@ Identidad de Marca
     padding: var(--spaceSection);
 }
 
-.seccionIdentidad .identidad{
+.seccionIdentidad .contenedorIdentidad {
     width: 90vw;
+}
+.seccionIdentidad .contenedorIdentidad .identidad{
     margin: auto;
 }
 
-.seccionIdentidad .identidad .contenedor_cajas{
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas{
     width: 100%;
     display: flex;
 }
 
-.seccionIdentidad .identidad .contenedor_cajas .cajas{
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas{
     width: 100%;
     margin: auto;
     display: flex;
@@ -252,37 +264,95 @@ Identidad de Marca
     box-sizing: border-box;
 }
 
-.seccionIdentidad .identidad .contenedor_cajas .cajas .caja{
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja{
     width: 98%;
-    background-color: var(--terciario);
     padding: 3rem 5rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    background-color: var(--blanco);
 }
 
-.seccionIdentidad .identidad .contenedor_cajas .cajas .caja .titulo,
-.seccionIdentidad .identidad .contenedor_cajas .cajas .caja ul li{
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: var(--transitionsLarge);
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja .texto{
+    display: none;
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja ul li{
+    color: var(--blanco);
+    transition: var(--transitionsLarge);
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja .titulo{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
     width: 100%;
+    font-weight: 600;
+    color: var(--principal);
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja:hover{
+    cursor: default;
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja:hover .texto{
+    display: flex;
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja:hover .titulo{
+    font-weight: 500;
+    margin-bottom: 1rem;
     color: var(--blanco);
 }
 
-.seccionIdentidad .identidad .contenedor_cajas .cajas .caja .titulo{
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
-    text-align: center;
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_01{
+    background-image: url(../img/nosotros_mision.png);
 }
 
-.seccionIdentidad .identidad .contenedor_cajas .cajas .caja_01,
-.seccionIdentidad .identidad .contenedor_cajas .cajas .caja_04{
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_01:hover{
+    background-image: url(../img/nosotros_mision_dos.png);
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_02{
+    background-image: url(../img/nosotros_vision.png);
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_02:hover{
+    background-image: url(../img/nosotros_vision_dos.png);
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_03{
+    background-image: url(../img/nosotros_valores.png);
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_03:hover{
+    background-image: url(../img/nosotros_valores_dos.png);
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_04{
+    background-image: url(../img/nosotros_objetivos.png);
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_04:hover{
+    background-image: url(../img/nosotros_objetivos_dos.png);
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_01,
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_04{
     margin: 1rem 1%;
     height: 25rem;
 }
 
-.seccionIdentidad .identidad .contenedor_cajas .cajas .caja_03,
-.seccionIdentidad .identidad .contenedor_cajas .cajas .caja_02{
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_03,
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja_02{
     margin: 1rem 1%;
     height: 35rem;
 }
