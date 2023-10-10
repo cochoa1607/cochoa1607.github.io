@@ -56,6 +56,7 @@ Colores
 
     --textShadow: #00000030 .2rem .2rem .1rem;
     --boxShadow: #00000030 .4rem .4rem .6rem;
+    --sectionShadow: #CCCCCC80 0 1rem 1rem;
 }
 
 /* --------------------
@@ -265,7 +266,7 @@ Clases universales
 
 section{
     padding: 10rem 0 8rem 0;
-    box-shadow: var(--boxShadow);
+    box-shadow: var(--sectionShadow);
 }
 
 .contenedor-seccion{
@@ -273,7 +274,7 @@ section{
     padding: 0;
     margin: 0 auto;
     padding: 10rem 0 2rem 0;
-    max-width: 190rem;
+    max-width: 150rem;
 }
 
 /*Scroll -----------------------------------------------------------------------*/
@@ -328,7 +329,11 @@ header{
     overflow: visible;
     background-color: none;
     position: fixed;
+}
 
+header .containerMenu{
+    max-width: 150rem;
+    margin: auto;
 }
 
 .headerInicio {
@@ -952,7 +957,8 @@ Footer
 footer{
     background-color: var(--secundario);
     height: 30rem;
-    margin-top: 5rem;
+    margin-top: 0;
+    z-index: 10;
 }
 
 
@@ -1315,5 +1321,43 @@ Mobile
     .caja-footer .form-ul{
         width: 80%;
         min-width: none;
+    }
+}
+
+/* Menu */
+@media only screen and (min-width: 1px) and (max-width: 1499px) {
+    header{
+        background-color: none;
+    }
+}
+
+
+/*  DesktopSM  */
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+    body{
+        border: solid red 2px;
+    }
+
+}
+
+/*  Tablet  */
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+    body{
+        border: solid green 2px;
+    }
+}
+
+/*  Original  */
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+    body{
+        border: solid blue 2px;
+    }
+}
+
+
+/*  Mobile  */
+@media only screen and (min-width: 1px) and (max-width: 499px) {
+    body{
+        border: solid pink 2px;
     }
 }

@@ -3,8 +3,12 @@ Banner
 -------------------- */
 
 .container-servicios{
-    background-image: url(../img/header_servicios.png);
+    background-image: url(../img/tam_DesktopGD/servicios_header.png);
+    background-position: center bottom;
     transform: translateY(0);
+    max-width: 150rem;
+    min-height: 50rem;
+    margin: auto;
 }
 
 .container-servicio{
@@ -536,7 +540,7 @@ Auditoria
 }
 
 .auditoria .slide-content .img-dos{
-    background-image: url(../img/servicios_auditoria_002.png);
+    background-image: url(../img/tam_DesktopGD/servicios_auditoria_002.png);
 }
 
 .auditoria .slide-content .img-tres{
@@ -1008,7 +1012,7 @@ Levantamiento
 }
 
 .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-    background-image: url(../img/servicios_levantamiento_F.png);
+    background-image: url(../img/tam_DesktopGD/servicios_levantamiento_F.png);
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan .contenedor-imagenes .cont-imagen-slide{
@@ -1892,4 +1896,73 @@ Gestion
 
 .gestion .fade {
     animation: fade 6s linear infinite;
+}
+
+/*  DesktopSM  */
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+    .container-servicios{
+        background-image: url(../img/tam_DesktopSM/servicios_header.png);
+    }
+
+    /* Auditoria */
+    .auditoria .slide-content .img-dos{
+        background-image: url(../img/tam_DesktopSM/servicios_auditoria_002.png);
+    }
+
+    /* Levantamiento */
+    .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/tam_DesktopSM/servicios_levantamiento_F.png);
+    }
+}
+
+/*  Tablet  */
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+    .container-servicios{
+        background-image: url(../img/tam_Tablet/servicios_header.png);
+    }
+    
+    /* Auditoria */
+    .auditoria .slide-content .img-dos{
+        background-image: url(../img/tam_Tablet/servicios_auditoria_002.png);
+    }
+
+    /* Levantamiento */
+    .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/tam_Tablet/servicios_levantamiento_F.png);
+    }
+}
+
+/*  Original  */
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+    .container-servicios{
+        background-image: url(../img/tam_Original/servicios_header.png);
+    }
+    
+    /* Auditoria */
+    .auditoria .slide-content .img-dos{
+        background-image: url(../img/tam_Original/servicios_auditoria_002.png);
+    }
+
+    /* Levantamiento */
+    .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/tam_Original/servicios_levantamiento_F.png);
+    }
+}
+
+
+/*  Mobile  */
+@media only screen and (min-width: 1px) and (max-width: 499px) {
+    .container-servicios{
+        background-image: url(../img/tam_Mobile/servicios_header.png);
+    }
+
+    /* Auditoria */
+    .auditoria .slide-content .img-dos{
+        background-image: url(../img/tam_Mobile/servicios_auditoria_002.png);
+    }
+
+    /* Levantamiento */
+    .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/tam_Mobile/servicios_levantamiento_F.png);
+    }
 }
