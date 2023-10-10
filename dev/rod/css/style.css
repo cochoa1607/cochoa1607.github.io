@@ -40,9 +40,9 @@ Colores
     
     --blanco: #FFFFFF;
     --gris: #FAFAFA;
+    --gris-op: #FAFAFA90;
     --grisDos: #EAEAEA;
     --grisMedio: #BDBDBD;
-    /* --negro: #050505; */
     --negro: #2C2C2C;
     --negroDos: #05050540;
     --transparente: #00000000;
@@ -56,7 +56,7 @@ Colores
 
     --textShadow: #00000030 .2rem .2rem .1rem;
     --boxShadow: #00000030 .4rem .4rem .6rem;
-    --sectionShadow: #CCCCCC80 0 1rem 1rem;
+    --sectionShadow: #00000030 0 1rem 1rem;
 }
 
 /* --------------------
@@ -1004,117 +1004,68 @@ Animaciones
     animation: fade 6s linear infinite;
 }
 
-/* --------------------
-Footer
--------------------- */
-@media only screen and (max-width: 1299px) {
-    .contenedor-footer{
-        width: 90%;
-        margin: 5rem auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .contenedor-footer .caja-footer{
-        width: 100%;
+/* Mobile, Original (Tablet Vertical) y Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 1px) and (max-width: 1024px) {
+
+    h2{
+        font-size: 2.6rem;
+        text-decoration: underline;
+        padding: .5rem 1rem 1rem 0;
+        padding-left: 0;
+        text-indent: 0;
+    }
+    
+    h2::before{
+        content: "";
+    }
+    
+    /* h3{
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 0;
         padding: 0;
-    }
-
-    .contenedor-footer .logos{
-        width: 100%;
-        padding: 0;
-        margin-bottom: 3rem;
-        flex-direction: column;
-    }
-
-    .contenedor-footer .logos a{
         text-align: center;
+        max-width: none;
+        text-transform: uppercase;
+    } */
+    
+    h4{
+        color: var(--negro);
+        font-size: 1.8rem;
+        font-weight: 400;
     }
-
-    .contenedor-footer .logos img{
-        margin-top: 3rem;
-    }
-
-    .caja-footer h6{
-        width: 50%;
-        margin: auto;
-        margin-top: 4rem;
+    
+    /* h5{
+        color: var(--secundario);
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    } */
+    
+    /* h6{
+        font-family: 'Roboto Slab', serif;
+        font-size: 2.4rem;
+        text-shadow: var(--textShadow);
+        padding: 1rem 1rem 0 0;
+        color: var(--primario);
+        font-weight: 400;
+        text-transform: uppercase;
         text-align: left;
+        max-width: 90ch;
+        padding-left: 2rem;
+        text-indent: -4rem;
     }
-
-    .caja-footer .subtitulo{
-        text-align: left;
+    
+    h6::before{
+        content: "\00a0\00a0\00a0\00a0\00a0";
+    } */
+    
+    
+    p{
+        font-size: 1.4rem;
+        font-weight: 400;
     }
-
-    .caja-footer .newsletter{
-        text-align: center;
-    }
-
-    .caja-footer .linea{
-        display: flex;
-        width: 60%;
-        margin: 0 auto 4rem auto;
-    }
-
-    .caja-footer .lineaDos{
-        width: 60%;
-        display: flex;
-        margin: 0 auto 4rem auto;
-    }
-
-    .caja-footer ul{
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
-
-    .caja-footer li{
-        width: 50%;
-        margin: auto;
-        text-align: left;
-    }
-
-    .caja-footer li i{
-        width: auto;
-    }
-
-    .caja-footer .form-ul{
-        width: 50%;
-        margin: auto;
-        padding: 1rem 0 0 0;
-    }
-
-    .caja-footer .news{
-        width: 50%;
-        margin: 0 auto 2rem auto;
-        text-align: center;
-    }
-
-    .caja-footer .foot-redes{
-        width: 50%;
-        margin: 4rem auto 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-bottom: 0;
-    }
-
-    .caja-footer .foot-redes li{
-        width: auto;
-    }
-
-    .caja-footer .foot-redes a{
-        width: auto;
-    }
-
-}
-
-/* --------------------
-Tablet / Mobile
--------------------- */
-@media only screen and (max-width: 1199px) {
 
     /* --------------------
     Clases universales
@@ -1271,9 +1222,9 @@ Tablet / Mobile
 }
 
 /* --------------------
-Mobile
+Mobile y Original (Tablet Vertical)
 -------------------- */
-@media only screen and (max-width: 640px){
+@media only screen and (min-width: 1px) and (max-width: 768px){
 
     /* --------------------
     Header
@@ -1333,22 +1284,22 @@ Mobile
 
 
 /*  DesktopSM  */
-@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
     body{
         border: solid red 2px;
     }
 
 }
 
-/*  Tablet  */
-@media only screen and (min-width: 800px) and (max-width: 1099px) {
+/*  Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     body{
         border: solid green 2px;
     }
 }
 
-/*  Original  */
-@media only screen and (min-width: 500px) and (max-width: 799px) {
+/*  Original (Tablet Vertical) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
     body{
         border: solid blue 2px;
     }
@@ -1356,7 +1307,7 @@ Mobile
 
 
 /*  Mobile  */
-@media only screen and (min-width: 1px) and (max-width: 499px) {
+@media only screen and (min-width: 1px) and (max-width: 425px) {
     body{
         border: solid pink 2px;
     }

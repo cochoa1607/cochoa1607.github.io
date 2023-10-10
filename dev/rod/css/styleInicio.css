@@ -16,6 +16,7 @@ Menu
 
 header{
     background-color: var(--primario);
+    box-shadow: var(--sectionShadow);
 }
 
 /* --------------------
@@ -42,7 +43,7 @@ Banner
 .cont-slider-head .slide-head {
     width: 100%;
     height: 100%;
-    max-width: 150rem;
+    max-width: 200rem;
     margin: auto;
     overflow: visible;
 }
@@ -498,7 +499,7 @@ Nosotros
 .nosotros .contenedor-info .imagen{
     width: 80%;
     height: 60vh;
-    min-height: 45rem;
+    min-height: 4rem;
     margin: 0 2rem 0 1rem;
     overflow: visible;
 }
@@ -620,7 +621,7 @@ Nosotros
 }
 
 /*  DesktopSM  */
-@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
     
     .cont-slider-head .slide-content .cont-imagen{
         border: solid red 2px;
@@ -678,42 +679,57 @@ Nosotros
     
 }
 
-/*  Tablet  */
-@media only screen and (min-width: 800px) and (max-width: 1099px) {
+/*  Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    /* --------------------
+    Titulos
+    -------------------- */
+    
+    .titulo{
+        margin: 0 auto;
+        padding: 1rem;
+        padding-top: 0;
+        z-index: 8000;
+        border-radius: 0 0 .5rem 0;
+    }
 
-    .cont-slider-head .slide-content .cont-imagen{
-        border: solid blue 2px;
+    /* --------------------
+    Header
+    -------------------- */
+    
+    .cont-slider-head .slideshow-container-head {
+        height: 80vh;
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 5rem;
     }
     
     .cont-slider-head .slide-content .cont-imagen .img-004{
-        background-image: url(../img/tam_Tablet/inicio_header_004);
+        background-image: url(../img/tam_Tablet/inicio_header_004.png);
     }
     
     .cont-slider-head .slide-content .cont-imagen .img-005{
-        background-image: url(../img/tam_Tablet/inicio_header_005);
+        background-image: url(../img/tam_Tablet/inicio_header_005.png);
     }
     
     .cont-slider-head .slide-content .cont-imagen .img-006{
-        background-image: url(../img/tam_Tablet/inicio_header_006);
+        background-image: url(../img/tam_Tablet/inicio_header_006.png);
     }
     
     .cont-slider-head .slide-content .cont-imagen .img-007{
-        background-image: url(../img/tam_Tablet/inicio_header_007);
+        background-image: url(../img/tam_Tablet/inicio_header_007.png);
     }
     
     .cont-slider-head .slide-content .cont-imagen .img-009{
-        background-image: url(../img/tam_Tablet/inicio_header_009);
+        background-image: url(../img/tam_Tablet/inicio_header_009.png);
     }
     
     .cont-slider-head .slide-content .cont-imagen .img-010{
-        background-image: url(../img/tam_Tablet/inicio_header_010);
+        background-image: url(../img/tam_Tablet/inicio_header_010.png);
     }
 
     /* Servicios */
-    .servicios .slide-content .cont-imagen{
-        border: solid blue 2px;
-    }
-
     .servicios .slide-content .cont-imagen .img-001{
         background-image: url(../img/tam_Tablet/servicios_gerencia.png);
     }
@@ -734,13 +750,159 @@ Nosotros
         background-image: url(../img/tam_Tablet/servicios_analisis.png);
     }
 
+    /* --------------------
+    Main Servicios
+    -------------------- */
+    
+    main{
+        box-shadow: none;
+        background-color: var(--gris);
+    }
+
+    main .container-servicios .servicios .cont-texto{
+        padding: 0;
+        width: 100%;
+        overflow: visible;
+    }
+    
+    .servicios .slide-content .texto{
+        width: 86%;
+        height: fit-content;
+        margin: auto;
+    }
+    
+    main .container-servicios .servicios .cont-texto p {
+        margin: 0;
+        padding: .5rem 0;
+    }
+    
+    main .container-servicios .servicios .cont-texto .btn-secundario {
+        padding: 0;
+    }
+    
+    .servicios .slideshow-container .controllers{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-6rem);
+        position: absolute;
+        top: 85%;
+        
+    }
+    
+    /* --------------------
+    Experiencia
+    -------------------- */
+
+    .container-experiencia{
+        background-color: var(--gris);
+        box-shadow: none;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp{
+        transform: translateY(0rem);
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .controllers{
+        transform: translateY(-5rem);
+        position: absolute;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
+        width: 30%;
+        height: fit-content;
+        margin-left: 5%;
+        transform: translateY(0rem);
+        position: absolute;
+    }
+    
+    /* --------------------
+    Nosotros
+    -------------------- */
+
+    .nosotros .contenedor-info{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nosotros .contenedor-info .imagen{
+        width: 100%;
+        height: 60vh;
+        min-height: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+    
+    .nosotros .contenedor-info .texto{
+        width: 86%;
+        min-width: 80rem;
+        margin: auto;
+    }
+    
+    .nosotros .contenedor-info .texto p{
+        text-align: center;
+        margin: auto;
+    }
+    
+    .nosotros .prev,
+    .nosotros .next {
+        cursor: pointer;
+        position: absolute;
+        top: 93%;
+        width: auto;
+        margin-top: -2.2rem;
+        padding: 1.6rem;
+        font-weight: bold;
+        font-size: 1.8rem;
+        transition: var(--transitions);
+        border-radius: .3rem;
+        color: var(--secundario);
+    }
+    
+    .nosotros .contenedor-info .texto .lineaDec{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1rem;
+        border-bottom: solid var(--primario) .2rem;
+    }
+    
+    .nosotros .slide-content{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .nosotros .slideshow-container{
+        height: 30vh;
+    }
+    
+    .nosotros .slideNos{
+        height: 30vh;
+    }
+    
+
 }
 
-/*  Original  */
-@media only screen and (min-width: 500px) and (max-width: 799px) {
+/*  Original (Tablet Vertical) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
     
-    .cont-slider-head .slide-content .cont-imagen{
-        border: solid green 2px;
+    .titulo{
+        margin: 0 auto;
+        padding: 1rem;
+        padding-top: 0;
+        z-index: 8000;
+        border-radius: 0 0 .5rem 0;
+    }
+
+    /* --------------------
+    Header
+    -------------------- */
+    
+    .cont-slider-head .slideshow-container-head {
+        height: 100vh;
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 5rem;
     }
     
     .cont-slider-head .slide-content .cont-imagen .img-004{
@@ -792,11 +954,168 @@ Nosotros
         background-image: url(../img/tam_Original/servicios_analisis.png);
     }
 
+    /* --------------------
+    Main Servicios
+    -------------------- */
+    
+    main{
+        box-shadow: none;
+        background-color: var(--gris);
+    }
+
+    main .container-servicios .servicios .cont-texto{
+        padding: 0;
+        width: 100%;
+        overflow: visible;
+    }
+    
+    .servicios .slide-content .texto{
+        width: 75%;
+        height: fit-content;
+        margin: auto;
+        text-align: center;
+    }
+    
+    main .container-servicios .servicios .cont-texto h4 {
+        text-align: center;
+    }
+    
+    main .container-servicios .servicios .cont-texto p {
+        margin: 0;
+        padding: .5rem 0;
+        text-align: center;
+    }
+    
+    main .container-servicios .servicios .cont-texto .btn-secundario {
+        padding: 0;
+        transform: translate(0);
+    }
+
+    .servicios .slide-content .cont-imagen .imagen{
+        width: 100%;
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .servicios .slideshow-container .controllers{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(0);
+        position: absolute;
+        top: 85%;
+    }
+
+    .servicios .prev,
+    .servicios .next {
+        width: 2rem;
+        height: auto;
+    }
+
+    .servicios .slidesLineas{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* --------------------
+    Experiencia
+    -------------------- */
+
+    .container-experiencia{
+        background-color: var(--gris);
+        box-shadow: none;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp{
+        transform: translateY(0rem);
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .controllers{
+        transform: translateY(-5rem);
+        position: absolute;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
+        width: 30%;
+        height: fit-content;
+        margin-left: 5%;
+        transform: translateY(0rem);
+        position: absolute;
+    }
+    
+    /* --------------------
+    Nosotros
+    -------------------- */
+
+    .nosotros .contenedor-info{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nosotros .contenedor-info .imagen{
+        width: 100%;
+        height: 60vh;
+        min-height: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+    
+    .nosotros .contenedor-info .texto{
+        width: 86%;
+        min-width: 80rem;
+        margin: auto;
+    }
+    
+    .nosotros .contenedor-info .texto p{
+        text-align: center;
+        margin: auto;
+    }
+    
+    .nosotros .prev,
+    .nosotros .next {
+        cursor: pointer;
+        position: absolute;
+        top: 93%;
+        width: auto;
+        margin-top: -2.2rem;
+        padding: 1.6rem;
+        font-weight: bold;
+        font-size: 1.8rem;
+        transition: var(--transitions);
+        border-radius: .3rem;
+        color: var(--secundario);
+    }
+    
+    .nosotros .contenedor-info .texto .lineaDec{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1rem;
+        border-bottom: solid var(--primario) .2rem;
+    }
+    
+    .nosotros .slide-content{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .nosotros .slideshow-container{
+        height: 30vh;
+    }
+    
+    .nosotros .slideNos{
+        height: 30vh;
+    }
+    
+
 }
 
 
 /*  Mobile  */
-@media only screen and (min-width: 1px) and (max-width: 499px) {
+@media only screen and (min-width: 1px) and (max-width: 425px) {
 
     .cont-slider-head .slide-content .cont-imagen{
         border: solid pink 2px;

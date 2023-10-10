@@ -1899,7 +1899,7 @@ Gestion
 }
 
 /*  DesktopSM  */
-@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
     .container-servicios{
         background-image: url(../img/tam_DesktopSM/servicios_header.png);
     }
@@ -1915,8 +1915,8 @@ Gestion
     }
 }
 
-/*  Tablet  */
-@media only screen and (min-width: 800px) and (max-width: 1099px) {
+/*  Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .container-servicios{
         background-image: url(../img/tam_Tablet/servicios_header.png);
     }
@@ -1932,8 +1932,8 @@ Gestion
     }
 }
 
-/*  Original  */
-@media only screen and (min-width: 500px) and (max-width: 799px) {
+/*  Original (Tablet Vertical) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
     .container-servicios{
         background-image: url(../img/tam_Original/servicios_header.png);
     }
@@ -1951,7 +1951,7 @@ Gestion
 
 
 /*  Mobile  */
-@media only screen and (min-width: 1px) and (max-width: 499px) {
+@media only screen and (min-width: 1px) and (max-width: 425px) {
     .container-servicios{
         background-image: url(../img/tam_Mobile/servicios_header.png);
     }

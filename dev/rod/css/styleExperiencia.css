@@ -2,8 +2,8 @@
 Banner
 -------------------- */
 
-.container-servicios{
-    background-image: url(../img/header_servicios.png);
+.container-experiencia{
+    background-image: url(../img/tam_DesktopGD/experiencia_header.png);
     transform: translateY(0);
     position: relative;
     z-index: 1000;
@@ -17,25 +17,21 @@ Resumen
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 4rem 0 14rem 0;
+    padding: 5rem 0 12rem;
     box-shadow: none;
     background-color: var(--primario);
     position: relative; 
     box-shadow: var(--boxShadow);
     z-index: 400;
-    /* 
-    position: relative;
-    padding: 6rem 10%;
-    */
 }
 
 .container-resumen h3{
     margin: auto;
-    padding-top: 3rem;
+    padding-top: 0;
     min-width: 60ch;
     max-width: 90ch;
     color: var(--blanco);
-    transform: translateY(4rem);
+    transform: translateY(6rem);
 }
 
 /* --------------------
@@ -233,6 +229,7 @@ Aeropuertos
     background-color: var(--grisDos);
     margin: 0 .5rem .5rem .5rem;
     padding: .3rem;
+    overflow: visible;
 }
 
 .aeropuerto-001 .contenedor-all .contenedor-texto .cajas .caja-dos,
@@ -636,11 +633,11 @@ Aeropuerto_002
 }
 
 .aeropuerto-002 .slide-content .img-cuatro{
-    background-image: url(../img/experiencia_aeropuertos_02_004.png);
+    background-image: url(../img/tam_DesktopGD/experiencia_aeropuertos_02_004.png);
 }
 
 .aeropuerto-002 .slide-content .img-cinco{
-    background-image: url(../img/experiencia_aeropuertos_02_005.png);
+    background-image: url(../img/tam_DesktopGD/experiencia_aeropuertos_02_005.png);
     background-size: contain !important;
 }
 
@@ -764,7 +761,7 @@ Aeropuerto_006
 }
 
 .aeropuerto-006 .slide-content .img-dos{
-    background-image: url(../img/experiencia_aeropuertos_06_002.png);
+    background-image: url(../img/tam_DesktopGD/experiencia_aeropuertos_06_002.png);
     background-position: center top !important;
 }
 
@@ -854,7 +851,7 @@ Aeropuerto_008
 }
 
 .aeropuerto-008 .slide-content .img-nueve{
-    background-image: url(../img/experiencia_aeropuertos_08_009.png);
+    background-image: url(../img/tam_DesktopGD/experiencia_aeropuertos_08_009.png);
 }
 
 .aeropuerto-008 .slide-content .img-diez{
@@ -870,7 +867,7 @@ Aeropuerto_008
 }
 
 .aeropuerto-008 .slide-content .img-trece{
-    background-image: url(../img/experiencia_aeropuertos_08_013.png);
+    background-image: url(../img/tam_DesktopGD/experiencia_aeropuertos_08_013.png);
 }
 
 /* --------------------
@@ -2459,71 +2456,8 @@ otros_003
     background-image: url(../img/experiencia_otros_03_006.png);
 }
 
-
-
-
-
-
-
-
-
-/* --------------------
-Tablet
--------------------- */
-@media only screen and (max-width: 1599px) and (min-width: 1000px) {
-
-    /* body{
-        border: solid red 3px;
-    } */
-
-    .contenedor-seccion{
-        padding: 10rem 2rem 3rem 2rem !important;
-    }
-
-    /* --------------------
-    Aeropuertos
-    -------------------- */
-
-    .contenedor-seccion .contenedor-all .contenedor-texto{
-        width: 40rem;
-        margin-right: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contenedor-seccion .contenedor-all .contenedor-imagenes{
-        width: 100%;
-        height: 70vh;
-    }
-
-    /* -- Texto -- */
-
-    .contenedor-seccion .contenedor-all .contenedor-texto .cajas{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contenedor-seccion .contenedor-all .contenedor-texto .cajas .caja{
-        display: flex;
-        flex-direction: column;
-        background-color: var(--grisDos);
-        margin: 0 .5rem .5rem .5rem;
-        padding: .3rem;
-    }
-    
-}
-
-
-/* --------------------
-Mobile
--------------------- */
-@media only screen and (max-width: 999px) and (min-width: 1px) {
-
-    /* body{
-        border: solid blue 3px;
-    } */
+/* Mobile, Original (Tablet Vertical) y Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 1px) and (max-width: 1024px) {
 
     .contenedor-seccion{
         padding: 5rem 0 !important;
@@ -2580,5 +2514,170 @@ Mobile
     .contenedor-seccion .contenedor-all .contenedor-texto .cajas .caja-dos .icono div{
         width: 10rem;
         height: 10rem;
+    }
+}
+
+
+
+/*  DesktopSM  */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    .contenedor-seccion{
+        padding: 10rem 2rem 3rem 2rem !important;
+    }
+
+    /* --------------------
+    Aeropuertos
+    -------------------- */
+
+    .contenedor-seccion .contenedor-all .contenedor-texto{
+        width: 40rem;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-seccion .contenedor-all .contenedor-imagenes{
+        width: 100%;
+        height: 70vh;
+    }
+
+    /* -- Texto -- */
+
+    .contenedor-seccion .contenedor-all .contenedor-texto .cajas{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-seccion .contenedor-all .contenedor-texto .cajas .caja{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--grisDos);
+        margin: 0 .5rem .5rem .5rem;
+        padding: .3rem;
+    }
+    
+    .container-experiencia{
+        background-image: url(../img/tam_DesktopSM/experiencia_header.png);
+    }
+
+    /* Aeropuertos 002 */
+    .aeropuerto-002 .slide-content .img-cuatro{
+        background-image: url(../img/tam_DesktopSM/experiencia_aeropuertos_02_004.png);
+    }
+    
+    .aeropuerto-002 .slide-content .img-cinco{
+        background-image: url(../img/tam_DesktopSM/experiencia_aeropuertos_02_005.png);
+        background-size: contain !important;
+    }
+    
+    /* Aeropuertos 006 */
+    .aeropuerto-006 .slide-content .img-dos{
+        background-image: url(../img/tam_DesktopSM/experiencia_aeropuertos_06_002.png);
+    }
+    
+    /* Aeropuertos 008 */
+    .aeropuerto-008 .slide-content .img-nueve{
+        background-image: url(../img/tam_DesktopSM/experiencia_aeropuertos_08_009.png);
+    }
+    
+    .aeropuerto-008 .slide-content .img-trece{
+        background-image: url(../img/tam_DesktopSM/experiencia_aeropuertos_08_0013.png);
+    }
+}
+
+/*  Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container-experiencia{
+        background-image: url(../img/tam_Tablet/experiencia_header.png);
+    }
+
+    /* Aeropuertos 002 */
+    .aeropuerto-002 .slide-content .img-cuatro{
+        background-image: url(../img/tam_Tablet/experiencia_aeropuertos_02_004.png);
+    }
+    
+    .aeropuerto-002 .slide-content .img-cinco{
+        background-image: url(../img/tam_Tablet/experiencia_aeropuertos_02_005.png);
+        background-size: contain !important;
+    }
+
+    /* Aeropuertos 006 */
+    .aeropuerto-006 .slide-content .img-dos{
+        background-image: url(../img/tam_Tablet/experiencia_aeropuertos_06_002.png);
+    }
+
+    /* Aeropuertos 008 */
+    .aeropuerto-008 .slide-content .img-nueve{
+        background-image: url(../img/tam_Tablet/experiencia_aeropuertos_08_009.png);
+    }
+    
+    .aeropuerto-008 .slide-content .img-trece{
+        background-image: url(../img/tam_Tablet/experiencia_aeropuertos_08_0013.png);
+    }
+}
+
+/*  Original (Tablet Vertical) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .container-experiencia{
+        background-image: url(../img/tam_Original/experiencia_header.png);
+    }
+
+    /* Aeropuertos 002 */
+    .aeropuerto-002 .slide-content .img-cuatro{
+        background-image: url(../img/tam_Original/experiencia_aeropuertos_02_004.png);
+    }
+    
+    .aeropuerto-002 .slide-content .img-cinco{
+        background-image: url(../img/tam_Original/experiencia_aeropuertos_02_005.png);
+        background-size: contain !important;
+    }
+
+    /* Aeropuertos 006 */
+    .aeropuerto-006 .slide-content .img-dos{
+        background-image: url(../img/tam_Original/experiencia_aeropuertos_06_002.png);
+    }
+
+    /* Aeropuertos 008 */
+    .aeropuerto-008 .slide-content .img-nueve{
+        background-image: url(../img/tam_Original/experiencia_aeropuertos_08_009.png);
+    }
+    
+    .aeropuerto-008 .slide-content .img-trece{
+        background-image: url(../img/tam_Original/experiencia_aeropuertos_08_0013.png);
+    }
+}
+
+
+/*  Mobile  */
+@media only screen and (min-width: 1px) and (max-width: 425px) {
+    .container-experiencia{
+        background-image: url(../img/tam_Mobile/experiencia_header.png);
+    }
+
+    /* Aeropuertos 002 */
+    .aeropuerto-002 .slide-content .img-cuatro{
+        background-image: url(../img/tam_Mobile/experiencia_aeropuertos_02_004.png);
+    }
+    
+    .aeropuerto-002 .slide-content .img-cinco{
+        background-image: url(../img/tam_Mobile/experiencia_aeropuertos_02_005.png);
+        background-size: contain !important;
+    }
+
+    /* Aeropuertos 006 */
+    .aeropuerto-006 .slide-content .img-dos{
+        background-image: url(../img/tam_Mobile/experiencia_aeropuertos_06_002.png);
+    }
+
+    /* Aeropuertos 008 */
+    .aeropuerto-008 .slide-content .img-nueve{
+        background-image: url(../img/tam_Mobile/experiencia_aeropuertos_08_009.png);
+    }
+    
+    .aeropuerto-008 .slide-content .img-trece{
+        background-image: url(../img/tam_Mobile/experiencia_aeropuertos_08_013.png);
     }
 }
