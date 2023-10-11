@@ -40,12 +40,12 @@ Header abajo
 --------------- */
 
 .headerInicio.abajo {
-  background-color: var(--terciario);
+  background-color: var(--negro);
   box-shadow: var(--boxShadow);
 }
 
 .headerInicio.abajo ul li a {
-  color: var(--secundario-op-dos);
+  color: var(--blanco);
 }
 
 .headerInicio.abajo ul li a:hover {
@@ -61,7 +61,7 @@ Header abajo
 }
 
 .headerInicio.abajo .containerMenu .logo{
-  background-image: url();
+  background-image: url(../img/logo_SJC_blanco.png);
 }
 
 /* ---------------
@@ -98,9 +98,10 @@ Header Inicio
 }
 
 .headerInicio .containerMenu .logo{
-  width: 13rem;
-  height: 8rem;
-  background-image: url();
+  width: 18rem;
+  height: 6rem;
+  margin: 0 .5rem;
+  background-image: url(../img/logo_SJC_blanco.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -124,7 +125,7 @@ Header Inicio
 }
 
 .headerInicio .containerMenu a {
-  color: var(--secundario-op-dos);
+  color: var(--blanco);
   text-decoration: none;
   font-weight: 500;
   transition: var(--transitions);
@@ -139,19 +140,15 @@ Header Inicio
   color: var(--blanco);
 }
 
-.headerInicio .menuIcon:hover {
-  font-size: 3rem;
-}
-
 /* ---------------
 Banner
 --------------- */
 
 .seccionBanner {
   width: 100vw;
-  height: 75vh;
+  height: 70vh;
   min-height: 700px;
-  background: url(../img/inicio_fondo_01_3.png);
+  background: url(../img/inicio_fondo_header.png);
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -164,34 +161,32 @@ Banner
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: stretch;
+  align-items: stretch;
+  overflow: visible;
 }
 
 .seccionBanner .contenedorBanner .texto {
   width: 35vw;
   min-width: 450px;
-  margin: 150px 5vw 0 10vw;
+  margin: 190px 5vw 0 10vw;
   padding: 0 0 0 0;
   overflow: visible;
   transition: var(--transitionsLarge);
 }
 .seccionBanner .contenedorBanner .carrusel_img {
+  height: 100%;
   width: 50vw;
-  height: 55rem;
   margin-right: 0;
-  margin: 150px 0 0;
-  padding: 2rem;
+  margin: 190px 0 0;
+  padding: 0;
   transition: var(--transitionsLarge);
 }
 
-.seccionBanner .contenedorBanner .carrusel_img .imagen{
+.seccionBanner .contenedorBanner .carrusel_img .imagen img{
   width: 100%;
-  height: 100%;
-  background-image: url(../img/Anecdotas-Villa.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* box-shadow: var(--boxShadow); */
+  height: auto;
+  border-radius: 1rem 0 0 1rem;
 }
 
 /* 
@@ -212,7 +207,7 @@ Banner
 } */
 
 .seccionBanner .contenedorBanner .texto  h1 {
-  color: var(--secundario-op-dos);
+  color: var(--blanco);
 }
 
 .seccionBanner .contenedorBanner .texto p {
@@ -248,99 +243,124 @@ Banner
   transform: translateX(200px);
 }
 
+.seccionBanner.abajo{
+  opacity: 0;
+  transform: translateY(-150px);
+}
+
 /* ---------------
-Soluciones
+Cartelera
 --------------- */
 
-.seccionFunciones {
+.seccionCartelera {
   background-color: var(--morado-claro-op);
   padding: var(--spaceSection);
 }
 
-.seccionFunciones .contenedorFunciones {
+.seccionCartelera .contenedorFunciones {
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
+  overflow: hidden;
 }
 
-.seccionFunciones .contenedorFunciones .funcionesTitle{
-  margin-bottom: 2rem;
+.seccionCartelera .contenedorCartelera .carteleraTitle{
   text-align: center;
 }
 
-.seccionFunciones .contenedorFunciones .funcionesTitle p{
-  margin: 2rem;
+.seccionCartelera .contenedorCartelera .carteleraTitle p{
+  margin: 1rem auto 0 auto;
   text-align: center;
 }
 
-.seccionFunciones .contenedorFunciones .recuadro {
+.seccionCartelera .contenedorFunciones .recuadro {
   width: 30%;
-  margin: 2rem auto;
-  padding: 3rem 2rem;
+  max-height: 52rem;
+  max-width: 42rem;
+  margin: 3rem auto 0 auto;
+  padding: 1rem 2rem 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border-radius: 5px;
 }
 
-.seccionFunciones .contenedorFunciones .recuadro .contenedorTarjeta {
-  width: 100%;
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta {
+  width: 29.4rem;
   height: 55rem;
+  overflow: visible;
 }
 
-.seccionFunciones .contenedorFunciones .recuadro .contenedorTarjeta .tarjeta{
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tarjeta{
   width: 100%;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  overflow: visible;
+  box-shadow: var(--boxShadow);
 }
 
-.seccionFunciones .contenedorFunciones .recuadro .contenedorTarjeta .tj_01{
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_01{
   background-image: url(../img/Anecdotas-Villa.jpg);
 }
 
-.seccionFunciones .contenedorFunciones .recuadro .contenedorTarjeta .tj_02{
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_02{
   background-image: url(../img/Cartel-MoiraFINAL.jpg);
 }
 
-.seccionFunciones .contenedorFunciones .recuadro .contenedorTarjeta .tj_03{
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_03{
   background-image: url(../img/Cartel_Expo_Méxicoantiguo.jpg);
 }
 
-.seccionFunciones .contenedorFunciones .recuadro .boton_func{
-  transform: translate(5rem, -5rem);
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_04{
+  background-image: url(../img/Cineclub.jpg);
+}
+
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_05{
+  background-image: url(../img/Contracultura-01-01.jpg);
+}
+
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_06{
+  background-image: url(../img/Contracultura_Cartel2-01.jpg);
+}
+
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_07{
+  background-image: url(../img/Guion-literario-radiofonico.jpg);
+}
+
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_08{
+  background-image: url(../img/Nahui-Ollin.jpg);
+}
+
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_09{
+  background-image: url(../img/Oratoria-01.jpg);
+}
+
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_10{
+  background-image: url(../img/Saturnino-corregido-2.jpg);
+}
+
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_11{
+  background-image: url(../img/Shakespeare-cartel.jpg);
+}
+
+.seccionCartelera .contenedorFunciones .recuadro .contenedorTarjeta .tj_12{
+  background-image: url(../img/Vos-tu-voz.jpg);
+}
+
+.seccionCartelera .contenedorFunciones .recuadro .boton_func{
+  transform: translate(2rem, -5rem);
   border: solid var(--blanco) .2rem;
 }
 
-/* 
-.seccionFunciones .contenedorFunciones .recuadro .recuadroInline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto 20px auto;
-}
-
-.seccionFunciones .contenedorFunciones .recuadro .recuadroInline h4 {
-  text-align: left;
-}
-
-.seccionFunciones .contenedorFunciones .recuadro .recuadroInline span a{
-  color: var(--principal);
-  text-decoration: none;
-  font-style: italic;
-}
-*/
-
-.seccionFunciones .contenedorFunciones .recuadro p {
+.seccionCartelera .contenedorFunciones .recuadro p {
   text-align: justify;
   margin: 2rem 0;
 }
 
-.seccionFunciones .contenedorFunciones .recuadro span {
+.seccionCartelera .contenedorFunciones .recuadro span {
   text-align: justify;
   font-size: 1.2rem;
 }
@@ -417,65 +437,55 @@ Consulta
 }
 
 /* ---------------
-Bullets
+Consulta
 --------------- */
 
-.seccionBullets {
-  margin: 0 auto;
+.seccionMapa {
+  width: 100vw;
+  margin: 4rem auto 5rem auto;
   padding: var(--spaceSection);
 }
 
-.seccionBullets .contenedorBullets{
-  margin: auto;
+.seccionMapa .contenedorMapa{
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  justify-content: center;
+  height: 35rem;
 }
 
-.seccionBullets .contenedorBullets .bullet{
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.seccionMapa .contenedorMapa .mapa{
+  width: 60%;
 }
 
-.seccionBullets .contenedorBullets .linea{
-  width: .3rem;
-  height: 6rem;
-  margin: auto;
-  border-radius: 10rem;
-  background-color: var(--principal);
+.seccionMapa .contenedorMapa .texto{
+  width: 30%;
+  padding-left: 2rem;
 }
 
-.seccionBullets .contenedorBullets .bullet .icono{
+.seccionMapa .contenedorMapa .mapa iframe{
   width: 100%;
-  height: 10rem;
-  margin-top: 4rem;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  height: 100%;
+  border-radius: 1rem 0 0 1rem;
 }
 
-.seccionBullets .contenedorBullets .bullet .icono-01{
-  background-image: url(../img/inicio_bullet_01.png);
+.seccionMapa .contenedorMapa .texto p{
+  margin-top: 2rem;
 }
 
-.seccionBullets .contenedorBullets .bullet .icono-02{
-  background-image: url(../img/inicio_bullet_02.png);
+.seccionMapa .contenedorMapa .texto a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--negro);
+  transition: var(--transitions);
 }
 
-.seccionBullets .contenedorBullets .bullet .icono-03{
-  background-image: url(../img/inicio_bullet_03.png);
-}
-
-.seccionBullets .contenedorBullets .bullet .icono-04{
-  background-image: url(../img/inicio_bullet_04.png);
+.seccionMapa .contenedorMapa .texto a:hover{
+  color: var(--secundario);
 }
 
 /* ---------------
 Nosotros
 --------------- */
-
+/* 
 .seccionNosotros {
   margin: 0 auto;
   padding: var(--spaceSection);
@@ -517,11 +527,11 @@ Nosotros
   text-indent: -2.3rem;
   overflow: visible;
 }
-
+ */
 /* ---------------
 Nuestro ADN
 --------------- */
-
+/* 
 .seccionObra {
   width: 100vw;
   margin: 0 auto;
@@ -564,7 +574,7 @@ Nuestro ADN
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+ */
 /* ---------------
 Tablet
 --------------- */

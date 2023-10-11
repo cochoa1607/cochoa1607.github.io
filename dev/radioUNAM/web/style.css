@@ -24,21 +24,19 @@ Colores
 ------------- */
 
 :root {
-
-    --principal: #2E2C69;
-    --secundario: #038DA1;
-    --terciario: #283B7F;
-    --vinculo: #FF8000;
+    --principal: #2A4C81;
+    --secundario: red;
+    --terciario: green;
+    --vinculo: purple;
     --blanco: #FFFFFF;
     --negro: #0A0A0A;
     --gris: #707070;
     --grisDos: #D0D0D0;
     --grisTres: #EEEEEE;
     
-    --principal-op: #8280A5;
-    --secundario-op: #4FAFBD;
-    --secundario-op-dos: #DDEBED;
-    --vinculo-op: #FFA64D;
+    --principal-op: #2A4C8160;
+    --secundario-op: greenyellow;
+    --vinculo-op: orange;
 
     --font-principal: 'Open Sans', sans-serif;
     --font-secundaria: 'Cormorant Garamond', serif;
@@ -164,6 +162,8 @@ Botones
     font-size: 1.6rem;
     font-weight: 900;
     text-decoration: none;
+    opacity: 1;
+    animation: appear .3s linear;
 }
 
 .primary a{
@@ -318,7 +318,7 @@ header{
 .header .containerMenu .logo{
     width: 13rem;
     height: 8rem;
-    background-image: url();
+    background-image: url(./img/logo_SJC_blanco.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -342,7 +342,7 @@ list-style: none;
 }
 
 .header .containerMenu a {
-color: var(--secundario-op-dos);
+color: var(--blanco);
 text-decoration: none;
 font-weight: 500;
 transition: var(--transitions);
@@ -365,26 +365,9 @@ font-size: 3rem;
 Scroll
 ------------- */
 
-.desaparece{
-    opacity: 0.5;
-    transition: var(--transitionsLarge);
-}
-
-.transform_upD{
-    opacity: 0;
-    transform: translateY(40%);
-    transition: var(--transitionsLarge);
-}
-
 .transform_up{
     opacity: 0;
     transform: translateY(10%);
-    transition: var(--transitionsLarge);
-}
-
-.transform_down{
-    opacity: 0;
-    transform: translateY(-10%);
     transition: var(--transitionsLarge);
 }
 
@@ -424,18 +407,20 @@ Footer
 .containerFooter {
     width: 100%;
     height: auto;
-    padding: 50px 0;
+    padding: 4rem 0;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly;
+    align-items: stretch; */
     background-color: #313131;
 }
 
 .footerCaja {
     width: 20%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* 
+    justify-content: space-around; */
     text-align: center;
 }
 
@@ -460,6 +445,12 @@ Footer
     margin: auto;
 }
 
+.footerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footerCaja ul {
     text-align: left;
 }
@@ -480,7 +471,7 @@ Footer
 }
 
 .footerCaja a:hover {
-    color: var(--secundario-op-dos);
+    color: var(--blanco);
     transform: scale(1.02);
 }
 
@@ -500,12 +491,14 @@ Footer
 }
 
 .footerRedes {
+    width: fit-content;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    margin: 0;
 }
 
 .footerRedes i {
-    color: var(--secundario-op-dos);
+    color: var(--blanco);
     font-size: 2.4rem;
 }
 
@@ -540,6 +533,20 @@ Footer
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+    
+    50% {
+        opacity: 20%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }
 

@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function () {
     var menu = document.querySelector(".headerInicio");
-    menu.classList.toggle("abajo", window.scrollY > 300);
+    menu.classList.toggle("abajo", window.scrollY > 110);
 });
 
 document.querySelector(".bars__menu").addEventListener("click", animateBars);
