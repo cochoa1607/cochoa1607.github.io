@@ -57,8 +57,8 @@ Secciones Servicios
 }
 
 .titulo .icono{
-    width: 9rem;
-    height: 9rem;
+    width: 8rem;
+    height: 8rem;
     overflow: hidden;
 }
 
@@ -75,20 +75,21 @@ Gerencia
 .container-servicio .gerencia .contenedor-imagenes{
     width: 94%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 
 .container-servicio .gerencia .contenedor-texto{
     width: 94%;
     margin-top: 1rem;
     margin-left: 3%;
+    border: solid green 2px;
 }
 
 .container-servicio .gerencia .contenedor-texto .texto-collapsed{
     width: 60%;
     min-width: 60ch;
-    max-width: 90ch;
-    margin: 1rem auto;
+    max-width: 110ch;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -100,14 +101,14 @@ Gerencia
     text-align: center;
     width: 60%;
     min-width: 60ch;
-    max-width: 90ch;
-    max-width: 90ch;
-    margin: 1rem auto 2rem auto;
+    max-width: 110ch;
+    margin: 0 auto .5rem auto;
 }
 
 .container-servicio .gerencia .contenedor-texto .texto-noCollapsed .cajas{
     width: 100%;
-    margin: 0 auto 1rem 0;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .container-servicio .gerencia .contenedor-texto .texto-noCollapsed .cajas h4{
@@ -156,7 +157,7 @@ Gerencia
 }
 
 .gerencia .active-contenedor-texto .texto-noCollapsed p{
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 
 .gerencia .active-contenedor-texto .texto-noCollapsed .caja_cajas{
@@ -194,7 +195,7 @@ Gerencia
 
 .container-servicio .gerencia .contenedor-imagenes{
     width: 100%;
-    height: 42rem;
+    height: 38rem;
     display: flex;
     margin-bottom: 2rem;
 }
@@ -205,9 +206,9 @@ Gerencia
 
 .container-servicio .gerencia .contenedor-imagenes .cont-imagen-fija .imagen-fija{
     width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    height: 100%;
 }
 
 .container-servicio .gerencia .contenedor-imagenes .cont-imagen-fija{
@@ -329,7 +330,7 @@ Auditoria
 .container-servicio .auditoria .contenedor-imagenes{
     width: 100%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 0rem;
     display: flex;
     /* border: solid green 3px; */
 }
@@ -597,9 +598,8 @@ Revision
 .container-servicio .revision .contenedor-imagenes{
     width: 100%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 0rem;
     display: flex;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .revision .contenedor-texto-rev{
@@ -852,22 +852,19 @@ Levantamiento
     position: relative;
     z-index: 32;
     background-color: var(--blanco);
-    /* border: solid green 3px; */
 }
 
 .container-servicio .levantamiento .contenedor-imagenes{
     width: 100%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 0rem;
     display: flex;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan{
     width: 94%;
     margin-top: 1rem;
     margin-left: 3%;
-    /* border: solid blue 3px; */
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan .texto-collapsed{
@@ -876,12 +873,10 @@ Levantamiento
     max-width: 90ch;
     margin: 1rem auto;
     text-align: center;
-    /* border: solid red 3px; */
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed{
     width: 100%;
-    /* border: solid purple 3px; */
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .texto{
@@ -890,25 +885,21 @@ Levantamiento
     min-width: 60ch;
     max-width: 90ch;
     margin: 1rem auto;
-    /* border: solid lightcoral 3px; */
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .cajas{
     width: 100%;
     margin: 0 auto 1rem 0;
-    /* border: solid orange 3px; */
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .cajas h4{
     margin-bottom: 1rem;
-    /* border: solid orangered 3px; */
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .cajas .caja ul{
     list-style-position: inside;
     text-indent: -2rem;
     height: 100%;
-    /* border: solid greenyellow 3px; */
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .cajas .caja ul li{
@@ -916,7 +907,6 @@ Levantamiento
     text-indent: -2.1rem;
     padding: 1rem 3.2rem;
     font-weight: 300;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .levantamiento .contenedor-texto-levan .boton .boton-masInfo{
@@ -1116,22 +1106,19 @@ Analisis
 #analisis{
     position: relative;
     z-index: 30;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .analisis .contenedor-imagenes{
     width: 100%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 0rem;
     display: flex;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .analisis .contenedor-texto-analis{
     width: 94%;
     margin-top: 1rem;
     margin-left: 3%;
-    /* border: solid blue 3px; */
 }
 
 .container-servicio .analisis .contenedor-texto-analis .texto-collapsed{
@@ -1140,12 +1127,10 @@ Analisis
     max-width: 90ch;
     margin: 1rem auto;
     text-align: center;
-    /* border: solid red 3px; */
 }
 
 .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed{
     width: 100%;
-    /* border: solid purple 3px; */
 }
 
 .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .texto{
@@ -1154,25 +1139,21 @@ Analisis
     min-width: 60ch;
     max-width: 90ch;
     margin: 1rem auto;
-    /* border: solid lightcoral 3px; */
 }
 
 .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .cajas{
     width: 100%;
     margin: 0 auto 1rem 0;
-    /* border: solid orange 3px; */
 }
 
 .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .cajas h4{
     margin-bottom: 1rem;
-    /* border: solid orangered 3px; */
 }
 
 .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .cajas .caja ul{
     list-style-position: inside;
     text-indent: -2rem;
     height: 100%;
-    /* border: solid greenyellow 3px; */
 }
 
 .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .cajas .caja ul li{
@@ -1180,7 +1161,6 @@ Analisis
     text-indent: -2.1rem;
     padding: 1rem 3.2rem;
     font-weight: 300;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .analisis .contenedor-texto-analis .boton .boton-masInfo{
@@ -1381,22 +1361,19 @@ Due Diligence
     position: relative;
     z-index: 28;
     background-color: var(--blanco);
-    /* border: solid green 3px; */
 }
 
 .container-servicio .diligence .contenedor-imagenes{
     width: 100%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 0rem;
     display: flex;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .diligence .contenedor-texto-dilig{
     width: 94%;
     margin-top: 1rem;
     margin-left: 3%;
-    /* border: solid blue 3px; */
 }
 
 .container-servicio .diligence .contenedor-texto-dilig .texto-collapsed{
@@ -1405,12 +1382,10 @@ Due Diligence
     max-width: 90ch;
     margin: 1rem auto;
     text-align: center;
-    /* border: solid red 3px; */
 }
 
 .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed{
     width: 100%;
-    /* border: solid purple 3px; */
 }
 
 .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .texto{
@@ -1419,25 +1394,21 @@ Due Diligence
     min-width: 60ch;
     max-width: 90ch;
     margin: 1rem auto;
-    /* border: solid lightcoral 3px; */
 }
 
 .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .cajas{
     width: 100%;
     margin: 0 auto 1rem 0;
-    /* border: solid orange 3px; */
 }
 
 .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .cajas h4{
     margin-bottom: 1rem;
-    /* border: solid orangered 3px; */
 }
 
 .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .cajas .caja ul{
     list-style-position: inside;
     text-indent: -2rem;
     height: 100%;
-    /* border: solid greenyellow 3px; */
 }
 
 .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .cajas .caja ul li{
@@ -1445,7 +1416,6 @@ Due Diligence
     text-indent: -2.1rem;
     padding: 1rem 3.2rem;
     font-weight: 300;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .diligence .contenedor-texto-dilig .boton .boton-masInfo{
@@ -1650,22 +1620,19 @@ Gestion
     position: relative;
     z-index: 26;
     box-shadow: none;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .gestion .contenedor-imagenes{
     width: 100%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 0rem;
     display: flex;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .gestion .contenedor-texto-gest{
     width: 94%;
     margin-top: 1rem;
     margin-left: 3%;
-    /* border: solid blue 3px; */
 }
 
 .container-servicio .gestion .contenedor-texto-gest .texto-collapsed{
@@ -1674,12 +1641,10 @@ Gestion
     max-width: 90ch;
     margin: 1rem auto;
     text-align: center;
-    /* border: solid red 3px; */
 }
 
 .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed{
     width: 100%;
-    /* border: solid purple 3px; */
 }
 
 .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .texto{
@@ -1688,25 +1653,21 @@ Gestion
     min-width: 60ch;
     max-width: 90ch;
     margin: 1rem auto;
-    /* border: solid lightcoral 3px; */
 }
 
 .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .cajas{
     width: 100%;
     margin: 0 auto 1rem 0;
-    /* border: solid orange 3px; */
 }
 
 .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .cajas h4{
     margin-bottom: 1rem;
-    /* border: solid orangered 3px; */
 }
 
 .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .cajas .caja ul{
     list-style-position: inside;
     text-indent: -2rem;
     height: 100%;
-    /* border: solid greenyellow 3px; */
 }
 
 .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .cajas .caja ul li{
@@ -1714,7 +1675,6 @@ Gestion
     text-indent: -2.1rem;
     padding: 1rem 3.2rem;
     font-weight: 300;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .gestion .contenedor-texto-gest .boton .boton-masInfo{
@@ -1919,6 +1879,36 @@ Gestion
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .container-servicios{
         background-image: url(../img/tam_Tablet/servicios_header.png);
+    }
+
+    /* Gerencia */
+
+    .container-servicio .gerencia .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        display: none;
+    }
+
+    .container-servicio .gerencia .contenedor-texto{
+        /* height: 15rem; */
+        border: solid red 2px;
+    }
+
+    .container-servicio .gerencia .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+        
+    .container-servicio .gerencia .contenedor-imagenes .cont-imagen-slide{
+        width: 100%;
+    }
+    
+    .gerencia .slide-content {
+        height: 100%;
+        height: 100%;
+        border: solid red 2px;
+    }
+    
+    .container-servicio .gerencia .active-contenedor-texto .contenedor-imagenes{
+        /* height: 15rem; */
+        border: solid red 2px;
     }
     
     /* Auditoria */

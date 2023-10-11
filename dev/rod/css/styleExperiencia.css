@@ -176,8 +176,8 @@ Aeropuertos
 .aeropuerto-009 .contenedor-all .contenedor-imagenes,
 .aeropuerto-010 .contenedor-all .contenedor-imagenes{
     width: 100%;
-    height: 70vh;
-    padding: 4rem 1rem;
+    height: 80vh;
+    padding: 2rem 1rem;
 }
 
 .aeropuerto-001 .contenedor-all .contenedor-texto,
@@ -190,11 +190,12 @@ Aeropuertos
 .aeropuerto-008 .contenedor-all .contenedor-texto,
 .aeropuerto-009 .contenedor-all .contenedor-texto,
 .aeropuerto-010 .contenedor-all .contenedor-texto{
-    width: 61rem;
+    width: 55rem !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem;
+    margin: 0 2rem;
+    border: solid greenyellow 2px;
 }
 
 /* -- Texto -- */
@@ -950,19 +951,19 @@ SEGURIDAD
 .seguridad-003 .contenedor-all .contenedor-imagenes,
 .seguridad-004 .contenedor-all .contenedor-imagenes{
     width: 100%;
-    height: 70vh;
-    padding: 4rem 1rem;
+    height: 80vh;
+    padding: 2rem 1rem;
 }
 
 .seguridad-001 .contenedor-all .contenedor-texto,
 .seguridad-002 .contenedor-all .contenedor-texto,
 .seguridad-003 .contenedor-all .contenedor-texto,
 .seguridad-004 .contenedor-all .contenedor-texto{
-    width: 61rem;
+    width: 55rem !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem;
+    margin: 0 2rem;
 }
 
 /* -- Texto -- */
@@ -1348,18 +1349,18 @@ SEDES
 .sedes-002 .contenedor-all .contenedor-imagenes,
 .sedes-003 .contenedor-all .contenedor-imagenes{
     width: 100%;
-    height: 70vh;
-    padding: 4rem 1rem;
+    height: 80vh;
+    padding: 2rem 1rem;
 }
 
 .sedes-001 .contenedor-all .contenedor-texto,
 .sedes-002 .contenedor-all .contenedor-texto,
 .sedes-003 .contenedor-all .contenedor-texto{
-    width: 61rem;
+    width: 55rem !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem;
+    margin: 0 2rem;
 }
 
 /* -- Texto -- */
@@ -1698,19 +1699,19 @@ HOTELERÍA
 .hoteleria-003 .contenedor-all .contenedor-imagenes,
 .hoteleria-004 .contenedor-all .contenedor-imagenes{
     width: 100%;
-    height: 70vh;
-    padding: 4rem 1rem;
+    height: 80vh;
+    padding: 2rem 1rem;
 }
 
 .hoteleria-001 .contenedor-all .contenedor-texto,
 .hoteleria-002 .contenedor-all .contenedor-texto,
 .hoteleria-003 .contenedor-all .contenedor-texto,
 .hoteleria-004 .contenedor-all .contenedor-texto{
-    width: 61rem;
+    width: 55rem !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem;
+    margin: 0 2rem;
 }
 
 /* -- Texto -- */
@@ -2095,18 +2096,18 @@ OTROS
 .otros-002 .contenedor-all .contenedor-imagenes,
 .otros-003 .contenedor-all .contenedor-imagenes{
     width: 100%;
-    height: 70vh;
-    padding: 4rem 1rem;
+    height: 80vh;
+    padding: 2rem 1rem;
 }
 
 .otros-001 .contenedor-all .contenedor-texto,
 .otros-002 .contenedor-all .contenedor-texto,
 .otros-003 .contenedor-all .contenedor-texto{
-    width: 61rem;
+    width: 55rem !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem;
+    margin: 0 2rem;
 }
 
 /* -- Texto -- */
@@ -2459,10 +2460,6 @@ otros_003
 /* Mobile, Original (Tablet Vertical) y Tablet (Tablet Horizontal) */
 @media only screen and (min-width: 1px) and (max-width: 1024px) {
 
-    .contenedor-seccion{
-        padding: 5rem 0 !important;
-    }
-
     /* --------------------
     Aeropuertos
     -------------------- */
@@ -2521,10 +2518,6 @@ otros_003
 
 /*  DesktopSM  */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-
-    .contenedor-seccion{
-        padding: 10rem 2rem 3rem 2rem !important;
-    }
 
     /* --------------------
     Aeropuertos

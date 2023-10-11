@@ -310,46 +310,57 @@ Equipo
 
 .container-equipo .cajas {
     display: flex;
-    flex-direction: column;
     margin-top: 5rem;
+    justify-content: stretch;
+    align-items: stretch;
+    /* 
+    flex-direction: column;
+    */
 }
 
 .container-equipo .cajas .caja {
+    width: 30%;
+    margin: 0 auto;
+    background-color: var(--blanco);
+    border: solid var(--secundario) .2rem;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    /* 
     width: 100%;
     max-width: 160rem;
-    margin: 0 auto 0 0;
+    */
 
-    display: flex;
-    justify-content: center;
 }
 
 .container-equipo .cajas .caja-der {
-    margin: 0 0 0 auto;
+    margin: auto;
 
     flex-direction: row-reverse;
 }
 
 
-.container-equipo .cajas .caja .imagen{
+/* .container-equipo .cajas .caja .imagen{
     width: 50%;
     height: 60rem;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
+ */
+
 
 .container-equipo .cajas .caja .texto{
-    width: 50%;
-    padding: 0 4rem;
+    width: 100%;
+    padding: 0 2rem;
     margin-left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    text-align: center;
 }
 
 .container-equipo .cajas .caja-der .texto{
-    text-align: right;
+    text-align: center;
 }
 
 .container-equipo .cajas .caja .img-01{
