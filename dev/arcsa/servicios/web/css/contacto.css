@@ -17,33 +17,51 @@
 
 .circulo .circulos{
     width: 40%;
+    margin-right: 5%;
 }
 
 .circulo .imagen{
-    width: 40%;
+    width: 55%;
 }
 
 .circulo .imagen .img{
-    width: 70%;
+    width: 100%;
     height: 100%;
     margin: auto;
-    background-image: url(../img/retrato.jpg);
+    background-image: url(../img/contacto_enlaces.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.linea_circulo{
+    display: flex;
+    align-items: center;
+}
+
+.linea_circulo a{
+    color: var(--negro);
+    text-decoration: none;
+    transition: var(--transitions);
+}
+
+.linea_circulo a:hover{
+    transform: scale(1.02);
 }
 
 .circuloIn{
     height: auto;
     width: auto;
-    padding: 20px;
-    margin: 20px;
-    max-width: 100px;
-    max-height: 100px;
-    min-width: 60px;
-    max-width: 70px;
+    padding: 2rem;
+    margin: 1rem;
+    margin-right: 2rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    min-width: 6rem;
+    max-width: 7rem;
     background-color: var(--principal);
-    border-radius: 50px;
+    border-radius: 5rem;
     transition: var(--transitions);
     box-shadow: var(--boxShadow);
 }
@@ -64,11 +82,12 @@
 ---------------*/
 .contTitle{
     text-align: center;
+    margin-top: 5rem;
 }
 
 .containerForm {
     width: 90vw;
-    margin: 5rem auto 10rem auto;
+    margin: 4rem auto 10rem auto;
     padding: 0;
   }
   
@@ -81,7 +100,7 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: 1rem;
-    background-color: var(--blanco);
+    background-color: none;
   }
   
 .containerForm label {
@@ -98,12 +117,12 @@
     color: var(--azul);
     margin-left: 1rem;
     padding: 0 .5rem;
-    background-color: var(--blanco);
-  
+    background-color: var(--grisTres);
+    
     transform: translateY(.5rem);
     z-index: 99;
-  }
-  
+}
+
 .containerForm input {
     width: 100%;
     height: 4rem;
@@ -114,11 +133,13 @@
     
     transform: translateY(-.5rem);
     z-index: 9;
+    background-color: var(--grisTres);
   }
   
 .containerForm .contenedor-boton {
     width: auto;
     overflow: visible;
+    margin: 0 2rem;
   }
 
 /* ---------------
@@ -126,7 +147,7 @@ Agendar
 --------------- */
 
 .seccionAgendar {
-    margin-top: 8rem;
+    margin: 2rem 0 7rem 0;
     padding: var(--spaceSection);
 }
 
@@ -139,24 +160,47 @@ Agendar
 .seccionAgendar .agendar .cajas{
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 .seccionAgendar .agendar .cajas .caja{
-    width: 30%;
+    width: 50%;
+}
+
+.seccionAgendar .agendar .cajas .caja h3{
+    margin: 2rem 0;
+}
+
+.seccionAgendar .agendar .cajas .caja p a{
+    color: var(--secundario);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transitions);
+    box-sizing: border-box;
+}
+
+.seccionAgendar .agendar .cajas .caja p a:hover{
+    color: var(--vinculo);
 }
 
 .seccionAgendar .agendar .cajas .calendario{
-    width: 70%;
+    width: 50%;
     margin-right: 5rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.seccionAgendar .agendar .cajas .calendario iframe{
-    width: 100%;
-    height: 60rem;
+.seccionAgendar .agendar .cajas .caja .boton{
+    margin-top: 3rem;
+    margin-left: .5rem;
 }
 
-  
+.seccionAgendar .agendar .cajas .calendario img{
+    width: 50%;
+    margin-left: 40%;
+}
+
+
 
 /*Tablet -------------------------------------------------------------------------------------------------------------*/
 

@@ -1,3 +1,7 @@
+/* ---------------
+Tablet
+--------------- */
+
 .seccionNosotros{
     margin-top: 14rem;
 }
@@ -12,6 +16,7 @@
 
 .seccionNosotros .nosotros .cajas{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -23,6 +28,7 @@
 .seccionNosotros .nosotros .cajas .texto ul{
     overflow: visible;
     margin-top: 1rem;
+    padding-right: 2rem;
 }
 
 .seccionNosotros .nosotros .cajas .texto ul li{
@@ -305,6 +311,15 @@ Identidad de Marca
 
 .seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja:hover .texto{
     display: flex;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja .texto li{
+    list-style-position: inside;
+    text-indent: -2.2rem;
+    transform: translateX(2rem);
+    overflow: visible;
 }
 
 .seccionIdentidad .contenedorIdentidad .identidad .contenedor_cajas .cajas .caja:hover .titulo{
@@ -385,24 +400,22 @@ Nuestro Equipo
 
 .seccionEquipo .equipo .cajas .caja{
     display: flex;
-    margin: 2rem 0;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    width: fit-content;
     height: auto;
-    opacity: 60%;
-}
-
-.seccionEquipo .equipo .cajas .caja:hover{
-    opacity: 100%;
 }
 
 .seccionEquipo .equipo .cajas .caja_ultima{
     opacity: 100%;
+    width: 60rem;
 }
 
 .seccionEquipo .equipo .cajas .caja_ultima .caja_in{
     width: 100% !important;
-    padding: 0 5rem;
-
+    padding: 0 3rem;
+    margin: 0;
     margin-bottom: 0;
     text-align: center;
     display: flex;
@@ -414,41 +427,41 @@ Nuestro Equipo
 .seccionEquipo .equipo .cajas .caja_ultima .caja_in h4{
     margin: 0;
     padding: 0;
+    font-size: 2rem;
 }
 
 .seccionEquipo .equipo .cajas .caja_ultima .caja_in .boton{
     margin: 0;
     margin-top: 3rem;
-    padding: 0;
 }
 
 .seccionEquipo .equipo .cajas .caja .caja_in{
     display: flex;
-    width: 40rem;
-    height: 40rem;
-    margin: auto;
-    border-radius: 1rem;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 0;
 }
 
 .seccionEquipo .equipo .cajas .caja .imagen{
     background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
 }
 
 .seccionEquipo .equipo .cajas .caja .caja_inDos{
     display: flex;
-    width: 40rem;
-    height: 40rem;
-    margin: auto;
-    border-radius: 1rem;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 0;
     text-align: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--principal-op);
+}
 
+.seccionEquipo .equipo .cajas .caja:hover .caja_inDos{
     background-color: var(--principal);
 }
 
@@ -456,9 +469,65 @@ Nuestro Equipo
     color: var(--blanco);
 }
 
+.seccionEquipo .equipo .cajas .caja .caja_inDos p{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
 .seccionEquipo .equipo .cajas .caja .imagen{
     background-image: url(../img/retrato.jpg);
 }
+
+.seccionEquipo .equipo .cajas .caja .caja_01 p:after{
+    content: "Referencias";
+}
+
+.seccionEquipo .equipo .cajas .caja:hover .caja_01 p:after{
+    content: "Equipo bla bla bla";
+    animation: opacitiIn 1s linear;
+    transition: var(--transitionsXLarge);
+}
+
+.seccionEquipo .equipo .cajas .caja .caja_02 p:after{
+    content: "Control de calidad";
+}
+
+.seccionEquipo .equipo .cajas .caja:hover .caja_02 p:after{
+    content: "Equipo bla bla bla CONTROL";
+    animation: opacitiIn 1s linear;
+    transition: var(--transitionsXLarge);
+}
+
+.seccionEquipo .equipo .cajas .caja .caja_03 p:after{
+    content: "Control de Calidad Aseguradoras";
+}
+
+.seccionEquipo .equipo .cajas .caja:hover .caja_03 p:after{
+    content: "Equipo bla bla bla";
+    animation: opacitiIn 1s linear;
+    transition: var(--transitionsXLarge);
+}
+
+.seccionEquipo .equipo .cajas .caja .caja_04 p:after{
+    content: "Atención a Clientes";
+}
+
+.seccionEquipo .equipo .cajas .caja:hover .caja_04 p:after{
+    content: "Equipo bla bla bla";
+    animation: opacitiIn 1s linear;
+    transition: var(--transitionsXLarge);
+}
+
+.seccionEquipo .equipo .cajas .caja .caja_05 p:after{
+    content: "Área Comercial";
+}
+
+.seccionEquipo .equipo .cajas .caja:hover .caja_05 p:after{
+    content: "Equipo bla bla bla";
+    animation: opacitiIn 1s linear;
+    transition: var(--transitionsXLarge);
+}
+
 
 /* ---------------
 Nuestro Clientes

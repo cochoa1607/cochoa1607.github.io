@@ -23,7 +23,7 @@ BG 2
 
 .bg_02{
   height: 50rem;
-  transform: translateY(-50rem);
+  transform: translateY(-49rem);
   
   background-image: url(../img/inicio_fondo_02.png);
 }
@@ -230,8 +230,10 @@ Soluciones
 --------------- */
 
 .seccionSoluciones {
+  margin: 8rem 0;
   background-color: var(--morado-claro-op);
   padding: var(--spaceSection);
+  scroll-padding: 20rem;
 }
 
 .seccionSoluciones .contenedorSoluciones {
@@ -294,9 +296,15 @@ Soluciones
 Consulta
 --------------- */
 
+#consulta{
+  scroll-margin-block-start: 30rem;
+  scroll-padding: 30rem;
+}
+
+
 .seccionConsulta {
   width: 100vw;
-  margin: 4rem auto 5rem auto;
+  margin: 6rem auto 10rem auto;
   padding: var(--spaceSection);
 }
 
@@ -369,7 +377,7 @@ Bullets
 --------------- */
 
 .seccionBullets {
-  margin: 0 auto;
+  margin: 7rem auto 5rem auto;
   padding: var(--spaceSection);
 }
 
@@ -425,7 +433,7 @@ Nosotros
 --------------- */
 
 .seccionNosotros {
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: var(--spaceSection);
 }
 
@@ -476,7 +484,7 @@ Nuestro ADN
 
 .seccionADN {
   width: 100vw;
-  margin: 0 auto;
+  margin: 2rem auto 5rem auto;
   padding: var(--spaceSection);
 }
 

@@ -165,7 +165,7 @@ Botones
 
 .boton {
     width: fit-content;
-    padding: 1.4rem 5rem;
+    padding: 1.2rem 4rem;
     margin-top: 2rem;
     cursor: pointer;
     overflow: visible;
@@ -177,7 +177,7 @@ Botones
     width: fit-content;
     margin: auto;
     background-color: var(--secundario);
-    border-radius: 50rem;
+    border-radius: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +198,7 @@ Botones
 .terciary {
     margin: 0;
     padding: 7px 70px;
-    border-radius: 5px;
+    border-radius: .5rem;
     min-width: 250px;
     max-width: 300px;
     text-decoration: none;
@@ -215,7 +215,7 @@ Botones
     width: fit-content;
     margin: auto;
     background-color: var(--vinculo);
-    border-radius: 50rem;
+    border-radius: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,7 +239,7 @@ Boton up
 
 .botonUp{
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     right: 0;
     position: fixed;
     right: 10px;
@@ -425,7 +425,7 @@ Secciones
     max-width: 150rem;
     min-width: 110rem;
     margin: auto;
-    border: solid red 1px;
+/*     border: solid red 1px; */
 }
 
 /* -------------
@@ -551,6 +551,20 @@ Footer
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes opacitiIn {
+    0% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 30%;
+    }
+    
+    100% {
+        opacity: 100%;
     }
 }
 
