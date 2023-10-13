@@ -1,0 +1,170 @@
+
+/* ---------------
+Consulta
+--------------- */
+
+#consulta{
+    scroll-margin-block-start: 30rem;
+    scroll-padding: 30rem;
+}
+
+
+.seccionConsulta {
+    width: 100vw;
+    margin: 11rem auto 0 auto;
+    padding: var(--spaceSection);
+}
+
+.seccionConsulta .contenedorConsulta{
+    width: 96%; 
+}
+
+.seccionConsulta .contenedorConsulta h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.seccionConsulta .contenedorConsulta h3 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    padding: 2rem 0;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .campos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #FFFFFF;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm label {
+    width: 24%;
+    min-width: 27rem;
+    margin: .5rem 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm span {
+    width: fit-content;
+    font-size: 1.3rem;
+    color: var(--azul);
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    background-color: var(--blanco);
+
+    transform: translateY(.5rem);
+    z-index: 99;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm input {
+    width: 100%;
+    height: 4rem;
+    border-radius: 3px;
+    padding: 0 1.5rem;
+    color: var(--negro);
+    border: solid var(--principal) .15rem;
+
+    transform: translateY(-.5rem);
+    z-index: 9;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm .contenedor-boton {
+    width: auto;
+    overflow: visible;
+    margin-top: 3rem;
+}
+
+/* ---------------
+Soluciones
+--------------- */
+
+.seccionInfo {
+    background-color: var(--morado-claro-op);
+    margin-top: 0;
+    padding: var(--spaceSection);
+}
+
+.seccionInfo .contenedorInfo{
+    width: 90vw;
+}
+
+.seccionInfo .contenedorInfo .titulo{
+    margin: 3rem auto;
+}
+
+.seccionInfo .contenedorInfo .titulo h2{
+    text-align: center;
+}
+
+.seccionInfo .contenedorInfo .tabla{
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.seccionInfo .contenedorInfo .tabla table{
+    width: 90vw;
+    margin: auto;
+    background-color: var(--blanco);
+    border-radius: .5rem;
+    border-spacing: 0;
+    /* border: solid var(--principal) .15rem; */
+}
+
+.seccionInfo .contenedorInfo .tabla table th{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--principal);
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: none;
+    text-transform: uppercase;
+    border-right: solid var(--principal) .1rem;
+}
+
+.seccionInfo .contenedorInfo .tabla table td{
+    padding: .5em 0;
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: none;
+    border-top: none;
+    border-right: solid var(--principal) .1rem;
+    border-top: solid var(--principal) .1rem;
+}
+
+.seccionInfo .contenedorInfo .tabla table th:last-child{
+    border-right: none;
+}
+
+.seccionInfo .contenedorInfo .tabla table td:last-child{
+    border-right: none;
+}
+
+.seccionInfo .contenedorInfo .tabla table .listadoResultados th{
+    border: none;
+    text-align: left;
+    padding: 1rem 3rem;
+}

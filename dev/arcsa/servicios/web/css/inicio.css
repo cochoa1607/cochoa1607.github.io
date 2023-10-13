@@ -23,7 +23,7 @@ BG 2
 
 .bg_02{
   height: 50rem;
-  transform: translateY(-49rem);
+  transform: translateY(-55rem);
   
   background-image: url(../img/inicio_fondo_02.png);
 }
@@ -308,6 +308,10 @@ Consulta
   padding: var(--spaceSection);
 }
 
+.seccionConsulta .contenedorConsulta{
+  width: 96%;
+}
+
 .seccionConsulta .contenedorConsulta h2{
   text-align: center;
   margin-bottom: 2rem;
@@ -315,12 +319,12 @@ Consulta
 
 .seccionConsulta .contenedorConsulta h3 {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm {
   width: 100%;
-  margin: 5rem auto 0 auto;
+  margin: 0 auto 0 auto;
   padding: 0;
 }
 
@@ -328,15 +332,28 @@ Consulta
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   border-radius: 1rem;
   padding: 2rem 0;
-  background-color: var(--blanco);
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .campos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #FFFFFF;
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm label {
-  width: 23%;
+  width: 24%;
+  min-width: 27rem;
   margin: .5rem 0;
   display: flex;
   align-items: flex-start;
@@ -370,6 +387,7 @@ Consulta
 .seccionConsulta .contenedorConsulta .contenedorForm .contenedor-boton {
   width: auto;
   overflow: visible;
+  margin-top: 3rem;
 }
 
 /* ---------------

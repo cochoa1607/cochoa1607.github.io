@@ -49,7 +49,7 @@
     <header class="headerInicio headerMenu">
         <nav class="containerMenu">
             <div class="cont-logo">
-                <a href="#" class="shadow">
+                <a href="./index.html" class="shadow">
                     <div class="logo"></div>
                 </a>
             </div>
@@ -155,25 +155,36 @@
             <div class="contenedorForm">
 
                 <form action="" autocomplete="on" target="none">
-                    
-                    <label for="razonSocial">
-                        <span>Razón social o nombre comercial:</span>
-                        <input type="text" placeholder="Sin denominaciones" required>
-                    </label>
 
-                    <label for="denominacion">
-                        <span>Denominación:</span>
-                        <input list="denominacion" placeholder="Elige una denominación..." required>
-                        <datalist id="denominacion">
-                            <option value="Op1"></option>
-                            <option value="Op2"></option>
-                        </datalist>
-                    </label>
+                    <div class="campos">
+                        <label for="razonSocial">
+                            <span>Razón social o nombre comercial:</span>
+                            <input type="text" placeholder="Sin denominaciones" required>
+                        </label>
 
-                    <label for="correo">
-                        <span>Correo Electrónico:</span>
-                        <input type="email" name="correo" id="correo" autocomplete="email" placeholder="ejemplo@correo.com" required>
-                    </label>
+                        <label for="denominacion">
+                            <span>Denominación:</span>
+                            <input list="denominacion" placeholder="Elige una denominación..." required>
+                            <datalist id="denominacion">
+                                <option value="Op1"></option>
+                                <option value="Op2"></option>
+                            </datalist>
+                        </label>
+
+                        <label for="correo">
+                            <span>Correo Electrónico:</span>
+                            <input type="email" name="correo" id="correo" autocomplete="email" placeholder="ejemplo@correo.com" required>
+                        </label>
+
+                        <label for="uso">
+                            <span>Tipo de Uso:</span>
+                            <input list="uso" placeholder="Elige un tipo de uso..." required>
+                            <datalist id="uso">
+                                <option value="Op1"></option>
+                                <option value="Op2"></option>
+                            </datalist>
+                        </label>
+                    </div>
 
                     <div class="contenedor-boton">
                         <div class="boton secondary">
