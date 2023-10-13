@@ -46,6 +46,51 @@
         </a>
     </div>
 
+    <div class="contenedorColapsable">
+        <div class="cajaContenido">
+            <form action="" autocomplete="on" target="none">
+
+                <label for="razonSocial">
+                    <span>Razón social:</span>
+                    <input type="text" placeholder="Sin denominaciones" required>
+                </label>
+
+                <label for="denominacion">
+                    <span>Denominación:</span>
+                    <input list="denominacion" placeholder="Elige una denominación..." required>
+                    <datalist id="denominacion">
+                        <option value="Op1"></option>
+                        <option value="Op2"></option>
+                    </datalist>
+                </label>
+
+                <label for="correo">
+                    <span>Correo Electrónico:</span>
+                    <input type="email" name="correo" id="correo" autocomplete="email" placeholder="ejemplo@correo.com" required>
+                </label>
+
+                <label for="uso">
+                    <span>Tipo de Uso:</span>
+                    <input list="uso" placeholder="Elige un tipo de uso..." required>
+                    <datalist id="uso">
+                        <option value="Op1"></option>
+                        <option value="Op2"></option>
+                    </datalist>
+                </label>
+
+                <div class="contenedor-boton">
+                    <div class="boton secondary">
+                        <a href="#">Consultar</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="cajaBoton">
+            <div class="desplegar"></div>
+        </div>
+    </div>
+
     <header class="header headerMenu">
         <nav class="containerMenu">
             <div class="cont-logo">
@@ -70,7 +115,7 @@
         </nav>
     </header>
 
-    <section class="seccionConsulta animUp" id="consulta">
+    <section class="seccionConsulta" id="consulta">
         <div class="contenedor contenedorConsulta">
 
             <h2 class="">Realiza una nueva consulta</h2>
@@ -288,6 +333,7 @@
     <script src="./js/scroll.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/menuTabMob.js"></script>
+    <script src="../js/consultaColapsable.js"></script>
 
 </body>
 </html>
