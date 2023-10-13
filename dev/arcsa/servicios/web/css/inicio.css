@@ -44,6 +44,10 @@ Header abajo
   box-shadow: var(--boxShadow);
 }
 
+.headerInicio.abajo ul {
+  overflow: hidden;
+}
+
 .headerInicio.abajo ul li a {
   color: var(--secundario-op-dos);
 }
@@ -95,6 +99,11 @@ Header Inicio
   font-size: 1.8rem;
   font-weight: 300;
   text-transform: uppercase;
+  overflow: hidden;
+}
+
+.headerInicio .containerMenu .cont-logo{
+  overflow: hidden;
 }
 
 .headerInicio .containerMenu .logo{
@@ -106,6 +115,7 @@ Header Inicio
   background-size: contain;
   background-repeat: no-repeat;
   transition: var(--transitions);
+  overflow: hidden;
 }
 
 .headerInicio .containerMenu .logo:hover{
@@ -115,6 +125,7 @@ Header Inicio
 .headerInicio .containerMenu ul {
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
 }
 
 .headerInicio .containerMenu ul li {

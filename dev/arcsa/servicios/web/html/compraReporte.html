@@ -127,8 +127,8 @@
                 <h2>Se encontraron las siguientes coincidencias</h2>
             </div>
 
-            <div class="tabla">
-                <table class="busqueda">
+            <div class="tabla busqueda">
+                <table>
                     <tr>
                         <th>Razón Social</th>
                         <th>Tipo de Sociedad</th>
@@ -143,19 +143,49 @@
                     </tr>
                 </table>
             </div>
+
+            <div class="resultadosHead">
+                <div class="cajas">
+                    <div class="caja active">
+                        <p>Empresas Deudoras</p>
+                        <span class="resultadosCantidad">1</span></div>
+                    <div class="caja">
+                        <p>Reportes de Crédito</p>
+                        <span class="resultadosCantidad">2</span>
+                    </div>
+                    <div class="caja">
+                        <p>Referencias Comerciales</p>
+                        <span class="resultadosCantidad">5</span>
+                    </div>
+                </div>
+            </div>
             
-            <div class="tabla">
-                <table class="resultados">
+            <div class="tabla resultados">
+                <table>
                     <tr>
-                        <th><p>Empresas Deudoras</p><span>1</span></th>
-                        <th><p>Reportes de Crédito</p><span>2</span></th>
-                        <th><p>Referencias Comerciales</p><span>5</span></th>
+                        <th class="snbr">Empresa</th>
+                        <th class="snbr"></th>
+                        <th></th>
+                        <th>RFC</th>
+                        <th>Adquirir</th>
                     </tr>
                     <tr class="listadoResultados">
-                        <th colspan="3">Resultado uno</th>
+                        <td colspan="3">Resultado uno</td>
+                        <td colspan="1">ODTG675490FGT</td>
+                        <td>
+                            <div class="boton cuarto">
+                                <a href="#">Comprar</a>
+                            </div>
+                        </td>
                     </tr>
                     <tr class="listadoResultados">
-                        <th colspan="3">Resultado dos</th>
+                        <td colspan="3">Resultado dos</td>
+                        <td colspan="1">ODTG675490FGT</td>
+                        <td>
+                            <div class="boton cuarto">
+                                <a href="#">Comprar</a>
+                            </div>
+                        </td>
                     </tr>
                 </table>
             </div>

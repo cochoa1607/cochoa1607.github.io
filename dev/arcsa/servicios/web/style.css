@@ -41,6 +41,7 @@ Colores
     --principal-op: #8280A5;
     --secundario-op: #4FAFBD;
     --secundario-op-dos: #DDEBED;
+    --secundario-op-tres: #DDEBED40;
     --terciario-op: #B6B9C7;
     --vinculo-op: #FFA64D;
 
@@ -171,6 +172,7 @@ Botones
     overflow: visible;
     box-shadow: var(--boxShadow);
     transition: var(--transitions);
+    overflow: visible;
 }
 
 .secondary {
@@ -209,6 +211,29 @@ Botones
 
 .terciary:hover {
     transform: scale(1.02);
+}
+
+.cuarto {
+    padding: .4rem 3rem;
+    width: fit-content;
+    margin: auto;
+    background-color: var(--vinculo);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.cuarto:hover {
+    transform: scale(1.03);
+}
+
+.cuarto a{
+    padding: 0;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.4rem;
 }
 
 .cta {
@@ -305,6 +330,10 @@ header{
     text-transform: uppercase;
 }
 
+.header .containerMenu .cont-logo{
+    overflow: hidden;
+}
+
 .header .containerMenu .logo{
     width: 13rem;
     height: 8rem;
@@ -320,35 +349,36 @@ header{
 }
 
 .header .containerMenu ul {
-display: flex;
-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
 }
 
 .header .containerMenu ul li {
-margin: 0 1rem;
-padding: 1rem;
-font-size: 1.4rem;
-list-style: none;
+    margin: 0 1rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    list-style: none;
 }
 
 .header .containerMenu a {
-color: var(--secundario-op-dos);
-text-decoration: none;
-font-weight: 500;
-transition: var(--transitions);
+    color: var(--secundario-op-dos);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transitions);
 }
 
 .header .containerMenu a:hover {
-color: var(--secundario-op);
+    color: var(--secundario-op);
 }
 
 .header .menuIcon {
-font-size: 2.8rem;
-color: var(--blanco);
+    font-size: 2.8rem;
+    color: var(--blanco);
 }
 
 .header .menuIcon:hover {
-font-size: 3rem;
+    font-size: 3rem;
 }
 
 header .arcsanet{
@@ -357,6 +387,7 @@ header .arcsanet{
     transition: var(--transitions);
     padding-left: 0 !important;
     padding-right: 0 !important;
+    overflow: visible;
 }
 
 header .arcsanet:hover{
