@@ -167,6 +167,11 @@ Agendar
     width: 50%;
 }
 
+.seccionAgendar .agendar .cajas .texto{
+    overflow: hidden;
+}
+
+
 .seccionAgendar .agendar .cajas .caja h3{
     margin: 2rem 0;
 }

@@ -177,6 +177,7 @@ Banner
   display: flex;
   flex-direction: row;
   align-items: center;
+  min-width: 150rem ;
 }
 
 .seccionBanner .contenedorBanner .texto {

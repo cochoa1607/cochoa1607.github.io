@@ -453,8 +453,8 @@ Secciones
 
 .contenedor{
     width: 90%;
-    max-width: 150rem;
-    min-width: 110rem;
+    max-width: 120rem;
+    min-width: 90rem;
     margin: auto;
 /*     border: solid red 1px; */
 }
