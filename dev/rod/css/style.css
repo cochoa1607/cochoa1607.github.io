@@ -20,7 +20,22 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: var(--gris);
+    background-color: none;
+}
+
+.backgroundPage{
+    width: 100vw;
+    height: 100vh;
+    opacity: 7%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: -100000000000;
+}
+
+.backgroundPage .bgAll img{
+    width: 100%;
+    height: auto;
 }
 
 /* -------------------------
@@ -40,6 +55,9 @@ Colores
     
     --blanco: #FFFFFF;
     --gris: #FAFAFA;
+    --gris: #D9D9D921;
+    --gris: #D9D9D90D;
+    --grisFondo: #D9D9D921;
     --gris-op: #FAFAFA90;
     --grisDos: #EAEAEA;
     --grisMedio: #BDBDBD;
@@ -275,6 +293,15 @@ section{
     margin: 0 auto;
     padding: 10rem 0 4rem 0;
     max-width: 150rem;
+}
+
+.seccion-top{
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--grisFondo);
+    box-shadow: none;
 }
 
 /*Scroll -----------------------------------------------------------------------*/
@@ -1008,6 +1035,10 @@ Animaciones
 /* Mobile, Original (Tablet Vertical) y Tablet (Tablet Horizontal) */
 @media only screen and (min-width: 1px) and (max-width: 1024px) {
 
+    .seccion-top{
+        box-shadow: var(--sectionShadow);
+    }
+
     h2{
         font-size: 2.6rem;
         text-decoration: underline;
@@ -1285,30 +1316,34 @@ Mobile y Original (Tablet Vertical)
 
 /*  DesktopSM  */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    body{
+    /* body{
         border: solid red 2px;
+    } */
+
+    .seccion-top{
+        box-shadow: var(--sectionShadow);
     }
 
 }
 
 /*  Tablet (Tablet Horizontal) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    body{
+    /* body{
         border: solid green 2px;
-    }
+    } */
 }
 
 /*  Original (Tablet Vertical) */
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-    body{
+    /* body{
         border: solid blue 2px;
-    }
+    } */
 }
 
 
 /*  Mobile  */
 @media only screen and (min-width: 1px) and (max-width: 425px) {
-    body{
+    /* body{
         border: solid pink 2px;
-    }
+    } */
 }

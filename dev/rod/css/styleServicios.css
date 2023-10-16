@@ -9,10 +9,23 @@ Banner
     max-width: 150rem;
     min-height: 50rem;
     margin: auto;
+    background-color: var(--grisFondo);
 }
 
 .container-servicio{
     padding-top: 0;
+    background-color: none;
+}
+
+/* --------------------
+Fondos
+-------------------- */
+
+#gerencia,
+#revision,
+#analisis,
+#gestion{
+    background-color: var(--grisFondo);
 }
 
 /* --------------------
@@ -26,7 +39,7 @@ Resumen
     padding: 8rem 0;
     box-shadow: none;
     background-color: var(--primario);
-    box-shadow: var(--boxShadow);
+    /* box-shadow: var(--boxShadow); */
     transform: translate(0);
 }
 
@@ -82,7 +95,6 @@ Gerencia
     width: 94%;
     margin-top: 1rem;
     margin-left: 3%;
-    border: solid green 2px;
 }
 
 .container-servicio .gerencia .contenedor-texto .texto-collapsed{

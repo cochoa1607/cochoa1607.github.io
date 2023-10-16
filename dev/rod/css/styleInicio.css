@@ -25,6 +25,7 @@ Banner
 
 .cont-slider-head{
     overflow: visible;
+    background-color: var(--grisFondo);
 }
 
 .cont-slider-head .slideshow-container-head {
@@ -166,6 +167,7 @@ main{
     position: relative;
     z-index: 20;
     box-shadow: var(--sectionShadow);
+    background-color: var(--grisFondo);
 }
 
 main .container-servicios .servicios{
@@ -344,6 +346,7 @@ Experiencia
 
 .container-experiencia{
     width: 100vw;
+    background-color: #FFFFFF00;
     background-color: var(--blanco);
     position: relative;
     z-index: 18;
@@ -478,11 +481,12 @@ Nosotros
     background-color: none;
     position: relative;
     z-index: 16;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
     padding-top: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 0rem;
     box-shadow: none;
     overflow: visible;
+    background-color: var(--grisFondo);
 }
 
 .container-nosotros .nosotros{
@@ -623,9 +627,11 @@ Nosotros
 /*  DesktopSM  */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
     
+    /* 
     .cont-slider-head .slide-content .cont-imagen{
         border: solid red 2px;
     }
+     */
 
     .cont-slider-head .slide-content .cont-imagen .img-004{
         background-image: url(../img/tam_DesktopSM/inicio_header_004.png);
@@ -653,9 +659,11 @@ Nosotros
 
     /* Servicios */
 
+    /* 
     .servicios .slide-content .cont-imagen{
         border: solid red 2px;
     }
+    */
 
     .servicios .slide-content .cont-imagen .img-001{
         background-image: url(../img/tam_DesktopSM/servicios_gerencia.png);
@@ -930,9 +938,12 @@ Nosotros
     }
 
     /* Servicios */
+
+    /* 
     .servicios .slide-content .cont-imagen{
         border: solid green 2px;
     }
+    */
 
     .servicios .slide-content .cont-imagen .img-001{
         background-image: url(../img/tam_Original/servicios_gerencia.png);
@@ -1116,10 +1127,12 @@ Nosotros
 
 /*  Mobile  */
 @media only screen and (min-width: 1px) and (max-width: 425px) {
-
+    
+    /* 
     .cont-slider-head .slide-content .cont-imagen{
         border: solid pink 2px;
     }
+     */
     
     .cont-slider-head .slide-content .cont-imagen .img-004{
         background-image: url(../img/tam_Mobile/inicio_header_004.png);
@@ -1146,9 +1159,12 @@ Nosotros
     }
 
     /* Servicios */
+    
+    /* 
     .servicios .slide-content .cont-imagen{
         border: solid pink 2px;
     }
+    */
 
     .servicios .slide-content .cont-imagen .img-001{
         background-image: url(../img/tam_Mobile/servicios_gerencia.png);

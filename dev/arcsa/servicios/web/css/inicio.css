@@ -23,7 +23,7 @@ BG 2
 
 .bg_02{
   height: 50rem;
-  transform: translateY(-55rem);
+  transform: translateY(-50rem);
   
   background-image: url(../img/inicio_fondo_02.png);
 }
@@ -161,8 +161,8 @@ Banner
 
 .seccionBanner {
   width: 100vw;
-  height: 75vh;
-  min-height: 700px;
+  height: 60vh;
+  min-height: 720px;
   background: url(../img/inicio_fondo_01_3.png);
   background-position: center bottom;
   background-size: cover;
@@ -184,11 +184,27 @@ Banner
   width: 40vw;
   min-width: 450px;
   margin: 150px 0 0 10vw;
-  padding: 0 0 0 0;
+  padding: 0 4rem 0 0;
   overflow: visible;
   transition: var(--transitionsLarge);
 }
 
+.seccionBanner .contenedorBanner .imagen{
+  width: 50vw;
+  margin-right: 0;
+  margin: 150px 0 0;
+  padding: 2rem 0;
+  display: flex;
+  transition: var(--transitionsLarge);
+}
+
+.seccionBanner .contenedorBanner .imagen img{
+  width: 100%;
+  height: auto;
+  box-shadow: var(--boxShadow);
+  border-radius: 2rem 0 0 2rem;
+}
+/*
 .seccionBanner .contenedorBanner .vid{
   width: 50vw;
   margin-right: 0;
@@ -204,6 +220,7 @@ Banner
   box-shadow: var(--boxShadow);
   border-radius: 2rem 0 0 2rem;
 }
+*/
 
 .seccionBanner .contenedorBanner .texto  h1 {
   color: var(--secundario-op-dos);
@@ -316,7 +333,7 @@ Consulta
 
 .seccionConsulta {
   width: 100vw;
-  margin: 6rem auto 10rem auto;
+  margin: 15rem auto 3rem auto;
   padding: var(--spaceSection);
 }
 
