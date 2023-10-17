@@ -786,206 +786,34 @@ Header Secciones
     color: var(--blanco);
     text-align: right;
 }
-
-/* --------------------
-Footer
--------------------- */
-
-footer{
-    width: 100vw;
-    height: auto;
-    background-color: var(--gris-cuatro);
-    position: relative;
-    z-index: 99;
-}
-
-.contenedor-footer{
-    width: 98%;
-    margin: 10rem auto;
-    display: flex;
-}
-
-.contenedor-footer .logos{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.caja-footer{
-    width: 100%;
-    padding: 0 3rem;
-}
-
-.caja-footer img{
-    width: 100%;
-    max-width: 20rem;
-    margin: auto;
-}
-
-.caja-footer h6{
-    width: 100%;
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: var(--blanco);
-    text-align: left;
-    padding-bottom: 3rem;
-    text-transform: uppercase;
-}
-
-.caja-footer .subtitulo{
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: var(--blanco);
-    text-align: left;
-    margin-top: 2rem;
-}
-
-.caja-footer .newsletter{
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: var(--blanco);
-    text-align: left;
-    margin-top: 2rem;
-}
-
-.caja-footer .linea{
-    border-bottom: solid var(--blanco) .1rem;
-    margin-bottom: 4rem;
-}
-
-.caja-footer .lineaDos{
-    border-bottom: solid var(--blanco) .1rem;
-    margin-bottom: 4rem;
-    display: none;
-}
-
-.caja-footer ul{
-    margin-bottom: 3rem;
-}
-
-.caja-footer li{
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 2.2rem;
-}
-
-.caja-footer li i{
-    width: 10%;
-    display: flex;
-    align-items: center;
-    font-size: 1.6rem;
-    color: var(--cuarto);
-}
-
-.caja-footer a{
-    width: 90%;
-    font-size: 1.6rem;
-    font-weight: 200;
-    text-decoration: none;
-    color: var(--blanco);
-    transition: var(--transitions);
-    margin-left: .5rem;
-}
-
-.caja-footer a:hover{
-    transform: scale(1.02);
-    color: var(--quinto);
-}
-
-.caja-footer .form-ul{
-    width: 100%;
-    margin: 0;
-    padding: 1rem 0 0 0;
-}
-
-.caja-footer .form-ul li{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.caja-footer form{
-    display: flex;
-    width: 100%;
-    margin-bottom: 3rem;
-}
-
-.caja-footer form input{
-    width: 60%;
-    height: 4rem;
-    border-radius: .5rem 0 0 .5rem;
-    border: solid var(--segundo) .1rem;
-    padding: 0 0 0 1rem;
-}
-
-.caja-footer form .boton{
-    width: 40%;
-}
-
-.caja-footer form .boton .btn-news{
-    width: 100%;
-    background-color: var(--segundo);
-    border: solid var(--segundo) .2rem;
-    padding: .5rem 0;
-    border-radius: 0 .5rem .5rem 0;
-    color: var(--blanco);
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    transition: var(--transitions);
-    cursor: pointer;
-    margin:0;
-    box-shadow: var(--boxShadow);
-    white-space: nowrap;
-}
-
-.caja-footer form .boton .btn-news:hover{
-    border: solid var(--cuarto) .2rem;
-    font-weight: 500;
-    font-size: 1.42rem;
-
-}
-
-.caja-footer .foot-redes{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
-}
-
-.caja-footer .foot-redes li{
-    padding: 0 !important;
-    margin: 0;
-}
-
-.caja-footer .foot-redes a{
-    width: auto;
-}
-
-
-.caja-footer .foot-redes i{
-    width: auto;
-    margin: .5rem;
-    font-size: 2.4rem;
-    color: var(--blanco);
-    cursor: pointer;
-    transition: var(--transitions);
-}
-
-.caja-footer .foot-redes i:hover{
-    color: var(--quinto);
-    transform: scale(1.2);
-}
-
 /* --------------------
 Footer
 -------------------- */
 
 footer{
     background-color: var(--secundario);
-    height: 30rem;
-    margin-top: 0;
-    z-index: 10;
+    height: fit-content;
+    padding: 1rem 5rem;
+}
+
+footer .cajas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .cajas .logo{
+    background-image: url(../img/logoRod_completo_blanco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8rem;
+    height: 7rem;
+}
+
+footer .cajas .caja a{
+    text-decoration: none;
+    color: var(--blanco);
 }
 
 

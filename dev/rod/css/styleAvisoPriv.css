@@ -1,0 +1,43 @@
+/* --------------------
+Banner
+-------------------- */
+
+.container-avisoTop{
+    background-image: url(../img/tam_DesktopGD/servicios_header.png);
+    background-position: center bottom;
+    transform: translateY(0);
+    max-width: 150rem;
+    min-height: 50rem;
+    margin: auto;
+    background-color: var(--grisFondo);
+}
+
+.container-servicio{
+    padding-top: 0;
+    background-color: none;
+}
+
+/* --------------------
+Experiencia
+-------------------- */
+
+.container-aviso{
+    width: 100vw;
+    background-color: var(--blanco);
+    position: relative;
+    z-index: 18;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.container-aviso .aviso{
+    width: fit-content;
+    overflow: visible;
+    margin: auto;
+}
+
+.container-aviso .aviso h5{
+    max-width: 80ch;
+    text-transform: none;
+    margin-top: 4rem;
+}
