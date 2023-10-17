@@ -374,6 +374,7 @@ Experiencia
     width: 100%;
     transform: translateY(-10rem);
     overflow: visible;
+
 }
 
 .cont-slider-exp .slideshow-container-exp .slide-exp .slide-content{
@@ -397,15 +398,15 @@ Experiencia
     transition: var(--transitions);
     border-radius: .3rem;
     cursor: pointer;
-
+    
     /* border: solid peru 2px; */
 }
 
 .cont-slider-exp .slideshow-container-exp .controllers .next:hover,
 .cont-slider-exp .slideshow-container-exp .controllers .prev:hover{
-        color: var(--blanco);
-        background-color: var(--primario);
-    }
+    color: var(--blanco);
+    background-color: var(--primario);
+}
 
 
 .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
@@ -533,19 +534,13 @@ Nosotros
 }
 
 .nosotros .slideshow-container{
+    height: 60vh;
+    min-height: 45rem;
     position: relative;
     max-width: none;
     margin: 0 auto;
-    height: auto;
-    height: 60vh;
-    min-height: 45rem;
     overflow: hidden;
     overflow: visible;
-}
-
-.nosotros .slideshow-container{
-    height: 60vh;
-    min-height: 45rem;
 }
 
 .nosotros .slideNos{
@@ -803,7 +798,7 @@ Nosotros
     -------------------- */
 
     .container-experiencia{
-        background-color: var(--gris);
+        background-color: var(--blanco);
         box-shadow: none;
     }
     
@@ -972,6 +967,7 @@ Nosotros
     main{
         box-shadow: none;
         background-color: var(--gris);
+        padding: 0 0 5rem 0;
     }
 
     main .container-servicios .servicios .cont-texto{
@@ -1036,7 +1032,7 @@ Nosotros
     -------------------- */
 
     .container-experiencia{
-        background-color: var(--gris);
+        background-color: var(--blanco);
         box-shadow: none;
     }
     
@@ -1045,39 +1041,93 @@ Nosotros
     }
     
     .cont-slider-exp .slideshow-container-exp .controllers{
-        transform: translateY(-5rem);
-        position: absolute;
+        transform: none;
+        width: 80%;
+
+        margin: 1rem auto 0 auto;
+        position: relative;
     }
     
-    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
-        width: 30%;
-        height: fit-content;
-        margin-left: 5%;
-        transform: translateY(0rem);
-        position: absolute;
-    }
-    
-    /* --------------------
-    Nosotros
-    -------------------- */
-
-    .nosotros .contenedor-info{
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .nosotros .contenedor-info .imagen{
-        width: 100%;
-        height: 60vh;
-        min-height: none;
+    .cont-slider-exp{
         margin: 0;
         padding: 0;
         overflow: visible;
     }
     
+    .cont-slider-exp .slideshow-container-exp .slide-exp .slide-content{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        transform: none;
+        align-items: center;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo h4{
+        text-align: center;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo .boton{
+        margin: .5rem 0 0 0;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo .slidesLineas{
+        margin: 1rem 0 0 0;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen{
+        max-height: none;
+        overflow: hidden;
+        box-shadow: none;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen-01{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen-02{
+        display: none;
+    }
+
+    
+    /* --------------------
+    Nosotros
+    -------------------- */
+
+    .container-nosotros{
+        width: 100%;
+    }
+    
+    .nosotros .contenedor-info{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .nosotros .contenedor-info .imagen{
+        width: 100%;
+        height: 50vh;
+        min-height: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+    
     .nosotros .contenedor-info .texto{
-        width: 86%;
-        min-width: 80rem;
+        width: 80%;
+        min-width: none;
         margin: auto;
     }
     
@@ -1086,42 +1136,50 @@ Nosotros
         margin: auto;
     }
     
-    .nosotros .prev,
-    .nosotros .next {
-        cursor: pointer;
-        position: absolute;
-        top: 93%;
-        width: auto;
-        margin-top: -2.2rem;
-        padding: 1.6rem;
-        font-weight: bold;
-        font-size: 1.8rem;
-        transition: var(--transitions);
-        border-radius: .3rem;
-        color: var(--secundario);
-    }
-    
-    .nosotros .contenedor-info .texto .lineaDec{
-        width: 80%;
-        margin: auto;
-        margin-bottom: 1rem;
-        border-bottom: solid var(--primario) .2rem;
-    }
-    
-    .nosotros .slide-content{
-        width: 100%;
-        height: 30vh;
-    }
+    /*  */
 
     .nosotros .slideshow-container{
-        height: 30vh;
+        position: relative;
+        margin: 0 auto;
+        height: 10px;
+        max-width: none;
+        min-height: none;
+        overflow: hidden;
     }
     
     .nosotros .slideNos{
-        height: 30vh;
+        height: 10px;
+        min-height: none;
     }
     
-
+    .nosotros .slide-content{
+        margin: auto;
+        width: 100%;
+        height: 10px;
+        min-height: none;
+    }
+    
+    .nosotros .slide-content .imagen{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*  */
+    .nosotros .prev,
+    .nosotros .next {
+        position: relative;
+        
+        border: solid green 2px;
+        
+        
+        width: 100%;
+        height: 30px;
+        margin: 0 auto;
+        
+        padding: 1.6rem;
+        color: var(--secundario);
+    }
+    
 }
 
 
