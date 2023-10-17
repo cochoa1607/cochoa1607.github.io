@@ -595,7 +595,7 @@ Footer
 }
 
 /* ---------------
-Tablet(s) & Mobile
+Tablet Horizontal / Tablet Vertical / Mobile
 --------------- */
 @media only screen and (min-width: 1px) and (max-width: 1024px) {
     
@@ -706,6 +706,49 @@ Tablet(s) & Mobile
         transform: translateX(0);
     }
 
+    /* -------------
+    Textos
+    ------------- */
+
+    h1 {
+        font-size: 2.8rem;
+        color: var(--principal);
+        font-family: var(--font-principal);
+    }
+    
+    h2 {
+        font-size: 2.4rem;
+        color: var(--principal);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+        color: var(--negro);
+        font-weight: 400;
+    }
+    
+    h4 {
+        font-size: 1.8rem;
+        color: var(--principal);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    h5 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--secundario);
+    }
+    
+    p{
+        font-size: 1.4rem;
+        color: var(--negro);
+        max-width: 90ch;
+    }
+
 }
 
 /*  DesktopSM  */
@@ -713,7 +756,6 @@ Tablet(s) & Mobile
     body{
         border: solid red 2px;
     }
-
 
 }
 

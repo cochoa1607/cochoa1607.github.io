@@ -22,8 +22,8 @@ BG 2
 }
 
 .bg_02{
-  height: 50rem;
-  transform: translateY(-50rem);
+  height: 70rem;
+  transform: translateY(-63rem);
   
   background-image: url(../img/inicio_fondo_02.png);
 }
@@ -222,73 +222,6 @@ Banner
 }
 
 /* ---------------
-Soluciones
---------------- */
-
-.seccionSoluciones {
-  margin: 8rem 0;
-  background-color: var(--morado-claro-op);
-  padding: var(--spaceSection);
-  scroll-padding: 20rem;
-}
-
-.seccionSoluciones .contenedorSoluciones {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-
-}
-
-.seccionSoluciones .contenedorSoluciones .solucionesTitle{
-  margin-bottom: 5rem;
-  text-align: center;
-}
-
-.seccionSoluciones .contenedorSoluciones .solucionesTitle p{
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.seccionSoluciones .contenedorSoluciones .recuadro {
-  width: 30%;
-  margin: 2rem auto;
-  padding: 3rem 2rem;
-  background-color: var(--blanco);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  border-radius: 5px;
-}
-
-.seccionSoluciones .contenedorSoluciones .recuadro .recuadroInline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto 20px auto;
-}
-
-.seccionSoluciones .contenedorSoluciones .recuadro .recuadroInline h4 {
-  text-align: left;
-}
-
-.seccionSoluciones .contenedorSoluciones .recuadro p {
-  text-align: justify;
-  margin: 2rem 0;
-}
-
-.seccionSoluciones .contenedorSoluciones .recuadro span {
-  text-align: justify;
-  font-size: 1.2rem;
-}
-
-.seccionSoluciones .contenedorSoluciones .recuadro .recuadroInline span a{
-  color: var(--principal);
-  text-decoration: none;
-  font-style: italic;
-}
-
-/* ---------------
 Consulta
 --------------- */
 
@@ -325,35 +258,48 @@ Consulta
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm form {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  width: fit-content;
+  margin: 0 auto;
   border-radius: 1rem;
-  padding: 2rem 0;
+  padding: 1rem 5rem 2rem 5rem;
+  background-color: var(--blanco);
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
+  width: 100%;
+  margin: auto;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .campos-in p{
+  width: fit-content;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0;
+  text-align: center; 
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm form .campos{
-  width: 100%;
+  width: fit-content;
+  margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: 1rem;
-  padding: 1rem;
-  background-color: #FFFFFF;
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm label {
   width: 24%;
   min-width: 27rem;
-  margin: .5rem 0;
+  margin: 0;
+  margin-right: 3rem;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm label:last-child {
+  margin-right: 0;
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm span {
@@ -363,7 +309,7 @@ Consulta
   margin-left: 1rem;
   padding: 0 .5rem;
   background-color: var(--blanco);
-
+  
   transform: translateY(.5rem);
   z-index: 99;
 }
@@ -384,6 +330,77 @@ Consulta
   width: auto;
   overflow: visible;
   margin-top: 3rem;
+}
+
+/* ---------------
+Soluciones
+--------------- */
+
+.seccionSoluciones {
+  margin: 8rem 0;
+  background-color: var(--morado-claro-op);
+  padding: var(--spaceSection);
+  scroll-padding: 20rem;
+}
+
+.seccionSoluciones .contenedorSoluciones {
+  margin: 0 auto;
+}
+
+.seccionSoluciones .contenedorSolucionesDos {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.seccionSoluciones .contenedorSoluciones .solucionesTitle{
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.seccionSoluciones .contenedorSoluciones .solucionesTitle p{
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro {
+  width: 30%;
+  margin: 2rem auto;
+  padding: 3rem 2rem;
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro .recuadroInline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 20px auto;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro .recuadroInline h4 {
+  text-align: left;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro p {
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro span {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro .recuadroInline span a{
+  color: var(--principal);
+  text-decoration: none;
+  font-style: italic;
 }
 
 /* ---------------
@@ -585,6 +602,192 @@ Nuestro ADN
     margin: auto;
   }
 
+  /* ---------------
+  Consulta
+  --------------- */
+  .seccionConsulta {
+    margin: 8rem auto 3rem auto;
+    min-width: 10rem !important;
+  }
+  
+  .seccionConsulta .contenedorConsulta{
+    width: 96%;
+    min-width: 5rem !important;
+  }
+
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
+    width: 100%;
+    margin: auto;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in p{
+    width: 100%;
+    margin: 2rem auto 0 auto;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .seccionConsulta .contenedorConsulta .contenedorForm label {
+    margin-right: 0;
+  }
+
+  /* ---------------
+  Soluciones
+  --------------- */
+
+  .seccionSoluciones {
+    margin: 8rem 0;
+    background-color: var(--morado-claro-op);
+    padding: var(--spaceSection);
+    scroll-padding: 20rem;
+  }
+  
+  .seccionSoluciones .contenedorSoluciones {
+    flex-direction: column;
+    min-width: 1px;
+  }
+
+  .seccionSoluciones .contenedorSoluciones .solucionesTitle p{
+    margin-bottom: 0;
+  }
+  
+  .seccionSoluciones .contenedorSolucionesDos{
+    margin: 0;
+  }
+  
+  .seccionSoluciones .contenedorSolucionesDos .recuadro:first-child{
+    margin-top: 0;
+  }
+  
+  .seccionSoluciones .contenedorSolucionesDos .recuadro:last-child{
+    margin-bottom: 0;
+  }
+  
+  .seccionSoluciones .contenedorSolucionesDos .recuadro {
+    width: 90%;
+  }
+
+  .seccionSoluciones .contenedorSolucionesDos .recuadro .recuadroInline h4 {
+    text-align: left;
+  }
+
+  /* ---------------
+  Bullets
+  --------------- */
+
+  .seccionBullets {
+    margin: 0 auto;
+    padding: 0 0 3rem 0;
+  }
+
+  .seccionBullets .contenedorBullets{
+    margin: auto;
+    width: 100%;
+    min-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seccionBullets .contenedorBullets .bullet{
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
+  .seccionBullets .contenedorBullets .bullet:last-child{
+    margin-bottom: 0;
+  }
+
+  .seccionBullets .contenedorBullets .linea{
+    display: none;
+  }
+
+  /* ---------------
+  Nosotros
+  --------------- */
+
+  .seccionNosotros {
+    width: 100vw;
+    min-width: 1px;
+    margin: 2rem auto;
+    padding: var(--spaceSection);
+  }
+
+  .seccionNosotros .contenedorNosotros{
+    flex-direction: column-reverse;
+    width: 100% !important;
+    min-width: 1rem;
+    height: fit-content;
+  }
+  
+  .seccionNosotros .contenedorNosotros .imagenNosotros{
+    width: 100%;
+    height: 40vh;
+    border-radius: 0;
+    margin-top: 4rem;
+  }
+
+  .seccionNosotros .contenedorNosotros .texto{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-left: 0;
+  }
+
+  .seccionNosotros .contenedorNosotros .texto h2{
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  /* ---------------
+  Nuestro ADN
+  --------------- */
+
+  .seccionADN {
+    width: 100vw;
+    margin: 0 auto 5rem auto;
+    padding: 2rem 0;
+  }
+
+  .seccionADN .contenedorADN{
+    width: 100%;
+    min-width: 1px;
+    flex-direction: column;
+  }
+  
+  .seccionADN .contenedorADN .texto{
+    width: 80%;
+    margin-bottom: 1rem;
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .seccionADN .contenedorADN h2{
+    margin-bottom: 1rem;
+  }
+  
+  .seccionADN .contenedorADN .texto .tituloDos{
+    margin-top: 4rem;
+  }
+  
+  .seccionADN .contenedorADN .texto .boton{
+    margin: 5rem auto;
+  }
+
+  .seccionADN .contenedorADN .imagenADN{
+    width: 100%;
+    height: 40vh;
+    min-width: 1px;
+    border-radius: 0;
+  }
+
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -604,13 +807,6 @@ Nuestro ADN
 
 /*  Tablet (Tablet Horizontal) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  
-  .bg_02{
-    height: 55rem;
-    transform: translateY(-55rem);
-    
-    background-image: url(../img/inicio_fondo_02.png);
-  }
 
   /* ---------------
   Banner
@@ -629,7 +825,6 @@ Nuestro ADN
   .seccionBanner .contenedorBanner{
     min-width: 30rem;
   }
-  
   
   .seccionBanner .contenedorBanner .texto {
     width: 80%;
@@ -667,6 +862,36 @@ Nuestro ADN
     opacity: 0;
     transform: translateY(-200px);
   }
+
+  /* ---------------
+  Soluciones
+  --------------- */
+
+  .seccionSoluciones .contenedorSoluciones{
+    width: 96%;
+  }
+  
+  .seccionSoluciones .contenedorSoluciones .recuadro {
+    width: 32%;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+  }
+
+  /* ---------------
+  Bullets
+  --------------- */
+
+  .seccionBullets {
+    margin: 0 auto;
+    padding: 1rem 0 5rem 0;
+  }
+
+  .seccionBullets .contenedorBullets{
+    margin: 0 auto;
+    width: 80%;
+    min-width: 1px;
+  }
+
 }
 
 /*  Original (Tablet Vertical) */
