@@ -551,11 +551,6 @@ Footer
     font-size: 2.4rem;
 }
 
-/* 
-.footerRedes i:hover {
-    color: var(--vinculo-op);
-}
- */
 
 @keyframes move-vector {
     0% {
@@ -599,16 +594,15 @@ Footer
     }
 }
 
-/*Tablet & Mobile--------------------------------------------------------------*/
-@media only screen and (max-width: 1199px) {
-
-    :root{
-        --spaceSection: 50px 0;
-        --spaceDown: 0 0 40px 0;
-    }
-
-    /*Menu---------------------------------------------------------------------*/
-
+/* ---------------
+Tablet(s) & Mobile
+--------------- */
+@media only screen and (min-width: 1px) and (max-width: 1024px) {
+    
+    /* ---------------
+    Menu
+    --------------- */
+    
     .bars__menu {
         width: 34px;
         padding: 4px 7px;
@@ -621,22 +615,23 @@ Footer
         transform: translate(-50%, -50%);
         overflow: visible;
         z-index: 99999;
-        background-color: var(--blanco-op);
+        background-color: var(--secundario);
     }
-
+    
     .bars__menu span {
         display: block;
         width: 100%;
         height: 2px;
-        background-color: var(--morado);
         margin: 4px 0 0 0;
         border-radius: 1px;
         transform-origin: 0px 100%;
+        background-color: var(--principal);
         transition: var(--transitions);
+        border: solid var(--blanco) 1px;
     }
 
     .activeline1__bars-menu {
-        transform: rotate(47deg) translate(0px, -1px);
+        transform: rotate(47deg) translate(2px, -3px);
     }
 
     .activeline2__bars-menu {
@@ -645,16 +640,20 @@ Footer
     }
 
     .activeline3__bars-menu {
-        transform: rotate(-47deg) translate(0px, 2.5px);
+        transform: rotate(-47deg) translate(2px, 4.5px);
     }
 
-    /*Menu hide---------------------------------------------------------------*/
+    /* ---------------
+    Menu hide
+    --------------- */
 
-    .logoBloc {
-        display: none;
+    .header .containerMenu .logo{
+        background-image: url(./img/logoAS_Color.png);
     }
 
-    /*Header menu-------------------------------------------------------------*/
+    /* ---------------
+    Header Menu
+    --------------- */
 
     header {
         width: 60vw;
@@ -662,11 +661,11 @@ Footer
         right: 0;
         display: flex;
         flex-direction: column;
-        background-color: var(--blanco-menu);
-        transition: var(--transitionsLarge);
         transform: translateX(1100px);
         z-index: 9;
         position: fixed;
+        background-color: var(--terciario);
+        transition: var(--transitionsLarge);
     }
 
     .headerInicio {
@@ -674,10 +673,8 @@ Footer
     }
 
     .headerInicio .containerMenu ul li a{
-        color: var(--morado);
+        color: var(--blanco);
     }
-    
-    
     
     header #selected {
         text-decoration: underline;
@@ -709,11 +706,26 @@ Footer
         transform: translateX(0);
     }
 
-    .headerX .onlyMobile{
-        display: NONEflex;
+}
+
+/*  DesktopSM  */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body{
+        border: solid red 2px;
     }
 
-    /*Boton Up -----------------------------------------------------------------------*/
+
+}
+
+/*  Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+        border: solid green 2px;
+    }
+
+    /* ---------------
+    Boton Up
+    --------------- */
 
     .botonUp{
         left: calc(50vw - 18px);
@@ -732,336 +744,88 @@ Footer
         stroke-linecap: round;
         stroke-miterlimit: 10;
     }
-
-    /*Cuenta ----------------------------------------------------------------------*/
-
-    .cuentaCuadro {
-        width: 80%;
-        max-width: 700px;
-        background-color: var(--morado-claro-op);
-    }
-
-    .cuentaCuadro h5 {
-        color: var(--morado);
-    }
-
-    .cuentaDentro:hover {
-        transform: none;
-        cursor: auto;
-    }
-
-    .cuentaDentro{
-        display: none;
-    }
-    
-    .cuentaDentroDos{
-        display: flex;
-        margin: auto;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        margin: 20px auto;
-        cursor: default;
-    }
-
-    .cuentaDentroCollapse {
-        width: 90%;
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .cuentaDentroCollapse form{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .cuentaDentroCollapse label{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 8px 0;
-    }
-
-    .cuentaDentroCollapse span {
-        color: var(--negro);
-        font-size: 1.2rem;
-        padding: 0 0 2px 0;
-        text-align: left;
-    }
-    
-    .cuentaDentroCollapse input {
-        font-size: 1.2rem;
-        height: 30px;
-        border: solid var(--morado) 1px;
-        border-radius: 3px;
-        color: var(--gris-oscuro);
-        padding: 2px 5px;
-    }
-
-    .cuentaDentroCollapse .tycCuenta {
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        min-width: 350px;
-    }
-    
-    .cuentaDentroCollapse .tycCuenta input {
-        width: 14px;
-        cursor: pointer;
-    }
-    
-    .cuentaDentroCollapse .tycCuenta span {
-        padding: 0 5px;
-    }
-    
-    .cuentaDentroCollapse a {
-        font-size: 1.4rem;
-        color: var(--verde-link);
-    }
-    
-    .cuentaDentroCollapse button {
-        width: 94%;
-        margin: 10px 3%;
-        max-width: none;
-    }
-    
-
-    /*Footer-------------------------------------------------------------------*/
-
-    .containerFooter {
-        width: 100vw;
-        padding: 50px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: var(--gris-oscuro);
-    }
-
-    .footerCaja {
-        width: 80%;
-        max-width: 600px;
-        margin: 0 auto;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 0;
-    }
-    
-    .footerCaja h3 {
-        text-align: center;
-    }
-    
-    .footerCaja ul{
-        text-align: center;
-    }
-    
-    .footerCaja ul{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .footerCaja .footerRedes{
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .footerRedes i {
-        color: var(--blanco);
-        font-size: 3.4rem;
-    }
-
-    .footerLineaDos {
-        width: 80%;
-        margin: 20px 0;
-        border-radius: 2px;
-        border: solid var(--blanco) 1px;
-    }
-
-    /*Headers de pags-------------------------------------------------------------*/
-
-    .sectionHeaderPags {
-        width: 100vw;
-        height: 100vh;
-        padding: 100px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .sectionHeaderPags .text {
-        width: 80vw;
-        min-width: 400px;
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 40px 0;
-        border-radius: 5px;
-        background-color: var(--blanco-op);
-        text-align: center;
-    }
-
-    .sectionHeaderPags h2 {
-        color: var(--blanco);
-    }
-
-    .sectionHeaderPags p {
-        width: 80%;
-        min-width: 300px;
-        margin: 0 auto 20px auto;
-        text-align: justify;
-    }
 }
 
-/* Mobile--------------------------------------------------------------*/
-@media only screen and (max-width: 640px){
-
-    /*Textos --------------------*/
-
-    h1 {
-        font-size: 3.0rem;
+/*  Original (Tablet Vertical) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    body{
+        border: solid blue 2px;
     }
 
-    h2 {
-        font-size: 2.4rem;
-        color: var(--azul);
-        font-weight: 500;
-        text-transform: uppercase;
-    }
+    /* -------------
+    Footer
+    ------------- */
 
-    h3 {
-        font-size: 2rem;
-        color: var(--azul);
-        font-weight: 500;
-    }
-
-    h4 {
-        font-size: 3.8rem;
-        color: var(--blanco);
-        font-weight: 400;
-        font-family: var(--serif);
-    }
-
-    h5 {
-        font-size: 1.8rem;
-        color: var(--blanco);
-        font-weight: 500;
-    }
-
-    h6 {
-        font-size: 1.6rem;
-        color: var(--blanco);
-        font-weight: 300;
-        font-family: var(--serif);
-    }
-
-    p {
-        font-size: 1.6rem;
-    }
-
-    li {
-        font-size: 1.4rem;
-    }
-
-    /*Botones --------------------------------------------------------*/
-
-    .primary {
-        min-width: none;
-        max-width: none;
-        font-size: 1.4rem;
+    .containerFooter {
+        flex-direction: column;
     }
     
-    .secondary {
-        min-width: none;
-        max-width: none;
-        font-size: 1.4rem;
-    }
-    
-    .terciary {
-        min-width: none;
-        max-width: none;
-        font-size: 1.4rem;
-    }
-    
-    /* Header--------------------------------------------------------------*/
-    
-    .headerMenu {
-        width: 100vw;
-    }
-    
-    /* Cuenta--------------------------------------------------------------*/
-    
-    .cuentaCuadro {
+    .footerCaja {
         width: 90%;
-        padding: 0 3%;
-        max-width: 700px;
-        background-color: var(--morado-claro-op);
-    }
-
-    .cuentaTexto{
-        width: 76%;
-    }
-
-    /* Section Header Pags--------------------------------------------------------------*/
-    
-    .sectionHeaderPags {
-        width: 100vw;
-        height: 100vh;
-        min-height: 100px;
-        max-height: none;
-        padding: 0;
-        justify-content: center;
+        align-items: center;
+        border-bottom: solid var(--blanco) .1rem;
+        padding-bottom: 4rem;
+        margin-bottom: 4rem;
     }
     
-    .sectionHeaderPags .text {
-        width: 90vw;
-        min-width: 100px;
-        max-width: none;
-        margin: 20px auto;
-        padding: 20px;
+    .footerCaja:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     
-    .sectionHeaderPags h2 {
-        color: var(--blanco);
-        margin: 0 0 40px 0;
-    }
-    
-    .sectionHeaderPags p {
-        width: 90%;
-        min-width: 100px;
-        margin: 30px auto 30px auto;
+    .footerCaja ul {
         text-align: center;
     }
     
-    .sectionHeaderPags .boton {
-        width: 90%;
-        margin: 20px auto 30px auto;
+    .footerCaja li {
+        width: fit-content;
     }
 
-    /*Elemento "Verifica RUAL" en menú------------------------------------------------------------------*/
+    /* .footerCaja a {
+        color: var(--blanco);
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 1.4rem;
 
-    .headerInicio .containerMenu .menuMob li .onlyMobile{
         display: flex;
-        color: var(--blanco);
-        font-weight: 500;
-        padding: 5px 10px;
-        background-color: var(--azul);
-        border: solid var(--azul) 2px;
-        border-radius: 5px;
-        margin: 60px 0;
     }
-    
-    .headerX .containerMenu .menuMob li .onlyMobile{
+
+    .footerCaja a:hover {
+        color: var(--secundario-op-dos);
+        transform: scale(1.02);
+    }
+
+    .footerCaja i {
+        width: 4rem;
+        color: var(--secundario-op);
+    }
+
+    .footerMex {
+        text-align: left;
+    }
+
+    .footerLinea {
+        border-bottom: solid var(--blanco) 1px;
+        border-radius: 2px;
+        margin: 0 0 20px 0;
+    }
+
+    .footerRedes {
         display: flex;
-        color: var(--blanco);
-        font-weight: 500;
-        padding: 5px 10px;
-        background-color: var(--azul);
-        border: solid var(--azul) 2px;
-        border-radius: 5px;
-        margin: 60px 0;
+        justify-content: space-evenly;
     }
-    
+
+    .footerRedes i {
+        color: var(--secundario-op-dos);
+        font-size: 2.4rem;
+    } */
+}
+
+
+/*  Mobile  */
+@media only screen and (min-width: 1px) and (max-width: 425px) {
+    body{
+        border: solid pink 2px;
+    }
 }
