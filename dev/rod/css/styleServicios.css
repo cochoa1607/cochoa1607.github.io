@@ -340,59 +340,53 @@ Auditoria
 }
 
 .container-servicio .auditoria .contenedor-imagenes{
-    width: 100%;
+    width: 94%;
     margin: auto;
     margin-top: 0rem;
+    /*  */
     display: flex;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .auditoria .contenedor-texto-audit{
     width: 94%;
     margin-top: 1rem;
     margin-left: 3%;
-    /* border: solid blue 3px; */
 }
 
 .container-servicio .auditoria .contenedor-texto-audit .texto-collapsed{
     width: 60%;
     min-width: 60ch;
-    max-width: 90ch;
-    margin: 1rem auto;
+    max-width: 110ch;
+    margin: 0 auto;
     text-align: center;
-    /* border: solid red 3px; */
 }
 
 .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed{
     width: 100%;
-    /* border: solid purple 3px; */
 }
 
 .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .texto{
     text-align: center;
     width: 60%;
     min-width: 60ch;
-    max-width: 90ch;
-    margin: 1rem auto;
-    /* border: solid lightcoral 3px; */
+    max-width: 110ch;
+    margin: 0 auto .5rem auto;
 }
 
 .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .cajas{
     width: 100%;
-    margin: 0 auto 1rem 0;
-    /* border: solid orange 3px; */
+    margin: 0 auto;
+    padding: 0;
 }
 
 .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .cajas h4{
     margin-bottom: 1rem;
-    /* border: solid orangered 3px; */
 }
 
 .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .cajas .caja ul{
     list-style-position: inside;
     text-indent: -2rem;
     height: 100%;
-    /* border: solid greenyellow 3px; */
 }
 
 .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .cajas .caja ul li{
@@ -400,7 +394,6 @@ Auditoria
     text-indent: -2.1rem;
     padding: 1rem 3.2rem;
     font-weight: 300;
-    /* border: solid green 3px; */
 }
 
 .container-servicio .auditoria .contenedor-texto-audit .boton .boton-masInfo{
@@ -423,19 +416,16 @@ Auditoria
 .auditoria .contenedor-texto-audit .texto-noCollapsed{
     display: none;
     transition: var(--transitions);
-    /* border: solid goldenrod 30px; */
 }
 
 .auditoria .active-contenedor-texto-audit .texto-noCollapsed{
     display: flex;
     transition: var(--transitions);
     flex-direction: column;
-    /* border: solid goldenrod 30px; */
 }
 
 .auditoria .active-contenedor-texto-audit .texto-noCollapsed p{
-    margin-top: 1rem;
-    /* border: solid goldenrod 3px; */
+    margin-top: 0rem;
 }
 
 .auditoria .active-contenedor-texto-audit .texto-noCollapsed .caja_cajas{
@@ -474,6 +464,7 @@ Auditoria
 .container-servicio .auditoria .active-contenedor-texto-audit .contenedor-imagenes{
     width: 100%;
     height: 25rem;
+    /*  */
     display: flex;
     margin-bottom: 2rem;
 }
@@ -485,9 +476,9 @@ Auditoria
 
 .container-servicio .auditoria .contenedor-imagenes .cont-imagen-fija .imagen-fija{
     width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    height: 100%;
 }
 
 .container-servicio .auditoria .contenedor-imagenes .cont-imagen-fija{
@@ -504,7 +495,6 @@ Auditoria
     width: 100%;
     max-width: 52rem;
     min-width: 42rem;
-    /* border: solid purple 6px; */
 }
 
 /* -- Slider -- */
@@ -1870,6 +1860,873 @@ Gestion
     animation: fade 6s linear infinite;
 }
 
+/*  Mobile y Tablet (Vertical) */
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+    /* --------------------
+    Banner
+    -------------------- */
+
+    .container-servicios{
+        width: 100vw;
+        height: 100vh;
+        min-height: 1px;
+        background-position: center;
+    }
+
+    .container-servicio{
+        padding-top: 0;
+        background-color: none;
+    }
+
+    /* --------------------
+    Secciones Servicios
+    -------------------- */
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        
+        margin: 0 1rem;
+        width: fit-content;
+        border-bottom: solid var(--primario) .2rem;
+        overflow: hidden;
+    }
+
+    .titulo h6{
+        padding-top: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .titulo .icono img{
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .titulo .icono{
+        width: 5rem;
+        height: 5rem;
+        overflow: hidden;
+    }
+
+    /* --------------------
+    Secciones Servicios
+    -------------------- */
+
+    .titulo{
+        margin: 0 auto;
+        align-items: center;
+        border-bottom: none;
+    }
+
+    .titulo .icono{
+        width: 7rem;
+        height: 7rem;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Gerencia */
+    
+    .container-servicio .gerencia .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .gerencia .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none;
+        min-width: 1px;
+    }
+    
+    .container-servicio .gerencia .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .gerencia .slide-content {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .container-servicio .gerencia .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-servicio .gerencia .contenedor-texto{
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .container-servicio .gerencia .contenedor-texto .texto-collapsed{
+        width: 90%;
+        min-width: 0;
+    }
+    
+    .container-servicio .gerencia .contenedor-texto .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .gerencia .contenedor-texto .texto-noCollapsed .texto{
+        width: 90%;
+        min-width: 0;
+    }
+    
+    .container-servicio .gerencia .contenedor-texto .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .gerencia .contenedor-texto .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .gerencia .contenedor-texto .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .gerencia .contenedor-texto .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .gerencia .contenedor-texto .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .gerencia .contenedor-texto .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .gerencia .contenedor-texto .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .gerencia .contenedor-texto .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .gerencia .contenedor-texto .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .gerencia .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_gerencia_F.png);
+    }
+    
+    .gerencia .prev,
+    .gerencia .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .gerencia .next {
+        right: 0;
+    }
+    
+    /* Auditoria */
+
+    .container-servicio .auditoria .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .auditoria .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .auditoria .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideAudit{
+        height: fit-content;
+    }
+    
+    .container-servicio .auditoria .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .auditoria .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .auditoria .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .auditoria .contenedor-texto-audit{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .auditoria .contenedor-texto-audit .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .auditoria .contenedor-texto-audit .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .auditoria .contenedor-texto-audit .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .auditoria .contenedor-texto-audit .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .auditoria .contenedor-texto-audit .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .auditoria .contenedor-texto-audit .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .auditoria .contenedor-texto-audit .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .auditoria .contenedor-texto-audit .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .auditoria .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .auditoria .prev,
+    .auditoria .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .auditoria .next {
+        right: 0;
+    }
+
+    /* Revision */
+
+    .container-servicio .revision .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .revision .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .revision .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideRev{
+        height: fit-content;
+    }
+    
+    .container-servicio .revision .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .revision .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .revision .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .revision .contenedor-texto-rev{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .revision .contenedor-texto-rev .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .revision .contenedor-texto-rev .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .revision .contenedor-texto-rev .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .revision .contenedor-texto-rev .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .revision .contenedor-texto-rev .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .revision .contenedor-texto-rev .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .revision .contenedor-texto-rev .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .revision .contenedor-texto-rev .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .revision .contenedor-texto-rev .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .revision .contenedor-texto-rev .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .revision .contenedor-texto-rev .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .revision .contenedor-texto-rev .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .revision .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .revision .prev,
+    .revision .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .revision .next {
+        right: 0;
+    }
+
+    /* Levantamiento */
+    .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/tam_Tablet/servicios_levantamiento_F.png);
+    }
+
+    .container-servicio .levantamiento .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .levantamiento .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .levantamiento .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideLevan{
+        height: fit-content;
+    }
+    
+    .container-servicio .levantamiento .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .levantamiento .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .levantamiento .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .levantamiento .contenedor-texto-levan{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .levantamiento .prev,
+    .levantamiento .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .levantamiento .next {
+        right: 0;
+    }
+
+    /* Análisis */
+
+    .container-servicio .analisis .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .analisis .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .analisis .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideAnalis{
+        height: fit-content;
+    }
+    
+    .container-servicio .analisis .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .analisis .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .analisis .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .analisis .contenedor-texto-analis{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .analisis .contenedor-texto-analis .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .analisis .contenedor-texto-analis .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .analisis .contenedor-texto-analis .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .analisis .contenedor-texto-analis .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .analisis .contenedor-texto-analis .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .analisis .contenedor-texto-analis .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .analisis .contenedor-texto-analis .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .analisis .contenedor-texto-analis .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .analisis .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .analisis .prev,
+    .analisis .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .analisis .next {
+        right: 0;
+    }
+    
+    /* Diligence */
+
+    .container-servicio .diligence .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .diligence .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .diligence .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideDilig{
+        height: fit-content;
+    }
+    
+    .container-servicio .diligence .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .diligence .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .diligence .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .diligence .contenedor-texto-dilig{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .diligence .contenedor-texto-dilig .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .diligence .contenedor-texto-dilig .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .diligence .contenedor-texto-dilig .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .diligence .contenedor-texto-dilig .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .diligence .contenedor-texto-dilig .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .diligence .contenedor-texto-dilig .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .diligence .contenedor-texto-dilig .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .diligence .contenedor-texto-dilig .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .diligence .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .diligence .prev,
+    .diligence .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .diligence .next {
+        right: 0;
+    }
+    
+    /* Gestion */
+
+    .container-servicio .gestion .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .gestion .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .gestion .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideGest{
+        height: fit-content;
+    }
+    
+    .container-servicio .gestion .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .gestion .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .gestion .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .gestion .contenedor-texto-gest{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .gestion .contenedor-texto-gest .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .gestion .contenedor-texto-gest .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .gestion .contenedor-texto-gest .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .gestion .contenedor-texto-gest .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .gestion .contenedor-texto-gest .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .gestion .contenedor-texto-gest .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .gestion .contenedor-texto-gest .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .gestion .contenedor-texto-gest .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .gestion .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .gestion .prev,
+    .gestion .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .gestion .next {
+        right: 0;
+    }
+
+}
+
 /*  DesktopSM  */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
     .container-servicios{
@@ -1893,44 +2750,827 @@ Gestion
         background-image: url(../img/tam_Tablet/servicios_header.png);
     }
 
+    /* --------------------
+    Banner
+    -------------------- */
+
+    .container-servicios{
+        width: 100vw;
+        height: 100vh;
+        min-height: 1px;
+        background-position: center;
+    }
+
+    .container-servicio{
+        padding-top: 0;
+        background-color: none;
+    }
+
+    /* --------------------
+    Secciones Servicios
+    -------------------- */
+
+    .titulo{
+        margin: 0 auto;
+        align-items: center;
+        border-bottom: none;
+    }
+
+    .titulo .icono{
+        width: 7rem;
+        height: 7rem;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+    }
+
     /* Gerencia */
-
-    .container-servicio .gerencia .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-        display: none;
-    }
-
-    .container-servicio .gerencia .contenedor-texto{
-        /* height: 15rem; */
-        border: solid red 2px;
-    }
-
+    
     .container-servicio .gerencia .contenedor-imagenes .cont-imagen-fija {
         display: none;
     }
-        
-    .container-servicio .gerencia .contenedor-imagenes .cont-imagen-slide{
-        width: 100%;
+    
+    .container-servicio .gerencia .contenedor-imagenes .cont-imagen-slide {
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+        max-width: none;
+        min-width: 1px;
+    }
+    
+    .container-servicio .gerencia .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
     }
     
     .gerencia .slide-content {
-        height: 100%;
-        height: 100%;
-        border: solid red 2px;
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .gerencia .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .gerencia .contenedor-texto{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .gerencia .contenedor-texto .texto-collapsed{
+        width: 70%;
     }
     
-    .container-servicio .gerencia .active-contenedor-texto .contenedor-imagenes{
-        /* height: 15rem; */
-        border: solid red 2px;
+    .container-servicio .gerencia .contenedor-texto .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .gerencia .contenedor-texto .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .gerencia .contenedor-texto .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .gerencia .contenedor-texto .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .gerencia .contenedor-texto .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .gerencia .contenedor-texto .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .gerencia .contenedor-texto .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .gerencia .contenedor-texto .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .gerencia .contenedor-texto .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .gerencia .contenedor-texto .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .gerencia .contenedor-texto .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .gerencia .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_gerencia_F.png);
+    }
+    
+    .gerencia .prev,
+    .gerencia .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .gerencia .next {
+        right: 0;
     }
     
     /* Auditoria */
-    .auditoria .slide-content .img-dos{
-        background-image: url(../img/tam_Tablet/servicios_auditoria_002.png);
+
+    .container-servicio .auditoria .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .auditoria .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .auditoria .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideAudit{
+        height: fit-content;
+    }
+    
+    .container-servicio .auditoria .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .auditoria .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .auditoria .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .auditoria .contenedor-texto-audit{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .auditoria .contenedor-texto-audit .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .auditoria .contenedor-texto-audit .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .auditoria .contenedor-texto-audit .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .auditoria .contenedor-texto-audit .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .auditoria .contenedor-texto-audit .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .auditoria .contenedor-texto-audit .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .auditoria .contenedor-texto-audit .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .auditoria .contenedor-texto-audit .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .auditoria .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .auditoria .prev,
+    .auditoria .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .auditoria .next {
+        right: 0;
+    }
+
+    /* Revision */
+
+    .container-servicio .revision .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .revision .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .revision .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideRev{
+        height: fit-content;
+    }
+    
+    .container-servicio .revision .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .revision .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .revision .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .revision .contenedor-texto-rev{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .revision .contenedor-texto-rev .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .revision .contenedor-texto-rev .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .revision .contenedor-texto-rev .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .revision .contenedor-texto-rev .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .revision .contenedor-texto-rev .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .revision .contenedor-texto-rev .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .revision .contenedor-texto-rev .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .revision .contenedor-texto-rev .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .revision .contenedor-texto-rev .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .revision .contenedor-texto-rev .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .revision .contenedor-texto-rev .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .revision .contenedor-texto-rev .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .revision .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .revision .prev,
+    .revision .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .revision .next {
+        right: 0;
     }
 
     /* Levantamiento */
     .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
         background-image: url(../img/tam_Tablet/servicios_levantamiento_F.png);
+    }
+
+    .container-servicio .levantamiento .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .levantamiento .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .levantamiento .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideLevan{
+        height: fit-content;
+    }
+    
+    .container-servicio .levantamiento .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .levantamiento .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .levantamiento .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .levantamiento .contenedor-texto-levan{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .levantamiento .contenedor-texto-levan .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .levantamiento .prev,
+    .levantamiento .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .levantamiento .next {
+        right: 0;
+    }
+
+    /* Análisis */
+
+    .container-servicio .analisis .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .analisis .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .analisis .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideAnalis{
+        height: fit-content;
+    }
+    
+    .container-servicio .analisis .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .analisis .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .analisis .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .analisis .contenedor-texto-analis{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .analisis .contenedor-texto-analis .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .analisis .contenedor-texto-analis .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .analisis .contenedor-texto-analis .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .analisis .contenedor-texto-analis .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .analisis .contenedor-texto-analis .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .analisis .contenedor-texto-analis .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .analisis .contenedor-texto-analis .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .analisis .contenedor-texto-analis .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .analisis .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .analisis .prev,
+    .analisis .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .analisis .next {
+        right: 0;
+    }
+    
+    /* Diligence */
+
+    .container-servicio .diligence .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .diligence .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .diligence .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideDilig{
+        height: fit-content;
+    }
+    
+    .container-servicio .diligence .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .diligence .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .diligence .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .diligence .contenedor-texto-dilig{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .diligence .contenedor-texto-dilig .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .diligence .contenedor-texto-dilig .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .diligence .contenedor-texto-dilig .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .diligence .contenedor-texto-dilig .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .diligence .contenedor-texto-dilig .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .diligence .contenedor-texto-dilig .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .diligence .contenedor-texto-dilig .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .diligence .contenedor-texto-dilig .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .diligence .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .diligence .prev,
+    .diligence .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .diligence .next {
+        right: 0;
+    }
+    
+    /* Gestion */
+
+    .container-servicio .gestion .contenedor-imagenes .cont-imagen-fija {
+        display: none;
+    }
+    
+    .container-servicio .gestion .contenedor-imagenes .cont-imagen-slide {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        max-width: none !important;
+        min-width: 1px;
+    }
+    
+    .container-servicio .gestion .contenedor-imagenes .cont-imagen-slide .slideshow-container .slideGest{
+        height: fit-content;
+    }
+    
+    .container-servicio .gestion .contenedor-imagenes .cont-imagen-slide .imagen{
+        height: 35rem;
+        background-position: center top;
+    }
+    
+    .gestion .slide-content {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .container-servicio .gestion .contenedor-imagenes{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .container-servicio .gestion .contenedor-texto-gest{
+        overflow: hidden;
+    }
+
+    
+    .container-servicio .gestion .contenedor-texto-gest .texto-collapsed{
+        width: 70%;
+    }
+    
+    .container-servicio .gestion .contenedor-texto-gest .texto-collapsed p{
+        text-align: center;
+    }
+
+    .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .texto{
+        width: 70%;
+    }
+    
+    .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .texto p{
+        text-align: center;
+    }
+
+    .gestion .contenedor-texto-gest .texto-noCollapsed{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .cajas .caja ul{
+        list-style-position: inside;
+        text-indent: -2rem;
+        height: 100%;
+    }
+    
+    .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .cajas .caja ul li{
+        font-size: 1.4rem;
+        color: var(--negro);
+        font-weight: 400;
+        list-style-position: inside;
+        text-indent: -2.1rem;
+        padding: 1rem 3.2rem;
+    }
+    
+    .gestion .contenedor-texto-gest .texto-noCollapsed p{
+        margin-top: 0rem;
+    }
+    
+    .gestion .contenedor-texto-gest .texto-noCollapsed .caja_cajas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .gestion .contenedor-texto-gest .texto-noCollapsed .caja_cajas .caja{
+        margin: .5rem;
+        width: 31%;
+        background-color: var(--grisDos);
+    }
+
+    .gestion .contenedor-texto-gest .texto-noCollapsed .caja_cajas .vacio{
+        background-color: var(--gris);
+    }
+    
+    .container-servicio .gestion .contenedor-texto-gest .boton .boton-masInfo{
+        display: none;
+    }
+    
+    .gestion .contenedor-imagenes .cont-imagen-fija .imagen-fija{
+        background-image: url(../img/servicios_auditoria_F.png);
+    }
+    
+    .gestion .prev,
+    .gestion .next {
+        top: 35%;
+        margin-top: 0;
+    }
+    
+    .gestion .next {
+        right: 0;
     }
 }
 
@@ -1951,12 +3591,15 @@ Gestion
     }
 }
 
-
-/*  Mobile  */
-@media only screen and (min-width: 1px) and (max-width: 425px) {
+/*  Fondo Header Vertical  */
+@media only screen and (min-width: 1px) and (max-width: 440px) {
     .container-servicios{
         background-image: url(../img/tam_Mobile/servicios_header.png);
     }
+}
+
+/*  Mobile  */
+@media only screen and (min-width: 1px) and (max-width: 425px) {
 
     /* Auditoria */
     .auditoria .slide-content .img-dos{

@@ -23,11 +23,6 @@ header{
 Banner
 -------------------- */
 
-.cont-slider-head{
-    overflow: visible;
-    background-color: var(--grisFondo);
-}
-
 .cont-slider-head .slideshow-container-head {
     width: 100%;
     height: 70vh;
@@ -161,13 +156,12 @@ Banner
 Main Servicios
 -------------------- */
 main{
-    width: 100%;
+    width: 100vw;
     z-index: 10;
-    background-color: none !important;
     position: relative;
     z-index: 20;
-    box-shadow: var(--sectionShadow);
     background-color: var(--grisFondo);
+    box-shadow: var(--sectionShadow);
 }
 
 main .container-servicios .servicios{
@@ -355,6 +349,11 @@ Experiencia
     box-shadow: var(--sectionShadow);
 }
 
+.container-experiencia .contenedor-seccion{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .container-experiencia .experiencia{
     overflow: visible;
 }
@@ -387,7 +386,7 @@ Experiencia
     margin-left: 30%;
     display: flex;
     justify-content: space-around;
-    transform: translateY(-10rem);
+    transform: translateY(-12rem);
 }
 
 .cont-slider-exp .slideshow-container-exp .controllers .next,
@@ -619,138 +618,12 @@ Nosotros
     margin: auto;
 }
 
-/*  DesktopSM  */
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    
-    /* 
-    .cont-slider-head .slide-content .cont-imagen{
-        border: solid red 2px;
-    }
-     */
+/*  Mobile, Tablet (Vertical) */
+@media only screen and (min-width: 1px) and (max-width: 1440px) {
 
-    .cont-slider-head .slide-content .cont-imagen .img-004{
-        background-image: url(../img/tam_DesktopSM/inicio_header_004.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-005{
-        background-image: url(../img/tam_DesktopSM/inicio_header_005.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-006{
-        background-image: url(../img/tam_DesktopSM/inicio_header_006.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-007{
-        background-image: url(../img/tam_DesktopSM/inicio_header_007.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-009{
-        background-image: url(../img/tam_DesktopSM/inicio_header_006.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-010{
-        background-image: url(../img/tam_DesktopSM/inicio_header_007.png);
-    }
-
-    /* Servicios */
-
-    /* 
-    .servicios .slide-content .cont-imagen{
-        border: solid red 2px;
-    }
-    */
-
-    .servicios .slide-content .cont-imagen .img-001{
-        background-image: url(../img/tam_DesktopSM/servicios_gerencia.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-002{
-        background-image: url(../img/tam_DesktopSM/servicios_modelado.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-003{
-        background-image: url(../img/tam_DesktopSM/servicios_revision.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-004{
-        background-image: url(../img/tam_DesktopSM/servicios_levantamiento.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-005{
-        background-image: url(../img/tam_DesktopSM/servicios_analisis.png);
-    }
-    
-}
-
-/*  Tablet (Tablet Horizontal) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    
-    /* --------------------
-    Titulos
-    -------------------- */
-    
-    .titulo{
-        margin: 0 auto;
-        padding: 1rem;
-        padding-top: 0;
-        z-index: 8000;
-        border-radius: 0 0 .5rem 0;
-    }
-
-    /* --------------------
-    Header
-    -------------------- */
-    
-    .cont-slider-head .slideshow-container-head {
-        height: 80vh;
-        margin-top: 0;
-        padding: 0;
-        margin-bottom: 5rem;
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-004{
-        background-image: url(../img/tam_Tablet/inicio_header_004.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-005{
-        background-image: url(../img/tam_Tablet/inicio_header_005.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-006{
-        background-image: url(../img/tam_Tablet/inicio_header_006.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-007{
-        background-image: url(../img/tam_Tablet/inicio_header_007.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-009{
-        background-image: url(../img/tam_Tablet/inicio_header_009.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-010{
-        background-image: url(../img/tam_Tablet/inicio_header_010.png);
-    }
-
-    /* Servicios */
-    .servicios .slide-content .cont-imagen .img-001{
-        background-image: url(../img/tam_Tablet/servicios_gerencia.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-002{
-        background-image: url(../img/tam_Tablet/servicios_modelado.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-003{
-        background-image: url(../img/tam_Tablet/servicios_revision.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-004{
-        background-image: url(../img/tam_Tablet/servicios_levantamiento.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-005{
-        background-image: url(../img/tam_Tablet/servicios_analisis.png);
+    .slideshow-container-head{
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     /* --------------------
@@ -760,214 +633,7 @@ Nosotros
     main{
         box-shadow: none;
         background-color: var(--gris);
-    }
-
-    main .container-servicios .servicios .cont-texto{
         padding: 0;
-        width: 100%;
-        overflow: visible;
-    }
-    
-    .servicios .slide-content .texto{
-        width: 86%;
-        height: fit-content;
-        margin: auto;
-    }
-    
-    main .container-servicios .servicios .cont-texto p {
-        margin: 0;
-        padding: .5rem 0;
-    }
-    
-    main .container-servicios .servicios .cont-texto .btn-secundario {
-        padding: 0;
-    }
-    
-    .servicios .slideshow-container .controllers{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-6rem);
-        position: absolute;
-        top: 85%;
-        
-    }
-    
-    /* --------------------
-    Experiencia
-    -------------------- */
-
-    .container-experiencia{
-        background-color: var(--blanco);
-        box-shadow: none;
-    }
-    
-    .cont-slider-exp .slideshow-container-exp .slide-exp{
-        transform: translateY(0rem);
-    }
-    
-    .cont-slider-exp .slideshow-container-exp .controllers{
-        transform: translateY(-5rem);
-        position: absolute;
-    }
-    
-    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
-        width: 30%;
-        height: fit-content;
-        margin-left: 5%;
-        transform: translateY(0rem);
-        position: absolute;
-    }
-    
-    /* --------------------
-    Nosotros
-    -------------------- */
-
-    .nosotros .contenedor-info{
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .nosotros .contenedor-info .imagen{
-        width: 100%;
-        height: 60vh;
-        min-height: none;
-        margin: 0;
-        padding: 0;
-        overflow: visible;
-    }
-    
-    .nosotros .contenedor-info .texto{
-        width: 86%;
-        min-width: 80rem;
-        margin: auto;
-    }
-    
-    .nosotros .contenedor-info .texto p{
-        text-align: center;
-        margin: auto;
-    }
-    
-    .nosotros .prev,
-    .nosotros .next {
-        cursor: pointer;
-        position: absolute;
-        top: 93%;
-        width: auto;
-        margin-top: -2.2rem;
-        padding: 1.6rem;
-        font-weight: bold;
-        font-size: 1.8rem;
-        transition: var(--transitions);
-        border-radius: .3rem;
-        color: var(--secundario);
-    }
-    
-    .nosotros .contenedor-info .texto .lineaDec{
-        width: 80%;
-        margin: auto;
-        margin-bottom: 1rem;
-        border-bottom: solid var(--primario) .2rem;
-    }
-    
-    .nosotros .slide-content{
-        width: 100%;
-        height: 30vh;
-    }
-
-    .nosotros .slideshow-container{
-        height: 30vh;
-    }
-    
-    .nosotros .slideNos{
-        height: 30vh;
-    }
-    
-
-}
-
-/*  Original (Tablet Vertical) */
-@media only screen and (min-width: 426px) and (max-width: 768px) {
-    
-    .titulo{
-        margin: 0 auto;
-        padding: 1rem;
-        padding-top: 0;
-        z-index: 8000;
-        border-radius: 0 0 .5rem 0;
-    }
-
-    /* --------------------
-    Header
-    -------------------- */
-    
-    .cont-slider-head .slideshow-container-head {
-        height: 100vh;
-        margin-top: 0;
-        padding: 0;
-        margin-bottom: 5rem;
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-004{
-        background-image: url(../img/tam_Original/inicio_header_004.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-005{
-        background-image: url(../img/tam_Original/inicio_header_005.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-006{
-        background-image: url(../img/tam_Original/inicio_header_006.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-007{
-        background-image: url(../img/tam_Original/inicio_header_007.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-009{
-        background-image: url(../img/tam_Original/inicio_header_009.png);
-    }
-    
-    .cont-slider-head .slide-content .cont-imagen .img-010{
-        background-image: url(../img/tam_Original/inicio_header_010.png);
-    }
-
-    /* Servicios */
-
-    /* 
-    .servicios .slide-content .cont-imagen{
-        border: solid green 2px;
-    }
-    */
-
-    .servicios .slide-content .cont-imagen .img-001{
-        background-image: url(../img/tam_Original/servicios_gerencia.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-002{
-        background-image: url(../img/tam_Original/servicios_modelado.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-003{
-        background-image: url(../img/tam_Original/servicios_revision.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-004{
-        background-image: url(../img/tam_Original/servicios_levantamiento.png);
-    }
-    
-    .servicios .slide-content .cont-imagen .img-005{
-        background-image: url(../img/tam_Original/servicios_analisis.png);
-    }
-
-    /* --------------------
-    Main Servicios
-    -------------------- */
-    
-    main{
-        box-shadow: none;
-        background-color: var(--gris);
-        padding: 0 0 5rem 0;
     }
 
     main .container-servicios .servicios .cont-texto{
@@ -1108,6 +774,8 @@ Nosotros
 
     .container-nosotros{
         width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     
     .nosotros .contenedor-info{
@@ -1179,6 +847,348 @@ Nosotros
         padding: 1.6rem;
         color: var(--secundario);
     }
+}
+
+/*  DesktopSM  */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    .cont-slider-head .slide-content .cont-imagen .img-004{
+        background-image: url(../img/tam_DesktopSM/inicio_header_004.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-005{
+        background-image: url(../img/tam_DesktopSM/inicio_header_005.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-006{
+        background-image: url(../img/tam_DesktopSM/inicio_header_006.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-007{
+        background-image: url(../img/tam_DesktopSM/inicio_header_007.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-009{
+        background-image: url(../img/tam_DesktopSM/inicio_header_006.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-010{
+        background-image: url(../img/tam_DesktopSM/inicio_header_007.png);
+    }
+
+    /* Servicios */
+
+    /* 
+    .servicios .slide-content .cont-imagen{
+        border: solid red 2px;
+    }
+    */
+
+    .servicios .slide-content .cont-imagen .img-001{
+        background-image: url(../img/tam_DesktopSM/servicios_gerencia.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-002{
+        background-image: url(../img/tam_DesktopSM/servicios_modelado.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-003{
+        background-image: url(../img/tam_DesktopSM/servicios_revision.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-004{
+        background-image: url(../img/tam_DesktopSM/servicios_levantamiento.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-005{
+        background-image: url(../img/tam_DesktopSM/servicios_analisis.png);
+    }
+    
+}
+
+/*  Tablet (Horizontal) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    /* --------------------
+    Titulos
+    -------------------- */
+    
+    .titulo{
+        margin: 0 auto;
+        padding: 1rem;
+        padding-top: 0;
+        z-index: 8000;
+        border-radius: 0 0 .5rem 0;
+    }
+
+    /* --------------------
+    Header
+    -------------------- */
+    
+    .cont-slider-head .slideshow-container-head {
+        height: 90vh;
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-004{
+        background-image: url(../img/tam_Tablet/inicio_header_004.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-005{
+        background-image: url(../img/tam_Tablet/inicio_header_005.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-006{
+        background-image: url(../img/tam_Tablet/inicio_header_006.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-007{
+        background-image: url(../img/tam_Tablet/inicio_header_007.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-009{
+        background-image: url(../img/tam_Tablet/inicio_header_009.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-010{
+        background-image: url(../img/tam_Tablet/inicio_header_010.png);
+    }
+
+    /* Servicios */
+    .servicios .slide-content .cont-imagen .img-001{
+        background-image: url(../img/tam_Tablet/servicios_gerencia.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-002{
+        background-image: url(../img/tam_Tablet/servicios_modelado.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-003{
+        background-image: url(../img/tam_Tablet/servicios_revision.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-004{
+        background-image: url(../img/tam_Tablet/servicios_levantamiento.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-005{
+        background-image: url(../img/tam_Tablet/servicios_analisis.png);
+    }
+
+    /* --------------------
+    Main Servicios
+    -------------------- */
+    
+    main{
+        box-shadow: none;
+        background-color: var(--gris);
+    }
+
+    main .container-servicios .servicios .cont-texto{
+        padding: 0;
+        width: 100%;
+        overflow: visible;
+    }
+    
+    .servicios .slide-content .texto{
+        width: 86%;
+        height: fit-content;
+        margin: auto;
+    }
+    
+    main .container-servicios .servicios .cont-texto p {
+        margin: 0;
+        padding: .5rem 0;
+    }
+    
+    main .container-servicios .servicios .cont-texto .btn-secundario {
+        padding: 0;
+    }
+    
+    .servicios .slideshow-container .controllers{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-6rem);
+        position: absolute;
+        top: 85%;
+        
+    }
+    
+    /* --------------------
+    Experiencia
+    -------------------- */
+
+    .container-experiencia{
+        background-color: var(--blanco);
+        box-shadow: none;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp{
+        transform: translateY(0rem);
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .controllers{
+        transform: translateY(-5rem);
+        position: absolute;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
+        width: 30%;
+        height: fit-content;
+        margin-left: 5%;
+        transform: translateY(0rem);
+        position: absolute;
+    }
+    
+    /* --------------------
+    Nosotros
+    -------------------- */
+
+    .container-nosotros{
+        padding-bottom: 0rem;
+    }
+
+    .nosotros .contenedor-info{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nosotros .contenedor-info .imagen{
+        width: 100%;
+        height: 60vh;
+        min-height: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+    
+    .nosotros .contenedor-info .texto{
+        width: 86%;
+        min-width: 80rem;
+        margin: auto;
+    }
+    
+    .nosotros .contenedor-info .texto p{
+        text-align: center;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    
+    .nosotros .prev,
+    .nosotros .next {
+        cursor: pointer;
+        position: absolute;
+        top: 93%;
+        width: auto;
+        margin-top: -2.2rem;
+        padding: 1.6rem;
+        font-weight: bold;
+        font-size: 1.8rem;
+        transition: var(--transitions);
+        border-radius: .3rem;
+        color: var(--secundario);
+    }
+    
+    .nosotros .contenedor-info .texto .lineaDec{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1rem;
+        border-bottom: solid var(--primario) .2rem;
+    }
+    
+    .nosotros .slide-content{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .nosotros .slideshow-container{
+        height: 30vh;
+    }
+    
+    .nosotros .slideNos{
+        height: 30vh;
+    }
+    
+
+}
+
+/*  Tablet (Vertical) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    
+    .titulo{
+        margin: 0 auto;
+        padding: 1rem;
+        padding-top: 0;
+        z-index: 8000;
+        border-radius: 0 0 .5rem 0;
+    }
+
+    /* --------------------
+    Header
+    -------------------- */
+    
+    .cont-slider-head .slideshow-container-head {
+        height: 100vh;
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 5rem;
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-004{
+        background-image: url(../img/tam_Original/inicio_header_004.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-005{
+        background-image: url(../img/tam_Original/inicio_header_005.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-006{
+        background-image: url(../img/tam_Original/inicio_header_006.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-007{
+        background-image: url(../img/tam_Original/inicio_header_007.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-009{
+        background-image: url(../img/tam_Original/inicio_header_009.png);
+    }
+    
+    .cont-slider-head .slide-content .cont-imagen .img-010{
+        background-image: url(../img/tam_Original/inicio_header_010.png);
+    }
+
+    /* Servicios */
+
+    /* 
+    .servicios .slide-content .cont-imagen{
+        border: solid green 2px;
+    }
+    */
+
+    .servicios .slide-content .cont-imagen .img-001{
+        background-image: url(../img/tam_Original/servicios_gerencia.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-002{
+        background-image: url(../img/tam_Original/servicios_modelado.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-003{
+        background-image: url(../img/tam_Original/servicios_revision.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-004{
+        background-image: url(../img/tam_Original/servicios_levantamiento.png);
+    }
+    
+    .servicios .slide-content .cont-imagen .img-005{
+        background-image: url(../img/tam_Original/servicios_analisis.png);
+    }
+
     
 }
 
