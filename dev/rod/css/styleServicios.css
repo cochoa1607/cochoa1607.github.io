@@ -1955,7 +1955,6 @@ Gestion
     .container-servicio .gerencia .contenedor-imagenes{
         width: 100%;
         overflow: hidden;
-        margin-bottom: 0;
         margin: 0;
         padding: 0;
     }
@@ -2018,8 +2017,18 @@ Gestion
     
     .gerencia .contenedor-texto .texto-noCollapsed .caja_cajas .caja{
         margin: .5rem;
-        width: 31%;
+        width: 100%;
+        padding: 0 5%;
+        margin: auto;
         background-color: var(--grisDos);
+    }
+    
+    .gerencia .contenedor-texto .texto-noCollapsed .cajas h4{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .gerencia .contenedor-texto .texto-noCollapsed .caja_cajas .vacio{
@@ -2036,8 +2045,13 @@ Gestion
     
     .gerencia .prev,
     .gerencia .next {
-        top: 35%;
+        top: 45%;
         margin-top: 0;
+
+        padding: 1rem;
+        margin: 1rem;
+        color: var(--blanco);
+        background-color: var(--primario);
     }
     
     .gerencia .next {
@@ -2068,23 +2082,28 @@ Gestion
     }
     
     .auditoria .slide-content {
-        width: 90%;
+        width: 100%;
         height: fit-content;
     }
 
     .container-servicio .auditoria .contenedor-imagenes{
         width: 100%;
         overflow: hidden;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .container-servicio .auditoria .contenedor-texto-audit{
+        width: 100%;
         overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     
     .container-servicio .auditoria .contenedor-texto-audit .texto-collapsed{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .auditoria .contenedor-texto-audit .texto-collapsed p{
@@ -2092,7 +2111,8 @@ Gestion
     }
 
     .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .texto{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .auditoria .contenedor-texto-audit .texto-noCollapsed .texto p{
@@ -2131,8 +2151,18 @@ Gestion
     
     .auditoria .contenedor-texto-audit .texto-noCollapsed .caja_cajas .caja{
         margin: .5rem;
-        width: 31%;
+        width: 100%;
+        padding: 0 5%;
+        margin: auto;
         background-color: var(--grisDos);
+    }
+
+    .auditoria .contenedor-texto-audit .texto-noCollapsed .cajas h4{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .auditoria .contenedor-texto-audit .texto-noCollapsed .caja_cajas .vacio{
@@ -2149,14 +2179,19 @@ Gestion
     
     .auditoria .prev,
     .auditoria .next {
-        top: 35%;
+        top: 45%;
         margin-top: 0;
+
+        padding: 1rem;
+        margin: 1rem;
+        color: var(--blanco);
+        background-color: var(--primario);
     }
     
     .auditoria .next {
         right: 0;
     }
-
+    
     /* Revision */
 
     .container-servicio .revision .contenedor-imagenes .cont-imagen-fija {
@@ -2181,23 +2216,28 @@ Gestion
     }
     
     .revision .slide-content {
-        width: 90%;
+        width: 100%;
         height: fit-content;
     }
 
     .container-servicio .revision .contenedor-imagenes{
         width: 100%;
         overflow: hidden;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .container-servicio .revision .contenedor-texto-rev{
+        width: 100%;
         overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     
     .container-servicio .revision .contenedor-texto-rev .texto-collapsed{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .revision .contenedor-texto-rev .texto-collapsed p{
@@ -2205,7 +2245,8 @@ Gestion
     }
 
     .container-servicio .revision .contenedor-texto-rev .texto-noCollapsed .texto{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .revision .contenedor-texto-rev .texto-noCollapsed .texto p{
@@ -2244,8 +2285,18 @@ Gestion
     
     .revision .contenedor-texto-rev .texto-noCollapsed .caja_cajas .caja{
         margin: .5rem;
-        width: 31%;
+        width: 100%;
+        padding: 0 5%;
+        margin: auto;
         background-color: var(--grisDos);
+    }
+
+    .revision .contenedor-texto-rev .texto-noCollapsed .cajas h4{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .revision .contenedor-texto-rev .texto-noCollapsed .caja_cajas .vacio{
@@ -2262,18 +2313,20 @@ Gestion
     
     .revision .prev,
     .revision .next {
-        top: 35%;
+        top: 45%;
         margin-top: 0;
+
+        padding: 1rem;
+        margin: 1rem;
+        color: var(--blanco);
+        background-color: var(--primario);
     }
     
     .revision .next {
         right: 0;
     }
-
+    
     /* Levantamiento */
-    .levantamiento .contenedor-imagenes .cont-imagen-fija .imagen-fija{
-        background-image: url(../img/tam_Tablet/servicios_levantamiento_F.png);
-    }
 
     .container-servicio .levantamiento .contenedor-imagenes .cont-imagen-fija {
         display: none;
@@ -2297,23 +2350,28 @@ Gestion
     }
     
     .levantamiento .slide-content {
-        width: 90%;
+        width: 100%;
         height: fit-content;
     }
 
     .container-servicio .levantamiento .contenedor-imagenes{
         width: 100%;
         overflow: hidden;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .container-servicio .levantamiento .contenedor-texto-levan{
+        width: 100%;
         overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     
     .container-servicio .levantamiento .contenedor-texto-levan .texto-collapsed{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .levantamiento .contenedor-texto-levan .texto-collapsed p{
@@ -2321,7 +2379,8 @@ Gestion
     }
 
     .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .texto{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .levantamiento .contenedor-texto-levan .texto-noCollapsed .texto p{
@@ -2360,8 +2419,18 @@ Gestion
     
     .levantamiento .contenedor-texto-levan .texto-noCollapsed .caja_cajas .caja{
         margin: .5rem;
-        width: 31%;
+        width: 100%;
+        padding: 0 5%;
+        margin: auto;
         background-color: var(--grisDos);
+    }
+
+    .levantamiento .contenedor-texto-levan .texto-noCollapsed .cajas h4{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .levantamiento .contenedor-texto-levan .texto-noCollapsed .caja_cajas .vacio{
@@ -2378,15 +2447,20 @@ Gestion
     
     .levantamiento .prev,
     .levantamiento .next {
-        top: 35%;
+        top: 45%;
         margin-top: 0;
+
+        padding: 1rem;
+        margin: 1rem;
+        color: var(--blanco);
+        background-color: var(--primario);
     }
     
     .levantamiento .next {
         right: 0;
     }
-
-    /* Análisis */
+    
+    /* Analisis */
 
     .container-servicio .analisis .contenedor-imagenes .cont-imagen-fija {
         display: none;
@@ -2410,23 +2484,28 @@ Gestion
     }
     
     .analisis .slide-content {
-        width: 90%;
+        width: 100%;
         height: fit-content;
     }
 
     .container-servicio .analisis .contenedor-imagenes{
         width: 100%;
         overflow: hidden;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .container-servicio .analisis .contenedor-texto-analis{
+        width: 100%;
         overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     
     .container-servicio .analisis .contenedor-texto-analis .texto-collapsed{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .analisis .contenedor-texto-analis .texto-collapsed p{
@@ -2434,7 +2513,8 @@ Gestion
     }
 
     .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .texto{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .analisis .contenedor-texto-analis .texto-noCollapsed .texto p{
@@ -2473,8 +2553,18 @@ Gestion
     
     .analisis .contenedor-texto-analis .texto-noCollapsed .caja_cajas .caja{
         margin: .5rem;
-        width: 31%;
+        width: 100%;
+        padding: 0 5%;
+        margin: auto;
         background-color: var(--grisDos);
+    }
+
+    .analisis .contenedor-texto-analis .texto-noCollapsed .cajas h4{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .analisis .contenedor-texto-analis .texto-noCollapsed .caja_cajas .vacio{
@@ -2491,8 +2581,13 @@ Gestion
     
     .analisis .prev,
     .analisis .next {
-        top: 35%;
+        top: 45%;
         margin-top: 0;
+
+        padding: 1rem;
+        margin: 1rem;
+        color: var(--blanco);
+        background-color: var(--primario);
     }
     
     .analisis .next {
@@ -2523,23 +2618,28 @@ Gestion
     }
     
     .diligence .slide-content {
-        width: 90%;
+        width: 100%;
         height: fit-content;
     }
 
     .container-servicio .diligence .contenedor-imagenes{
         width: 100%;
         overflow: hidden;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .container-servicio .diligence .contenedor-texto-dilig{
+        width: 100%;
         overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     
     .container-servicio .diligence .contenedor-texto-dilig .texto-collapsed{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .diligence .contenedor-texto-dilig .texto-collapsed p{
@@ -2547,7 +2647,8 @@ Gestion
     }
 
     .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .texto{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .diligence .contenedor-texto-dilig .texto-noCollapsed .texto p{
@@ -2586,8 +2687,18 @@ Gestion
     
     .diligence .contenedor-texto-dilig .texto-noCollapsed .caja_cajas .caja{
         margin: .5rem;
-        width: 31%;
+        width: 100%;
+        padding: 0 5%;
+        margin: auto;
         background-color: var(--grisDos);
+    }
+
+    .diligence .contenedor-texto-dilig .texto-noCollapsed .cajas h4{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .diligence .contenedor-texto-dilig .texto-noCollapsed .caja_cajas .vacio{
@@ -2604,8 +2715,13 @@ Gestion
     
     .diligence .prev,
     .diligence .next {
-        top: 35%;
+        top: 45%;
         margin-top: 0;
+
+        padding: 1rem;
+        margin: 1rem;
+        color: var(--blanco);
+        background-color: var(--primario);
     }
     
     .diligence .next {
@@ -2636,23 +2752,28 @@ Gestion
     }
     
     .gestion .slide-content {
-        width: 90%;
+        width: 100%;
         height: fit-content;
     }
 
     .container-servicio .gestion .contenedor-imagenes{
         width: 100%;
         overflow: hidden;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .container-servicio .gestion .contenedor-texto-gest{
+        width: 100%;
         overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     
     .container-servicio .gestion .contenedor-texto-gest .texto-collapsed{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .gestion .contenedor-texto-gest .texto-collapsed p{
@@ -2660,7 +2781,8 @@ Gestion
     }
 
     .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .texto{
-        width: 70%;
+        width: 90%;
+        min-width: 0;
     }
     
     .container-servicio .gestion .contenedor-texto-gest .texto-noCollapsed .texto p{
@@ -2699,8 +2821,18 @@ Gestion
     
     .gestion .contenedor-texto-gest .texto-noCollapsed .caja_cajas .caja{
         margin: .5rem;
-        width: 31%;
+        width: 100%;
+        padding: 0 5%;
+        margin: auto;
         background-color: var(--grisDos);
+    }
+
+    .gestion .contenedor-texto-gest .texto-noCollapsed .cajas h4{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .gestion .contenedor-texto-gest .texto-noCollapsed .caja_cajas .vacio{
@@ -2717,8 +2849,13 @@ Gestion
     
     .gestion .prev,
     .gestion .next {
-        top: 35%;
+        top: 45%;
         margin-top: 0;
+
+        padding: 1rem;
+        margin: 1rem;
+        color: var(--blanco);
+        background-color: var(--primario);
     }
     
     .gestion .next {
