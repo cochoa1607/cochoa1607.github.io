@@ -420,6 +420,7 @@ Experiencia
     align-items: flex-end;
 }
 
+
 .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo h4{
     text-align: right;
 }
@@ -619,7 +620,7 @@ Nosotros
 }
 
 /*  Mobile, Tablet (Vertical) */
-@media only screen and (min-width: 1px) and (max-width: 1440px) {
+@media only screen and (min-width: 1px) and (max-width: 768px) {
 
     .slideshow-container-head{
         padding: 0 !important;
@@ -700,38 +701,56 @@ Nosotros
     .container-experiencia{
         background-color: var(--blanco);
         box-shadow: none;
+        margin-bottom: 0;
+        transform: translate(0);
     }
     
-    .cont-slider-exp .slideshow-container-exp .slide-exp{
-        transform: translateY(0rem);
+    .container-experiencia .experiencia{
+        padding: 5rem 0 !important;
     }
     
-    .cont-slider-exp .slideshow-container-exp .controllers{
+    .container-experiencia .cont-slider-exp{
+        margin: 0;
+        padding: 0;
+    }
+    .container-experiencia .cont-slider-exp .slideshow-container-exp{
+        margin: 0;
+        padding: 0;
+    }
+    .container-experiencia .cont-slider-exp .slideshow-container-exp .slide-exp{
+        transform: translate(0);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container-experiencia .cont-slider-exp .slideshow-container-exp .slide-exp .slide-content .cont-titulo{
+        width: 90%;
+        height: fit-content;
         transform: none;
+        align-items: center;
+        position: relative;
+        margin: auto;
+    }
+    
+    .container-experiencia .cont-slider-exp .slideshow-container-exp .controllers{
         width: 80%;
-
-        margin: 1rem auto 0 auto;
+        transform: translate(0);
+        margin: 1rem auto;
         position: relative;
     }
     
-    .cont-slider-exp{
-        margin: 0;
-        padding: 0;
-        overflow: visible;
+    .container-experiencia .cont-slider-exp .slideshow-container-exp .controllers .prev,
+    .container-experiencia .cont-slider-exp .slideshow-container-exp .controllers .next{
+        color: var(--blanco);
+        background-color: var(--primario);
+        padding: 1rem;
     }
     
     .cont-slider-exp .slideshow-container-exp .slide-exp .slide-content{
         width: 100vw;
         display: flex;
         flex-direction: column;
-    }
-    
-    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
-        width: 90%;
-        height: auto;
-        margin: auto;
-        transform: none;
-        align-items: center;
+        transform: translate(0);
     }
     
     .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo h4{
@@ -747,11 +766,15 @@ Nosotros
     }
     
     .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img{
+        height: fit-content; 
+        width: 100%;
+        min-width: 30rem;
+        margin: auto;     
         overflow: hidden;
         display: flex;
         flex-direction: column;
     }
-
+    
     .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen{
         max-height: none;
         overflow: hidden;
@@ -766,12 +789,11 @@ Nosotros
     .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen-02{
         display: none;
     }
-
     
     /* --------------------
     Nosotros
     -------------------- */
-
+    
     .container-nosotros{
         width: 100%;
         margin-bottom: 0;
@@ -837,15 +859,13 @@ Nosotros
     .nosotros .next {
         position: relative;
         
-        border: solid green 2px;
-        
-        
         width: 100%;
-        height: 30px;
+        height: fit-content;
         margin: 0 auto;
         
         padding: 1.6rem;
         color: var(--secundario);
+        overflow: hidden;
     }
 }
 
@@ -878,11 +898,6 @@ Nosotros
 
     /* Servicios */
 
-    /* 
-    .servicios .slide-content .cont-imagen{
-        border: solid red 2px;
-    }
-    */
 
     .servicios .slide-content .cont-imagen .img-001{
         background-image: url(../img/tam_DesktopSM/servicios_gerencia.png);
@@ -1016,7 +1031,7 @@ Nosotros
         top: 85%;
         
     }
-    
+
     /* --------------------
     Experiencia
     -------------------- */
@@ -1024,15 +1039,43 @@ Nosotros
     .container-experiencia{
         background-color: var(--blanco);
         box-shadow: none;
+        margin-bottom: 0;
+        transform: translate(0);
     }
     
+    .container-experiencia .experiencia{
+        padding: 5rem 0 !important;
+    }
+    
+    .container-experiencia .cont-slider-exp .slideshow-container-exp .slide-exp .slide-content .cont-titulo{
+        width: 90%;
+        height: auto;
+        transform: none;
+        align-items: center;
+        position: relative;
+    }
+    
+    .container-experiencia .cont-slider-exp .slideshow-container-exp .controllers{
+        width: 80%;
+        transform: translate(0);
+        margin: 1rem auto;
+        position: relative;
+    }
+    
+    .container-experiencia .cont-slider-exp .slideshow-container-exp .controllers .prev,
+    .container-experiencia .cont-slider-exp .slideshow-container-exp .controllers .next{
+        color: var(--blanco);
+        background-color: var(--primario);
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .slide-content{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
     .cont-slider-exp .slideshow-container-exp .slide-exp{
         transform: translateY(0rem);
-    }
-    
-    .cont-slider-exp .slideshow-container-exp .controllers{
-        transform: translateY(-5rem);
-        position: absolute;
     }
     
     .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo{
@@ -1041,6 +1084,43 @@ Nosotros
         margin-left: 5%;
         transform: translateY(0rem);
         position: absolute;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo h4{
+        text-align: center;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo .boton{
+        margin: .5rem 0 0 0;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-titulo .slidesLineas{
+        margin: 1rem 0 0 0;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img{
+        height: fit-content;   
+        width: 60%;
+        min-width: 55rem;
+        margin: auto;     
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen{
+        max-height: none;
+        overflow: hidden;
+        box-shadow: none;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen-01{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cont-slider-exp .slideshow-container-exp .slide-exp .cont-img .imagen-02{
+        display: none;
     }
     
     /* --------------------
@@ -1195,12 +1275,6 @@ Nosotros
 
 /*  Mobile  */
 @media only screen and (min-width: 1px) and (max-width: 425px) {
-    
-    /* 
-    .cont-slider-head .slide-content .cont-imagen{
-        border: solid pink 2px;
-    }
-     */
     
     .cont-slider-head .slide-content .cont-imagen .img-004{
         background-image: url(../img/tam_Mobile/inicio_header_004.png);
