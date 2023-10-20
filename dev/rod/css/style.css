@@ -879,8 +879,6 @@ Animaciones
         text-align: center;
         padding: 1rem;
         text-indent: 0;
-
-        border-bottom: solid cyan 2px;
     }
 
     h2::before{
@@ -895,8 +893,6 @@ Animaciones
         text-align: center;
         max-width: none;
         text-transform: uppercase;
-
-        border-bottom: solid blue 2px;
     }
     
     h4{
@@ -905,19 +901,16 @@ Animaciones
     }
     
     h5{
+        font-size: 1.8rem;
         color: var(--secundario);
-        font-size: 2rem;
         font-weight: 600;
         text-transform: uppercase;
-        
-        border-bottom: solid green 2px;
     }
     
     h6{
         font-size: 2rem;
         padding: 1rem 1rem 0 1rem;
         text-indent: 0;
-        border-bottom: solid pink 2px;
     }
     
     h6::before{
@@ -933,8 +926,6 @@ Animaciones
         font-weight: 400;
         max-width: 100ch;
         text-align: justify;
-        
-        border-bottom: solid greenyellow 2px;
     }
 
     /* --------------------
@@ -1101,6 +1092,19 @@ Animaciones
     .seccion-top{
         height: 100vh;
     }
+
+    /* --------------------
+    Footer
+    -------------------- */
+
+    footer .cajas{
+        flex-direction: column-reverse;
+    }
+    
+    
+    footer .cajas .caja{
+        margin: 1.5rem 0;
+    }
 }
 
 /* Menu */
@@ -1113,9 +1117,9 @@ Animaciones
 
 /*  DesktopSM  */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    body{
+    /* body{
         border: solid red 2px;
-    }
+    } */
 
     .seccion-top{
         box-shadow: var(--sectionShadow);
@@ -1125,9 +1129,9 @@ Animaciones
 
 /*  Tablet (Tablet Horizontal) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    body{
+    /* body{
         border: solid green 2px;
-    }
+    } */
 
     /* --------------------
     Clases universales
@@ -1152,15 +1156,15 @@ Animaciones
 
 /*  Original (Tablet Vertical) */
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-    body{
+    /* body{
         border: solid blue 2px;
-    }
+    } */
 }
 
 
 /*  Mobile  */
 @media only screen and (min-width: 1px) and (max-width: 425px) {
-    body{
+    /* body{
         border: solid pink 2px;
-    }
+    } */
 }

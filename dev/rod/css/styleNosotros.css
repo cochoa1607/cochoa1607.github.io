@@ -376,37 +376,217 @@ Equipo
 }
 
 
+/*  Mobile y Tablet (Vertical) */
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+    
+    /* --------------------
+    Banner
+    -------------------- */
 
+    .container-nosotros{
+        width: 100vw;
+        height: 100vh;
+        min-height: 1px;
+        background-position: center;
+    }
 
+    /* --------------------
+    Secciones Titulos
+    -------------------- */
+    
+    .titulo-dos span{
+        font-size: 2rem;
+    }
+    
+    /* --------------------
+    Perfil de la empresa
+    -------------------- */
+    
+    .perfil .texto .caja-uno{
+        width: 100%;
+        padding: 0 5% 3rem 5%;
+        border-radius: 0;
+    }
 
+    
+    .perfil .texto .caja-uno p{
+        width: 100%;
+    }
+    
+    .perfil .texto .caja-dos{
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 6rem 5% 0 5%;
+        border-radius: 0;
+        background-color: none;
+    }
+    
+    
+    .perfil .texto .caja-dos p{
+        padding: 2rem 0;
+    }
+    
+    .perfil .texto .servicios{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5%;
+        border-radius: 0;
+    }
+    
+    .perfil .texto .servicios ul{
+        height: 100%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .perfil .texto .servicios ul li{
+        width: 100%;
+        margin: .5rem 0;
+        padding-bottom: .5rem;
+        margin-bottom: 2rem;
+        border-bottom: solid var(--primario) .2rem;
+    }
+    
+    .perfil .texto .servicios ul li:hover{
+        transform: scale(1);
+        border-bottom: solid var(--primario) .2rem;
+    }
+    
+    .perfil .texto .servicios ul li {
+        transform: scale(1);
+        border-bottom: solid var(--primario) .2rem;
+    }
 
-/* --------------------
-Tablet
--------------------- */
-@media only screen and (max-width: 1599px) and (min-width: 1000px) {
+    /* --------------------
+    Mision Vision Valores
+    -------------------- */
 
-    /* body{
-        border: solid red 3px;
-    } */
+    .container-miviva{
+        background-color: var(--blanco);
+        overflow: hidden;
+    }
+    
+    .miviva .caja-tres{
+        width: 100%;
+        margin: 1rem 0 0 0;
+        padding: 0 5% 1.5rem 5%;
+        border-radius: 0;
+    }
+    
+    .miviva .caja-tres .titulo-dos{
+        text-align: center;
+    }
+    
+    .miviva .caja-tres .titulo-dos span{
+        color: var(--primario);
+    }
+    
+    .miviva .caja-cuatro{
+        width: 100%;
+        margin: 5rem 0 0 0;
+        padding: 0 5% 1.5rem 5%;
+        border-radius: 0;
+    }
+    
+    .miviva .caja-cuatro .titulo-dos{
+        text-align: center;
+    }
 
-    .contenedor-seccion{
-        padding: 10rem 2rem 3rem 2rem !important;
+    .miviva .caja-cuatro ul li{
+        font-size: 1.4rem;
+        padding: .5rem 0;
+        font-weight: 400;
+        max-width: 100ch;
+        text-align: justify;
+    }
+    
+    .miviva .caja-cuatro .titulo-dos span{
+        color: var(--primario);
+    }
+    
+    .miviva .caja-cinco{
+        width: 100%;
+        margin: 5rem 0 0 0;
+        padding: 0 5% 1.5rem 5%;
+        border-radius: 0;
+        
+    }
+
+    .miviva .caja-cinco .titulo-dos{
+        text-align: center;
+    }
+
+    .miviva .caja-cinco h5{
+        color: var(--negro);
+    }
+
+    .miviva .caja-cinco .cajas{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .miviva .caja-cinco .caja{
+        width: 100%;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .miviva .caja-cinco .caja:last-child{
+        margin-bottom: 0;
+    }
+
+    /* --------------------
+    Equipo
+    -------------------- */
+
+    .container-equipo .cajas {
+        flex-direction: column;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-equipo .cajas .caja {
+        width: 90%;
+        margin: 1rem auto;
+        margin-bottom: 3rem !important;
+        border-radius: 0;
+        background-color: #ffffff00;
+        border: none;
+        border-bottom: solid var(--secundario) .2rem;
+        padding: 0 0 1rem 0;
+    }
+    
+    .container-equipo .cajas .caja:first-child {
+        margin-top: 0;
+    }
+    
+    .container-equipo .cajas .caja:last-child {
+        margin-bottom: 0 !important;
     }
 
 }
 
-
-/* --------------------
-Mobile
--------------------- */
-@media only screen and (max-width: 999px) and (min-width: 1px) {
-
-    /* body{
-        border: solid blue 3px;
-    } */
-
-    .contenedor-seccion{
-        padding: 5rem 0 !important;
-    }
+/*  DesktopSM  */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
 
 }
+
+/*  Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/*  Original (Tablet Vertical) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+}
+
+
+/*  Mobile  */
+@media only screen and (min-width: 1px) and (max-width: 425px) {
+
+}
+
