@@ -168,7 +168,7 @@ Banner
 .seccionBanner .contenedorBanner .texto {
   width: 60vw;
   min-width: 450px;
-  margin: 190px 5vw 0 10vw;
+  margin: 25rem 5vw 0 10vw;
   padding: 0 0 0 0;
   overflow: visible;
   transition: var(--transitionsLarge);
@@ -586,18 +586,11 @@ Mobile y Tablet (Vertical)
 
 /*  DesktopSM  */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-  body{
-      border: solid red 2px;
-  }
 
 }
 
 /*  Tablet (Tablet Horizontal) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  body{
-      border: solid green 2px;
-  }
-
   /* ---------------
   Banner
   --------------- */
