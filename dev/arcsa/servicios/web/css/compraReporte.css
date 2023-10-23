@@ -96,7 +96,7 @@ Contenedor Colapsable
 .contenedorColapsable .cajaContenido form .contenedor-boton {
     width: auto;
     overflow: visible;
-    margin: 0;
+    margin: .5rem 2rem 0 2rem;
 }
 
 /* ACTIVE */
@@ -122,6 +122,8 @@ Contenedor Colapsable
 Consulta
 --------------- */
 
+
+/* 
 #consulta{
     scroll-margin-block-start: 30rem;
     scroll-padding: 30rem;
@@ -215,6 +217,8 @@ Consulta
     overflow: visible;
     margin-top: 3rem;
 }
+ */
+
 
 /* ---------------
 Info
@@ -222,8 +226,7 @@ Info
 
 .seccionInfo {
     width: 90vw;
-    margin: 0 5vw;
-    margin: 0 auto 10rem auto;
+    margin: 10rem auto 10rem auto;
     padding: var(--spaceSection);
     background-color: var(--blanco);
     border-radius: .5rem;

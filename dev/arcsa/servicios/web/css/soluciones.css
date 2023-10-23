@@ -23,7 +23,9 @@ Soluciones
 
 .seccionSoluciones .soluciones h3{
     text-align: center;
+    margin: auto;
     margin-bottom: 10rem;
+    max-width: 90ch;
 }
 
 .seccionSoluciones .soluciones .caja_descubre h5{
