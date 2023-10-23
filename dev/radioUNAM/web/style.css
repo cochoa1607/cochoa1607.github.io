@@ -25,18 +25,16 @@ Colores
 
 :root {
     --principal: #2A4C81;
-    --secundario: red;
-    --terciario: green;
-    --vinculo: purple;
+    --secundario: #9D7721;
     --blanco: #FFFFFF;
-    --negro: #0A0A0A;
+    --negro: #202020;
     --gris: #707070;
+    --gris-op: #202020D5;
     --grisDos: #D0D0D0;
     --grisTres: #EEEEEE;
     
     --principal-op: #2A4C8160;
-    --secundario-op: greenyellow;
-    --vinculo-op: orange;
+    --secundario-op: #9D772170;
 
     --font-principal: 'Open Sans', sans-serif;
     --font-secundaria: 'Cormorant Garamond', serif;
@@ -224,7 +222,7 @@ Botones
 .cta {
     width: fit-content;
     margin: auto;
-    background-color: var(--vinculo);
+    background-color: var(--secundario);
     border-radius: 50rem;
     display: flex;
     justify-content: center;
@@ -289,13 +287,13 @@ header{
     position: fixed;
     z-index: 9999;
     transition: var(--transitionsLarge);
-    background-color: var(--terciario);
+    background-color: var(--secundario);
 }
 
 .header #selected {
     text-decoration: underline;
     font-weight: 700;
-    color: var(--secundario-op);
+    color: var(--secundario);
 }
 
 .header #selected:hover {
@@ -349,7 +347,7 @@ transition: var(--transitions);
 }
 
 .header .containerMenu a:hover {
-color: var(--secundario-op);
+color: var(--secundario);
 }
 
 .header .menuIcon {
@@ -426,7 +424,7 @@ Footer
 
 .footerCaja .titulo-caja {
     font-size: 2rem;
-    color: var(--secundario-op);
+    color: var(--secundario);
     font-weight: 600;
     text-transform: uppercase;
     text-align: left;
@@ -477,7 +475,7 @@ Footer
 
 .footerCaja i {
     width: 4rem;
-    color: var(--secundario-op);
+    color: var(--secundario);
 }
 
 .footerMex {
@@ -501,12 +499,6 @@ Footer
     color: var(--blanco);
     font-size: 2.4rem;
 }
-
-/* 
-.footerRedes i:hover {
-    color: var(--vinculo-op);
-}
- */
 
 @keyframes move-vector {
     0% {
