@@ -15,7 +15,7 @@ BG 2
   max-width: 172.5rem;
   position: absolute;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   overflow: visible;
   z-index: -1000;
@@ -24,14 +24,12 @@ BG 2
 .bg_02{
   height: 70rem;
   transform: translateY(-63rem);
-  
   background-image: url(../img/inicio_fondo_02.png);
 }
 
 .bg_03{
   height: 60rem;
   transform: translateY(-34rem);
-  
   background-image: url(../img/inicio_fondo_03.png);
 }
 
@@ -230,7 +228,6 @@ Consulta
   scroll-margin-block-start: 30rem;
   scroll-padding: 30rem;
 }
-
 
 .seccionConsulta {
   width: 100vw;

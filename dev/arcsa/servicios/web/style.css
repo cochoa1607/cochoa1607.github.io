@@ -36,7 +36,7 @@ Colores
     --negro: #0A0A0A;
     --gris: #707070;
     --grisDos: #D0D0D0;
-    --grisTres: #EEEEEE;
+    --grisTres: #EEEEEE80;
     
     --principal-op: #8280A5;
     --secundario-op: #4FAFBD;
@@ -549,6 +549,128 @@ Footer
 .footerRedes i {
     color: var(--secundario-op-dos);
     font-size: 2.4rem;
+}
+
+
+/* ---------------
+COMPRAR REPORTE / Contenedor Colapsable
+--------------- */
+
+.contenedorColapsable{
+    position: fixed;
+    top: 15rem;
+    z-index: 1000000;
+    border-radius: 0 1rem 1rem 0;
+    width: auto;
+    background-color: var(--principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contenedorColapsable .cajaBoton{
+    padding: 2rem 1rem;
+}
+
+.contenedorColapsable .cajaBoton .desplegar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorColapsable .cajaBoton .desplegar:after{
+    width: fit-content;
+    font-family: "Font Awesome 5 Free";
+    color: var(--blanco);
+    content: "\f105";
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.contenedorColapsable .cajaBoton .desplegar::before{
+    width: fit-content;
+    font-size: 1.6rem;
+    content: "Nueva Consulta";
+    padding: 0 1rem;
+    color: var(--blanco);
+}
+
+.contenedorColapsable .cajaContenido {
+    display: none;
+}
+
+.contenedorColapsable .cajaContenido form {
+    width: fit-content;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+}
+
+.contenedorColapsable .cajaContenido form label {
+    width: 20rem;
+    margin: .5rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contenedorColapsable .cajaContenido form span {
+    width: fit-content;
+    font-size: 1.3rem;
+    color: var(--azul);
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    background-color: var(--blanco);
+
+    transform: translateY(.5rem);
+    z-index: 99;
+}
+
+.contenedorColapsable .cajaContenido form input {
+    width: 100%;
+    height: 4rem;
+    border-radius: 3px;
+    padding: 0 1.5rem;
+    color: var(--negro);
+    border: solid var(--principal) .15rem;
+
+    transform: translateY(-.5rem);
+    z-index: 9;
+}
+
+.contenedorColapsable .cajaContenido form .contenedor-boton {
+    width: auto;
+    overflow: visible;
+    margin: .5rem 2rem 0 2rem;
+}
+
+/* ACTIVE */
+
+.activecontenedorColapsable .cajaBoton .desplegar:after{
+    font-family: "Font Awesome 5 Free";
+    color: var(--blanco);
+    content: "\f104";
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.activecontenedorColapsable .cajaBoton .desplegar::before{
+    content: "Ocultar";
+}
+
+.activecontenedorColapsable .cajaContenido {
+    display: flex;
+}
+
+.activecontenedorColapsable .cajaContenido form {
+    padding-left: 2rem;
 }
 
 

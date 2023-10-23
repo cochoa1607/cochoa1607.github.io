@@ -149,6 +149,21 @@ Reportes
     font-style: italic;
 }
 
+.seccionReportes .reportes .tarjeta .destacado{
+    font-size: 1.8rem;
+    color: var(--secundario);
+    font-weight: 900;
+    text-transform: uppercase;
+    max-width: 90ch;
+}
+
+.seccionReportes .reportes .tarjeta .doceMeses{
+    color: var(--principal);
+    font-weight: 700;
+    max-width: 90ch;
+}
+
+
 
 /* ---------------
 Comparativo
@@ -229,13 +244,6 @@ Comparativo
     background-size: contain;
     background-repeat: no-repeat;
 }
-/* 
-.seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .garantia{
-    width: 15rem;
-    position: absolute;
-    transform: translate(18rem, -26rem) rotate(8deg);
-}
-*/
 
 .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .garantia{
     width: 12rem;
