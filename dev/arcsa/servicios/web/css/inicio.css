@@ -15,15 +15,15 @@ BG 2
   max-width: 172.5rem;
   position: absolute;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow: visible;
   z-index: -1000;
 }
 
 .bg_02{
-  height: 90rem;
-  transform: translateY(-63rem);
+  height: 50rem;
+  transform: translateY(-48rem);
   background-image: url(../img/inicio_fondo_02.png);
 }
 
@@ -227,7 +227,7 @@ Banner
 .seccionBanner .contenedorBanner .texto h3 {
   color: var(--blanco);
   max-width: 70rem;
-  margin: 5rem 0 0 0;
+  margin: 5rem 0 2rem 0;
 }
 
 .seccionBanner .contenedorBanner .texto p {
@@ -271,7 +271,7 @@ Consulta
 
 .seccionConsulta {
   width: 100vw;
-  margin: 15rem auto 3rem auto;
+  margin: 8rem auto 5rem auto;
   padding: var(--spaceSection);
 }
 
@@ -373,7 +373,6 @@ Consulta
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm label {
@@ -645,18 +644,209 @@ Nuestro ADN
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+/*  Autoevaluacion 01/02 */
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+
+  #consulta{
+    scroll-margin-block-start: 0;
+    scroll-padding: -30rem;
+    max-width: none;
+  }
+  
+  .seccionConsulta {
+    max-width: none;
+  }
+  
+  
+  .seccionConsulta .contenedorConsulta{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm{
+    width: 100%;
+    padding: 2rem auto;
+    border-radius: 0;
+    background-color: var(--blanco);
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form{
+    width: fit-content;
+    padding: 2rem auto;
+    border-radius: 0;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .check{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .contenedor-campos{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: none;
+  }
+
+  .seccionConsulta .contenedorConsulta .contenedorForm label {
+    width: 20%;
+    min-width: 18rem;
+    margin: 0;
+    margin-right: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+/*  Autoevaluacion 02/02 */
+@media only screen and (min-width: 1px) and (max-width: 959px) {
+
+  #consulta{
+    scroll-margin-block-start: 0;
+    scroll-padding: -30rem;
+    max-width: none;
+  }
+  
+  .seccionConsulta {
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta{
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+    min-width: 200px !important;
+  }
+  
+  .seccionConsulta .contenedorConsulta h2,
+  .seccionConsulta .contenedorConsulta h3{
+    width: 90%;
+    margin: 1rem auto;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm{
+    width: 100%;
+    padding: 2rem auto;
+    border-radius: 0;
+    background-color: var(--blanco);
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form{
+    width: fit-content;
+    padding: 2rem auto;
+    border-radius: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .check{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .contenedor-campos{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .contenedor-campos .campos{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in p{
+    text-align: center;
+    margin: 1rem auto;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .linea{
+    width: 100%;
+    height: .2rem;
+    margin: 1rem 0;
+  }
+
+  .seccionConsulta .contenedorConsulta .contenedorForm label {
+    width: 90% !important;
+    min-width: 27rem !important;
+    margin: 0;
+    margin-right: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm .boton {
+    margin: 0 0 2rem 0;
+  }
+}
 
 /*  Tablet Vertical / Mobile  */
 @media only screen and (min-width: 1px) and (max-width: 768px) {
+
+  .bg_02{
+    height: 92rem;
+    transform: translateY(-95rem);
+    background-image: url(../img/inicio_fondo_02.png);
+  }
+
+  .bg_03{
+    height: 35rem;
+    transform: translateY(0rem);
+    background-image: url(../img/inicio_fondo_03.png);
+  }
+
   /* ---------------
   Banner
   --------------- */
 
-  #consulta{
-    scroll-margin-block-start: 20rem;
-    scroll-padding: 0rem;
-  }
-
+  
   .seccionBanner {
     height: 100vh;
     min-height: 60rem;
@@ -676,87 +866,35 @@ Nuestro ADN
   .seccionBanner .contenedorBanner .texto p{
     margin: 4rem 0 6rem 0;
   }
-
+  
   .seccionBanner .contenedorBanner .texto.abajo{
     opacity: 0;
     transform: translateY(-200px);
   }
-
+  
   .seccionBanner .contenedorBanner .texto .btnanim {
     margin: auto;
   }
-
+  
+  .seccionBanner .contenedorBanner .texto .cont-titulo{
+    height: 7rem;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+  }
+  
   /* ---------------
   Consulta
   --------------- */
+  #consulta{
+    scroll-margin-block-start: 20rem;
+    scroll-padding: 0rem;
+    max-width: none;
+  }
+  
   .seccionConsulta {
-    margin: 8rem auto 3rem auto;
-    min-width: 10rem !important;
-  }
-  
-  .seccionConsulta .contenedorConsulta{
-    width: 96%;
-    min-width: 5rem !important;
-  }
-
-  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
-    width: 100%;
-    margin: auto;
-  }
-  
-  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in p{
-    width: 100%;
-    margin: 2rem auto 0 auto;
-  }
-  
-  .seccionConsulta .contenedorConsulta .contenedorForm form .campos{
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  .seccionConsulta .contenedorConsulta .contenedorForm label {
-    margin-right: 0;
-  }
-
-  /* ---------------
-  Soluciones
-  --------------- */
-
-  .seccionSoluciones {
-    margin: 8rem 0;
-    background-color: var(--morado-claro-op);
-    padding: var(--spaceSection);
-    scroll-padding: 20rem;
-  }
-  
-  .seccionSoluciones .contenedorSoluciones {
-    flex-direction: column;
-    min-width: 1px;
-  }
-
-  .seccionSoluciones .contenedorSoluciones .solucionesTitle p{
-    margin-bottom: 0;
-  }
-  
-  .seccionSoluciones .contenedorSolucionesDos{
-    margin: 0;
-  }
-  
-  .seccionSoluciones .contenedorSolucionesDos .recuadro:first-child{
-    margin-top: 0;
-  }
-  
-  .seccionSoluciones .contenedorSolucionesDos .recuadro:last-child{
-    margin-bottom: 0;
-  }
-  
-  .seccionSoluciones .contenedorSolucionesDos .recuadro {
-    width: 90%;
-  }
-
-  .seccionSoluciones .contenedorSolucionesDos .recuadro .recuadroInline h4 {
-    text-align: left;
+    margin: 2rem auto 12rem auto;
+    max-width: none;
   }
 
   /* ---------------
@@ -892,14 +1030,15 @@ Nuestro ADN
 /*  Tablet (Tablet Horizontal) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
+  .bg_02{
+    height: 45rem;
+    transform: translateY(-50rem);
+    background-image: url(../img/inicio_fondo_02.png);
+  }
+
   /* ---------------
   Banner
   --------------- */
-
-  #consulta{
-    scroll-margin-block-start: 0;
-    scroll-padding: -30rem;
-  }
 
   .seccionBanner {
     height: 95vh;
@@ -947,6 +1086,88 @@ Nuestro ADN
     transform: translateY(-200px);
   }
 
+  .seccionBanner .contenedorBanner .texto .cont-titulo{
+    height: 7rem;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+  }
+
+  /* ---------------
+  Campos
+  --------------- */
+
+  #consulta{
+    scroll-margin-block-start: 0;
+    scroll-padding: -30rem;
+    max-width: none;
+  }
+  
+  .seccionConsulta {
+    margin: 7rem auto 10rem auto;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm{
+    width: 100%;
+    padding: 2rem auto;
+    border-radius: 0;
+    background-color: var(--blanco);
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form{
+    width: fit-content;
+    padding: 2rem auto;
+    border-radius: 0;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .check{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .contenedor-campos{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: none;
+  }
+
+  .seccionConsulta .contenedorConsulta .contenedorForm label {
+    width: 20%;
+    min-width: 18rem;
+    margin: 0;
+    margin-right: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
   /* ---------------
   Soluciones
   --------------- */
