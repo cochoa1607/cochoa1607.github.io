@@ -22,7 +22,7 @@ BG 2
 }
 
 .bg_02{
-  height: 70rem;
+  height: 90rem;
   transform: translateY(-63rem);
   background-image: url(../img/inicio_fondo_02.png);
 }
@@ -180,7 +180,7 @@ Banner
 }
 
 .seccionBanner .contenedorBanner .texto {
-  width: 50vw;
+  width: auto;
   height: 30%;
   padding: 0;
   margin-left: 5%;
@@ -188,42 +188,62 @@ Banner
   overflow: visible;
 }
 
-.seccionBanner .contenedorBanner .texto #texto-maquina {
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    border-right: .15em solid #000;
-    animation:
-        escribir 3s steps(40, end),
-        blink-caret .5s step-end infinite;
+.seccionBanner .contenedorBanner .texto .cont-titulo{
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow: visible;
+  position: relative;
+  justify-content: baseline;
+  align-items: baseline;
 }
 
-@keyframes escribir {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #000; }
-}
-
-.seccionBanner .contenedorBanner .texto  h1 {
+.seccionBanner .contenedorBanner .texto h1{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: visible;
   color: var(--secundario-op-dos);
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.seccionBanner .contenedorBanner .texto .changing-text {
+  border-right: 2px solid;
+  color: var(--secundario-op);
+  animation: blinking-cursor 1s infinite;
+}
+
+@keyframes blinking-cursor {
+  0%, 100% {
+      border-color: transparent;
+  }
+  50% {
+      border-color: var(--secundario-op);
+  }
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.seccionBanner .contenedorBanner .texto h3 {
+  color: var(--blanco);
+  max-width: 70rem;
+  margin: 5rem 0 0 0;
 }
 
 .seccionBanner .contenedorBanner .texto p {
   color: var(--blanco);
-  font-size: 2rem;
+  max-width: 70rem;
+  font-size: 1.8rem;
+  font-weight: 300;
   margin: 2rem 0 5rem 0;
 }
 
-.seccionBanner .contenedorBanner .texto span {
+/* .seccionBanner .contenedorBanner .texto span {
   color: var(--secundario-op);
   font-size: 2.6rem;
   font-weight: 500;
   text-transform: uppercase;
-}
+} */
 
 .seccionBanner .contenedorBanner .texto .btnanim {
   animation: move-vector 3s linear infinite;
@@ -279,19 +299,68 @@ Consulta
   width: fit-content;
   margin: 0 auto;
   border-radius: 1rem;
-  padding: 1rem 5rem 2rem 5rem;
+  padding: 2rem;
   background-color: var(--blanco);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
-  width: 100%;
+  display: flex;
+
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .contenedor-campos{
+  width: fit-content;
+
   margin: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .check{
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .check input{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 1rem;
+  margin-right: .5rem;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .check label{
+  width: fit-content;
+  font-size: 1.1rem;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .check p{
+  width: fit-content;
+  max-width: none;
+  font-size: 1.1rem;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .linea{
+  width: .15rem;
+  height: 8rem;
+  margin-right: 1rem;
+  background-color: var(--grisTres);
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in p{
   width: fit-content;
   margin: 0;
-  margin-top: 1rem;
+  margin-top: 0;
   padding: 0;
   text-align: center; 
 }
@@ -303,21 +372,18 @@ Consulta
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm label {
-  width: 24%;
-  min-width: 27rem;
+  width: 20%;
+  min-width: 20rem;
   margin: 0;
-  margin-right: 3rem;
+  margin-right: 1rem;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-}
-
-.seccionConsulta .contenedorConsulta .contenedorForm label:last-child {
-  margin-right: 0;
 }
 
 .seccionConsulta .contenedorConsulta .contenedorForm span {

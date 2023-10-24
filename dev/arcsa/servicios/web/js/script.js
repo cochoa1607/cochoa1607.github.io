@@ -1,41 +1,29 @@
-// JavaScript para controlar la escritura de texto cambiante
-const textos = [
-    "Texto 1 que parece estar siendo escrito por una máquina de escribir.",
-    "Texto 2 que también parece estar siendo escrito por una máquina de escribir.",
-    "Texto 3, otro ejemplo de escritura simulada por una máquina de escribir."
-];
+// app.js
+const changingText = document.querySelector('.changing-text');
 
-const contenedorTexto = document.getElementById("texto-maquina");
-let textoActualIndex = 0;
+const words = ['score crediticio comercial?', 'historial Legal?', 'reputación con tus proveedores?'];
+let wordIndex = 0;
+let letterIndex = 0;
 
-function escribirTexto(texto, index, callback) {
-    if (index < texto.length) {
-        contenedorTexto.textContent += texto.charAt(index);
-        setTimeout(() => {
-            escribirTexto(texto, index + 1, callback);
-        }, 50); // Velocidad de escritura en milisegundos
+function type() {
+    if (letterIndex < words[wordIndex].length) {
+        changingText.textContent += words[wordIndex][letterIndex];
+        letterIndex++;
+        setTimeout(type, 100);
     } else {
-        setTimeout(callback, 1000); // Espera 1 segundo antes de borrar el texto
+        setTimeout(erase, 1500);
     }
 }
 
-function borrarTexto(callback) {
-    const textoActual = textos[textoActualIndex];
-    if (contenedorTexto.textContent.length > 0) {
-        contenedorTexto.textContent = textoActual.substring(0, contenedorTexto.textContent.length - 1);
-        setTimeout(() => {
-            borrarTexto(callback);
-        }, 30); // Velocidad de borrado en milisegundos
+function erase() {
+    if (letterIndex > 0) {
+        changingText.textContent = words[wordIndex].substring(0, letterIndex - 1);
+        letterIndex--;
+        setTimeout(erase, 100);
     } else {
-        textoActualIndex = (textoActualIndex + 1) % textos.length;
-        setTimeout(callback, 500); // Espera 0.5 segundos antes de escribir el siguiente texto
+        wordIndex = wordIndex < words.length - 1 ? wordIndex + 1 : 0;
+        setTimeout(type, 100);
     }
 }
 
-function cicloTexto() {
-    escribirTexto(textos[textoActualIndex], 0, () => {
-        borrarTexto(cicloTexto);
-    });
-}
-
-cicloTexto(); // Iniciar la animación
+setTimeout(type, 500);

@@ -71,28 +71,21 @@
         </nav>
     </header>
 
+    
     <section class="seccionBanner">
         <div class="contenedor contenedorBanner">
             <div class="texto">
-                <h1>¿Ya conoces tu score
-                    <div id="texto-maquina">Texto uno</div>
-                </h1>
-                <p>Descubre tu capacidad crediticia comercial, como puedes fortalecerte para ser aspirante a crédito y agilizar los tiempos de respuesta, creando relaciones comerciales <span>confiables</span> y <span>duraderas.</span></p>
+                <div class="cont-titulo">
+                    <h1 class="fixed-text">¿Ya conoces tu&nbsp;</h1>
+                    <h1 class="changing-text"></h1>
+                </div>
+                <h3>Conoce tu capacidad crediticia y aplica con más proveedores a crédito</h3>
+                <p>Te ayudamos a conseguir más lineas de crédito comerciales en menor tiempo.  <span>confiables</span> y <span>duraderas.</span></p>
+                <!-- <p>Descubre tu capacidad crediticia comercial, como puedes fortalecerte para ser aspirante a crédito y agilizar los tiempos de respuesta, creando relaciones comerciales <span>confiables</span> y <span>duraderas.</span></p> -->
                 <div class="boton cta btnanim">
                     <a href="#consulta">Consultar</a>
                 </div>
             </div>
-            <!-- 
-            <div class="vid">
-                <div class="imagen">
-                    <img src="./img/inicio_header.png" alt="">
-                </div>
-                <video loop autoplay muted>
-                    <source src="./vid/AS 16 9 Estas son 3.mp4" title="3 formas más comunies de fraude crediticio" type="video/mp4" preload="auto">
-                    <p>Este es un video qué te informa sobre los 3</p>
-                </video>
-            </div>
-             -->
         </div>
     </section>
 
@@ -111,51 +104,68 @@
                 <form action="" autocomplete="on" target="none">
 
                     <div class="campos-in">
+
+                        <div class="contenedor-campos">
+                            <p>Datos para autoevaluación</p>
+                            <div class="campos">
+                                <label for="razonSocial">
+                                    <span>Nombre de empresa:</span>
+                                    <input type="text" placeholder="Sin denominaciones" required>
+                                </label>
+    
+                                <label for="denominacion">
+                                    <span>Tipo de sociedad:</span>
+                                    <input list="denominacion" placeholder="Elige una denominación..." required>
+                                    <datalist id="denominacion">
+                                        <option value="Op1"></option>
+                                    </datalist>
+                                </label>
+                                
+                                <label for="uso">
+                                    <span>Tipo de Uso:</span>
+                                    <input list="uso" placeholder="Elige un tipo de uso..." required>
+                                    <datalist id="uso">
+                                        <option value="Revisar áreas de oportunidad"></option>
+                                        <option value="Aplicación de crédito con proveedor"></option>
+                                        <option value="Conocer opinión de mis proveedores"></option>
+                                        <option value="Conocer opinión de mis clientes"></option>
+                                        <option value="Proceso de Licitación"></option>
+                                    </datalist>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="linea"></div>
+                        <div class="contenedor-campos">
+                            <p>Quiero recibirlo en:</p>
+                            <div class="campos">
+                                <label for="correo">
+                                    <span>Correo Electrónico:</span>
+                                    <input type="email" name="correo" id="correo" autocomplete="email" placeholder="ejemplo@correo.com" required>
+                                </label>
+                            </div>
+                        </div>
+                    
                         
-                        <p>Datos para autoevaluación</p>
-                        <div class="campos">
-                            <label for="razonSocial">
-                                <span>Razón social:</span>
-                                <input type="text" placeholder="Sin denominaciones" required>
-                            </label>
-
-                            <label for="denominacion">
-                                <span>Denominación:</span>
-                                <input list="denominacion" placeholder="Elige una denominación..." required>
-                                <datalist id="denominacion">
-                                    <option value="Op1"></option>
-                                    <option value="Op2"></option>
-                                </datalist>
-                            </label>
-                            
-                            <label for="uso">
-                                <span>Tipo de Uso:</span>
-                                <input list="uso" placeholder="Elige un tipo de uso..." required>
-                                <datalist id="uso">
-                                    <option value="Op1"></option>
-                                    <option value="Op2"></option>
-                                </datalist>
-                            </label>
+                        <div class="contenedor-boton">
+                            <div class="boton secondary">
+                                <a href="./html/compraReporte.html">Consultar</a>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div class="campos-in">
-                        <p>Datos de contacto</p>
-                        <div class="campos">
-                            <label for="correo">
-                                <span>Correo Electrónico:</span>
-                                <input type="email" name="correo" id="correo" autocomplete="email" placeholder="ejemplo@correo.com" required>
-                            </label>
-                        </div>
+                    <div class="check">
+                        <input type="checkbox" id="cbox" value="subscribe" />
+                        <label for="cbox">Acepto recibir por email información de Arcsa Servicios</label>
+                    </div>
+                    
+                    <div class="check">
+                        <p>*Al hacer clic en el botón de búsqueda usted acepta los <a href="">Términos y condiciones</a> y el <a href="">Aviso de Privacidad</a> de Arcsa Servicios.</p>
                     </div>
 
-                    <div class="contenedor-boton">
-                        <div class="boton secondary">
-                            <a href="./html/compraReporte.html">Consultar</a>
-                        </div>
-                    </div>
 
                 </form>
+
             </div>
         </div>
     </section>
@@ -395,16 +405,11 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <script src="./js/inicioScroll.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/menuTabMob.js"></script>
-    <!-- 
-    <script src="./js/abrirCuenta.js"></script>
-    <script src="./js/verificaRual.js"></script>
-    <script src="./js/slider.js"></script>
-    -->
+    <script src="./js/script.js"></script>
 
 </body>
 </html>
