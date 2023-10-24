@@ -877,7 +877,7 @@ Nuestro ADN
   }
   
   .seccionBanner .contenedorBanner .texto .cont-titulo{
-    height: 7rem;
+    height: 8rem;
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
@@ -929,6 +929,11 @@ Nuestro ADN
 
   .seccionBullets .contenedorBullets .linea{
     display: none;
+  }
+
+  .seccionBullets .contenedorBullets .bullet .icono{
+    height: 7rem;
+    margin-top: 2rem;
   }
 
   /* ---------------
@@ -1167,20 +1172,6 @@ Nuestro ADN
     align-items: flex-start;
     flex-direction: column;
   }
-  
-  /* ---------------
-  Soluciones
-  --------------- */
-
-  .seccionSoluciones .contenedorSoluciones{
-    width: 96%;
-  }
-  
-  .seccionSoluciones .contenedorSoluciones .recuadro {
-    width: 32%;
-    margin: 2rem auto;
-    padding: 3rem 2rem;
-  }
 
   /* ---------------
   Bullets
@@ -1195,6 +1186,15 @@ Nuestro ADN
     margin: 0 auto;
     width: 80%;
     min-width: 1px;
+  }
+  
+  .seccionBullets .contenedorBullets .bullet .icono{
+    height: 7rem;
+    margin-top: 2rem;
+  }
+
+  .seccionBullets .contenedorBullets .linea{
+    width: .2rem;
   }
 
 }

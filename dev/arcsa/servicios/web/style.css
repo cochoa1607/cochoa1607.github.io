@@ -839,7 +839,7 @@ Tablet Horizontal / Tablet Vertical / Mobile
     }
     
     h2 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         color: var(--principal);
         font-weight: 600;
         text-transform: uppercase;
@@ -869,6 +869,47 @@ Tablet Horizontal / Tablet Vertical / Mobile
         font-size: 1.4rem;
         color: var(--negro);
         max-width: 90ch;
+    }
+
+    /* ---------------
+    COMPRAR REPORTE / Contenedor Colapsable
+    --------------- */
+
+    .contenedorColapsable{
+        top: 0rem;
+        z-index: 1000000;
+        border-radius: 0 0 1rem 0;
+        flex-direction: column;
+        box-shadow: var(--boxShadow);
+    }
+
+    .contenedorColapsable .cajaBoton{
+        padding: 1rem;
+    }
+
+    .contenedorColapsable .cajaBoton .desplegar:after{
+        content: "\f107";
+        font-size: 1.6rem;
+    }
+
+    .contenedorColapsable .cajaContenido form {
+        flex-direction: column;
+    }
+
+    .contenedorColapsable .cajaContenido form span {
+        margin: 0 1rem;
+    }
+
+    /* ACTIVE */
+
+    .activecontenedorColapsable .cajaBoton .desplegar:after{
+        content: "\f106";
+        font-size: 1.6rem;
+    }
+
+    .activecontenedorColapsable .cajaContenido form {
+        padding: 0 2rem;
+        padding-bottom: 1.5rem;
     }
 
 }
