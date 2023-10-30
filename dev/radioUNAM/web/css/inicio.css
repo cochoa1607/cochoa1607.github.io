@@ -163,6 +163,7 @@ Banner
 
 .seccionBanner .contenedorBanner{
   width: 100%;
+  overflow: visible;
 }
 
 .seccionBanner .contenedorBanner .texto {
