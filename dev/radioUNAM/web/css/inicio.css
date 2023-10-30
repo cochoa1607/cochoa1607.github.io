@@ -157,6 +157,7 @@ Banner
   background-size: cover;
   background-repeat: no-repeat;
   text-align: left;
+  overflow: hidden;
 
   transition: var(--transitionsXLarge);
 }
