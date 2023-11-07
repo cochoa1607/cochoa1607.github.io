@@ -36,7 +36,9 @@ class Mokepon {
 
 let hipodoge = new Mokepon('Hipodoge', '../img/hipodoge.png', 5)
 
-console.log(hipodoge)
+let capipepo = new Mokepon('Capipepo', '../img/capipepo.png', 5)
+
+let ratigueya = new Mokepon('Ratigueya', '../img/ratigueya.png', 5)
 
 function iniciarJuego() {
 
