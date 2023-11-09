@@ -26,6 +26,7 @@ let opcionDeMokepones
 let inputHipodoge
 let inputCapipepo
 let inputRatigueya
+let mascotaJugador
 let vidasJugador = 3
 let vidasEnemigo = 3
 
@@ -102,21 +103,33 @@ function iniciarJuego() {
 function seleccionarMascotaJugador() {
 
     sectionSeleccionarMascota.style.display = 'none'
-    sectionSeleccionarAtaque.style.display = 'block'
+    sectionSeleccionarAtaque.style.display = 'flex'
 
     if (inputHipodoge.checked) {
         spanMascotaJugador.innerHTML = inputHipodoge.id
+        mascotaJugador = inputHipodoge.id
     } else if (inputCapipepo.checked) {
         spanMascotaJugador.innerHTML = inputCapipepo.id
+        mascotaJugador = inputCapipepo.id
     } else if (inputRatigueya.checked) {
         spanMascotaJugador.innerHTML = inputRatigueya.id
+        mascotaJugador = inputRatigueya.id
     } else {
         alert("No has seleccionado a tu MASCOTA")
     }
 
+    extraerAtaques(mascotaJugador)
     seleccionarMascotaEnemigo()
 
 };
+
+function extraerAtaques(mascotaJugador) {
+    let ataques
+    for (let i = 0; i < mokepones.length; i++) {
+        const element = array[i];
+
+    }
+}
 
 function seleccionarMascotaEnemigo() {
 
