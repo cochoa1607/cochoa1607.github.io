@@ -1,0 +1,422 @@
+/* --------------------
+Header
+-------------------- */
+.contenedor-header{
+    background-image: url(../img/headerApp.png);
+    background-position: left center !important;
+    box-shadow: var(--boxShadow);
+}
+
+.contenedor-header h1{
+    margin-bottom: 1rem !important;
+}
+
+.contenedor-header .txt-dos{
+    margin-bottom: 5rem;
+}
+
+/* --------------------
+Descargar
+-------------------- */
+
+.container-descargar{
+    margin-top: 0rem;
+    margin-bottom: 10rem;
+}
+
+.descargar{
+    background-color: var(--blanco);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
+}
+
+.descargar .contenedor-cajas{
+    display: flex;
+    margin-top: 10rem;
+}
+
+.descargar .contenedor-cajas .caja-01,
+.descargar .contenedor-cajas .caja-02{
+    width: 50%;
+}
+
+.descargar .contenedor-cajas .caja-01{
+    min-width: 55rem;
+}
+
+.descargar .contenedor-cajas .caja-02{
+    background-image: url(../img/app.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-descargar .descargar .ul-blanco{
+    color: var(--blanco);
+    margin-bottom: 2rem;
+}
+
+.container-descargar .descargar ul li{
+    list-style-position: inside;
+    color: var(--segundo);
+    margin-bottom:.5rem;
+}
+
+.container-descargar .descargar ul li .bullet{
+    color: var(--segundo);
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.container-descargar .descargar ul li .descripcion{
+    color: var(--negro);
+    font-weight: 300;
+    white-space: nowrap;
+
+}
+
+.container-descargar .descargar ul .li-dos{
+    margin-left: 2rem;
+}
+
+.container-descargar .descargar ul .li-tres{
+    margin-left: 4rem;
+}
+
+.container-descargar .descargar ul .li-cuatro{
+    margin-left: 6rem;
+}
+
+.container-descargar .descargar ul .li-cinco{
+    margin-left: 8rem;
+}
+
+.container-descargar .descargar .botones{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.container-descargar .descargar .botones a{
+    width: 40%;
+}
+
+.container-descargar .descargar .botones .btn-1,
+.container-descargar .descargar .botones .btn-2{
+    width: 100%;
+    height: 4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container-descargar .descargar .botones .btn-1{
+    background-image: url(../img/AppStore.png);
+    background-position: center right;
+}
+
+.container-descargar .descargar .botones .btn-2{
+    background-image: url(../img/PlayStore.png);
+    background-position: center left;
+}
+
+.container-descargar .descargar .botones a{
+    margin: .5rem 1rem;
+    transition: var(--transitions);
+}
+
+.container-descargar .descargar .botones a:hover{
+    transform: scale(1.02);
+}
+
+/* --------------------
+Tablet
+-------------------- */
+@media only screen and (max-width: 1199px) and (min-width: 900px){
+
+    /* --------------------
+    Header
+    -------------------- */
+
+    .contenedor-header{
+        box-shadow: var(--boxShadowTab);
+        z-index: 12;
+    }
+
+    /* --------------------
+    Descargar
+    -------------------- */
+
+    .container-descargar{
+        margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 11;
+    }
+
+    .container-descargar .descargar{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .descargar .contenedor-cajas{
+        display: flex;
+        margin-top: 10rem;
+    }
+
+    .descargar .contenedor-cajas .caja-01,
+    .descargar .contenedor-cajas .caja-02{
+        width: 50%;
+    }
+
+    .descargar .contenedor-cajas .caja-01{
+        min-width: 55rem;
+    }
+
+    .descargar .contenedor-cajas .caja-02{
+        background-image: url(../img/app.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .container-descargar .descargar .ul-blanco{
+        color: var(--blanco);
+        margin-bottom: 2rem;
+    }
+
+    .container-descargar .descargar ul li{
+        list-style-position: inside;
+        color: var(--segundo);
+        margin-bottom:.5rem;
+    }
+
+    .container-descargar .descargar ul li .bullet{
+        color: var(--segundo);
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    .container-descargar .descargar ul li .descripcion{
+        color: var(--negro);
+        font-weight: 300;
+        white-space: nowrap;
+
+    }
+
+    .container-descargar .descargar ul .li-dos{
+        margin-left: 2rem;
+    }
+
+    .container-descargar .descargar ul .li-tres{
+        margin-left: 4rem;
+    }
+
+    .container-descargar .descargar ul .li-cuatro{
+        margin-left: 6rem;
+    }
+
+    .container-descargar .descargar ul .li-cinco{
+        margin-left: 8rem;
+    }
+
+    .container-descargar .descargar .botones{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .container-descargar .descargar .botones a{
+        width: 40%;
+    }
+
+    .container-descargar .descargar .botones .btn-1,
+    .container-descargar .descargar .botones .btn-2{
+        width: 100%;
+        height: 4rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .container-descargar .descargar .botones .btn-1{
+        background-image: url(../img/AppStore.png);
+        background-position: center right;
+    }
+
+    .container-descargar .descargar .botones .btn-2{
+        background-image: url(../img/PlayStore.png);
+        background-position: center left;
+    }
+
+}
+/* --------------------
+Tablet - Mobile
+-------------------- */
+@media only screen and (max-width: 899px) and (min-width: 641px){
+
+    /* --------------------
+    Buscamos
+    -------------------- */
+
+    .container-descargar{
+        margin-top: 0;
+    }
+
+    .container-descargar .descargar{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .descargar .contenedor-cajas{
+        display: flex;
+        flex-direction: column;
+        margin-top: 7rem;
+    }
+
+    .descargar .contenedor-cajas .caja-01,
+    .descargar .contenedor-cajas .caja-02{
+        width: 100%;
+    }
+
+    .descargar .contenedor-cajas .caja-01{
+        min-width: none;
+    }
+    
+    .descargar .contenedor-cajas .caja-01 ul{
+        min-width: none;
+        width: 70%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .container-descargar .descargar ul li .descripcion{
+        white-space: wrap;
+    }
+
+    .descargar .contenedor-cajas .caja-02{
+        height: 40rem;
+        margin-top: 4rem;
+    }
+
+    .container-descargar .descargar .ul-blanco{
+        color: var(--blanco);
+        margin-bottom: 2rem;
+    }
+    
+    .container-descargar .descargar ul li{
+        margin-bottom: .5rem;
+    }
+
+    .container-descargar .descargar ul .li-dos{
+        margin-left: 0;
+    }
+
+    .container-descargar .descargar ul .li-tres{
+        margin-left: 0;
+    }
+
+    .container-descargar .descargar ul .li-cuatro{
+        margin-left: 0;
+    }
+
+    .container-descargar .descargar ul .li-cinco{
+        margin-left: 0;
+    }
+
+    .container-descargar .descargar .botones{
+        margin-top: 0rem;
+    }
+    
+    .container-descargar .descargar .botones a{
+        width: 40%;
+    }
+
+}
+
+/* --------------------
+Mobile
+-------------------- */
+@media only screen and (max-width: 640px){
+
+/* --------------------
+    Buscamos
+    -------------------- */
+
+    .container-descargar{
+        margin-top: 0;
+    }
+
+    .container-descargar .descargar{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .descargar .contenedor-cajas{
+        display: flex;
+        flex-direction: column;
+        margin-top: 7rem;
+    }
+
+    .descargar .contenedor-cajas .caja-01,
+    .descargar .contenedor-cajas .caja-02{
+        width: 100%;
+    }
+
+    .descargar .contenedor-cajas .caja-01{
+        min-width: none;
+    }
+    
+    .descargar .contenedor-cajas .caja-01 ul{
+        min-width: none;
+        width: 100%;
+        min-width: none;
+        margin: auto;
+        text-align: left;
+    }
+
+    .container-descargar .descargar ul li .descripcion{
+        white-space: normal;
+    }
+
+    .descargar .contenedor-cajas .caja-02{
+        height: 40rem;
+        margin-top: 4rem;
+    }
+
+    .container-descargar .descargar .ul-blanco{
+        color: var(--blanco);
+        margin-bottom: 2rem;
+    }
+    
+    .container-descargar .descargar ul li{
+        margin-bottom: .5rem;
+    }
+
+    .container-descargar .descargar ul .li-dos{
+        margin-left: 0;
+    }
+
+    .container-descargar .descargar ul .li-tres{
+        margin-left: 0;
+    }
+
+    .container-descargar .descargar ul .li-cuatro{
+        margin-left: 0;
+    }
+
+    .container-descargar .descargar ul .li-cinco{
+        margin-left: 0;
+    }
+
+    .container-descargar .descargar .botones{
+        margin-top: 0rem;
+    }
+    
+    .container-descargar .descargar .botones a{
+        width: 40%;
+    }
+    
+}

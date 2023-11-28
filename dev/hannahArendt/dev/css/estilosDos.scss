@@ -1,0 +1,205 @@
+@@ -1,204 +0,0 @@
+/* --------------------
+Variables 
+-------------------- */
+
+$verde: #1E5F66;
+$verde-claro: #36997C;
+$verde-op: #1E5F6650;
+$azul: #95D4E1;
+$azul-op: #95D4E150;
+$amarillo: #FED72A;
+$blanco: #ffffff;
+$negro: #000000;
+$gris: #95D4E115;
+
+$negro-op: #00000020;
+
+$shadowText: #00000020 2px 2px 2px;
+$shadowBox: #00000019 10px 10px 15px;
+
+$radius: 2rem 0 2rem 0;
+$radiusDos: 1rem !important;
+
+$transitions: all ease-in-out 200ms;
+$transitionsLarge: all ease-in-out 400ms;
+$transitionsXLarge: all ease-in-out 800ms;
+
+/* --------------------
+Objetivos 
+-------------------- */
+
+.objetivos .imagen{
+    width: auto;
+}
+
+.imagen img{
+    width: 100%;
+    border-radius: $radius;
+    box-shadow: $shadowBox;
+}
+
+.objetivos .texto{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+}
+
+.objetivos .texto .boton-container{
+    margin: 2rem 0;
+}
+
+/* --------------------
+Mapa
+-------------------- */
+
+.sedes-container{
+    width: 100vw;
+}
+
+.mapa-container{
+    border: solid $amarillo 2px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: $radius;
+    box-shadow: $shadowBox;
+    background-color: $blanco;
+}
+
+.mapa-container .imagen{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.mapa-container img{
+    width: 100%;
+    border-radius: $radius;
+}
+
+.mapa-container .imagen a{
+    width: 100%;
+    height: 100%;
+    border: solid red 2px;
+}
+
+.mapa-container .imagen iframe{
+    width: 100%;
+    height: 30rem;
+    border-radius: $radius;
+    border: solid $verde .1rem !important;
+    box-shadow: $shadowBox;
+}
+
+.mapa-container span{
+    font-family: 'Bitter', serif;
+    color: $verde;
+    font-size: 2rem;
+    text-shadow: $shadowText;
+}
+
+.mapa-container p{
+    margin: 1rem 0 2rem 0;
+}
+
+.mapa-container ul{
+    list-style: circle;
+    margin: 0;
+}
+
+.mapa-container ul li{
+    color: $negro;
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+/* --------------------
+X
+X
+Colabora
+X
+X
+-------------------- */
+
+.imagen-talleristas{
+    width: auto;
+}
+
+.imagen-talleristas img{
+    width: 100%;
+}
+
+.voluntarios .imagen img{
+    width: 100%;
+}
+
+.voluntarios ul{
+    list-style: decimal;
+}
+
+.voluntarios ul li {
+    color: $negro;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+.instituciones .linea{
+    height: .5rem;
+    width: 100%;
+    background-color: $amarillo;
+    border-radius: 5rem;
+}
+
+.instituciones .institucion{
+    border: solid $verde .01rem;
+    border-radius: $radius;
+    box-shadow: $shadowBox;
+}
+
+.instituciones .institucion a{
+    width: 100%;
+    text-decoration: none;
+    transition: $transitions;
+}
+
+.instituciones .institucion a:hover{
+    transform: scale(1.05);
+}
+
+.instituciones .logo{
+    width: 100%;
+    height: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.instituciones .logo-01{
+    background-image: url(../img/logo-uamx.png);
+}
+
+.instituciones .logo-02{
+    background-image: url(../img/logo-uacm.png);
+}
+
+
+@media only screen and (max-width: 992px){
+    
+    .mapa-container{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+    .mapa-container{
+        width: 100%;
+    }
+    
+    .objetivos img{
+        max-width: 80%;
+    }
+}

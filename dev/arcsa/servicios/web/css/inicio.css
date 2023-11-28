@@ -1,0 +1,1213 @@
+/* ---------------
+BG 2
+--------------- */
+
+.background{
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+
+.bg{
+  width: 100%;
+  max-width: 172.5rem;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: visible;
+  z-index: -1000;
+}
+
+.bg_02{
+  height: 50rem;
+  transform: translateY(-48rem);
+  background-image: url(../img/inicio_fondo_02.png);
+}
+
+.bg_03{
+  height: 60rem;
+  transform: translateY(-34rem);
+  background-image: url(../img/inicio_fondo_03.png);
+}
+
+/* ---------------
+Header abajo
+--------------- */
+
+.headerInicio.abajo {
+  background-color: var(--terciario);
+  box-shadow: var(--boxShadow);
+}
+
+.headerInicio.abajo ul {
+  overflow: hidden;
+}
+
+.headerInicio.abajo ul li a {
+  color: var(--secundario-op-dos);
+}
+
+.headerInicio.abajo ul li a:hover {
+  color: var(--secundario-op);
+}
+
+.headerInicio.abajo #selected {
+  color: var(--secundario-op);
+}
+
+.headerInicio.abajo #selected:hover {
+  cursor: default;
+}
+
+.headerInicio.abajo .containerMenu .logo{
+  background-image: url(../img/logoAS_Blanco.png);
+}
+
+/* ---------------
+Header Inicio
+--------------- */
+
+.headerInicio {
+  position: fixed;
+  z-index: 9999;
+  transition: var(--transitionsLarge);
+}
+
+.headerInicio #selected {
+  text-decoration: underline;
+  font-weight: 700;
+  color: var(--secundario-op);
+}
+
+.headerInicio #selected:hover {
+  cursor: default;
+}
+
+.headerInicio .containerMenu {
+  width: auto;
+  max-width: 150rem;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.headerInicio .containerMenu .cont-logo{
+  overflow: hidden;
+}
+
+.headerInicio .containerMenu .logo{
+  width: 13rem;
+  height: 8rem;
+  background-image: url(../img/logoAS_Color.png);
+  background-image: url(../img/logoAS_Blanco.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: var(--transitions);
+  overflow: hidden;
+}
+
+.headerInicio .containerMenu .logo:hover{
+  transform: scale(1.02);
+}
+
+.headerInicio .containerMenu ul {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.headerInicio .containerMenu ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.headerInicio .containerMenu a {
+  color: var(--secundario-op-dos);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transitions);
+}
+
+.headerInicio .containerMenu a:hover {
+  color: var(--secundario-op);
+}
+
+.headerInicio .menuIcon {
+  font-size: 2.8rem;
+  color: var(--blanco);
+}
+
+.headerInicio .menuIcon:hover {
+  font-size: 3rem;
+}
+
+/* ---------------
+Banner
+--------------- */
+
+.seccionBanner {
+  width: 100vw;
+  height: 95vh;
+  min-height: 100px;
+  background: url(../img/inicio_fondo_01_4.png);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  transition: var(--transitionsXLarge);
+}
+
+.seccionBanner .contenedorBanner{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 150rem ;
+  overflow: visible;
+}
+
+.seccionBanner .contenedorBanner .texto {
+  width: auto;
+  height: 30%;
+  padding: 0;
+  margin-left: 5%;
+  transition: var(--transitionsLarge);
+  overflow: visible;
+}
+
+.seccionBanner .contenedorBanner .texto .cont-titulo{
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow: visible;
+  position: relative;
+  justify-content: baseline;
+  align-items: baseline;
+}
+
+.seccionBanner .contenedorBanner .texto h1{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: visible;
+  color: var(--secundario-op-dos);
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.seccionBanner .contenedorBanner .texto .changing-text {
+  border-right: 2px solid;
+  color: var(--secundario-op);
+  animation: blinking-cursor 1s infinite;
+}
+
+@keyframes blinking-cursor {
+  0%, 100% {
+      border-color: transparent;
+  }
+  50% {
+      border-color: var(--secundario-op);
+  }
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.seccionBanner .contenedorBanner .texto h3 {
+  color: var(--blanco);
+  max-width: 70rem;
+  margin: 5rem 0 2rem 0;
+}
+
+.seccionBanner .contenedorBanner .texto p {
+  color: var(--blanco);
+  max-width: 70rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 2rem 0 5rem 0;
+}
+
+/* .seccionBanner .contenedorBanner .texto span {
+  color: var(--secundario-op);
+  font-size: 2.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+} */
+
+.seccionBanner .contenedorBanner .texto .btnanim {
+  animation: move-vector 3s linear infinite;
+  margin-left: 0;
+}
+
+.seccionBanner .contenedorBanner .texto.abajo{
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+.seccionBanner .contenedorBanner .vid.abajo{
+  opacity: 0;
+  transform: translateX(200px);
+}
+
+/* ---------------
+Consulta
+--------------- */
+
+#consulta{
+  scroll-margin-block-start: 30rem;
+  scroll-padding: 30rem;
+}
+
+.seccionConsulta {
+  width: 100vw;
+  margin: 8rem auto 5rem auto;
+  padding: var(--spaceSection);
+}
+
+.seccionConsulta .contenedorConsulta{
+  width: 96%;
+}
+
+.seccionConsulta .contenedorConsulta h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.seccionConsulta .contenedorConsulta h3 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form {
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--blanco);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
+  display: flex;
+
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .contenedor-campos{
+  width: fit-content;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .check{
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .check input{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 1rem;
+  margin-right: .5rem;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .check label{
+  width: fit-content;
+  font-size: 1.1rem;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .check p{
+  width: fit-content;
+  max-width: none;
+  font-size: 1.1rem;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .linea{
+  width: .15rem;
+  height: 8rem;
+  margin-right: 1rem;
+  background-color: var(--grisTres);
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .campos-in p{
+  width: fit-content;
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  text-align: center; 
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm form .campos{
+  width: fit-content;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm label {
+  width: 20%;
+  min-width: 20rem;
+  margin: 0;
+  margin-right: 1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm span {
+  width: fit-content;
+  font-size: 1.3rem;
+  color: var(--azul);
+  margin-left: 1rem;
+  padding: 0 .5rem;
+  background-color: var(--blanco);
+  
+  transform: translateY(.5rem);
+  z-index: 99;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm input {
+  width: 100%;
+  height: 4rem;
+  border-radius: 3px;
+  padding: 0 1.5rem;
+  color: var(--negro);
+  border: solid var(--principal) .15rem;
+  
+  transform: translateY(-.5rem);
+  z-index: 9;
+}
+
+.seccionConsulta .contenedorConsulta .contenedorForm .contenedor-boton {
+  width: auto;
+  overflow: visible;
+  margin-top: 3rem;
+}
+
+/* ---------------
+Soluciones
+--------------- */
+
+.seccionSoluciones {
+  margin: 8rem 0;
+  background-color: var(--morado-claro-op);
+  padding: var(--spaceSection);
+  scroll-padding: 20rem;
+}
+
+.seccionSoluciones .contenedorSoluciones {
+  margin: 0 auto;
+}
+
+.seccionSoluciones .contenedorSolucionesDos {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.seccionSoluciones .contenedorSoluciones .solucionesTitle{
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.seccionSoluciones .contenedorSoluciones .solucionesTitle p{
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro {
+  width: 30%;
+  margin: 2rem auto;
+  padding: 3rem 2rem;
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro .recuadroInline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 20px auto;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro .recuadroInline h4 {
+  text-align: left;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro p {
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro span {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.seccionSoluciones .contenedorSolucionesDos .recuadro .recuadroInline span a{
+  color: var(--principal);
+  text-decoration: none;
+  font-style: italic;
+}
+
+/* ---------------
+Bullets
+--------------- */
+
+.seccionBullets {
+  margin: 7rem auto 5rem auto;
+  padding: var(--spaceSection);
+}
+
+.seccionBullets .contenedorBullets{
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.seccionBullets .contenedorBullets .bullet{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.seccionBullets .contenedorBullets .linea{
+  width: .3rem;
+  height: 6rem;
+  margin: auto;
+  border-radius: 10rem;
+  background-color: var(--principal);
+}
+
+.seccionBullets .contenedorBullets .bullet .icono{
+  width: 100%;
+  height: 10rem;
+  margin-top: 4rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.seccionBullets .contenedorBullets .bullet .icono-01{
+  background-image: url(../img/inicio_bullet_01.png);
+}
+
+.seccionBullets .contenedorBullets .bullet .icono-02{
+  background-image: url(../img/inicio_bullet_02.png);
+}
+
+.seccionBullets .contenedorBullets .bullet .icono-03{
+  background-image: url(../img/inicio_bullet_03.png);
+}
+
+.seccionBullets .contenedorBullets .bullet .icono-04{
+  background-image: url(../img/inicio_bullet_04.png);
+}
+
+/* ---------------
+Nosotros
+--------------- */
+
+.seccionNosotros {
+  margin: 2rem auto;
+  padding: var(--spaceSection);
+}
+
+.seccionNosotros .contenedorNosotros{
+  margin: auto;
+  display: flex;
+  overflow: visible;
+}
+
+.seccionNosotros .contenedorNosotros .imagenNosotros{
+  width: 50%;
+  height: 50vh;
+  min-width: 40rem;
+  border-radius: 2rem 0 0 2rem;
+  box-shadow: var(--boxShadow);
+  overflow: visible;
+  
+  background-image: url(../img/inicio_nosotros.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.seccionNosotros .contenedorNosotros .texto{
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding-left: 5rem;
+}
+
+.seccionNosotros .contenedorNosotros .texto h2{
+  margin-bottom: 2rem;
+}
+
+.seccionNosotros .contenedorNosotros .texto ul{
+  padding-left: 2.4rem;
+}
+
+.seccionNosotros .contenedorNosotros .texto ul li{
+  list-style-position: inside;
+  text-indent: -2.3rem;
+  overflow: visible;
+}
+
+/* ---------------
+Nuestro ADN
+--------------- */
+
+.seccionADN {
+  width: 100vw;
+  margin: 2rem auto 5rem auto;
+  padding: var(--spaceSection);
+}
+
+.seccionADN .contenedorADN{
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  overflow: visible;
+}
+
+.seccionADN .contenedorADN .texto{
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding-right: 5rem;
+  overflow: visible;
+}
+
+.seccionADN .contenedorADN h2{
+  margin-bottom: 2rem;
+}
+
+.seccionADN .contenedorADN .texto .tituloDos{
+  margin-top: 5rem;
+}
+
+.seccionADN .contenedorADN .texto .boton{
+  margin: 5rem 0 0 0;
+}
+
+.seccionADN .contenedorADN .imagenADN{
+  width: 50%;
+  height: 50vh;
+  min-width: 40rem;
+  border-radius: 0 2rem 2rem 0;
+  box-shadow: var(--boxShadow);
+  overflow: visible;
+  
+  background-image: url(../img/inicio_adn.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/*  Autoevaluacion 01/02 */
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+
+  #consulta{
+    scroll-margin-block-start: 0;
+    scroll-padding: -30rem;
+    max-width: none;
+  }
+  
+  .seccionConsulta {
+    max-width: none;
+  }
+  
+  
+  .seccionConsulta .contenedorConsulta{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm{
+    width: 100%;
+    padding: 2rem auto;
+    border-radius: 0;
+    background-color: var(--blanco);
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form{
+    width: fit-content;
+    padding: 2rem auto;
+    border-radius: 0;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .check{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .contenedor-campos{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: none;
+  }
+
+  .seccionConsulta .contenedorConsulta .contenedorForm label {
+    width: 20%;
+    min-width: 18rem;
+    margin: 0;
+    margin-right: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+/*  Autoevaluacion 02/02 */
+@media only screen and (min-width: 1px) and (max-width: 959px) {
+
+  #consulta{
+    scroll-margin-block-start: 0;
+    scroll-padding: -30rem;
+    max-width: none;
+  }
+  
+  .seccionConsulta {
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta{
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+    min-width: 200px !important;
+  }
+  
+  .seccionConsulta .contenedorConsulta h2,
+  .seccionConsulta .contenedorConsulta h3{
+    width: 90%;
+    margin: 1rem auto;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm{
+    width: 100%;
+    padding: 2rem auto;
+    border-radius: 0;
+    background-color: var(--blanco);
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form{
+    width: fit-content;
+    padding: 2rem auto;
+    border-radius: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .check{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .contenedor-campos{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .contenedor-campos .campos{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in p{
+    text-align: center;
+    margin: 1rem auto;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .linea{
+    width: 100%;
+    height: .2rem;
+    margin: 1rem 0;
+  }
+
+  .seccionConsulta .contenedorConsulta .contenedorForm label {
+    width: 90% !important;
+    min-width: 27rem !important;
+    margin: 0;
+    margin-right: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm .boton {
+    margin: 0 0 2rem 0;
+  }
+}
+
+/*  Tablet Vertical / Mobile  */
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+
+  .bg_02{
+    height: 92rem;
+    transform: translateY(-95rem);
+    background-image: url(../img/inicio_fondo_02.png);
+  }
+
+  .bg_03{
+    height: 35rem;
+    transform: translateY(0rem);
+    background-image: url(../img/inicio_fondo_03.png);
+  }
+
+  /* ---------------
+  Banner
+  --------------- */
+
+  
+  .seccionBanner {
+    height: 100vh;
+    min-height: 60rem;
+  }
+  
+  .seccionBanner .contenedorBanner{
+    width: 90%;
+    min-width: 30rem;
+  }
+  
+  .seccionBanner .contenedorBanner .texto {
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+  }
+  
+  .seccionBanner .contenedorBanner .texto p{
+    margin: 4rem 0 6rem 0;
+  }
+  
+  .seccionBanner .contenedorBanner .texto.abajo{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  
+  .seccionBanner .contenedorBanner .texto .btnanim {
+    margin: auto;
+  }
+  
+  .seccionBanner .contenedorBanner .texto .cont-titulo{
+    height: 8rem;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+  }
+  
+  /* ---------------
+  Consulta
+  --------------- */
+  #consulta{
+    scroll-margin-block-start: 20rem;
+    scroll-padding: 0rem;
+    max-width: none;
+  }
+  
+  .seccionConsulta {
+    margin: 2rem auto 12rem auto;
+    max-width: none;
+  }
+
+  /* ---------------
+  Bullets
+  --------------- */
+
+  .seccionBullets {
+    margin: 0 auto;
+    padding: 0 0 3rem 0;
+  }
+
+  .seccionBullets .contenedorBullets{
+    margin: auto;
+    width: 100%;
+    min-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seccionBullets .contenedorBullets .bullet{
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
+  .seccionBullets .contenedorBullets .bullet:last-child{
+    margin-bottom: 0;
+  }
+
+  .seccionBullets .contenedorBullets .linea{
+    display: none;
+  }
+
+  .seccionBullets .contenedorBullets .bullet .icono{
+    height: 7rem;
+    margin-top: 2rem;
+  }
+
+  /* ---------------
+  Nosotros
+  --------------- */
+
+  .seccionNosotros {
+    width: 100vw;
+    min-width: 1px;
+    margin: 2rem auto;
+    padding: var(--spaceSection);
+  }
+
+  .seccionNosotros .contenedorNosotros{
+    flex-direction: column-reverse;
+    width: 100% !important;
+    min-width: 1rem;
+    height: fit-content;
+  }
+  
+  .seccionNosotros .contenedorNosotros .imagenNosotros{
+    width: 100%;
+    height: 40vh;
+    border-radius: 0;
+    margin-top: 4rem;
+  }
+
+  .seccionNosotros .contenedorNosotros .texto{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-left: 0;
+  }
+
+  .seccionNosotros .contenedorNosotros .texto h2{
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  /* ---------------
+  Nuestro ADN
+  --------------- */
+
+  .seccionADN {
+    width: 100vw;
+    margin: 0 auto 5rem auto;
+    padding: 2rem 0;
+  }
+
+  .seccionADN .contenedorADN{
+    width: 100%;
+    min-width: 1px;
+    flex-direction: column;
+  }
+  
+  .seccionADN .contenedorADN .texto{
+    width: 80%;
+    margin-bottom: 1rem;
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .seccionADN .contenedorADN h2{
+    margin-bottom: 1rem;
+  }
+  
+  .seccionADN .contenedorADN .texto .tituloDos{
+    margin-top: 4rem;
+  }
+  
+  .seccionADN .contenedorADN .texto .boton{
+    margin: 5rem auto;
+  }
+
+  .seccionADN .contenedorADN .imagenADN{
+    width: 100%;
+    height: 40vh;
+    min-width: 1px;
+    border-radius: 0;
+  }
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/*  DesktopSM  */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  
+  .seccionBanner {
+    min-height: 75rem;
+  }
+
+  .seccionBanner .contenedorBanner{
+    min-width: 15rem ;
+  }
+
+}
+
+/*  Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .bg_02{
+    height: 45rem;
+    transform: translateY(-50rem);
+    background-image: url(../img/inicio_fondo_02.png);
+  }
+
+  /* ---------------
+  Banner
+  --------------- */
+
+  .seccionBanner {
+    height: 95vh;
+    min-height: 48rem;
+  }
+  
+  .seccionBanner .contenedorBanner{
+    min-width: 30rem;
+  }
+  
+  .seccionBanner .contenedorBanner .texto {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seccionBanner .contenedorBanner .texto h1 {
+    text-align: center;
+  }
+  
+  .seccionBanner .contenedorBanner .texto p {
+    color: var(--blanco);
+    font-size: 2rem;
+    margin: 2rem 0 5rem 0;
+  }
+
+  .seccionBanner .contenedorBanner .texto span {
+    color: var(--secundario-op);
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .seccionBanner .contenedorBanner .texto .btnanim {
+    animation: move-vector 3s linear infinite;
+    margin: auto;
+  }
+
+  .seccionBanner .contenedorBanner .texto.abajo{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  .seccionBanner .contenedorBanner .texto .cont-titulo{
+    height: 7rem;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+  }
+
+  /* ---------------
+  Campos
+  --------------- */
+
+  #consulta{
+    scroll-margin-block-start: 0;
+    scroll-padding: -30rem;
+    max-width: none;
+  }
+  
+  .seccionConsulta {
+    margin: 7rem auto 10rem auto;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm{
+    width: 100%;
+    padding: 2rem auto;
+    border-radius: 0;
+    background-color: var(--blanco);
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form{
+    width: fit-content;
+    padding: 2rem auto;
+    border-radius: 0;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .check{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: none;
+  }
+  
+  .seccionConsulta .contenedorConsulta .contenedorForm form .campos-in .contenedor-campos{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: none;
+  }
+
+  .seccionConsulta .contenedorConsulta .contenedorForm label {
+    width: 20%;
+    min-width: 18rem;
+    margin: 0;
+    margin-right: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* ---------------
+  Bullets
+  --------------- */
+
+  .seccionBullets {
+    margin: 0 auto;
+    padding: 1rem 0 5rem 0;
+  }
+
+  .seccionBullets .contenedorBullets{
+    margin: 0 auto;
+    width: 80%;
+    min-width: 1px;
+  }
+  
+  .seccionBullets .contenedorBullets .bullet .icono{
+    height: 7rem;
+    margin-top: 2rem;
+  }
+
+  .seccionBullets .contenedorBullets .linea{
+    width: .2rem;
+  }
+
+}
+
+/*  Original (Tablet Vertical) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+  
+
+}
+
+
+/*  Mobile  */
+@media only screen and (min-width: 1px) and (max-width: 425px) {
+
+}

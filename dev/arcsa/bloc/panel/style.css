@@ -1,0 +1,1185 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    overflow-x: hidden;
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--gris);
+}
+
+/* ----------------------------------------
+Colores
+---------------------------------------- */
+
+:root {
+    
+    --primero: #4E177C;
+    --segundo: #214186;
+    --segundo-hover: #21418680;
+    --tercero: #252A2E;
+    --cuarto: #575757;
+    --cuarto-dos: #57575770;
+    --quinto: #CDC8E1;
+    --sexto: #798DB6;
+    --link: #0FBA85;
+    --link-hover: #22EDAE;
+    --bg-tables: #EFEFEF;
+    --aprobado: #00AD1B;
+    --denegado: #DF3E3E;
+    --negro: #000000;
+    --blanco: #ffffff;
+    --gris: #FAFAFA;
+    --disabled: #D4D4D4;
+    --shadow: #0000001A;
+
+    --sans-serif: 'Maven Pro', sans-serif;
+    --serif: 'Source Serif Pro', serif;
+
+    --transitions: all ease-in-out 300ms;
+    --transitionsLarge: all ease-in-out 600ms;
+    --transitionsXLarge: all ease-in-out 1200ms;
+
+    --textShadow: var(--shadow) 2px 2px 1px;
+    --boxShadow: var(--shadow) 4px 4px 6px;
+
+    --spaceSection: 10rem 0;
+    --spaceDown: 0 0 5rem 0;
+}
+
+/* ----------------------------------------
+Espacios
+---------------------------------------- */
+
+.padd{
+    padding: 2rem 0;
+}
+
+.marg{
+    margin: 4rem 0;
+}
+
+/* ----------------------------------------
+Sombras
+---------------------------------------- */
+
+.shadow {
+    text-shadow: var(--textShadow);
+}
+
+.shadowBox {
+    box-shadow: var(--boxShadow);
+}
+
+/* ----------------------------------------
+Textos
+---------------------------------------- */
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    color: var(--tercero);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: var(--blanco);
+    font-weight: 100;
+}
+
+h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--negro);
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--negro);
+    text-align: center;
+    margin: 10rem 0;
+    font-weight: 600;
+}
+
+.const{
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+span {
+    font-size: 1.4rem;
+    color: var(--primero);
+    font-weight: 400;
+}
+
+/* ----------------------------------------
+Botones y vínculos
+---------------------------------------- */
+
+.content button{
+    background-color: var(--segundo);
+    border: none;
+    margin: 1rem .3rem .3rem .3rem ;
+    color: var(--blanco);
+    transition: var(--transitions);
+    cursor: pointer;
+}
+
+.boton{
+    width: auto;
+    font-size: 1.4rem;
+    padding: .7rem 3rem;
+    border-radius: .5rem;
+    color: var(--blanco);
+    background-color: var(--segundo);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transitions);
+}
+
+.boton:hover {
+    transform: scale(1.03);
+    background-color: var(--segundo-hover);
+}
+
+/* ----------------------------------------
+Botón up
+---------------------------------------- */
+
+.botonUp{
+    margin: 0;
+    padding: 0;
+    right: 0;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 9999;
+    animation: move-up 3s linear infinite;
+    transition: var(--transitionsXLarge);
+}
+
+.botonUpS{
+    width: 4rem;
+    height: 5rem;
+    margin: 0;
+    padding: .2rem 1rem .5rem 1rem;
+    border-radius: 5rem;
+    background-color: var(--quinto);
+    border: solid 1px var(--blanco);
+    box-shadow: var(--boxShadow);
+}
+.botonUpS .st0{
+    stroke: var(--blanco);
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+/* ----------------------------------------
+Header
+---------------------------------------- */
+
+header{
+    width: 100vw;
+}
+
+header {
+    position: fixed;
+    transition: var(--transitions);
+    z-index: 9999;
+    background-color: var(--tercero);
+}
+
+header #selected {
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--quinto);
+}
+
+header #selected:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+header .containerMenu {
+    width: auto;
+    padding: 1.3rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+header #logoBlanco {
+    width: 3.5rem;
+    height: auto;
+    fill: var(--blanco);
+}
+
+header #logoBlanco:hover {
+    fill: var(--quinto);
+}
+
+header .containerMenu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .containerMenu ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+header .containerMenu a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+header .containerMenu a:hover {
+    font-weight: 500;
+    color: var(--quinto);
+    text-decoration: underline;
+}
+
+header .menuIcon {
+    font-size: 2.2rem;
+    color: var(--blanco);
+}
+
+header .menuIcon:hover {
+    color: var(--morado-hover);
+}
+
+header .onlyMobile{
+    display: none;
+}
+
+.headerInicio .onlyMobile{
+    display: none;
+}
+
+/* ----------------------------------------
+Container All
+---------------------------------------- */
+
+.container-all{
+    width: 100vw;
+}
+
+/* ----------------------------------------
+Aside
+---------------------------------------- */
+
+.barra{
+    width: 38rem;
+    position: fixed;
+    height: 93.8vh;
+    margin-top: 7.2rem;
+    background-color: var(--cuarto);
+    border: none;
+    transition: var(--transitions);
+}
+
+aside .top{
+    padding: 1rem;
+    background-color: var(--cuarto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside .top .flecha{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+aside .top .flecha::after{
+    content: "\f060";
+    color: var(--blanco);
+}
+
+aside i{
+    color: var(--blanco);
+}
+
+aside h3{
+    padding: 0 1rem;
+}
+
+aside .container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris);
+    border-right: solid var(--primero) .1rem;
+}
+
+aside .container .title{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primero);
+}
+
+aside .container .title .name{
+    display: flex;
+    align-items: center;
+}
+
+aside .container .title .name button{
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: var(--primero);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .container .title .name .fa-circle-info{
+    font-size: 1.3rem;
+    position: relative;
+    padding: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+aside .container .title .name .fa-circle-info:hover{
+    color: var(--quinto);
+}
+
+aside .container .content{
+    height: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+aside .container .content .grafica span{
+    color: var(--primero);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+aside .container .content .grafica span::before{
+    content: "Vencimiento:";
+}
+
+.contDisabled{
+    border: solid var(--disabled) .1rem !important;
+}
+
+.disabled{
+    background-color: var(--disabled) !important;
+}
+
+.disabled button{
+    background-color: var(--disabled) !important;
+}
+
+/* ----------------------------------------
+Aside Active
+---------------------------------------- */
+
+.activecontainer-all .barra{
+    width: auto;
+    padding: 0;
+}
+
+.activecontainer-all .barra .top{
+    display: flex;
+    justify-content: center;
+}
+
+.activecontainer-all .barra .top .flecha::after{
+    content: "\f061";
+    color: var(--blanco);
+}
+
+.activecontainer-all .barra .top h3,
+.activecontainer-all .barra .top .fa-plus{
+    display: none;
+}
+
+.activecontainer-all .barra .container .title{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cuarto);
+}
+
+.activecontainer-all aside .container{
+    border: none;
+}
+
+.activecontainer-all .barra .container h3,
+.activecontainer-all .barra .container button,
+.activecontainer-all .barra .container .bars,
+.activecontainer-all .barra .container .bars i{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.activecontainer-all .barra .container .title .name button{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.activecontainer-all .barra .container .content{
+    display: none;
+}
+
+.activecontainer-all .barra .container{
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------------------------------
+Dialog
+---------------------------------------- */
+
+#modal::backdrop {
+    background-color: #252A2E60;
+}
+
+#modal{
+    max-width: 60ch;
+    padding: 4rem;
+    margin: auto;
+    text-align: center;
+    border-radius: 0 .5rem 0 .5rem;
+    border: solid var(--primero) .1rem;
+}
+
+#modal span{
+    color: var(--primero);
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#modal p{
+    text-align: justify;
+    padding: 3rem 0;
+    font-size: 1.4rem;
+}
+
+#modal button{
+    color: var(--blanco);
+    background-color: var(--primero);
+    padding: .5rem 5rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: var(--transitions);
+}
+
+#modal button:hover{
+    transform: scale(1.02);
+}
+
+/* ----------------------------------------
+Section
+---------------------------------------- */
+
+.activecontainer-all .sectionContainer{
+    width: calc(100vw - 7rem);
+    margin-left: 7rem;
+}
+
+.sectionContainer{
+    width: calc(100vw - 38rem);
+    margin-left: 38rem;
+}
+
+.titleSection{
+    width: 100%;
+    margin: 12rem 0 0 0;
+}
+
+.titleSection h2{
+    text-align: center;
+}
+
+.sectionContainer .title{
+    width: 100%;
+    margin: 0 auto 3rem auto;
+}
+
+.sectionContainer .title-text{
+    font-size: 2rem;
+    color: var(--tercero);
+    font-weight: 400;
+}
+
+.sectionContainer .container{
+    width: 90%;
+    margin: 5rem auto;
+    animation: ease-in-out aparecer 1.2s;
+}
+
+/* ----------------------------------------
+Form
+---------------------------------------- */
+
+.container form input::-webkit-input-placeholder {
+    color: var(--cuarto);
+    font-size: 1.2rem;
+}
+
+.container .form-line {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container form fieldset{
+    width: 22%;
+    border-radius: .5rem;
+    border: .1rem solid var(--cuarto);
+    padding: 0 1rem .6rem .8rem;
+}
+
+.container form .campo-obligatorio{
+    width: 22%;
+    border-radius: .5rem;
+    border: .1rem solid var(--segundo);
+    padding: 0 1rem .6rem .8rem;
+}
+
+.container form .campo-obligatorio legend{
+    color: var(--cuarto);
+    font-size: 1.4rem;
+}
+
+.container form .campo-obligatorio legend::before{
+    content: "*";
+}
+
+.container form legend{
+    padding: 0 1rem;
+    color: var(--cuarto);
+    font-size: 1.4rem;
+}
+
+.container form input{
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    padding-top: .8rem;
+    background-color: var(--gris);
+    color: var(--tercero);
+}
+
+.container form input:focus {
+    background-color: none;
+    color: none;
+    outline: none;
+}
+
+.container form select {
+    width: 100%;
+    padding: .5rem;
+    padding-top: .8rem;
+    border: none;
+    background-color: var(--gris);
+}
+
+.container form select:focus {
+    background-color: none;
+    outline: none;
+}
+
+.container form button{
+    margin: 2rem .4rem;
+}
+
+.field-vacio{
+    width: 22%;
+}
+
+.container .obligatorio{
+    color: var(--segundo);
+}
+
+/* ----------------------------------------
+Tabla historial
+---------------------------------------- */
+
+.tabla{
+    padding: 1.2rem ;
+    border: solid var(--cuarto) 1px;
+    border-radius: .5rem;
+}
+
+table{
+    width: 100%;
+    border: none;
+    text-align: left;
+    margin: 2rem 0 0 0;
+    border-spacing: 0;
+}
+
+.encabezados{
+    text-align: left;
+    background-color: var(--primero);
+    color: var(--blanco);
+}
+
+.encabezados .radIzq{
+    border-radius: .5rem 0 0 0;
+    color: var(--blanco);
+}
+
+.encabezados .radDer{
+    border-radius: 0 .5rem 0 0;
+    border: none;
+}
+
+table th{
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 1rem;
+    border-right: solid var(--gris) .01rem;
+}
+
+table td{
+    text-align: left;
+    font-size: 1.4rem;
+    border: solid var(--cuarto-dos) .01rem;
+    padding: .5rem 1rem;
+}
+
+table .dos{
+    background-color: var(--bg-tables);
+}
+
+table td a {
+    color: var(--segundo);
+    display: flex;
+    justify-content: center;
+}
+
+table .check{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table .monitoreo .meses a{
+    color: var(--segundo);
+    text-decoration: none;
+    transition: var(--transitions);
+}
+
+table .monitoreo .meses a:hover{
+    transform: scale(1.03);
+    color: var(--segundo-hover);
+}
+
+table .monitoreo .meses{
+    width: 100%;
+    height: auto;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table .monitoreo .meses i{
+    padding: 0 1rem 0 0;
+}
+
+table i{
+    padding: 0 .8rem 0 0;
+    font-size: 2rem;
+}
+
+table .downl a{
+    color: var(--segundo);
+    text-decoration: none;
+    transition: var(--transitions);
+}
+
+table .downl a:hover{
+    transform: scale(1.03);
+    color: var(--segundo-hover);
+}
+
+#compras{
+    background-color: var(--sexto);
+}
+
+table .disabledM .meses a{
+    color: var(--disabled) !important;
+}
+
+.rotarTab{
+    display: none;
+}
+
+/* ----------------------------------------
+Pagers de tablas
+---------------------------------------- */
+
+.titleTabla{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleTabla .title-text{
+    color: var(--primero);
+}
+
+.pager{
+    display: flex;
+    align-items: center;
+}
+
+.pager .texto{
+    color: var(--negro);
+    font-weight: 400;
+}
+
+.pager .pages{
+    width: auto;
+    height: 100%;
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+    border: solid var(--negro) .1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pager .pages span{
+    color: var(--primero);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.pagerDown{
+    width: 14rem;
+    margin: 2rem auto 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--primero);
+}
+
+.pagerDown .prev,
+.pagerDown .next{
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+.pagerDown .Nprev,
+.pagerDown .Nnext,
+.pagerDown .de{
+    cursor: default;
+    color: var(--negro);
+}
+
+/* ----------------------------------------
+KeyFrames
+---------------------------------------- */
+
+@keyframes move-up {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    
+    50% {
+        transform: rotateZ(180deg);
+    }
+    
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(.8);
+    }
+    
+    80% {
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ----------------------------------------
+Tablet & Mobile Landscape
+---------------------------------------- */
+@media only screen and (min-width: 1199px) and (orientation: landscape) {
+    .rotarTab{
+        display: none;
+    }
+}
+
+/* ----------------------------------------
+Tablet & Mobile
+---------------------------------------- */
+@media only screen and (max-width: 1199px) {
+
+    :root{
+        --spaceSection: 50px 0;
+        --spaceDown: 0 0 40px 0;
+    }
+
+    /* ----------------------------------------
+    Menu
+    ---------------------------------------- */
+
+    .bars__menu {
+        width: 34px;
+        padding: 4px 7px;
+        height: 30px;
+        border-radius: 4px;
+        cursor: pointer;
+        position: fixed;
+        top: 40px;
+        right: -5px;
+        transform: translate(-50%, -50%);
+        overflow: visible;
+        z-index: 99999;
+        background-color: var(--primero);
+    }
+
+    .bars__menu span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--blanco);
+        margin: 4px 0 0 0;
+        border-radius: 1px;
+        transform-origin: 0px 100%;
+        transition: var(--transitions);
+    }
+
+    .activeline1__bars-menu {
+        transform: rotate(47deg) translate(0px, -1px);
+    }
+
+    .activeline2__bars-menu {
+        opacity: 0;
+        margin-left: -30px;
+    }
+
+    .activeline3__bars-menu {
+        transform: rotate(-47deg) translate(0px, 2.5px);
+    }
+
+    /* ----------------------------------------
+    Menu hide
+    ---------------------------------------- */
+    .logoBloc {
+        display: none;
+    }
+
+    /* ----------------------------------------
+    Header menu
+    ---------------------------------------- */
+
+    header {
+        width: 60vw;
+        height: 100vh;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primero);
+        transition: var(--transitionsLarge);
+        transform: translateX(1100px);
+        z-index: 9;
+        position: fixed;
+    }
+
+    header .containerMenu ul li a{
+        color: var(--blanco);
+    }
+    
+    header #selected {
+        font-weight: 600;
+    }
+
+    .containerMenu {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .containerMenu ul {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .containerMenu ul li {
+        padding: 20px 0;
+    }
+
+    .activeheaderMenu {
+        transform: translateX(0);
+    }
+
+    .headerX .onlyMobile{
+        display: none;
+    }
+
+    /* ----------------------------------------
+    Botón Up
+    ---------------------------------------- */
+
+    .botonUp{
+        left: calc(50vw - 18px);
+    }
+
+    .botonUpS{
+        width: 3.6rem;
+        height: 5rem;
+        padding: .2rem .6rem .5rem .6rem;
+    }
+
+    .botonUpS .st0{
+        stroke: var(--blanco);
+        fill: none;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
+
+    /* ----------------------------------------
+    Aside
+    ---------------------------------------- */
+    aside{
+        display: none;
+    }
+
+    /* ----------------------------------------
+    Container
+    ---------------------------------------- */
+    
+    .sectionContainer{
+        width: 100vw;
+        margin: 0;
+    }
+
+    /* ----------------------------------------
+    Tabla historial
+    ---------------------------------------- */
+
+    .tabla{
+        padding: 2rem 0;
+        border: none;
+        border-top: solid var(--tercero) .1rem;
+        border-radius: 0;
+    }
+
+    .encabezados{
+        height: auto;
+    }
+
+    .encabezados th{
+        width: auto;
+    }
+
+    .rotarTab{
+        display: flex;
+        margin: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .rotarTab{
+        width: fit-content;
+        margin: 2rem auto;
+        padding: 1rem 0;
+        color: var(--primero);
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem 0 1rem 0;
+        border: solid var(--primero) .2rem;
+    }
+    
+    .rotarTab span{
+        font-weight: 700;
+        padding: 1rem 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .rotarTab i{
+        margin: 0 2rem;
+        animation: rotate 5s linear infinite;
+        font-size: 3rem;
+    }
+}
+
+/* ----------------------------------------
+Q Aside
+---------------------------------------- */
+
+@media only screen and (max-width: 1699px) and (min-width: 1300px) {
+
+    /* ----------------------------------------
+    Aside
+    ---------------------------------------- */
+    .barra{
+        width: 31rem;
+    }
+    
+    /* ----------------------------------------
+    Container
+    ---------------------------------------- */
+    .sectionContainer{
+        width: calc(100vw - 31rem);
+        margin-left: 31rem;
+    }
+}
+
+
+/* ----------------------------------------
+Mobile
+---------------------------------------- */
+@media only screen and (max-width: 640px){
+
+    /* ----------------------------------------
+    Textos
+    ---------------------------------------- */
+
+    h1 {
+        font-size: 3.0rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        color: var(--segundo);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 2rem;
+        color: var(--segundo);
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 3.8rem;
+        color: var(--blanco);
+        font-weight: 400;
+        font-family: var(--serif);
+    }
+
+    h5 {
+        font-size: 1.8rem;
+        color: var(--blanco);
+        font-weight: 500;
+    }
+
+    h6 {
+        font-size: 1.6rem;
+        color: var(--blanco);
+        font-weight: 300;
+        font-family: var(--serif);
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    li {
+        font-size: 1.4rem;
+    }
+
+    /* ----------------------------------------
+    Botones
+    ---------------------------------------- */
+    
+    .primary {
+        min-width: none;
+        max-width: none;
+        font-size: 1.4rem;
+    }
+    
+    .secondary {
+        min-width: none;
+        max-width: none;
+        font-size: 1.4rem;
+    }
+    
+    .terciary {
+        min-width: none;
+        max-width: none;
+        font-size: 1.4rem;
+    }
+    
+    /* ----------------------------------------
+    Botones
+    ---------------------------------------- */
+
+    header {
+        width: 100vw;
+    }
+}

@@ -1,0 +1,781 @@
+/* --------------------
+Header
+-------------------- */
+.contenedor-header{
+    background-image: url(../img/headerFondo.png);
+    box-shadow: var(--boxShadow);
+}
+
+/* --------------------
+Bullets
+-------------------- */
+
+.bullets{
+    background-color: var(--blanco);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: var(--boxShadow);
+}
+
+.bullets .caja img{
+    width: auto;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+
+.bullets .linea{
+    display: none;
+}
+
+/* --------------------
+Configuramos
+-------------------- */
+
+.configuramos{
+    background-color: var(--fondo-azul);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
+}
+
+.configuramos .carteras{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.configuramos .carteras img{
+    width: 35%;
+    max-width: 30rem;
+    margin: 0 5rem;
+}
+
+.configuramos .boton{
+    margin-top: 8rem;
+    text-align: center;
+}
+
+/* --------------------
+App
+-------------------- */
+
+.container-app{
+    margin-top: 10rem !important;
+    padding: 0;
+}
+
+.app{
+    height: 50vh;
+    min-height: 50rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    box-shadow: var(--boxShadow);
+}
+
+.app .parallax{
+    height: 80vh;
+    position: absolute;
+    width: 50%;
+    background-image: url(../img/mockApp.png);
+    background-color: var(--gris-tres);
+    background-size: contain;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.app .estatico{
+    display: none;
+}
+
+.app .texto {
+    width: 50%;
+    margin-left: 50%;
+    padding: 5rem;
+    background-color: var(--gris-tres);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.app .texto h2{
+    text-align: left;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.app .texto ol{
+    margin: 1rem 0 2rem 0;
+}
+
+.app .texto ol li{
+    list-style: inside decimal;
+    color: var(--tercero);
+    margin-bottom: 1rem;
+}
+
+.app .botones{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.app .botonesDos{
+    display: none;
+}
+
+.app .botones a{
+    width: 20%;
+    min-width: 18rem;
+    margin: .5rem;
+    transition: var(--transitions);
+}
+
+.app .botones a:hover{
+    transform: scale(1.02);
+}
+
+.app .botones img{
+    cursor: pointer;
+    width: 15rem;
+    margin: 1rem .5rem;
+    border-radius: .8rem;
+    box-shadow: var(--boxShadow);
+}
+
+.app .botones .playS{
+    margin-left: 3rem;
+}
+
+/* --------------------
+Tranquilidad
+-------------------- */
+
+.container-tranquilidad{
+    margin: 0;
+}
+
+.tranquilidad{
+    width: 90%;
+    margin-left: 10%;
+    padding: 5rem 0 0 0;
+    border-radius: 2rem 0 0 2rem;
+    background-color: var(--fondo-azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    min-height: 40rem;
+    box-shadow: var(--boxShadow);
+}
+
+.tranquilidad .texto{
+    margin-left: 5rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tranquilidad .texto h2{
+    text-align: left;
+    max-width: 30ch;
+    margin-bottom: 3rem;
+    margin-left: 0;
+}
+
+.tranquilidad .slider {
+    width: auto;
+    margin: 0;
+    display: flex;
+}
+
+.texto .option {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5rem;
+    color: var(--primero);
+    border: solid var(--primero) .2rem;
+    background-color: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--boxShadow);
+}
+
+.texto h4{
+    margin-bottom: 3rem;
+}
+
+.tranquilidad .texto p{
+    color: var(--negro);
+    text-align: left;
+}
+
+.texto .option.selected {
+    background-color: var(--primero);
+    color: white;
+    font-weight: 600;
+  }
+
+.tranquilidad .image-container {
+    width: auto;
+    min-width: 68rem;
+    text-align: center;
+    margin-top: 20px;
+    height: auto;
+}
+
+/* --------------------
+Silumador
+-------------------- */
+
+.container-simulador{
+    margin: 0;
+    padding: 15rem 0;
+}
+
+.simulador{
+    background-color: none;
+    width: 80%;
+    border-radius: 2rem;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--boxShadow);
+}
+
+.container-simulador .simulador .cajaUno{
+    width: 40%;
+    height: 30rem;
+    margin: auto;
+    padding: 5rem 5%;
+    background-color: var(--fondo-verde);
+    border-radius: 2rem 0 0 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-simulador .simulador .cajaUno h2{
+    text-align: left;
+    margin: 0;
+}
+
+.container-simulador .simulador .cajaUno .subtitulo{
+    color: var(--tercero);
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 3rem 0;
+}
+
+.container-simulador .simulador .cajaDos{
+    width: 60%;
+    height: 30rem;
+    margin: auto;
+    padding: 5rem 5%;
+    background-color: var(--blanco);
+    border-radius: 0 2rem 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-simulador .simulador .cajaDos p{
+    text-align: right;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+}
+
+.container-simulador .simulador .cajaDos .boton{
+    text-align: right;
+}
+
+/* --------------------
+Parallax
+-------------------- */
+@media only screen and (min-width: 991px) and (max-width: 1399px){
+
+    .container-app{
+        margin-top: 0;
+        padding: 0;
+        box-shadow: var(--boxShadow);
+    }
+
+    .app .parallax{ 
+        display: none;
+    }
+    
+    .app .estatico{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        background-image: url(../img/mockApp.png);
+        background-color: var(--gris-tres );
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .app .texto{
+        width: 50%;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 990px){
+
+    .container-app{
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    .app{
+        height: auto;
+        min-height: none;
+        max-height: none;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .app .parallax{ 
+        display: none;
+    }
+    
+    .app .estatico{
+        display: flex;
+        width: 100%;
+        height: 35rem;
+        margin: 0;
+        background-image: url(../img/mockApp.png);
+        background-color: var(--blanco);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .app .texto{
+        width: 100%;
+        margin: 0;
+        background-color: var(--blanco);
+    }
+    
+    .app .texto h2{
+        text-align: center;
+        margin: auto;
+        padding-top: 5rem;
+    }
+    
+    .app .texto ol{
+        margin: 6rem auto 1rem auto;
+    }
+    
+    .app .texto .botones{
+        display: none;   
+    }
+
+    .app .botonesDos{
+        display: flex;
+        margin: auto;
+        width: 60%;
+    }
+
+    .app .botonesDos{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: start;
+        background-color: var(--blanco);
+    }
+
+    .app .botonesDos .botones{
+        width: 100%;
+        margin: 5rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .app .botonesDos a{
+        width: 50%;
+        padding: .5rem;
+        min-width: 18rem;
+        margin: .5rem auto;
+        transition: var(--transitions);
+        display: flex;
+        justify-content: end;
+    }
+    
+    .app .botonesDos .botonDos{
+        width: 50%;
+        padding: .5rem;
+        min-width: 18rem;
+        margin: .5rem auto;
+        transition: var(--transitions);
+        display: flex;
+        justify-content: start;
+    }
+    
+    .app .botonesDos a:hover{
+        transform: scale(1.02);
+    }
+    
+    .app .botonesDos img{
+        cursor: pointer;
+        width: 15rem;
+        margin: 1rem .5rem;
+        border-radius: .8rem;
+        box-shadow: var(--boxShadow);
+    }
+    
+    .app .botonesDos .playS{
+        margin-left: 3rem;
+    }
+}
+
+/* --------------------
+Tranquilidad
+-------------------- */
+@media only screen and (max-width: 798px) and (min-width: 1px){
+
+    /* --------------------
+    Tranquilidad
+    -------------------- */
+
+    .container-tranquilidad{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .tranquilidad{
+        width: 100%;
+        padding: 5rem 0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .tranquilidad .texto{
+        width: 80%;
+        margin: auto;
+        padding-top: 3rem;
+    }
+
+    .tranquilidad .texto .slider{
+        margin: auto;
+    }
+    
+    .tranquilidad .texto .slider .option{
+        margin: 0 1.5rem 3rem 1.5rem;
+    }
+    
+    .tranquilidad .texto h2{
+        text-align: center;
+        margin: 3rem auto;
+    }
+    
+    .tranquilidad .texto h4{
+        text-align: center;
+    }
+    
+    .tranquilidad .texto #description{
+        text-align: center;
+        max-width: 60ch;
+        margin: 0 auto 3rem auto;
+    }
+    
+    .tranquilidad .image-container {
+        width: 100% !important;
+        min-width: 10rem !important;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .tranquilidad #illustration {
+        width: 100% !important;
+        min-width: none !important;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 5rem;
+    }
+}
+
+/* --------------------
+Simulador
+-------------------- */
+@media only screen and (max-width: 899px) and (min-width: 1px){
+    
+    /* --------------------
+    Simulador
+    -------------------- */
+    .container-simulador .simulador{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container-simulador .simulador .cajaUno{
+        width: 100% !important;
+        height: 30rem;
+        padding: 5rem 0;
+    }
+    
+    .container-simulador .simulador .cajaUno h2{
+        width: 100% !important;
+        text-align: center;
+        margin: 0 auto .5rem auto;
+        padding: 0;
+    }
+    
+    .container-simulador .simulador .cajaUno .subtitulo{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .container-simulador .simulador .cajaUno p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-simulador .simulador .cajaDos{
+        width: 100% !important;
+        height: 30rem;
+        padding: 5rem 5%;
+    }
+    
+    .container-simulador .simulador .cajaDos p{
+        text-align: center;
+    }
+    
+    .container-simulador .simulador .cajaDos .boton{
+        text-align: center;
+    }
+}
+
+/* --------------------
+Tranquilidad
+-------------------- */
+@media only screen and (max-width: 1199px) and (min-width: 799px){
+
+    /* --------------------
+    Tranquilidad
+    -------------------- */
+    
+    .tranquilidad{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 10rem 0 5rem 5%;
+    }
+
+    .tranquilidad .texto{
+        width: 40%;
+        padding: 0;
+    }
+
+    .tranquilidad .image-container {
+        width: 60% !important;
+        min-width: 10rem !important;
+    }
+    
+    .tranquilidad .image-container img{
+        width: 100%;
+    }
+}
+
+/* --------------------
+Tablet
+-------------------- */
+@media only screen and (max-width: 1199px) and (min-width: 1px){
+
+    /* --------------------
+    Header
+    -------------------- */
+
+    .contenedor-header{
+        box-shadow: var(--boxShadow);
+        z-index: 9999;
+    }
+
+
+    /* --------------------
+    Bullets
+    -------------------- */
+
+    .container-bullets{
+        margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 11;
+    }
+
+    .container-bullets .bullets{
+        width: 100%;
+        border-radius: 0;
+        padding: 5rem 5%;
+    }
+
+    /* --------------------
+    Configuramos
+    -------------------- */
+
+    .container-configuramos{
+        margin-top: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 10;
+    }
+
+    /* --------------------
+    App
+    -------------------- */
+
+    .container-app{
+        margin-top: 0 !important;
+        box-shadow: var(--boxShadowTab);
+        z-index: 9;
+    }
+
+    /* --------------------
+    Silumador
+    -------------------- */
+
+    .container-simulador{
+        margin-top: 0 !important;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: var(--boxShadowTab);
+        z-index: 8;
+    }
+    
+    .container-simulador .simulador{
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+    
+    .container-simulador .simulador .cajaUno{
+        width: 40%;
+        border-radius: 0;
+    }
+    
+    .container-simulador .simulador .cajaDos{
+        border-radius: 0;
+    }
+}
+
+/* --------------------
+Mobile
+-------------------- */
+@media only screen and (max-width: 640px){
+
+    /* --------------------
+    Bullets
+    -------------------- */
+
+    .container-bullets{
+        margin-top: 0;
+    }
+
+    .container-bullets .bullets{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 0;
+        padding: 5rem 5%;
+        background-color: var(--blanco);
+    }
+
+    .container-bullets .bullets .caja{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .bullets .linea{
+        display: flex;
+        width: .15rem;
+        height: 6rem;
+        border-radius: 50rem;
+        background-color: var(--primero);
+    }
+    
+    /* --------------------
+    Configuramos
+    -------------------- */
+
+
+    .container-configuramos{
+        margin-top: 0;
+    }
+
+    .configuramos{
+        padding-bottom: 0 !important;
+    }
+    
+    .configuramos .carteras{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .configuramos .carteras img{
+        width: 85%;
+        max-width: 30rem;
+        margin: 0 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .configuramos .boton{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    /* --------------------
+    Silumador
+    -------------------- */
+
+    .container-simulador{
+        margin-top: 0;
+        border-radius: 0;
+    }
+    
+    .container-simulador .simulador{
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+    
+    .container-simulador .simulador .cajaUno{
+        width: 40%;
+        border-radius: 0;
+    }
+    
+    .container-simulador .simulador .cajaDos{
+        border-radius: 0;
+    }
+
+}

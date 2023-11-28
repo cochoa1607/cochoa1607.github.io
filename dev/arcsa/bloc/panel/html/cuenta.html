@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/c8bc1dc011.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/cuenta.css">
+
+    <title>Estado de Cuenta</title>
+
+</head>
+
+<body>
+
+    <div class="bars__menu">
+        <span class="line1__bars-menu"></span>
+        <span class="line2__bars-menu"></span>
+        <span class="line3__bars-menu"></span>
+    </div>
+
+    <div class="botonUp">
+        <a href="#">
+            <svg class="botonUpS" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 23.2 20.5" style="enable-background:new 0 0 23.2 20.5;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <line class="st0" x1="2.6" y1="11.3" x2="11.6" y2="2.3"/>
+                        </g>
+                        <g>
+                            <line class="st0" x1="20.6" y1="11.3" x2="11.6" y2="2.3"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <line class="st0" x1="2.6" y1="21.3" x2="11.6" y2="12.3"/>
+                        </g>
+                        <g>
+                            <line class="st0" x1="20.6" y1="21.3" x2="11.6" y2="12.3"/>
+                        </g>
+                    </g>
+            </svg>
+        </a>
+    </div>
+
+    <header class="headerMenu">
+        <nav class="containerMenu">
+            <div class="logoBloc">
+                <a href="./index.html" class="shadow">
+                    <svg version="1.1" id="logoBlanco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 47 54.7" style="enable-background:new 0 0 47 54.7;" xml:space="preserve">
+                        <path id="Trazado_6" class="st0" d="M43.5,3.2c-13-4.2-27-4.2-40,0C1.3,3.8-0.1,5.9,0,8.2c0,0.5,0.1,0.9,0.1,1.4
+                            C0.6,7.9,1.8,6.5,3.5,6c13-4.2,27-4.2,40,0c1.7,0.5,2.9,1.9,3.3,3.6c0-0.5,0.1-0.9,0.1-1.4C47.1,5.9,45.7,3.8,43.5,3.2z"/>
+                        <path id="Trazado_7" class="st0" d="M43.5,8.2c-13-4.2-27-4.2-40,0c-2.2,0.7-3.6,2.8-3.5,5c0.4,5.1,1.4,10,3.2,14.8
+                            c7.9-7.2,19.2-12.2,32.1-13.2c3.8-0.3,7.7-0.3,11.6,0.1c0.1-0.6,0.1-1.1,0.1-1.7C47.1,10.9,45.7,8.8,43.5,8.2z"/>
+                        <path id="Trazado_8" class="st0" d="M33.9,16.4C21.8,17.8,11.2,22.9,4,30c0.3,0.9,0.7,1.7,1.1,2.5c7.2-7.2,17.9-12.4,30.2-13.8
+                            c3.7-0.4,7.4-0.5,11.1-0.2c0.1-0.7,0.2-1.4,0.3-2.1C42.4,15.9,38.2,15.9,33.9,16.4z"/>
+                        <path id="Trazado_9" class="st0" d="M45.8,21.4C41.8,38,31.3,49.2,26.1,53.8c-0.7,0.5-1.5,0.8-2.3,0.9c-1,0.1-1.9-0.2-2.7-0.7
+                            c-2-1.4-7-6.7-10.9-12.4C18.4,29.8,31.6,23.2,45.8,21.4z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="shadow menuMob">
+                <ul>
+                    <li><a href="../index.html">Reporte Bloc</a></li>
+                    <li><a href="./monitoreo.html">Monitoreo</a></li>
+                    <li><a href="./historial.html">Historial</a></li>
+                    <li><a href="" id="selected">Estado de cuenta</a></li>
+                    <li><a href="./comprar.html">Comprar</a></li>
+                    <li><a href="./facturacion.html">Facturación</a></li>
+                </ul>
+            </div>
+            <div class="menuRedes menuMob">
+                <ul>
+                    <li><a href="./userAccount.html" class="menuIcon"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="" class="menuIcon"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-all">
+
+        <aside>
+            <div class="barra">
+
+                <div class="top">
+                    <div class="flecha"></div>
+                    <h3>Barra de herramientas</h3>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <div class="container">
+                    <div class="title">
+                        <div class="name">
+                            <i class="fa-solid fa-coins"></i>
+                            <h3>Saldo disponible</h3>
+                            <button id="btn-abrir-modal">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <div class="bars">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>Consultas</h4>
+                        <div class="grafica">
+                            <div>
+                                
+                            </div>
+                            <span>10/10/2022</span>
+                        </div>
+                        <div>
+                            <button class="boton">Agregar saldo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <dialog id="modal">
+                    <span>Modal Prueba</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolore, mollitia asperiores, quasi alias deserunt odit distinctio quo, tempora minima dolores veritatis? Nobis optio dolorum nesciunt eum quis maiores rem.
+                    Beatae quisquam optio vitae error est repudiandae dolores aspernatur reiciendis reprehenderit ut dolore eveniet mollitia, non nihil exercitationem esse quia libero. Culpa voluptatem non deserunt voluptatibus eius id porro odio.</p>
+                    <button id="btn-cerrar-modal">Cerrar</button>
+                </dialog>
+
+                <div class="container">
+                    <div class="title">
+                        <div class="name">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <h3>Estadística compras/consultas</h3>
+                            <button id="btn-abrir-modal">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <div class="bars">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>periodo: <span>2023</span></h4>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="title">
+                        <div class="name">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <h3>Estadística compras/mes</h3>
+                            <button id="btn-abrir-modal">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <div class="bars">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>Número de compras al mes</h4>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="title disabled">
+                        <div class="name">
+                            <i class="fa-solid fa-eye"></i>
+                            <h3>Mis monitoreos</h3>
+                            <button id="btn-abrir-modal">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <div class="bars">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+        
+        <section class="sectionContainer">
+            
+            <div class="titleSection">
+                <h2>
+                    Estado de cuenta
+                </h2>
+            </div>
+
+            <div class="container">
+                
+                <div class="title">
+                    <span class="title-text">Filtros</span>
+
+                    <form action="#" method="post">
+                        
+                        <div class="form-line padd">
+
+                            <fieldset class="checkMulti">
+                                <legend>Año:</legend>
+                                <div class="multiSelect">
+                                    <div class="selectBox" onclick="showCheckBoxesYear()">
+                                      <select>
+                                        <option>-- Selecciona una opción --</option>
+                                      </select>
+                                      <div class="overSelect"></div>
+                                    </div>
+                                    <div id="checkBoxesYear">
+                                      <label for="yuno">
+                                        <input type="checkbox" id="uno" />2018</label>
+                                      <label for="ydos">
+                                        <input type="checkbox" id="dos" />2019</label>
+                                      <label for="ytres">
+                                        <input type="checkbox" id="tres" />2020</label>
+                                      <label for="ycuatro">
+                                        <input type="checkbox" id="cuatro" />2021</label>
+                                      <label for="ycinco">
+                                        <input type="checkbox" id="cinco" />2022</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            
+                            
+                            <div class="field-vacio"></div>
+                            <div class="field-vacio"></div>
+                            <div class="field-vacio"></div>
+    
+                        </div>
+
+                        <div class="form-line">
+
+                            <fieldset class="checkMulti">
+                                <legend>Mes:</legend>
+                                <div class="multiSelect">
+                                    <div class="selectBox" onclick="showCheckBoxes()">
+                                      <select>
+                                        <option>-- Selecciona una o más opciónes --</option>
+                                      </select>
+                                      <div class="overSelect"></div>
+                                    </div>
+                                    <div id="checkBoxes">
+                                      <label for="uno">
+                                        <input type="checkbox" id="ene" />Ene</label>
+                                      <label for="dos">
+                                        <input type="checkbox" id="feb" />Feb</label>
+                                      <label for="tres">
+                                        <input type="checkbox" id="mar" />Mar</label>
+                                      <label for="cuatro">
+                                        <input type="checkbox" id="abr" />Abr</label>
+                                      <label for="cinco">
+                                        <input type="checkbox" id="may" />May</label>
+                                      <label for="seis">
+                                        <input type="checkbox" id="jun" />Jun</label>
+                                      <label for="siete">
+                                        <input type="checkbox" id="jul" />Jul</label>
+                                      <label for="ocho">
+                                        <input type="checkbox" id="ago" />Ago</label>
+                                      <label for="nueve">
+                                        <input type="checkbox" id="sep" />Sep</label>
+                                      <label for="diez">
+                                        <input type="checkbox" id="oct" />Oct</label>
+                                      <label for="once">
+                                        <input type="checkbox" id="nov" />Nov</label>
+                                      <label for="doce">
+                                        <input type="checkbox" id="dic" />Dic</label>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                            
+                            
+                            <div class="field-vacio"></div>
+                            <div class="field-vacio"></div>
+                            <div class="field-vacio"></div>
+    
+                        <div class="form-line">
+                            <button class="boton" type="submit">Buscar</button>
+                        </div>
+                    
+                    </form>
+
+                </div>
+
+                <div class="downlEstCta">
+                    <span class="text">Estado de cuenta</span>
+                    <span class="meses">Abril</span>
+                    <span class="downl"><a download="" href="../pdf/manualDeUsosBloc.pdf">Descargar</a></span>
+                </div>
+
+                </div>
+
+                <!-- Tabla -->
+
+                <div class="tabla">
+                    <div class="titleTabla">
+                        <span class="title-text">Búsquedas</span>
+                        <div class="pager">
+                            <span class="texto">Mostrar</span>
+                            <div class="pages">
+                                <span>5</span>
+                            </div>
+                            <span class="texto">resultados por hoja</span>
+                        </div>
+                        
+                    </div>
+
+                    <table>
+                        <tr class="encabezados">
+                            <th class="radIzq" colspan="2">Búsquedas</th>
+                            <th>Usuario</th>
+                            <th class="radDer">Fecha de consulta</th>
+                        </tr>
+
+                        <tr class="uno">
+                            <td>5</td>
+                            <td>Luis Fernando González</td>
+                            <td>Carlos Daniel Ochoa</td>
+                            <td>03/04/2023</td>
+                        </tr>
+
+                        <tr class="dos">
+                            <td>5</td>
+                            <td>Alejando Medina</td>
+                            <td>Carlos Daniel Ochoa</td>
+                            <td>03/04/2023</td>
+                        </tr> 
+
+                        <tr class="uno">
+                            <td>5</td>
+                            <td>Regina Sánchez</td>
+                            <td>Carlos Daniel Ochoa</td>
+                            <td>03/04/2023</td>
+                        </tr>
+
+                        <tr class="dos">
+                            <td>5</td>
+                            <td>Pedro Rodriguez</td>
+                            <td>Carlos Daniel Ochoa</td>
+                            <td>03/04/2023</td>
+                        </tr>
+
+                    </table>
+
+                    <div class="pagerDown">
+                        <div class="next"><i class="fa-solid fa-angle-left"></i></div>
+                        <span class="Nprev">1</span>
+                        <span class="de">de</span>
+                        <span class="Nnext">3</span>
+                        <div class="prev"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+
+                </div>
+                
+                <!-- Tabla Dos -->
+
+                <div class="tabla marg">
+                    <div class="titleTabla">
+                        <span class="title-text">Monitoreos</span>
+                        <div class="pager">
+                            <span class="texto">Mostrar</span>
+                            <div class="pages">
+                                <span>5</span>
+                            </div>
+                            <span class="texto">resultados por hoja</span>
+                        </div>
+                        
+                    </div>
+
+                    <table>
+                        <tr class="encabezados">
+                            <th class="radIzq" colspan="2">Monitoreo</th>
+                            <th>Usuario</th>
+                            <th>Fecha de inicio</th>
+                            <th>Fecha de caducidad</th>
+                            <th class="radDer">Renovación</th>
+                        </tr>
+
+                        <tr class="uno">
+                            <td>1</td>
+                            <td>Luis Fernando González</td>
+                            <td>Carlos Daniel Ochoa</td>
+                            <td>03/04/2022</td>
+                            <td>03/04/2023</td>
+                            <td>
+                                <div class="btnRen">
+                                    <a href=""><span class="icon"></span>&nbsp;Solicitar renovación</a>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr class="dos">
+                            <td>1</td>
+                            <td>Alejando Medina</td>
+                            <td>Carlos Daniel Ochoa</td>
+                            <td>13/03/2022</td>
+                            <td>13/03/2023</td>
+                            <td>
+                                <div class="btnRen">
+                                    <a href=""><span class="icon"></span>&nbsp;Solicitar renovación</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <div class="pagerDown">
+                        <div class="next"><i class="fa-solid fa-angle-left"></i></div>
+                        <span class="Nprev">1</span>
+                        <span class="de">de</span>
+                        <span class="Nnext">3</span>
+                        <div class="prev"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+
+                </div>
+                
+                <!-- Tabla Tres -->
+
+                <div class="tabla marg tres">
+                    <div class="titleTabla">
+                        <div class="titleCad">
+                            <span class="title-text">Compras y caducidad</span>
+                            <span class="title-text-info"> 50 consultas vigentes</span>
+                            <span class="title-text-info"> 10 monitoreos vigentes</span>
+                        </div>
+                        <div class="pager">
+                            <span class="texto">Mostrar</span>
+                            <div class="pages">
+                                <span>5</span>
+                            </div>
+                            <span class="texto">resultados por hoja</span>
+                        </div>
+                        
+                    </div>
+
+                    <table>
+                        <tr class="encabezados" id="compras">
+                            <th class="radIzq" colspan="2">Monitoreo</th>
+                            <th>Usuario</th>
+                            <th>Fecha de inicio</th>
+                            <th>Fecha de caducidad</th>
+                            <th class="radDer">Renovación</th>
+                        </tr>
+
+                        <tr class="uno">
+                            <td>1</td>
+                            <td>Luis Fernando González</td>
+                            <td>Carlos Daniel Ochoa</td>
+                            <td>03/04/2022</td>
+                            <td>03/04/2023</td>
+                            <td>
+                                <div class="btnRen">
+                                    <a href=""><span class="icon"></span>&nbsp;Solicitar renovación</a>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr class="dos">
+                            <td>1</td>
+                            <td>Alejando Medina</td>
+                            <td>Carlos Daniel Ochoa</td>
+                            <td>13/03/2022</td>
+                            <td>13/03/2023</td>
+                            <td>
+                                <div class="btnSol">
+                                    <a href=""><span class="icon"></span>&nbsp;Solicitud enviada</a>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr class="uno">
+                            <td>1</td>
+                            <td>Luis Fernando González</td>
+                            <td>Carlos Daniel Ochoa</td>
+                            <td>03/04/2022</td>
+                            <td>03/04/2023</td>
+                            <td>
+                                <div class="btnApr">
+                                    <a href=""><span class="icon"></span>&nbsp;Aprobado</a>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr class="dos">
+                            <td>1</td>
+                            <td>Alejando Medina</td>
+                            <td>Carlos Daniel Ochoa</td>
+                            <td>13/03/2022</td>
+                            <td>13/03/2023</td>
+                            <td>
+                                <div class="btnDen">
+                                    <a href=""><span class="icon"></span>&nbsp;Denegado</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <div class="pagerDown">
+                        <div class="next"><i class="fa-solid fa-angle-left"></i></div>
+                        <span class="Nprev">1</span>
+                        <span class="de">de</span>
+                        <span class="Nnext">3</span>
+                        <div class="prev"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="../js/menuTabMob.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/pop.js"></script> 
+    <script src="../js/barraHerramientas.js"></script>
+    <script src="../js/checkMultiple.js"></script>
+
+</body>
+</html>

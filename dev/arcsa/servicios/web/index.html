@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/c8bc1dc011.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+
+    <title>Inicio</title>
+
+</head>
+
+<body>
+
+    <div class="bars__menu">
+        <span class="line1__bars-menu"></span>
+        <span class="line2__bars-menu"></span>
+        <span class="line3__bars-menu"></span>
+    </div>
+
+    <div class="botonUp">
+        <a href="#">
+            <svg class="botonUpS" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 23.2 20.5" style="enable-background:new 0 0 23.2 20.5;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <line class="st0" x1="2.6" y1="11.3" x2="11.6" y2="2.3"/>
+                        </g>
+                        <g>
+                            <line class="st0" x1="20.6" y1="11.3" x2="11.6" y2="2.3"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <line class="st0" x1="2.6" y1="21.3" x2="11.6" y2="12.3"/>
+                        </g>
+                        <g>
+                            <line class="st0" x1="20.6" y1="21.3" x2="11.6" y2="12.3"/>
+                        </g>
+                    </g>
+            </svg>
+        </a>
+    </div>
+
+    <header class="headerInicio headerMenu">
+        <nav class="containerMenu">
+            <div class="cont-logo">
+                <a href="./index.html" class="shadow">
+                    <div class="logo"></div>
+                </a>
+            </div>
+            <div class="shadow menuMob">
+                <ul>
+                    <li><a href="./index.html" id="selected">Inicio</a></li>
+                    <li><a href="./html/soluciones.html">Soluciones</a></li>
+                    <li><a href="./html/nosotros.html">Nosotros</a></li>
+                    <li><a href="./html/contacto.html">Contacto</a></li>
+                    <li class="arcsanet"><a class="arcsanetA" href="#">ARCSANET</a></li>
+                </ul>
+            </div>
+            <div class="menuRedes menuMob">
+                <ul>
+                    <li><a href="https://wa.me/525514775659" class="menuIcon" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <!-- <li><a href="" class="menuIcon"><i class="fa-solid fa-user"></i></a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section class="seccionBanner">
+        <div class="contenedor contenedorBanner">
+            <div class="texto">
+                <div class="cont-titulo">
+                    <h1 class="fixed-text">¿Ya conoces tu&nbsp;</h1>
+                    <h1 class="changing-text"></h1>
+                </div>
+                <h3>Conoce tu capacidad crediticia y aplica con más proveedores a crédito</h3>
+                <!-- <p>Te ayudamos a conseguir más lineas de crédito comerciales en menor tiempo.  <span>confiables</span> y <span>duraderas.</span></p> -->
+                <!-- <p>Descubre tu capacidad crediticia comercial, como puedes fortalecerte para ser aspirante a crédito y agilizar los tiempos de respuesta, creando relaciones comerciales <span>confiables</span> y <span>duraderas.</span></p> -->
+                <div class="boton cta btnanim">
+                    <a href="#consulta">Consultar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccionConsulta animUp" id="consulta">
+        <div class="contenedor contenedorConsulta">
+
+            <h2 class="">Consigue más clientes comerciales</h2>
+            <h3 class="">
+                Te ayudamos a conseguir más clientes comerciales en menos tiempo con este reporte.
+                <br>
+                Conoce tu capacidad crediticia y certifica a tu empresa.
+            </h3>
+
+            <div class="contenedorForm">
+
+                <form action="" autocomplete="on" target="none">
+
+                    <div class="campos-in">
+
+                        <div class="contenedor-campos">
+                            <p>Datos para autoevaluación</p>
+                            <div class="campos">
+                                <label for="razonSocial">
+                                    <span>Nombre de empresa:</span>
+                                    <input type="text" placeholder="Sin denominaciones" required>
+                                </label>
+    
+                                <label for="denominacion">
+                                    <span>Tipo de sociedad:</span>
+                                    <input list="denominacion" placeholder="Elige una denominación..." required>
+                                    <datalist id="denominacion">
+                                        <option value="Op1"></option>
+                                    </datalist>
+                                </label>
+                                
+                                <label for="uso">
+                                    <span>Tipo de Uso:</span>
+                                    <input list="uso" placeholder="Elige un tipo de uso..." required>
+                                    <datalist id="uso">
+                                        <option value="Revisar áreas de oportunidad"></option>
+                                        <option value="Aplicación de crédito con proveedor"></option>
+                                        <option value="Conocer opinión de mis proveedores"></option>
+                                        <option value="Conocer opinión de mis clientes"></option>
+                                        <option value="Proceso de Licitación"></option>
+                                    </datalist>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="linea"></div>
+                        <div class="contenedor-campos">
+                            <p>Quiero recibirlo en:</p>
+                            <div class="campos">
+                                <label for="correo">
+                                    <span>Correo Electrónico:</span>
+                                    <input type="email" name="correo" id="correo" autocomplete="email" placeholder="ejemplo@correo.com" required>
+                                </label>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="contenedor-boton">
+                            <div class="boton secondary">
+                                <a href="./html/compraReporte.html">Consultar</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" id="cbox" value="subscribe" />
+                        <label for="cbox">Acepto recibir por email información de Arcsa Servicios</label>
+                    </div>
+                    
+                    <div class="check">
+                        <p>*Al hacer clic en el botón de búsqueda usted acepta los <a href="">Términos y condiciones</a> y el <a href="">Aviso de Privacidad</a> de Arcsa Servicios.</p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="background">
+        <div class="bg bg_02"></div>
+    </div>
+
+<!-- 
+    <main class="seccionSoluciones animUp">
+        <div class="contenedor contenedorSoluciones">
+            <div class="solucionesTitle">
+                <h2>Soluciones más relevantes</h2>
+                <p>Vender tus productos o servicios a crédito, con seguridad y en cualquier parte del mundo reduciendo el riego de impago gracias a nuestras soluciones.</p>
+            </div>
+            <div class="contenedorSolucionesDos">
+                <div class="recuadro shadowBox">
+                    <div class="recuadroInline">
+                        <h4>Recuperación de Cartera Extrajudicial</h4>
+                    </div>
+                    <div>
+                        <p>
+                            ¿Cuánto más seguirás esperando a que te paguen?
+                            <br>
+                            Recupera tus cuentas vencidas y comienza a ver resultados en los primeros 15 días.
+                        </p>
+                        <span>Consulta términos y condiciones.</span>
+                    </div>
+                    <div class="btnPrim primary">
+                        <a href="./html/soluciones.html#recuperacion">ir</a>
+                    </div>
+                </div>
+                <div class="recuadro shadowBox">
+                    <div class="recuadroInline">
+                        <h4>Reporte Comercial +Protección</h4>
+                    </div>
+                    <div>
+                        <p>
+                            Investigamos a tu futuro cliente Comercial
+                            <br>
+                            Analizamos y calificamos su capacidad de pago para que establezcas relaciones comerciales más seguras y duraderas.
+                        </p>
+                        <span>Consulta términos y condiciones.</span>
+                    </div>
+                    <div class="btnPrim primary">
+                        <a href="./html/soluciones.html#reportes">ir</a>
+                    </div>
+                </div>
+                <div class="recuadro shadowBox">
+                    <div class="recuadroInline">
+                        <h4>Reporte de antecedentes legales</h4>
+                    </div>
+                    <div>
+                        <p>
+                            Descarga el historial de antecedentes legales de cualquier persona o empresa en los 32 estados de la república mexicana.
+                        </p>
+                        <span>Consulta términos y condiciones en <a href="https://www.bloc.com.mx/" target="_blank">www.bloc.com.mx</a></span>
+                    </div>
+                    <div class="btnPrim primary">
+                        <a href="#">ir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+ -->
+
+    <section class="seccionBullets animUp">
+
+        <div class="contenedor contenedorBullets">
+            <div class="bullet">
+                <h5>Descubre fraudes anticipados</h5>
+                <div class="icono icono-01"></div>
+            </div>
+
+            <div class="linea"></div>
+
+            <div class="bullet">
+                <h5>Monitorea la conducta de tus clientes</h5>
+                <div class="icono icono-02"></div>
+            </div>
+
+            <div class="linea"></div>
+
+            <div class="bullet">
+                <h5>Establece líneas de crédito adecuadas</h5>
+                <div class="icono icono-03"></div>
+            </div>
+
+            <div class="linea"></div>
+
+            <div class="bullet">
+                <h5>Relaciones Comerciales Seguras y Duraderas</h5>
+                <div class="icono icono-04"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="seccionNosotros animUp">
+
+        <div class="contenedor contenedorNosotros">
+
+            <div class="imagenNosotros">
+            </div>
+
+            <div class="texto">
+                <h2>Nosotros</h2>
+                <ul>
+                    <li>Somos una empresa con 26 años de experiencia, formada por con la visión de ayudar a las compañías a minimizar sus riesgos crediticios.</li>
+                    <li>Somos una de las calificadoras con mayor reconocimiento en México y Latinoamérica.</li>
+                    <li>Buscamos evaluar e incrementar la seguridad en las operaciones de crédito de forma rápida y eficiente con soluciones enfocadas en tus necesidades.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="background">
+        <div class="bg bg_03"></div>
+    </div>
+
+    <section class="seccionADN animUp">
+
+        <div class="contenedor contenedorADN">
+
+            <div class="texto">
+                <h2>En nuestro ADN</h2>
+                <p>
+                    está el compromiso, la honestidad y la búsqueda constante de soluciones que aporten valor a nuestros clientes.
+                </p>
+                <h2 class="tituloDos">Prevenir antes que lamentar</h2>
+                <p>
+                    Si tienes alguna duda comunícate con nuestro equipo de Asesores y Atención a Clientes, quienes con gusto te apoyarán.
+                </p>
+
+                <div class="boton secondary">
+                    <a href="#">Contactar</a>
+                </div>
+
+            </div>
+            
+            <div class="imagenADN">
+                <div class="img-adn"></div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="containerFooter">
+            <div class="footerCaja footerLogo">
+                <picture>
+                    <img src="./img/logoAS_Blanco.png" alt="Logo BLOC (Buró de Antecedentes Legales)">
+                </picture>
+                <div class="footerLineaDos"></div>
+            </div>
+            <div class="footerCaja">
+                <span class="titulo-caja">Contacto</span>
+                <ul>
+                    <li>
+                        <a href="mailto:" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                            mail
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:52 55 5278 6230" target="_blank">
+                            <i class="fa-solid fa-phone"></i>
+                            +52 55 5278 6230
+                        </a>
+                    </li>
+                    <span class="titulo-mex">México</span>
+                    <li>
+                        <a href="https://goo.gl/maps/j9Yw2djnQCa5KV4K8" target="_blank">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Patricio Sanz 1609, Col del Valle Sur, Benito Juárez, 03100 Ciudad de México, México.
+                        </a>
+                    </li>
+                </ul>
+                <div class="footerLineaDos"></div>
+            </div>
+            
+            <div class="footerCaja">
+                <span class="titulo-caja">Otros productos</span>
+                <ul>
+                    <li>
+                        <a href="https://www.arcsa.com.mx/" target="_blank">
+                            Bloc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.arcsacapital.com/es-MX/Index" target="_blank">
+                            Arcsa Capital
+                        </a>
+                    </li>
+                </ul>
+                <div class="footerLinea"></div>
+                <div class="footerLineaDos"></div>
+                <span class="titulo-caja">Consulta</span>
+                <ul>
+                    <li>
+                        <a href="./html/faqs.html" target="_self">
+                            FAQ´s
+                        </a>
+                    </li>
+                </ul>
+                <div class="footerLineaDos"></div>
+            </div>
+            
+            <div class="footerCaja">
+                <span class="titulo-caja">Legales</span>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Política de Privacidad
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Términos y Condiciones
+                        </a>
+                    </li>
+                </ul>
+                <div class="footerLineaDos"></div>
+                <div class="footerLinea"></div>
+                <ul class="footerRedes">
+                    <li><a href="https://www.facebook.com/people/BLOC/100076426675042/" target="_self"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.facebook.com/people/BLOC/100076426675042/" target="_self"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/blocmx/" target="_self"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCKNpGarjGnbMK0PlxOmRyQw" target="_self"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./js/inicioScroll.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/menuTabMob.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

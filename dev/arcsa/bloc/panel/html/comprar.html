@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/c8bc1dc011.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/comprar.css">
+
+    <title>Comprar</title>
+
+</head>
+
+<body>
+
+    <div class="bars__menu">
+        <span class="line1__bars-menu"></span>
+        <span class="line2__bars-menu"></span>
+        <span class="line3__bars-menu"></span>
+    </div>
+
+    <div class="botonUp">
+        <a href="#">
+            <svg class="botonUpS" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 23.2 20.5" style="enable-background:new 0 0 23.2 20.5;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <line class="st0" x1="2.6" y1="11.3" x2="11.6" y2="2.3"/>
+                        </g>
+                        <g>
+                            <line class="st0" x1="20.6" y1="11.3" x2="11.6" y2="2.3"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <line class="st0" x1="2.6" y1="21.3" x2="11.6" y2="12.3"/>
+                        </g>
+                        <g>
+                            <line class="st0" x1="20.6" y1="21.3" x2="11.6" y2="12.3"/>
+                        </g>
+                    </g>
+            </svg>
+        </a>
+    </div>
+
+    <header class="headerMenu">
+        <nav class="containerMenu">
+            <div class="logoBloc">
+                <a href="./index.html" class="shadow">
+                    <svg version="1.1" id="logoBlanco" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 47 54.7" style="enable-background:new 0 0 47 54.7;" xml:space="preserve">
+                        <path id="Trazado_6" class="st0" d="M43.5,3.2c-13-4.2-27-4.2-40,0C1.3,3.8-0.1,5.9,0,8.2c0,0.5,0.1,0.9,0.1,1.4
+                            C0.6,7.9,1.8,6.5,3.5,6c13-4.2,27-4.2,40,0c1.7,0.5,2.9,1.9,3.3,3.6c0-0.5,0.1-0.9,0.1-1.4C47.1,5.9,45.7,3.8,43.5,3.2z"/>
+                        <path id="Trazado_7" class="st0" d="M43.5,8.2c-13-4.2-27-4.2-40,0c-2.2,0.7-3.6,2.8-3.5,5c0.4,5.1,1.4,10,3.2,14.8
+                            c7.9-7.2,19.2-12.2,32.1-13.2c3.8-0.3,7.7-0.3,11.6,0.1c0.1-0.6,0.1-1.1,0.1-1.7C47.1,10.9,45.7,8.8,43.5,8.2z"/>
+                        <path id="Trazado_8" class="st0" d="M33.9,16.4C21.8,17.8,11.2,22.9,4,30c0.3,0.9,0.7,1.7,1.1,2.5c7.2-7.2,17.9-12.4,30.2-13.8
+                            c3.7-0.4,7.4-0.5,11.1-0.2c0.1-0.7,0.2-1.4,0.3-2.1C42.4,15.9,38.2,15.9,33.9,16.4z"/>
+                        <path id="Trazado_9" class="st0" d="M45.8,21.4C41.8,38,31.3,49.2,26.1,53.8c-0.7,0.5-1.5,0.8-2.3,0.9c-1,0.1-1.9-0.2-2.7-0.7
+                            c-2-1.4-7-6.7-10.9-12.4C18.4,29.8,31.6,23.2,45.8,21.4z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="shadow menuMob">
+                <ul>
+                    <li><a href="../index.html">Reporte Bloc</a></li>
+                    <li><a href="./monitoreo.html">Monitoreo</a></li>
+                    <li><a href="./historial.html">Historial</a></li>
+                    <li><a href="./cuenta.html">Estado de cuenta</a></li>
+                    <li><a href="" id="selected">Comprar</a></li>
+                    <li><a href="./facturacion.html">Facturación</a></li>
+                </ul>
+            </div>
+            <div class="menuRedes menuMob">
+                <ul>
+                    <li><a href="./userAccount.html" class="menuIcon"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="" class="menuIcon"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-all">
+
+        <aside>
+            <div class="barra">
+
+                <div class="top">
+                    <div class="flecha"></div>
+                    <h3>Barra de herramientas</h3>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <div class="container">
+                    <div class="title">
+                        <div class="name">
+                            <i class="fa-solid fa-coins"></i>
+                            <h3>Saldo disponible</h3>
+                            <button id="btn-abrir-modal">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <div class="bars">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>Consultas</h4>
+                        <div class="grafica">
+                            <div>
+                                
+                            </div>
+                            <span>10/10/2022</span>
+                        </div>
+                        <div>
+                            <button class="boton">Agregar saldo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <dialog id="modal">
+                    <span>Modal Prueba</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolore, mollitia asperiores, quasi alias deserunt odit distinctio quo, tempora minima dolores veritatis? Nobis optio dolorum nesciunt eum quis maiores rem.
+                    Beatae quisquam optio vitae error est repudiandae dolores aspernatur reiciendis reprehenderit ut dolore eveniet mollitia, non nihil exercitationem esse quia libero. Culpa voluptatem non deserunt voluptatibus eius id porro odio.</p>
+                    <button id="btn-cerrar-modal">Cerrar</button>
+                </dialog>
+
+                <div class="container">
+                    <div class="title">
+                        <div class="name">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <h3>Estadística compras/consultas</h3>
+                            <button id="btn-abrir-modal">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <div class="bars">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>periodo: <span>2023</span></h4>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="title">
+                        <div class="name">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <h3>Estadística compras/mes</h3>
+                            <button id="btn-abrir-modal">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <div class="bars">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>Número de compras al mes</h4>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="title disabled">
+                        <div class="name">
+                            <i class="fa-solid fa-eye"></i>
+                            <h3>Mis monitoreos</h3>
+                            <button id="btn-abrir-modal">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                        </div>
+                        <div class="bars">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+        
+        <section class="sectionContainer">
+            
+            <div class="titleSection">
+                <h2>
+                    Comprar
+                </h2>
+            </div>
+
+            <div class="container">
+
+                <!-- Tabla -->
+
+                <div class="tabla compraConsul">
+                    <div class="titleTabla">
+                        <span class="title-text">Consultas</span>
+                    </div>
+
+                    <table>
+                        <tr class="encabezados">
+                            <th class="radIzq">Cantidad</th>
+                            <th>Precio unitario - MXN</th>
+                            <th class="radDer">Total - MXN</th>
+                        </tr>
+
+                        <tr class="uno">
+                            <td class="cantidad">
+                                <span>1</span>
+                            </td>
+                            <td>$254.00 (IVA incluido)</td>
+                            <td class="comprar">$254.00 (IVA incluido)
+                                <div><a href="">Comprar</a></div>
+                            </td>
+                        </tr>
+
+                        <tr class="dos">
+                            <td>Básico - 200 Consultas</td>
+                            <td>$150.80 (IVA incluido)</td>
+                            <td class="comprar">$30,160.00 (IVA incluido)
+                                <div><a href="">Comprar</a></div>
+                            </td>
+                        </tr> 
+
+                        <tr class="uno">
+                            <td>Pyme - 300 Consultas</td>
+                            <td>$139.20 (IVA incluido)</td>
+                            <td class="comprar">$41,760.00 (IVA incluido)
+                                <div><a href="">Comprar</a></div>
+                            </td>
+                        </tr>
+
+                        <tr class="dos">
+                            <td>Corporativo - 500 Consultas</td>
+                            <td>$127.60 (IVA incluido)</td>
+                            <td class="comprar">$63,800.00 (IVA incluido)
+                                <div><a href="">Comprar</a></div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                
+                <!-- Tabla 2 -->
+
+                <div class="tabla compraConsul marg">
+                    <div class="titleTabla">
+                        <span class="title-text">Monitoreos</span>
+                    </div>
+
+                    <table>
+                        <tr class="encabezados">
+                            <th class="radIzq">Cantidad</th>
+                            <th>Precio unitario - MXN</th>
+                            <th class="radDer">Total - MXN</th>
+                        </tr>
+
+                        <tr class="uno">
+                            <td class="cantidad">
+                                <span>1</span>
+                            </td>
+                            <td>$200.00 (IVA incluido)</td>
+                            <td class="comprar">$63,800.00 (IVA incluido)
+                                <div><a href="">Comprar</a></div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+
+        </section>
+    
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="../js/menuTabMob.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/pop.js"></script> 
+    <script src="../js/barraHerramientas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* --------------------
+Header
+-------------------- */
+
+.contenedor-header{
+    background-image: url(../img/headerPrensa.png);
+    background-position: left top !important;
+    box-shadow: var(--boxShadow);
+}
+
+/* --------------------
+Form Prensa
+-------------------- */
+
+.container-formPrensa{
+    margin-bottom: 0;
+    position: relative;
+    z-index: 99;
+    padding-top: 10rem;
+}
+
+.formPrensa{
+    background-color: var(--fondo-azul);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
+}  
+
+.formPrensa form{
+    width: 80%;
+    max-width: 50rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.formPrensa select,
+.formPrensa .form-input {
+    width: 100%;
+    height: auto;
+    border: solid var(--primero) .1rem !important;
+    background-color: var(--blanco);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.formPrensa label {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.formPrensa .check{
+    display: flex;
+}
+
+.formPrensa .check-input{
+    margin-right: 1rem;
+}
+
+.check[type="checkbox" i]{
+    background-color: #050505 !important;
+}
+
+.formPrensa .check label{
+    font-size: 1.2rem;
+}
+
+.formPrensa .boton{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* --------------------
+Prensa
+-------------------- */
+
+.container-prensa{
+    margin-top: 0;
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.prensa{
+    background-color: var(--blanco);
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 5rem 5%;
+    box-shadow: var(--boxShadow);
+}
+
+.prensa .reconocen{
+    font-weight: 700;
+    color: var(--segundo);
+}
+
+.prensa .contenedor-cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
+}
+
+.prensa .caja{
+    width: 20rem;
+    margin: 4rem 3rem;
+    padding: 0;
+    transition: var(--transitions);
+}
+
+.prensa .caja:hover{
+    transform: scale(1.02);
+}
+
+.prensa .caja img{
+    width: 100%;
+    border-radius: 2rem;
+    transition: var(--transitions);
+    border: solid var(--blanco) .2rem;
+    padding: 1rem;
+}
+
+.prensa .caja img:hover{
+    border: solid var(--segundo) .2rem;
+}
+
+/* --------------------
+Tablet / Mobile
+-------------------- */
+
+@media only screen and (max-width: 1199px) and (min-width: 1px) {
+    
+    /* --------------------
+    Header
+    -------------------- */
+    
+    .contenedor-header{
+        box-shadow: var(--boxShadowTab);
+        z-index: 10;
+    }
+    
+    /* --------------------
+    Prensa
+    -------------------- */
+
+    .container-prensa{
+        box-shadow: var(--boxShadowTab);
+        z-index: 9;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+
+    .prensa .caja{
+        margin: 3rem 4rem;
+    }
+
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="../css/estilosPrincipal.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/estilosSecundario.css" rel="stylesheet" type="text/css"/>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    
+    <title>CHA Programas</title>
+  </head>
+
+  <body>
+    
+    <!-- Header Nav -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-azul">
+      <div class="container-fluid">
+        <a class="navbar-brand my-2" href="../index.html">
+          <img src="../img/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex justify-content-lg-end justify-content-center mb-2 mb-lg-0">
+            
+            <!-- Inicio -->
+            <li class="nav-item dropdown mx-lg-2 mx-1 my-lg-0 my-lg-1 my-0">
+              <a class="nav-link dropdown-toggle text-lg-center text-end" href="../index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Inicio
+              </a>
+              <ul class="dropdown-menu bg-azul border-0">
+                <li class="mb-5 my-lg-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="../index.html#actividades">Actividades del mes</a>
+                </li>
+
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="../index.html#programas">Programas</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="../index.html#logros">Logros</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="../index.html#colabora">Colabora con nostros</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="../index.html#eventos">Eventos</a>
+                </li>
+                <li class="mt-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="../index.html#hannah">¿Quién es Hannah Arendt?</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Nosotros -->
+            <li class="nav-item dropdown mx-lg-2 mx-1 my-lg-0 my-lg-1 my-0">
+              <a class="nav-link dropdown-toggle text-lg-center text-end" href="./nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </a>
+              <ul class="dropdown-menu bg-azul border-0">
+                <li class="mb-5 my-lg-5 mx-3">
+                  <a class="dropdown-item text-lg-center text-end" href="./nosotros.html">Centro Hannah Arendt</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-lg-center text-end" href="./nosotros.html">Lo que hacemos</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-lg-center text-end" href="./nosotros.html">Nuestros objetivos</a>
+                </li>
+                <li class="mt-5 mx-3">
+                  <a class="dropdown-item text-lg-center text-end" href="./nosotros.html">Sedes</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Programas -->
+            <li class="nav-item mx-lg-2 mx-1 my-lg-0 my-lg-1 my-0">
+              <a class="nav-link text-lg-center text-end active" aria-current="page" href="./programas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Programas
+              </a>
+              <!-- <ul class="dropdown-menu bg-azul border-0">
+                <li class="mb-5 my-lg-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./programas.html#cursos">Cursos y talleres</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./programas.html#proyectos">Proyectos comunitarios</a>
+                </li>
+                <li class="mt-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./programas.html#actividades">Actividades del mes</a>
+                </li>
+              </ul> -->
+            </li>
+
+            <!-- Logros -->
+            <li class="nav-item dropdown mx-lg-2 mx-1 my-lg-0 my-lg-1 my-0">
+              <a class="nav-link dropdown-toggle text-lg-center text-end" href="./logros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Logros
+              </a>
+              <ul class="dropdown-menu bg-azul border-0">
+                <li class="mb-5 my-lg-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./logros.html#logros">Nuestros logros</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./logros.html.html#beneficiarios">Beneficiarios</a>
+                </li>
+                <li class="mt-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./logros.html.html#informes">Informes</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Colabora -->
+            <li class="nav-item dropdown mx-lg-2 mx-1 my-lg-0 my-lg-1 my-0">
+              <a class="nav-link dropdown-toggle text-lg-center text-end" href="./colabora.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Colabora
+              </a>
+              <ul class="dropdown-menu bg-azul border-0">
+                <li class="mb-5 my-lg-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./colabora.html#talleristas">Talleristas y Profesores</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./colabora.html#voluntarios">Voluntarios</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./colabora.html#servicio">Colaboradores</a>
+                </li>
+                <li class="mt-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./colabora.html#servicio">Servicio Social</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Contacto -->
+            <li class="nav-item dropdown mx-lg-2 mx-1 my-lg-0 my-lg-1 my-0">
+              <a class="nav-link dropdown-toggle text-lg-center text-end" href="./contacto.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contacto
+              </a>
+              <ul class="dropdown-menu bg-azul border-0">
+                <li class="mb-5 my-lg-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./contacto.html#form">Déjanos tus datos</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./contacto.html.html#informacion">Información</a>
+                </li>
+                <li class="my-5 mx-3">
+                  <a class="dropdown-item text-center text-lg-start" href="./contacto.html.html#informacion">Sedes</a>
+                </li>
+                <li>
+                  <ul class="nav-redes d-flex d-lg-block list-unstyled">
+                    <li class="my-5 mx-3">
+                      <a class="dropdown-item text-center" target="_blank" href=""><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li class="my-5 mx-3">
+                      <a class="dropdown-item text-center" target="_blank" href=""><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li class="my-5 mx-3">
+                      <a class="dropdown-item text-center" target="_blank" href=""><i class="bi bi-google"></i></a>
+                    </li>
+                    <li class="mt-5 mx-3">
+                      <a class="dropdown-item text-center" target="_blank" href=""><i class="bi bi-youtube"></i></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+    </header>
+
+    <!-- Colabora -->
+    <section class="container-fluid mt-lg-5 pt-5">
+      <div class="row mt-5 pt-lg-5">
+          <div class="col-12 mt-5 pt-5">
+              <h1 class="text-center">Programas</h1>
+          </div>
+      </div>
+    </section> 
+
+    <!-- Cursos y talleres -->
+    <section class="section-container programas" id="programas">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-1 col-1"></div>
+          <div class="col-xl-5 col-10">
+            <h2 class="text-xl-start text-center">Cursos y talleres</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-lg-5 mt-3">
+        <div class="row d-flex justify-content-center">
+
+          <div class="caja-contenedor-textos col-12">
+
+            <div class="caja-texto-vertical">
+              <h3 class="texto-vertical m-0 p-0">2021 - 2025</h3>
+            </div>
+
+            <div class="caja-texto">
+              <p>Nuestra variedad de programas incluye desde habilidades tecnológicas hasta artesanía y desarrollo personal. Aprende, experimenta y crece con nuestras sesiones interactivas, diseñadas para enriquecer tus habilidades y perspectivas en un ambiente inclusivo y colaborativo.</p>
+            </div>
+
+            <div class="caja-imagen d-none d-md-flex">
+              <div class="imagen"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid col-xl-10 col-lg-11 col-12">
+        <div class="row">
+
+          <div class="container-fluid">
+            <div class="row d-flex justify-content-center mb-5 gap-5 tarjetas">
+    
+              <div class="col-sm-5 col-10">
+                <div class="card card-programas">
+                  <img src="../img/actividad1.jpg" class="card-img-top " alt="">
+                  <div class="card-body">
+                    <h4>2do. Congreso de poesía</h4>
+                    <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                  </div>
+                  <a class="boton" href="./html/linkear.html" role="button">Infórmate</a>
+                </div>
+              </div>
+    
+              <div class="col-sm-5 col-10">
+                <div class="card  card-programas">
+                  <img src="../img/actividad2.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h4>2do. Congreso de poesía</h4>
+                    <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                  </div>
+                  <a class="boton" href="./html/linkear.html" role="button">Colabora</a>
+                </div>
+              </div>
+          
+          </div>
+
+          <!-- <div class="col-12">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg d-flex justify-content-center align-items-center">
+                <li class="page-item">
+                  <a class="page-link disabled" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="./programas_p2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="./programas_p3.html">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="./programas_p2.html" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div> -->
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Proyectos comunitarios -->
+    <section class="section-container proyectos bg-gris">
+
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+
+          <div class="col-xl-1 col-0"></div>
+
+          <div class="col-xl-5 col-10 mb-5 pb-5">
+            <h2 class="text-xl-start text-center">Proyectos comunitarios</h2>
+          </div>
+
+          <div class="proyectos-primero col-10 d-flex flex-column flex-lg-row">
+
+            <div class="contenedor-imagen me-lg-5 m-auto">
+              <div class="imagen"></div>
+            </div>
+    
+            <div class="contenedor-texto ms-lg-5 m-auto">
+              <div>
+                <h3 class="text-decoration-underline text-lg-start text-center my-3 my-lg-0">2021 - 2025</h3>
+                <p class="text-lg-start text-center">Nuestros proyectos comunitarios son la esencia de nuestra misión. Colaboramos estrechamente con los miembros de la comunidad para identificar problemas apremiantes y co-crear soluciones efectivas. Desde mejorar la seguridad en las calles hasta enriquecer la calidad educativa, trabajamos con pasión y determinación para generar impacto positivo.
+                <br>
+                <br>
+                Estos proyectos no solo abordan desafíos tangibles, sino que también fortalecen el tejido social al empoderar a los residentes para que tomen un papel activo en la mejora de su entorno. Cada proyecto es una oportunidad para construir una comunidad más fuerte, más consciente y más unida, en línea con nuestra visión de un sur de la Ciudad de México próspero y resiliente.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="proyecto col-10 d-flex flex-column flex-md-row mt-5 pt-5">
+
+            <div class="contenedor-imagen m-auto me-md-5">
+              <div class="imagen img_01"></div>
+            </div>
+
+            <div class="contenedor-texto m-auto ms-md-5">
+              <h4 class="text-md-start text-center my-3 my-lg-0">Vecindario Seguro</h4>
+
+              <p class="text-md-start text-center">Nuestro proyecto "Vecindario Seguro" se enfoca en mejorar la seguridad local a través de la colaboración comunitaria. Mediante talleres de prevención del delito, participación ciudadana y desarrollo de redes de apoyo vecinal, buscamos fortalecer la sensación de seguridad y empoderar a los residentes para ser vigilantes activos en la protección de su entorno. Juntos, estamos construyendo un vecindario más seguro y unido.</p>
+            </div>
+          </div>
+          
+          <div class="proyecto col-10 d-flex mt-5">
+
+            <div class="contenedor-imagen me-5">
+              <div class="imagen img_01"></div>
+            </div>
+
+            <div class="contenedor-texto ms-5">
+              <h4>Educa para el futuro</h4>
+
+              <p>Educa para el Futuro" es un proyecto que se centra en enriquecer la calidad educativa en nuestra comunidad. A través de tutorías, talleres educativos y acceso a recursos, trabajamos para cerrar brechas educativas y empoderar a los estudiantes para que alcancen su máximo potencial. Nuestra meta es que cada joven tenga igualdad de oportunidades para un futuro exitoso.</p>
+            </div>
+          </div>
+          
+          <div class="proyecto col-10 d-flex mt-5">
+
+            <div class="contenedor-imagen me-5">
+              <div class="imagen img_01"></div>
+            </div>
+
+            <div class="contenedor-texto ms-5">
+              <h4 >Cultura en accion</h4>
+
+              <p>Cultura en Acción" es una iniciativa que celebra la diversidad cultural de nuestra comunidad y promueve la apreciación intercultural. A través de eventos culturales, exposiciones y talleres, fomentamos el entendimiento mutuo y la colaboración entre diferentes grupos. Este proyecto se basa en la creencia de que la riqueza cultural enriquece nuestra comunidad en su conjunto.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+
+          
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Eventos -->
+    <section class="section-container" id="actividades">
+      
+      <div class="container-fluid mb-0 pb-5">
+        <div class="row">
+          
+          <div class="col-lg-1 col-1"></div>
+          
+          <div class="col-lg-5 col-10">
+            <h2 class="text-lg-start text-center">Actividades del Mes</h2>
+          </div>
+
+          <div class="col-12">
+          
+            <div class="container-fluid">
+              <div class="row d-flex justify-content-center align-items-center tarjetas">
+
+                <div class="carousel carousel-dark slide col-lg-11 col-md-10 col-sm-12 col-12 mt-5 pt-0" id="carouselExampleInterval" data-bs-ride="carousel">
+
+                  <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="5000">
+
+                      <div class="card-group mx-5 py-5">
+
+                        <div class="card card-colabora mx-lg-5 ms-sm-2 me-sm-3 mb-0">
+                          <img src="../img/actividad3.png" class="card-img-top imagen-slide" alt="...">
+                          <div class="card-body">
+                            <h4>Evento 1</h4>
+                            <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                          </div>
+                          <a class="boton" href="#" role="button">Participa</a>
+                        </div>
+                        
+                        <div class="card card-colabora d-none d-sm-flex m-lg-0 ms-sm-3 me-sm-2 mb-0">
+                          <img src="../img/actividad3.png" class="card-img-top imagen-slide" alt="...">
+                          <div class="card-body">
+                            <h4>Evento 2</h4>
+                            <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                          </div>
+                          <a class="boton" href="#" role="button">Participa</a>
+                        </div>
+                        
+                        <div class="card card-colabora d-none d-lg-flex mx-lg-5 mb-0">
+                          <img src="../img/actividad3.png" class="card-img-top imagen-slide" alt="...">
+                          <div class="card-body">
+                            <h4>Evento 3</h4>
+                            <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                          </div>
+                          <a class="boton" href="#" role="button">Participa</a>
+                        </div>
+
+                      </div>
+                    </div>
+                    
+                    <div class="carousel-item" data-bs-interval="5000">
+
+                      <div class="card-group mx-5 py-5">
+
+                        <div class="card card-colabora mx-lg-5 ms-sm-2 me-sm-3 mb-0">
+                          <img src="../img/actividad3.png" class="card-img-top imagen-slide" alt="...">
+                          <div class="card-body">
+                            <h4>Evento 4</h4>
+                            <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                          </div>
+                          <a class="boton" href="#" role="button">Participa</a>
+                        </div>
+                        
+                        <div class="card card-colabora d-none d-sm-flex m-lg-0 ms-sm-3 me-sm-2 mb-0">
+                          <img src="../img/actividad3.png" class="card-img-top imagen-slide" alt="...">
+                          <div class="card-body">
+                            <h4>Evento 5</h4>
+                            <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                          </div>
+                          <a class="boton" href="#" role="button">Participa</a>
+                        </div>
+                        
+                        <div class="card card-colabora d-none d-lg-flex mx-lg-5 mb-0">
+                          <img src="../img/actividad3.png" class="card-img-top imagen-slide" alt="...">
+                          <div class="card-body">
+                            <h4>Evento 6</h4>
+                            <p class="card-text">Lugar: Primaria Cuauhtémoc, Iztapalapa, CDMX.<br>Inicia: 12:00 horas.</p>
+                          </div>
+                          <a class="boton" href="#" role="button">Participa</a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+
+        </div>
+      </div>
+    </section>
+
+      <footer>
+      </footer>
+
+      <!-- Scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    </body>
+
+</html>

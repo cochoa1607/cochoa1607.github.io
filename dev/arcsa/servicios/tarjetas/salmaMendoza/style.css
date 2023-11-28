@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    overflow-x: hidden;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+:root {
+    --blanco: #FFFFFF;
+    --blanco-op: #FFFFFFDD;
+    --verde: #038DA1;
+    --verde-dos: #7BB2BA;
+    --verde-tres: #E0FBFF;
+    --azul: #283B7F;
+    --azul-dos: #2E2C69;
+    --azul-tres: #8291C7;
+    --azul-shadow: #283B7F20;
+
+    --shadow: var(--azul-shadow) 1rem 1rem 1.5rem;
+    --shadow-text: var(--azul-shadow) 1rem 1rem 1.5rem;
+    
+    --margin-section: 2rem auto;
+
+    --transitionUno: all ease-in-out 200ms;
+}
+
+.container-all{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background-image: url(https://documentos.arcsa.com.mx/ASfondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 80vw;
+    min-height: 80vh;
+    height: auto;
+    margin: 5vh auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #ffffff70;
+}
+
+.compartirDesktop{
+    width: 7rem;
+    height: 7rem;
+    top: 4rem;
+    right: 4rem;
+    border: solid .1rem var(--azul);
+    background-color: var(--blanco-op);
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: var(--transitionUno);
+}
+
+.compartirDesktop a{
+    right: 0;
+    background: none;
+    border: none;
+}
+
+.compartirDesktop:hover{
+    transform: scale(1.2);
+}
+
+.compartirDesktop a i{
+    font-size: 2rem;
+    color: var(--azul);
+}
+
+.compartirMobile{
+    display: none;
+}
+
+.logo{
+    width: 18%;
+    margin: 5% auto 0 auto;
+    max-width: 20rem;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.foto {
+    width: 25%;
+    max-width: 22rem;
+    margin: var(--margin-section);
+    border-radius: 500px;
+    border: solid var(--verde) 3px;
+    padding: 5px 5px 2px 5px;
+    box-shadow: var(--shadow);
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 500px;
+}
+
+.nombre{
+    width: auto;
+    margin: var(--margin-section);
+    text-align: center;
+}
+
+.nombre h1{
+    font-size: 5rem;
+    color: var(--verde);
+    margin: 0 0 2rem 0;
+    font-weight: 500;
+}
+
+.nombre h2 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin: 0 0 2rem 0;
+    color: var(--azul-dos);
+}
+
+.nombre h3 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin: 0 0 2rem 0;
+    color: var(--azul);
+}
+
+.nombre ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.nombre ul li {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--azul-dos);
+    line-height: 2.4rem;
+    text-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nombre ul li::after {
+    padding: 0 1rem;
+    color: var(--verde-dos);
+    font-family: "Font Awesome 5 Free";
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: "\f111 ";
+    text-shadow: var(--shadow-dos);
+    font-size: .8rem;
+}
+
+.nombre ul .final::after {
+    content: none;
+}
+
+.linieaD{
+    width: 65%;
+    height: .1rem;
+    margin: auto;
+    background-color: var(--azul);
+}
+
+.agendar {
+    width: 40%;
+    margin: var(--margin-section);
+}
+
+.agendar .campo{
+    padding: .7rem;
+    border: solid .1rem var(--azul);
+    border-radius: 10rem;
+    margin-bottom: 1rem;
+    transition: var(--transitionUno);
+}
+
+.agendar .campo:hover{
+    background-color: var(--azul-shadow);
+    font-size: 1.8rem;
+}
+
+.agendar .campo a{
+    width: 80%;
+    max-width: 33rem;
+    margin: auto;
+    text-decoration: none;
+    color: var(--azul);
+    font-weight: 100;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agendar .campo i {
+    font-size: 1.8rem;
+    padding-left: 4rem;
+}
+
+.agendar .campoDos{
+    display: flex;
+    justify-content: space-between;
+    transition: var(--transitionUno);
+}
+
+.agendar .campoIn{
+    transition: var(--transitionUno);
+}
+
+.agendar .campoIn:hover{
+    background-color: var(--azul-shadow);
+    font-size: 1.8rem;
+}
+
+.agendar .campoDos .campoIn{
+    width: 49%;
+    border: solid .1rem var(--azul);
+    border-radius: 10rem;
+    margin-bottom: 1rem;
+    padding: .7rem;
+}
+
+.agendar .campoDos a{
+    text-decoration: none;
+    color: var(--azul);
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agendar .campoDos i{
+    padding-left: 1.5rem;
+}
+
+/* ------------------------------
+Campo Dos (Tamaño completo)
+------------------------------ */
+
+.agendar .campoInDos{
+    transition: var(--transitionUno);
+}
+
+.agendar .campoInDos:hover{
+    background-color: var(--azul-shadow);
+    font-size: 1.8rem;
+}
+
+.agendar .campoDos .campoInDos{
+    width: 100%;
+    border: solid .1rem var(--azul);
+    border-radius: 10rem;
+    margin-bottom: 1rem;
+    padding: .7rem;
+}
+
+/* ------------------------------
+Termina
+------------------------------ */
+
+.campoTitle{
+    color: var(--azul-dos);
+    margin: 1.4rem 0 .5rem 0;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.proyectos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.proyectos a{
+    width: calc(20vw);
+    height: auto;
+    margin: .8rem 0;
+}
+
+.proyectos i {
+    font-size: 2.4rem;
+}
+
+.proyectos .proyectosTodos{
+    width: calc(80vw);
+}
+
+.proyectos .proyectosTodos span{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.contacto{
+    width: 40%;
+    margin: var(--margin-section);
+    display: flex;
+}
+
+.contacto .contactoLine {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circulo {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .contactoLine .phoneOffice{
+    fill: var(--azul-dos);
+    width: 3rem;
+    height: auto;
+    margin: auto;
+    transition: var(--transitionUno);
+    display: flex;
+}
+
+.contacto .contactoLine .phoneOffice:hover{
+    fill: var(--azul-tres);
+}
+
+.circulo i{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--azul-dos);
+    transition: var(--transitionUno);
+}
+
+.circulo i:hover{
+    font-size: 3.2rem;
+    color: var(--azul-tres);
+}
+
+.circulo a{
+    text-decoration: none;
+}
+
+/*
+Tablet -----------------------------------------------------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+    .container {
+        width: 90vw;
+    }
+
+    .compartirDesktop{
+        display: none;
+    }
+
+    .compartirMobile{
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+        top: 3rem;
+        right: 3rem;
+        border: solid .1rem var(--azul);
+        background-color: var(--blanco-op);
+        border-radius: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+    
+    .compartirMobile .btnCompartir{
+        right: 0;
+        background: none;
+        border: none;
+    }
+    
+    .compartirMobile .btnCompartir i{
+        font-size: 1.6rem;
+        color: var(--azul);
+    }
+    
+    .logo{
+        margin: 5% auto 0 auto;
+    }
+    
+    .foto {
+        width: 20%;
+    }
+    
+    .nombre h1{
+        font-size: 3.8rem;
+    }
+    
+    .nombre h2 {
+        font-size: 2.4rem;
+    }
+
+    .nombre ul li {
+        font-size: 1.8rem;
+    }
+
+    .linieaD{
+        width: 70%;
+    }
+    
+    .agendar {
+        width: 55%;
+    }
+    
+    .agendar .campo a{
+        width: 100%;
+        max-width: 33rem;
+    }
+
+    .agendar .campo i {
+        font-size: 1.8rem;
+        padding-left: 1rem;
+    }
+    
+    .proyectos .proyectosTodos{
+        width: calc(80vw);
+    }
+    
+    .proyectos .proyectosTodos span{
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .contacto{
+        width: 60%;
+        margin: var(--margin-section);
+    }
+    
+    .contacto .contactoLine {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .circulo i{
+        padding: 1.2rem 0;
+        font-size: 2.4rem;
+    }
+
+    .phoneOffice{
+        padding: 1.2rem 0;
+        font-size: 2.4rem;
+    }
+
+}
+
+/*
+Mobile -----------------------------------------------------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 599px) and (min-width: 150px) {
+
+    .container {
+        width: 98vw;
+    }
+
+    .compartirDesktop{
+        display: none;
+    }
+
+    .compartirMobile{
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        top: 3rem;
+        right: 3rem;
+        border: solid .1rem var(--azul);
+        background-color: var(--blanco-op);
+        border-radius: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+    
+    .compartirMobile .btnCompartir{
+        right: 0;
+        background: none;
+        border: none;
+    }
+    
+    .compartirMobile .btnCompartir i{
+        font-size: 1.4rem;
+        color: var(--azul);
+    }
+    
+    .logo{
+        width: 30%;
+        margin: 8% auto 0 auto;
+    }
+    
+    .foto {
+        width: 40%;
+    }
+    
+    .foto img {
+        width: 100%;
+        border-radius: 500px;
+    }
+    
+    .nombre h1{
+        font-size: 2.8rem;
+    }
+    
+    .nombre h2 {
+        font-size: 1.8rem;
+    }
+    
+    .nombre ul li {
+        font-size: 1.6rem;
+    }
+    
+    .linieaD{
+        width: 90%;
+    }
+    
+    .agendar {
+        width: 88%;
+    }
+
+    .agendar .campo a {
+        width: 90%;
+        max-width: 33rem;
+        min-width: 26.7rem;
+    }
+
+    .agendar .campo i {
+        font-size: 1.5rem;
+        padding-left: .5rem;
+    }
+    
+    .proyectos .proyectosTodos{
+        width: calc(80vw);
+    }
+    
+    .proyectos .proyectosTodos span{
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .contacto{
+        width: 80%;
+        margin: var(--margin-section);
+    }
+    
+    .contacto .contactoLine {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .circulo {
+        width: 16vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .circulo i{
+        padding: 1.2rem 0;
+        font-size: 2.4rem;
+    }
+    
+    .phoneOffice{
+        width: 3rem !important;
+        height: auto;
+        padding: 1.2rem 0;
+        font-size: 2.4rem;
+        margin: auto;
+    }
+} 

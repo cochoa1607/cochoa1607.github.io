@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/c8bc1dc011.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/compraReporte.css">
+
+    <title>Compra de Reporte</title>
+
+</head>
+
+<body>
+
+    <div class="bars__menu">
+        <span class="line1__bars-menu"></span>
+        <span class="line2__bars-menu"></span>
+        <span class="line3__bars-menu"></span>
+    </div>
+
+    <div class="botonUp">
+        <a href="#">
+            <svg class="botonUpS" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 23.2 20.5" style="enable-background:new 0 0 23.2 20.5;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <line class="st0" x1="2.6" y1="11.3" x2="11.6" y2="2.3"/>
+                        </g>
+                        <g>
+                            <line class="st0" x1="20.6" y1="11.3" x2="11.6" y2="2.3"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <line class="st0" x1="2.6" y1="21.3" x2="11.6" y2="12.3"/>
+                        </g>
+                        <g>
+                            <line class="st0" x1="20.6" y1="21.3" x2="11.6" y2="12.3"/>
+                        </g>
+                    </g>
+            </svg>
+        </a>
+    </div>
+
+    <div class="contenedorColapsable">
+        <div class="cajaContenido">
+            <form action="" autocomplete="on" target="none">
+
+                <label for="razonSocial">
+                    <span>Razón social:</span>
+                    <input type="text" placeholder="Sin denominaciones" required>
+                </label>
+
+                <label for="denominacion">
+                    <span>Denominación:</span>
+                    <input list="denominacion" placeholder="Elige una denominación..." required>
+                    <datalist id="denominacion">
+                        <option value="Op1"></option>
+                        <option value="Op2"></option>
+                    </datalist>
+                </label>
+
+                <label for="correo">
+                    <span>Correo Electrónico:</span>
+                    <input type="email" name="correo" id="correo" autocomplete="email" placeholder="ejemplo@correo.com" required>
+                </label>
+
+                <label for="uso">
+                    <span>Tipo de Uso:</span>
+                    <input list="uso" placeholder="Elige un tipo de uso..." required>
+                    <datalist id="uso">
+                        <option value="Op1"></option>
+                        <option value="Op2"></option>
+                    </datalist>
+                </label>
+
+                <div class="contenedor-boton">
+                    <div class="boton secondary">
+                        <a href="#">Consultar</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="cajaBoton">
+            <div class="desplegar"></div>
+        </div>
+    </div>
+
+    <header class="header headerMenu">
+        <nav class="containerMenu">
+            <div class="cont-logo">
+                <a href="../index.html" class="shadow">
+                    <div class="logo"></div>
+                </a>
+            </div>
+            <div class="shadow menuMob">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="soluciones.html">Soluciones</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="arcsanet"><a class="arcsanetA" href="#">ARCSANET</a></li>
+                </ul>
+            </div>
+            <div class="menuRedes menuMob">
+                <ul>
+                    <li><a href="https://wa.me/525514775659" class="menuIcon" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="seccionInfo">
+        <div class="contenedor contenedorInfo">
+
+            <div class="titulo">
+                <h2>Se encontraron las siguientes coincidencias</h2>
+            </div>
+
+            <div class="tabla busqueda">
+                <table>
+                    <tr>
+                        <th>Razón Social</th>
+                        <th>Tipo de Sociedad</th>
+                        <th>Correo</th>
+                        <th>Tipo de uso</th>
+                    </tr>
+                    <tr>
+                        <td>Empresa de Cables</td>
+                        <td>S.A. DE C.V.</td>
+                        <td>cables@correo.com</td>
+                        <td>Otorgar Línea de Crédito</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="resultadosHead">
+                <div class="cajas">
+                    <div class="caja active">
+                        <p>Empresas Deudoras</p>
+                        <span class="resultadosCantidad">1</span></div>
+                    <div class="caja">
+                        <p>Reportes de Crédito</p>
+                        <span class="resultadosCantidad">2</span>
+                    </div>
+                    <div class="caja">
+                        <p>Referencias Comerciales</p>
+                        <span class="resultadosCantidad">5</span>
+                    </div>
+                    <div class="caja">
+                        <p>Demandas Mercantiles</p>
+                        <span class="resultadosCantidad">2</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tabla resultados">
+                <table>
+                    <tr>
+                        <th class="snbr">Empresa</th>
+                        <th class="snbr"></th>
+                        <th></th>
+                        <th>RFC</th>
+                        <th>Adquirir</th>
+                    </tr>
+                    <tr class="listadoResultados impar">
+                        <td colspan="3">Resultado uno</td>
+                        <td colspan="1">ODTG675490FGT</td>
+                        <td>
+                            <div class="boton cuarto">
+                                <a href="./compraReporteTransacional.html">Comprar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="listadoResultados">
+                        <td colspan="3">Resultado dos</td>
+                        <td colspan="1">ODTG675490FGT</td>
+                        <td>
+                            <div class="boton cuarto">
+                                <a href="./compraReporteTransacional.html">Comprar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="listadoResultados impar">
+                        <td colspan="3">Resultado tres</td>
+                        <td colspan="1">ODTG675490FGT</td>
+                        <td>
+                            <div class="boton cuarto">
+                                <a href="./compraReporteTransacional.html">Comprar</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="resultadoBusqueda">
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="containerFooter">
+            <div class="footerCaja footerLogo">
+                <picture>
+                    <img src="../img/logoAS_Blanco.png" alt="Logo BLOC (Buró de Antecedentes Legales)">
+                </picture>
+                <div class="footerLineaDos"></div>
+            </div>
+            <div class="footerCaja">
+                <span class="titulo-caja">Contacto</span>
+                <ul>
+                    <li>
+                        <a href="mailto:" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                            mail
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:52 55 5278 6230" target="_blank">
+                            <i class="fa-solid fa-phone"></i>
+                            +52 55 5278 6230
+                        </a>
+                    </li>
+                    <span class="titulo-mex">México</span>
+                    <li>
+                        <a href="https://goo.gl/maps/j9Yw2djnQCa5KV4K8" target="_blank">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Patricio Sanz 1609, Col del Valle Sur, Benito Juárez, 03100 Ciudad de México, México.
+                        </a>
+                    </li>
+                </ul>
+                <div class="footerLineaDos"></div>
+            </div>
+            
+            <div class="footerCaja">
+                <span class="titulo-caja">Otros productos</span>
+                <ul>
+                    <li>
+                        <a href="https://www.arcsa.com.mx/" target="_blank">
+                            Bloc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.arcsacapital.com/es-MX/Index" target="_blank">
+                            Arcsa Capital
+                        </a>
+                    </li>
+                </ul>
+                <div class="footerLinea"></div>
+                <div class="footerLineaDos"></div>
+                <span class="titulo-caja">Consulta</span>
+                <ul>
+                    <li>
+                        <a href="./html/faqs.html" target="_self">
+                            FAQ´s
+                        </a>
+                    </li>
+                </ul>
+                <div class="footerLineaDos"></div>
+            </div>
+            
+            <div class="footerCaja">
+                <span class="titulo-caja">Legales</span>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Política de Privacidad
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Términos y Condiciones
+                        </a>
+                    </li>
+                </ul>
+                <div class="footerLineaDos"></div>
+                <div class="footerLinea"></div>
+                <ul class="footerRedes">
+                    <li><a href="https://www.facebook.com/people/BLOC/100076426675042/" target="_self"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.facebook.com/people/BLOC/100076426675042/" target="_self"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/blocmx/" target="_self"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCKNpGarjGnbMK0PlxOmRyQw" target="_self"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/menuTabMob.js"></script>
+    <script src="..//js/consultaColapsable.js"></script>
+
+</body>
+</html>
