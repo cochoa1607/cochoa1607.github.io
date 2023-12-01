@@ -919,7 +919,7 @@ Tablet Horizontal / Tablet Vertical / Mobile
 /*  DesktopSM  */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
     body{
-        border: solid red 2px;
+        /* border: solid red 2px; */
     }
 
 }
@@ -927,7 +927,7 @@ Tablet Horizontal / Tablet Vertical / Mobile
 /*  Tablet (Tablet Horizontal) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     body{
-        border: solid green 2px;
+        /* border: solid green 2px; */
     }
 
     /* ---------------
@@ -956,7 +956,7 @@ Tablet Horizontal / Tablet Vertical / Mobile
 /*  Original (Tablet Vertical) */
 @media only screen and (min-width: 426px) and (max-width: 768px) {
     body{
-        border: solid blue 2px;
+        /* border: solid blue 2px; */
     }
 
     /* -------------
