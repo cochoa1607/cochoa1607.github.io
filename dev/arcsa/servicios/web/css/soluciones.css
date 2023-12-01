@@ -523,6 +523,73 @@ Autoevaluacion
 }
 
 
+/*  DesktopSM, Tablet Vertical y Tablet Horizontal  */
+@media only screen and (min-width: 1px) and (max-width: 1440px) {
+
+
+    /* ---------------
+    Reportes
+    --------------- */
+
+    .seccionReportes .contenedorReportes{
+        width: 90vw;
+    }
+    
+    .seccionReportes .reportes .tarjeta{
+        width: 48%;
+    }
+    
+    /* ---------------
+    Comparativo
+    --------------- */
+    
+    .seccionComparativo .contenedorComparativo{
+        width: 100vw;
+    }
+    
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .garantia{
+        width: 10rem;
+        position: absolute;
+        transform: translate(12rem, -26rem) rotate(8deg);
+    }
+
+
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .caja_01,
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .caja_02,
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .caja_03{
+        border-radius: 0;
+        border-top: solid var(--grisDos) .2rem;
+        border-bottom: solid var(--grisDos) .2rem;
+        border-left: 0;
+    }
+
+    /* ---------------
+    Recuperacion
+    --------------- */
+
+    .seccionRecuperacion .contenedorRecuperacion .recuperacion .cajas{
+        width: 100%;
+    }
+    
+    /* ---------------
+    Carta
+    --------------- */
+    
+    .seccionCarta .contenedorCarta .carta .cajas{
+        width: 100%;
+    }
+
+    /* ---------------
+    Autoevaluación
+    --------------- */
+    
+    .seccionAutoevaluacion .contenedorAutoevaluacion .autoevaluacion .cajas{
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+}
+
 
 /* ---------------
 Tablet

@@ -255,11 +255,6 @@ Banner
   transform: translateX(-200px);
 }
 
-.seccionBanner .contenedorBanner .vid.abajo{
-  opacity: 0;
-  transform: translateX(200px);
-}
-
 /* ---------------
 Consulta
 --------------- */
@@ -645,7 +640,7 @@ Nuestro ADN
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /*  Autoevaluacion 01/02 */
-@media only screen and (min-width: 960px) and (max-width: 1024px) {
+@media only screen and (min-width: 960px) and (max-width: 1440px) {
 
   #consulta{
     scroll-margin-block-start: 0;
@@ -656,7 +651,6 @@ Nuestro ADN
   .seccionConsulta {
     max-width: none;
   }
-  
   
   .seccionConsulta .contenedorConsulta{
     width: 100%;
@@ -828,7 +822,7 @@ Nuestro ADN
 }
 
 /*  Tablet Vertical / Mobile  */
-@media only screen and (min-width: 1px) and (max-width: 768px) {
+@media only screen and (min-width: 1px) and (max-width: 1024px) {
 
   .bg_02{
     height: 92rem;

@@ -157,7 +157,7 @@ Botones
     text-decoration: none;
 }
 
-.primary a{
+.primary a {
     padding: 2rem;
     text-decoration: none;
     color: var(--blanco);
@@ -173,6 +173,8 @@ Botones
     box-shadow: var(--boxShadow);
     transition: var(--transitions);
     overflow: visible;
+    color: var(--blanco);
+    text-decoration: none;
 }
 
 .secondary {
@@ -184,6 +186,7 @@ Botones
     justify-content: center;
     align-items: center;
     overflow: visible;
+    border: solid red 2px;
 }
 
 .secondary:hover {

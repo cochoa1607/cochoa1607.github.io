@@ -1,21 +1,16 @@
 /*FAQ´s ---------------*/
 
 .sectionHeaderFaqs {
-    background-image: url(../img/faqs.png);
-    background-position: center center;
-    background-size: cover;
     width: 100vw;
-    height: 40vh;
-    min-height: 450px;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
 }
 
 .sectionHeaderFaqs h2 {
-    color: var(--blanco);
-    margin: auto;
-    margin: 80px 0 0 0;
+    color: var(--principal);
+    text-align: center;
 }
 
 /*FaqUno------------------------------------*/
@@ -25,7 +20,7 @@
     margin: auto;
     background-color: var(--blanco);
     border-radius: 5px;
-    border: solid var(--morado) 1px;
+    border: solid var(--principal) 1px;
     margin: 0 auto 20px auto;
 }
 
@@ -38,7 +33,7 @@
 }
 
 .faqDentro p {
-    color: var(--morado);
+    color: var(--principal);
 }
 
 .faqDentroi {
