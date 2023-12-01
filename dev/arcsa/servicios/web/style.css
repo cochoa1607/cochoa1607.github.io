@@ -186,7 +186,6 @@ Botones
     justify-content: center;
     align-items: center;
     overflow: visible;
-    border: solid red 2px;
 }
 
 .secondary:hover {
@@ -773,7 +772,7 @@ Tablet Horizontal / Tablet Vertical / Mobile
     --------------- */
 
     .header .containerMenu .logo{
-        background-image: url(./img/logoAS_Color.png);
+        background-image: url(./img/logoAS_Blanco.png);
     }
 
     /* ---------------
@@ -1028,12 +1027,4 @@ Tablet Horizontal / Tablet Vertical / Mobile
         color: var(--secundario-op-dos);
         font-size: 2.4rem;
     } */
-}
-
-
-/*  Mobile  */
-@media only screen and (min-width: 1px) and (max-width: 425px) {
-    body{
-        border: solid pink 2px;
-    }
 }

@@ -79,7 +79,7 @@
     margin: auto;
     background-color: var(--blanco);
     border-radius: 5px;
-    border: solid var(--morado) 1px;
+    border: solid var(--principal) 1px;
     margin: 0 auto 20px auto;
 }
 
@@ -122,7 +122,7 @@
     margin: auto;
     background-color: var(--blanco);
     border-radius: 5px;
-    border: solid var(--morado) 1px;
+    border: solid var(--principal) 1px;
     margin: 0 auto 20px auto;
 }
 
@@ -165,7 +165,7 @@
     margin: auto;
     background-color: var(--blanco);
     border-radius: 5px;
-    border: solid var(--morado) 1px;
+    border: solid var(--principal) 1px;
     margin: 0 auto 20px auto;
 }
 
@@ -208,7 +208,7 @@
     margin: auto;
     background-color: var(--blanco);
     border-radius: 5px;
-    border: solid var(--morado) 1px;
+    border: solid var(--principal) 1px;
     margin: 0 auto 20px auto;
 }
 

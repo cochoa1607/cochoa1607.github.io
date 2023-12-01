@@ -591,27 +591,277 @@ Autoevaluacion
 }
 
 
-/* ---------------
-Tablet
---------------- */
-  
-@media only screen and (max-width: 1099px) and (min-width: 640px) {
-  
+/*  Tablet horizontal, Tablet Vertical y Mobile  */
+@media only screen and (min-width: 1px) and (max-width: 1024px) {
+
     /* ---------------
-    Seccion
+    Soluciones
     --------------- */
     
+    .seccionSoluciones {
+        background-color: var(--morado-claro-op);
+        margin-top: 5rem;
+        width: 100vw;
+        padding: var(--spaceSection);
+    }
+    
+    .seccionSoluciones .contenedorSoluciones{
+        min-width: 1px !important;
+    }
+    
+    .seccionSoluciones .soluciones{
+        margin: auto;
+    }
+    
+    .seccionSoluciones .soluciones h2{
+        text-align: center;
+        margin-bottom: 1rem;
+        min-width: 1px !important;
+    }
+    
+    .seccionSoluciones .soluciones h3{
+        text-align: center;
+        margin: auto;
+        margin-bottom: 10rem;
+        max-width: 90ch;
+        min-width: 1px !important;
+    }
+    
+    .seccionSoluciones .soluciones .caja_descubre h5{
+        margin-bottom: 5rem;
+    }
+    
+    .seccionSoluciones .soluciones .caja_descubre ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccionSoluciones .soluciones .caja_descubre ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seccionSoluciones .soluciones .caja_descubre ul li .texto{
+        margin-left: 0;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .seccionSoluciones .soluciones .caja_descubre ul li .icono{
+        width: 10rem;
+        height: 6rem;
+        background-position: center;
+    }
+
+    /* ---------------
+    Reportes
+    --------------- */
+
+    #reportes{
+        scroll-margin-block-start: 20rem;
+        scroll-padding: 20rem;
+    }
+    
+    .seccionReportes {
+        background-color: var(--morado-claro-op);
+        margin-top: 0;
+        padding: var(--spaceSection);
+        width: 100vw;
+    }
+    .seccionReportes .contenedorReportes{
+        width: 90%;
+        min-width: 1px !important;
+    }
+
+    .seccionReportes .reportes{
+        flex-direction: column;
+    }
+
+    .seccionReportes .reportes .tarjeta{
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    /* ---------------
+    Comparativo
+    --------------- */
+
+    .seccionComparativo {
+        background-color: var(--morado-claro-op);
+        margin-top: 0;
+        padding: var(--spaceSection);
+        width: 100vw !important;
+    }
+
+    .seccionComparativo .contenedorComparativo{
+        min-width: 1px;
+    }
+
+    .seccionComparativo .contenedorComparativo .comparativo h3{
+        margin-bottom: 0;
+    } 
+
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .titulo{
+        height: 6rem;
+        font-size: 1.8rem;
+    }
+
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .logoArcsa{
+        height: 6rem;
+    }
+
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .garantia{
+        width: 6rem;
+        transform: translate(5rem, -27rem) rotate(8deg);
+    }
+    
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .caja ul li{
+        padding: 0 1rem;
+        font-size: 1.4rem !important;
+    }
+    
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .caja ul .costos{
+        height: 8rem;
+        font-size: 1.4rem !important;
+    }
+
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .caja ul li .fa-check,
+    .seccionComparativo .contenedorComparativo .comparativo .contenedor_comparativo .caja ul li .fa-x{
+        font-size: 2rem;
+        min-width: 2rem;
+    }
+
+    /* ---------------
+    Recuperación
+    --------------- */
+
+    .seccionRecuperacion {
+        margin-top: 1rem;
+        width: 100vw;
+    }
+    .seccionRecuperacion .contenedorRecuperacion{
+        width: 100%;
+        min-width: 1px;
+    }
+
+    .seccionRecuperacion .contenedorRecuperacion .recuperacion .cajas{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .seccionRecuperacion .contenedorRecuperacion .recuperacion .cajas .caja h2{
+        text-align: center;
+    }
+
+    .seccionRecuperacion .contenedorRecuperacion .recuperacion .cajas .caja_01{
+
+        width: 100%;   
+    }
+
+    .seccionRecuperacion .contenedorRecuperacion .recuperacion .cajas .caja_02{
+
+        width: 100%;   
+    }
+
+    /* ---------------
+    Carta
+    --------------- */
+
+    .seccionCarta {
+        margin-top: 0;
+        width: 100vw;
+    }
+    
+    .seccionCarta .contenedorCarta{
+        width: 100%;
+        min-width: 1px;
+    }
+
+    .seccionCarta .contenedorCarta .carta .cajas{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .seccionCarta .contenedorCarta .carta .cajas .caja h2{
+        text-align: center;
+    }
+
+    .seccionCarta .contenedorCarta .carta .cajas .caja_01{
+        width: 100%;   
+    }
+
+    .seccionCarta .contenedorCarta .carta .cajas .caja_02{
+        width: 100%;   
+    }
+
+    /* ---------------
+    Autoevaluacion
+    --------------- */
+
+    .seccionAutoevaluacion {
+        margin-top: 0;
+        width: 100vw;
+    }
+    
+    .seccionAutoevaluacion .contenedorAutoevaluacion{
+        width: 100%;
+        min-width: 1px;
+    }
+
+    .seccionAutoevaluacion .contenedorAutoevaluacion .autoevaluacion .cajas{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .seccionAutoevaluacion .contenedorAutoevaluacion .autoevaluacion .cajas .caja h2{
+        text-align: center;
+    }
+
+    .seccionAutoevaluacion .contenedorAutoevaluacion .autoevaluacion .cajas .caja_01{
+        width: 100%;   
+    }
+
+    .seccionAutoevaluacion .contenedorAutoevaluacion .autoevaluacion .cajas .caja_02{
+        width: 100%;   
+        background-color: var(--blanco);
+    }
+
+    .seccionAutoevaluacion .contenedorAutoevaluacion .autoevaluacion .cajas .boton{
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+    }
+
+    .seccionAutoevaluacion .contenedorAutoevaluacion .autoevaluacion .cajas .botones{
+        display: flex;
+        
+    }
+
+    .seccionAutoevaluacion .contenedorAutoevaluacion .autoevaluacion .cajas .tarjeta_nota{
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+
+}
+
+
+/*  DesktopSM  */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+/*  Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     
 }
 
-/* ---------------
-Mobile
---------------- */
-
-@media only screen and (max-width: 639px) and (min-width: 1px) {
+/*  Original (Tablet Vertical) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
     
-    /* ---------------
-    Seccion
-    --------------- */
-  
-  }
+}

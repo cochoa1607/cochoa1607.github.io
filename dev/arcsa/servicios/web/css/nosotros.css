@@ -1,5 +1,5 @@
 /* ---------------
-Tablet
+Nosotros
 --------------- */
 
 .seccionNosotros{
@@ -562,6 +562,229 @@ Nuestro Clientes
 
 /*  Tablet (Tablet Horizontal) */
 @media only screen and (min-width: 1px) and (max-width: 1024px) {
+
+
+    /* ---------------
+    Nosotros
+    --------------- */
+
+    .seccionNosotros{
+        margin-top: 8rem;
+        width: 100vw;
+    }
+    
+    .seccionNosotros .contenedorNosotros{
+        width: 90%;
+        min-width: 1px;
+    }
+
+    .seccionNosotros .nosotros .cajas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .seccionNosotros .nosotros .cajas .texto{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .seccionNosotros .nosotros .cajas .containerVideo{
+        width: 100%;
+        padding: 4rem 0 1rem 0;
+    }
+
+    /* ---------------
+    Marcas
+    --------------- */
+
+    .seccionMarcas {
+        margin-top: 0;
+        width: 100vw;
+        display: none;
+    }
+
+    .seccionMarcas .marcas{
+        width: 98%;
+        min-width: 1px;
+        overflow: visible;
+    }
+
+    .seccionMarcas .marcas .cajas .annio{
+        color: var(--secundario);
+        font-size: 3.2rem;
+        font-weight: 600;
+        font-family: var(--font-secundaria);
+        overflow: visible;
+    }
+
+    .seccionMarcas .marcas .cajas .titulo{
+        color: var(--principal);
+        font-size: 2.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        overflow: visible;
+    }
+
+    .seccionMarcas .marcas .cajas .texto{
+        color: var(--negro);
+        font-size: 1.5rem;
+        font-weight: 300;
+        overflow: visible;
+    }
+
+    .seccionMarcas .marcas .cajas_01{
+        display: flex;
+        justify-content: space-between;
+        overflow: visible;
+    }
+
+    .seccionMarcas .marcas .cajas_01 .caja{
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionMarcas .marcas .cajas_01 .caja .circulo_01{
+        width: 23rem;
+        height: 23rem;
+        border-radius: 200rem;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        text-align: center;
+        overflow: visible;
+        background-color: #E6F4F6;
+        transform: translateY(2rem);
+        z-index: 9;
+
+        box-shadow: var(--boxShadow);
+    }
+
+    .seccionMarcas .marcas .cajas_01 .caja .circulo_02{
+        width: 14rem;
+        height: 14rem;
+        border-radius: 10rem;
+        background-color: var(--blanco);
+        z-index: 99;
+        box-shadow: var(--boxShadow);
+    }
+
+    .seccionMarcas .marcas .cajas_01 .caja .circulo_02 .logo{
+        width: 90%;
+        height: 90%;
+        margin: 5%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .seccionMarcas .marcas .cajas_01 .caja .circulo_02 .logoAS{
+        background-image: url(../img/logoAS_Color.png);
+    }
+
+    .seccionMarcas .marcas .cajas_01 .caja .circulo_02 .logoAC{
+        background-image: url(../img/logoAC_Color.png);
+    }
+
+    .seccionMarcas .marcas .cajas_01 .caja .circulo_02 .logoMC{
+        background-image: url(../img/logoMC_Color.png);
+    }
+
+    .seccionMarcas .marcas .lineas{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .seccionMarcas .marcas .lineas .caja{
+        width: 22rem;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .seccionMarcas .marcas .lineas .caja .linea{
+        width: .2rem;
+        height: 6rem;
+        border-radius: 2rem;
+        background-color: var(--principal-op);
+    }
+
+    .seccionMarcas .marcas .lineaMedia{
+        height: .2rem;
+        width: auto;
+        margin: 0 10.9rem;
+        border-radius: 2rem;
+        background-color: var(--principal-op);
+    }
+
+    .seccionMarcas .marcas .lin_dos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .seccionMarcas .marcas .cajas_02{
+        display: flex;
+        justify-content: space-evenly;
+        overflow: visible;
+    }
+
+    .seccionMarcas .marcas .cajas_02 .caja{
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionMarcas .marcas .cajas_02 .caja .circulo_01{
+        width: 22rem;
+        height: 22rem;
+        border-radius: 200rem;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        text-align: center;
+        overflow: visible;
+        background-color: #E6F4F6;
+        transform: translateY(-2rem);
+        z-index: 9;
+        box-shadow: var(--boxShadow);
+    }
+
+    .seccionMarcas .marcas .cajas_02 .caja .circulo_02{
+        width: 14rem;
+        height: 14rem;
+        border-radius: 10rem;
+        background-color: var(--blanco);
+        z-index: 99;
+        box-shadow: var(--boxShadow);
+    }
+
+    .seccionMarcas .marcas .cajas_02 .caja .circulo_02 .logo{
+        width: 90%;
+        height: 90%;
+        margin: 5%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .seccionMarcas .marcas .cajas_02 .caja .circulo_02 .logoB{
+        background-image: url(../img/logoB_Color.png);
+    }
+
+    .seccionMarcas .marcas .cajas_02 .caja .circulo_02 .logoASUSA{
+        background-image: url(../img/logoASUSA_Color.png);
+    }
+
 
     /* ---------------
     Identidad de Marca

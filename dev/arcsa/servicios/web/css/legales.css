@@ -1,0 +1,54 @@
+/* ---------------
+Legales
+---------------*/
+
+.sectionHeaderLegales {
+    width: 100vw;
+    margin: auto;
+    margin-top: 16rem;
+}
+
+.sectionHeaderLegales h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.sectionLegales {
+    width: 80%;
+    margin: auto;
+}
+
+.sectionLegales a{
+    color: var(--secundario);
+    font-style: italic;
+    cursor: pointer;
+}
+
+.sectionLegales ul{
+    font-weight: 600;
+    list-style-position: inside;
+}
+
+.sectionLegales ul li{
+    padding-left: 4rem;
+    text-indent: -2.2rem;
+}
+
+.sectionLegales{
+    text-align: justify;
+}
+
+/*  Tablet (Tablet Horizontal) */
+@media only screen and (min-width: 1px) and (max-width: 1024px) {
+
+    /* ---------------
+    Legales
+    ---------------*/
+
+    .sectionHeaderLegales {
+        width: 100vw;
+        margin: auto;
+        margin-top: 6rem;
+    }
+
+}
