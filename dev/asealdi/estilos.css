@@ -1,0 +1,1507 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+    
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+#header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #FFFFFF;
+    border-bottom: solid #51698E;
+    z-index: 9999999;
+    
+}
+
+#nosotros {
+    padding-top: 60px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+#servicios {
+    width: 100%;
+    padding-top: 60px;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+#flotante {
+    display: flex;
+    background-position: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-top: 120px;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    background-image: url(img/004_Flotante.jpg);
+}
+
+#trayectoria {
+    width: 100%;
+    padding-top: 60px;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+#equipo {
+    width: auto;
+    padding-top: 60px;
+    height: auto;
+    background-color: white;
+}
+
+#ubicaciones {
+    padding-top: 60px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+}
+
+#banner {
+    width: 100%;
+    height: 635px;
+    background-color: white;
+    display: inline-flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#servicios_contables {
+    text-align: center; 
+    color: #51698E;
+    font-weight: 500;
+    font-size: 25px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+
+
+
+
+
+
+#texto_servicios_contables {
+    text-align: justify;
+    color: #51698E;
+    font-weight: 300;
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+
+#barra_menu {    
+    background-color: #51698E;
+    width: 100%;
+    height: 60px;
+}
+
+#menu {
+    width: auto;
+    height: 80px;
+    display: flex;
+}
+
+#menu_ul li{
+    display: inline-block;
+    text-align: center;
+    
+}
+
+#encabezado {
+    background-position: center;
+    width: auto;
+    height: 460px;
+    background-image: url(img/001_header.jpg);
+    background-size: cover;
+    padding-top: 60px;
+}
+
+#contenedor_encabezado {
+    width: 460px;
+    height: 180px;
+    background-color: white;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 13%
+}
+
+#titulo_secciones {
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 14px;
+    padding-left: 226px;
+    text-align: left;
+    
+}
+
+#img {
+    width: 480px;
+    height: 360px;
+    display: flex;
+}
+
+
+
+
+
+#texto_general {
+    text-align: justify;
+    color: #51698E;
+    font-weight: 300;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#contenedor_texto {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 600px;
+    height: 280px;
+    background-color: #F3F3F3;
+}
+
+#imagen_texto {
+    width: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+
+#imagen_texto_1 {
+    display: flex;
+}
+
+
+
+#img_2 {
+    width: 480px;
+    height: 360px;
+    display: flex;
+}
+
+#texto_general_2 {
+    text-align: justify;
+    color: #51698E;
+    font-weight: 300;
+    width: 480px;
+    font-size: 16px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+
+#contenedor_texto_2 {
+    margin-top: 100px;
+    margin-bottom: 110px;
+    height: 150px;
+    background-color: #F3F3F3;
+}
+
+#separacion {
+    height: 20px;
+}
+
+#presupuesto {
+    width: 280px;
+    height: 440px;
+    background-color: white;
+    padding: 40px; 
+}
+
+#texto_presupuesto {
+    width: 480px;
+    height: 140px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+#caja_texto_presupuesto {
+    display: flex;
+    width: 480px;
+    height: 140px;
+}
+
+#flotante_contenedor {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#texto_presupuesto_contenedor {
+    width: 480px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#cta_contactanos {
+    width: 280px;
+    height: 130px;
+    background-color: #4C6BBB;
+    margin-left: 80px;
+    margin-top: 120px;
+    border-radius: 10px;
+}
+
+#texto_float {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#form_legend {
+    color: #51698E;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+
+#form_presupuesto {
+    width: 280px;
+    margin-left: 10px;
+}
+
+#textarea {
+    width: 255px;
+    height: 65px;
+    color: #51698E;
+    resize: none;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+#form_label {
+    width: 210px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #000000;
+    
+}
+
+#form_input {
+    width: 255px;
+    font-size: 12px;
+    height: 20px;
+    color: #51698E;
+    border-radius: 5px;
+    border-width: 1px;    
+}
+
+
+
+#form_select {
+    width: 255px;
+    color: #51698E;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+#button {
+    background-color: #51698E;
+    color: white;
+    padding: 5px;
+    border-radius: 25px;
+    width: 95px;
+    margin-top: 10px;
+    margin-left: 16px;    
+    margin-right: 16px;    
+}
+
+#fieldset {
+    border-color: transparent;
+}
+
+#whats_form {
+    width: 60px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+#contenedor_servicios {
+    background-color: #F3F3F3;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+#contenedor_cuadros_servicios {
+    width: 100%;
+    display: inline-block;
+}
+
+#img_servicios {
+    border-radius: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+
+
+#img_005 {
+    background-image: url(img/005_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_005:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;   
+}
+
+
+
+#texto_contenedores_servicios {
+    width: 180px;
+    height: 130px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+
+
+
+
+#img_006 {
+    background-image: url(img/006_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_006:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+#img_007 {
+    background-image: url(img/007_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_007:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+#img_008 {
+    background-image: url(img/008_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_008:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+#img_009 {
+    background-image: url(img/009_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_009:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+#img_010 {
+    background-image: url(img/010_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_010:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+#img_011 {
+    background-image: url(img/011_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_011:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+
+#img_012 {
+    background-image: url(img/012_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_012:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+#img_013 {
+    background-image: url(img/013_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_013:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+#img_013: {
+    background-image: url(img/005_Servicios_h.jpg);
+}
+
+#img_014 {
+    background-image: url(img/014_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_014:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+#img_015 {
+    background-image: url(img/015_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_015:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+#img_017 {
+    background-image: url(img/017_Servicios.jpg);
+    width: 220px;
+    height: 180px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-image 1s;
+}
+
+#img_017:hover {
+    background-image: url(img/005_Servicios_h.jpg);
+    width: 240px;
+    height: 190px;
+    background-size: cover;
+}
+
+#texto_general_nosotros {
+    text-align: justify;
+    color: #51698E;
+    font-weight: 300;
+    width: 480px;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#container_nosotros {
+    margin-left: 21%;
+}
+
+
+
+#texto_general_3 {
+    text-align: justify;
+    color: #51698E;
+    font-weight: 300;
+    width: 480px;
+    font-size: 16px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#img_3 {
+    width: 480px;
+    height: 360px;
+    display: flex;
+}
+
+#texto_trayectoria_2 {
+    text-align: justify;
+    color: #51698E;
+    font-weight: 300;
+    width: 480px;
+    font-size: 16px;
+}
+
+#contenedor_trayectoria {
+    background-color: #F3F3F3;
+    width: 480px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+#contenedor_trayectoria_logos {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+#contenedor_logo_001 {
+    background-image: url(img/019_Logos_001.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_001:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_002:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_002 {
+    background-image: url(img/019_Logos_002.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_003:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_003 {
+    background-image: url(img/019_Logos_003.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_004:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_004 {
+    background-image: url(img/019_Logos_004.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_005:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_005 {
+    background-image: url(img/019_Logos_005.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_006:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_006 {
+    background-image: url(img/019_Logos_006.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_007:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_007 {
+    background-image: url(img/019_Logos_007.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_008:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_008 {
+    background-image: url(img/019_Logos_008.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_009:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_009 {
+    background-image: url(img/019_Logos_009.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_010:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_010 {
+    background-image: url(img/019_Logos_010.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_011:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_011 {
+    background-image: url(img/019_Logos_011.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#contenedor_logo_012:hover {
+    border-bottom: solid #51698E;
+}
+
+#contenedor_logo_012 {
+    background-image: url(img/019_Logos_012.jpg);
+    width: 220px;
+    height: 130px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    transition: background-image 1s;
+}
+
+#fondo_equipo {
+    align-content: center;
+    width: auto;
+    background-image: url(img/020_Equipo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 620px;
+}
+
+#titulo_equipo_trabajo {
+    color: #51698E;
+    font-size: 45px;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    padding: 35px;
+}
+
+#form_label_2 {
+    width: 140px;
+    height: 20px;
+    align-items: flex-start;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #51698E;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form_input_2 {
+    width: 320px;
+    margin-left: 5px;
+    font-size: 12px;
+    height: 20px;
+    color: #51698E;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form_input_2_direccion {
+    width: 320px;
+    margin-left: 145px;
+    margin-top: 15px;
+    resize: none;
+    font-size: 12px;
+    height: 60px;
+    color: #51698E;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form_input_2_cuentanos {
+    width: 320px;
+    margin-left: 145px;
+    resize: none;
+    font-size: 12px;
+    height: 80px;
+    color: #51698E;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form_equipo {
+    margin: auto;
+    width: auto;
+}
+
+#form_equipo_2 {
+    width: 25%;
+    margin: auto;
+    padding: 50px;
+    align-content: center;
+    align-items: center;
+    background-color: #F3F3F3;
+    margin-bottom: 35px;
+    border-radius: 20px;
+}
+
+#button_2 {
+    background-color: #51698E;
+    color: white;
+    padding: 5px;
+    border-radius: 25px;
+    width: 95px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;    
+    margin-right: 70px;
+}
+
+#legend_equipo {
+    color: #51698E;
+    font-size: 25px;
+    margin-left: 20px;    
+    margin-right: 20px;    
+    margin-bottom: 40px;    
+    }
+
+
+
+#contenedor_equipo {
+    width: 460px;
+    height: 120px;
+    background-color: #F3F3F3;
+    position: absolute;
+    margin-top: 540px;
+    margin-left: 10%;
+}
+
+#fondo_ubicaciones {
+    width: auto;
+    background-image: url(img/021_Ubicaciones.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+#contenedor_ubicaciones {
+    width: 100%;
+    height: 400px;
+    padding-top: 25px;
+}
+
+#texto_ubicaciones {
+    text-align: justify-all;
+    color: #51698E;
+    font-weight: 200;
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+
+#container_frame {
+    width: 80px;
+    height: 50px;
+}
+
+#iframe_ubicaciones {
+    width: 45%;
+    height: 400px;
+    margin-left: -18%;
+}
+
+
+
+
+
+#texto_contenedor_ubicaciones {
+    padding-top: 3px;
+}
+
+#contenedor_texto_ubicaciones {
+    width: 10%;
+    height: 25px;
+    background-color: #51698E;
+    color: white;
+    margin-left: 17%;
+}
+
+#fondo_ubicaciones_2 {
+    width: auto;
+    background-image: url(img/021_Ubicaciones_002.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+#contenedor_ubicaciones_2 {
+    width: 100%;
+    height: 400px;
+    padding-top: 25px;
+}
+
+#contenedor_texto_ubicaciones_2 {
+    width: 10%;
+    height: 25px;
+    background-color: #51698E;
+    color: white;
+    margin-left: 73%;
+}
+
+#texto_contenedor_ubicaciones_2 {
+    padding-top: 3px;
+}
+
+#iframe_ubicaciones_2 {
+    width: 45%;
+    height: 400px;
+    margin-left: 18%;
+}
+
+#fondo_ubicaciones_3 {
+    width: auto;
+    background-image: url(img/021_Ubicaciones_003.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+#imagen_banner {
+    background-image: url(img/022_Banner_009.jpg);
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-size: cover;
+}
+
+#imagen_banner_2 {
+    width: 100%;
+    height: 380px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+#nav_menu {
+    width: 100%;
+}
+
+#menu_li {
+    background-color: white;
+}
+
+#menu_ul {   
+    text-decoration: none;
+    padding: 20px;
+    text-align: right;
+    padding-right: 60px;
+    
+}
+    
+    
+    
+
+#menu_a {
+    text-decoration: none;
+    color: #51698E;
+    padding: 20px;
+}
+#menu_a:hover {
+    background-color: #51698E;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+#menu_a_c {
+    text-decoration: none;
+    color: #51698E;
+    padding: 5px;
+    border: solid #51698E;
+    border-radius: 25px;
+}
+#menu_a_c:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 7px;
+    background-color: #51698E;
+    border-radius: 25px;
+}
+
+#menu_li_c {
+    background-color: white;
+}
+
+#contenedor_footer {
+    width: 20%;
+    text-align: left;
+    display: inline-block;
+}
+
+#a_footer:hover {
+    font-weight: 600;
+}
+
+#a_footer {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#barra_footer {
+    width: 100%;
+    height: 60px;
+    background-color: #474747;
+}
+
+#barra_grande_footer {
+    width: 97%;
+    height: 120px;
+    background-color: #757575;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 3%;
+}
+
+#texto_barra_footer {
+    width: 90%;
+    margin-left: 10%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+}
+
+#img_logos_footer {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+#img_logos_footer_1 {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    margin-left: 10px;
+}
+
+#texto_barra_footer_2 {
+    width: 49%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+#text_p_barra_footer {
+    height: 40px;
+    padding-top: 20px;
+}
+
+#Carlos {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#logo_menu {
+    width: auto;
+    margin: 2px;
+    padding-left: 60px;
+    height: 56px;
+}
+
+#img_logo_footer {
+    width: auto;
+    margin-top: 20px;
+    height: 70px;
+}
+
+
+
+#a_footer_cont:hover {
+    background-color: #474747;
+}
+
+#a_footer_cont {
+    text-decoration: none;
+    color: white;
+    border: solid white;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+#img_banner_cont_001 {
+    width: 288px;
+    height: 432px;
+    display: inline-flex;
+    align-items: flex-start;
+    order: 1;
+    flex-direction: column;
+}
+
+#img_banner_cont_002 {
+    width: 288px;
+    height: 432px;
+    display: inline-flex;
+    order: 2;
+    flex-direction: column;
+}
+
+#img_banner_cont_003 {
+    width: 24%;
+    height: 432px;
+    display: inline-flex;
+    order: 3;
+    border: solid red;
+}
+
+#img_banner_cont_004 {
+    width: 24%;
+    height: 432px;
+    display: inline-flex;
+    order: 4;
+    border: solid red;
+}
+
+#img_banner_001 {
+    width: 288px;
+    height: 288px;
+    background-size: cover;
+    background-image: url(img/022_Banner_2_001.jpg);
+}
+
+#texto_banner {
+    width: ;
+    height: 40%;
+    padding-left: 15%;
+    padding-top: 30%;
+    display: inline-flex;
+    color: white;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+#img_banner_002 {
+    width: 288px;
+    height: 144px;
+    background-size: cover;
+    background-image: url(img/022_Banner_2_003.jpg);
+}
+
+#texto_banner_2 {
+    width: 60%;
+    height: 80%;
+    padding-left: 20%;
+    padding-top: 10%;
+    display: inline-flex;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#img_banner_004 {
+    width: 288px;
+    height: 288px;
+    background-size: cover;
+    background-image: url(img/022_Banner_2_002.jpg);
+}
+
+#img_banner_003 {
+    width: 288px;
+    height: 144px;
+    background-size: cover;
+    background-image: url(img/022_Banner_2_004.jpg);
+}
+
+#imagenes_banner_2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#img_banner2_001 {
+    background-image: url(img/022_Banner_2_001.jpg);
+    width: 300px;
+    height: 450px;
+    background-size: 300px;
+    display: flex;
+}
+
+#img_banner2_001_C {
+    background-image: url(img/022_Banner_2_001.jpg);
+    width: 20%;
+    height: 100%;
+    background-size: 100%;
+    display: flex;
+}
+
+
+#img_banner2_002 {
+    background-image: url(img/022_Banner_2_003.jpg);
+    width: 300px;
+    height: 150px;
+    align-self: flex-end;
+    background-size: cover;
+}
+
+#img_banner2_003 {
+    background-image: url(img/022_Banner_2_004.jpg);
+    width: 300px;
+    height: 450x;
+    background-size: ;
+    display: flex;
+    align-self: flex-start;
+}
+
+#img_banner2_004 {
+    background-image: url(img/022_Banner_2_002.jpg);
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    display: flex;
+    align-self: flex-end;
+    background-size: cover;
+}
+
+#img_banner2_005 {
+    width: 450px;
+    height: 450px;
+    background-image: url(img/022_Banner_2_005.jpg);
+    background-size: cover;
+}
+
+#img_banner2_006 {
+    width: 300px;
+    height: 450px;
+    background-image: url(img/022_Banner_2_006.jpg);
+    background-size: 300px;
+}
+
+#img_banner2_007 {
+    background-image: url(img/022_Banner_2_007.jpg);
+    width: 450px;
+    height: 150px;
+    display: flex;
+    align-self: flex-end;
+    background-size: cover;
+}
+
+#img_banner2_008 {
+    background-image: url(img/022_Banner_2_008.jpg);
+    width: 150px;
+    height: 300px;
+    margin-left: 300px;
+    background-size: cover;
+}
+
+
+
+#img_banner2_002_C:hover {
+    border: solid azure;
+}
+
+#img_banner2_002_C {
+    background-image: url(img/022_Banner_2_003.jpg);
+    width: 100%;
+    height: 34%;
+    background-size: 100%;
+    align-self: flex-end;
+    background-size: cover;
+}
+
+#img_banner2_003_C {
+    background-image: url(img/022_Banner_2_004.jpg);
+    width: 20%;
+    height: 100%;
+    background-size: 100%;
+    display: flex;
+    align-self: flex-start;
+}
+
+#img_banner2_004_C:hover {
+    border: solid azure;
+}
+
+#img_banner2_004_C {
+    background-image: url(img/022_Banner_2_002.jpg);
+    width: 100%;
+    height: 67%;
+    margin-top: 150px;
+    display: flex;
+    align-self: flex-end;
+    background-size: cover;
+}
+
+#img_banner2_005_C:hover {
+    border: solid azure;
+}
+
+#img_banner2_005_C {
+    width: 30%;
+    height: 100%;
+    background-image: url(img/022_Banner_2_005.jpg);
+    background-size: cover;
+}
+
+#img_banner2_006_C {
+    width: 30%;
+    height: 100%;
+    background-image: url(img/022_Banner_2_006.jpg);
+    background-size: 67%;
+}
+
+#img_banner2_008_C:hover {
+    border: solid azure;
+    width: 33%;
+    height: 66%;
+    margin-left: 66%;
+}
+
+#img_banner2_008_C {
+    background-image: url(img/022_Banner_2_008.jpg);
+    width: 34%;
+    height: 66%;
+    margin-left: 66%;
+    background-size: cover;
+}
+
+#img_banner2_007_C:hover {
+    border: solid azure;
+    width: 99%;
+    height: 34%;
+}
+
+#img_banner2_007_C {
+    background-image: url(img/022_Banner_2_007.jpg);
+    width: 100%;
+    height: 34%;
+    display: flex;
+    align-self: flex-end;
+    background-size: cover;
+}
+
+
+
+
+
+#espacio_facebook_footer {
+    width: 740px;
+}
+
+#a_flotante_wa {
+    text-decoration: none;
+}
