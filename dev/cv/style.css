@@ -477,6 +477,22 @@ Proyectos
     background-image: url(./img/logo-panelBloc.png);
 }
 
+.proyectos .caja_uno .proyectos_caja .proy .proy_04{
+    background-image: url(./img/Astaldi_Blanco.png);
+}
+
+.proyectos .caja_uno .proyectos_caja .proy .proy_05{
+    background-image: url(./img/hashtagmc.png);
+}
+
+.proyectos .caja_uno .proyectos_caja .proy .proy_06{
+    background-image: url(./img/servicios.png);
+}
+
+.proyectos .caja_uno .proyectos_caja .proy .proy_07{
+    background-image: url(./img/logo-rod.png);
+}
+
 
 
 .proyectos .caja_dos .proyectos_caja .proy .proy_01{
@@ -484,17 +500,17 @@ Proyectos
 
 }
 .proyectos .caja_dos .proyectos_caja .proy .proy_02{
-    background-image: url(./img);
+    background-image: url(./img/);
 }
 
 
 
 .proyectos .caja_tres .proyectos_caja .proy .proy_01{
-    background-image: url(./img/logo-asealdi.png);
+    background-image: url(./img/xd.png);
     
 }
 .proyectos .caja_tres .proyectos_caja .proy .proy_02{
-    background-image: url(./img/logo-mc.png);
+    background-image: url(./img/logo-figma.png);
 }
 
 .proyectos .caja_tres .proyectos_caja .proy .proy_03{
@@ -502,7 +518,11 @@ Proyectos
 }
 
 .proyectos .caja_tres .proyectos_caja .proy .proy_04{
-    background-image: url(./img/logo-rod.png);
+    background-image: url(./img/logo-figma.png);
+}
+
+.proyectos .caja_tres .proyectos_caja .proy .proy_05{
+    background-image: url(./img/xd.png);
 }
 
 /*
