@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Persona } from '../persona';
 
 @Component({
   selector: 'app-contador',
@@ -7,11 +6,5 @@ import { Persona } from '../persona';
   styleUrls: ['./contador.component.css']
 })
 export class ContadorComponent {
-
-
-  persona: Persona = {
-    nombre: 'Daniel Ochoa',
-    edad: 26
-  };
 
 }
