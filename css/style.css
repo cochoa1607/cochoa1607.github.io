@@ -1,0 +1,253 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Maven Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.primary {
+  color: #62038E;
+}
+
+.secondary {
+  color: #FFFFFF;
+}
+
+.terciary {
+  color: #000000;
+}
+
+.bg-primary {
+  background-color: linear-gradient(#E3C174, 80%, rgba(138, 127, 88, 0.9176470588)) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E3C174), color-stop(80%), to(rgba(138, 127, 88, 0.9176470588))) !important;
+  background: linear-gradient(#E3C174, 80%, rgba(138, 127, 88, 0.9176470588)) !important;
+}
+
+.bg-secondary {
+  background-color: #E3C174 !important;
+}
+
+.diap-uno {
+  background-image: url(../img/fondo.png);
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.warning {
+  position: relative;
+  padding: 1rem;
+  background-color: #D5AB00;
+  color: #FFFFFF !important;
+  -webkit-transform: translate(2rem, -1rem);
+          transform: translate(2rem, -1rem);
+  border-radius: 0 1rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.warning-icon {
+  height: auto;
+  font-size: 4rem;
+}
+
+.warning-icon-text {
+  font-size: 1.4rem;
+}
+
+.warning-text {
+  font-size: 1.8rem;
+  padding-left: 4rem;
+  border: solid #D5AB00 0.3rem;
+  border-radius: 1.5rem;
+}
+
+.riesgos .riesgo-cuadro {
+  width: 70%;
+  margin: auto;
+}
+
+.riesgos .riesgo-cuadro img {
+  width: 100%;
+  height: auto;
+  border: solid #62038E 0.3rem;
+  border-radius: 0.5rem;
+  z-index: 9;
+  position: relative;
+}
+
+.riesgo-texto {
+  width: 80%;
+  margin: auto;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  border: solid #62038E 0.3rem;
+  border-radius: 0.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8C45AD), color-stop(20%), to(#A964CA));
+  background: linear-gradient(#8C45AD, 20%, #A964CA);
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.diap-dos {
+  background-image: url(../img/fondoDos.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.diap-dos .imagen-mujer {
+  background-image: url(../img/mujerEmb.png);
+  width: 30vw;
+  height: 70vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 60%;
+}
+
+.diap-dos .dos {
+  padding: 2rem;
+}
+
+.diap-dos .plecas .pleca-imagen {
+  width: 20%;
+  z-index: 999;
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+}
+
+.diap-dos .plecas .pleca-imagen img {
+  width: 100%;
+  border-radius: 30rem;
+  border: solid #000000 0.3rem;
+}
+
+.diap-dos .plecas .pleca-texto {
+  width: 80%;
+  font-size: 1.8rem;
+  padding-left: 8rem !important;
+  border-radius: 30rem;
+  border: solid #FFFFFF 0.4rem;
+  -webkit-transform: translateX(-3rem);
+          transform: translateX(-3rem);
+}
+
+.bg-uno {
+  background: -webkit-gradient(linear, left top, left bottom, from(#A964CA), color-stop(80%), to(#62038E));
+  background: linear-gradient(#A964CA, 80%, #62038E);
+}
+
+.bg-dos {
+  background: -webkit-gradient(linear, left top, left bottom, from(#AFBFEA), color-stop(50%), to(#2C4BA5));
+  background: linear-gradient(#AFBFEA, 50%, #2C4BA5);
+}
+
+.bg-tres {
+  background: -webkit-gradient(linear, left top, left bottom, from(#AFDBEA), color-stop(50%), to(#2E88A6));
+  background: linear-gradient(#AFDBEA, 50%, #2E88A6);
+}
+
+.diap-tres {
+  background-image: url(../img/fondoTres.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.diap-tres .cont-circulo {
+  margin: 0.2rem 8vw 0.2rem 8vw;
+}
+
+.diap-tres .circulo {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 30rem;
+}
+
+.diap-tres .cont-circulo p {
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 0.2rem auto 0 auto;
+  margin: 0.5rem 0 1rem 0;
+  width: 12vw;
+}
+
+.diap-tres .circulo-uno {
+  background-image: url(../img/corazon.png);
+}
+
+.diap-tres .circulo-dos {
+  background-image: url(../img/cerebro.png);
+}
+
+.diap-tres .circulo-tres {
+  background-image: url(../img/embarazadaG.png);
+  width: 18vw;
+  height: 18vw;
+  border: solid #D5AB00 0.3rem;
+}
+
+.diap-tres .circulo-cuatro {
+  background-image: url(../img/higado.png);
+}
+
+.diap-tres .circulo-cinco {
+  background-image: url(../img/globulos.png);
+}
+
+.diap-tres .circulo-seis {
+  background-image: url(../img/riñon.png);
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+  .diap-tres .cont-circulo {
+    margin: 0.2rem 3vw 0.2rem 3vw;
+  }
+  .diap-tres .circulo {
+    width: 16vw;
+    height: 16vw;
+  }
+  .diap-tres .cont-circulo p {
+    font-size: 1.6rem;
+    width: 16vw;
+    margin: 0.5rem 0 1rem 0;
+  }
+  .diap-tres .circulo-tres {
+    width: 23vw;
+    height: 23vw;
+  }
+}
+@media only screen and (max-width: 799px) and (min-width: 10px) {
+  .diap-tres .cont-circulo {
+    margin: 0.1rem 2vw 0.1rem 2vw;
+  }
+  .diap-tres .circulo {
+    width: 25vw;
+    height: 25vw;
+  }
+  .diap-tres .cont-circulo p {
+    font-size: 1.2rem;
+    width: 25vw;
+    margin: 0.5rem 0 1rem 0;
+  }
+  .diap-tres .circulo-tres {
+    width: 32vw;
+    height: 32vw;
+  }
+}/*# sourceMappingURL=style.css.map */
