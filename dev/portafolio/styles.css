@@ -1,4 +1,156 @@
-img {
-    border: 3px solid #ddd;
-    padding: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Estilos para normalización */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--blanco);
+}
+
+:root {
+    --negro: #020202;
+    --gris: #808080;
+    --blanco: #FFFFFF;
+
+    --azul: #2272FF;
+
+    --transition: ease-in-out 200ms;
+}
+
+/* Estilos generales */
+
+h1 {
+    font-weight: 700;
+    font-size: 4.2rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--azul);
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* Estilos personalizados */
+
+/* NAVBAR */
+.name-navbar {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+/* HEADER */
+.container-dynamic-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 45rem;
+    position: relative;
+}
+
+.dynamic-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    min-height: 6rem;
+    font-size: 2rem;
+}
+
+/* Cursor parpadeante */
+.dynamic-text::after {
+    content: "|";
+    margin-left: 0px;
+    /* Espacio entre el texto y el cursor */
+    opacity: 1;
+    animation: blink 1s step-start infinite;
+}
+
+/* Ocultar el cursor */
+.hide-cursor::after {
+    opacity: 0;
+    /* Esconde el cursor */
+}
+
+/* Animación de parpadeo */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* PARALLAX */
+.parallax-container {
+    position: relative;
+    width: 120vw;
+    left: -10vw;
+    height: 400px;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transform-origin: center;
+    margin-top: 2rem;
+}
+
+.parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(0);
+    transition: transform 0.1s linear;
+}
+
+.parallax-section-1 .parallax-image {
+    left: -50%;
+}
+
+.image-top {
+    background-image: url('./src/banner.jpg');
+}
+
+.image-bottom {
+    background-image: url('./src/banner.jpg');
 }
