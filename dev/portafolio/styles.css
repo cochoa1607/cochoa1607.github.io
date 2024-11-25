@@ -24,7 +24,13 @@ body {
 
 :root {
     --negro: #020202;
+    --negro-dos: #2A2A2A;
+
     --gris: #808080;
+    --gris-dos: #A9A9A9;
+    --gris-tres: #D2D2D2;
+    --gris-cuatro: #F2F2F2;
+
     --blanco: #FFFFFF;
     --blanco-op: #FFFFFFEE;
 
@@ -37,39 +43,50 @@ body {
 
 h1 {
     font-weight: 700;
-    font-size: 4.2rem;
+    font-size: 3rem;
+    color: var(--negro-dos);
 }
 
 h2 {
     font-weight: 700;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     color: var(--azul);
 }
 
 h3 {
     font-weight: 400;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
+    color: var(--negro-dos);
 }
 
 h4 {
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    color: var(--negro-dos);
 }
 
 p {
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 200;
+    font-size: 1.6rem;
+    color: var(--negro-dos);
+}
+
+/* Division de secciones */
+.line-division {
+    width: 70vw;
+    height: .1rem;
+    border-radius: 5rem;
+    background-color: var(--gris-tres);
+    margin: 7rem auto;
 }
 
 /* Estilos personalizados */
 
-/* NAVBAR */
-.name-navbar {
-    font-weight: 500;
-    font-size: 2rem;
+/* HEADER */
+.container-no-dynamic-text {
+    min-width: 25rem;
 }
 
-/* HEADER */
 .container-dynamic-text {
     display: flex;
     justify-content: center;
@@ -116,15 +133,20 @@ p {
 
 
 /* PARALLAX HORIZONTAL */
+.parallax-section {
+    padding: 5rem 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
 .parallax-container {
     position: relative;
     width: 120vw;
     left: -10vw;
     height: 400px;
     overflow: hidden;
-    transform: rotate(10deg);
+    transform: rotate(5deg);
     transform-origin: center;
-    margin-top: 2rem;
 }
 
 .parallax-image {
@@ -142,6 +164,10 @@ p {
 
 .parallax-section-1 .parallax-image {
     left: -50%;
+}
+
+.parallax-section-2 {
+    margin-top: 2rem;
 }
 
 .image-top {
