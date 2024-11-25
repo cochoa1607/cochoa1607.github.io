@@ -26,6 +26,7 @@ body {
     --negro: #020202;
     --gris: #808080;
     --blanco: #FFFFFF;
+    --blanco-op: #FFFFFFEE;
 
     --azul: #2272FF;
 
@@ -87,22 +88,18 @@ p {
     font-size: 2rem;
 }
 
-/* Cursor parpadeante */
 .dynamic-text::after {
     content: "|";
     margin-left: 0px;
-    /* Espacio entre el texto y el cursor */
     opacity: 1;
+    font-weight: 400;
     animation: blink 1s step-start infinite;
 }
 
-/* Ocultar el cursor */
 .hide-cursor::after {
     opacity: 0;
-    /* Esconde el cursor */
 }
 
-/* Animación de parpadeo */
 @keyframes blink {
     0% {
         opacity: 1;
@@ -118,7 +115,7 @@ p {
 }
 
 
-/* PARALLAX */
+/* PARALLAX HORIZONTAL */
 .parallax-container {
     position: relative;
     width: 120vw;
