@@ -53,7 +53,7 @@ function handleParallax() {
     const topContainer = document.querySelector('.parallax-section-1');
     if (parallaxTop && topContainer) {
         const topOffset = topContainer.getBoundingClientRect().top;
-        const topBackgroundPosition = (topOffset * 0.5) % parallaxTop.offsetWidth;
+        const topBackgroundPosition = (topOffset * 1) % parallaxTop.offsetWidth;
         parallaxTop.style.backgroundPositionX = `${topBackgroundPosition}px`;
     }
 
