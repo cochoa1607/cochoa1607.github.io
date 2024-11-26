@@ -175,9 +175,9 @@ button {
 }
 
 .image-top {
-    background-image: url('./src/banner.png');
+    background-image: url('./src/banner-left.png');
 }
 
 .image-bottom {
-    background-image: url('./src/banner.jpg');
+    background-image: url('./src/banner-right.png');
 }
