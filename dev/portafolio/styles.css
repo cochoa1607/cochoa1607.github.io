@@ -163,7 +163,7 @@ p {
 }
 
 .parallax-section-1 .parallax-image {
-    left: -50%;
+    left: -70%;
 }
 
 .parallax-section-2 {
@@ -171,7 +171,7 @@ p {
 }
 
 .image-top {
-    background-image: url('./src/banner.jpg');
+    background-image: url('./src/banner.png');
 }
 
 .image-bottom {
