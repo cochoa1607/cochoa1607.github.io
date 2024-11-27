@@ -45,10 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(blinkCursor, 500);
 });
 
-// Scroll Horizontal
+// PARALLAX
 function handleParallax() {
     const scrollPosition = window.scrollY;
 
+    // Imagen superior
     const parallaxTop = document.querySelector('.image-top');
     const topContainer = document.querySelector('.parallax-section-1');
     if (parallaxTop && topContainer) {
@@ -57,16 +58,18 @@ function handleParallax() {
         parallaxTop.style.backgroundPositionX = `${topBackgroundPosition}px`;
     }
 
+    // Imagen inferior
     const parallaxBottom = document.querySelector('.image-bottom');
     const bottomContainer = document.querySelector('.parallax-section-2');
     if (parallaxBottom && bottomContainer) {
         const bottomOffset = bottomContainer.getBoundingClientRect().top;
-        const bottomBackgroundPosition = (-bottomOffset * 0.5) % parallaxBottom.offsetWidth;
+        const bottomBackgroundPosition = (-bottomOffset * 1) % parallaxBottom.offsetWidth;
         parallaxBottom.style.backgroundPositionX = `${bottomBackgroundPosition}px`;
     }
 }
 
 window.addEventListener('scroll', handleParallax);
+
 
 
 

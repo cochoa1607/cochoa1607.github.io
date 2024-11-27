@@ -158,6 +158,7 @@ button {
 
 
 /* PARALLAX HORIZONTAL */
+/* 
 .parallax-section {
     padding: 5rem 0 !important;
     position: relative;
@@ -201,10 +202,285 @@ button {
 
 .image-bottom {
     background-image: url('./src/banner-right.png');
+} */
+
+/* PARALLAX HORIZONTAL */
+.parallax-section {
+    padding: 5rem 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-container {
+    position: relative;
+    width: 100vw;
+    left: 0vw;
+    height: 400px;
+    /* Se ajustará con media queries */
+    overflow: hidden;
+    transform: rotate(5deg);
+    transform-origin: center;
+}
+
+.parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(0);
+    transition: transform 0.1s linear;
+}
+
+.parallax-section-1 .parallax-image {
+    left: -70%;
+}
+
+.parallax-section-2 {
+    margin-top: 2rem;
+}
+
+.image-top {
+    background-image: url('./src/banner-left.png');
+}
+
+.image-bottom {
+    background-image: url('./src/banner-right.png');
+}
+
+/* --- BREAKPOINTS --- */
+
+/* Mobile (tamaños menores a 768px) */
+@media (max-width: 768px) {
+    .parallax-container {
+        width: 110vw;
+        left: -5vw;
+        height: 450px;
+        /* Mayor altura para pantallas grandes */
+        transform: rotate(5deg);
+        /* border: solid purple 3px; */
+    }
+
+    .parallax-section-1 .parallax-image {
+        width: 200%;
+        /* Más ancho para cubrir el área */
+        left: -100%;
+    }
+
+    .parallax-section-2 {
+        margin-top: 0rem;
+    }
+
+    .parallax-section-2 .parallax-image {
+        width: 200%;
+        /* Más ancho para cubrir el área */
+        left: -0%;
+    }
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .parallax-container {
+        width: 110vw;
+        left: -5vw;
+        height: 450px;
+        /* Mayor altura para pantallas grandes */
+        transform: rotate(5deg);
+        /* border: solid pink 3px; */
+    }
+
+    .parallax-section-1 .parallax-image {
+        width: 140%;
+        /* Más ancho para cubrir el área */
+        left: -40%;
+    }
+
+    .parallax-section-2 {
+        margin-top: 5rem;
+    }
+
+    .parallax-section-2 .parallax-image {
+        width: 140%;
+        /* Más ancho para cubrir el área */
+        left: -0%;
+    }
+}
+
+/* Desktop (1024px en adelante) */
+@media (min-width: 1024px) and (max-width: 1499px) {
+    .parallax-container {
+        width: 110vw;
+        left: -5vw;
+        height: 600px;
+        /* Mayor altura para pantallas grandes */
+        transform: rotate(5deg);
+        /* border: solid blue 3px; */
+    }
+
+    .parallax-section-1 .parallax-image {
+        width: 100%;
+        /* Más ancho para cubrir el área */
+        left: 0;
+    }
+
+    .parallax-section-2 {
+        margin-top: 15rem;
+    }
+
+    .parallax-section-2 .parallax-image {
+        width: 100%;
+        /* Más ancho para cubrir el área */
+        left: 0%;
+    }
+}
+
+/* XL Screens (1400px en adelante) */
+@media (min-width: 1500px) {
+    .parallax-container {
+        width: 110vw;
+        left: -5vw;
+        height: 700px;
+        /* Mayor altura para pantallas grandes */
+        transform: rotate(5deg);
+        /* border: solid red 3px; */
+    }
+
+    .parallax-section-1 .parallax-image {
+        width: 100%;
+        /* Más ancho para cubrir el área */
+        left: 0;
+    }
+
+    .parallax-section-2 {
+        margin-top: 15rem;
+    }
+
+    .parallax-section-2 .parallax-image {
+        width: 100%;
+        /* Más ancho para cubrir el área */
+        left: 0%;
+    }
 }
 
 /* FIGMA */
 .figma-section {
+    background-color: var(--blanco-op);
+    padding: 2rem 0;
+}
+
+.figma-section iframe {
+    max-width: 100% !important;
+    box-shadow: var(--shadow);
+    margin: 1rem 2rem 2rem 0rem !important;
+    border-radius: 1rem;
+}
+
+.iframe-wrapper {
+    position: relative;
+    width: 100% !important;
+    padding-top: 56.25%;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.figma-section h4 {
+    padding-top: 5rem !important;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Breakpoints para Responsividad */
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .figma-section {
+        border: solid red 2px;
+    }
+
+    .figma-section p {
+        font-size: 1rem;
+    }
+
+    .iframe-wrapper {
+        padding-top: 75%;
+        margin: 1rem 0.5rem;
+        height: calc(90vh + 2rem) !important;
+    }
+
+    .figma-section iframe {
+        height: calc(90vh + 2rem) !important;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .figma-section {
+        border: solid blue 2px;
+    }
+
+    .iframe-wrapper {
+        padding-top: 62.5%;
+        /* Proporción intermedia */
+        margin: 1rem 1rem;
+        height: calc(70vh + 2rem) !important;
+    }
+
+    .figma-section iframe {
+        height: calc(70vh + 2rem) !important;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    .figma-section {
+        border: solid purple 2px;
+    }
+
+    .iframe-wrapper {
+        padding-top: 56.25%;
+        height: calc(60vh + 2rem) !important;
+    }
+
+    .figma-section iframe {
+        height: calc(60vh + 2rem) !important;
+    }
+}
+
+/* XL Screens (1400px en adelante) */
+@media (min-width: 1400px) {
+
+    .figma-section {
+        border: solid pink 2px;
+    }
+
+    .iframe-wrapper {
+        padding-top: 50%;
+        /* Reduce ligeramente la altura para pantallas XL */
+        margin: 1.5rem 3rem;
+        height: calc(60vh + 3rem) !important;
+    }
+
+    .figma-section iframe {
+        height: calc(60vh + 3rem) !important;
+    }
+}
+
+
+/* .figma-section {
     background-color: var(--blanco-op);
 }
 
@@ -218,8 +494,6 @@ button {
     box-shadow: var(--shadow);
     margin: 1rem 2rem 2rem 2rem;
 }
-
-/* Skills - Contenedor */
 .skill-container {
     display: flex;
     flex-wrap: wrap;
@@ -242,5 +516,47 @@ button {
 }
 
 .skill-icon:hover {
+    color: var(--azul);
+} */
+
+/* CONTACTO */
+#contacto h3 {
+    color: var(--gris-oscuro);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Información de Contacto */
+#contacto .fw-bold {
+    color: var(--gris-oscuro);
+}
+
+#contacto a,
+#contacto p {
+    color: var(--gris);
+}
+
+#contacto a:hover {
+    color: var(--azul);
+}
+
+/* Íconos de Redes Sociales */
+.contact-icon {
+    font-size: 2rem;
+    color: var(--gris);
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-icon:hover {
+    color: var(--azul);
+}
+
+/* Contact Links */
+.contact-link {
+    color: var(--gris);
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
     color: var(--azul);
 }
