@@ -24,36 +24,46 @@
         <!-- NAVBAR -->
         <nav class="navbar fixed-top navbar-expand-lg bg-body-white px-3" style="background-color: var(--blanco-op);" id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#navbar"><h4>Daniel Ochoa</h4></a>
+                <a class="navbar-brand" href="#header"><h4>Daniel Ochoa</h4></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#navbar">Home</a>
+                        <a class="nav-link active" href="#header">Inicio</a>
+                        <a class="nav-link" href="#portfolio">Portafolio</a>
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav>        
         
         <!-- HEADER INFO -->
-        <div class="container-fluid mt-5 pt-5">
-            <div class="row">
-                <div class="col-9 m-auto d-flex flex-column justify-content-center align-items-center">
-                    <img src="./src/daniel_portfolio.png" alt="Foto Daniel Ochoa" class="img-fluid rounded-circle p-0 m-5 shadow-p" style="max-width: 20rem;">
-                    <div class="my-2 container-no-dynamic-text">
+        <div class="container-fluid mt-5 pt-5" id="header">
+            <div class="row align-items-center">
+                <!-- Imagen -->
+                <div class="col-12 col-md-4 text-center">
+                    <img src="./src/daniel_portfolio.png" alt="Foto Daniel Ochoa" 
+                        class="img-fluid rounded-circle p-0 m-5 shadow-p header-img">
+                </div>
+                <!-- Contenido -->
+                <div class="col-12 col-md-8">
+                    <div class="container-no-dynamic-text mb-4">
                         <h4 class="text-start">Hola! Soy</h4>
-                        <h1 class="text-center">Daniel Ochoa</h1>
-                        <h4 class="text-end">Y soy un:</h4>
+                        <h1 class="text-start">Daniel Ochoa</h1>
+                        <h4 class="text-start">Y soy un:</h4>
                     </div>
-                    <div class="my-2 container-dynamic-text">
+                    <div class="container-dynamic-text">
                         <h2 id="dynamic-text" class="dynamic-text">Project Development Manager</h2>
                     </div>
-                    
-                    <p class="my-2 text-center">Tengo amplia experiencia en la dirección de proyectos, el desarrollo web y el diseño de productos basado en la experiencia del usuario.</p>
+                    <p class="mt-4 text-start">
+                        Tengo amplia experiencia en la dirección de proyectos, el desarrollo web y el diseño de productos basado en la experiencia del usuario.
+                    </p>
                 </div>
             </div>
         </div>
+
 
         <!-- LINE DIVISION -->
         <div class="line-division"></div>
@@ -108,7 +118,7 @@
                     <h4 class="text-start w-100 mt-4">ArcsaCapital</h4>
                     <div class="iframe-wrapper">
                         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                                src="https://embed.figma.com/proto/CgwWGGtKcj2FrHN89D4ZT6/Mocks_ArcsaCapital_WebApp?page-id=0%3A1&node-id=49-49&node-type=frame&viewport=612%2C365%2C0.03&scaling=scale-down&content-scaling=fixed&starting-point-node-id=49%3A49&show-proto-sidebar=1&embed-host=share" 
+                                data-src="https://embed.figma.com/proto/CgwWGGtKcj2FrHN89D4ZT6/Mocks_ArcsaCapital_WebApp?page-id=0%3A1&node-id=49-49&node-type=frame&viewport=612%2C365%2C0.03&scaling=scale-down&content-scaling=fixed&starting-point-node-id=49%3A49&show-proto-sidebar=1&embed-host=share" 
                                 allowfullscreen>
                         </iframe>
                     </div>
@@ -117,16 +127,16 @@
                     <h4 class="text-start w-100 mt-4">SoccerAdmin</h4>
                     <div class="iframe-wrapper">
                         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                                src="https://embed.figma.com/proto/e9ge65xhuTaTnkYsSGLFmY/Mocks_SoccerAdmin_WebApp?page-id=0%3A1&node-id=244-1050&node-type=frame&viewport=678%2C601%2C0.13&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share" 
+                                data-src="https://embed.figma.com/proto/e9ge65xhuTaTnkYsSGLFmY/Mocks_SoccerAdmin_WebApp?page-id=0%3A1&node-id=244-1050&node-type=frame&viewport=678%2C601%2C0.13&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share" 
                                 allowfullscreen>
                         </iframe>
                     </div>
-                    
+
                     <!-- Workout -->
                     <h4 class="text-start w-100 mt-4">Workout</h4>
                     <div class="iframe-wrapper">
                         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                                src="https://embed.figma.com/proto/W1t40QnlFoC6KXWFRRue51/Workout?page-id=0%3A1&node-id=1-2&node-type=frame&viewport=329%2C52%2C1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share" 
+                                data-src="https://embed.figma.com/proto/W1t40QnlFoC6KXWFRRue51/Workout?page-id=0%3A1&node-id=1-2&node-type=frame&viewport=329%2C52%2C1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share" 
                                 allowfullscreen>
                         </iframe>
                     </div>
@@ -134,11 +144,11 @@
                     <!-- Prototypes Section -->
                     <h3 class="mb-3">UI Kits</h3>
 
-                    <!-- ArcsaCapital -->
+                    <!-- Soccer Admin -->
                     <h4 class="text-start w-100 mt-4">SoccerAdmin</h4>
                     <div class="iframe-wrapper">
                         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                                src="hhttps://embed.figma.com/design/e9ge65xhuTaTnkYsSGLFmY/Mocks_SoccerAdmin_WebApp?node-id=0-1&embed-host=share" 
+                                data-src="https://embed.figma.com/design/e9ge65xhuTaTnkYsSGLFmY/Mocks_SoccerAdmin_WebApp?node-id=1-2&embed-host=share" 
                                 allowfullscreen>
                         </iframe>
                     </div>
@@ -147,7 +157,7 @@
                     <h4 class="text-start w-100 mt-4">Arcsa Capital</h4>
                     <div class="iframe-wrapper">
                         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                                src="https://embed.figma.com/design/CgwWGGtKcj2FrHN89D4ZT6/Mocks_ArcsaCapital_WebApp?node-id=0-1&embed-host=share" 
+                                data-src="https://embed.figma.com/design/CgwWGGtKcj2FrHN89D4ZT6/Mocks_ArcsaCapital_WebApp?node-id=0-1&embed-host=share" 
                                 allowfullscreen>
                         </iframe>
                     </div>
@@ -214,6 +224,7 @@
                             </div>
                         </div>
                     </div>
+
 
                     <!-- LINE DIVISION -->
                     <div class="line-division-intern"></div>

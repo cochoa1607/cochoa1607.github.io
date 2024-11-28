@@ -88,6 +88,10 @@ button {
     box-shadow: var(--shadow);
 }
 
+.row {
+    margin-top: 5rem;
+}
+
 /* Division de secciones */
 .line-division {
     width: 70vw;
@@ -116,7 +120,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 45rem;
+    min-width: 100%;
     position: relative;
 }
 
@@ -143,66 +147,47 @@ button {
 }
 
 @keyframes blink {
-    0% {
+
+    0%,
+    100% {
         opacity: 1;
     }
 
     50% {
         opacity: 0;
     }
+}
 
-    100% {
-        opacity: 1;
+/* Estilo de la imagen */
+.header-img {
+    max-width: 20rem;
+}
+
+/* Breakpoints */
+@media (min-width: 1024px) {
+    #header {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    .header-img {
+        max-width: 30rem;
+        margin: 0;
+        /* Quita el margen extra */
+    }
+
+    .container-no-dynamic-text,
+    .container-dynamic-text,
+    p {
+        text-align: left;
+        /* Alinea el texto a la izquierda */
+    }
+
+    .dynamic-text {
+        display: flex;
+        justify-content: start;
     }
 }
-
-
-/* PARALLAX HORIZONTAL */
-/* 
-.parallax-section {
-    padding: 5rem 0 !important;
-    position: relative;
-    overflow: hidden;
-}
-
-.parallax-container {
-    position: relative;
-    width: 120vw;
-    left: -10vw;
-    height: 400px;
-    overflow: hidden;
-    transform: rotate(5deg);
-    transform-origin: center;
-}
-
-.parallax-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: translateX(0);
-    transition: transform 0.1s linear;
-}
-
-.parallax-section-1 .parallax-image {
-    left: -70%;
-}
-
-.parallax-section-2 {
-    margin-top: 2rem;
-}
-
-.image-top {
-    background-image: url('./src/banner-left.png');
-}
-
-.image-bottom {
-    background-image: url('./src/banner-right.png');
-} */
 
 /* PARALLAX HORIZONTAL */
 .parallax-section {
@@ -406,9 +391,9 @@ button {
 /* Mobile */
 @media (max-width: 768px) {
 
-    .figma-section {
+    /* .figma-section {
         border: solid red 2px;
-    }
+    } */
 
     .figma-section p {
         font-size: 1rem;
@@ -427,9 +412,9 @@ button {
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .figma-section {
+    /* .figma-section {
         border: solid blue 2px;
-    }
+    } */
 
     .iframe-wrapper {
         padding-top: 62.5%;
@@ -446,9 +431,9 @@ button {
 /* Desktop */
 @media (min-width: 1024px) {
 
-    .figma-section {
+    /* .figma-section {
         border: solid purple 2px;
-    }
+    } */
 
     .iframe-wrapper {
         padding-top: 56.25%;
@@ -463,9 +448,9 @@ button {
 /* XL Screens (1400px en adelante) */
 @media (min-width: 1400px) {
 
-    .figma-section {
+    /* .figma-section {
         border: solid pink 2px;
-    }
+    } */
 
     .iframe-wrapper {
         padding-top: 50%;
@@ -479,33 +464,30 @@ button {
     }
 }
 
-
-/* .figma-section {
-    background-color: var(--blanco-op);
-}
-
-.figma-section h3,
-.figma-section h4 {
-    margin-top: 2rem;
-}
-
-.figma-section iframe {
-    max-width: 100%;
-    box-shadow: var(--shadow);
-    margin: 1rem 2rem 2rem 2rem;
-}
+/* SKILLS */
 .skill-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    justify-content: start;
+    position: relative;
 }
 
 .skill-item {
-    flex: 1 1 30%;
+    flex: 1 1 calc(33.33% - 1.5rem);
     min-width: 200px;
     display: flex;
     align-items: center;
     padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.skill-container::after {
+    content: "";
+    flex: 1 1 calc(33.33% - 1.5rem);
+    min-width: 200px;
+    height: 0;
+    visibility: hidden;
 }
 
 .skill-icon {
@@ -517,7 +499,34 @@ button {
 
 .skill-icon:hover {
     color: var(--azul);
-} */
+}
+
+/* Tablet (768px a 1023px) */
+@media (max-width: 1023px) {
+    .skill-item {
+        flex: 1 1 calc(50% - 1.5rem);
+        /* Dos columnas */
+    }
+
+    .skill-container::after {
+        flex: 1 1 calc(50% - 1.5rem);
+        /* Ghost items del mismo tamaño */
+    }
+}
+
+/* Mobile (menor a 768px) */
+@media (max-width: 767px) {
+    .skill-item {
+        flex: 1 1 100%;
+        /* Una columna */
+    }
+
+    .skill-container::after {
+        flex: 1 1 100%;
+        /* Ghost items del mismo tamaño */
+    }
+}
+
 
 /* CONTACTO */
 #contacto h3 {
