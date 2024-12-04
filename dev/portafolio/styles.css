@@ -830,38 +830,119 @@ button {
 .carousel-control-next {
     position: absolute;
     top: 50%; /* Centrado vertical */
-    transform: translateY(calc(-50%)); /* Ajuste fino */
-    background: none; /* Elimina el fondo predeterminado */
-    border: none; /* Sin bordes */
-    z-index: 10; /* Asegura que estén encima */
+    transform: translateY(calc(-50%));
+    background: none;
+    border: none;
+    z-index: 10;
     cursor: pointer;
 }
 
-/* Íconos de Font Awesome */
 .carousel-control-prev i,
 .carousel-control-next i {
-    font-size: 2rem; /* Tamaño del ícono */
-    color: white; /* Color blanco para contraste */
-    transition: transform 0.3s ease; /* Animación al pasar el mouse */
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.3s ease;
 }
 
 .carousel-control-prev:hover i,
 .carousel-control-next:hover i {
-    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+    transform: scale(1.2);
 }
 
-/* Imágenes del slider con más altura */
 .proyects-section img {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    height: 400px; /* Altura fija */
-    object-fit: cover; /* Escala sin deformar */
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
     margin: 2rem 0 4rem 0 !important;
 }
 
-/* Aumentar espacio en el contenedor */
 .proyects-section .col-11 {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+
+/* Info */
+.info-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.info-section h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222;
+}
+
+.info-section h4 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.info-section p,
+.info-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.info-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.info-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces */
+.info-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.info-section a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la división de línea */
+.line-division {
+    border-top: 2px solid #ddd;
+    margin: 50px 0;
+}
+
+/* Estilos para la sección de Figma */
+.figma-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.figma-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.iframe-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.iframe-wrapper iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
 }
