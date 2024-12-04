@@ -1,145 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Carlos Daniel Ochoa Serrano, Diseñador de Producto y UI/UX"
+    />
+    <title>Daniel Ochoa CV</title>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portafolio de Carlos Daniel Ochoa Serrano, Diseñador de Producto y UI/UX">
-        <title>Daniel Ochoa CV</title>
-        
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-        <!-- Font Awesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-        
-        <!-- Personalized Styles -->
-        <link href="./styles.css" rel="stylesheet">
-    </head>
+    <!-- Personalized Styles -->
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
 
-    <body>
-        
-        <!-- NAVBAR -->
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-white px-3 py-4" style="background-color: var(--blanco-op);" id="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#header"><h4>Daniel Ochoa</h4></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" href="#header">Inicio</a>
-                        <a class="nav-link" href="#portfolio">Portafolio</a>
-                        <a class="nav-link" href="#skills">Habilidades</a>
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </div>
-                </div>
-            </div>
-        </nav>        
-        
-        <!-- HEADER INFO -->
-        <div class="container-fluid mt-5" id="header">
-            <div class="row container-header">
-                <!-- Imagen -->
-                <div class="col-8 col-lg-5 m-auto text-center">
-                    <img src="./src/daniel_portfolio.png" alt="Foto Daniel Ochoa" class="img-fluid rounded-circle p-0 m-2 shadow-p header-img">
-                </div>
-                <!-- Contenido -->
-                <div class="col-10 col-lg-7 m-auto">
-                    <div class="container-no-dynamic-text mb-4">
-                        <h4 class="text-start text-lg-start">Hola! Soy</h4>
-                        <h1 class="text-center text-lg-start">Daniel Ochoa</h1>
-                        <h4 class="text-end text-lg-start">Y soy un:</h4>
-                    </div>
-                    <div class="container-dynamic-text">
-                        <h2 id="dynamic-text" class="dynamic-text">Project Development Manager</h2>
-                    </div>
-                    <p class="mt-4 text-center text-lg-start experience-text">
-                        Tengo amplia experiencia en la dirección de proyectos, el desarrollo web y el diseño de productos basado en la experiencia del usuario.
-                    </p>
-                </div>
-            </div>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar fixed-top navbar-expand-lg bg-body-white px-3 py-4"
+      style="background-color: var(--blanco-op)"
+      id="navbar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#header">
+          <span style="font-size: 2rem">Daniel Ochoa</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#header">Inicio</a>
+            <a class="nav-link" href="#portfolio">Portafolio</a>
+            <a class="nav-link" href="#skills">Habilidades</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </div>
         </div>
+      </div>
+    </nav>
 
-
-        <!-- LINE DIVISION -->
-        <div class="line-division"></div>
-
-        <!-- <div style="width: 100vw !important; height: 0vh !important;"></div> -->
-
-        <!-- PARALLAX -->
-        <div class="parallax-section">
-            <div class="parallax-container parallax-section-1">
-                <div class="parallax-image image-top"></div>
-            </div>
-            
-            <div class="parallax-container parallax-section-2">
-                <div class="parallax-image image-bottom"></div>
-            </div>
+    <!-- HEADER INFO -->
+    <div class="container-fluid mt-5" id="header">
+      <div class="row container-header">
+        <!-- Imagen -->
+        <div class="col-8 col-lg-5 m-auto text-center">
+          <img
+            src="./src/daniel_portfolio.png"
+            alt="Foto Daniel Ochoa"
+            class="img-fluid rounded-circle p-0 m-2 shadow-p header-img"
+          />
         </div>
-
-        <!-- LINE DIVISION -->
-        <div class="line-division"></div>
-
-        <!-- RESUME -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-9 m-auto">
-                    <h3>Diseño productos digitales</h3>
-                    <br>
-                    <p>Me apasiona la tecnología y la innovación, me especializo en startups y nuevos productos. Tengo amplia experiencia en el sector financiero y softwares hechos a la medida. Dentro de mis hbilidades destaca la capacidad de análisis e interpretación de necesidades de usuario para lograr ofrecer soluciones efectivas y asertivas que satisfagan sus necesidades.</p>
-                    <br>
-                    <div>
-                        <button type="button" class="btn btn-dark"><a href="#portfolio" style="text-decoration: none; color: var(--blanco);">Ver prototipos</a></button>
-                    </div>
-                </div>
-            </div>
+        <!-- Contenido -->
+        <div class="col-10 col-lg-7 m-auto">
+          <div class="container-no-dynamic-text mb-4">
+            <h4 class="text-start text-lg-start">Hola! Soy</h4>
+            <h1 class="text-center text-lg-start">Daniel Ochoa</h1>
+            <h4 class="text-end text-lg-start">Y soy un:</h4>
+          </div>
+          <div class="container-dynamic-text">
+            <h2 id="dynamic-text" class="dynamic-text">
+              Project Development Manager
+            </h2>
+          </div>
+          <p class="mt-4 text-center text-lg-start experience-text">
+            Tengo amplia experiencia en la dirección de proyectos, el desarrollo
+            web y el diseño de productos basado en la experiencia del usuario.
+          </p>
         </div>
+      </div>
+    </div>
 
-        <!-- LINE DIVISION -->
-        <div class="line-division"></div>
+    <!-- LINE DIVISION -->
+    <div class="line-division"></div>
 
-        <!-- FIGMA -->
-        <div id="portfolio" class="container-fluid py-5 figma-section">
-            <div class="row">
-                <div class="col-9 m-auto d-flex flex-column justify-content-center align-items-center">
-                    <h3 class="text-center mb-4">Prototipo Interactivo</h3>
-                    <p class="text-center mb-4">
-                        A continuación, puedes interactuar con algunos de mis prototipos creados en Figma.
-                    </p>
-                </div>
-                <div class="col-12 col-md-10 m-auto container-prototypes">
-                    
-                    <div class="col-12 col-lg-6 container-info-proto">
-                        <h3>Web App Arcsa Capital</h3>
-                        <div class="col-12 container-proto">
-                            <img class="img-proto" src="./src/WebApp-AC-001.png">
-                        </div>
-                        <button type="button" class="btn btn-dark"><a href="./pages/webappac.html" style="text-decoration: none; color: var(--blanco);">Ver Proyecto</a></button>
-                    </div>
-                    
-                    <div class="col-12 col-lg-6 container-info-proto">
-                        <h3>Workout App</h3>
-                        <div class="col-12 container-proto">
-                            <img class="img-proto" src="./src/Workout-001.png">
-                        </div>
-                        <button type="button" class="btn btn-dark"><a href="./pages/workout.html" style="text-decoration: none; color: var(--blanco);">Ver Proyecto</a></button>
-                    </div>
-                    
-                    <div class="col-12 col-lg-6 container-info-proto">
-                        <h3>Soccer Admin</h3>
-                        <div class="col-12 container-proto">
-                            <img class="img-proto" src="./src/SoccerAdmin-001.png">
-                        </div>
-                        <button type="button" class="btn btn-dark"><a href="./pages/socceradmin.html" style="text-decoration: none; color: var(--blanco);">Ver Proyecto</a></button>
-                    </div>
-                </div>
-            </div>
+    <!-- <div style="width: 100vw !important; height: 0vh !important;"></div> -->
+
+    <!-- PARALLAX -->
+    <div class="parallax-section">
+      <div class="parallax-container parallax-section-1">
+        <div class="parallax-image image-top"></div>
+      </div>
+
+      <div class="parallax-container parallax-section-2">
+        <div class="parallax-image image-bottom"></div>
+      </div>
+    </div>
+
+    <!-- LINE DIVISION -->
+    <div class="line-division"></div>
+
+    <!-- RESUME -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-9 m-auto">
+          <h3>Diseño productos digitales</h3>
+          <br />
+          <p>
+            Me apasiona la tecnología y la innovación, me especializo en
+            startups y nuevos productos. Tengo amplia experiencia en el sector
+            financiero y softwares hechos a la medida. Dentro de mis hbilidades
+            destaca la capacidad de análisis e interpretación de necesidades de
+            usuario para lograr ofrecer soluciones efectivas y asertivas que
+            satisfagan sus necesidades.
+          </p>
+          <br />
+          <div>
+            <button type="button" class="btn btn-dark">
+              <a
+                href="#portfolio"
+                style="text-decoration: none; color: var(--blanco)"
+                >Ver prototipos</a
+              >
+            </button>
+          </div>
         </div>
-        
-        <!-- FIGMA -->
-        <!-- <div id="portfolio" class="container-fluid py-5 figma-section">
+      </div>
+    </div>
+
+    <!-- LINE DIVISION -->
+    <div class="line-division"></div>
+
+    <!-- FIGMA -->
+    <div id="portfolio" class="container-fluid py-5 figma-section">
+      <div class="row">
+        <div
+          class="col-9 m-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <h3 class="text-center mb-4">Prototipo Interactivo</h3>
+          <p class="text-center mb-4">
+            A continuación, puedes interactuar con algunos de mis prototipos
+            creados en Figma.
+          </p>
+        </div>
+        <div class="col-12 col-md-10 m-auto container-prototypes">
+          <div class="col-12 col-lg-6 container-info-proto">
+            <h3>Web App Arcsa Capital</h3>
+            <div class="col-12 container-proto">
+              <img class="img-proto" src="./src/WebApp-AC-001.png" />
+            </div>
+            <button type="button" class="btn btn-dark">
+              <a
+                href="./pages/webappac.html"
+                style="text-decoration: none; color: var(--blanco)"
+                >Ver Proyecto</a
+              >
+            </button>
+          </div>
+
+          <div class="col-12 col-lg-6 container-info-proto">
+            <h3>Workout App</h3>
+            <div class="col-12 container-proto">
+              <img class="img-proto" src="./src/Workout-001.png" />
+            </div>
+            <button type="button" class="btn btn-dark">
+              <a
+                href="./pages/workout.html"
+                style="text-decoration: none; color: var(--blanco)"
+                >Ver Proyecto</a
+              >
+            </button>
+          </div>
+
+          <div class="col-12 col-lg-6 container-info-proto">
+            <h3>Soccer Admin</h3>
+            <div class="col-12 container-proto">
+              <img class="img-proto" src="./src/SoccerAdmin-001.png" />
+            </div>
+            <button type="button" class="btn btn-dark">
+              <a
+                href="./pages/socceradmin.html"
+                style="text-decoration: none; color: var(--blanco)"
+                >Ver Proyecto</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIGMA -->
+    <!-- <div id="portfolio" class="container-fluid py-5 figma-section">
             <div class="row">
                 <div class="col-9 m-auto d-flex flex-column justify-content-center align-items-center">
                     <h3 class="text-center mb-4">Prototipo Interactivo</h3>
@@ -194,318 +255,354 @@
             </div>
         </div> -->
 
-        <!-- LINE DIVISION -->
-        <div class="line-division"></div>
+    <!-- LINE DIVISION -->
+    <div class="line-division"></div>
 
-        <!-- SKILLS -->
-        <div id="skills" class="container-fluid py-5">
-            <div class="row">
-                <div class="col-9 m-auto">
-                    <h3 class="mb-5">Skills</h3>
+    <!-- SKILLS -->
+    <div id="skills" class="container-fluid py-5">
+      <div class="row">
+        <div class="col-9 m-auto">
+          <h3 class="mb-5">Skills</h3>
 
-                    <!-- UX/UI -->
-                    <div class="mb-5">
-                        <h5 class="mb-3">UX/UI</h5>
-                        <div class="d-flex flex-wrap gap-4 skill-container">
-                            <div class="skill-item">
-                                <i class="fa-brands fa-figma skill-icon me-3"></i>
-                                <h5 class="mb-0">Figma</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-sketch skill-icon me-3"></i>
-                                <h5 class="mb-0">Sketch</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-pen skill-icon me-3"></i>
-                                <h5 class="mb-0">Adobe XD</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-chart-line skill-icon me-3"></i>
-                                <h5 class="mb-0">Optimización UX</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-puzzle-piece skill-icon me-3"></i>
-                                <h5 class="mb-0">Diseño Modular Escalable</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-clipboard-list skill-icon me-3"></i>
-                                <h5 class="mb-0">Pruebas de Usabilidad</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-drafting-compass skill-icon me-3"></i>
-                                <h5 class="mb-0">Wireframing</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-diagram-project skill-icon me-3"></i>
-                                <h5 class="mb-0">Prototipado</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-chart-bar skill-icon me-3"></i>
-                                <h5 class="mb-0">Análisis de Métricas</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-brain skill-icon me-3"></i>
-                                <h5 class="mb-0">Design Thinking</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-cogs skill-icon me-3"></i>
-                                <h5 class="mb-0">Metodología UCD</h5>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- LINE DIVISION -->
-                    <div class="line-division-intern"></div>
-
-                    <!-- Frontend -->
-                    <div class="mb-5">
-                        <h5 class="mb-3">Frontend</h5>
-                        <div class="d-flex flex-wrap gap-4 skill-container">
-                            <div class="skill-item">
-                                <i class="fa-brands fa-angular skill-icon me-3"></i>
-                                <h5 class="mb-0">Angular</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-code skill-icon me-3"></i>
-                                <h5 class="mb-0">TypeScript</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-html5 skill-icon me-3"></i>
-                                <h5 class="mb-0">HTML</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-css3-alt skill-icon me-3"></i>
-                                <h5 class="mb-0">CSS</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-css3-alt skill-icon me-3"></i>
-                                <h5 class="mb-0">JS</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-bootstrap skill-icon me-3"></i>
-                                <h5 class="mb-0">Bootstrap</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-layer-group skill-icon me-3"></i>
-                                <h5 class="mb-0">Angular Material</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- LINE DIVISION -->
-                    <div class="line-division-intern"></div>
-
-                    <!-- Backend -->
-                    <div class="mb-5">
-                        <h5 class="mb-3">Backend</h5>
-                        <div class="d-flex flex-wrap gap-4 skill-container">
-                            <div class="skill-item">
-                                <i class="fa-brands fa-node skill-icon me-3"></i>
-                                <h5 class="mb-0">Node.js</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-database skill-icon me-3"></i>
-                                <h5 class="mb-0">MySQL</h5>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- LINE DIVISION -->
-                    <div class="line-division-intern"></div>
-
-                    <!-- Backend -->
-                    <div class="mb-5">
-                        <h5 class="mb-3">Integración y APIs</h5>
-                        <div class="d-flex flex-wrap gap-4 skill-container">
-                            <div class="skill-item">
-                                <i class="fa-solid fa-code-branch skill-icon me-3"></i>
-                                <h5 class="mb-0">Desarrollo de APIs RESTful</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-mailchimp skill-icon me-3"></i>
-                                <h5 class="mb-0">Mailchimp</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-share-nodes skill-icon me-3"></i>
-                                <h5 class="mb-0">Webhooks</h5>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- LINE DIVISION -->
-                    <div class="line-division-intern"></div>
-
-                    <!-- Backend -->
-                    <div class="mb-5">
-                        <h5 class="mb-3">Pruebas y Documentación</h5>
-                        <div class="d-flex flex-wrap gap-4 skill-container">
-                            <div class="skill-item">
-                                <i class="fa-solid fa-flask skill-icon me-3"></i>
-                                <h5 class="mb-0">Postman</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-book skill-icon me-3"></i>
-                                <h5 class="mb-0">Swagger</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- LINE DIVISION -->
-                   <div class="line-division-intern"></div>
-
-                    <!-- Gestión de Proyectos -->
-                    <div class="mb-5">
-                        <h5 class="mb-3">Gestión de Proyectos</h5>
-                        <div class="d-flex flex-wrap gap-4 skill-container">
-                            <div class="skill-item">
-                                <i class="fa-solid fa-tasks skill-icon me-3"></i>
-                                <h5 class="mb-0">Scrum</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-clipboard-check skill-icon me-3"></i>
-                                <h5 class="mb-0">Kanban</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-rocket skill-icon me-3"></i>
-                                <h5 class="mb-0">Lean Development</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-jira skill-icon me-3"></i>
-                                <h5 class="mb-0">Jira</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-tasks skill-icon me-3"></i>
-                                <h5 class="mb-0">Asana</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-table-columns skill-icon me-3"></i>
-                                <h5 class="mb-0">Trello</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-comments skill-icon me-3"></i>
-                                <h5 class="mb-0">Slack</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- LINE DIVISION -->
-                    <div class="line-division-intern"></div>
-
-                    <!-- Servicios en la Nube -->
-                    <div class="mb-5">
-                        <h5 class="mb-3">Servicios en la Nube</h5>
-                        <div class="d-flex flex-wrap gap-4 skill-container">
-                            <div class="skill-item">
-                                <i class="fa-brands fa-aws skill-icon me-3"></i>
-                                <h5 class="mb-0">AWS, S3, EC2, RDS y Lambda</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-docker skill-icon me-3"></i>
-                                <h5 class="mb-0">Docker</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-cloud skill-icon me-3"></i>
-                                <h5 class="mb-0">Kubernetes</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-tools skill-icon me-3"></i>
-                                <h5 class="mb-0">Jenkins</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-github skill-icon me-3"></i>
-                                <h5 class="mb-0">Github</h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-cloud skill-icon me-3"></i>
-                                <h5 class="mb-0">CloudWatch</h5>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- LINE DIVISION -->
-                    <div class="line-division-intern"></div>
-
-                    <!-- Servicios en la Nube -->
-                    <div class="mb-5">
-                        <h5 class="mb-3">Idiomas</h5>
-                        <div class="d-flex flex-wrap gap-4 skill-container">
-                            <div class="skill-item">
-                                <i class="fa-solid fa-flag skill-icon me-3"></i>
-                                <h5 class="mb-0">Español <i>Nativo</i></h5>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-solid fa-language skill-icon me-3"></i>
-                                <h5 class="mb-0">English <i>B1</i></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <!-- UX/UI -->
+          <div class="mb-5">
+            <h5 class="mb-3">UX/UI</h5>
+            <div class="d-flex flex-wrap gap-4 skill-container">
+              <div class="skill-item">
+                <i class="fa-brands fa-figma skill-icon me-3"></i>
+                <h5 class="mb-0">Figma</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-sketch skill-icon me-3"></i>
+                <h5 class="mb-0">Sketch</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-pen skill-icon me-3"></i>
+                <h5 class="mb-0">Adobe XD</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-chart-line skill-icon me-3"></i>
+                <h5 class="mb-0">Optimización UX</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-puzzle-piece skill-icon me-3"></i>
+                <h5 class="mb-0">Diseño Modular Escalable</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-clipboard-list skill-icon me-3"></i>
+                <h5 class="mb-0">Pruebas de Usabilidad</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-drafting-compass skill-icon me-3"></i>
+                <h5 class="mb-0">Wireframing</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-diagram-project skill-icon me-3"></i>
+                <h5 class="mb-0">Prototipado</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-chart-bar skill-icon me-3"></i>
+                <h5 class="mb-0">Análisis de Métricas</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-brain skill-icon me-3"></i>
+                <h5 class="mb-0">Design Thinking</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-cogs skill-icon me-3"></i>
+                <h5 class="mb-0">Metodología UCD</h5>
+              </div>
             </div>
+          </div>
+
+          <!-- LINE DIVISION -->
+          <div class="line-division-intern"></div>
+
+          <!-- Frontend -->
+          <div class="mb-5">
+            <h5 class="mb-3">Frontend</h5>
+            <div class="d-flex flex-wrap gap-4 skill-container">
+              <div class="skill-item">
+                <i class="fa-brands fa-angular skill-icon me-3"></i>
+                <h5 class="mb-0">Angular</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-code skill-icon me-3"></i>
+                <h5 class="mb-0">TypeScript</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-html5 skill-icon me-3"></i>
+                <h5 class="mb-0">HTML</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-css3-alt skill-icon me-3"></i>
+                <h5 class="mb-0">CSS</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-css3-alt skill-icon me-3"></i>
+                <h5 class="mb-0">JS</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-bootstrap skill-icon me-3"></i>
+                <h5 class="mb-0">Bootstrap</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-layer-group skill-icon me-3"></i>
+                <h5 class="mb-0">Angular Material</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- LINE DIVISION -->
+          <div class="line-division-intern"></div>
+
+          <!-- Backend -->
+          <div class="mb-5">
+            <h5 class="mb-3">Backend</h5>
+            <div class="d-flex flex-wrap gap-4 skill-container">
+              <div class="skill-item">
+                <i class="fa-brands fa-node skill-icon me-3"></i>
+                <h5 class="mb-0">Node.js</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-database skill-icon me-3"></i>
+                <h5 class="mb-0">MySQL</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- LINE DIVISION -->
+          <div class="line-division-intern"></div>
+
+          <!-- Backend -->
+          <div class="mb-5">
+            <h5 class="mb-3">Integración y APIs</h5>
+            <div class="d-flex flex-wrap gap-4 skill-container">
+              <div class="skill-item">
+                <i class="fa-solid fa-code-branch skill-icon me-3"></i>
+                <h5 class="mb-0">Desarrollo de APIs RESTful</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-mailchimp skill-icon me-3"></i>
+                <h5 class="mb-0">Mailchimp</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-share-nodes skill-icon me-3"></i>
+                <h5 class="mb-0">Webhooks</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- LINE DIVISION -->
+          <div class="line-division-intern"></div>
+
+          <!-- Backend -->
+          <div class="mb-5">
+            <h5 class="mb-3">Pruebas y Documentación</h5>
+            <div class="d-flex flex-wrap gap-4 skill-container">
+              <div class="skill-item">
+                <i class="fa-solid fa-flask skill-icon me-3"></i>
+                <h5 class="mb-0">Postman</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-book skill-icon me-3"></i>
+                <h5 class="mb-0">Swagger</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- LINE DIVISION -->
+          <div class="line-division-intern"></div>
+
+          <!-- Gestión de Proyectos -->
+          <div class="mb-5">
+            <h5 class="mb-3">Gestión de Proyectos</h5>
+            <div class="d-flex flex-wrap gap-4 skill-container">
+              <div class="skill-item">
+                <i class="fa-solid fa-tasks skill-icon me-3"></i>
+                <h5 class="mb-0">Scrum</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-clipboard-check skill-icon me-3"></i>
+                <h5 class="mb-0">Kanban</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-rocket skill-icon me-3"></i>
+                <h5 class="mb-0">Lean Development</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-jira skill-icon me-3"></i>
+                <h5 class="mb-0">Jira</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-tasks skill-icon me-3"></i>
+                <h5 class="mb-0">Asana</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-table-columns skill-icon me-3"></i>
+                <h5 class="mb-0">Trello</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-comments skill-icon me-3"></i>
+                <h5 class="mb-0">Slack</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- LINE DIVISION -->
+          <div class="line-division-intern"></div>
+
+          <!-- Servicios en la Nube -->
+          <div class="mb-5">
+            <h5 class="mb-3">Servicios en la Nube</h5>
+            <div class="d-flex flex-wrap gap-4 skill-container">
+              <div class="skill-item">
+                <i class="fa-brands fa-aws skill-icon me-3"></i>
+                <h5 class="mb-0">AWS, S3, EC2, RDS y Lambda</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-docker skill-icon me-3"></i>
+                <h5 class="mb-0">Docker</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-cloud skill-icon me-3"></i>
+                <h5 class="mb-0">Kubernetes</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-tools skill-icon me-3"></i>
+                <h5 class="mb-0">Jenkins</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-github skill-icon me-3"></i>
+                <h5 class="mb-0">Github</h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-cloud skill-icon me-3"></i>
+                <h5 class="mb-0">CloudWatch</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- LINE DIVISION -->
+          <div class="line-division-intern"></div>
+
+          <!-- Servicios en la Nube -->
+          <div class="mb-5">
+            <h5 class="mb-3">Idiomas</h5>
+            <div class="d-flex flex-wrap gap-4 skill-container">
+              <div class="skill-item">
+                <i class="fa-solid fa-flag skill-icon me-3"></i>
+                <h5 class="mb-0">Español <i>Nativo</i></h5>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-language skill-icon me-3"></i>
+                <h5 class="mb-0">English <i>B1</i></h5>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!-- LINE DIVISION -->
-        <div class="line-division"></div>
-        
-        <!-- FOOTER -->
-        <footer class="text-center mt-5 sticky-bottom">
-            <div id="contacto" class="container-fluid py-5">
-                <div class="row">
-                    <div class="col-9 m-auto text-start">
-                        <h3 class="mb-4">Contacto</h3>
-                        
-                        <!-- Información de Contacto -->
-                        <div class="d-flex flex-column align-items-start gap-3 mb-5">
-                            <h4 class="fw-bold mb-0">Daniel Ochoa</h4>
-                            <p class="mb-0">
-                                <a href="tel:+525544647978" class="text-decoration-none contact-link">
-                                    <i class="fa-solid fa-phone me-2"></i>+52 55 4464 7978
-                                </a>
-                            </p>
-                            <p class="mb-0">
-                                <a href="mailto:dan.ochoa.pm@gmail.com" class="text-decoration-none contact-link">
-                                    <i class="fa-solid fa-envelope me-2"></i>dan.ochoa.pm@gmail.com
-                                </a>
-                            </p>
-                            <p class="mb-0">
-                                <a href="https://www.google.com/maps?q=Sur+de+la+CDMX" target="_blank" class="text-decoration-none contact-link">
-                                    <i class="fa-solid fa-location-dot me-2"></i>CDMX (Zona Sur)
-                                </a>
-                            </p>
-                            <p class="mb-0">
-                                <i class="fa-solid fa-briefcase me-2"></i>Remoto / Híbrido / Presencial
-                            </p>
-                        </div>
+    <!-- LINE DIVISION -->
+    <div class="line-division"></div>
 
-                        <!-- Redes Sociales -->
-                        <div class="d-flex justify-content-start gap-4 mb-0 pb-0">
-                            <a href="https://linkedin.com/in/dan-ochoa-pm" target="_blank" class="contact-icon text-decoration-none">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                            <a href="https://facebook.com/dan-ochoa" target="_blank" class="contact-icon text-decoration-none">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="https://instagram.com/dan.ochoa" target="_blank" class="contact-icon text-decoration-none">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="https://twitter.com/dan_ochoa" target="_blank" class="contact-icon text-decoration-none">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="https://wa.me/525544647978" target="_blank" class="contact-icon text-decoration-none">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <!-- FOOTER -->
+    <footer class="text-center mt-5 sticky-bottom">
+      <div id="contacto" class="container-fluid py-5">
+        <div class="row">
+          <div class="col-9 m-auto text-start">
+            <h3 class="mb-4">Contacto</h3>
+
+            <!-- Información de Contacto -->
+            <div class="d-flex flex-column align-items-start gap-3 mb-5">
+              <h5 class="fw-bold mb-0">Daniel Ochoa</h5>
+              <p class="mb-0">
+                <a
+                  href="tel:+525544647978"
+                  class="text-decoration-none contact-link"
+                >
+                  <i class="fa-solid fa-phone me-2"></i>+52 55 4464 7978
+                </a>
+              </p>
+              <p class="mb-0">
+                <a
+                  href="mailto:dan.ochoa.pm@gmail.com"
+                  class="text-decoration-none contact-link"
+                >
+                  <i class="fa-solid fa-envelope me-2"></i
+                  >dan.ochoa.pm@gmail.com
+                </a>
+              </p>
+              <p class="mb-0">
+                <a
+                  href="https://www.google.com/maps?q=Sur+de+la+CDMX"
+                  target="_blank"
+                  class="text-decoration-none contact-link"
+                >
+                  <i class="fa-solid fa-location-dot me-2"></i>CDMX (Zona Sur)
+                </a>
+              </p>
+              <p class="mb-0">
+                <i class="fa-solid fa-briefcase me-2"></i>Remoto / Híbrido /
+                Presencial
+              </p>
             </div>
 
-            <p class="text-muted mb-5 mt-0 pt-0">&copy; 2024 Daniel Ochoa. Todos los derechos reservados.</p>
-        </footer>
-        
-        <!-- Bootstrap Bundle JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <!-- Scripts -->
-        <script src="./script.js"></script>
-        
-    </body>
+            <!-- Redes Sociales -->
+            <div class="d-flex justify-content-start gap-4 mb-0 pb-0">
+              <a
+                href="https://linkedin.com/in/dan-ochoa-pm"
+                target="_blank"
+                class="contact-icon text-decoration-none"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://facebook.com/dan-ochoa"
+                target="_blank"
+                class="contact-icon text-decoration-none"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href="https://instagram.com/dan.ochoa"
+                target="_blank"
+                class="contact-icon text-decoration-none"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://twitter.com/dan_ochoa"
+                target="_blank"
+                class="contact-icon text-decoration-none"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="https://wa.me/525544647978"
+                target="_blank"
+                class="contact-icon text-decoration-none"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-muted mb-5 mt-0 pt-0">
+        &copy; 2024 Daniel Ochoa. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+  </body>
 </html>

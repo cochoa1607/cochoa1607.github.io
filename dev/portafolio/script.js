@@ -1,6 +1,7 @@
 const dynamicText = document.getElementById('dynamic-text');
 
 const textArray = [
+    "UX Researcher",
     "Desarrollador Web",
     "Desarrollador Angular",
     "Project Development Manager",
@@ -73,11 +74,11 @@ window.addEventListener('scroll', handleParallax);
 // FIGMA
 document.addEventListener("DOMContentLoaded", () => {
     const iframes = document.querySelectorAll(".iframe-wrapper iframe");
-
+    
     // Función para cargar progresivamente los iframes
     function loadIframe(index) {
         if (index >= iframes.length) return; // Detener si no hay más iframes
-
+        
         const iframe = iframes[index];
         const src = iframe.getAttribute("data-src"); // Leer la fuente desde data-src
         if (src) {
@@ -85,7 +86,16 @@ document.addEventListener("DOMContentLoaded", () => {
             iframe.onload = () => loadIframe(index + 1); // Cargar el siguiente iframe al terminar
         }
     }
-
+    
     // Iniciar la carga con el primer iframe
     loadIframe(0);
+});
+
+
+// SLIDER PROYECTOS
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = new bootstrap.Carousel('#projectsCarousel', {
+        interval: 5000, // Cambiar slide automáticamente cada 5 segundos
+        pause: 'hover' // Pausa el slider al pasar el mouse encima
+    });
 });
