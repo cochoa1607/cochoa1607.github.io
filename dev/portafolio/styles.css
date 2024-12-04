@@ -915,34 +915,71 @@ button {
     text-decoration: underline;
 }
 
-/* Estilos para la división de línea */
-.line-division {
-    border-top: 2px solid #ddd;
-    margin: 50px 0;
-}
-
-/* Estilos para la sección de Figma */
-.figma-section {
-    padding: 50px 20px;
+/* Sección de Información */
+.info-section {
+    background-color: #fff;
+    padding: 60px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
     text-align: center;
-}
-
-.figma-section p {
-    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #222;
+  }
+  
+  .content-block {
     margin-bottom: 30px;
+  }
+  
+  .content-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .content-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .content-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Sección de Figma */
+  .figma-section {
+    background-color: #fafafa;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
     color: #666;
-}
-
-.iframe-wrapper {
+  }
+  
+  .iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000;
+  }
+  
+  .iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.iframe-wrapper iframe {
-    width: 100%;
-    height: 450px;
+    height: 100%;
     border: none;
-    border-radius: 8px;
-}
+  }
