@@ -865,121 +865,89 @@ button {
 
 
 /* Info */
-.info-section {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+.container {
+    margin: 0 auto;
 }
 
-.info-section h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #222;
-}
-
-.info-section h4 {
-    font-size: 1.75rem;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    color: #444;
-}
-
-.info-section p,
-.info-section li {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-.info-section ul {
+.content-list {
     list-style-type: disc;
-    padding-left: 20px;
 }
 
-.info-section ul li {
-    margin-bottom: 10px;
-}
-
-/* Estilos para los enlaces */
-.info-section a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.info-section a:hover {
-    text-decoration: underline;
-}
-
-/* Sección de Información */
-.info-section {
-    background-color: #fff;
-    padding: 60px 0;
-    margin-bottom: 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #222;
-  }
-  
-  .content-block {
-    margin-bottom: 30px;
-  }
-  
-  .content-title {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #444;
-  }
-  
-  .content-list {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .content-list li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  /* Sección de Figma */
-  .figma-section {
-    background-color: #fafafa;
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  .section-description {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    color: #666;
-  }
-  
-  .iframe-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background-color: #000;
-  }
-  
-  .iframe-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.content-block {
+    margin: 4rem auto;
+    padding: 2rem;
     border: none;
-  }
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+/* Mobile (0px - 576px) */
+@media (min-width: 0) and (max-width: 576px) {
+    .content-block {
+        margin: 2rem auto;
+        padding: 1.5rem;
+    }
+
+    .left-aligned,
+    .right-aligned {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Tablet (577px - 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .content-block {
+        margin: 3rem auto;
+        padding: 2rem;
+    }
+
+    .left-aligned {
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+
+    .right-aligned {
+        float: right;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Desktop (993px - 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .left-aligned {
+        float: left;
+        width: 70%;
+        margin-right: 2rem;
+    }
+
+    .right-aligned {
+        float: right;
+        width: 70%;
+        margin-left: 2rem;
+    }
+}
+
+/* XL (1201px en adelante) */
+@media (min-width: 1201px) {
+    .left-aligned {
+        float: left;
+        width: 60%;
+        margin-right: 2rem;
+    }
+
+    .right-aligned {
+        float: right;
+        width: 60%;
+        margin-left: 2rem;
+    }
+}
