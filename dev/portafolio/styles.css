@@ -557,7 +557,7 @@ button {
     box-shadow: var(--shadow);
     margin: 1rem 2rem 2rem 0rem !important;
     border-radius: 1rem;
-
+    box-shadow: var(--shadow);
 }
 
 .iframe-wrapper {
@@ -565,9 +565,12 @@ button {
     width: 100% !important;
     padding-top: 56.25%;
     overflow: hidden;
-    box-shadow: var(--shadow);
     margin: 1rem 0;
     border-radius: 8px;
+    margin: auto !important;
+    
+    margin: 2rem !important;
+    padding: 2rem !important;
 }
 
 .figma-section h4 {
@@ -621,6 +624,10 @@ button {
         border: solid red 2px;
     } */
 
+    .iframe-wrapper {
+        width: 90% !important;
+    }
+
     .figma-section p {
         font-size: 1rem;
     }
@@ -628,11 +635,12 @@ button {
     .iframe-wrapper {
         padding-top: 75%;
         margin: 1rem 0.5rem;
-        height: calc(90vh + 2rem) !important;
+        height: calc(92vh + 2rem) !important;
+        overflow: visible;
     }
 
     .figma-section iframe {
-        height: calc(90vh + 2rem) !important;
+        height: calc(92vh) !important;
     }
 
     .floating-btn {
