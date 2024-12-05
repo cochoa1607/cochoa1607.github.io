@@ -881,6 +881,10 @@ button {
     padding: 2rem 0;
 }
 
+.content-list li{
+    padding: 1rem 0;
+}
+
 .content-block {
     margin: 4rem auto;
     padding: 4rem 0;
