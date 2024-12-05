@@ -79,6 +79,10 @@ p {
     color: var(--negro-dos);
 }
 
+a{
+    text-decoration: none;
+}
+
 button {
     padding: .4rem 3rem !important;
 }
@@ -865,17 +869,21 @@ button {
 
 
 /* Info */
+.section-title{
+    margin: 10rem auto 5rem auto;
+}
 .container {
     margin: 0 auto;
 }
 
 .content-list {
     list-style-type: disc;
+    padding: 2rem 0;
 }
 
 .content-block {
     margin: 4rem auto;
-    padding: 2rem;
+    padding: 4rem 0;
     border: none;
 }
 
