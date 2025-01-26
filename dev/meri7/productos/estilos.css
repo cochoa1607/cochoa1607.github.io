@@ -295,7 +295,6 @@ nav {
 
 /* PROYECTOS */
 
-.proyectos-dos {}
 
 .cont-proyecto {
     margin: 0 auto 18em auto !important;
@@ -308,16 +307,12 @@ nav {
     height: 100%;
 }
 
-.proy-01 {
-    background-image: url(./img/puntoDeVenta.png);
-}
-
 .proyectos-dos ul {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 30rem;
+    height: 40rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -330,22 +325,212 @@ nav {
 .galeria-proyectos {
     margin-top: 5rem !important;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.proy-01-img {
+.proy-img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 16rem;
-    width: 20%;
+    width: 15%;
+    margin: 0 1rem;
+}
+
+/* proyecto 1 Farmacias Guadalajara */
+
+.proy-01 {
+    background-image: url(./img/proyectos/proyectos-01.png);
 }
 
 .proy-01-img-01 {
-    background-image: url(./img/puntoDeVenta.png);
+    background-image: url(./img/proyectos/proyecto-01-01.png);
 }
+
+.proy-01-img-02 {
+    background-image: url(./img/proyectos/proyecto-01-02.jpg);
+}
+
+.proy-01-img-03 {
+    background-image: url(./img/proyectos/proyecto-01-03.jpg);
+}
+
+.proy-01-img-04 {
+    background-image: url(./img/proyectos/proyecto-01-04.jpeg);
+}
+
+.proy-01-img-05 {
+    background-image: url(./img/proyectos/proyecto-01-05.png);
+}
+
+.proy-01-img-06 {
+    background-image: url(./img/proyectos/proyecto-01-06.jpg);
+}
+
+/* proyecto 2 Sephora */
+
+.proy-02 {
+    background-image: url(./img/proyectos/proyectos-02.jpg);
+}
+
+.proy-02-img-01 {
+    background-image: url(./img/proyectos/proyecto-01-01.png);
+}
+
+.proy-02-img-02 {
+    background-image: url(./img/proyectos/proyecto-01-02.jpg);
+}
+
+.proy-02-img-03 {
+    background-image: url(./img/proyectos/proyecto-01-03.jpg);
+}
+
+/* proyecto 3 Nike */
+
+.proy-03 {
+    background-image: url(./img/proyectos/proyectos-03.jpeg);
+}
+
+.proy-03-img-01 {
+    background-image: url(./img/proyectos/proyecto-03-01.jpg);
+}
+
+.proy-03-img-02 {
+    background-image: url(./img/proyectos/proyecto-03-02.jpg);
+}
+
+.proy-03-img-03 {
+    background-image: url(./img/proyectos/proyecto-03-03.jpg);
+}
+
+.proy-03-img-04 {
+    background-image: url(./img/proyectos/proyecto-03-04.jpg);
+}
+
+.proy-03-img-05 {
+    background-image: url(./img/proyectos/proyecto-03-05.jpg);
+}
+
+.proy-03-img-06 {
+    background-image: url(./img/proyectos/proyecto-03-06.jpg);
+}
+
+/* proyecto 4 Chupa Chups */
+
+.proy-04 {
+    background-image: url(./img/proyectos/proyectos-04.JPG);
+}
+
+.proy-04-img-01 {
+    background-image: url(./img/proyectos/proyecto-04-01.jpg);
+}
+
+.proy-04-img-02 {
+    background-image: url(./img/proyectos/proyecto-04-02.jpg);
+}
+
+.proy-04-img-03 {
+    background-image: url(./img/proyectos/proyecto-04-03.jpg);
+}
+
+/* proyecto 5 Bandai */
+
+.proy-05 {
+    background-image: url(./img/proyectos/proyectos-05.jpeg);
+}
+
+.proy-05-img-01 {
+    background-image: url(./img/proyectos/proyecto-05-01.jpeg);
+}
+
+.proy-05-img-02 {
+    background-image: url(./img/proyectos/proyecto-05-02.jpeg);
+}
+
+/* proyecto 6 Palmolive */
+
+.proy-06 {
+    background-image: url(./img/proyectos/proyectos-06.jpg);
+}
+
+.proy-06-img-01 {
+    background-image: url(./img/proyectos/proyecto-06-01.jpg);
+}
+
+.proy-06-img-02 {
+    background-image: url(./img/proyectos/proyecto-06-02.jpg);
+}
+
+.proy-06-img-03 {
+    background-image: url(./img/proyectos/proyecto-06-03.jpg);
+}
+
+.proy-06-img-04 {
+    background-image: url(./img/proyectos/proyecto-06-04.jpg);
+}
+
+.proy-06-img-05 {
+    background-image: url(./img/proyectos/proyecto-06-05.jpg);
+}
+
+.proy-06-img-06 {
+    background-image: url(./img/proyectos/proyecto-06-06.jpg);
+}
+
+/* proyecto 7 Nickelodeon */
+
+.proy-07 {
+    background-image: url(./img/proyectos/proyectos-07.jpg);
+}
+
+.proy-07-img-01 {
+    background-image: url(./img/proyectos/proyecto-07-01.jpg);
+}
+
+.proy-07-img-02 {
+    background-image: url(./img/proyectos/proyecto-07-02.jpg);
+}
+
+.proy-07-img-03 {
+    background-image: url(./img/proyectos/proyecto-07-03.jpg);
+}
+
+.proy-07-img-04 {
+    background-image: url(./img/proyectos/proyecto-07-04.jpg);
+}
+
+/* proyecto 8 Innvictus */
+
+.proy-08 {
+    background-image: url(./img/proyectos/proyectos-08.jpeg);
+}
+
+.proy-08-img-01 {
+    background-image: url(./img/proyectos/proyecto-08-01.jpeg);
+}
+
+.proy-08-img-02 {
+    background-image: url(./img/proyectos/proyecto-08-02.jpeg);
+}
+
+.proy-08-img-03 {
+    background-image: url(./img/proyectos/proyecto-08-03.png);
+}
+
+.proy-08-img-04 {
+    background-image: url(./img/proyectos/proyecto-08-04.png);
+}
+
+.proy-08-img-05 {
+    background-image: url(./img/proyectos/proyecto-08-05.jpg);
+}
+
+.proy-08-img-06 {
+    background-image: url(./img/proyectos/proyecto-08-06.jpg);
+}
+
 
 /* FOOTER */
 
@@ -379,11 +564,16 @@ footer {
     text-decoration: none !important;
 }
 
-.cont-footer ul a {
+.cont-footer ul li a {
     text-decoration: none !important;
     display: flex;
     justify-content: start;
     align-items: center;
+    transition: ease-in-out 200ms;
+}
+
+.cont-footer ul li a:hover {
+    transform: scale(1.05);
 }
 
 .cont-footer ul li i {
@@ -428,7 +618,7 @@ footer {
     font-weight: 300;
 
     display: flex;
-    justify-content: start;
+    justify-content: end;
     align-items: center;
 }
 
@@ -469,7 +659,7 @@ footer {
 
 .cont-int-copy .logo-liquid:hover {
 
-    transform: scale(1.12);
+    transform: scale(1.05);
     transition: ease-in-out 200ms;
 
     .st0 {
@@ -497,17 +687,18 @@ footer {
     width: 33%;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 
 .liquid-contacto {
-    font-size: 2rem;
+    font-size: 1.6rem;
     transition: ease-in-out 200ms;
+    margin: 0 !important;
 }
 
 .liquid-contacto:hover {
     color: var(--liquid) !important;
-    font-size: 2.2rem;
+    transform: scale(1.05);
     font-weight: 600;
     transition: ease-in-out 200ms;
 }
