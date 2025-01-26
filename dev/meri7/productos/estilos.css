@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--blanco);
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+}
+
+:root {
+    --azul: #142F77;
+
+    --negro: #020202;
+    --negro-dos: #2A2A2A;
+
+    --gris: #808080;
+    --gris-dos: #A9A9A9;
+
+    --blanco: #FFFFFF;
+    --blanco-dos: #FFFFFFEE;
+
+    --transition: ease-in-out 200ms;
+
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--blanco) !important;
+    font-size: 16rem !important;
+    text-transform: uppercase !important;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h5 {
+    color: var(--blanco) !important;
+    font-size: 3rem !important;
+    text-transform: uppercase !important;
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--blanco) !important;
+}
+
+a {
+    font-size: 1.6rem;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* NAV */
+
+nav {
+    background-color: var(--blanco);
+}
+
+.nav-text {
+    font-size: 1.6rem;
+}
+
+.navbar-brand img {
+    min-width: 4rem;
+    height: auto;
+}
+
+/* VIDEO */
+
+.video {
+    min-height: calc(100vh - 6.5rem) !important;
+    background-color: var(--azul) !important;
+    margin-top: 5rem !important;
+}
+
+
+/* SERVICIOS */
+.servicios {
+    min-height: 100vh !important;
+    background-color: var(--azul) !important;
+}
+
+.servicios .cont-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.servicios .cont-cards div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: solid red 2px;
+}
+
+.servicios .cont-cards .icono {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10rem;
+    transform: translateY(2rem);
+}
+
+.servicios p {
+    color: var(--blanco);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+/* PROYECTOS */
+.proyectos {
+    background-color: var(--azul) !important;
+}
+
+.proyectos .carousel-item .cont-carousel {
+    width: 80%;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.proyectos .card {
+    width: 25%;
+    margin: 0 1.5rem;
+    background-color: var(--azul);
+}
+
+.proyectos .card p {
+    color: var(--blanco);
+}
+
+/* FLUJO */
+.flujo {
+    background-color: var(--azul) !important;
+}
+
+.flujo .img-flujo-uno,
+.flujo .img-flujo-dos {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flujo .img-flujo-uno {
+    background-image: url(./img/puntoDeVenta.png);
+
+}
+
+.flujo .img-flujo-dos {
+    background-image: url(./img/puntoDeVenta.png);
+}
+
+.flujo .cont-flujo {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
