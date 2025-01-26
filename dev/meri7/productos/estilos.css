@@ -14,11 +14,20 @@ body {
     font-family: "Montserrat", serif !important;
     font-optical-sizing: auto !important;
     font-style: normal !important;
+
+    overflow-x: hidden;
+
+    background-image: url('./img/fondo/fondo03.png');
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: repeat-y;
 }
 
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 
 }
 
@@ -79,12 +88,17 @@ li {
 }
 
 section {
+    z-index: 5;
+    position: relative;
     padding: 5rem 0;
 }
 
 /* NAV */
 
 nav {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
     background-color: var(--blanco);
 }
 
@@ -93,25 +107,18 @@ nav {
 }
 
 .navbar-brand img {
-    min-width: 4rem;
+    width: 8rem;
     height: auto;
 }
 
 /* VIDEO */
-
 .video {
     min-height: calc(100vh - 5rem) !important;
-    background-color: var(--azul) !important;
     margin-top: 4rem !important;
 }
 
 
 /* SERVICIOS */
-.servicios {
-    min-height: 100vh !important;
-    background-color: var(--azul) !important;
-}
-
 .servicios .cont-cards {
     display: flex;
     flex-direction: row;
@@ -125,22 +132,77 @@ nav {
 }
 
 .servicios .cont-cards .icono {
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--blanco);
     border-radius: 10rem;
     transform: translateY(2rem);
+}
+
+.servicios .cont-cards .icono .img-icono {
+    width: 100%;
+    height: 100%;
+    margin: 2.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.servicios .cont-cards .icono .img-01 {
+    background-image: url(./img/icono-servicio-01.png);
+}
+
+.servicios .cont-cards .icono .img-02 {
+    background-image: url(./img/icono-servicio-02.png);
+}
+
+.servicios .cont-cards .icono .img-03 {
+    background-image: url(./img/icono-servicio-03.png);
+}
+
+.servicios .cont-cards .icono .img-04 {
+    background-image: url(./img/icono-servicio-04.png);
+}
+
+.servicios .cont-cards .servicio {
+    width: 100%;
+    height: auto;
+}
+
+.servicios .cont-cards .servicio .img-servicio {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.servicios .cont-cards .servicio .img-01 {
+    background-image: url(./img/servicios/servicio-01.jpg);
+}
+
+.servicios .cont-cards .servicio .img-02 {
+    background-image: url(./img/servicios/servicio-02.png);
+}
+
+.servicios .cont-cards .servicio .img-03 {
+    background-image: url(./img/servicios/servicio-03.jpeg);
+}
+
+.servicios .cont-cards .servicio .img-04 {
+    background-image: url(./img/servicios/servicio-04.jpg);
 }
 
 .servicios p {
     color: var(--blanco);
     font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
     text-transform: uppercase;
 }
 
 /* PROYECTOS */
-.proyectos {
-    background-color: var(--azul) !important;
-}
 
 .proyectos .carousel-item .cont-carousel {
     width: 80%;
@@ -155,30 +217,72 @@ nav {
     background-color: var(--azul);
 }
 
+.proyectos .card .img-proyectos {
+    width: auto;
+    height: 35rem;
+    margin: 1rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proyectos .card .card-body {
+    margin: 1rem;
+}
+
 .proyectos .card p {
     color: var(--blanco);
 }
 
-/* FLUJO */
-.flujo {
-    background-color: var(--azul) !important;
+.proyectos .card .img-01 {
+    background-image: url(./img/proyectos/proyectos-01.png);
 }
+
+.proyectos .card .img-02 {
+    background-image: url(./img/proyectos/proyectos-02.jpg);
+}
+
+.proyectos .card .img-03 {
+    background-image: url(./img/proyectos/proyectos-03.jpeg);
+}
+
+.proyectos .card .img-04 {
+    background-image: url(./img/proyectos/proyectos-04.JPG);
+}
+
+.proyectos .card .img-05 {
+    background-image: url(./img/proyectos/proyectos-05.jpeg);
+}
+
+.proyectos .card .img-06 {
+    background-image: url(./img/proyectos/proyectos-06.jpg);
+}
+
+.proyectos .card .img-07 {
+    background-image: url(./img/proyectos/proyectos-07.jpg);
+}
+
+.proyectos .card .img-08 {
+    background-image: url(./img/proyectos/proyectos-08.jpeg);
+}
+
+/* FLUJO */
 
 .flujo .img-flujo-uno,
 .flujo .img-flujo-dos {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .flujo .img-flujo-uno {
-    background-image: url(./img/puntoDeVenta.png);
+    background-image: url(./img/flujo-01.png);
 
 }
 
 .flujo .img-flujo-dos {
-    background-image: url(./img/puntoDeVenta.png);
+    background-image: url(./img/flujo-02.png);
 }
 
 .flujo .cont-flujo {
@@ -191,9 +295,7 @@ nav {
 
 /* PROYECTOS */
 
-.proyectos-dos {
-    background-color: var(--azul) !important;
-}
+.proyectos-dos {}
 
 .cont-proyecto {
     margin: 0 auto 18em auto !important;
