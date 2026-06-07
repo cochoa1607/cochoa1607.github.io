@@ -40,14 +40,19 @@
                         <span class="nav-text">Servicios</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#flujo">
-                        <span class="nav-text">Flujo de trabajo</span>
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link" aria-current="page" href="#proyectos">
+                        <span class="nav-text">Proyectos</span>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" aria-current="page" href="#proyectosDos">
+                        <span class="nav-text">Proyectos</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#proyectos">
-                        <span class="nav-text">Proyectos</span>
+                    <a class="nav-link" aria-current="page" href="#flujo">
+                        <span class="nav-text">Flujo de trabajo</span>
                     </a>
                 </li>
           </ul>
@@ -57,10 +62,10 @@
     </nav>
 
     <!-- VIDEO -->
-    <section class="container-fluid video" style="padding-top: 0 !important;">
+    <section class="container-fluid video">
         <div class="row">
             <div class="col-12">
-                <video src="..." class="object-fit-fill" autoplay></video>
+                <video src="./vid/video_head.mp4" autoplay loop muted playsinline></video>
             </div>
         </div>
     </section>
@@ -70,78 +75,80 @@
         <div class="row">
 
             <div class="col-11 m-auto">
-                <h1>Servicios <br> de diseño</h1>
+                <h1>Servicios <br>de diseño</h1>
             </div>
             
             <div class="col-11 m-auto cont-cards">
                 
-                <div class="col-3">
-                    <div class="icono">
-                        <div class="img-icono img-01"></div>
-                    </div>
-                    <div class="servicio">
-                        <div class="img-servicio img-01"></div>
-                    </div>
-                    <p>Punto <br> de venta</p>
+                <div class="col-3 card-serv">
+                    <a class="cont-serv" href="./pages/puntoVenta.html">
+                        <div class="icono">
+                            <div class="img-icono img-01"></div>
+                        </div>
+                        <div class="servicio">
+                            <div class="img-servicio img-01"></div>
+                        </div>
+                        <p>Punto <br> de venta</p>
+                    </a>
                 </div>
                 
-                <div class="col-3">
-                    <div class="icono">
-                        <div class="img-icono img-02"></div>
-                    </div>
-                    <div class="servicio">
-                        <div class="img-servicio img-02"></div>
-                    </div>
-                    <p>Digital</p>
+                <div class="col-3 card-serv">
+                    <a class="cont-serv" href="./pages/digital.html">
+                        <div class="icono">
+                            <div class="img-icono img-02"></div>
+                        </div>
+                        <div class="servicio">
+                            <div class="img-servicio img-02"></div>
+                        </div>
+                        <p>Digital</p>
+                    </a>
                 </div>
                 
-                <div class="col-3">
-                    <div class="icono">
-                        <div class="img-icono img-03"></div>
-                    </div>
-                    <div class="servicio">
-                        <div class="img-servicio img-03"></div>
-                    </div>
-                    <p>Audiovisual</p>
+                <div class="col-3 card-serv">
+                    <a class="cont-serv" href="./pages/audiovisual.html">
+                        <div class="icono">
+                            <div class="img-icono img-03"></div>
+                        </div>
+                        <div class="servicio">
+                            <div class="img-servicio img-03"></div>
+                        </div>
+                        <p>Audiovisual</p>
+                    </a>
                 </div>
                 
-                <div class="col-3">
-                    <div class="icono">
-                        <div class="img-icono img-04"></div>
-                    </div>
-                    <div class="servicio">
-                        <div class="img-servicio img-04"></div>
-                    </div>
-                    <p>Editorial</p>
+                <div class="col-3 card-serv">
+                    <a class="cont-serv" href="./pages/editorial.html">
+                        <div class="icono">
+                            <div class="img-icono img-04"></div>
+                        </div>
+                        <div class="servicio">
+                            <div class="img-servicio img-04"></div>
+                        </div>
+                        <p>Editorial</p>
+                    </a>
                 </div>
 
             </div>
         </div>
     </section>
      
-    <!-- PROYECTOS -->
-    <section class="container-fluid proyectos" id="proyectos">
+    <!-- PROYECTOS 1 de 2 sm -->
+    <section class="container-fluid proyectos d-block d-lg-none" id="proyectos">
     <div class="row">
         
         <div class="col-11 m-auto">
-            <h1>Proyectos <br> con diseño</h1>
+            <h1>Proyectos <br>con diseño</h1>
         </div>
         
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselUno" class="carousel slide" data-bs-ride="carousel">
             
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
             <div class="carousel-inner">
                 
                 <div class="carousel-item active">
                     
                     <div class="cont-carousel">
 
-                        <div class="card">
+                        <div class="card card-sm-left">
                             <div class="img-proyectos img-01"></div>
                             <div class="card-body">
                                 <h5 class="card-title">Farmacias Guadalajara</h5>
@@ -149,19 +156,11 @@
                             </div>
                         </div>
                         
-                        <div class="card">
-                            <div class="img-proyectos img-02"></div>
+                        <div class="card card-sm-right">
+                            <div class="img-proyectos img-02" style="background-position: center;"></div>
                             <div class="card-body">
                                 <h5 class="card-title">Sephora</h5>
-                                <p class="card-text">Impresos para actoivación</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="img-proyectos img-03"></div>
-                            <div class="card-body">
-                                <h5 class="card-title">NIKE</h5>
-                                <p class="card-text">Desarrollo de concepto decorativo</p>
+                                <p class="card-text">Impresos para activación</p>
                             </div>
                         </div>
                         
@@ -171,8 +170,16 @@
                 <div class="carousel-item">
 
                     <div class="cont-carousel">
+
+                        <div class="card card-sm-left">
+                            <div class="img-proyectos img-03"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">NIKE</h5>
+                                <p class="card-text">Desarrollo de concepto decorativo</p>
+                            </div>
+                        </div>
                     
-                        <div class="card">
+                        <div class="card card-sm-right">
                             <div class="img-proyectos img-04"></div>
                             <div class="card-body">
                             <h5 class="card-title">Chupa Chups</h5>
@@ -180,7 +187,15 @@
                             </div>
                         </div>
                         
-                        <div class="card">
+                    </div>
+                    
+                </div>
+                
+                <div class="carousel-item">
+
+                    <div class="cont-carousel">
+
+                        <div class="card card-sm-left">
                             <div class="img-proyectos img-05"></div>
                             <div class="card-body">
                             <h5 class="card-title">Bandai</h5>
@@ -188,14 +203,14 @@
                             </div>
                         </div>
                         
-                        <div class="card">
-                            <div class="img-proyectos img-06"></div>
+                        <div class="card card-sm-right">
+                            <div class="img-proyectos img-06" style="background-position: bottom;"></div>
                             <div class="card-body">
                             <h5 class="card-title">Palmolive</h5>
                             <p class="card-text">Experiencia inmersiva</p>
                             </div>
                         </div>
-
+                        
                     </div>
                     
                 </div>
@@ -204,18 +219,18 @@
 
                     <div class="cont-carousel">
                     
-                        <div class="card">
-                            <div class="img-proyectos img-07"></div>
+                        <div class="card card-sm-left">
+                            <div class="img-proyectos img-07" style="background-position: center;"></div>
                             <div class="card-body">
                             <h5 class="card-title">Nickelodeon</h5>
                             <p class="card-text">Desarrollo de idea creativa</p>
                             </div>
                         </div>
                         
-                        <div class="card">
+                        <div class="card card-sm-right">
                             <div class="img-proyectos img-08"></div>
                             <div class="card-body">
-                            <h5 class="card-title">Invictus</h5>
+                            <h5 class="card-title">Innvictus</h5>
                             <p class="card-text">Desarrollo de assets</p>
                             </div>
                         </div>
@@ -227,11 +242,11 @@
                 
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" style="transform: translateX(-2rem);" type="button" data-bs-target="#carouselUno" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" style="transform: translateX(2rem);" type="button" data-bs-target="#carouselUno" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -240,29 +255,154 @@
     </div>
     </section>
 
+    <!-- PROYECTOS 2 de 2 md-xxl -->
+    <section class="container-fluid proyectos d-none d-lg-block" id="proyectosDos">
+        <div class="row">
+            
+            <div class="col-11 m-auto">
+                <h1>Proyectos <br>con diseño</h1>
+            </div>
+            
+            <div id="carouselDos" class="carousel slide" data-bs-ride="carousel">
+                
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                        
+                        <div class="cont-carousel">
+    
+                            <div class="card">
+                                <div class="img-proyectos img-01"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Farmacias Guadalajara</h5>
+                                    <p class="card-text">Materiales POP </p>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="img-proyectos img-02" style="background-position: center;"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sephora</h5>
+                                    <p class="card-text">Impresos para activación</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="img-proyectos img-03"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">NIKE</h5>
+                                    <p class="card-text">Desarrollo de concepto decorativo</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+    
+                        <div class="cont-carousel">
+                        
+                            <div class="card">
+                                <div class="img-proyectos img-04"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Chupa Chups</h5>
+                                <p class="card-text">Creación de idea creativa</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="img-proyectos img-05"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Bandai</h5>
+                                <p class="card-text">Desarrollo de experiencia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="img-proyectos img-06" style="background-position: bottom;"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Palmolive</h5>
+                                <p class="card-text">Experiencia inmersiva</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="carousel-item">
+    
+                        <div class="cont-carousel">
+                        
+                            <div class="card">
+                                <div class="img-proyectos img-07" style="background-position: center;"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Nickelodeon</h5>
+                                <p class="card-text">Desarrollo de idea creativa</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="img-proyectos img-08"></div>
+                                <div class="card-body">
+                                <h5 class="card-title">Innvictus</h5>
+                                <p class="card-text">Desarrollo de assets</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+    
+                    
+    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+    
+        </div>
+        </section>
+
     <!-- FLUJO -->
     <section class="container-fluid flujo" id="flujo">
     <div class="row">
         
         <div class="col-11 m-auto">
-            <h1>Flujo <br> de trabajo</h1>
+            <h1>Flujo <br>de trabajo</h1>
         </div>
 
-        <div class="col-8 cont-flujo">
-            <div class="col-6">
+        <div class="col-xxl-8 col-md-10 col-11 cont-flujo">
+            <div class="col-xl-5 col-10">
                 <div class="img-flujo-uno"></div>
             </div>
-            <div class="col-6">
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            <div class="col-xl-5 col-10">
+                <ul>
+                    <li>Implant de diseño que visite 2 o 3 veces las oficinas de SCJ para retroalimentación y solicitudes de diseño.</li>
+                    <li>Juntas y reuniones constantes con todos los equipos de SCJ para programación de solicitudes de diseño.</li>
+                    <li>Creación de equipo creativo y de diseño exclusivo para SCJ.</li>
+                </ul>
             </div>
         </div>
         
-        <div class="col-8 cont-flujo">
-            <div class="col-6">
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        <div class="col-xxl-8 col-md-10 col-11 cont-flujo flujo-dos mt-5 mt-md-0">
+            <div class="col-xl-5 col-10">
+                <ul>
+                    <li>Creación de tablero CRM multivista cliente-agencia tiempo real.</li>
+                    <li>Disponibilidad de horario abierto 24/7.</li>
+                    <li>Diseños exprés y planeados.</li>
+                    <li>Tiempo de entrega ágil, eficaz y eficiente.</li>
+                    <li>Entregables en PDF y JPEG si se requiere en Diseño Gráfico, para video MPG y MOV.</li>
+                </ul>
             </div>
 
-            <div class="col-6">
+            <div class="col-xl-5 col-10">
                 <div class="img-flujo-dos"></div>
             </div>
         </div>
@@ -275,13 +415,13 @@
     <div class="row">
 
         <div class="col-11 m-auto">
-            <h1>Proyectos de diseño</h1>
+            <h1>Proyectos <br>de diseño</h1>
         </div>
 
         <!-- Farmacias Guadalajara -->
-        <div class="col-10 cont-proyecto row">
+        <div class="col-11 cont-proyecto row">
 
-            <div class="col-4">
+            <div class="col-md-4 col-11">
                 <div class="img-proyecto proy-01"></div>
             </div>
             
@@ -303,21 +443,21 @@
                 </ul>
             </div>
 
-            <div class="col-12 galeria-proyectos">
-                <div class="proy-img proy-01-img-01"></div>
-                <div class="proy-img proy-01-img-02"></div>
+            <!-- <div class="col-12 galeria-proyectos">
+                <div class="proy-img proy-01-img-01" style="background-position: center left;"></div>
+                <div class="proy-img proy-01-img-02" style="background-position: top;"></div>
                 <div class="proy-img proy-01-img-03"></div>
-                <div class="proy-img proy-01-img-04"></div>
-                <div class="proy-img proy-01-img-05"></div>
-                <div class="proy-img proy-01-img-06"></div>
-            </div>
+                <div class="proy-img proy-01-img-04" style="background-position: top;"></div>
+                <div class="proy-img proy-01-img-05" style="background-position: center left;"></div>
+                <div class="proy-img proy-01-img-06" style="background-position: top;"></div>
+            </div> -->
         
         </div>
         
         <!-- Sephora -->
-        <div class="col-10 cont-proyecto row">
+        <div class="col-11 cont-proyecto row">
 
-            <div class="col-4">
+            <div class="col-md-4 col-11">
                 <div class="img-proyecto proy-02"></div>
             </div>
             
@@ -334,18 +474,19 @@
                 </ul>
             </div>
 
-            <div class="col-12 galeria-proyectos">
+            <!-- <div class="col-12 galeria-proyectos">
                 <div class="proy-img proy-02-img-01"></div>
                 <div class="proy-img proy-02-img-02"></div>
                 <div class="proy-img proy-02-img-03"></div>
-            </div>
+                <div class="proy-img proy-02-img-10"></div>
+            </div> -->
         
         </div>
         
         <!-- Nike -->
-        <div class="col-10 cont-proyecto row">
+        <div class="col-11 cont-proyecto row">
 
-            <div class="col-4">
+            <div class="col-md-4 col-11">
                 <div class="img-proyecto proy-03"></div>
             </div>
             
@@ -363,21 +504,21 @@
                 </ul>
             </div>
 
-            <div class="col-12 galeria-proyectos">
+            <!-- <div class="col-12 galeria-proyectos">
                 <div class="proy-img proy-03-img-01"></div>
                 <div class="proy-img proy-03-img-02"></div>
                 <div class="proy-img proy-03-img-03"></div>
                 <div class="proy-img proy-03-img-04"></div>
                 <div class="proy-img proy-03-img-05"></div>
                 <div class="proy-img proy-03-img-06"></div>
-            </div>
+            </div> -->
         
         </div>
         
         <!-- Chupa Chups -->
-        <div class="col-10 cont-proyecto row">
+        <div class="col-11 cont-proyecto row">
 
-            <div class="col-4">
+            <div class="col-md-4 col-11">
                 <div class="img-proyecto proy-04"></div>
             </div>
             
@@ -386,7 +527,7 @@
                 <ul>
                     <li>Creación de idea creativa</li>
                     <li>Creación de concepto</li>
-                    <li>Photo Opportunity</li>
+                    <li>Photo opportunity</li>
                     <li>Diseño y elaboración de stands</li>
                     <li>Viniles</li>
                     <li>Mobiliario para activación</li>
@@ -394,18 +535,19 @@
                 </ul>
             </div>
 
-            <div class="col-12 galeria-proyectos">
+            <!-- <div class="col-12 galeria-proyectos">
                 <div class="proy-img proy-04-img-01"></div>
                 <div class="proy-img proy-04-img-02"></div>
                 <div class="proy-img proy-04-img-03"></div>
-            </div>
+                <div class="proy-img proy-04-img-10"></div>
+            </div> -->
         
         </div>
 
         <!-- Bandai -->
-        <div class="col-10 cont-proyecto row">
+        <div class="col-11 cont-proyecto row">
 
-            <div class="col-4">
+            <div class="col-md-4 col-11">
                 <div class="img-proyecto proy-05"></div>
             </div>
             
@@ -422,17 +564,17 @@
                 </ul>
             </div>
 
-            <div class="col-12 galeria-proyectos">
+            <!-- <div class="col-12 galeria-proyectos">
                 <div class="proy-img proy-05-img-01"></div>
                 <div class="proy-img proy-05-img-02"></div>
-            </div>
+            </div> -->
         
         </div>
         
         <!-- Palmolive -->
-        <div class="col-10 cont-proyecto row">
+        <div class="col-11 cont-proyecto row">
 
-            <div class="col-4">
+            <div class="col-md-4 col-11">
                 <div class="img-proyecto proy-06"></div>
             </div>
             
@@ -443,30 +585,30 @@
                     <li>Adaptación de marca a concepto creativo</li>
                     <li>Ambientación del espacio</li>
                     <li>Producción de videomemoria</li>
-                    <li>Fotos instantaneas con diseño de la marca</li>
+                    <li>Fotos instántaneas con diseño de la marca</li>
                     <li>Elaboración de kits personalizados</li>
                     <li>Glorificadores</li>
                     <li>Diseño de render y producción de volumétricos</li>
-                    <li>Diseño y elaboración de photoopportunity</li>
+                    <li>Diseño y elaboración de photo opportunity</li>
                     <li>Decoración del evento y cajas de luz</li>
                 </ul>
             </div>
 
-            <div class="col-12 galeria-proyectos">
+            <!-- <div class="col-12 galeria-proyectos">
                 <div class="proy-img proy-06-img-01"></div>
                 <div class="proy-img proy-06-img-02"></div>
                 <div class="proy-img proy-06-img-03"></div>
                 <div class="proy-img proy-06-img-04"></div>
                 <div class="proy-img proy-06-img-05"></div>
-                <div class="proy-img proy-06-img-06"></div>
-            </div>
+                <div class="proy-img proy-06-img-06" style="background-position: top right;"></div>
+            </div> -->
         
         </div>
         
         <!-- Nickelodeon -->
-        <div class="col-10 cont-proyecto row">
+        <div class="col-11 cont-proyecto row">
 
-            <div class="col-4">
+            <div class="col-md-4 col-11">
                 <div class="img-proyecto proy-07"></div>
             </div>
             
@@ -482,19 +624,19 @@
                 </ul>
             </div>
 
-            <div class="col-12 galeria-proyectos">
-                <div class="proy-img proy-07-img-01"></div>
-                <div class="proy-img proy-07-img-02"></div>
-                <div class="proy-img proy-07-img-03"></div>
-                <div class="proy-img proy-07-img-04"></div>
-            </div>
+            <!-- <div class="col-12 galeria-proyectos">
+                <div class="proy-img proy-07-img-01 tam-nick"></div>
+                <div class="proy-img proy-07-img-02 tam-nick"></div>
+                <div class="proy-img proy-07-img-03 tam-nick"></div>
+                <div class="proy-img proy-07-img-04 tam-nick"></div>
+            </div> -->
         
         </div>
         
         <!-- Innvictus -->
-        <div class="col-10 cont-proyecto row">
+        <div class="col-11 cont-proyecto row">
 
-            <div class="col-4">
+            <div class="col-md-4 col-11">
                 <div class="img-proyecto proy-08"></div>
             </div>
             
@@ -508,14 +650,14 @@
                 </ul>
             </div>
 
-            <div class="col-12 galeria-proyectos">
+            <!-- <div class="col-12 galeria-proyectos">
                 <div class="proy-img proy-08-img-01"></div>
                 <div class="proy-img proy-08-img-02"></div>
-                <div class="proy-img proy-08-img-03"></div>
+                <div class="proy-img proy-08-img-03" style="background-position: top; width: 10%;"></div>
                 <div class="proy-img proy-08-img-04"></div>
                 <div class="proy-img proy-08-img-05"></div>
                 <div class="proy-img proy-08-img-06"></div>
-            </div>
+            </div> -->
         
         </div>
 
@@ -532,24 +674,24 @@
     <div class="container-fluid">
         <div class="row">
 
-            <div class="col-11 cont-footer">
-                <div class="col-4">
+            <div class="col-12 cont-footer">
+                <div class="footer-cont">
                     <a class="navbar-brand ms-5" href="#"> 
                         <img src="./img/logo-meri7-bnco.png" alt="Meri7">
                     </a>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-4 footer-redes">
+
+                <div class="footer-cont">
                     <ul>
                         <li>
-                            <a href="" >
-                                <i class="fa-brands fa-instagram"></i>
-                                <p>meri7.publicidad</p>
+                            <a href="https://www.instagram.com/meri7.publicidad/" target="_blank">
+                                <i class="fa-brands fa-instagram" style="width: 3rem;"></i>
+                                <p>@meri7.publicidad</p>
                             </a>
                         </li>
                         <li>
-                            <a href="" >
-                                <i class="fa-brands fa-facebook-f"></i>
+                            <a href="https://www.facebook.com/profile.php?id=61555057960038&locale=es_LA" target="_blank">
+                                <i class="fa-brands fa-facebook-f" style="width: 3rem;"></i>
                                 <p>Meri7 Publicidad</p>
                             </a>
                         </li>
@@ -566,7 +708,7 @@
         
         <div class="row cont-copy">
 
-            <div class="col-11 cont-int-copy">
+            <div class="col-12 cont-int-copy">
 
                 <div class="cont-liquid">
                     <p>Copyright &#169; 2025</p>
@@ -720,11 +862,11 @@
                     </a>
                 </div>
 
-                <div class="cont-liquid">
+                <!-- <div class="cont-liquid">
                     <a href="https://digitalliquid.site/#contacto" target="_blank">
                         <p class="liquid-contacto">Contactáctanos, cotizamos tu proyecto.</p>
                     </a>
-                </div>
+                </div> -->
 
             </div>
 

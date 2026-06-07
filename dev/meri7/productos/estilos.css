@@ -32,13 +32,16 @@ html {
 }
 
 :root {
-    --azul: #142F77;
+    --azul: #0D3082;
+    --azul-dos: #365ABA;
+    --rojo: #E31752;
 
     --negro: #020202;
     --negro-dos: #2A2A2A;
 
-    --gris: #808080;
-    --gris-dos: #A9A9A9;
+    --gris: #1D1D1B;
+    --gris-dos: #808080;
+    --gris-tres: #A9A9A9;
 
     --blanco: #FFFFFF;
     --blanco-dos: #FFFFFFEE;
@@ -53,23 +56,31 @@ html {
 
 h1 {
     color: var(--blanco) !important;
-    font-size: 16rem !important;
+    font-size: 8rem !important;
     text-transform: uppercase !important;
     font-weight: 800 !important;
-    margin-bottom: 6rem !important;
+    margin-bottom: 2rem !important;
+    margin-top: 4rem !important;
 }
 
 h2 {
     color: var(--blanco) !important;
-    font-size: 6rem !important;
+    font-size: 3rem !important;
     text-transform: uppercase !important;
     font-weight: 800 !important;
     margin-bottom: 1rem !important;
 }
 
-h5 {
+h3 {
     color: var(--blanco) !important;
     font-size: 3rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 4rem !important;
+}
+
+h5 {
+    color: var(--blanco) !important;
+    font-size: 2rem !important;
     text-transform: uppercase !important;
 }
 
@@ -90,7 +101,7 @@ li {
 section {
     z-index: 5;
     position: relative;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 /* NAV */
@@ -99,36 +110,549 @@ nav {
     z-index: 10;
     position: fixed;
     width: 100%;
+    padding: 2rem auto;
     background-color: var(--blanco);
 }
 
 .nav-text {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .navbar-brand img {
-    width: 8rem;
+    width: 14rem;
     height: auto;
 }
 
 /* VIDEO */
 .video {
-    min-height: calc(100vh - 5rem) !important;
-    margin-top: 4rem !important;
+    width: 100vw;
+    /* height: calc(100vh - 5rem) !important; */
+    height: 100% !important;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 5.5rem !important;
 }
+
+.video video {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Mobile (0px - 1200px) */
+@media (min-width: 1px) and (max-width: 1200px) {
+
+    /* TEXTOS */
+    h1 {
+        font-size: 8rem !important;
+        margin-bottom: 4rem !important;
+    }
+
+    h2 {
+        font-size: 5rem !important;
+        margin-bottom: 2rem !important;
+        margin-top: 2rem !important;
+    }
+
+    h3 {
+        font-size: 3rem !important;
+    }
+
+    h5 {
+        font-size: 2.8rem !important;
+    }
+
+    li {
+        font-size: 2.6rem;
+    }
+
+    /* NAV */
+    .navbar-brand img {
+        width: 20rem !important;
+        margin: 2rem 0 !important;
+    }
+
+    .navbar-toggler {
+        transform: translateX(-2rem) !important;
+    }
+
+    .navbar-toggler-icon {
+        padding: 3rem !important;
+    }
+
+    .nav-text {
+        font-size: 4rem !important;
+        padding: 2rem auto !important;
+    }
+
+    .navbar-collapse {
+        margin-top: 5rem !important;
+    }
+
+    /* VIDEO */
+    .video {
+        margin-top: 13em !important;
+    }
+
+    .video video {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    /* SERVICIOS */
+    .servicios .cont-cards {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .servicios .cont-cards .card-serv {
+        flex: 1 95% !important;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .servicios .cont-cards .servicio .img-servicio {
+        width: 35rem !important;
+        height: 40rem !important;
+        border-radius: 2rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .servicios p {
+        font-size: 2.6rem !important;
+    }
+
+    /* PROYECTOS */
+
+    .proyectos .carousel-item .cont-carousel {
+        width: 80% !important;
+    }
+
+    .proyectos .card {
+        width: 100% !important;
+    }
+
+    .proyectos .card-sm-left {
+        transform: translateX(.8rem) !important;
+    }
+
+    .proyectos .card-sm-right {
+        transform: translateX(-.8rem) !important;
+    }
+
+    .proyectos .card .img-proyectos {
+        width: 100% !important;
+        height: 30rem !important;
+        margin: 0 !important;
+    }
+
+    .proyectos .card .card-body {
+        margin: .5rem !important;
+    }
+
+    /* FLUJO */
+
+    .flujo .cont-flujo {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-bottom: 0 !important;
+    }
+
+    .flujo .img-flujo-uno,
+    .flujo .img-flujo-dos {
+        width: 100% !important;
+        height: 35rem !important;
+    }
+
+    .flujo .cont-flujo ul {
+        padding: 0 !important;
+    }
+
+    .flujo .flujo-dos {
+        flex-direction: column-reverse !important;
+    }
+
+    /* PROYECTOS DESGLOSADOS */
+
+    .img-proyecto {
+        width: 100% !important;
+        height: 40rem !important;
+    }
+
+    .galeria-proyectos {
+        margin-top: 0 !important;
+        gap: 1rem !important;
+    }
+
+    .proy-img {
+        height: 26rem !important;
+        width: calc(50% - 2rem) !important;
+        margin: 0 0 1rem 1rem !important;
+    }
+
+    .proyectos-dos ul {
+        height: 100% !important;
+    }
+
+    .proyectos-dos li {
+        width: calc(100% - 2.5rem) !important;
+        margin: .2rem 0 .2rem 1rem !important;
+    }
+
+    /* Sephora */
+
+    .proy-02-img-01,
+    .proy-02-img-02,
+    .proy-02-img-03 {
+        background-position: bottom !important;
+    }
+
+    /* Palmolive */
+    .proy-06-img-02,
+    .proy-06-img-06 {
+        background-position: top !important;
+    }
+
+    /* Innvictus */
+    .proy-08-img-04 {
+        background-position: top !important;
+    }
+
+    /* FOOTER */
+    .cont-footer .navbar-brand img {
+        width: auto !important;
+        height: 7rem !important;
+        margin: 0 auto 6rem auto !important;
+    }
+
+    .cont-footer {
+        flex-direction: column !important;
+        padding: 4rem auto !important;
+    }
+
+    .cont-footer ul {
+        margin: auto !important;
+
+    }
+
+    /* LIQUID */
+
+    .cont-int-copy {
+        margin: 5rem auto !important;
+        padding: 2rem !important;
+        flex-direction: column !important;
+    }
+
+    .cont-int-copy p {
+        margin-right: 0 !important;
+    }
+
+    .cont-liquid {
+        width: 100% !important;
+        margin: 3rem auto 0 auto !important;
+    }
+
+
+}
+
+/* Tablet (1201px - 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+
+    /* TEXTOS */
+    h1 {
+        font-size: 8rem !important;
+        margin-bottom: 3rem !important;
+    }
+
+    h2 {
+        font-size: 3rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    h3 {
+        font-size: 3rem !important;
+    }
+
+    h5 {
+        font-size: 2rem !important;
+    }
+
+    /* NAV */
+    .navbar-brand img {
+        width: 10rem !important;
+        margin: .2rem 0 !important;
+    }
+
+    .navbar-toggler {
+        transform: translateX(-2rem) !important;
+    }
+
+    .navbar-toggler-icon {
+        padding: 3rem !important;
+    }
+
+    .nav-text {
+        font-size: 2.2rem !important;
+        padding: 2rem auto !important;
+    }
+
+    /* SERVICIOS */
+    .servicios .cont-cards .card-serv {
+        flex: 1 1 45% !important;
+    }
+
+    /* PROYECTOS */
+
+    .proyectos .carousel-item .cont-carousel {
+        width: 100% !important;
+        margin: 2rem auto 5rem auto;
+    }
+
+    .proyectos .card {
+        width: 30%;
+    }
+
+
+    /* PROYECTOS DESGLOSADOS */
+    /* .proy-img {
+        height: 26rem !important;
+        width: calc(50% - 2rem) !important;
+        margin: 0 0 1rem 1rem !important;
+    }
+
+    .galeria-proyectos .tam-nick {
+        height: 20rem !important;
+        width: 23% !important;
+    }
+
+    .proyectos-dos ul {
+        height: 45rem !important;
+    }
+
+    .proyectos-dos li {
+        width: calc(100% - 2.5rem) !important;
+        margin: .2rem 0 .2rem 1rem !important;
+    } */
+
+    .cont-proyecto {
+        margin: 0 auto 18rem auto !important;
+    }
+
+    .img-proyecto {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .proyectos-dos ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 40rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .proyectos-dos li {
+        width: calc(50% - 2.5rem);
+        margin: .5rem 0 .5rem 1rem;
+    }
+
+    .galeria-proyectos {
+        margin-top: 5rem !important;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .proy-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25rem;
+        width: 15%;
+        margin: 0 2rem 0 0;
+    }
+
+    .galeria-proyectos .tam-nick {
+        width: 22%;
+    }
+
+    /* Sephora */
+    .proy-02-img-01,
+    .proy-02-img-02 {
+        background-position: top !important;
+    }
+
+    .proy-02-img-03 {
+        background-position: center !important;
+    }
+
+    /* Palmolive */
+    .proy-06-img-02 {
+        background-position: center !important;
+    }
+
+    .proy-06-img-06 {
+        background-position: top !important;
+    }
+
+    /* Innvictus */
+    .proy-08-img-04 {
+        background-position: top !important;
+    }
+
+}
+
+/* Desktop (1601px - 2000px) */
+@media (min-width: 1601px) and (max-width: 2000px) {
+
+    /* TEXTOS */
+    h1 {
+        font-size: 8rem !important;
+        margin-bottom: 4rem !important;
+    }
+
+    h2 {
+        font-size: 5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    h3 {
+        font-size: 3rem !important;
+    }
+
+    h5 {
+        font-size: 2rem !important;
+    }
+
+    /* PROYECTOS */
+
+    .proyectos .carousel-item .cont-carousel {
+        width: 100% !important;
+        margin: 2rem auto 5rem auto;
+    }
+
+    .proyectos .card {
+        width: 30%;
+    }
+
+    /* PROYECTOS DESGLOSADOS */
+    /* .proy-img {
+        width: calc(50% - 2rem) !important;
+        margin: 0 0 1rem 1rem !important;
+    }
+
+    .galeria-proyectos .tam-nick {
+        height: 20rem !important;
+        width: 24% !important;
+    } */
+
+    .cont-proyecto {
+        margin: 0 auto 18rem auto !important;
+    }
+
+    .img-proyecto {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .proyectos-dos ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 40rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .proyectos-dos li {
+        width: calc(50% - 2.5rem);
+        margin: .5rem 0 .5rem 1rem;
+    }
+
+    .galeria-proyectos {
+        margin-top: 5rem !important;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .proy-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25rem;
+        width: 15%;
+        margin: 0 2rem 0 0;
+    }
+
+    .galeria-proyectos .tam-nick {
+        width: 22%;
+    }
+}
+
+/* XL (2001px en adelante) */
+@media (min-width: 2001px) {}
 
 
 /* SERVICIOS */
 .servicios .cont-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.servicios .cont-cards .card-serv {
+    flex: 1 1 20%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 
 .servicios .cont-cards div {
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.servicios .cont-cards .cont-serv {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    text-decoration: none;
+}
+
+.servicios .cont-cards .cont-serv:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.servicios .cont-cards .cont-serv:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 450ms;
+}
+
+.servicios .cont-cards .cont-serv:hover .img-servicio {
+    box-shadow: #FFFFFF30 0 0 2rem;
+    transition: ease-in-out 450ms;
 }
 
 .servicios .cont-cards .icono {
@@ -179,7 +703,7 @@ nav {
 }
 
 .servicios .cont-cards .servicio .img-01 {
-    background-image: url(./img/servicios/servicio-01.jpg);
+    background-image: url(./img/servicios/servicio-01.png);
 }
 
 .servicios .cont-cards .servicio .img-02 {
@@ -187,16 +711,16 @@ nav {
 }
 
 .servicios .cont-cards .servicio .img-03 {
-    background-image: url(./img/servicios/servicio-03.jpeg);
+    background-image: url(./img/servicios/servicio-03.png);
 }
 
 .servicios .cont-cards .servicio .img-04 {
-    background-image: url(./img/servicios/servicio-04.jpg);
+    background-image: url(./img/servicios/servicio-04.png);
 }
 
 .servicios p {
     color: var(--blanco);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -206,7 +730,7 @@ nav {
 
 .proyectos .carousel-item .cont-carousel {
     width: 80%;
-    margin: 8rem auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -239,50 +763,60 @@ nav {
 }
 
 .proyectos .card .img-02 {
-    background-image: url(./img/proyectos/proyectos-02.jpg);
+    background-image: url(./img/proyectos/proyectos-02.png);
 }
 
 .proyectos .card .img-03 {
-    background-image: url(./img/proyectos/proyectos-03.jpeg);
+    background-image: url(./img/proyectos/proyectos-03.png);
 }
 
 .proyectos .card .img-04 {
-    background-image: url(./img/proyectos/proyectos-04.JPG);
+    background-image: url(./img/proyectos/proyectos-04.png);
 }
 
 .proyectos .card .img-05 {
-    background-image: url(./img/proyectos/proyectos-05.jpeg);
+    background-image: url(./img/proyectos/proyectos-05.png);
 }
 
 .proyectos .card .img-06 {
-    background-image: url(./img/proyectos/proyectos-06.jpg);
+    background-image: url(./img/proyectos/proyectos-06.png);
 }
 
 .proyectos .card .img-07 {
-    background-image: url(./img/proyectos/proyectos-07.jpg);
+    background-image: url(./img/proyectos/proyectos-07.png);
 }
 
 .proyectos .card .img-08 {
-    background-image: url(./img/proyectos/proyectos-08.jpeg);
+    background-image: url(./img/proyectos/proyectos-08.png);
+}
+
+.proyectos .carousel-control-prev-icon,
+.proyectos .carousel-control-next-icon {
+    transform: scale(2) !important;
 }
 
 /* FLUJO */
 
-.flujo .img-flujo-uno,
-.flujo .img-flujo-dos {
-    height: 100%;
+.img-flujo-uno,
+.img-flujo-dos {
+    width: 100%;
+    height: 100% !important;
+    display: block;
+    margin: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .flujo .img-flujo-uno {
+    animation: floatOne 5s ease-in-out infinite;
     background-image: url(./img/flujo-01.png);
 
 }
 
 .flujo .img-flujo-dos {
     background-image: url(./img/flujo-02.png);
+    animation: floatTwo 8s ease-in-out infinite;
 }
 
 .flujo .cont-flujo {
@@ -293,17 +827,69 @@ nav {
     margin: 2.5rem auto;
 }
 
-/* PROYECTOS */
+.flujo .cont-flujo ul {
+    padding: 4rem 0;
+}
 
+/* Animación de flotación */
+@keyframes floatOne {
+    0% {
+        transform: translate(0, 0);
+    }
 
+    25% {
+        transform: translate(8px, -8px);
+    }
+
+    50% {
+        transform: translate(-8px, 8px);
+    }
+
+    75% {
+        transform: translate(6px, -6px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Animación más intensa para la segunda imagen */
+@keyframes floatTwo {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(-10px, 5px);
+    }
+
+    40% {
+        transform: translate(10px, -10px);
+    }
+
+    60% {
+        transform: translate(-5px, 10px);
+    }
+
+    80% {
+        transform: translate(7px, -7px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* PROYECTOS DESGLOSADOS */
 .cont-proyecto {
-    margin: 0 auto 18em auto !important;
+    margin: 0 auto 10rem auto !important;
 }
 
 .img-proyecto {
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
 }
 
@@ -312,7 +898,7 @@ nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 40rem;
+    height: auto;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -334,9 +920,13 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 16rem;
+    height: 25rem;
     width: 15%;
-    margin: 0 1rem;
+    margin: 0 2rem 0 0;
+}
+
+.galeria-proyectos .tam-nick {
+    width: 22%;
 }
 
 /* proyecto 1 Farmacias Guadalajara */
@@ -350,15 +940,15 @@ nav {
 }
 
 .proy-01-img-02 {
-    background-image: url(./img/proyectos/proyecto-01-02.jpg);
+    background-image: url(./img/proyectos/proyecto-01-02.png);
 }
 
 .proy-01-img-03 {
-    background-image: url(./img/proyectos/proyecto-01-03.jpg);
+    background-image: url(./img/proyectos/proyecto-01-03.png);
 }
 
 .proy-01-img-04 {
-    background-image: url(./img/proyectos/proyecto-01-04.jpeg);
+    background-image: url(./img/proyectos/proyecto-01-04.png);
 }
 
 .proy-01-img-05 {
@@ -366,153 +956,153 @@ nav {
 }
 
 .proy-01-img-06 {
-    background-image: url(./img/proyectos/proyecto-01-06.jpg);
+    background-image: url(./img/proyectos/proyecto-01-06.png);
 }
 
 /* proyecto 2 Sephora */
 
 .proy-02 {
-    background-image: url(./img/proyectos/proyectos-02.jpg);
+    background-image: url(./img/proyectos/proyectos-02.png);
 }
 
 .proy-02-img-01 {
-    background-image: url(./img/proyectos/proyecto-01-01.png);
+    background-image: url(./img/proyectos/proyecto-02-01.png);
 }
 
 .proy-02-img-02 {
-    background-image: url(./img/proyectos/proyecto-01-02.jpg);
+    background-image: url(./img/proyectos/proyecto-02-02.png);
 }
 
 .proy-02-img-03 {
-    background-image: url(./img/proyectos/proyecto-01-03.jpg);
+    background-image: url(./img/proyectos/proyecto-02-03.png);
 }
 
 /* proyecto 3 Nike */
 
 .proy-03 {
-    background-image: url(./img/proyectos/proyectos-03.jpeg);
+    background-image: url(./img/proyectos/proyectos-03.png);
 }
 
 .proy-03-img-01 {
-    background-image: url(./img/proyectos/proyecto-03-01.jpg);
+    background-image: url(./img/proyectos/proyecto-03-01.png);
 }
 
 .proy-03-img-02 {
-    background-image: url(./img/proyectos/proyecto-03-02.jpg);
+    background-image: url(./img/proyectos/proyecto-03-02.png);
 }
 
 .proy-03-img-03 {
-    background-image: url(./img/proyectos/proyecto-03-03.jpg);
+    background-image: url(./img/proyectos/proyecto-03-03.png);
 }
 
 .proy-03-img-04 {
-    background-image: url(./img/proyectos/proyecto-03-04.jpg);
+    background-image: url(./img/proyectos/proyecto-03-04.png);
 }
 
 .proy-03-img-05 {
-    background-image: url(./img/proyectos/proyecto-03-05.jpg);
+    background-image: url(./img/proyectos/proyecto-03-05.png);
 }
 
 .proy-03-img-06 {
-    background-image: url(./img/proyectos/proyecto-03-06.jpg);
+    background-image: url(./img/proyectos/proyecto-03-06.png);
 }
 
 /* proyecto 4 Chupa Chups */
 
 .proy-04 {
-    background-image: url(./img/proyectos/proyectos-04.JPG);
+    background-image: url(./img/proyectos/proyectos-04.png);
 }
 
 .proy-04-img-01 {
-    background-image: url(./img/proyectos/proyecto-04-01.jpg);
+    background-image: url(./img/proyectos/proyecto-04-01.png);
 }
 
 .proy-04-img-02 {
-    background-image: url(./img/proyectos/proyecto-04-02.jpg);
+    background-image: url(./img/proyectos/proyecto-04-02.png);
 }
 
 .proy-04-img-03 {
-    background-image: url(./img/proyectos/proyecto-04-03.jpg);
+    background-image: url(./img/proyectos/proyecto-04-03.png);
 }
 
 /* proyecto 5 Bandai */
 
 .proy-05 {
-    background-image: url(./img/proyectos/proyectos-05.jpeg);
+    background-image: url(./img/proyectos/proyectos-05.png);
 }
 
 .proy-05-img-01 {
-    background-image: url(./img/proyectos/proyecto-05-01.jpeg);
+    background-image: url(./img/proyectos/proyecto-05-01.png);
 }
 
 .proy-05-img-02 {
-    background-image: url(./img/proyectos/proyecto-05-02.jpeg);
+    background-image: url(./img/proyectos/proyecto-05-02.png);
 }
 
 /* proyecto 6 Palmolive */
 
 .proy-06 {
-    background-image: url(./img/proyectos/proyectos-06.jpg);
+    background-image: url(./img/proyectos/proyectos-06.png);
 }
 
 .proy-06-img-01 {
-    background-image: url(./img/proyectos/proyecto-06-01.jpg);
+    background-image: url(./img/proyectos/proyecto-06-01.png);
 }
 
 .proy-06-img-02 {
-    background-image: url(./img/proyectos/proyecto-06-02.jpg);
+    background-image: url(./img/proyectos/proyecto-06-02.png);
 }
 
 .proy-06-img-03 {
-    background-image: url(./img/proyectos/proyecto-06-03.jpg);
+    background-image: url(./img/proyectos/proyecto-06-03.png);
 }
 
 .proy-06-img-04 {
-    background-image: url(./img/proyectos/proyecto-06-04.jpg);
+    background-image: url(./img/proyectos/proyecto-06-04.png);
 }
 
 .proy-06-img-05 {
-    background-image: url(./img/proyectos/proyecto-06-05.jpg);
+    background-image: url(./img/proyectos/proyecto-06-05.png);
 }
 
 .proy-06-img-06 {
-    background-image: url(./img/proyectos/proyecto-06-06.jpg);
+    background-image: url(./img/proyectos/proyecto-06-06.png);
 }
 
 /* proyecto 7 Nickelodeon */
 
 .proy-07 {
-    background-image: url(./img/proyectos/proyectos-07.jpg);
+    background-image: url(./img/proyectos/proyectos-07.png);
 }
 
 .proy-07-img-01 {
-    background-image: url(./img/proyectos/proyecto-07-01.jpg);
+    background-image: url(./img/proyectos/proyecto-07-01.png);
 }
 
 .proy-07-img-02 {
-    background-image: url(./img/proyectos/proyecto-07-02.jpg);
+    background-image: url(./img/proyectos/proyecto-07-02.png);
 }
 
 .proy-07-img-03 {
-    background-image: url(./img/proyectos/proyecto-07-03.jpg);
+    background-image: url(./img/proyectos/proyecto-07-03.png);
 }
 
 .proy-07-img-04 {
-    background-image: url(./img/proyectos/proyecto-07-04.jpg);
+    background-image: url(./img/proyectos/proyecto-07-04.png);
 }
 
 /* proyecto 8 Innvictus */
 
 .proy-08 {
-    background-image: url(./img/proyectos/proyectos-08.jpeg);
+    background-image: url(./img/proyectos/proyecto-08-05.png);
 }
 
 .proy-08-img-01 {
-    background-image: url(./img/proyectos/proyecto-08-01.jpeg);
+    background-image: url(./img/proyectos/proyecto-08-01.png);
 }
 
 .proy-08-img-02 {
-    background-image: url(./img/proyectos/proyecto-08-02.jpeg);
+    background-image: url(./img/proyectos/proyecto-08-02.png);
 }
 
 .proy-08-img-03 {
@@ -524,11 +1114,11 @@ nav {
 }
 
 .proy-08-img-05 {
-    background-image: url(./img/proyectos/proyecto-08-05.jpg);
+    background-image: url(./img/proyectos/proyecto-08-05.png);
 }
 
 .proy-08-img-06 {
-    background-image: url(./img/proyectos/proyecto-08-06.jpg);
+    background-image: url(./img/proyectos/proyecto-08-06.png);
 }
 
 
@@ -541,16 +1131,16 @@ footer {
 .cont-footer {
     margin: 4rem auto !important;
     display: flex;
-    justify-content: space-between;
     justify-content: center;
     align-items: center;
 }
 
-.footer-redes {
-    width: 100%;
+.footer-cont {
+    width: 50% !important;
+    height: 100% !important;
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .cont-footer ul {
@@ -588,6 +1178,10 @@ footer {
     margin: 0 !important;
 }
 
+.cont-footer .navbar-brand img {
+    width: 16rem;
+    height: auto;
+}
 
 /* LIQUID */
 
@@ -629,7 +1223,7 @@ footer {
 }
 
 .cont-int-copy .logo-liquid {
-    height: 10rem;
+    height: 8rem;
     width: auto;
     margin-left: 3rem;
     transition: ease-in-out 200ms;
@@ -684,7 +1278,7 @@ footer {
 }
 
 .cont-liquid {
-    width: 33%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -701,4 +1295,15 @@ footer {
     transform: scale(1.05);
     font-weight: 600;
     transition: ease-in-out 200ms;
+}
+
+
+
+
+
+/* PAGES */
+
+.descripcion {
+    margin: 10rem 0;
+    min-height: 60vh !important;
 }
